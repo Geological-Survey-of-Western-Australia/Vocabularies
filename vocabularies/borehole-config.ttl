@@ -20,7 +20,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower
         <http://linked.data.gov.au/def/borehole-design/inclineddown> ,
         <http://linked.data.gov.au/def/borehole-design/inclinedup> ;
-    skos:prefLabel "inclined down"@en ;
+    skos:prefLabel "inclined down updated"@en ;
 .
 
 <http://linked.data.gov.au/def/borehole-design/inclinedup>
