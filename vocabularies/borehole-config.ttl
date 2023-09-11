@@ -31,7 +31,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "A borehole drilled from the start point at a pre-set nonvertical angle above horizontal (drilled upwards)."@en ;
     skos:historyNote "mineral industry concept" ;
     skos:inScheme cs: ;
-    skos:prefLabel "inclined up"@en ;
+    skos:prefLabel "inclined up updated"@en ;
 .
 
 <http://linked.data.gov.au/def/borehole-design/vertical>
