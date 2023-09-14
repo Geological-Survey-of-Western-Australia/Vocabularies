@@ -1,0 +1,47 @@
+name: Upload data to database
+
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+      request_timeout:
+        required: true
+        type: number
+    secrets:
+      prez_url:
+        required: true
+      database_url:
+        required: true
+      database_username:
+        required: true
+      database_password:
+        required: true
+
+env:
+  PYTHON_VERSION: "3.11"
+  KURRA_VERSION: "0.3.2"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v3
+
+      - name: Use Python ${{ env.PYTHON_VERSION }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - run: pip install https://github.com/Kurrawong/kurrawong-python/archive/refs/tags/${{ env.KURRA_VERSION }}.zip
+
+      - name: Upload vocabularies
+        run: |
+          kurra fuseki upload vocabularies ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
+
+      - name: Purge Prez cache
+        run: curl -fsSL ${{ secrets.prez_url }}
