@@ -15,7 +15,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy <https://linked.data.gov.au/def/borehole-design> ;
     skos:altLabel "downhole"@en ;
     skos:definition "A borehole drilled from the start point at a pre-set nonvertical angle below horizontal (drilled downwards)."@en ;
-    skos:historyNote "mineral industry concept" ;
+    skos:historyNote "mineral industry concept EDIT TEST" ;
     skos:inScheme cs: ;
     skos:narrower
         <http://linked.data.gov.au/def/borehole-design/inclineddown> ,
