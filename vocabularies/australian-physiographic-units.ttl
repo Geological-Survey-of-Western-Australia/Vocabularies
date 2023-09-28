@@ -1,0 +1,3258 @@
+PREFIX : <https://draft.com/Australian-physiographic-units/>
+PREFIX cs: <https://draft.com/Australian-physiographic-units>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:Innamincka-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Eolian sandplain with west- to north-northwest-trending seif dunes, and numerous claypans and alluvial areas (floodout of Cooper Creek). Bounded by latitudes 26.326344°S and 28.826029°S, and longitudes 139.207682°E and 140.814965°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20228"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Innamincka Plains"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Isa-ridges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rugged parallel ranges and narrow lowlands on folded metamorphic rocks and granites. Bounded by latitudes 18.851091°S and 22.72337°S, and longitudes 138.904461°E and 140.930081°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "30303"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Isa Ridges"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Israelite-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Narrow coastal plain with extensive dunes. Bounded by latitudes 32.926917°S and 34.108841°S, and longitudes 123.498621°E and 124.49038°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "31004"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NPPib"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Israelite Plain"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Ivanhoe-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plains with low west–east stabilized longitudinal dunes and sandplain, small pans with lunettes, minor sandstone ridges, floodplains. Bounded by latitudes 31.291259°S and 34.470967°S, and longitudes 139.760816°E and 145.562091°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20304"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Ivanhoe Plains"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:albany-esperance-sandplain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplains with weakly to moderately incised southerly valley and intervening hills and low ranges of granite and metamorphic rocks (extending as headlands and inlets). Bounded by latitudes 33.228449°S and 35.193981°S, and longitudes 117.406742°E and 123.719394°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30911"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPae"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Albany Esperance Sandplain"@en ;
+.
+
+:alberga-dunefield
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Longitudinal dunes. Bounded by latitudes 26.565983°S and 27.346617°S, and longitudes 133.992033°E and 135.275623°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20224"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Alberga Dunefield"@en ;
+.
+
+:alice-tableland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Perched sandy plain with interior drainage and higher ferruginous-capped rim. Bounded by latitudes 20.445512°S and 23.550995°S, and longitudes 144.35352°E and 146.446376°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10307"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Alice Tableland"@en ;
+.
+
+:amadeus-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dunefields and sandplains with scattered sandstone ranges; salt lakes and calcrete plains along lowland axis. Bounded by latitudes 22.709191°S and 26.220225°S, and longitudes 127.27787°E and 134.800216°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30505"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAPap"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Amadeus Plains"@en ;
+.
+
+:andamooka-tableland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected sandstone plateau with bold east escarpment. Bounded by latitudes 30.687442°S and 33.439282°S, and longitudes 137.203797°E and 137.843292°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31203"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Andamooka Tableland"@en ;
+.
+
+:anketell-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low mesas, buttes and stony rises of lateritized sandstone and shale among east–west longitudinal dunes and sandy plains. Bounded by latitudes 19.996901°S and 21.445172°S, and longitudes 121.516735°E and 124.333161°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30603"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPah"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Anketell Hills"@en ;
+.
+
+:armraynald-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Clay floodplain. Bounded by latitudes 17.470579°S and 20.148752°S, and longitudes 138.439832°E and 140.267239°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20108"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Armraynald Plain"@en ;
+.
+
+:arnhem-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected sandstone plateau. Bounded by latitudes 11.898184°S and 14.617665°S, and longitudes 132.164189°E and 135.636903°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30103"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NAPap"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Arnhem Plateau"@en ;
+.
+
+:arnhem-ridges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ranges of folded metamorphic rocks extending north–east as islands. Bounded by latitudes 12.459513°S and 14.451428°S, and longitudes 135.057019°E and 135.759996°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30102"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NAPar"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Arnhem Ridges"@en ;
+.
+
+:atherton-tableland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Basaltic tableland. Bounded by latitudes 17.133515°S and 17.744619°S, and longitudes 145.307072°E and 145.897773°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10210"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Atherton Tableland"@en ;
+.
+
+:augustus-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Parallel ranges and dissected plateaus with intervening hardpan wash plains and stony plains. Bounded by latitudes 21.366927°S and 25.861701°S, and longitudes 114.943213°E and 120.791266°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30707"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIPar"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Augustus Ranges"@en ;
+.
+
+:australian-alps
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected high upland, glaciated locally with some periglacial features. Uplifted blocks surrounded by highly dissected high relief hill country. Bounded by latitudes 34.726109°S and 36.855898°S, and longitudes 147.086632°E and 149.207529°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10703"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Australian Alps"@en ;
+.
+
+:avon-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Gently undulating surface of sandplains and ferruginous divides; stripped granitic slopes; and broad valley floors with salt lake chains. Bounded by latitudes 29.477967°S and 33.961952°S, and longitudes 115.854588°E and 120.972928°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30906"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPap"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Avon Plateau"@en ;
+.
+
+:barkly-tablelands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Black clay plains, sandy rises of ferruginous sandstone, and minor stony limestone plains, interior drainage with calcrete in depressions. Bounded by latitudes 16.685914°S and 22.513587°S, and longitudes 133.034327°E and 139.341168°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30402"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPbt"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Barkly Tablelands"@en ;
+.
+
+:barkly-tanami-plains-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Barkly–Tanami Plains Physiographic Province"@en ;
+    skos:definition "Uplands and interior lowlands with a northwest–southeast trend parallel to and including coastal lowlands, dominated by the Fitzroy River catchment. Bounded by latitudes 14.222438°S and 23.423680°S, and longitudes 127.703369°E and 139.516732°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :barkly-tablelands ,
+        :birrundudu-plain ,
+        :davenport-ranges ,
+        :sandover-sandplain ,
+        :sturt-plateau ,
+        :tanami-sandplain ,
+        :tanami-sandplain-and-ranges ,
+        :tobermory-plain ,
+        :toko-plateaus ;
+    skos:notation
+        "304"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30400"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Barkly–Tanami Plains Province"@en ;
+.
+
+:barrier-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ranges and undulating lowlands of granite and metamorphics. Bounded by latitudes 30.590752°S and 32.635232°S, and longitudes 140.543994°E and 142.13811°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31204"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Barrier Ranges"@en ;
+.
+
+:bass-Islands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Islands with low plateaus, partly dune covered with granite residual hills. Bounded by latitudes 39.435318°S and 40.594002°S, and longitudes 143.819443°E and 148.498795°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10801"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Bass Islands"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:bass-coastal-platforms
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low coastal platforms, partly dune covered, with some mudstone and metamorphic hills. Bounded by latitudes 40.371399°S and 42.232601°S, and longitudes 144.322128°E and 148.349213°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10802"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Bass Coastal Platforms"@en ;
+.
+
+:bathurst-tablelands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Granitic and basaltic tablelands and minor lowlands; includes the Canobolas dissected volcanic pile. Bounded by latitudes 32.281111°S and 34.94012°S, and longitudes 148.688503°E and 150.322949°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10606"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Bathurst Tablelands"@en ;
+.
+
+:belyando-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Clay plains and sandy plains with minor hills. Bounded by latitudes 21.111979°S and 23.889474°S, and longitudes 148.082155°E and 146.173549°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10403"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Belyando Plains"@en ;
+.
+
+:birrundudu-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low basaltic and sedimentary plain with clay soils and lateritic areas; indeterminate drainage with large claypans. Bounded by latitudes 16.91233°S and 18.846902°S, and longitudes 127.703369°E and 130.556829°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30409"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPbp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Birrundudu Plain"@en ;
+.
+
+:boulia-downs
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating clay plains with minor stony limestone plains. Bounded by latitudes 21.944785°S and 23.067808°S, and longitudes 138.884884°E and 140.03994°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20206"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Boulia Downs"@en ;
+.
+
+:broadsound-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plains, mainly alluvial, locally stony, with tidal flats. Bounded by latitudes 22.104335°S and 24.406156°S, and longitudes 151.600625°E and 149.366618°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10406"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Broadsound Plains"@en ;
+.
+
+:buckland-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected high plateau on basalt and sandstone. Bounded by latitudes 24.454735°S and 25.155273°S, and longitudes 147.608298°E and 147.608298°148.368858°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10412"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Buckland Plateau"@en ;
+.
+
+:bulgonunna-tableland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating tableland; higher centre and sloping margins on volcanic rocks with peripheral mantle of ferruginous clayey sand. Bounded by latitudes 20.785191°S and 21.657125°S, and longitudes 147.214636°E and 148.20293°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10308"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Bulgonunna Tableland"@en ;
+.
+
+:bulimba-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected low sandstone plateau. Bounded by latitudes 16.095582°S and 17.875902°S, and longitudes 143.081442°E and 144.106039°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20106"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Bulimba Plateau"@en ;
+.
+
+:bulloo-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplain and terminal floodout with pans and calcreted flats. Bounded by latitudes 26.604365°S and 29.816743°S, and longitudes 142.16261°E and 144.54148°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20212"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Bulloo Plain"@en ;
+.
+
+:bunda-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Covered karst plain of flat-lying limestone and calcrete with continuous cliff margin on south. Bounded by latitudes 29.607415°S and 33.614267°S, and longitudes 123.316086°E and 132.708298°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "31002"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NPPbp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Bunda Plateau"@en ;
+.
+
+:bunya-burnett-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mountain ranges, rugged and dissected on granitic and metamorphic rocks in east, broader uplands and upland basins, partly on sedimentary rocks, in west. Bounded by latitudes 23.974239°S and 28.258758°S, and longitudes 150.000902°E and 153.390228°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10513"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Bunya–Burnett Ranges"@en ;
+.
+
+:burdekin-hills-and-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "In east, hills and footslopes on volcanic and mixed sedimentary rock with igneous intrusions; in west, dissected ferruginous-capped tablelands, mainly on sandstone. Bounded by latitudes 17.93373°S and 20.989406°S, and longitudes 144.983176°E and 147.300637°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10302"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Burdekin Hills and Lowlands"@en ;
+.
+
+:burdekin-plateaus
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Young basaltic plateaus with primary volcanic forms; north–south axial belt of rugged ranges, chiefly on granite and metamorphic rocks. Bounded by latitudes 17.931134°S and 20.683902°S, and longitudes 144.250643°E and 146.174385°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10301"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Burdekin Plateaus"@en ;
+.
+
+:burdekin-uplands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Burdekin Uplands Physiographic Province"@en ;
+    skos:definition "Uplands and interior lowlands with a northwest–southeast trend parallel to and including coastal lowlands, dominated by the Burdekin River catchment. Bounded by latitudes 17.931134°S and 23.550995°S, and longitudes 142.789007°E and 148.424378°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :alice-tableland ,
+        :bulgonunna-tableland ,
+        :burdekin-hills-and-lowlands ,
+        :burdekin-plateaus ,
+        :cape-river-plains ,
+        :gilberton-plateau ,
+        :hervey-tablelands ,
+        :townsville-lowlands ;
+    skos:notation "10300"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Burdekin Uplands Province"@en ;
+.
+
+:cairns-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "High ranges east of an interior lowland, consisting of coastal ranges, lowland corridors and bedrock islands. Bounded by latitudes 16.19637°S and 18.295249°S, and longitudes 145.194668°E and 146.15036°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10209"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Cairns Ranges"@en ;
+.
+
+:cape-river-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plains with clay soils in the east, getting sandier to the west. Bounded by latitudes 20.256497°S and 21.629457°S, and longitudes 145.43318°E and 146.700712°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10306"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Cape River Plains"@en ;
+.
+
+:carborough-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandstone and basalt plateaus and lower rolling country on sedimentary and volcanic rocks. Bounded by latitudes 20.87373°S and 22.046464°S, and longitudes 148.654842°E and 147.957008°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10402"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Carborough Ranges"@en ;
+.
+
+:carlisle-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Limestone plain with some salt lakes and sandplains. Bounded by latitudes 28.892723°S and 30.446088°S, and longitudes 124.581587°E and 130.545901°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "31001"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NPPcp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Carlisle Plain"@en ;
+.
+
+:carnarvon-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alluvial plain and saline lake bed. Bounded by latitudes 23.307946°S and 25.857265°S, and longitudes 113.069389°E and 114.888397°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30805"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPcp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Carnarvon Plain"@en ;
+.
+
+:carnegie-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandstone tablelands, stony hardpan wash plains and salt lakes. Bounded by latitudes 25.068386°S and 27.020391°S, and longitudes 119.746412°E and 123.619433°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30708"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIPch"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Carnegie Hills"@en ;
+.
+
+:carpentaria-fall-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Carpentaria Fall Physiographic Province"@en ;
+    skos:definition "Mainly dissected plateaus on subhorizontal resistant sandstones, mainly of the Sydney Basin. Bounded by latitudes 14.000811°S and 22.723370°S, and longitudes 133.138977°E and 140.930081°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :gulf-coastal-lowlands ,
+        :gulf-fall ,
+        :isa-ridges ,
+        :manangoora-plains ;
+    skos:notation
+        "303"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30300"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Carpentaria Fall Province"@en ;
+.
+
+:carpentaria-lowlands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Carpentaria Lowlands Physiographic Province"@en ;
+    skos:definition "Uplands and coastal areas of the western part of Cape York Peninsula, including the Great Escarpment. Bounded by latitudes 11.3029456°S and 20.864026°S, and longitudes 138.439832°E and 144.106039°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :armraynald-plain ,
+        :bulimba-plateau ,
+        :clara-mitchell-plains ,
+        :donors-tableland ,
+        :holroyd-plains ,
+        :karumba-plain ,
+        :merluna-plain ,
+        :normanton-tableland ,
+        :weipa-plateau ,
+        :wondoola-plain ;
+    skos:notation
+        "201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "20100"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Carpentaria Lowlands Province"@en ;
+.
+
+:ceduna-dunefield
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low limestone dune ridges; small granitic islands with dunes. Bounded by latitudes 31.266549°S and 34.815689°S, and longitudes 131.151728°E and 136.416593°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31104"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Ceduna Dunefield"@en ;
+.
+
+:central-australian-ranges-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Central Australian Ranges Physiographic Province"@en ;
+    skos:definition "Sandstone and limestone plains, coastal plains, and dunes. Bounded by latitudes 21.056309°S and 27.184211°S, and longitudes 126.478709°E and 137.029688°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :amadeus-plains ,
+        :central-ranges ,
+        :kulgera-hills ,
+        :northern-alice-plains ,
+        :northern-alice-ranges ,
+        :todd-plains ,
+        :warburton-ranges ,
+        :western-desert-ranges ;
+    skos:notation
+        "305"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30500"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Central Australian Ranges Province"@en ;
+.
+
+:central-lowlands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Central Lowlands Physiographic Province"@en ;
+    skos:definition "Hills and plateaus on resistant rocks, some alluvial plains. Bounded by latitudes 20.026174°S and 32.980276°S, and longitudes 133.128183°E and 152.319707°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :alberga-dunefield ,
+        :boulia-downs ,
+        :bulloo-plain ,
+        :charleville-tableland ,
+        :condamine-lowlands ,
+        :cooper-plain ,
+        :denison-ranges ,
+        :diamantina-plain ,
+        :eromanga-lowlands ,
+        :eyre-creek-plain ,
+        :eyre-frome-plains ,
+        :grey-range ,
+        :innamincka-plains ,
+        :jericho-plain ,
+        :lightning-ridge-lowland ,
+        :maranoa-lowland ,
+        :nulty-springs-lowlands ,
+        :oodnadatta-tablelands ,
+        :paroo-plain ,
+        :simpson-desert-dunefield ,
+        :simpson-desert-plains ,
+        :st-george-plain ,
+        :strzelecki-desert-plains ,
+        :sturt-desert-plains ,
+        :upper-darling-plains ,
+        :warrego-plains ,
+        :warwick-lowland ,
+        :whelen-lowlands ,
+        :winton-blackall-downs ;
+    skos:notation
+        "202"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "20200"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Central Lowlands Province"@en ;
+.
+
+:central-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fold complex of prominent east–west ranges, mainly of quartzite; lowlands on limestone and shale with gravel terraces. Bounded by latitudes 22.96049°S and 25.498264°S, and longitudes 130.39181°E and 135.752895°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30503"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAPcr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Central Ranges"@en ;
+.
+
+:charleville-tableland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low sandy tableland of weathered sandstone and shale. Bounded by latitudes 24.692152°S and 29.663575°S, and longitudes 145.063991°E and 150.59594°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20204"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Charleville Tableland"@en ;
+.
+
+:chichester-range
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Narrow range of hills and dissected plateaus on basalt and sedimentary rocks. Bounded by latitudes 20.809919°S and 22.584392°S, and longitudes 116.050834°E and 120.103237°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30705"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIPcr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Chichester Range"@en ;
+.
+
+:clara-mitchell-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sloping sandy alluvial plains with minor clay plains along distributary drainage. Bounded by latitudes 14.190464°S and 20.474045°S, and longitudes 141.018725°E and 143.786637°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20105"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Clara–Mitchell Plains"@en ;
+.
+
+:clarence-fall
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected plateau margin on granite and metamorphic rocks. Bounded by latitudes 28.328417°S and 30.346845°S, and longitudes 152.104399°E and 153.269257°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10507"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Clarence Fall"@en ;
+.
+
+:clarence-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Coastal lowlands on weak sedimentary rocks, with littoral and alluvial plains. Bounded by latitudes 28.807524°S and 29.989761°S, and longitudes 152.819404°1E and 53.607544°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10508"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Clarence Lowlands"@en ;
+.
+
+:cobar-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plains with remnants of silcrete and low sandstone ridges, sand cover in west, with west–east longitudinal dunes. Bounded by latitudes 30.118828°S and 34.282174°S, and longitudes 144.233465°E and 148.388534°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20302"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Cobar Plains"@en ;
+.
+
+:coleman-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rolling sandy granitic plateau with low ridges of metamorphic rocks, includes Great Escarpment in the east. Bounded by latitudes 13.835726°S and 15.597455°S, and longitudes 142.863628°E and 143.636095°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10204"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Coleman Plateau"@en ;
+.
+
+:condamine-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating clay lowlands on siltstone and low sandstone hills; floodplains. Bounded by latitudes 26.454383°S and 28.718057°S, and longitudes 150.121911°E and 152.319707°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20205"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Condamine Lowlands"@en ;
+.
+
+:condobolin-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plains of gravel and sandy alluvium. Bounded by latitudes 32.918201°S and 34.456489°S, and longitudes 146.850571°E and 148.371177°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20303"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Condobolin Plains"@en ;
+.
+
+:connors-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rounded mountain ranges on the dissected eastern margin of the uplands. Bounded by latitudes 20.200058°S and 24.52482°S, and longitudes 151.051282°E and 147.478079°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10401"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Connors Ranges"@en ;
+.
+
+:cooktown-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Deeply dissected sandstone plateaus with mountain ranges of granite and metamorphic rocks to east, small bedrock islands. Bounded by latitudes 14.16453°S and 16.665559°S, and longitudes 144.020835°E and 145.476486°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10206"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Cooktown Ranges"@en ;
+.
+
+:coonana-ragged-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating plains with low hills of granite and metamorphic rocks; calcretes and scattered small salt lakes along shallow valleys. Bounded by latitudes 31.464241°S and 32.769595°S, and longitudes 122.738547°E and 123.854534°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30907"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPcp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Coonana–Ragged Plateau"@en ;
+.
+
+:cooper-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplain. Bounded by latitudes 24.668078°S and 28.053456°S, and longitudes 141.195363°E and 143.352939°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20211"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Cooper Plain"@en ;
+.
+
+:coorong-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Coastal barrier, lagoons, and limestone dunes. Bounded by latitudes 35.117234°S and 36.472662°S, and longitudes 138.723209°E and 140.464118°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20308"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Coorong Plain"@en ;
+.
+
+:cotherstone-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected sandstone plateau. Bounded by latitudes 21.939506°S and 23.069832°S, and longitudes 147.812939°E and 147.812939°148.508975°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10408"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Cotherstone Plateau"@en ;
+.
+
+:couchman-uplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating to hilly lower plateaus, on basalt, shale and sandstone. Bounded by latitudes 13.68923°S and 17.024323°S, and longitudes 125.481484°E and 127.538008°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30202"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPcu"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Couchman Uplands"@en ;
+.
+
+:cumberland-lowland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating to low hilly country, mainly on shale. Bounded by latitudes 33.557374°S and 34.198768°S, and longitudes 150.576734°E and 151.287033°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10608"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Cumberland Lowland"@en ;
+.
+
+:cunningham-slopes
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ridges and valleys in metamorphic rocks. Bounded by latitudes 27.964578°S and 31.723076°S, and longitudes 150.189184°E and 151.877246°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10505"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Cunningham Slopes"@en ;
+.
+
+:daly-basin
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lowlands of limestone and weak sedimentary rocks, including alluvial plains; minor laterite-capped plateaus. Bounded by latitudes 13.07496°S and 15.095786°S, and longitudes 130.666251°E and 132.613331°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30105"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NAPdb"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Daly Basin"@en ;
+.
+
+:dampier-tablelands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low sandstone tableland, partially laterized and with extensive sandplain cover. Bounded by latitudes 16.27652°S and 18.132163°S, and longitudes 122.09185°E and 123.645747°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30204"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPdt"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Dampier Tablelands"@en ;
+.
+
+:dandaragan-tablelands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected ferruginous plateaus and hills on sedimentary rocks with areas of sandplain; extensive coastal dune system in west. Bounded by latitudes 27.577965°S and 31.661904°S, and longitudes 114.575798°E and 116.093696°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30809"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPdt"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Dandaragan Tablelands"@en ;
+.
+
+:darling-range
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "High ferruginous plateau; steep western fall and deeply incised valleys of oceanward drainage exposing granitic basement. Bounded by latitudes 30.832177°S and 34.111033°S, and longitudes 115.764879°E and 117.198305°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30908"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPdr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Darling Range"@en ;
+.
+
+:davenport-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fold belt of bevelled sandstone ridges, with narrow lowlands on weaker rocks; central tract of lower hills and plains; extensive ferruginous mantles. Bounded by latitudes 17.255769°S and 21.751149°S, and longitudes 133.415927°E and 135.896353°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30405"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPdr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Davenport Ranges"@en ;
+.
+
+:de-grey-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplains and deltaic plains with stony plains and sandplains; tidal flats and some metamorphic, volcanic and granitic hills and islands. Bounded by latitudes 20.014311°S and 21.288328°S, and longitudes 116.191078°E and 120.882896°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30701"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIPdg"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "De Grey Lowlands"@en ;
+.
+
+:denison-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bevelled low ridges of folded metamorphic rocks. Bounded by latitudes 27.968561°S and 28.823432°S, and longitudes 135.805714°1E and 36.211969°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20226"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Denison Ranges"@en ;
+.
+
+:diamantina-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplain. Bounded by latitudes 23.14687°S and 27.665199°S, and longitudes 138.318838°E and 141.696441°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20210"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Diamantina Plain"@en ;
+.
+
+:donnybrook-lowland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low, moderately dissected ferruginous plateau on down-faulted sedimentary rocks; swampy coastal plain in the south. Bounded by latitudes 33.344415°S and 34.542133°S, and longitudes 115.096757°E and 115.843828°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30811"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPdl"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Donnybrook Lowland"@en ;
+.
+
+:donors-tableland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stripped higher ferruginous surface on siltstone and sandstone. Bounded by latitudes 17.717099°S and 20.165739°S, and longitudes 139.765844°E and 140.965511°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20110"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Donors Tableland"@en ;
+.
+
+:drummond-uplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ridges and valleys on sandstone and minor metamorphic rocks; rolling country on granite. Bounded by latitudes 22.386559°S and 24.203562°S, and longitudes 146.602107°E and 147.737691°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10410"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Drummond Uplands"@en ;
+.
+
+:east-tasmanian-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fault block hills and mountains on dolerite, sandstone, and mudstone, with granite residuals, ria coast. Bounded by latitudes 40.901944°S and 43.860401°S, and longitudes 146.354357°E and 148.359406°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10806"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "East Tasmanian Hills"@en ;
+.
+
+:east-victorian-uplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected high plateaus on various resistant rocks, with isolated high plains. Bounded by latitudes 35.300222°S and 38.148959°S, and longitudes 144.986927°E and 149.765915°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10707"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "East Victorian Uplands"@en ;
+.
+
+:eastern-upland-division
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Eastern Upland Physiographic Division"@en ;
+    skos:definition "The eastern uplands of Australia. Landform patterns reflect structural contrasts. Meridional folding and faulting are reflected in a general north–south grain of relief. It includes both the Great Divide and the Great Escarpment. Bounded by latitudes 9.141290°S and 43.860401°S, and longitudes 141.020610°E and 153.638336°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :burdekin-uplands-province ,
+        :fitzroy-uplands-province ,
+        :great-barrier-reef-province ,
+        :kosciuszkan-uplands-province ,
+        :macquarie-uplands-province ,
+        :new-england-moreton-uplands-province ,
+        :peninsular-uplands-province ,
+        :tasmanian-uplands-province ;
+    skos:notation
+        "1"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "100"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "10000"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Eastern Upland Division"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:eighty-mile-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Coastal plains and dunes with some estuarine plains. Bounded by latitudes 17.842708°S and 20.187084°S, and longitudes 118.807411°E and 122.745733°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30602"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPep"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Eighty Mile Plain"@en ;
+.
+
+:einasleigh-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating to irregular plains on granite and metamorphic rocks. Bounded by latitudes 18.002822°S and 19.422524°S, and longitudes 143.803457°E and 144.677042°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10214"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Einasleigh Plains"@en ;
+.
+
+:eromanga-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stony plains with silcrete-capped mesas, minor alluvial and sandy tracts. Bounded by latitudes 21.552601°S and 28.977524°S, and longitudes 138.754777°E and 146.15178°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20209"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Eromanga Lowlands"@en ;
+.
+
+:expedition-scarplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rugged plateaus and ridges on sandstone. Bounded by latitudes 23.599106°S and 25.991111°S, and longitudes 148.688263°E and 150.403674°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10413"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Expedition Scarplands"@en ;
+.
+
+:eyre-creek-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplain. Bounded by latitudes 21.61642°S and 25.11425°S, and longitudes 138.617785°E and 140.713522°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20208"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Eyre Creek Plain"@en ;
+.
+
+:eyre-dunefield
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stable northwest–southeast longitudinal dunes, locally broken by granite hills and ridges of metamorphic rocks. Bounded by latitudes 32.373119°S and 33.74147°S, and longitudes 135.14687°E and 137.58727°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31103"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Eyre Dunefield"@en ;
+.
+
+:eyre-frome-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Major salt lakes and adjacent alluvial plains; minor stony plains and longitudinal dunes. Bounded by latitudes 27.842049°S and 32.155274°S, and longitudes 136.269228°E and 141.349675°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20225"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Eyre–Frome Plains"@en ;
+.
+
+:eyre-peninsula-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Eyre Peninsula Physiographic Province"@en ;
+    skos:definition "Lowlands and plains sloping to the Gulf of Carpentaria. Bounded by latitudes 29.346210°S and 29.346210°S, and longitudes 131.151728°E and 137.630649°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :ceduna-dunefield ,
+        :eyre-dunefield ,
+        :gairdner-plain ,
+        :gawler-cleve-ranges ,
+        :lincoln-hills ;
+    skos:notation "31100"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Eyre Peninsula Province"@en ;
+.
+
+:fitzroy-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplains, sandplains, and broad estuarine plains. Bounded by latitudes 16.577756°S and 18.815086°S, and longitudes 123.515999°E and 126.029559°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30207"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPfp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Fitzroy Plains"@en ;
+.
+
+:fitzroy-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Scattered tablelands and ranges of sedimentary rocks and extensive outcrop plains and sandplain and east–west longitudinal dunes. Bounded by latitudes 18.101217°S and 19.371511°S, and longitudes 123.760104°E and 127.802019°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30205"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPfr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Fitzroy Ranges"@en ;
+.
+
+:fitzroy-uplands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Fitzroy Uplands Physiographic Province"@en ;
+    skos:definition "Low ranges and tablelands with lowlands and some plateaus. Bounded by latitudes 20.060381°S and 25.991111°S, and longitudes 146.069187°E and 151.600625°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :belyando-plains ,
+        :broadsound-plains ,
+        :buckland-plateau ,
+        :carborough-ranges ,
+        :connors-ranges ,
+        :cotherstone-plateau ,
+        :drummond-uplands ,
+        :expedition-scarplands ,
+        :mackenzie-dawson-lowlands ,
+        :nagoa-scarplands ,
+        :scartwater-hills ,
+        :springsure-clermont-plateaus ,
+        :townshend-ranges-and-lowlands ;
+    skos:notation "10400"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Fitzroy Uplands Province"@en ;
+.
+
+:flinders-lofty-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Complex fold belt of prominent ranges in north, chiefly quartzite with vales on weaker rocks; stepped fault blocks and islands in south, mainly of weathered metamorphic rocks with ferruginous cappings. Bounded by latitudes 29.36382°S and 36.396648°S, and longitudes 136.532745°E and 139.788214°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Flinders–Lofty Ranges"@en ;
+.
+
+:fortescue-valley
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mainly alluvial lowland with hardpan wash plains and sandplain, possibly a graben. Bounded by latitudes 21.574089°S and 23.432007°S, and longitudes 116.768643°E and 120.576764°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30706"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIPfv"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Fortescue Valley"@en ;
+.
+
+:gairdner-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alluvial plains and salt lakes with some dunes. Bounded by latitudes 29.34621°S and 32.333142°S, and longitudes 132.491585°E and 137.630649°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31101"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gairdner Plain"@en ;
+.
+
+:garnet-uplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hilly uplands with dissected greywacke and volcanics in north and undulating country on granite and metamorphic rocks in the south. Bounded by latitudes 15.929353°S and 18.150512°S, and longitudes 143.981117°E and 145.708606°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10208"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Garnet Uplands"@en ;
+.
+
+:gawler-cleve-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rounded ranges of acid volcanic rocks and hills of metamorphic rocks. Bounded by latitudes 31.457066°S and 32.789524°S, and longitudes 134.814071°E and 137.502419°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31102"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gawler–Cleve Ranges"@en ;
+.
+
+:gibson-desert-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandy or stony ferruginous plains. Bounded by latitudes 22.164247°S and 27.280427°S, and longitudes 123.848425°E and 127.018453°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30606"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPgp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gibson Desert Plains"@en ;
+.
+
+:gilbert-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rolling country on granite, and ridges and valleys on metamorphic rocks. Bounded by latitudes 17.768153°S and 18.883566°S, and longitudes 142.838231°E and 143.833715°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10212"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gilbert Hills"@en ;
+.
+
+:gilberton-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Partly dissected sandstone plateau. Bounded by latitudes 18.673621°S and 20.810325°S, and longitudes 142.789007°E and 144.753677°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10305"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gilberton Plateau"@en ;
+.
+
+:gippsland-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Terraced plains with sand and gravels. Bounded by latitudes 37.66496°S and 38.762749°S, and longitudes 146.356378°E and 149.501251°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10711"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gippsland Plain"@en ;
+.
+
+:glengarry-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hills, hardpan wash plains and stony plains on sedimentary, granitic, and volcanic rocks. Bounded by latitudes 24.917901°S and 26.802447°S, and longitudes 118.157898°E and 120.763266°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30703"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIPgh"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Glengarry Hills"@en ;
+.
+
+:goulburn-corridor
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Broad valley floors on weaker rocks, overlooked by irregular dissected plateaus. Bounded by latitudes 32.171759°S and 32.771659°S, and longitudes 149.634664°E and 150.629272°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10605"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Goulburn Corridor"@en ;
+.
+
+:great-barrier-reef-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Great Barrier Reef Physiographic Province"@en ;
+    skos:definition "Erosional plains with sand plains, lakes and alluvial valley floors; breakaways. Bounded by latitudes 9.141290°S and 24.096460°S, and longitudes 141.419143°E and 152.394791°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :north-reefs ,
+        :south-reefs ;
+    skos:notation "10100"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Great Barrier Reef Province"@en ;
+.
+
+:great-sandy-desert-dunefield
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "East–west longitudinal dunes and minor salt lakes. Bounded by latitudes 17.863681°S and 25.983593°S, and longitudes 119.380411°E and 130.572816°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30604"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPgd"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Great Sandy Desert Dunefield"@en ;
+.
+
+:great-victoria-desert-dunes
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "West–east longitudinal dunes, broken by low tablelands and ridges in the northwest. Bounded by latitudes 25.158119°S and 32.196006°S, and longitudes 122.540793°E and 135.621357°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30610"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPvd"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Great Victoria Desert Dunes"@en ;
+.
+
+:greenough-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected ferruginous plateaus and hills of sandstone and shale over granite, extensive sandplain on dissected plateau. Bounded by latitudes 27.376333°S and 28.987°S, and longitudes 113.588676°E and 115.131853°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30808"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPgh"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Greenough Hills"@en ;
+.
+
+:gregory-range
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected sandstone plateau and hilly country on acid volcanic rocks. Bounded by latitudes 17.929322°S and 19.027512°S, and longitudes 142.174496°E and 142.174496°142.978174°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10213"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gregory Range"@en ;
+.
+
+:grey-range
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Silcrete-capped tablelands. Bounded by latitudes 27.649476°S and 30.262826°S, and longitudes 141.274586°E and 143.413904°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20221"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Grey Range"@en ;
+.
+
+:gulf-coastal-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ferruginous lowlands with alluvial plains; littoral plains with dunefields and sandplains in coastal areas; sandstone rises associated with islands. Bounded by latitudes 14.523394°S and 16.423096°S, and longitudes 135.042631°E and 137.743683°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "30304"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gulf Coastal Lowlands"@en ;
+.
+
+:gulf-fall
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected coastal fall, tabular ridges giving place to sloping plains and low hills seawards. Bounded by latitudes 14.000811°S and 19.840714°S, and longitudes 133.138977°E and 139.37918°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "30302"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gulf Fall"@en ;
+.
+
+:gulfs-ranges-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Gulfs Ranges Physiographic Province"@en ;
+    skos:definition "Outer barrier reef, patch reefs and some high islands. Bounded by latitudes 29.363820°S and 36.396648°S, and longitudes 136.421646°E and 142.138110°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :andamooka-tableland ,
+        :barrier-ranges ,
+        :flinders-lofty-ranges ,
+        :olary-spur ,
+        :torrens-gulf-plains ,
+        :yorke-peninsula ;
+    skos:notation
+        "312"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "31200"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gulfs Ranges Province"@en ;
+.
+
+:gunnedah-lowland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alluvial plains, sandstone ridges and hills of basic intrusive rocks. Bounded by latitudes 30.619349°S and 31.74602°S, and longitudes 149.748673°E and 150.600731°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10510"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Gunnedah Lowland"@en ;
+.
+
+:halls-creek-ridges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ranges and rounded hills on sedimentary (and some volcanic) rocks. Bounded by latitudes 17.004139°S and 19.099638°S, and longitudes 126.760108°E and 128.833139°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30210"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPhc"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Halls Creek Ridges"@en ;
+.
+
+:hamersley-plateaus
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected bold plateaus and ranges of flat lying or moderately folded sandstone, quartzite, and volcanic rocks. Bounded by latitudes 21.576916°S and 23.515019°S, and longitudes 116.080361°E and 120.263465°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30704"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIPhp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Hamersley Plateaus"@en ;
+.
+
+:hawkesbury-shoalhaven-plateaus
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Deeply dissected sandstone plateaus. Bounded by latitudes 32.414976°S and 35.303008°S, and longitudes 149.85788°E and 151.706956°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10607"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Hawkesbury–Shoalhaven Plateaus"@en ;
+.
+
+:hervey-tablelands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Granitic uplands, rugged ranges on volcanic rocks and minor dissected ferruginous-capped plateaus forming steep eastern upland margin. Bounded by latitudes 18.006404°S and 21.038013°S, and longitudes 145.378047°E and 147.775731°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10303"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Hervey Tablelands"@en ;
+.
+
+:holroyd-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Slightly dissected sandy plains, partly ferruginized. Bounded by latitudes 13.402537°S and 18.23227°S, and longitudes 141.542599°E and 143.844232°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20103"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Holroyd Plains"@en ;
+.
+
+:hume-slopes
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ridges and minor tablelands stepping down westwards and breaking into detached hills with intervening alluvial valley floors. Some strong structural control on landforms. Bounded by latitudes 33.204317°S and 36.238821°S, and longitudes 146.159809°E and 148.600195°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10701"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Hume Slopes"@en ;
+.
+
+:hunter-valley
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating to low hilly country on weak rocks, with alluvial and sandy littoral plains. Bounded by latitudes 31.942578°S and 33.079382°S, and longitudes 150.452434°E and 152.205841°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10604"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Hunter Valley"@en ;
+.
+
+:interior-lowland-division
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Interior Lowland Physiographic Division"@en ;
+    skos:definition "Younger intracratonic basins with relatively flat sedimentary strata. Bounded by latitudes 11.302946°S and 38.411320°S, and longitudes 133.128183°E and 152.319707°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :carpentaria-lowlands-province ,
+        :central-lowlands-province ,
+        :murray-lowlands-province ;
+    skos:notation
+        "2"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "200"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "20000"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Interior Lowland Division"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:jardine-uplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Locally dissected rolling sandstone upland with transgressive coastal dunes along eastern margin. Bounded by latitudes 10.86809°S and 12.808629°S, and longitudes 141.718155°E and 143.244873°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10202"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Jardine Uplands"@en ;
+.
+
+:jericho-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain. Bounded by latitudes 22.028735°S and 24.587845°S, and longitudes 145.097648°E and 146.30823°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20202"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Jericho Plain"@en ;
+.
+
+:karumba-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Littoral plain. Bounded by latitudes 13.3698°S and 17.962122°S, and longitudes 139.23281°E and 141.810222°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20104"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Karumba Plain"@en ;
+.
+
+:kennedy-range
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected sandstone plateau with partial ferruginous cappings, covered by longitudinal dunes. Bounded by latitudes 24.082236°S and 24.974937°S, and longitudes 114.76144°E and 115.231334°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30804"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPkr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Kennedy Range"@en ;
+.
+
+:kimberley-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandstone plateaus (deeply dissected in places) with tabular high summits; some basaltic plateau; ria coast and islands to the northwest. Bounded by latitudes 13.93137°S and 17.828259°S, and longitudes 123.547882°E and 128.233673°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPkp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Kimberley Plateau"@en ;
+.
+
+:kimberley-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Kimberley Physiographic Province"@en ;
+    skos:definition "Hilly and mountainous, high relief. Bounded by latitudes 13.689230°S and 19.371511°S, and longitudes 122.091850°E and 128.948688°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :couchman-uplands ,
+        :dampier-tablelands ,
+        :fitzroy-plains ,
+        :fitzroy-ranges ,
+        :halls-creek-ridges ,
+        :kimberley-plateau ,
+        :napier-limestone-ranges ,
+        :richenda-foothills ,
+        :springvale-foothills ,
+        :wunaamin-miliwundi-durack-ranges ;
+    skos:notation
+        "302"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30200"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Kimberley Province"@en ;
+.
+
+:kosciuszkan-uplands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Kosciuszkan Uplands Physiographic Province"@en ;
+    skos:definition "Mainly depositional plains around the southeast of the Gulf of Carpentaria. Bounded by latitudes 33.2043171°S and 39.522332°S, and longitudes 141.020610°E and 150.849319°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :australian-alps ,
+        :east-victorian-uplands ,
+        :gippsland-plain ,
+        :hume-slopes ,
+        :monaro-fall ,
+        :monaro-tableland ,
+        :south-victorian-uplands ,
+        :tinderry-gourock-ranges ,
+        :werriwa-tablelands ,
+        :west-victorian-plains ,
+        :west-victorian-uplands ;
+    skos:notation "10700"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Kosciuszkan Uplands Province"@en ;
+.
+
+:kulgera-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandy granitic plains with prominent hills. Bounded by latitudes 25.639996°S and 27.184211°S, and longitudes 132.134532°E and 134.390766°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30507"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAPkh"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Kulgera Hills"@en ;
+.
+
+:lakes-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "High dolerite plateau with many lakes, glaciated in west. Bounded by latitudes 41.539578°S and 42.440651°S, and longitudes 146.10101°E and 147.345993°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10804"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Lakes Plateau"@en ;
+.
+
+:laura-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Soft sedimentary rock lowlands, alluvial plains and coastal plain. Bounded by latitudes 13.767155°S and 15.767124°S, and longitudes 143.425719°E and 144.74613°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10205"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Laura Plain"@en ;
+.
+
+:leemans-sandplain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain with some gravel plains, mesas, and small salt lakes. Bounded by latitudes 26.492127°S and 30.662666°S, and longitudes 121.492232°E and 123.932368°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30910"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPls"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Leemans Sandplain"@en ;
+.
+
+:leeuwin-peninsula
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Narrow granitic horst ridge with calcareous dune system on western margin and dissected ferruginous plateau in the east. Bounded by latitudes 33.530159°S and 34.38374°S, and longitudes 114.975029°E and 115.193681°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30812"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPlp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Leeuwin Peninsula"@en ;
+.
+
+:lightning-ridge-lowland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stony plains with minor silcrete-capped mesas. Bounded by latitudes 28.483544°S and 30.072168°S, and longitudes 147.350717°E and 148.565744°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20217"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Lightning Ridge Lowland"@en ;
+.
+
+:lincoln-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low granite hills and plains extending as headlands and inlets. Bounded by latitudes 33.599126°S and 35.340549°S, and longitudes 135.027893°E and 136.969757°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31105"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Lincoln Hills"@en ;
+.
+
+:little-sandy-desert
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "East–west longitudinal dunes and minor salt lakes. Bounded by latitudes 22.197759°S and 25.806083°S, and longitudes 119.890907°E and 123.269001°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30601"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPld"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Little Sandy Desert"@en ;
+.
+
+:liverpool-barrington-plateaus
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected basaltic plateaus. Bounded by latitudes 31.348304°S and 32.323859°S, and longitudes 151.122234°E and 152.52866°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10511"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Liverpool–Barrington Plateaus"@en ;
+.
+
+:lower-darling-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplain and lunette lakes. Bounded by latitudes 29.957591°S and 34.276252°S, and longitudes 140.654329°E and 146.268179°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20301"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Lower Darling Plain"@en ;
+.
+
+:macdonald-sandplain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mainly sandplain with dune-fringed salt lakes. Bounded by latitudes 23.080796°S and 23.766894°S, and longitudes 128.483625°E and 131.01078°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30608"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPms"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Macdonald Sandplain"@en ;
+.
+
+:mackenzie-dawson-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplains, clay plains and sandy bedrock lowlands. Bounded by latitudes 21.604907°S and 25.447947°S, and longitudes 147.931586°E and 150.648043°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10407"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Mackenzie–Dawson Lowlands"@en ;
+.
+
+:macleay-barrington-fall
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plateau flank dissected into narrow strike ridges and valleys. Bounded by latitudes 30.320413°S and 32.7562°S, and longitudes 150.880601°E and 153.130187°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10512"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Macleay–Barrington Fall"@en ;
+.
+
+:macquarie-uplands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Macquarie Uplands Physiographic Province"@en ;
+    skos:definition "Low plateaus, sand plains and dune fields. Bounded by latitudes 30.370879°S and 35.303008°S, and longitudes 147.660206°E and 152.205841°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :bathurst-tablelands ,
+        :cumberland-lowland ,
+        :goulburn-corridor ,
+        :hawkesbury-shoalhaven-plateaus ,
+        :hunter-valley ,
+        :merriwa-plateau ,
+        :mitchell-slopes ,
+        :warrumbungle-peaks ;
+    skos:notation "10600"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Macquarie Uplands Province"@en ;
+.
+
+:mallee-dunefield
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fixed west–east calcareous longitudinal dunes. Bounded by latitudes 33.819057°S and 36.306182°S, and longitudes 139.157554°E and 143.832952°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20306"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Mallee Dunefield"@en ;
+.
+
+:manangoora-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alluvial plains, minor ferruginized lowlands and islands, and littoral plains. Bounded by latitudes 14.6814°S and 17.876792°S, and longitudes 135.499634°E and 139.88736°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "30301"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Manangoora Plains"@en ;
+.
+
+:maranoa-lowland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain with low sandstone hills. Bounded by latitudes 23.586687°S and 26.359875°S, and longitudes 145.814341°E and 148.427454°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20203"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Maranoa Lowland"@en ;
+.
+
+:maryborough-lowland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lowland on weak sedimentary rocks, partly dune covered including K'gari (formerly Fraser Island). Bounded by latitudes 24.144118°S and 26.481847°S, and longitudes 151.764481°E and 153.358566°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10502"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Maryborough Lowland"@en ;
+.
+
+:merluna-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating clay plains with ferruginous rises. Bounded by latitudes 12.206185°S and 14.900153°S, and longitudes 141.904938°E and 142.966639°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20102"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Merluna Plain"@en ;
+.
+
+:merriwa-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rolling basalt upland with sandstone cliffs. Bounded by latitudes 31.530666°S and 32.28168°S, and longitudes 149.541224°E and 151.203041°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10603"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Merriwa Plateau"@en ;
+.
+
+:midlands-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Fault-bounded lowland (graben) on weathered sediments, with some dolerite, sedimentary and metamorphic hills. Bounded by latitudes 41.063358°S and 42.191972°S, and longitudes 146.48604°E and 147.55712°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10803"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Midlands Plain"@en ;
+.
+
+:millicent-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Parallel dune limestone ridges with intervening swamps; closed karst depressions and young volcanoes in southeast. Bounded by latitudes 36.374543°S and 38.41132°S, and longitudes 139.670547°E and 141.670883°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20309"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Millicent Plain"@en ;
+.
+
+:mitchell-slopes
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Tablelands stepping down to west and breaking into detached hills. Bounded by latitudes 30.370879°S and 34.812456°S, and longitudes 147.660206°E and 150.043234°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10601"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Mitchell Slopes"@en ;
+.
+
+:monaro-fall
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Deeply dissected steeply sloping plateau margin in metamorphics and granite. Bounded in the west by the Great Escarpment. Bounded by latitudes 34.924032°S and 37.756359°S, and longitudes 149.336751°E and 150.849319°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10705"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Monaro Fall"@en ;
+.
+
+:monaro-tableland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating upland plains with some tabular basalt relief and granite tors. Bounded by latitudes 35.97531°S and 37.778511°S, and longitudes 148.442004°E and 149.431793°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10706"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Monaro Tableland"@en ;
+.
+
+:moreton-lowland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lowland on weak sedimentary rocks, with prominent volcanic plugs, includes dune islands. Bounded by latitudes 26.613991°S and 28.19735°S, and longitudes 152.838542°E and 153.579895°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10503"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Moreton Lowland"@en ;
+.
+
+:murchison-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplains and hardpan wash plains with outgoing drainage and salt lakes, broken by ridges of metamorphic rocks and granite. Bounded by latitudes 25.167211°S and 29.930099°S, and longitudes 115.212771°E and 122.928611°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30901"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPmp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Murchison Plateau"@en ;
+.
+
+:murray-lowlands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Murray Lowlands Physiographic Province"@en ;
+    skos:definition "Mountains and plateaus ranging from the highest point in Australia to the coast. Bounded by latitudes 29.957591°S and 38.411320°S, and longitudes 138.723209°E and 148.3885345°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :cobar-plains ,
+        :condobolin-plains ,
+        :coorong-plain ,
+        :ivanhoe-plains ,
+        :lower-darling-plain ,
+        :mallee-dunefield ,
+        :millicent-plain ,
+        :riverine-plain ,
+        :west-turkey-plains ,
+        :wimmera-plain ;
+    skos:notation
+        "203"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "20300"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Murray Lowlands Province"@en ;
+.
+
+:nagoa-scarplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandstone strike ridges and clay valleys. Bounded by latitudes 22.7778°S and 25.515761°S, and 146.069187°longitudes E and 148.035313°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10411"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Nagoa Scarplands"@en ;
+.
+
+:nandewar-peaks
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected volcanic pile. Bounded by latitudes 29.543995°S and 30.836196°S, and longitudes 149.760031°E and150.381189°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10509"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Nandewar Peaks"@en ;
+.
+
+:napier-limestone-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Limestone tableland and intricately dissected bevelled ridges; separated by plains and rocky karst surfaces with box valleys. Bounded by latitudes 16.85309°S and 18.776871°S, and longitudes 123.802612°E and 126.379111°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30208"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPnr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Napier Limestone Ranges"@en ;
+.
+
+:new-england-moreton-uplands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "New England–Moreton Uplands Physiographic Province"@en ;
+    skos:definition "Adelaide Hills and lowland areas to Broken Hill. Bounded by latitudes 23.974239°S and 32.756200°S, and longitudes 148.175259°E and 153.638336°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :bunya-burnett-ranges ,
+        :clarence-fall ,
+        :clarence-lowlands ,
+        :cunningham-slopes ,
+        :gunnedah-lowland ,
+        :liverpool-barrington-plateaus ,
+        :macleay-barrington-fall ,
+        :maryborough-lowland ,
+        :moreton-lowland ,
+        :nandewar-peaks ,
+        :taroom-hills ,
+        :tenterfield-plateau ,
+        :toowoomba-plateau ;
+    skos:notation "10500"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "New England–Moreton Uplands Province"@en ;
+.
+
+:newcastle-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rugged hills on acid volcanic, granite and metamorphic rocks. Bounded by latitudes 17.141193°S and 19.560565°S, and longitudes 143.368822°E and 144.468041°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10211"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Newcastle Ranges"@en ;
+.
+
+:normanton-tableland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stripped higher ferruginous surface on siltstone and sandstone. Bounded by latitudes 17.587587°S and 17.97482°S, and longitudes 140.796183°E and 141.127611°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20107"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Normanton Tableland"@en ;
+.
+
+:north-australian-plateaus-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "North Australian Plateaus Physiographic Province"@en ;
+    skos:definition "Low ranges, plateaus, tablelands and plains. Bounded by latitudes 10.903421°S and 18.623043°S, and longitudes 127.709584°E and 136.984985°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :arnhem-plateau ,
+        :arnhem-ridges ,
+        :daly-basin ,
+        :ord-victoria-plateaus ,
+        :pine-creek-ridges ,
+        :top-end-coastal-plains ,
+        :whirlwind-plain ;
+    skos:notation
+        "301"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30100"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NAP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "North Australian Plateaus Province"@en ;
+.
+
+:north-reefs
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Patch reefs with semicontinuous outer barrier. Bounded by latitudes 9.14129°S and 14.22723°S, and longitudes 141.419144°E and 144.063858°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10101"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "North Reefs"@en ;
+.
+
+:north-west-cape-ridges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low ridges and peninsula formed by folded limestone and sedimentary rocks; sandy plains. Bounded by latitudes 21.78509°S and 23.516084°S, and longitudes 113.627853°E and 114.400577°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30803"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPnr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "North West Cape Ridges"@en ;
+.
+
+:north-west-ramp
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Incised basalt ramp including coastal scarp, with some mudstone and weathered granite. Bounded by latitudes 40.925171°S and 41.55931°S, and longitudes 145.480141°E and 146.594074°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10807"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "North West Ramp"@en ;
+.
+
+:northam-slopes
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Flat-floored valleys of moderately incised oceanward drainage; older ferruginous remnants with breakaways on divides in east; stripped granite on valley sides in west. Bounded by latitudes 30.27922°S and 34.302188°S, and longitudes 115.978955°E and 117.780392°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30905"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPns"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Northam Slopes"@en ;
+.
+
+:northern-alice-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Granitic plains with ferruginous cappings; wash plains with sandplain, minor longitudinal dunes, and calcrete-rimmed salt lakes in lowest parts. Bounded by latitudes 21.969075°S and 23.84755°S, and longitudes 130.291359°E and 137.029688°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30502"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAPnp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Northern Alice Plains"@en ;
+.
+
+:northern-alice-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ranges and rounded summits, partly granitic and partly quartzite and sandstone. Bounded by latitudes 21.056309°S and 22.824971°S, and longitudes 130.346608°E and 136.455643°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30501"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAPnr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Northern Alice Ranges"@en ;
+.
+
+:nullagine-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected flat-topped hills of granitic, volcanic, and metamorphic rocks; interspersed by stony plains on granite. Bounded by latitudes 20.521125°S and 23.593862°S, and longitudes 116.080864°E and 121.413178°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30702"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIPnh"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Nullagine Hills"@en ;
+.
+
+:nullarbor-plain-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Nullarbor Plain Physiographic Province"@en ;
+    skos:definition "Plateaus, hills and ridges on resistant rocks, with some valley floors. Bounded by latitudes 28.892723°S and 34.108841°S, and longitudes 123.316086°E and 132.708298°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :bunda-plateau ,
+        :carlisle-plain ,
+        :israelite-plain ,
+        :roe-plain ;
+    skos:notation
+        "310"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "31000"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NPP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Nullarbor Plain Province"@en ;
+.
+
+:nulty-springs-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rolling downs and lowlands with hard red ridges and flats. Ferruginized regolith quite different from surrounding alluvial and sand plains. Bounded by latitudes 28.601625°S and 29.990434°S, and longitudes 145.582829°E and 147.063709°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20227"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Nulty Springs Lowlands"@en ;
+.
+
+:olary-spur
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low hill belt of folded crystalline and sedimentary rocks. Bounded by latitudes 31.674194°S and 33.41426°S, and longitudes 139.010067°E and 140.74781°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31205"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Olary Spur"@en ;
+.
+
+:onslow-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alluvial, deltaic, and littoral plains; some sandplain and coastal dunes; minor islands. Bounded by latitudes 20.35881°S and 22.594877°S, and longitudes 114.303879°E and 116.146432°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30801"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPop"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Onslow Plain"@en ;
+.
+
+:oodnadatta-tablelands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Silcrete-capped low tablelands. Bounded by latitudes 25.658357°S and 30.379555°S, and longitudes 133.128183°E and 137.362127°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20223"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Oodnadatta Tablelands"@en ;
+.
+
+:ord-victoria-plateaus
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected plateaus, mainly basaltic but partly of sandstone with local ferruginous cappings. Bounded by latitudes 13.216329°S and 18.623043°S, and longitudes 127.709584°E and 132.195317°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30106"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NAPop"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Ord–Victoria Plateaus"@en ;
+.
+
+:palmerville-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Granitic hills and plateaus and sandstone mesas with intervening plains. Bounded by latitudes 15.588526°S and 16.518965°S, and longitudes 143.465556°E and 144.127454°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10207"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Palmerville Hills"@en ;
+.
+
+:paroo-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain with alluvial flats and claypans. Bounded by latitudes 27.294256°S and 30.373204°S, and longitudes 142.824185°E and 145.410658°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20213"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Paroo Plain"@en ;
+.
+
+:peninsular-uplands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Peninsular Uplands Physiographic Province"@en ;
+    skos:definition "Interior lowlands, mainly internally draining. Bounded by latitudes 9.354060°S and 19.560565°S, and longitudes 141.718155°E and 146.150360°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :atherton-tableland ,
+        :cairns-ranges ,
+        :coleman-plateau ,
+        :cooktown-ranges ,
+        :einasleigh-plains ,
+        :garnet-uplands ,
+        :gilbert-hills ,
+        :gregory-range ,
+        :jardine-uplands ,
+        :laura-plain ,
+        :newcastle-ranges ,
+        :palmerville-hills ,
+        :torres-high-islands ,
+        :wenlock-uplands ;
+    skos:notation "10200"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Peninsular Uplands Province"@en ;
+.
+
+:pilbara-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Pilbara Physiographic Province"@en ;
+    skos:definition "Coastal and alluvial plains, plateaus, scarps, and low hills. Bounded by latitudes 20.014311°S and 27.020391°S, and longitudes 114.943213°E and 123.619433°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :augustus-ranges ,
+        :carnegie-hills ,
+        :chichester-range ,
+        :de-grey-lowlands ,
+        :fortescue-valley ,
+        :glengarry-hills ,
+        :hamersley-plateaus ,
+        :nullagine-hills ;
+    skos:notation
+        "307"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30700"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "PIP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Pilbara Province"@en ;
+.
+
+:pine-creek-ridges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rounded ridges of folded metamorphic rocks with granitic plains and minor quartzite plateaus. Bounded by latitudes 12.591672°S and 14.301195°S, and longitudes 130.807472°E and 132.975587°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30104"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NAPpr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Pine Creek Ridges"@en ;
+.
+
+:redvers-dunefield
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "East–west longitudinal dunes. Bounded by latitudes 22.159016°S and 23.233663°S, and longitudes 127.599033°E and 131.672497°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30607"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPrd"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Redvers Dunefield"@en ;
+.
+
+:richenda-foothills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rounded hills and ridges and lowlands on a belt of granite and folded metamorphic and sedimentary rocks with minor basalt. Bounded by latitudes 15.5098°S and 18.099116°S, and longitudes 123.151871°E and 126.579422°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30206"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPrf"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Richenda Foothills"@en ;
+.
+
+:riverine-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alluvial plain. Bounded by latitudes 32.532551°S and 36.949484°S, and longitudes 142.826891°E and 146.761128°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20305"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Riverine Plain"@en ;
+.
+
+:roe-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Coastal limestone plain with extensive dunes. Bounded by latitudes 31.675752°S and 32.321461°S, and longitudes 125.893166°E and 128.995019°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "31003"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NPPrp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Roe Plain"@en ;
+.
+
+:rudall-tablelands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected low sandstone tablelands with hills and ranges on gneiss and intervening areas of sandplains. Bounded by latitudes 21.424074°S and 23.726928°S, and longitudes 121.341582°E and 123.566975°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30609"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPrt"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Rudall Tablelands"@en ;
+.
+
+:salmon-gums-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Flat to undulating plain with salt lakes and occasional granitic low hills. Bounded by latitudes 32.246049°S and 33.6694°S, and longitudes 120.450452°E and 123.671862°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30902"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPsg"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Salmon Gums Plain"@en ;
+.
+
+:sandland-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Sandland Physiographic Province"@en ;
+    skos:definition "Higher uplands falling to the east coast. Bounded by latitudes 17.842708°S and 32.196006°S, and longitudes 118.807411°E and 135.621357°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :anketell-hills ,
+        :eighty-mile-plain ,
+        :gibson-desert-plains ,
+        :great-sandy-desert-dunefield ,
+        :great-victoria-desert-dunes ,
+        :little-sandy-desert ,
+        :macdonald-sandplain ,
+        :redvers-dunefield ,
+        :rudall-tablelands ,
+        :stansmore-dunefield-and-ranges ,
+        :sturt-creek-floodout ;
+    skos:notation
+        "306"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30600"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Sandland Province"@en ;
+.
+
+:sandover-sandplain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain with minor low sandstone tablelands and floodouts; sandy ferruginous plains in south. Bounded by latitudes 17.692407°S and 22.399285°S, and longitudes 133.681662°E and 137.472613°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30406"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPss"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Sandover Sandplain"@en ;
+.
+
+:scartwater-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Hills, ridges and valleys on sandstone and minor metamorphic rocks. Bounded by latitudes 20.765358°S and 22.208163°S, and longitudes 147.394594°E and 146.158662°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10404"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Scartwater Hills"@en ;
+.
+
+:shark-bay-peninsulas
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Peninsulas, islands, and hinterland formed on indurated limestone dunes; sandplain, dunes and calcrete plains. Bounded by latitudes 25.480511°S and 26.954729°S, and longitudes 112.921501°E and 114.781437°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30806"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPsb"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Shark Bay Peninsulas"@en ;
+.
+
+:simpson-desert-dunefield
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "South–north longitudinal dunes with sandstone ridges in the west and playas in the south. Bounded by latitudes 23.06095°S and 27.714416°S, and longitudes 134.394858°E and 139.367053°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20218"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Simpson Desert Dunefield"@en ;
+.
+
+:simpson-desert-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Eolian dunefield (north-northwest trending seif dunes), with numerous claypans, Eolian sand, fine lacustrine and alluvial deposits. Bounded by latitudes 25.595982°S and 29.261594°S, and longitudes 136.70049°E and 138.799131°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20229"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Simpson Desert Plains"@en ;
+.
+
+:south-reefs
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Patch reefs with bedrock islands and discontinuous outer barrier. Bounded by latitudes 14.05041°S and 24.09646°S, and longitudes 144.202148°E and 152.394791°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10102"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "South Reefs"@en ;
+.
+
+:south-victorian-uplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low fault blocks, mainly of tilted and dissected sandstone; granite hills and islands, in two parts either side of Port Phillip Bay. Bounded by latitudes 37.991314°S and 39.522331°S, and longitudes 143.134495°E and 147.030334°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10710"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "South Victorian Uplands"@en ;
+.
+
+:southern-goldfields-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating plains with some sandplains, ferruginous breakaways; ridges of metamorphic rocks and granitic hills and rises; calcretes, large salt lakes and dunes along valleys. Bounded by latitudes 29.016662°S and 32.662586°S, and longitudes 117.411349°E and 124.341387°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30903"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPsp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Southern Goldfields Plateau"@en ;
+.
+
+:springsure-clermont-plateaus
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Moderately dissected low plateaus, mainly basalt with minor sandstone. Bounded by latitudes 22.215523°S and 24.600405°S, and longitudes 147.266649°E and 149.020632°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10409"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Springsure–Clermont Plateaus"@en ;
+.
+
+:springvale-foothills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Granitic, volcanic, and sedimentary hills with minor undulating plains. Bounded by latitudes 16.676474°S and 18.984041°S, and longitudes 126.225017°E and 128.479206°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30209"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPsf"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Springvale Foothills"@en ;
+.
+
+:st-george-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain, residual sand on old alluvium. Bounded by latitudes 26.233764°S and 28.997905°S, and longitudes 145.965588°E and 148.903252°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20215"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "St George Plain"@en ;
+.
+
+:stansmore-dunefield-and-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "East–west longitudinal dunes locally broken by narrow sandstone ranges. Bounded by latitudes 19.052684°S and 22.215138°S, and longitudes 125.851631°E and 128.367324°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30605"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPsd"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Stansmore Dunefield and Ranges"@en ;
+.
+
+:strzelecki-desert-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Longitudinal dunes and stony plains, minor claypans and floodplains. Bounded by latitudes 26.98873°S and 31.370752°S, and longitudes 138.673846°E and 142.857612°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20220"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Strzelecki Desert Plains"@en ;
+.
+
+:sturt-creek-floodout
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodout with distributary channels and claypan. Bounded by latitudes 19.560462°S and 20.325222°S, and longitudes 127.028081°E and 127.706658°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30611"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "SAPsf"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Sturt Creek Floodout"@en ;
+.
+
+:sturt-desert-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stony plains with minor sand ridges. Bounded by latitudes 25.464829°S and 28.340281°S, and longitudes 138.396075°E and 141.955651°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20219"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Sturt Desert Plains"@en ;
+.
+
+:sturt-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Shallowly dissected plateau of ferruginized sandstone with alluviated valleys. Bounded by latitudes 14.222438°S and 17.956062°S, and longitudes 131.590314°E and 137.65821°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30401"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPsp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Sturt Plateau"@en ;
+.
+
+:swan-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dune ridges (on limestone along the coast) and inner alluvial plain. Bounded by latitudes 30.117897°S and 33.79439°S, and longitudes 114.970154°E and 116.059826°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30810"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPsp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Swan Plain"@en ;
+.
+
+:tanami-sandplain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain with minor longitudinal dunes in south; floodplains and floodouts on margins; stony rises in north. Bounded by latitudes 16.374853°S and 22.820198°S, and longitudes 127.727898°E and 134.708285°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30403"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPts"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Tanami Sandplain"@en ;
+.
+
+:tanami-sandplain-and-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain with scattered low ranges and tablelands and occasional granitic and sedimentary hills. Bounded by latitudes 17.932231°S and 20.656264°S, and longitudes 127.730425°E and 130.59688°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30404"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPtr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Tanami Sandplain and Ranges"@en ;
+.
+
+:taroom-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandstone ridges and shale lowlands. Bounded by latitudes 24.56042°S and 26.835811°S, and longitudes 148.175259°E and 151.344084°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10501"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Taroom Hills"@en ;
+.
+
+:tasmanian-uplands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Tasmanian Uplands Physiographic Province"@en ;
+    skos:definition "Dissected plateaus and tablelands, some alluvial plains. Bounded by latitudes 39.435318°S and 43.860401°S, and longitudes 143.819443°E and 148.498795°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :bass-coastal-platforms ,
+        :bass-islands ,
+        :east-tasmanian-hills ,
+        :lakes-plateau ,
+        :midlands-plain ,
+        :north-west-ramp ,
+        :west-tasmanian-ridges ;
+    skos:notation "10800"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Tasmanian Uplands Province"@en ;
+.
+
+:tenterfield-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating granitic plateau with higher residuals including basalt cappings. Bounded by latitudes 28.190536°S and 31.613426°S, and longitudes 150.916329°E and 152.900874°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10506"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Tenterfield Plateau"@en ;
+.
+
+:tinderry-gourock-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "High hill chains of granite, sandstone and greywacke, moderately dissected, some fault lines. Bounded by latitudes 35.256032°S and 36.690353°S, and longitudes 149.140357°E and 149.709269°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10704"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Tinderry–Gourock Ranges"@en ;
+.
+
+:tobermory-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Slightly dissected limestone plain, part stony and part sandy. Bounded by latitudes 21.199697°S and 23.253064°S, and longitudes 135.675156°E and 139.516732°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30407"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPtp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Tobermory Plain"@en ;
+.
+
+:todd-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stony lowland of calcareous conglomerate and other weak rocks, with extensive low dunes; anticlinal sandstone ridges. Bounded by latitudes 23.684565°S and 24.363842°S, and longitudes 131.733121°E and 134.240118°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30504"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAPtp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Todd Plains"@en ;
+.
+
+:toko-plateaus
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected sandstone plateaus. Bounded by latitudes 22.389649°S and 23.42368°S, and longitudes 136.724119°E and 138.561994°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30408"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "TPPop"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Toko Plateaus"@en ;
+.
+
+:toowoomba-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Basaltic plateau terminating southeast in dissected volcanic pile (Mount Warning). Bounded by latitudes 25.993017°S and 28.967651°S, and longitudes 151.19928°E and 153.638336°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10504"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Toowoomba Plateau"@en ;
+.
+
+:top-end-coastal-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected ferruginous lowlands and minor islands; part alluvial, part estuarine coastal plains. Bounded by latitudes 10.903421°S and 15.936886°S, and longitudes 127.780453°E and 136.984985°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30101"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NAPcp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Top End Coastal Plains"@en ;
+.
+
+:torrens-gulf-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Salt lake and bahadas in north; alluvial and littoral plains in south; northwest–southeast longitudinal dunes, mainly stabilized. Bounded by latitudes 30.025979°S and 35.030416°S, and longitudes 137.205397°E and 138.743677°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31202"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Torrens–Gulf Plains"@en ;
+.
+
+:torres-high-Islands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Islands and low coastal tablelands of volcanic rocks and granite, with fringing reefs. Bounded by latitudes 9.35406°S and 10.99771°S, and longitudes 141.909393°E and 142.707413°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Torres High Islands"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:townshend-ranges-and-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Mosaic of mountains, hills, lowlands and peninsulas. Lowlands include alluvial plains, tidal flats and coastal dunes. Bounded by latitudes 20.060381°S and 22.064371°S, and longitudes 149.523331°E and 148.368599°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10405"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Townshend Ranges and Lowlands"@en ;
+.
+
+:townsville-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alluvial and deltaic plains with scattered high hills. Bounded by latitudes 18.419587°S and 21.082521°S, and longitudes 145.853738°E and 148.424378°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10304"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Townsville Lowlands"@en ;
+.
+
+:upper-darling-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Floodplains of centripetal anastomosing rivers. Bounded by latitudes 27.928535°S and 32.980276°S, and longitudes 145.891529°E and 150.867872°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20216"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Upper Darling Plains"@en ;
+.
+
+:warburton-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ranges and hills of basic volcanic rocks and granite surrounded by hardpan wash plains and some sandplains. Bounded by latitudes 25.73046°S and 26.370232°S, and longitudes 126.478709°E and 127.596266°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30508"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAPwr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Warburton Ranges"@en ;
+.
+
+:warrego-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Main and distributary floodplains, sandplains with claypans. Bounded by latitudes 26.702518°S and 30.216786°S, and longitudes 144.786896°E and 146.924643°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20214"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Warrego Plains"@en ;
+.
+
+:warren-denmark-slopes
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ferruginous plateau, increasingly dissected in the south, exposing on granite and gneiss; finally merging into narrow swampy plain and coastal dunes. Bounded by latitudes 33.878074°S and 35.13485°S, and longitudes 115.748125°E and 17.768831°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30909"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPws"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Warren–Denmark Slopes"@en ;
+.
+
+:warrumbungle-peaks
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected volcanic pile with plugs. Bounded by latitudes 30.941727°S and 31.553229°S, and longitudes 148.737898°E and 149.26379°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10602"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Warrumbungle Peaks"@en ;
+.
+
+:warwick-lowland
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Stony plains with silcrete-capped mesas. Bounded by latitudes 28.23727°S and 32.095795°S, and longitudes 141.735532°E and 145.594392°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20222"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Warwick Lowland"@en ;
+.
+
+:weipa-plateau
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Bauxite-capped plateau on clayey sand and sandstone. Bounded by latitudes 11.302946°S and 15.2219°S, and longitudes 141.55867°E and 142.862072°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20101"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Weipa Plateau"@en ;
+.
+
+:wenlock-uplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Complex of tablelands and low plateaus with north–south lowlands, including the Great Escarpment, and coastal hills in the east. Bounded by latitudes 12.34867°S and 14.030618°S, and longitudes 142.810422°E and 143.598434°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10203"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Wenlock Uplands"@en ;
+.
+
+:werriwa-tablelands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Upland plains with separating strike-aligned hills, closed lake basins. Bounded by latitudes 34.465318°S and 35.654329°S, and longitudes 148.750323°E and 150.152407°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10702"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Werriwa Tablelands"@en ;
+.
+
+:west-tasmanian-ridges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Ridges of folded quartzite and conglomerate, glaciated in places, parallel valleys on weaker rocks. Bounded by latitudes 40.71249°S and 43.742649°S, and longitudes 144.911068°E and 146.760988°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10805"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "West Tasmanian Ridges"@en ;
+.
+
+:west-turkey-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plains with variable dune cover, claypans, saline swamps, and intermittent lakes in low-lying areas. Bounded by latitudes 31.813614°S and 34.798565°S, and longitudes 139.082269°E and 142.942363°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20310"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "West–Turkey Plains"@en ;
+.
+
+:west-victorian-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plains mainly on basalt lavas with many volcanic forms and lakes, partly on weak sedimentary rocks. Bounded by latitudes 37.412111°S and 38.688694°S, and longitudes 141.282568°E and 145.248168°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10709"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "West Victorian Plains"@en ;
+.
+
+:west-victorian-uplands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Moderately high plateaus and strike ridges. Bounded by latitudes 36.207532°S and 38.426071°S, and longitudes 141.02061°E and 145.220636°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "10708"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "West Victorian Uplands"@en ;
+.
+
+:western-coastlands-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Western Coastlands Physiographic Province"@en ;
+    skos:definition "Hills and plains, alluvial plains, some dunes and lakes. Bounded by latitudes 20.3588104855°S and 34.5421327617°S, and longitudes 112.921501077°E and 116.152210277°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :carnarvon-plain ,
+        :dandaragan-tablelands ,
+        :donnybrook-lowland ,
+        :greenough-hills ,
+        :kennedy-range ,
+        :leeuwin-peninsula ,
+        :north-west-cape-ridges ,
+        :onslow-plain ,
+        :shark-bay-peninsulas ,
+        :swan-plain ,
+        :yanrey-cane-plains ,
+        :yaringa-sandplain ;
+    skos:notation
+        "308"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30800"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Western Coastlands Province"@en ;
+.
+
+:western-desert-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Dissected sandstone, granitic and volcanic ranges with prominent escarpments; separated by sandplains with dunes of hardpan wash plains. Bounded by latitudes 24.475585°S and 26.511586°S, and longitudes 126.724991°E and 132.489328°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30506"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "CAPwd"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Western Desert Ranges"@en ;
+.
+
+:western-plateau-division
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Western Plateau Physiographic Division"@en ;
+    skos:definition "Mosaic of shield blocks and intracratonic basins; plains, plateaus, ranges, dune fields. Bounded by latitudes 10.9034°S and 36.396648°S, and longitudes 112.921501°E and 142.138110°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :barkly-tanami-plains-province ,
+        :carpentaria-fall-province ,
+        :central-australian-ranges-province ,
+        :eyre-peninsula-province ,
+        :gulfs-ranges-province ,
+        :kimberley-province ,
+        :north-australian-plateaus-province ,
+        :nullarbor-plain-province ,
+        :pilbara-province ,
+        :sandland-province ,
+        :western-coastlands-province ,
+        :yilgarn-plateau-province ;
+    skos:notation
+        "3"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "300"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30000"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WAD"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Western Plateau Division"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:whelen-lowlands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating clay plains with silcrete-capped mesas in east. Bounded by latitudes 23.061938°S and 24.495791°S, and longitudes 138.73827°E and 139.678729°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20207"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Whelen Lowlands"@en ;
+.
+
+:whirlwind-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Alluvial plain, mainly clay. Bounded by latitudes 14.56509°S and 16.421499°S, and longitudes 129.498352°E and 130.92762°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30107"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NAPwp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Whirlwind Plain"@en ;
+.
+
+:wimmera-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Eolian and alluvial sandplain, minor low sandstone ridges. Bounded by latitudes 35.255883°S and 37.299233°S, and longitudes E and 140.352986°143.308516°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20307"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Wimmera Plain"@en ;
+.
+
+:winton-blackall-downs
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating clay plains. Bounded by latitudes 20.026174°S and 26.040646°S, and longitudes 140.601093°E and 140.601093°146.996283°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Winton–Blackall Downs"@en ;
+.
+
+:wondoola-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Clay floodplain. Bounded by latitudes 17.647243°S and 20.864026°S, and longitudes 140.296911°E and 142.749084°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "20109"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Wondoola Plain"@en ;
+.
+
+:woodramung-hills
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Low rounded ridges of folded metamorphics with intervening sandy plains and hardpan wash plains. Bounded by latitudes 27.812263°S and 30.025157°S, and longitudes 115.428416°E and 117.713387°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30904"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPPwh"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Woodramung Hills"@en ;
+.
+
+:wunaamin-miliwundi-durack-ranges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Prominent ranges of dipping volcanic and granitic rocks and sandstones rimming the main Kimberley Plateau. The name of this physiographic region was changed from Leopold–Durack Ranges following the renaming of the King Leopold Ranges to Wunaamin Miliwundi Ranges in 2020. Bounded by latitudes 15.528314°S and 18.727432°S, and longitudes 124.447889°E and 128.948688°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30203"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "KIPlr"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Wunaamin Miliwundi and Durack Ranges"@en ;
+.
+
+:yanrey-cane-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain and south–north longitudinal dunes with intervening alluvial plains. Bounded by latitudes 21.025096°S and 23.364644°S, and longitudes 114.285043°E and 116.138486°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30802"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPyp"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Yanrey–Cane Plains"@en ;
+.
+
+:yaringa-sandplain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Sandplain with minor dunes; some stony plains. Bounded by latitudes 22.986782°S and 28.419387°S, and longitudes 113.77167°E and 116.15221°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "30807"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "WCPys"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Yaringa Sandplain"@en ;
+.
+
+:yilgarn-plateau-province
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "Yilgarn Plateau Physiographic Province"@en ;
+    skos:definition "This province is more-or-less coincident with the Murray sedimentary basin, consisting of flat alluvium with Eolian cover in places. Bounded by latitudes 25.167211°S and 35.193981 °S, and longitudes 115.212771°E and 124.341387°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :albany-esperance-sandplain ,
+        :avon-plateau ,
+        :coonana-ragged-plateau ,
+        :darling-range ,
+        :leemans-sandplain ,
+        :murchison-plateau ,
+        :northam-slopes ,
+        :salmon-gums-plain ,
+        :southern-goldfields-plateau ,
+        :warren-denmark-slopes ,
+        :woodramung-hills ;
+    skos:notation
+        "309"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "30900"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "YPP"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Yilgarn Plateau Province"@en ;
+.
+
+:yorke-peninsula
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Undulating lowland of folded crystalline and metamorphic rocks; cover of calcrete and stabilized northwest–southeast longitudinal dunes. Bounded by latitudes 33.3832°S and 35.907952°S, and longitudes 136.421646°E and 138.332656°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:notation "31206"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:prefLabel "Yorke Peninsula"@en ;
+.
+
+<https://linked.data.g​ov.au/org/gswa>
+    a prov:Agent ;
+    rdfs:label "Gswa" ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2023-09-20"^^xsd:date ;
+    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:identifier "Australian-physiographic-units"^^xsd:token ;
+    dcterms:modified "2023-09-20"^^xsd:date ;
+    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    owl:versionIRI :1 ;
+    owl:versionInfo "1" ;
+    skos:definition """A list of physiographic units in Australia that provide a consistent framework for mapping soils and landforms at national and regional scales, compiled at a continental scale. The list was defined by Pain et al. (2011; https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf)* and built on the work of Jennings and Mabbutt (1986). It recognises a subdivision of the Australian onshore continent into three physiographic divisions, 23 physiographic provinces and 220 physiographic regions. The three divisions correspond broadly with the geological subdivision into the western shields, the central basins and the eastern fold belts. Provinces can be used to make interpretations about landscape processes at the broadest scale; descriptors for provinces include a name, geology, structure, and broad regolith types. The primary descriptors for regions are geographic name and a simple text description including major geologic and geomorphic features. Bounding box coordinates in decimal degrees are included. Each physiographic unit is also identified by a numeric code (one, three, and five digits for divisions, provinces and regions, respectively). For physiographic units within Western Australia, notations provided include extensions to five-digit numbering for divisions and provinces, to allow better characterization for database purposes. For Western Australian physiographic units, an alphabetical code is also listed; these consist of three upper-case letters for the division and provinces, with an additional two lower-case letter suffix for regions. These alphabetical codes are used by the Geological Survey of Western Australia (GSWA) to spatially assign regolith units to the correct physiographic unit during mapping. GSWA describes a physiographic unit as 'A named geomorphological entity with internal coherence in its landform characteristics and landform evolutionary history. At the lowest levels, physiographic units reflect the underlying geology and have similar groupings of regolith materials that are related to the landform types, their evolution, and the underlying bedrock.'
+*Pain, C, Gregory, L, Wilson, P and McKenzie, N (2011), The physiographic regions of Australia – Explanatory notes 2011; Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain (dataset available at https://www.asris.csiro.au/themes/PhysioRegions.html)."""@en ;
+    skos:hasTopConcept
+        :Innamincka-plains ,
+        :Isa-ridges ,
+        :Israelite-plain ,
+        :Ivanhoe-plains ,
+        :bass-Islands ,
+        :eastern-upland-division ,
+        :interior-lowland-division ,
+        :torres-high-Islands ,
+        :western-plateau-division ;
+    skos:historyNote "The scheme for Australian physiographic units is derived from: Pain, C, Gregory, L, Wilson, P and McKenzie, N (2011), The physiographic regions of Australia – Explanatory notes 2011; Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain (dataset available at https://www.asris.csiro.au/themes/PhysioRegions.html). The Geological Survey of Western Australia's regolith classification system is available at https://dmpbookshop.eruditetechnologies.com.au/product/revised-classification-system-for-regolith-in-western-australia-and-the-recommended-approach-to-regolith-mapping.do (2024 update including physiographic units is in progress)."@en ;
+    skos:prefLabel "Australian physiographic units"@en ;
+.
+
