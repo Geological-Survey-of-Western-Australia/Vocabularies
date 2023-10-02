@@ -369,17 +369,17 @@ BASE <https://w3id.org/profile/vocpub/validator/>
     ]
 .
 
-<Requirement-2.3.2>
-	a sh:NodeShape ;
-	sh:targetClass skos:Concept ;
-    sh:message "Requirement 2.3.2 Each skos:Concept in a vocabulary MAY indicate the vocabulary that defines it by use of the `rdfs:isDefinedBy` predicate indicating a `skos:ConceptScheme` instance" ;
-    sh:property [
-        sh:path rdfs:isDefinedBy ;
-        sh:minCount 0 ;
-        sh:maxCount 1 ;
-        sh:nodeKind sh:IRI ;
-    ]
-.
+#<Requirement-2.3.2>
+#	a sh:NodeShape ;
+#	sh:targetClass skos:Concept ;
+#    sh:message "Requirement 2.3.2 Each skos:Concept in a vocabulary MAY indicate the vocabulary that defines it by use of the `rdfs:isDefinedBy` predicate indicating a `skos:ConceptScheme` instance" ;
+#    sh:property [
+#        sh:path rdfs:isDefinedBy ;
+#        sh:minCount 0 ;
+#        sh:maxCount 1 ;
+#        sh:nodeKind sh:IRI ;
+#    ]
+#.
 
 <Requirement-2.3.3>
 	a sh:NodeShape ;
