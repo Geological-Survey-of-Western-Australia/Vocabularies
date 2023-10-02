@@ -178,16 +178,16 @@ BASE <https://w3id.org/profile/vocpub/validator/>
     ] ;
 .
 
-<Requirement-2.1.7c>
-    a sh:NodeShape ;
-    sh:targetSubjectsOf dcterms:source ;
-    sh:property [
-        a sh:PropertyShape ;
-        sh:maxCount 1 ;
-        sh:path dcterms:source ;
-        sh:message "You _MUST NOT_ use dcterms:source predicate more than once on any object." ;
-    ] ;
-.
+#<Requirement-2.1.7c>
+#    a sh:NodeShape ;
+#    sh:targetSubjectsOf dcterms:source ;
+#    sh:property [
+#        a sh:PropertyShape ;
+#        sh:maxCount 1 ;
+#        sh:path dcterms:source ;
+#        sh:message "You _MUST NOT_ use dcterms:source predicate more than once on any object." ;
+#    ] ;
+#.
 
 <Requirement-2.1.7d>
     a sh:NodeShape ;
