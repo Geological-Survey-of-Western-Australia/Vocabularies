@@ -6,7 +6,7 @@ on:
 
 jobs:
   publish:
-    uses: Geological-Survey-of-Western-Australia/Vocabularies/.github/workflows/upload-to-database.yml@master
+    uses: Geological-Survey-of-Western-Australia/Vocabularies/.github/workflows/upload-to-database.yml@main
     with:
       environment: prod
       request_timeout: 300
