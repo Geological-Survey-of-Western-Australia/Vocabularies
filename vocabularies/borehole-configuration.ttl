@@ -18,7 +18,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "https://linked.data.gov.au/def/borehole-design/deviated"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/borehole-design/deviated> ;
-    skos:definition "A borehole intentionally drilled at controlled departures from the vertical or parent borehole trajectory and at controlled azimuths, achieved with the use of geosteering equipment or via other methods (e.g. directional wedge). The main purpose is usually to establish multiple boreholes from a single location and/or to intersect a target or zone of interest. Note that the term 'deviated' is not recommended as an alternate label of 'directional', as it can be used to refer to a borehole that unintentionally deviates from the intended trajectory.."@en ;
+    skos:definition "A borehole intentionally drilled at controlled departures from the vertical or parent borehole trajectory and at controlled azimuths, achieved with the use of geosteering equipment or via other methods (e.g. directional wedge). The main purpose is usually to establish multiple boreholes from a single location and/or to intersect a target or zone of interest. Note that the term 'deviated' is not recommended as an alternate label of 'directional', as it can be used to refer to a borehole that unintentionally deviates from the intended trajectory..."@en ;
     skos:historyNote "Energy and mineral industry concept" ;
     skos:inScheme cs: ;
     skos:narrower
