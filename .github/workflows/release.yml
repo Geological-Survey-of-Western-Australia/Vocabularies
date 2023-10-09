@@ -1,8 +1,8 @@
-name: Upload data to prod database on prerelease
+name: Upload data to prod database on release
 
 on:
   release:
-    types: [published]
+    types: [released]
 
 jobs:
   publish:
