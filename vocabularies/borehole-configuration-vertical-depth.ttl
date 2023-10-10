@@ -1,4 +1,5 @@
 PREFIX : <http://draft.com/vertical-depth-reference-systems/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://draft.com/vertical-depth-reference-systems>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -6,6 +7,8 @@ PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsibl
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -208,9 +211,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :drill-collar
     a skos:Concept ;
     dcterms:source "http://linked.data.gov.au/def/depth-reference/drill-collar"^^xsd:anyURI ;
-    rdfs:isDefinedBy
-        cs: ,
-        <http://linked.data.gov.au/def/depth-reference> ;
+    rdfs:isDefinedBy cs: ;
     skos:closeMatch <http://linked.data.gov.au/def/depth-reference/drill-collar> ;
     skos:definition "In the mineral resources industry, 'drill collar' is referred to as the location (in an x, y, z coordinate system) as well as the start point of a borehole from which depths are measured. Drill collars are tubular pieces of material, usually metal or plastic, to aid in keeping the hole entry from collapsing."@en ;
     skos:historyNote "Mineral industry concept" ;
@@ -404,20 +405,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
-    a prov:Agent ;
-    rdfs:label "Gswa" ;
+<https://linked.data.gov.au/org/gswa>
+    a sdo:Organization ;
+    sdo:name "Geological Survey of Western Australia" ;
+    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-06"^^xsd:date ;
-    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
     dcterms:identifier "vertical-depth-reference-systems"^^xsd:token ;
     dcterms:modified "2023-09-06"^^xsd:date ;
-    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
+    reg:status agldwgstatus:stable ;
     skos:definition "The point or level from which heights and depths are measured and referenced to for an entity or activity. Typically these are expressed relative to a common global or regional reference datum such as the Australian Height Datum (AHD) or can be related to local reference systems. Specific emphasis is placed on elevation references used by resource exploration and drilling programs, whereby depths are measured relative to local reference datums or specific parts of a borehole/drilling platform. Concepts in this vocabulary include both reference datums (e.g. mean sea level) and how depths are expressed relative to them (e.g. mean sea level height)."@en ;
     skos:hasTopConcept
         :Australian-Height-Datum-TAS83 ,

@@ -1,4 +1,5 @@
 PREFIX : <https://draft.com/dmirs-offices/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://draft.com/dmirs-offices>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -6,6 +7,8 @@ PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsibl
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -21,6 +24,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :mineral-house ,
         :perth-core-library ;
     skos:prefLabel "GSWA offices"@en ;
+    skos:historyNote "Created for this vocabulary" ;
 .
 
 :mine-inspectorate-offices-wa
@@ -292,9 +296,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Southern Cross office"@en ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
-    a prov:Agent ;
-    rdfs:label "Gswa" ;
+<https://linked.data.gov.au/org/gswa>
+    a sdo:Organization ;
+    sdo:name "Geological Survey of Western Australia" ;
+    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 :karratha-office
@@ -344,12 +349,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-13"^^xsd:date ;
-    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
     dcterms:identifier "dmirs-offices"^^xsd:token ;
     dcterms:modified "2023-09-13"^^xsd:date ;
-    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
+    reg:status agldwgstatus:stable ;
     skos:definition "Names and physical locations of metropolitan and regional offices of the Department of Mines, Industry Regulation and Safety (DMIRS). The list includes venues with or without public access or information facilities, and highlights the location of Western Australia core libraries and offices of the Geological Survey of Western Australia (GSWA), as well as Mine Inspectorate and Mining Registrar offices. "@en ;
     skos:hasTopConcept
         :dmirs-metropolitan ,

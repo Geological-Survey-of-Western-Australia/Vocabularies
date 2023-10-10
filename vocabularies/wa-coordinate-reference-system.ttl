@@ -1,4 +1,5 @@
-PREFIX : <https://draft.com/wa-coordinate-reference-system/>
+PREFIX : <https://draft.com/wa-coordinate-reference-systems/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://draft.com/wa-coordinate-reference-systems>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -6,14 +7,17 @@ PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsibl
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :geographic
     a skos:Collection ;
-    skos:definition "A geographic coordinate system (GCS) is a coordinate system that uses a three-dimensional (spherical or ellipsoidal) surface  to define locations on the Earth. Any location on Earth can be referenced by a point with longitude and latitude coordinates."@en ;
+    skos:definition "A geographic coordinate system (GCS) is a coordinate system that uses a three-dimensional (spherical or ellipsoidal) surface  to define locations on the Earth. Any location on Earth can be referenced by a point with longitude and latitude coordinates."@en ;
     skos:historyNote "Includes geographic coordinate systems used in Western Australia" ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
     skos:member
         :Clarke1858 ,
         :agd66 ,
@@ -29,6 +33,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Projected coordinate systems that apply to the State of Western Australia. A projected coordinate system (PCS) is a projection of the geographic coordinates on a flat, two-dimensional surface (a map). The projection currently used to convert between Australian Geodetic Data and their projected equivalents is the Universal Transverse Mercator (UTM) projection. Unlike a geographic coordinate system, a projected coordinate system has constant lengths, angles and areas across the two dimensions. In a projected coordinate system, locations are identified by x, y coordinates on a grid, with the origin at the centre of the grid. Each position has two values that reference it to that central location. One specifies its horizontal position and the other its vertical position. The two values are called the x-coordinate and y-coordinate. Using this notation, the coordinates at the origin are x = 0 and y = 0."@en ;
     skos:historyNote "Compiled by GSWA to group projected coordinate systems that apply to the State of Western Australia." ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
     skos:member
         :amg66 ,
         :amg66-z49 ,
@@ -62,6 +67,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "The Universal Transverse Mercator (UTM) zones used and referred to within Western Australia. The UTM system divides the Earth into 60 zones, each 6°  longitude in width. Zone 1 covers longitudes 180–174°W; zone numbering increases eastward to zone 60, which covers longitudes 174–180°E. The polar regions south of 80°S and north of 84°N are excluded."@en ;
     skos:historyNote "Compiled by GSWA to group UTM zones that apply to the State of Western Australia." ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
     skos:member
         :utm-z49 ,
         :utm-z50 ,
@@ -701,20 +707,22 @@ Note EPGS registry""" ;
     skos:prefLabel "WGS84 / UTM zone 52S"@en ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
-    a prov:Agent ;
-    rdfs:label "Gswa" ;
+<https://linked.data.gov.au/org/gswa>
+    a sdo:Organization ;
+    sdo:name "Geological Survey of Western Australia" ;
+    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-13"^^xsd:date ;
-    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
     dcterms:identifier "wa-coordinate-reference-systems"^^xsd:token ;
     dcterms:modified "2023-09-13"^^xsd:date ;
-    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI <https://draft.com/wa-coordinate-reference-systems/1> ;
     owl:versionInfo "1" ;
+    reg:status agldwgstatus:stable ;
     skos:definition "The coordinate reference systems (geographic and projected) used and referred to within Western Australia. It includes historical and current reference systems, Universal Transverse Mercator (UTM) zones, and, where applicable, notations based on the EPSG registry (https://epsg.io/). Some concepts are included to account for legacy data/maps with limited information."@en ;
     skos:hasTopConcept
         :Clarke1858 ,
