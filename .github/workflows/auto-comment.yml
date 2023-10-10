@@ -4,11 +4,12 @@ jobs:
   comment:
     runs-on: ubuntu-latest
 
-    permissions:
-      pull-requests: write
-    
     steps:
-      - uses: actions/github-script@v6
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Comment on PR
+        uses: actions/github-script@v6
         with:
           script: |
             github.rest.issues.createComment({
@@ -17,6 +18,5 @@ jobs:
               repo: context.repo.repo,
               body: '👋 Please make sure the vocabulary Excel document is updated.'
             })
-
-
-            
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
