@@ -10,53 +10,29 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :Innamincka-plains
-    a skos:Concept ;
-    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Eolian sandplain with west- to north-northwest-trending seif dunes, and numerous claypans and alluvial areas (floodout of Cooper Creek). Bounded by latitudes 26.326344°S and 28.826029°S, and longitudes 139.207682°E and 140.814965°E."@en ;
-    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
-    skos:inScheme cs: ;
     skos:notation "20228"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-    skos:prefLabel "Innamincka Plains"@en ;
-    skos:topConceptOf cs: ;
 .
 
 :Isa-ridges
-    a skos:Concept ;
-    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Rugged parallel ranges and narrow lowlands on folded metamorphic rocks and granites. Bounded by latitudes 18.851091°S and 22.72337°S, and longitudes 138.904461°E and 140.930081°E."@en ;
-    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
-    skos:inScheme cs: ;
     skos:notation "30303"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-    skos:prefLabel "Isa Ridges"@en ;
-    skos:topConceptOf cs: ;
 .
 
 :Israelite-plain
-    a skos:Concept ;
-    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Narrow coastal plain with extensive dunes. Bounded by latitudes 32.926917°S and 34.108841°S, and longitudes 123.498621°E and 124.49038°E."@en ;
-    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
-    skos:inScheme cs: ;
     skos:notation
         "31004"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
         "NPPib"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-    skos:prefLabel "Israelite Plain"@en ;
-    skos:topConceptOf cs: ;
 .
 
 :Ivanhoe-plains
-    a skos:Concept ;
-    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Plains with low west–east stabilized longitudinal dunes and sandplain, small pans with lunettes, minor sandstone ridges, floodplains. Bounded by latitudes 31.291259°S and 34.470967°S, and longitudes 139.760816°E and 145.562091°E."@en ;
-    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
-    skos:inScheme cs: ;
     skos:notation "20304"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-    skos:prefLabel "Ivanhoe Plains"@en ;
-    skos:topConceptOf cs: ;
+.
+
+:bass-Islands
+    skos:notation "10801"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+.
+
+:torres-high-Islands
+    skos:notation "10201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
 .
 
 :albany-esperance-sandplain
@@ -265,18 +241,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Barrier Ranges"@en ;
 .
 
-:bass-Islands
-    a skos:Concept ;
-    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Islands with low plateaus, partly dune covered with granite residual hills. Bounded by latitudes 39.435318°S and 40.594002°S, and longitudes 143.819443°E and 148.498795°E."@en ;
-    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
-    skos:inScheme cs: ;
-    skos:notation "10801"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-    skos:prefLabel "Bass Islands"@en ;
-    skos:topConceptOf cs: ;
-.
-
 :bass-coastal-platforms
     a skos:Concept ;
     dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
@@ -286,6 +250,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "10802"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Bass Coastal Platforms"@en ;
+.
+
+:bass-islands
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Islands with low plateaus, partly dune covered with granite residual hills. Bounded by latitudes 39.435318°S and 40.594002°S, and longitudes 143.819443°E and 148.498795°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Bass Islands"@en ;
 .
 
 :bathurst-tablelands
@@ -1537,6 +1511,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Hunter Valley"@en ;
 .
 
+:innamincka-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Eolian sandplain with west- to north-northwest-trending seif dunes, and numerous claypans and alluvial areas (floodout of Cooper Creek). Bounded by latitudes 26.326344°S and 28.826029°S, and longitudes 139.207682°E and 140.814965°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Innamincka Plains"@en ;
+.
+
 :interior-lowland-division
     a skos:Concept ;
     dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
@@ -1555,6 +1539,36 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "20000"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Interior Lowland Division"@en ;
     skos:topConceptOf cs: ;
+.
+
+:isa-ridges
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Rugged parallel ranges and narrow lowlands on folded metamorphic rocks and granites. Bounded by latitudes 18.851091°S and 22.72337°S, and longitudes 138.904461°E and 140.930081°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Isa Ridges"@en ;
+.
+
+:israelite-plain
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Narrow coastal plain with extensive dunes. Bounded by latitudes 32.926917°S and 34.108841°S, and longitudes 123.498621°E and 124.49038°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Israelite Plain"@en ;
+.
+
+:ivanhoe-plains
+    a skos:Concept ;
+    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Plains with low west–east stabilized longitudinal dunes and sandplain, small pans with lunettes, minor sandstone ridges, floodplains. Bounded by latitudes 31.291259°S and 34.470967°S, and longitudes 139.760816°E and 145.562091°E."@en ;
+    skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ivanhoe Plains"@en ;
 .
 
 :jardine-uplands
@@ -2827,16 +2841,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "Torrens–Gulf Plains"@en ;
 .
 
-:torres-high-Islands
+:torres-high-islands
     a skos:Concept ;
     dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Islands and low coastal tablelands of volcanic rocks and granite, with fringing reefs. Bounded by latitudes 9.35406°S and 10.99771°S, and longitudes 141.909393°E and 142.707413°E."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
     skos:inScheme cs: ;
-    skos:notation "10201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Torres High Islands"@en ;
-    skos:topConceptOf cs: ;
 .
 
 :townshend-ranges-and-lowlands
@@ -3243,14 +3255,8 @@ cs:
     skos:definition """A list of physiographic units in Australia that provide a consistent framework for mapping soils and landforms at national and regional scales, compiled at a continental scale. The list was defined by Pain et al. (2011; https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf)* and built on the work of Jennings and Mabbutt (1986). It recognises a subdivision of the Australian onshore continent into three physiographic divisions, 23 physiographic provinces and 220 physiographic regions. The three divisions correspond broadly with the geological subdivision into the western shields, the central basins and the eastern fold belts. Provinces can be used to make interpretations about landscape processes at the broadest scale; descriptors for provinces include a name, geology, structure, and broad regolith types. The primary descriptors for regions are geographic name and a simple text description including major geologic and geomorphic features. Bounding box coordinates in decimal degrees are included. Each physiographic unit is also identified by a numeric code (one, three, and five digits for divisions, provinces and regions, respectively). For physiographic units within Western Australia, notations provided include extensions to five-digit numbering for divisions and provinces, to allow better characterization for database purposes. For Western Australian physiographic units, an alphabetical code is also listed; these consist of three upper-case letters for the division and provinces, with an additional two lower-case letter suffix for regions. These alphabetical codes are used by the Geological Survey of Western Australia (GSWA) to spatially assign regolith units to the correct physiographic unit during mapping. GSWA describes a physiographic unit as 'A named geomorphological entity with internal coherence in its landform characteristics and landform evolutionary history. At the lowest levels, physiographic units reflect the underlying geology and have similar groupings of regolith materials that are related to the landform types, their evolution, and the underlying bedrock.'
 *Pain, C, Gregory, L, Wilson, P and McKenzie, N (2011), The physiographic regions of Australia – Explanatory notes 2011; Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain (dataset available at https://www.asris.csiro.au/themes/PhysioRegions.html)."""@en ;
     skos:hasTopConcept
-        :Innamincka-plains ,
-        :Isa-ridges ,
-        :Israelite-plain ,
-        :Ivanhoe-plains ,
-        :bass-Islands ,
         :eastern-upland-division ,
         :interior-lowland-division ,
-        :torres-high-Islands ,
         :western-plateau-division ;
     skos:historyNote "The scheme for Australian physiographic units is derived from: Pain, C, Gregory, L, Wilson, P and McKenzie, N (2011), The physiographic regions of Australia – Explanatory notes 2011; Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain (dataset available at https://www.asris.csiro.au/themes/PhysioRegions.html). The Geological Survey of Western Australia's regolith classification system is available at https://dmpbookshop.eruditetechnologies.com.au/product/revised-classification-system-for-regolith-in-western-australia-and-the-recommended-approach-to-regolith-mapping.do (2024 update including physiographic units is in progress)."@en ;
     skos:prefLabel "Australian physiographic units"@en ;
