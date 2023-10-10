@@ -1,4 +1,5 @@
-PREFIX : <https://draft.com/>
+PREFIX : <https://draft.com/wa-mineral-fields-and-districts/wa-mineral-fields-and-districts/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://draft.com/wa-mineral-fields-and-districts/wa-mineral-fields-and-districts>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -6,6 +7,8 @@ PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsibl
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -13,6 +16,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Kalgoorlie that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
     skos:member
         :broadarrow-mineral-field ,
         :bulong-mineral-district ,
@@ -30,6 +35,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Karratha that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
     skos:member
         :ashburton-mineral-field ,
         :gascoyne-mineral-field ,
@@ -43,6 +50,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the town of Leonora that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
     skos:member
         :lawlers-mineral-district ,
         :mtmalcolm-mineral-district ,
@@ -56,6 +65,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Perth that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
     skos:member
         :marblebar-mineral-district ,
         :nullagine-mineral-district ;
@@ -66,6 +77,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Perth that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
     skos:member
         :meekatharra-mineral-district ,
         :peakhill-mineral-field ,
@@ -77,6 +90,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the town of Mount Magnet that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
     skos:member
         :blackrange-mineral-district ,
         :cue-mineral-district ,
@@ -90,6 +105,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Perth that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
     skos:member
         :collieriver-mineral-field ,
         :greenbushes-mineral-field ,
@@ -104,6 +121,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Collection ;
     skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the town of Southern Cross that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
     skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
     skos:member
         :coolgardie-mineral-district ,
         :kunnanalling-mineral-district ,
@@ -878,20 +897,22 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
-    a prov:Agent ;
-    rdfs:label "Gswa" ;
+<https://linked.data.gov.au/org/gswa>
+    a sdo:Organization ;
+    sdo:name "Geological Survey of Western Australia" ;
+    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-12"^^xsd:date ;
-    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
     dcterms:identifier "wa-mineral-fields-and-districts"^^xsd:token ;
     dcterms:modified "2023-09-12"^^xsd:date ;
-    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI <https://draft.com/wa-mineral-fields-and-districts/wa-mineral-fields-and-districts/1> ;
     owl:versionInfo "1" ;
+    reg:status agldwgstatus:stable ;
     skos:definition "The State of Western Australia is divided into various Mineral Fields that represent administrative land subdivisions under which mining is administered in the State according to Section 16 of the Mining Act 1978. Some mineral fields are further subdivided into Districts. Mineral field and district boundaries can be changed by proclamation under the Mining Act 1978 — the listing provided is current as of June 2023. Each mineral field or district is characterized by a two-digit prefix code used for map representations and tenement indexing. Most districts and some mineral fields are also characterized by an upper case letter code: these are historical identifiers currently not applied, but are relevant for legacy mining tenement information. Field and district proclamations date back as far as the late 1890s; individual entities may have undergone several alterations of boundaries and even been changed from district to field (NB the gazetted date provided usually refers to the first entity). In gold-endowed areas, mineral fields were originally classified as 'Goldfields', but this categorisation stopped with the ratification of the Mining Act 1978. In terms of management, tenements under each mineral field are administered under a designated Mining Registrar (here expressed as collections). Information for this vocabulary was sourced from the Tengraph (Web) Help (https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx), the Department of Mines, Industry Regulation and Safety (https://dmp.wa.gov.au/History-and-locations-of-the-12531.aspx) and a dedicated Wikipedia (https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia) webpages, as well as the consolidated printed version of the 1904 Act and individual Western Australian Government Gazettes."@en ;
     skos:hasTopConcept
         :ashburton-mineral-field ,
