@@ -21,7 +21,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.11"
-  KURRA_VERSION: "0.3.2"
+  KURRA_VERSION: "0.4.0"
 
 jobs:
   publish:
@@ -38,6 +38,10 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - run: pip install https://github.com/Kurrawong/kurrawong-python/archive/refs/tags/${{ env.KURRA_VERSION }}.zip
+
+      - name: Clear vocabularies
+        run: |
+          kurra fuseki clear all ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
 
       - name: Upload vocabularies
         run: |
