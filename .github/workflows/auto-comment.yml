@@ -1,5 +1,9 @@
 name: Auto Comment
-on: [pull_request]
+on: 
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - 'vocabularies/**'
 jobs:
   comment:
     runs-on: ubuntu-latest
