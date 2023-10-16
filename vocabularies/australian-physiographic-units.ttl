@@ -10,7 +10,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :Innamincka-plains
-    skos:notation "20228"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
+    skos:notation "20228"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;ddd
 .
 
 :Isa-ridges
