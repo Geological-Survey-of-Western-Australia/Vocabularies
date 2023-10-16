@@ -6,6 +6,8 @@ on:
 
   pull_request:
     types: [opened, synchronize, reopened]
+    paths:
+      - 'vocabularies/**'
 
 env:
   PYTHON_VERSION: "3.11"
