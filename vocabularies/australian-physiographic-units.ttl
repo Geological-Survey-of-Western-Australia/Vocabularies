@@ -9,31 +9,6 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-:Innamincka-plains
-    skos:notation "20228"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-.
-
-:Isa-ridges
-    skos:notation "30303"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-.
-
-:Israelite-plain
-    skos:notation
-        "31004"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
-        "NPPib"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-.
-
-:Ivanhoe-plains
-    skos:notation "20304"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-.
-
-:bass-Islands
-    skos:notation "10801"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-.
-
-:torres-high-Islands
-    skos:notation "10201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
-.
 
 :albany-esperance-sandplain
     a skos:Concept ;
@@ -259,6 +234,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Islands with low plateaus, partly dune covered with granite residual hills. Bounded by latitudes 39.435318°S and 40.594002°S, and longitudes 143.819443°E and 148.498795°E."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
     skos:inScheme cs: ;
+    skos:notation "10801"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Bass Islands"@en ;
 .
 
@@ -1518,6 +1494,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Eolian sandplain with west- to north-northwest-trending seif dunes, and numerous claypans and alluvial areas (floodout of Cooper Creek). Bounded by latitudes 26.326344°S and 28.826029°S, and longitudes 139.207682°E and 140.814965°E."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
     skos:inScheme cs: ;
+    skos:notation "20228"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Innamincka Plains"@en ;
 .
 
@@ -1548,6 +1525,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Rugged parallel ranges and narrow lowlands on folded metamorphic rocks and granites. Bounded by latitudes 18.851091°S and 22.72337°S, and longitudes 138.904461°E and 140.930081°E."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
     skos:inScheme cs: ;
+    skos:notation "30303"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Isa Ridges"@en ;
 .
 
@@ -1558,6 +1536,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Narrow coastal plain with extensive dunes. Bounded by latitudes 32.926917°S and 34.108841°S, and longitudes 123.498621°E and 124.49038°E."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
     skos:inScheme cs: ;
+    skos:notation
+        "31004"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ,
+        "NPPib"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Israelite Plain"@en ;
 .
 
@@ -1568,6 +1549,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Plains with low west–east stabilized longitudinal dunes and sandplain, small pans with lunettes, minor sandstone ridges, floodplains. Bounded by latitudes 31.291259°S and 34.470967°S, and longitudes 139.760816°E and 145.562091°E."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
     skos:inScheme cs: ;
+    skos:notation "20304"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Ivanhoe Plains"@en ;
 .
 
@@ -2848,6 +2830,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Islands and low coastal tablelands of volcanic rocks and granite, with fringing reefs. Bounded by latitudes 9.35406°S and 10.99771°S, and longitudes 141.909393°E and 142.707413°E."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
     skos:inScheme cs: ;
+    skos:notation "10201"^^<https://www.asris.csiro.au/themes/PhysioRegions.html> ;
     skos:prefLabel "Torres High Islands"@en ;
 .
 
