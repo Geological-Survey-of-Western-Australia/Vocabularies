@@ -17,6 +17,7 @@ def _get_vocab_files():
     files = []
     for directory in directories:
         files += directory.glob("**/*.ttl")
+    print(files)
     files.remove('vocabularies/background.ttl')
     return files
 
