@@ -1,6 +1,6 @@
-PREFIX : <https://draft.com/wa-coordinate-reference-systems/>
+PREFIX : <https://linked.data.gov.au/def/wa-coordinate-reference-systems/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://draft.com/wa-coordinate-reference-systems>
+PREFIX cs: <https://linked.data.gov.au/def/wa-coordinate-reference-systems>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
@@ -720,7 +720,7 @@ cs:
     dcterms:identifier "wa-coordinate-reference-systems"^^xsd:token ;
     dcterms:modified "2023-09-13"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI <https://draft.com/wa-coordinate-reference-systems/1> ;
+    owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status agldwgstatus:stable ;
     skos:definition "The coordinate reference systems (geographic and projected) used and referred to within Western Australia. It includes historical and current reference systems, Universal Transverse Mercator (UTM) zones, and, where applicable, notations based on the EPSG registry (https://epsg.io/). Some concepts are included to account for legacy data/maps with limited information."@en ;
