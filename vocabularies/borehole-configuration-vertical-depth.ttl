@@ -1,6 +1,6 @@
-PREFIX : <http://draft.com/vertical-depth-reference-systems/>
+PREFIX : <http://linked.data.gov.au/def/vertical-depth-reference-systems/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <http://draft.com/vertical-depth-reference-systems>
+PREFIX cs: <http://linked.data.gov.au/def/vertical-depth-reference-systems>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
@@ -12,7 +12,7 @@ PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-:Australian-Height-Datum-TAS83
+:australian-height-datum-TAS83
     a skos:Concept ;
     dcterms:source "https://www.icsm.gov.au/australian-height-datum"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -26,7 +26,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-:Australian-Vertical-Working-Surface
+:australian-vertical-working-surface
     a skos:Concept ;
     dcterms:source
         "https://www.icsm.gov.au/australian-vertical-working-surface"^^xsd:anyURI ,
@@ -40,7 +40,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-:Australian-height-datum
+:australian-height-datum
     a skos:Concept ;
     dcterms:source
         "http://linked.data.gov.au/def/depth-reference/australian-height-datum"^^xsd:anyURI ,
@@ -58,7 +58,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-:ISLW
+:islw
     a skos:Concept ;
     dcterms:source
         "https://epsg.io/1085-datum"^^xsd:anyURI ,
@@ -71,7 +71,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "A tidal low water datum, originally developed by Sir G Darwin for parts of the Indian Ocean. Designed for regions of mixed tides, the datum is depressed below mean sea level by the sum of the amplitudes of the principal semidiurnal lunar and solar tides and the principal diurnal tides (M2 + S2 + K1 + O1). Area of use: World. Users are advised to not use this generic vertical datum but to define explicit realizations of Indian Spring Low Water (ISLW) by specifying location and epoch, for instance 'ISLW at xxx during yyyy-yyyy'."@en ;
     skos:historyNote "Defined in the official EPSG database maintained by OGP Geomatics Committee (http://www.epsg.org/, https://epsg.io/)" ;
     skos:inScheme cs: ;
-    skos:narrower :ISLW-depth ;
+    skos:narrower :islw-depth ;
     skos:notation
         "EPSG:1085"^^<https://epsg.io/> ,
         "https://epsg.io/1085-datum"^^<https://epsg.io/> ;
@@ -79,7 +79,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-:ISLW-depth
+:islw-depth
     a skos:Concept ;
     dcterms:source
         "https://epsg.io/5863"^^xsd:anyURI ,
@@ -95,7 +95,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "ISLW depth"@en ;
 .
 
-:LAT
+:lat
     a skos:Concept ;
     dcterms:source
         "https://epsg.io/1080-datum"^^xsd:anyURI ,
@@ -105,7 +105,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "The lowest tide level that can be predicted to occur under average meteorological conditions and under any combination of astronomical conditions. It can only be obtained properly by studying tidal predictions covering, ideally, 19 years. Area of use: World. Users are advised to not use this generic vertical datum but to define explicit realizations of Lowest Astronomical Tide (LAT) by specifying location and epoch, for instance 'LAT at xxx during yyyy-yyyy'."@en ;
     skos:historyNote "Defined in the official EPSG database maintained by OGP Geomatics Committee (http://www.epsg.org/, https://epsg.io/)" ;
     skos:inScheme cs: ;
-    skos:narrower :LAT-depth ;
+    skos:narrower :lat-depth ;
     skos:notation
         "EPSG:1080"^^<https://epsg.io/> ,
         "https://epsg.io/1080-datum"^^<https://epsg.io/> ;
@@ -113,7 +113,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-:LAT-depth
+:lat-depth
     a skos:Concept ;
     dcterms:source "https://epsg.io/5861"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -126,7 +126,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "LAT depth"@en ;
 .
 
-:MSL-depth
+:msl-depth
     a skos:Concept ;
     dcterms:source "https://epsg.io/5715"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -142,7 +142,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "MSL depth"@en ;
 .
 
-:MSL-height
+:msl-height
     a skos:Concept ;
     dcterms:source "https://epsg.io/5714"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -281,8 +281,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "A global datum of the average surface of Earth's coastal bodies of water used as a reference to measure elevation (on the ground), altitude (in the air), or depth (below sea level) of an object or point. Derived from the arithmetic mean of hourly heights of the sea at the tidal station observed over a period of time (usually 19 years). Areas of use: World. Users are advised to not use this generic vertical datum but to define explicit realizations of mean sea level (MSL) by specifying location and epoch, for instance 'MSL at xxx during yyyy-yyyy'."@en ;
     skos:inScheme cs: ;
     skos:narrower
-        :MSL-depth ,
-        :MSL-height ,
+        :msl-depth ,
+        :msl-height ,
         :metres-sub-sea ;
     skos:prefLabel "mean sea level"@en ;
     skos:topConceptOf cs: ;
@@ -423,11 +423,11 @@ cs:
     reg:status agldwgstatus:stable ;
     skos:definition "The point or level from which heights and depths are measured and referenced to for an entity or activity. Typically these are expressed relative to a common global or regional reference datum such as the Australian Height Datum (AHD) or can be related to local reference systems. Specific emphasis is placed on elevation references used by resource exploration and drilling programs, whereby depths are measured relative to local reference datums or specific parts of a borehole/drilling platform. Concepts in this vocabulary include both reference datums (e.g. mean sea level) and how depths are expressed relative to them (e.g. mean sea level height)."@en ;
     skos:hasTopConcept
-        :Australian-Height-Datum-TAS83 ,
-        :Australian-Vertical-Working-Surface ,
-        :Australian-height-datum ,
-        :ISLW ,
-        :LAT ,
+        :australian-height-datum-TAS83 ,
+        :australian-vertical-working-surface ,
+        :australian-height-datum ,
+        :islw ,
+        :lat ,
         :depth-reference-systems-drilling ,
         :depth-reference-unknown ,
         :mean-sea-level ,
