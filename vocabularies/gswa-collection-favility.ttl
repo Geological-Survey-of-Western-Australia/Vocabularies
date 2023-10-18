@@ -12,7 +12,7 @@ PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-:carlisle
+:carlisle 
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Carlisle is one of several offices maintained by the Department of Mines, Industry Regulation and Safety within the Perth metropolitan area. The site includes several buildings encompassing separate functions of the Geological Survey of Western Australia, and is located at 37 Harris St, Carlisle WA 6101."@en ;
