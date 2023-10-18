@@ -1,25 +1,12 @@
 PREFIX : <https://draft.com/borehole-start-point-setting/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://draft.com/borehole-start-point-setting>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
-PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX prov: <http://www.w3.org/ns/prov#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX cs: <
 
 <http://linked.data.gov.au/def/borehole-start-point/from-pre-existing-hole>
-    a skos:Concept ;
-    dcterms:source "http://linked.data.gov.au/def/borehole-start-point/from-pre-existing-hole"^^xsd:anyURI ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/borehole-start-point> ;
-    skos:definition "Indicates that the borehole was drilled from a pre-existing hole, whether at surface or underground."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "from pre-existing hole"@en ;
-    skos:topConceptOf cs: ;
+   wejfnjkrnevjknertbjnjrkstbiojiesjkgol,evlew
+egregtrhn 
+ear
+gbrtjy
 .
 
 <http://linked.data.gov.au/def/borehole-start-point/open-pit-floor-or-wall>
