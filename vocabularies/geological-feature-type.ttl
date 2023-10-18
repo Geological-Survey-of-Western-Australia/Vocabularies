@@ -176,7 +176,7 @@ Wyborn, LAI, Heinrich, CA and Jaques, AL 1994, Australian Proterozoic mineral sy
 .
 
 cs:
-    a skos:ConceptScheme ;
+    
     dcterms:created "2023-09-06"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/gswa> ;
     dcterms:identifier "geological-feature-type"^^xsd:token ;
