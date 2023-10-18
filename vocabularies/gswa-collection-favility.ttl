@@ -1,6 +1,6 @@
-PREFIX : <https://draft.com/gswa-collection-facilities/>
+PREFIX : <https://linked.data.gov.au/def/gswa-collection-facilities/>
 PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://draft.com/gswa-collection-facilities>
+PREFIX cs: <https://linked.data.gov.au/def/gswa-collection-facilities>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
@@ -96,7 +96,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "KRO"@en ,
         "Kalgoorlie office"@en ;
-    skos:closeMatch <https://draft.com/dmirs-offices/kalgoorlie-office> ;
+    skos:closeMatch <https://linked.data.gov.au/def/dmirs-offices/kalgoorlie-office> ;
     skos:definition "The Kalgoorlie regional office is a facility of the Geological Survey of Western Australia primarily housing staff, but also hosting some small collections. The building is located on the Kalgoorlie site at the corner of Hunter and Broadwood Sts, West Kalgoorlie WA 6430."@en ;
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
