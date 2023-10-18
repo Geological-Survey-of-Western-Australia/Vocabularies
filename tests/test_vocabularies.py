@@ -20,6 +20,7 @@ def _get_vocab_files():
     for file in files:
         if "vocabularies/background.ttl" in str(file):
             files.remove(file)
+    print (files)
     return files
 
 
