@@ -1,16 +1,12 @@
-@prefix :             <https://draft.com/borehole-start-point-setting/> .
-@prefix agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/> .
-@prefix cs:           <https://draft.com/borehole-start-point-setting> .
-@prefix dcat:         <http://www.w3.org/ns/dcat#> .
 @prefix dcterms:      <http://purl.org/dc/terms/> .
-@prefix isoroles:     <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/> .
 @prefix owl:          <http://www.w3.org/2002/07/owl#> .
 @prefix prov:         <http://www.w3.org/ns/prov#> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix reg:          <http://purl.org/linked-data/registry#> .
 @prefix sdo:          <https://schema.org/> .
 @prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+
 
 skos:prefLabel  rdfs:label  "preferred label"@en .
 
@@ -10692,19 +10688,3 @@ rdfs:ContainerMembershipProperty
 
 <https://purl.org/NET/rdflicense/cc-by4.0>
         rdfs:label  "Creative Commons BY 4.0" .
-
-[ rdfs:comment  "hadPrimarySource property is a particular case of wasDerivedFrom (see http://www.w3.org/TR/prov-dm/#term-original-source) that aims to give credit to the source that originated some information." ] .
-
-[ rdfs:comment  "Attribution is a particular case of trace (see http://www.w3.org/TR/prov-dm/#concept-trace), in the sense that it links an entity to the agent that ascribed it." , "IF wasAttributedTo(e2,ag1,aAttr) holds, THEN wasInfluencedBy(e2,ag1) also holds. " ] .
-
-[ rdfs:comment  "influencee: an identifier (o2) for an entity, activity, or agent; " ] .
-
-[ rdfs:comment  "Revision is a derivation (see http://www.w3.org/TR/prov-dm/#term-Revision). Moreover, according to \nhttp://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 2012 'wasRevisionOf is a strict sub-relation of wasDerivedFrom since two entities e2 and e1 may satisfy wasDerivedFrom(e2,e1) without being a variant of each other.'" ] .
-
-[ rdfs:comment  "A collection is an entity that provides a structure to some constituents, which are themselves entities. These constituents are said to be member of the collections."@en ] .
-
-[ rdfs:comment  "Derivation is a particular case of trace (see http://www.w3.org/TR/prov-dm/#term-trace), since it links an entity to another entity that contributed to its existence." ] .
-
-[ rdfs:comment  "influencer: an identifier (o1) for an ancestor entity, activity, or agent that the former depends on;" ] .
-
-[ rdfs:comment  "Quotation is a particular case of derivation (see http://www.w3.org/TR/prov-dm/#term-quotation) in which an entity is derived from an original entity by copying, or \"quoting\", some or all of it. " ] .
