@@ -1,0 +1,345 @@
+PREFIX : <https://linked.data.gov.au/def/tectonic-unit-type/>
+PREFIX cs: <https://linked.data.gov.au/def/tectonic-unit-type>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:WA-unit
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A high-level tectonic or lithotectonic unit type that encompasses large tectonic components of the State of Western Australia (e.g. West Australian Craton) or facilitates grouping of certain elements (e.g. large igneous provinces and dyke swarms)."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "WA unit"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:Western-Australia
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "State"@en ;
+    skos:definition "The highest-ranking type of 'tectonic' unit in the State of Western Australia. It encompasses the geographical extent of the State (i.e. an area bounded by latitudes 8.00°S and 40.00°S, and longitudes 102.00°E and 132.00°E). It has no geological significance, other than being defined for the purpose of allowing all other tectonic subdivisions of the State to be grouped within a single hierarchy."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Western Australia"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:basin
+    a skos:Concept ;
+    dcterms:source "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "sedimentary basin"@en ;
+    skos:closeMatch
+        <https://linked.data.gov.au/def/geofeatures/Basin> ,
+        <https://linked.data.gov.au/def/geofeatures/SedimentaryBasin> ;
+    skos:definition "A low area in the Earth’s crust, of tectonic origin, underlain by a substantial thickness of sedimentary rocks that possess unifying characteristics of stratigraphy and structure due to their deposition during a regionally restricted episode of crustal depression or a related sequence of such episodes. As well as being applied to the deposited rocks, or to their outcrop area after erosion, the term is used also for the actual crustal depression in which they accumulated. Sedimentary basins range in size from small continental basins to large oceanic basins. The essential element of the concept is the tectonic creation of relief, to provide both a source of sediment and a relatively low place for the deposition of that sediment (after Miall, 2000). In the Western Australian context, most Precambrian basins are tectonic components of either cratons or orogens, whereas Phanerozoic basins do not have an immediate tectonic relationship to any orogen."@en ;
+    skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS). Definition adapted from:
+a) Geological Survey of Western Australia, 1990, Geology and Mineral Resources of Western Australia: Geological Survey of Western Australia, Memoir 3, 827p.
+b) Miall, AD 2000, Principles of Sedimentary Basin Analysis, 3rd ed.: Berlin, Heidelberg, New York, London, Paris, Tokyo, Hong Kong: Springer-Verlag, 616p.""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:craton
+    a skos:Concept ;
+    dcterms:source "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Craton> ;
+    skos:definition "A part of the Earth's continental lithosphere with a thick lithospheric root that has remained tectonically stable for a long period of time. Whether or not an amalgamation of components constitutes a craton depends on the point in geological time at which the overall tectonic configuration is considered. In the Western Australian context, cratons usually comprise component terranes, but can also represent amalgamation(s) of older cratons bounded by orogenic sutures. In the Geological Survey of Western Australia (GSWA) Explanatory Notes System, the latter are ranked as a higher level tectonic unit type to preserve the identity of the original cratons. The nature of tectonic processes that modify cratons, including rifting, accretion and removal of the lithospheric root, result in boundaries between cratons, orogens and basins that can be either sharp or gradational, such that the spatial limit of cratons both at surface and at depth may not always be precisely defined. In the global literature, cratons can be referred to as shields, and basins covering cratons as platforms; these terms are not used by GSWA."@en ;
+    skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS).
+Definition adapted from:
+a) Geological Survey of Western Australia 1990, Geology and Mineral Resources of Western Australia: Geological Survey of Western Australia, Memoir 3, 827p.
+b) Neuendorf, KE, Mehl Jr, JP and Jackson, JA 2011, Glossary of Geology, 5th edition revisited: American Geological Institute, Virginia, US.""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "craton"@en ;
+    skos:relatedMatch <https://linked.data.gov.au/def/geofeatures/LargeIgneousProvince> ;
+    skos:topConceptOf cs: ;
+.
+
+:craton-terrane
+    a skos:Concept ;
+    dcterms:source
+        "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ,
+        "https://www.tandfonline.com/action/showCitFormats?doi=10.1080%2F11035897.2016.1178666"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "Craton_Terrane"@en ,
+        "cratonic terrane"@en ;
+    skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Terrane> ;
+    skos:definition "A tectonically bounded body of rock of regional extent within a craton, characterized by a geological history different from that of contiguous tectonic fragments. In the Western Australian context, a cratonic terrane is a coherent, tectonically bounded part of a craton that has moved over a substantial distance into juxtaposition with geologically unrelated parts. Not to be confused with terrain, which refers to topographic features of the Earth's surface."@en ;
+    skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS).
+Definition adapted from:
+a) Irwin, WP 1972, Terranes of the western Paleozoic and Triassic belt in the southern Klamath Mountains, California, in Geological Survey Research 1972, C103–C111: Geological Survey Professional Paper 800-C, Washington, DC.
+b) Geological Survey of Western Australia, 1990, Geology and Mineral Resources of Western Australia: Geological Survey of Western Australia, Memoir 3, 827p.""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "craton terrane"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:domain
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A hierarchical subdivision of cratonic terranes based on similarities in stratigraphy, metamorphic history and structural evolution."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "domain"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:greenstone-belt_granitic-complex
+    a skos:Concept ;
+    dcterms:source "https://glossary.americangeosciences.org/term/greenstonebelt"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Lithotectonic units typical of Archean terrains, commonly referred to in the literature — but the use of these terms as formally named tectonic units is to be avoided. Greenstone belts are elongate or belt-like volcano–sedimentary complexes within cratons that are characterized by dark-green, altered or metamorphosed mafic and ultramafic igneous rock, such as basalt, gabbro and komatiite, that owe their colour to the presence of chlorite, actinolite or epidote. An individual belt may contain the deformed and metamorphosed rocks of one or more volcano-sedimentary sequences. Granitic complexes are tectonically domed expanses of granitic rocks containing granitic intrusions of widely different ages and mantled by greenstone belts (Van Kranendonk et al., 2004)."@en ;
+    skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS).
+Definition adapted from: 
+a) Neuendorf, KE, Mehl Jr, JP and Jackson, JA 2011, Glossary of Geology, 5th edition revisited: American Geological Institute, Virginia, US.
+b) https://glossary.americangeosciences.org/term/greenstonebelt
+c) https://glossary.americangeosciences.org/term/greenstonemeta
+d) Van Kranendonk, MJ, Smithies, RH, Hickman, AH, Bagas, L, Williams, IR, and Farrell, TR 2004, Event stratigraphy applied to 700 million years of Archaean crustal evolution, Pilbara Craton, Western Australia: Geological Survey of Western Australia, Annual Review 2003–04, p. 49–61.""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "greenstone belt / granitic complex"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:inlier_outlier
+    a skos:Concept ;
+    dcterms:source
+        "https://glossary.americangeosciences.org/term/inlier"^^xsd:anyURI ,
+        "https://glossary.americangeosciences.org/term/outlier"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:closeMatch
+        <https://linked.data.gov.au/def/geofeatures/inlier> ,
+        <https://linked.data.gov.au/def/geofeatures/outlier> ;
+    skos:definition "A lithotectonic subdivision in Western Australia, used to identify an exposed group of rocks from an older tectonic unit that is surrounded by rocks from a younger tectonic units (inlier), or an exposed group of rocks from a younger tectonic unit that is surrounded by rocks from an older tectonic units (outlier). These are not tectonic units per se, but are commonly singled out both geographically and geologically. The Geological Survey of Western Australia's convention is to always list the broader unit inliers/outliers are part of in their name (e.g. Pinjarra Orogen, Leeuwin Inlier; or Bonaparte Basin, Mount Rob Outlier)."@en ;
+    skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS). Definition adapted from:
+a) https://glossary.americangeosciences.org/term/inlier b) https://glossary.americangeosciences.org/term/outlier""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "inlier/outlier"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:orogen
+    a skos:Concept ;
+    dcterms:source
+        "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ,
+        "https://linked.data.gov.au/def/geofeatures/Orogen"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Orogen> ;
+    skos:definition "An orogen (orogenic system, orogenic belt) is a linear or arcuate region in Earth’s lithosphere where a mountain belt is created by tectonic processes involving deformation, regional metamorphism and associated magmatism, usually caused by convergence (± subduction, accretion and/or collision) between two tectonic plates or major crustal blocks. The rocks of an orogen may include deformed and reworked parts of older (pre-orogenic) lithosphere, as well as new (synorogenic) volcanic, sedimentary and igneous rocks. An orogen is conceived to have been established by a distinct tectonic event of known duration, but it is also possible for orogens to be reactivated during later tectonic episodes, and they normally remain as permanent zones of weakness in the Earth’s crust. A named orogen includes any associated sedimentary rocks, which may not be strongly deformed or metamorphosed, but whose deposition was directly related to the formation of the orogen. Geosyncline is an alternate obsolete term not recommended for use."@en ;
+    skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS). Definition adapted from:
+a) Geological Survey of Western Australia, 1990, Geology and Mineral Resources of Western Australia: Geological Survey of Western Australia, Memoir 3, 827p.
+b) Neuendorf, KE, Mehl Jr, JP and Jackson, JA 2011, Glossary of Geology, 5th edition revisited: American Geological Institute, Virginia, US.
+c) Geological Survey of Queensland Geofeatures vocabulary""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "orogen"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:orogenic-foreland
+    a skos:Concept ;
+    dcterms:source "https://glossary.americangeosciences.org/term/forelandtect"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "fold belt"@en ;
+    skos:definition "The exterior area of an orogenic belt where deformation occurs without significant metamorphism. Generally the foreland is closer to the continental interior than other portions of the orogenic belt are."@en ;
+    skos:historyNote "A critical component of the tectonic module of GSWA's Explanatory Notes System." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "orogenic foreland"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:orogenic-foreland-subunit
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A smaller hierarchical subdivision of a tectonic orogenic foreland that presents some unifying features or a geological history that distinguishes it from that of adjacent components of the tectonic province."@en ;
+    skos:historyNote "A critical component of the tectonic module of GSWA's Explanatory Notes System." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "orogenic foreland sub-unit"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:province-tectonic
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "province"@en ;
+    skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Province> ;
+    skos:definition "A hierarchical subdivision of a larger tectonic unit (commonly an orogen, but also a craton or a superterrane) that presents some unifying features or a geological history that distinguishes from that of adjacent areas within the larger tectonic unit. The concept includes seismic provinces, i.e. discrete volumes of middle–lower crust that cannot be traced to the surface and whose seismic reflectivity is different from that of vertical or horizontally adjoining provinces (Korsch and Doublier, 2016)."@en ;
+    skos:historyNote """A critical component of the tectonic module of GSWA's Explanatory Notes System.
+
+Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and their significance in mineral systems targeting: Ore Geology Reviews, v. 76, p. 211–228, doi:10.1016/j.oregeorev.2015.05.010.""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "province (tectonic)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:province-terrane_zone
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A smaller hierarchical subdivision of a tectonic province that presents some unifying features or a geological history that distinguishes from that of adjacent terranes/zones within the province."@en ;
+    skos:historyNote "A critical component of the tectonic module of GSWA's Explanatory Notes System." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "province terrane/zone"@en ;
+    skos:relatedMatch <https://linked.data.gov.au/def/geofeatures/Subprovince> ;
+    skos:topConceptOf cs: ;
+.
+
+:seismic-province
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A discrete volume of middle to lower crust that cannot be traced to the surface, and whose crustal reflectivity is different to that of laterally or vertically adjoining provinces (Korsch and Doublier, 2016)."@en ;
+    skos:historyNote "Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and their significance in mineral systems targeting: Ore Geology Reviews, v. 76, p. 211–228, doi:10.1016/j.oregeorev.2015.05.010." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "seismic province"@en ;
+    skos:relatedMatch <https://linked.data.gov.au/def/geofeatures/SeismicProvince> ;
+    skos:topConceptOf cs: ;
+.
+
+:sub-basin
+    a skos:Concept ;
+    dcterms:source "https://linked.data.gov.au/def/geofeatures/Subbasin"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "subbasin"@en ;
+    skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Subbasin> ;
+    skos:definition "A hierarchical term applied to separate depocentres within a basin that are separated from other parts of the basin by tectonic/structural element(s) such as faults or basement highs."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sub-basin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:sub-basin_element
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A smaller component of a sub-basin, e.g. ridge, arch, terrace, etc."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sub-basin element"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:suite-tectonic
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "Suite_Tectonic"@en ,
+        "tectonic suite"@en ;
+    skos:definition "A tectonic suite represents the expression of a tectonothermal event that resulted in the formation of a lithodemic suite, i.e. a group of igneous rocks of the same age that can be shown, or reasonably inferred, to be related to the same parental magma."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "suite (tectonic)"@en ;
+    skos:relatedMatch <https://linked.data.gov.au/def/geofeatures/Suite> ;
+    skos:topConceptOf cs: ;
+.
+
+:superbasin
+    a skos:Concept ;
+    dcterms:source "https://linked.data.gov.au/def/geofeatures"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Superbasin> ;
+    skos:definition "A superbasin is a hierarchical term applied to a group of largely interconnected or associated sedimentary basins of the same or similar age. Its component basins may be separated or partially separated by tectonic elements that define 'boundaries' between them, or they may have been subjected to somewhat different geological influences."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "superbasin"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:supersuite-tectonic
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "Supersuite_Tectonic"@en ,
+        "tectonic supersuite"@en ;
+    skos:definition "The tectonic unit representing the expression of a specific tectonothermal event that resulted in the formation of a lithodemic supersuite, i.e. an assemblage of igneous rocks of any composition that formed as a result of volcano–plutonic episodes involving either addition of new crust or remelting of existing crust."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "supersuite (tectonic)"@en ;
+    skos:relatedMatch
+        <https://linked.data.gov.au/def/geofeatures/LargeIgneousProvince> ,
+        <https://linked.data.gov.au/def/geofeatures/Supersuite> ;
+    skos:topConceptOf cs: ;
+.
+
+:superterrane
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An amalgamation of different cratonic terranes (i.e. fault-bounded tectonostratigraphic terranes), into a larger structural entity typical of cratonic areas."@en ;
+    skos:historyNote "A component of the tectonic module of GSWA's Explanatory Notes System (ENS)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "superterrane"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:tectonic-subdivision
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A smaller hierarchical subdivision of a tectonic province terrane/zone that presents some unifying features or a geological history that distinguishes from that of adjacent components of the tectonic province."@en ;
+    skos:historyNote "A critical component of the tectonic module of GSWA's Explanatory Notes System." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "tectonic subdivision"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.g​ov.au/org/gswa>
+    a prov:Agent ;
+    rdfs:label "Gswa" ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2023-11-01"^^xsd:date ;
+    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:identifier "tectonic-unit-type"^^xsd:token ;
+    dcterms:modified "2023-11-01"^^xsd:date ;
+    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    owl:versionIRI :1 ;
+    owl:versionInfo "1" ;
+    skos:definition "This vocabulary lists the types of tectonic and lithotectonic units that are used to define the geological framework / 4D evolution of Western Australia and are relevant to the duties of the Geological Survey of Western Australia (GSWA). A tectonic unit is defined as a named mass/body of rock with defined geological characteristics (geological structure, sedimentary stratigraphy, magmatic activity, metamorphism, metallogeny and alteration) and evolutionary history different from that of surrounding/contiguous units. A lithotectonic (or lithostructural) unit is defined as an assemblage of rocks unified on the basis of structural or deformational features, mutual relationships, origin, or historical evolution, that: a) is a subset of a larger tectonic unit (e.g. inlier/outlier), b) incorporates components from more than one tectonic units (e.g. greenstone belt), and c) encompasses large tectonic components of the State of Western Australia and/or facilitates the grouping of common tectonic elements at the highest level of the State tectonic hierarchy (e.g. large igneous provinces). Tectonic unit types are an integral part of GSWA's Explanatory Notes System (ENS), a digital repository of detailed unit descriptions that integrates stratigraphic relationships with links to all tectonic units and events recognized in Western Australia. This vocabulary does not attempt to show hierarchical relationships between tectonic types as enforced in ENS, as many are not one-to-one relationships."@en ;
+    skos:hasTopConcept
+        :WA-unit ,
+        :Western-Australia ,
+        :basin ,
+        :craton ,
+        :craton-terrane ,
+        :domain ,
+        :greenstone-belt_granitic-complex ,
+        :inlier_outlier ,
+        :orogen ,
+        :orogenic-foreland ,
+        :orogenic-foreland-subunit ,
+        :province-tectonic ,
+        :province-terrane_zone ,
+        :seismic-province ,
+        :sub-basin ,
+        :sub-basin_element ,
+        :suite-tectonic ,
+        :superbasin ,
+        :supersuite-tectonic ,
+        :superterrane ,
+        :tectonic-subdivision ;
+    skos:historyNote """Concepts are derived from GSWA's Explanatory Notes System (ENS) table [GEOLOGY].[ENS_REF].[RANK].
+The concepts outline the type of tectonic elements that are recognized and/or interpreted in Western Australia and that are used to define the geological and tectonic framework of the State."""@en ;
+    skos:prefLabel "Tectonic unit type"@en ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole isoroles:custodian ;
+            prov:agent [
+                    a prov:Agent ;
+                    rdfs:label "Erin Gray"
+                ]
+        ] ,
+        [
+            dcat:hadRole isoroles:custodian ;
+            prov:agent [
+                    a prov:Agent ;
+                    rdfs:label "Angela Riganti"
+                ]
+        ] ;
+.
+
