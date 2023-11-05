@@ -6274,6 +6274,6 @@ This representation of the Time Scale uses the same objects identifiers - IRIs -
     skos:hasTopConcept
         :Phanerozoic ,
         :Precambrian ;
-    skos:historyNote 
+    skos:historyNote "This profile of the ICS chart as a SKOS vocabulary has been created to work well with SKOS-only data display systems" ;
     skos:prefLabel "Geologic Time Scale (2020)"@en ;
 .
