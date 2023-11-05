@@ -11,28 +11,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :CMYK
     a owl:Datatype ;
-    dcterms:description """The CMYK colour model (also known as process colour, or four colour) is a subtractive colour model, based on the CMY colour model, used in colour printing, and is also used to describe the printing process itself. CMYK refers to the four ink plates used in some colour printing: cyan, magenta, yellow, and key (black).
+    sdo:description """The CMYK colour model (also known as process colour, or four colour) is a subtractive colour model, based on the CMY colour model, used in colour printing, and is also used to describe the printing process itself. CMYK refers to the four ink plates used in some colour printing: cyan, magenta, yellow, and key (black).
 
 This datatype uses a microformat of "{C}/{M}/{Y}/{K}" with integer values for {C}, {M} {Y} & {K}."""@en ;
-    dcterms:source "https://en.wikipedia.org/wiki/CMYK_colour_model"^^xsd:anyURI ;
-    dcterms:title "CMYK colour model" ;
+    sdo:citation "https://en.wikipedia.org/wiki/CMYK_colour_model"^^xsd:anyURI ;
+    sdo:name "CMYK colour model" ;
 .
 
 :RGB
     a owl:Datatype ;
-    dcterms:description """The RGB colour model is an additive colour model in which the red, green, and blue primary colours of light are added together in various ways to reproduce a broad array of colours. The name of the model comes from the initials of the three additive primary colours, red, green, and blue.
+    sdo:description """The RGB colour model is an additive colour model in which the red, green, and blue primary colours of light are added together in various ways to reproduce a broad array of colours. The name of the model comes from the initials of the three additive primary colours, red, green, and blue.
 
 This datatype uses a microformat of "{R}/{G}/{B}" with integer values for {R}, {G} & {B} between 0 and 255."""@en ;
-    dcterms:source "https://en.wikipedia.org/wiki/RGB_colour_model"^^xsd:anyURI ;
-    dcterms:title "CMYK colour notation" ;
+    sdo:citation "https://en.wikipedia.org/wiki/RGB_colour_model"^^xsd:anyURI ;
+    sdo:name "CMYK colour notation" ;
 .
 
 :RGBHex
     a owl:Datatype ;
-    dcterms:description """An 8-bit per channel, hexidecimal representation of RGB colours.
+    sdo:description """An 8-bit per channel, hexidecimal representation of RGB colours.
 
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
-    dcterms:title "CMYK colour notation" ;
+    sdo:name "CMYK colour notation" ;
 .
 
 :Aalenian
@@ -6254,14 +6254,14 @@ This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R},
 
 cs:
     a skos:ConceptScheme ;
-    sdo:dateCreated "2020-06-05"^^xsd:date ;
+    dcterms:created "2020-06-05"^^xsd:date ;
     sdo:creator <https://linked.data.gov.au/org/ics> ;
     sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
-    sdo:dateModified "2022-11-28"^^xsd:date ;
+    dcterms:modified "2022-11-28"^^xsd:date ;
     sdo:publisher <https://linked.data.gov.au/org/ics> ;
     sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
     sdo:copyrightNotice "Original version Copyright © 2020 International Commission on Stratigraphy"@en ;
-    sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
+    dcterms:source "https://stratigraphy.org/chart"^^xsd:anyURI ;
     owl:versionIRI cs:0.2 ;
     owl:versionInfo """0.2: Includes colour information
 
@@ -6274,5 +6274,6 @@ This representation of the Time Scale uses the same objects identifiers - IRIs -
     skos:hasTopConcept
         :Phanerozoic ,
         :Precambrian ;
+    skos:historyNote 
     skos:prefLabel "Geologic Time Scale (2020)"@en ;
 .
