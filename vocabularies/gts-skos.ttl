@@ -7759,8 +7759,8 @@ Ages/Stages are indicated as being narrower than Series / Epochs which are in tu
     sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
     sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2023"@en ;
     dcterms:creator <https://linked.data.gov.au/org/ics> ;
-    sdo:dateCreated "2020-06-05"^^xsd:date ;
-    sdo:dateModified "2022-11-28"^^xsd:date ;
+    dcterms:created "2020-06-05"^^xsd:date ;
+    dcterms:modified "2022-11-28"^^xsd:date ;
     sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
 .
