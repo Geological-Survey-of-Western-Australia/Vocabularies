@@ -14,16 +14,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 isc:RGBHex
     a owl:Datatype ;
-    sdo:description """An 8-bit per channel, hexidecimal representation of RGB colours.
+    rdfs:comment """An 8-bit per channel, hexidecimal representation of RGB colours.
 
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
-    sdo:name "CMYK colour notation" ;
+    rdfs:label "CMYK colour notation" ;
 .
 
 isc:inMYA
     a owl:Datatype ;
-    sdo:description "The expression of a time instant millions of years before the present as a floating point number."@en ;
-    sdo:name "Millions of Years Ago" ;
+    rdfs:comment "The expression of a time instant millions of years before the present as a floating point number."@en ;
+    rdfs:label "Millions of Years Ago" ;
 .
 
 isc:Aalenian
