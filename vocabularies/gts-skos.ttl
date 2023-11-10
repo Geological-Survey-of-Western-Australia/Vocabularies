@@ -7754,7 +7754,6 @@ Ages/Stages are indicated as being narrower than Series / Epochs which are in tu
         isc:Precambrian ;
     skos:historyNote "This vocabulary uses IRIs created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/) with dates updated from the 2023-09 Chart (see https://stratigraphy.org/chart)" ;
     skos:prefLabel "International Chronostratigraphic Chart"@en ;
-    prov:wasDerivedFrom ts:gts2020 ;
     sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
     sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
     sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2023"@en ;
