@@ -78,7 +78,7 @@ isc:Aalenian
             isc:inMYA 170.9 ;
             sdo:marginOfError 0.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 58 ;
     sdo:color
         "40/0/5/0"^^isc:CMYK ,
@@ -122,7 +122,7 @@ isc:Aeronian
             isc:inMYA 438.5 ;
             sdo:marginOfError 1.1
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 127 ;
     sdo:color
         "30/0/20/0"^^isc:CMYK ,
@@ -165,7 +165,7 @@ isc:Albian
     time:hasEnd [
             isc:inMYA 100.5
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 43 ;
     sdo:color
         "20/0/40/0"^^isc:CMYK ,
@@ -208,7 +208,7 @@ isc:Anisian
             isc:inMYA 242 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 71 ;
     sdo:color
         "25/50/0/0"^^isc:CMYK ,
@@ -252,7 +252,7 @@ isc:Aptian
             isc:inMYA 113.0 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 44 ;
     sdo:color
         "25/0/45/0"^^isc:CMYK ,
@@ -294,7 +294,7 @@ isc:Aquitanian
     time:hasEnd [
             isc:inMYA 20.44
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 19 ;
     sdo:color
         "0/0/80/0"^^isc:CMYK ,
@@ -338,7 +338,7 @@ isc:Artinskian
             isc:inMYA 283.5 ;
             sdo:marginOfError 0.6
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 87 ;
     sdo:color
         "10/50/45/0"^^isc:CMYK ,
@@ -382,7 +382,7 @@ isc:Asselian
             isc:inMYA 293.51 ;
             sdo:marginOfError 0.17
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 89 ;
     sdo:color
         "10/60/55/0"^^isc:CMYK ,
@@ -426,7 +426,7 @@ isc:Bajocian
             isc:inMYA 168.2 ;
             sdo:marginOfError 1.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 57 ;
     sdo:color
         "35/0/5/0"^^isc:CMYK ,
@@ -469,7 +469,7 @@ isc:Barremian
             isc:inMYA 121.4 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 45 ;
     sdo:color
         "30/0/50/0"^^isc:CMYK ,
@@ -511,7 +511,7 @@ isc:Bartonian
     time:hasEnd [
             isc:inMYA 37.71
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 26 ;
     sdo:color
         "0/25/35/0"^^isc:CMYK ,
@@ -555,7 +555,7 @@ isc:Bashkirian
             isc:inMYA 315.2 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 97 ;
     sdo:color
         "40/10/20/0"^^isc:CMYK ,
@@ -599,7 +599,7 @@ isc:Bathonian
             isc:inMYA 165.3 ;
             sdo:marginOfError 1.1
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 56 ;
     sdo:color
         "30/0/5/0"^^isc:CMYK ,
@@ -643,7 +643,7 @@ isc:Berriasian
             isc:inMYA 139.8 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 48 ;
     sdo:color
         "45/0/65/0"^^isc:CMYK ,
@@ -685,7 +685,7 @@ isc:Burdigalian
     time:hasEnd [
             isc:inMYA 15.98
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 18 ;
     sdo:color
         "0/0/75/0"^^isc:CMYK ,
@@ -727,7 +727,7 @@ isc:Calabrian
     time:hasEnd [
             isc:inMYA 0.774
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 7 ;
     sdo:color
         "0/5/25/0"^^isc:CMYK ,
@@ -771,7 +771,7 @@ isc:Callovian
             isc:inMYA 161.5 ;
             sdo:marginOfError 1.0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 55 ;
     sdo:color
         "25/0/5/0"^^isc:CMYK ,
@@ -813,7 +813,7 @@ isc:Calymmian
     time:hasEnd [
             isc:inMYA 1400
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 164 ;
     sdo:color
         "0/24/45/0"^^isc:CMYK ,
@@ -857,7 +857,7 @@ isc:CambrianStage10
             isc:inMYA 485.4 ;
             sdo:marginOfError 1.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 142 ;
     sdo:color
         "10/0/20/0"^^isc:CMYK ,
@@ -901,7 +901,7 @@ isc:CambrianStage2
             isc:inMYA 509 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 152 ;
     sdo:color
         "35/15/45/0"^^isc:CMYK ,
@@ -945,7 +945,7 @@ isc:CambrianStage3
             isc:inMYA 514 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 153 ;
     sdo:color
         "35/10/45/0"^^isc:CMYK ,
@@ -989,7 +989,7 @@ isc:CambrianStage4
             isc:inMYA 509 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 150 ;
     sdo:color
         "30/10/40/0"^^isc:CMYK ,
@@ -1033,7 +1033,7 @@ isc:Campanian
             isc:inMYA 72.1 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 37 ;
     sdo:color
         "10/0/50/0"^^isc:CMYK ,
@@ -1077,7 +1077,7 @@ isc:Capitanian
             isc:inMYA 259.51 ;
             sdo:marginOfError 0.21
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 82 ;
     sdo:color
         "0/40/35/0"^^isc:CMYK ,
@@ -1121,7 +1121,7 @@ isc:Carnian
             isc:inMYA 227 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 68 ;
     sdo:color
         "20/35/0/0"^^isc:CMYK ,
@@ -1163,7 +1163,7 @@ isc:Cenomanian
     time:hasEnd [
             isc:inMYA 93.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 41 ;
     sdo:color
         "30/0/70/0"^^isc:CMYK ,
@@ -1207,7 +1207,7 @@ isc:Changhsingian
             isc:inMYA 251.902 ;
             sdo:marginOfError 0.024
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 79 ;
     sdo:color
         "0/25/20/0"^^isc:CMYK ,
@@ -1249,7 +1249,7 @@ isc:Chattian
     time:hasEnd [
             isc:inMYA 23.03
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 22 ;
     sdo:color
         "0/10/30/0"^^isc:CMYK ,
@@ -1270,7 +1270,7 @@ isc:Chibanian
     time:hasEnd [
             isc:inMYA 0.129
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 6 ;
     sdo:color
         "0/5/20/0"^^isc:CMYK ,
@@ -1314,7 +1314,7 @@ isc:Coniacian
             isc:inMYA 86.3 ;
             sdo:marginOfError 0.5
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 39 ;
     sdo:color
         "20/0/60/0"^^isc:CMYK ,
@@ -1358,7 +1358,7 @@ isc:Cryogenian
             isc:inMYA 635 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 159 ;
     sdo:color
         "0/20/60/0"^^isc:CMYK ,
@@ -1400,7 +1400,7 @@ isc:Danian
     time:hasEnd [
             isc:inMYA 61.6
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 33 ;
     sdo:color
         "0/30/55/0"^^isc:CMYK ,
@@ -1444,7 +1444,7 @@ isc:Dapingian
             isc:inMYA 467.3 ;
             sdo:marginOfError 1.1
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 136 ;
     sdo:color
         "60/0/40/0"^^isc:CMYK ,
@@ -1488,7 +1488,7 @@ isc:Darriwilian
             isc:inMYA 458.4 ;
             sdo:marginOfError 0.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 135 ;
     sdo:color
         "55/0/35/0"^^isc:CMYK ,
@@ -1532,7 +1532,7 @@ isc:Drumian
             isc:inMYA 500.5 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 147 ;
     sdo:color
         "25/5/35/0"^^isc:CMYK ,
@@ -1574,7 +1574,7 @@ isc:Ectasian
     time:hasEnd [
             isc:inMYA 1200
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 163 ;
     sdo:color
         "0/20/40/0"^^isc:CMYK ,
@@ -1618,7 +1618,7 @@ isc:Ediacaran
             isc:inMYA 538.8 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 158 ;
     sdo:color
         "0/15/55/0"^^isc:CMYK ,
@@ -1662,7 +1662,7 @@ isc:Eifelian
             isc:inMYA 387.7 ;
             sdo:marginOfError 0.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 112 ;
     sdo:color
         "5/15/50/0"^^isc:CMYK ,
@@ -1706,7 +1706,7 @@ isc:Emsian
             isc:inMYA 393.3 ;
             sdo:marginOfError 1.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 114 ;
     sdo:color
         "10/15/50/0"^^isc:CMYK ,
@@ -1751,7 +1751,7 @@ isc:Eoarchean
     time:hasEnd [
             isc:inMYA 3600
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 176 ;
     sdo:color
         "10/100/0/0"^^isc:CMYK ,
@@ -1795,7 +1795,7 @@ isc:Famennian
             isc:inMYA 358.9 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 108 ;
     sdo:color
         "5/5/20/0"^^isc:CMYK ,
@@ -1838,7 +1838,7 @@ isc:Floian
             isc:inMYA 470.0 ;
             sdo:marginOfError 1.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 138 ;
     sdo:color
         "75/0/45/0"^^isc:CMYK ,
@@ -1882,7 +1882,7 @@ isc:Fortunian
             isc:inMYA 529 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 155 ;
     sdo:color
         "40/15/50/0"^^isc:CMYK ,
@@ -1926,7 +1926,7 @@ isc:Frasnian
             isc:inMYA 372.2 ;
             sdo:marginOfError 1.6
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 109 ;
     sdo:color
         "5/5/30/0"^^isc:CMYK ,
@@ -1967,7 +1967,7 @@ isc:Gelasian
     time:hasEnd [
             isc:inMYA 1.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 8 ;
     sdo:color
         "0/5/30/0"^^isc:CMYK ,
@@ -2011,7 +2011,7 @@ isc:Givetian
             isc:inMYA 382.7 ;
             sdo:marginOfError 1.6
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 111 ;
     sdo:color
         "5/10/45/0"^^isc:CMYK ,
@@ -2055,7 +2055,7 @@ isc:Gorstian
             isc:inMYA 425.6 ;
             sdo:marginOfError 0.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 121 ;
     sdo:color
         "20/0/10/0"^^isc:CMYK ,
@@ -2076,7 +2076,7 @@ isc:Greenlandian
     time:hasEnd [
             isc:inMYA 0.0082
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 3 ;
     sdo:color
         "0/10/15/0"^^isc:CMYK ,
@@ -2120,7 +2120,7 @@ isc:Guzhangian
             isc:inMYA 497 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 146 ;
     sdo:color
         "20/5/30/0"^^isc:CMYK ,
@@ -2164,7 +2164,7 @@ isc:Gzhelian
             isc:inMYA 298.9 ;
             sdo:marginOfError 0.15
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 92 ;
     sdo:color
         "20/10/15/0"^^isc:CMYK ,
@@ -2206,7 +2206,7 @@ isc:Hadean
             isc:inMYA 4031 ;
             sdo:marginOfError 3
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 177 ;
     sdo:color
         "30/100/0/0"^^isc:CMYK ,
@@ -2249,7 +2249,7 @@ isc:Hauterivian
     time:hasEnd [
             isc:inMYA 125.77
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 46 ;
     sdo:color
         "35/0/55/0"^^isc:CMYK ,
@@ -2293,7 +2293,7 @@ isc:Hettangian
             isc:inMYA 199.5 ;
             sdo:marginOfError 0.3
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 63 ;
     sdo:color
         "70/5/0/0"^^isc:CMYK ,
@@ -2337,7 +2337,7 @@ isc:Hirnantian
             isc:inMYA 443.8 ;
             sdo:marginOfError 1.5
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 131 ;
     sdo:color
         "35/0/30/0"^^isc:CMYK ,
@@ -2381,7 +2381,7 @@ isc:Homerian
             isc:inMYA 427.4 ;
             sdo:marginOfError 0.5
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 123 ;
     sdo:color
         "20/0/15/0"^^isc:CMYK ,
@@ -2424,7 +2424,7 @@ isc:Induan
     time:hasEnd [
             isc:inMYA 251.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 74 ;
     sdo:color
         "35/70/0/0"^^isc:CMYK ,
@@ -2448,7 +2448,7 @@ isc:Jiangshanian
             isc:inMYA 489.5 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 143 ;
     sdo:color
         "15/0/25/0"^^isc:CMYK ,
@@ -2492,7 +2492,7 @@ isc:Kasimovian
             isc:inMYA 303.7 ;
             sdo:marginOfError 0.1
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 93 ;
     sdo:color
         "25/10/15/0"^^isc:CMYK ,
@@ -2536,7 +2536,7 @@ isc:Katian
             isc:inMYA 445.2 ;
             sdo:marginOfError 1.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 132 ;
     sdo:color
         "40/0/35/0"^^isc:CMYK ,
@@ -2580,7 +2580,7 @@ isc:Kimmeridgian
             isc:inMYA 149.2 ;
             sdo:marginOfError 0.7
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 52 ;
     sdo:color
         "20/0/0/0"^^isc:CMYK ,
@@ -2624,7 +2624,7 @@ isc:Kungurian
             isc:inMYA 273.01 ;
             sdo:marginOfError 0.14
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 86 ;
     sdo:color
         "10/45/40/0"^^isc:CMYK ,
@@ -2668,7 +2668,7 @@ isc:Ladinian
             isc:inMYA 237 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 70 ;
     sdo:color
         "20/45/0/0"^^isc:CMYK ,
@@ -2710,7 +2710,7 @@ isc:Langhian
     time:hasEnd [
             isc:inMYA 13.82
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 17 ;
     sdo:color
         "0/0/70/0"^^isc:CMYK ,
@@ -2754,7 +2754,7 @@ isc:Lochkovian
             isc:inMYA 410.8 ;
             sdo:marginOfError 2.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 117 ;
     sdo:color
         "10/25/60/0"^^isc:CMYK ,
@@ -2798,7 +2798,7 @@ isc:Ludfordian
             isc:inMYA 423.0 ;
             sdo:marginOfError 2.3
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 120 ;
     sdo:color
         "15/0/10/0"^^isc:CMYK ,
@@ -2840,7 +2840,7 @@ isc:Lutetian
     time:hasEnd [
             isc:inMYA 41.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 27 ;
     sdo:color
         "0/30/40/0"^^isc:CMYK ,
@@ -2883,7 +2883,7 @@ isc:Maastrichtian
     time:hasEnd [
             isc:inMYA 66.0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 36 ;
     sdo:color
         "5/0/45/0"^^isc:CMYK ,
@@ -2904,7 +2904,7 @@ isc:Meghalayan
     time:hasEnd [
             isc:inMYA 0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 1 ;
     sdo:color
         "0/10/5/0"^^isc:CMYK ,
@@ -2948,7 +2948,7 @@ isc:Mesoarchean
     time:hasEnd [
             isc:inMYA 2800
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 173 ;
     sdo:color
         "0/60/5/0"^^isc:CMYK ,
@@ -2990,7 +2990,7 @@ isc:Messinian
     time:hasEnd [
             isc:inMYA 5.333
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 14 ;
     sdo:color
         "0/0/55/0"^^isc:CMYK ,
@@ -3034,7 +3034,7 @@ isc:Moscovian
             isc:inMYA 307.0 ;
             sdo:marginOfError 0.1
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 96 ;
     sdo:color
         "30/10/20/0"^^isc:CMYK ,
@@ -3078,7 +3078,7 @@ isc:Neoarchean
     time:hasEnd [
             isc:inMYA 2500
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 172 ;
     sdo:color
         "0/40/5/0"^^isc:CMYK ,
@@ -3122,7 +3122,7 @@ isc:Norian
             isc:inMYA 208.5 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 67 ;
     sdo:color
         "15/30/0/0"^^isc:CMYK ,
@@ -3143,7 +3143,7 @@ isc:Northgrippian
     time:hasEnd [
             isc:inMYA 0.0042
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 2 ;
     sdo:color
         "0/10/10/0"^^isc:CMYK ,
@@ -3185,7 +3185,7 @@ isc:Olenekian
     time:hasEnd [
             isc:inMYA 251.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 73 ;
     sdo:color
         "30/65/0/0"^^isc:CMYK ,
@@ -3227,7 +3227,7 @@ isc:Orosirian
     time:hasEnd [
             isc:inMYA 1800
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 167 ;
     sdo:color
         "0/60/15/0"^^isc:CMYK ,
@@ -3271,7 +3271,7 @@ isc:Oxfordian
             isc:inMYA 154.8 ;
             sdo:marginOfError 0.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 53 ;
     sdo:color
         "25/0/0/0"^^isc:CMYK ,
@@ -3315,7 +3315,7 @@ isc:Paibian
             isc:inMYA 494 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 145 ;
     sdo:color
         "20/0/35/0"^^isc:CMYK ,
@@ -3359,7 +3359,7 @@ isc:Paleoarchean
     time:hasEnd [
             isc:inMYA 3200
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 174 ;
     sdo:color
         "0/75/0/0"^^isc:CMYK ,
@@ -3401,7 +3401,7 @@ isc:Piacenzian
     time:hasEnd [
             isc:inMYA 2.58
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 11 ;
     sdo:color
         "0/0/25/0"^^isc:CMYK ,
@@ -3445,7 +3445,7 @@ isc:Pliensbachian
             isc:inMYA 184.2 ;
             sdo:marginOfError 0.3
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 61 ;
     sdo:color
         "50/5/0/0"^^isc:CMYK ,
@@ -3489,7 +3489,7 @@ isc:Pragian
             isc:inMYA 407.6 ;
             sdo:marginOfError 2.6
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 115 ;
     sdo:color
         "10/20/55/0"^^isc:CMYK ,
@@ -3531,7 +3531,7 @@ isc:Priabonian
     time:hasEnd [
             isc:inMYA 33.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 25 ;
     sdo:color
         "0/20/30/0"^^isc:CMYK ,
@@ -3575,7 +3575,7 @@ isc:Pridoli
             isc:inMYA 419.2 ;
             sdo:marginOfError 3.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 119 ;
     sdo:color
         "10/0/10/0"^^isc:CMYK ,
@@ -3619,7 +3619,7 @@ isc:Rhaetian
             isc:inMYA 201.4 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 66 ;
     sdo:color
         "10/25/0/0"^^isc:CMYK ,
@@ -3663,7 +3663,7 @@ isc:Rhuddanian
             isc:inMYA 440.8 ;
             sdo:marginOfError 1.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 129 ;
     sdo:color
         "35/0/25/0"^^isc:CMYK ,
@@ -3705,7 +3705,7 @@ isc:Rhyacian
     time:hasEnd [
             isc:inMYA 2050
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 168 ;
     sdo:color
         "0/65/20/0"^^isc:CMYK ,
@@ -3749,7 +3749,7 @@ isc:Roadian
             isc:inMYA 266.9 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 85 ;
     sdo:color
         "0/50/45/0"^^isc:CMYK ,
@@ -3791,7 +3791,7 @@ isc:Rupelian
     time:hasEnd [
             isc:inMYA 27.82
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 24 ;
     sdo:color
         "0/15/35/0"^^isc:CMYK ,
@@ -3835,7 +3835,7 @@ isc:Sakmarian
             isc:inMYA 290.1 ;
             sdo:marginOfError 0.26
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 88 ;
     sdo:color
         "10/55/50/0"^^isc:CMYK ,
@@ -3879,7 +3879,7 @@ isc:Sandbian
             isc:inMYA 453.0 ;
             sdo:marginOfError 0.7
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 133 ;
     sdo:color
         "45/0/40/0"^^isc:CMYK ,
@@ -3923,7 +3923,7 @@ isc:Santonian
             isc:inMYA 83.6 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 38 ;
     sdo:color
         "15/0/55/0"^^isc:CMYK ,
@@ -3965,7 +3965,7 @@ isc:Selandian
     time:hasEnd [
             isc:inMYA 59.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 31 ;
     sdo:color
         "0/25/55/0"^^isc:CMYK ,
@@ -4009,7 +4009,7 @@ isc:Serpukhovian
             isc:inMYA 323.2 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 100 ;
     sdo:color
         "25/15/55/0"^^isc:CMYK ,
@@ -4051,7 +4051,7 @@ isc:Serravallian
     time:hasEnd [
             isc:inMYA 11.63
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 16 ;
     sdo:color
         "0/0/65/0"^^isc:CMYK ,
@@ -4095,7 +4095,7 @@ isc:Sheinwoodian
             isc:inMYA 430.5 ;
             sdo:marginOfError 0.7
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 124 ;
     sdo:color
         "25/0/20/0"^^isc:CMYK ,
@@ -4137,7 +4137,7 @@ isc:Siderian
     time:hasEnd [
             isc:inMYA 2300
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 171 ;
     sdo:color
         "0/70/25/0"^^isc:CMYK ,
@@ -4181,7 +4181,7 @@ isc:Sinemurian
             isc:inMYA 192.9 ;
             sdo:marginOfError 0.3
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 62 ;
     sdo:color
         "60/5/0/0"^^isc:CMYK ,
@@ -4223,7 +4223,7 @@ isc:Statherian
     time:hasEnd [
             isc:inMYA 1600
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 166 ;
     sdo:color
         "0/55/10/0"^^isc:CMYK ,
@@ -4265,7 +4265,7 @@ isc:Stenian
     time:hasEnd [
             isc:inMYA 1000
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 162 ;
     sdo:color
         "0/15/35/0"^^isc:CMYK ,
@@ -4309,7 +4309,7 @@ isc:Telychian
             isc:inMYA 433.4 ;
             sdo:marginOfError 0.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 126 ;
     sdo:color
         "25/0/15/0"^^isc:CMYK ,
@@ -4351,7 +4351,7 @@ isc:Thanetian
     time:hasEnd [
             isc:inMYA 56.0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 30 ;
     sdo:color
         "0/25/50/0"^^isc:CMYK ,
@@ -4395,7 +4395,7 @@ isc:Tithonian
             isc:inMYA 145 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 51 ;
     sdo:color
         "15/0/0/0"^^isc:CMYK ,
@@ -4439,7 +4439,7 @@ isc:Toarcian
             isc:inMYA 174.7 ;
             sdo:marginOfError 0.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 60 ;
     sdo:color
         "40/5/0/0"^^isc:CMYK ,
@@ -4482,7 +4482,7 @@ isc:Tonian
             isc:inMYA 720 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 161 ;
     sdo:color
         "0/25/65/0"^^isc:CMYK ,
@@ -4524,7 +4524,7 @@ isc:Tortonian
     time:hasEnd [
             isc:inMYA 7.246
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 15 ;
     sdo:color
         "0/0/60/0"^^isc:CMYK ,
@@ -4568,7 +4568,7 @@ isc:Tournaisian
             isc:inMYA 346.7 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 107 ;
     sdo:color
         "45/15/55/0"^^isc:CMYK ,
@@ -4612,7 +4612,7 @@ isc:Tremadocian
             isc:inMYA 477.7 ;
             sdo:marginOfError 1.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 141 ;
     sdo:color
         "80/0/50/0"^^isc:CMYK ,
@@ -4655,7 +4655,7 @@ isc:Turonian
             isc:inMYA 89.8 ;
             sdo:marginOfError 0.3
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 40 ;
     sdo:color
         "25/0/65/0"^^isc:CMYK ,
@@ -4693,7 +4693,7 @@ isc:UpperPleistocene
     time:hasEnd [
             isc:inMYA 0.0117
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 5 ;
     sdo:color
         "0/5/15/0"^^isc:CMYK ,
@@ -4737,7 +4737,7 @@ isc:Valanginian
             isc:inMYA 139.8 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 47 ;
     sdo:color
         "40/0/60/0"^^isc:CMYK ,
@@ -4781,7 +4781,7 @@ isc:Visean
             isc:inMYA 330.9 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 103 ;
     sdo:color
         "35/15/55/0"^^isc:CMYK ,
@@ -4825,7 +4825,7 @@ isc:Wordian
             isc:inMYA 264.28 ;
             sdo:marginOfError 0.16
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 83 ;
     sdo:color
         "0/45/40/0"^^isc:CMYK ,
@@ -4869,7 +4869,7 @@ isc:Wuchiapingian
             isc:inMYA 254.14 ;
             sdo:marginOfError 0.07
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 81 ;
     sdo:color
         "0/30/25/0"^^isc:CMYK ,
@@ -4892,7 +4892,7 @@ isc:Wuliuan
             isc:inMYA 504.5 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 149 ;
     sdo:color
         "30/5/40/0"^^isc:CMYK ,
@@ -4934,7 +4934,7 @@ isc:Ypresian
     time:hasEnd [
             isc:inMYA 47.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 29 ;
     sdo:color
         "0/35/45/0"^^isc:CMYK ,
@@ -4976,7 +4976,7 @@ isc:Zanclean
     time:hasEnd [
             isc:inMYA 3.6
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 13 ;
     sdo:color
         "0/0/30/0"^^isc:CMYK ,
@@ -5003,7 +5003,7 @@ isc:LowerMississippian
             isc:inMYA 346.7 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 105 ;
     sdo:color
         "45/15/55/0"^^isc:CMYK ,
@@ -5030,7 +5030,7 @@ isc:LowerPennsylvanian
             isc:inMYA 315.2 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 98 ;
     sdo:color
         "45/10/20/0"^^isc:CMYK ,
@@ -5057,7 +5057,7 @@ isc:MiddleMississippian
             isc:inMYA 330.9 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 102 ;
     sdo:color
         "35/15/55/0"^^isc:CMYK ,
@@ -5084,7 +5084,7 @@ isc:MiddlePennsylvanian
             isc:inMYA 307.0 ;
             sdo:marginOfError 0.1
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 95 ;
     sdo:color
         "30/10/20/0"^^isc:CMYK ,
@@ -5111,7 +5111,7 @@ isc:UpperMississippian
             isc:inMYA 323.2 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 101 ;
     sdo:color
         "25/15/55/0"^^isc:CMYK ,
@@ -5158,7 +5158,7 @@ isc:CambrianSeries2
             isc:inMYA 509 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 151 ;
     sdo:color
         "40/10/50/0"^^isc:CMYK ,
@@ -5205,7 +5205,7 @@ isc:Carboniferous
             isc:inMYA 298.9 ;
             sdo:marginOfError 0.15
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 104 ;
     sdo:color
         "60/15/30/0"^^isc:CMYK ,
@@ -5251,7 +5251,7 @@ isc:Cretaceous
     time:hasEnd [
             isc:inMYA 66.0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 49 ;
     sdo:color
         "50/0/75/0"^^isc:CMYK ,
@@ -5298,7 +5298,7 @@ isc:Lopingian
             isc:inMYA 251.902 ;
             sdo:marginOfError 0.024
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 80 ;
     sdo:color
         "0/35/30/0"^^isc:CMYK ,
@@ -5345,7 +5345,7 @@ isc:LowerOrdovician
             isc:inMYA 470.0 ;
             sdo:marginOfError 1.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 139 ;
     sdo:color
         "90/0/60/0"^^isc:CMYK ,
@@ -5391,7 +5391,7 @@ isc:LowerTriassic
     time:hasEnd [
             isc:inMYA 247.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 75 ;
     sdo:color
         "40/75/0/0"^^isc:CMYK ,
@@ -5438,7 +5438,7 @@ isc:Ludlow
             isc:inMYA 419.2 ;
             sdo:marginOfError 3.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 122 ;
     sdo:color
         "25/0/15/0"^^isc:CMYK ,
@@ -5485,7 +5485,7 @@ isc:MiddleDevonian
             isc:inMYA 382.7 ;
             sdo:marginOfError 1.6
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 113 ;
     sdo:color
         "5/20/55/0"^^isc:CMYK ,
@@ -5532,7 +5532,7 @@ isc:MiddleOrdovician
             isc:inMYA 458.4 ;
             sdo:marginOfError 0.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 137 ;
     sdo:color
         "70/0/50/0"^^isc:CMYK ,
@@ -5578,7 +5578,7 @@ isc:MiddleTriassic
             isc:inMYA 237 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 72 ;
     sdo:color
         "30/55/0/0"^^isc:CMYK ,
@@ -5623,7 +5623,7 @@ isc:Neogene
     time:hasEnd [
             isc:inMYA 2.58
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 21 ;
     sdo:color
         "0/10/90/0"^^isc:CMYK ,
@@ -5668,7 +5668,7 @@ isc:Oligocene
     time:hasEnd [
             isc:inMYA 23.03
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 23 ;
     sdo:color
         "0/25/45/0"^^isc:CMYK ,
@@ -5713,7 +5713,7 @@ isc:Pliocene
     time:hasEnd [
             isc:inMYA 2.58
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 12 ;
     sdo:color
         "0/0/40/0"^^isc:CMYK ,
@@ -5758,7 +5758,7 @@ isc:Quaternary
     time:hasEnd [
             isc:inMYA 0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 10 ;
     sdo:color
         "0/0/50/0"^^isc:CMYK ,
@@ -5805,7 +5805,7 @@ isc:Terreneuvian
             isc:inMYA 521 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 157 ;
     sdo:color
         "45/15/55/0"^^isc:CMYK ,
@@ -5848,7 +5848,7 @@ isc:UpperDevonian
             isc:inMYA 358.9 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 110 ;
     sdo:color
         "5/10/35/0"^^isc:CMYK ,
@@ -5891,7 +5891,7 @@ isc:UpperPennsylvanian
             isc:inMYA 298.9 ;
             sdo:marginOfError 0.15
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 94 ;
     sdo:color
         "25/10/20/0"^^isc:CMYK ,
@@ -5938,7 +5938,7 @@ isc:Wenlock
             isc:inMYA 427.4 ;
             sdo:marginOfError 0.5
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 125 ;
     sdo:color
         "30/0/20/0"^^isc:CMYK ,
@@ -5992,7 +5992,7 @@ isc:Cenozoic
     time:hasEnd [
             isc:inMYA 0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 32 ;
     sdo:color
         "40/0/5/0"^^isc:CMYK ,
@@ -6040,7 +6040,7 @@ isc:Devonian
             isc:inMYA 358.9 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 116 ;
     sdo:color
         "20/40/75/0"^^isc:CMYK ,
@@ -6088,7 +6088,7 @@ isc:Furongian
             isc:inMYA 485.4 ;
             sdo:marginOfError 1.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 144 ;
     sdo:color
         "30/0/40/0"^^isc:CMYK ,
@@ -6136,7 +6136,7 @@ isc:Guadalupian
             isc:inMYA 259.51 ;
             sdo:marginOfError 0.21
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 84 ;
     sdo:color
         "0/55/50/0"^^isc:CMYK ,
@@ -6182,7 +6182,7 @@ isc:Holocene
     time:hasEnd [
             isc:inMYA 0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 4 ;
     sdo:color
         "0/10/20/0"^^isc:CMYK ,
@@ -6230,7 +6230,7 @@ isc:Jurassic
             isc:inMYA 145.0 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 64 ;
     sdo:color
         "80/0/5/0"^^isc:CMYK ,
@@ -6278,7 +6278,7 @@ isc:Llandovery
             isc:inMYA 433.4 ;
             sdo:marginOfError 0.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 128 ;
     sdo:color
         "40/0/25/0"^^isc:CMYK ,
@@ -6326,7 +6326,7 @@ isc:LowerDevonian
             isc:inMYA 393.3 ;
             sdo:marginOfError 1.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 118 ;
     sdo:color
         "10/30/65/0"^^isc:CMYK ,
@@ -6372,7 +6372,7 @@ isc:Mesoproterozoic
     time:hasEnd [
             isc:inMYA 1000
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 165 ;
     sdo:color
         "0/30/55/0"^^isc:CMYK ,
@@ -6419,7 +6419,7 @@ isc:Mesozoic
     time:hasEnd [
             isc:inMYA 66.0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 76 ;
     sdo:color
         "60/0/10/0"^^isc:CMYK ,
@@ -6446,7 +6446,7 @@ isc:Miaolingian
             isc:inMYA 497 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 148 ;
     sdo:color
         "35/5/45/0"^^isc:CMYK ,
@@ -6494,7 +6494,7 @@ isc:Mississippian
             isc:inMYA 323.2 ;
             sdo:marginOfError 0.4
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 106 ;
     sdo:color
         "60/25/55/0"^^isc:CMYK ,
@@ -6541,7 +6541,7 @@ isc:Neoproterozoic
             isc:inMYA 538.8 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 160 ;
     sdo:color
         "0/30/70/0"^^isc:CMYK ,
@@ -6589,7 +6589,7 @@ isc:Ordovician
             isc:inMYA 443.8 ;
             sdo:marginOfError 1.5
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 140 ;
     sdo:color
         "100/0/60/0"^^isc:CMYK ,
@@ -6637,7 +6637,7 @@ isc:Paleocene
     time:hasEnd [
             isc:inMYA 56.0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 34 ;
     sdo:color
         "0/40/60/0"^^isc:CMYK ,
@@ -6685,7 +6685,7 @@ isc:Paleogene
     time:hasEnd [
             isc:inMYA 23.03
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 35 ;
     sdo:color
         "5/0/90/0"^^isc:CMYK ,
@@ -6733,7 +6733,7 @@ isc:Pennsylvanian
             isc:inMYA 298.9 ;
             sdo:marginOfError 0.15
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 99 ;
     sdo:color
         "50/10/20/0"^^isc:CMYK ,
@@ -6781,7 +6781,7 @@ isc:Permian
             isc:inMYA 251.902 ;
             sdo:marginOfError 0.024
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 91 ;
     sdo:color
         "5/75/75/0"^^isc:CMYK ,
@@ -6827,7 +6827,7 @@ isc:Phanerozoic
     time:hasEnd [
             isc:inMYA 0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 156 ;
     sdo:color
         "40/0/5/0"^^isc:CMYK ,
@@ -6873,7 +6873,7 @@ isc:Precambrian
             isc:inMYA 538.8 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 178 ;
     sdo:color
         "0/75/30/0"^^isc:CMYK ,
@@ -6920,7 +6920,7 @@ isc:Proterozoic
             isc:inMYA 538.8 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 170 ;
     sdo:color
         "0/80/35/0"^^isc:CMYK ,
@@ -6968,7 +6968,7 @@ isc:Triassic
             isc:inMYA 201.4 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 78 ;
     sdo:color
         "50/80/0/0"^^isc:CMYK ,
@@ -7012,7 +7012,7 @@ isc:UpperJurassic
             isc:inMYA 145 ;
             skos:note "uncertain"
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 54 ;
     sdo:color
         "30/0/0/0"^^isc:CMYK ,
@@ -7056,7 +7056,7 @@ isc:UpperOrdovician
             isc:inMYA 443.8 ;
             sdo:marginOfError 1.5
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 134 ;
     sdo:color
         "50/0/40/0"^^isc:CMYK ,
@@ -7100,7 +7100,7 @@ isc:UpperTriassic
             isc:inMYA 201.4 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 69 ;
     sdo:color
         "25/40/0/0"^^isc:CMYK ,
@@ -7150,7 +7150,7 @@ isc:Archean
     time:hasEnd [
             isc:inMYA 2500
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 175 ;
     sdo:color
         "0/100/0/0"^^isc:CMYK ,
@@ -7199,7 +7199,7 @@ isc:Cambrian
             isc:inMYA 485.4 ;
             sdo:marginOfError 1.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 154 ;
     sdo:color
         "50/20/65/0"^^isc:CMYK ,
@@ -7248,7 +7248,7 @@ isc:Cisuralian
             isc:inMYA 273.01 ;
             sdo:marginOfError 0.14
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 90 ;
     sdo:color
         "5/65/60/0"^^isc:CMYK ,
@@ -7295,7 +7295,7 @@ isc:Eocene
     time:hasEnd [
             isc:inMYA 33.9
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 28 ;
     sdo:color
         "0/30/50/0"^^isc:CMYK ,
@@ -7344,7 +7344,7 @@ isc:LowerJurassic
             isc:inMYA 174.7 ;
             sdo:marginOfError 0.8
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 65 ;
     sdo:color
         "75/5/0/0"^^isc:CMYK ,
@@ -7393,7 +7393,7 @@ isc:MiddleJurassic
             isc:inMYA 161.5 ;
             sdo:marginOfError 1.0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 59 ;
     sdo:color
         "50/0/5/0"^^isc:CMYK ,
@@ -7442,7 +7442,7 @@ isc:Paleoproterozoic
     time:hasEnd [
             isc:inMYA 1600
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 169 ;
     sdo:color
         "0/75/30/0"^^isc:CMYK ,
@@ -7489,7 +7489,7 @@ isc:Pleistocene
     time:hasEnd [
             isc:inMYA 0.0117
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 9 ;
     sdo:color
         "0/5/40/0"^^isc:CMYK ,
@@ -7538,7 +7538,7 @@ isc:Silurian
             isc:inMYA 419.2 ;
             sdo:marginOfError 3.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 130 ;
     sdo:color
         "30/0/25/0"^^isc:CMYK ,
@@ -7586,7 +7586,7 @@ isc:LowerCretaceous
     time:hasEnd [
             isc:inMYA 100.5
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 50 ;
     sdo:color
         "45/0/70/0"^^isc:CMYK ,
@@ -7635,7 +7635,7 @@ isc:Miocene
     time:hasEnd [
             isc:inMYA 5.333
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 20 ;
     sdo:color
         "0/0/100/0"^^isc:CMYK ,
@@ -7688,7 +7688,7 @@ isc:Paleozoic
             isc:inMYA 538.8 ;
             sdo:marginOfError 0.2
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 77 ;
     sdo:color
         "40/10/40/0"^^isc:CMYK ,
@@ -7733,7 +7733,7 @@ isc:UpperCretaceous
     time:hasEnd [
             isc:inMYA 66.0
         ] ;
-    prov:wasDerivedFrom ts:gts2020 ;
+    
     sh:order 42 ;
     sdo:color
         "35/0/75/0"^^isc:CMYK ,
