@@ -1,3 +1,4 @@
+PREFIX cs: <https://w3id.org/profile/ischart-voc>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
 PREFIX isc: <http://resource.geosciml.org/classifier/ics/ischart/>
@@ -7549,7 +7550,7 @@ isc:UpperCretaceous
     sdo:color "#A6D84A"^^isc:RGBHex ;
 .
 
-<https://w3id.org/profile/gts-skos>
+cs:
     a skos:ConceptScheme ;
     dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
     dcterms:created "2020-06-05"^^xsd:date ;
