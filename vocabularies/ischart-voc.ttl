@@ -1,7 +1,10 @@
+PREFIX cs: <https://w3id.org/profile/ischart-voc>
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
 PREFIX isc: <http://resource.geosciml.org/classifier/ics/ischart/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX sdo: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
@@ -10,40 +13,23 @@ PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX ts: <http://resource.geosciml.org/vocabulary/timescale/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-isc:CMYK
-    a owl:Datatype ;
-    sdo:citation "https://en.wikipedia.org/wiki/CMYK_colour_model"^^xsd:anyURI ;
-    sdo:description """The CMYK colour model (also known as process colour, or four colour) is a subtractive colour model, based on the CMY colour model, used in colour printing, and is also used to describe the printing process itself. CMYK refers to the four ink plates used in some colour printing: cyan, magenta, yellow, and key (black).
-
-This datatype uses a microformat of "{C}/{M}/{Y}/{K}" with integer values for {C}, {M} {Y} & {K}."""@en ;
-    sdo:name "CMYK colour model" ;
-.
-
-isc:RGB
-    a owl:Datatype ;
-    sdo:citation "https://en.wikipedia.org/wiki/RGB_colour_model"^^xsd:anyURI ;
-    sdo:description """The RGB colour model is an additive colour model in which the red, green, and blue primary colours of light are added together in various ways to reproduce a broad array of colours. The name of the model comes from the initials of the three additive primary colours, red, green, and blue.
-
-This datatype uses a microformat of "{R}/{G}/{B}" with integer values for {R}, {G} & {B} between 0 and 255."""@en ;
-    sdo:name "CMYK colour notation" ;
-.
-
 isc:RGBHex
     a owl:Datatype ;
-    sdo:description """An 8-bit per channel, hexidecimal representation of RGB colours.
+    rdfs:comment """An 8-bit per channel, hexidecimal representation of RGB colours.
 
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
-    sdo:name "CMYK colour notation" ;
+    rdfs:label "CMYK colour notation" ;
 .
 
 isc:inMYA
     a owl:Datatype ;
-    sdo:description "The expression of a time instant millions of years before the present as a floating point number."@en ;
-    sdo:name "Millions of Years Ago" ;
+    rdfs:comment "The expression of a time instant millions of years before the present as a floating point number."@en ;
+    rdfs:label "Millions of Years Ago" ;
 .
 
 isc:Aalenian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пален"@bg ,
@@ -68,7 +54,8 @@ isc:Aalenian
         "阿连期"@zh ;
     skos:broader isc:MiddleJurassic ;
     skos:definition "A time period from 174.7 to 170.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "j1"^^isc:ccgmShortCode ;
     skos:prefLabel "Aalenian"@en ;
     time:hasBeginning [
             isc:inMYA 174.7 ;
@@ -80,14 +67,12 @@ isc:Aalenian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 58 ;
-    sdo:color
-        "40/0/5/0"^^isc:CMYK ,
-        "154/217/221"^^isc:RGB ,
-        "#9AD9DD"^^isc:RGBHex ;
+    sdo:color "#9AD9DD"^^isc:RGBHex ;
 .
 
 isc:Aeronian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "перон"@bg ,
@@ -112,7 +97,8 @@ isc:Aeronian
         "埃隆期"@zh ;
     skos:broader isc:Llandovery ;
     skos:definition "A time period from 440.8 to 438.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "s2"^^isc:ccgmShortCode ;
     skos:prefLabel "Aeronian"@en ;
     time:hasBeginning [
             isc:inMYA 440.8 ;
@@ -124,14 +110,12 @@ isc:Aeronian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 127 ;
-    sdo:color
-        "30/0/20/0"^^isc:CMYK ,
-        "179/225/194"^^isc:RGB ,
-        "#B3E1C2"^^isc:RGBHex ;
+    sdo:color "#B3E1C2"^^isc:RGBHex ;
 .
 
 isc:Albian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "плб"@bg ,
@@ -156,7 +140,8 @@ isc:Albian
         "阿尔布期"@zh ;
     skos:broader isc:LowerCretaceous ;
     skos:definition "A time period from 113.0 to 100.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "b6"^^isc:ccgmShortCode ;
     skos:prefLabel "Albian"@en ;
     time:hasBeginning [
             isc:inMYA 113.0 ;
@@ -167,14 +152,12 @@ isc:Albian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 43 ;
-    sdo:color
-        "20/0/40/0"^^isc:CMYK ,
-        "204/234/151"^^isc:RGB ,
-        "#CCEA97"^^isc:RGBHex ;
+    sdo:color "#CCEA97"^^isc:RGBHex ;
 .
 
 isc:Anisian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пниз"@bg ,
@@ -199,7 +182,8 @@ isc:Anisian
         "安尼期"@zh ;
     skos:broader isc:MiddleTriassic ;
     skos:definition "A time period from 247.2 to 242 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "t3"^^isc:ccgmShortCode ;
     skos:prefLabel "Anisian"@en ;
     time:hasBeginning [
             isc:inMYA 247.2
@@ -210,14 +194,12 @@ isc:Anisian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 71 ;
-    sdo:color
-        "25/50/0/0"^^isc:CMYK ,
-        "188/117/183"^^isc:RGB ,
-        "#BC75B7"^^isc:RGBHex ;
+    sdo:color "#BC75B7"^^isc:RGBHex ;
 .
 
 isc:Aptian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "ппт"@bg ,
@@ -242,7 +224,8 @@ isc:Aptian
         "阿普弟期"@zh ;
     skos:broader isc:LowerCretaceous ;
     skos:definition "A time period from 121.4 to 113.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "b5"^^isc:ccgmShortCode ;
     skos:prefLabel "Aptian"@en ;
     time:hasBeginning [
             isc:inMYA 121.4 ;
@@ -254,14 +237,12 @@ isc:Aptian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 44 ;
-    sdo:color
-        "25/0/45/0"^^isc:CMYK ,
-        "191/228/138"^^isc:RGB ,
-        "#BFE48A"^^isc:RGBHex ;
+    sdo:color "#BFE48A"^^isc:RGBHex ;
 .
 
 isc:Aquitanian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пквитан"@bg ,
@@ -286,7 +267,8 @@ isc:Aquitanian
         "阿启坦期"@zh ;
     skos:broader isc:Miocene ;
     skos:definition "A time period from 23.03 to 20.44 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "n1"^^isc:ccgmShortCode ;
     skos:prefLabel "Aquitanian"@en ;
     time:hasBeginning [
             isc:inMYA 23.03
@@ -296,14 +278,12 @@ isc:Aquitanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 19 ;
-    sdo:color
-        "0/0/80/0"^^isc:CMYK ,
-        "255/255/51"^^isc:RGB ,
-        "#FFFF33"^^isc:RGBHex ;
+    sdo:color "#FFFF33"^^isc:RGBHex ;
 .
 
 isc:Artinskian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пртин"@bg ,
@@ -328,7 +308,8 @@ isc:Artinskian
         "亚丁斯克期"@zh ;
     skos:broader isc:Cisuralian ;
     skos:definition "A time period from 290.1 to 283.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p3"^^isc:ccgmShortCode ;
     skos:prefLabel "Artinskian"@en ;
     time:hasBeginning [
             isc:inMYA 290.1 ;
@@ -340,14 +321,12 @@ isc:Artinskian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 87 ;
-    sdo:color
-        "10/50/45/0"^^isc:CMYK ,
-        "227/123/104"^^isc:RGB ,
-        "#E37B68"^^isc:RGBHex ;
+    sdo:color "#E37B68"^^isc:RGBHex ;
 .
 
 isc:Asselian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пѿел"@bg ,
@@ -372,7 +351,8 @@ isc:Asselian
         "阿瑟尔期"@zh ;
     skos:broader isc:Cisuralian ;
     skos:definition "A time period from 298.9 to 293.51 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p1"^^isc:ccgmShortCode ;
     skos:prefLabel "Asselian"@en ;
     time:hasBeginning [
             isc:inMYA 298.9 ;
@@ -384,14 +364,12 @@ isc:Asselian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 89 ;
-    sdo:color
-        "10/60/55/0"^^isc:CMYK ,
-        "227/99/80"^^isc:RGB ,
-        "#E36350"^^isc:RGBHex ;
+    sdo:color "#E36350"^^isc:RGBHex ;
 .
 
 isc:Bajocian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Байоѿ"@bg ,
@@ -416,7 +394,8 @@ isc:Bajocian
         "巴柔期"@zh ;
     skos:broader isc:MiddleJurassic ;
     skos:definition "A time period from 170.9 to 168.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "j2"^^isc:ccgmShortCode ;
     skos:prefLabel "Bajocian"@en ;
     time:hasBeginning [
             isc:inMYA 170.9 ;
@@ -428,14 +407,12 @@ isc:Bajocian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 57 ;
-    sdo:color
-        "35/0/5/0"^^isc:CMYK ,
-        "166/221/224"^^isc:RGB ,
-        "#A6DDE0"^^isc:RGBHex ;
+    sdo:color "#A6DDE0"^^isc:RGBHex ;
 .
 
 isc:Barremian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Барем"@bg ,
@@ -460,7 +437,8 @@ isc:Barremian
         "巴列姆期"@zh ;
     skos:broader isc:LowerCretaceous ;
     skos:definition "A time period from 125.77 to 121.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "b4"^^isc:ccgmShortCode ;
     skos:prefLabel "Barremian"@en ;
     time:hasBeginning [
             isc:inMYA 125.77
@@ -471,14 +449,12 @@ isc:Barremian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 45 ;
-    sdo:color
-        "30/0/50/0"^^isc:CMYK ,
-        "179/223/127"^^isc:RGB ,
-        "#B3DF7F"^^isc:RGBHex ;
+    sdo:color "#B3DF7F"^^isc:RGBHex ;
 .
 
 isc:Bartonian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Бартон"@bg ,
@@ -503,7 +479,8 @@ isc:Bartonian
         "巴尔顿期"@zh ;
     skos:broader isc:Eocene ;
     skos:definition "A time period from 41.2 to 37.71 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e6"^^isc:ccgmShortCode ;
     skos:prefLabel "Bartonian"@en ;
     time:hasBeginning [
             isc:inMYA 41.2
@@ -513,14 +490,12 @@ isc:Bartonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 26 ;
-    sdo:color
-        "0/25/35/0"^^isc:CMYK ,
-        "253/192/145"^^isc:RGB ,
-        "#FDC091"^^isc:RGBHex ;
+    sdo:color "#FDC091"^^isc:RGBHex ;
 .
 
 isc:Bashkirian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Башкир"@bg ,
@@ -545,7 +520,8 @@ isc:Bashkirian
         "巴什基尔期"@zh ;
     skos:broader isc:LowerPennsylvanian ;
     skos:definition "A time period from 323.2 to 315.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "c4"^^isc:ccgmShortCode ;
     skos:prefLabel "Bashkirian"@en ;
     time:hasBeginning [
             isc:inMYA 323.2 ;
@@ -557,14 +533,12 @@ isc:Bashkirian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 97 ;
-    sdo:color
-        "40/10/20/0"^^isc:CMYK ,
-        "153/194/181"^^isc:RGB ,
-        "#99C2B5"^^isc:RGBHex ;
+    sdo:color "#99C2B5"^^isc:RGBHex ;
 .
 
 isc:Bathonian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Бат"@bg ,
@@ -589,7 +563,8 @@ isc:Bathonian
         "巴通期"@zh ;
     skos:broader isc:MiddleJurassic ;
     skos:definition "A time period from 168.2 to 165.3 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "j3"^^isc:ccgmShortCode ;
     skos:prefLabel "Bathonian"@en ;
     time:hasBeginning [
             isc:inMYA 168.2 ;
@@ -601,14 +576,12 @@ isc:Bathonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 56 ;
-    sdo:color
-        "30/0/5/0"^^isc:CMYK ,
-        "179/226/227"^^isc:RGB ,
-        "#B3E2E3"^^isc:RGBHex ;
+    sdo:color "#B3E2E3"^^isc:RGBHex ;
 .
 
 isc:Berriasian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Бериаѿ"@bg ,
@@ -633,7 +606,8 @@ isc:Berriasian
         "贝利亚斯期"@zh ;
     skos:broader isc:LowerCretaceous ;
     skos:definition "A time period from 145.0 to 139.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "b1"^^isc:ccgmShortCode ;
     skos:prefLabel "Berriasian"@en ;
     time:hasBeginning [
             isc:inMYA 145.0 ;
@@ -645,14 +619,12 @@ isc:Berriasian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 48 ;
-    sdo:color
-        "45/0/65/0"^^isc:CMYK ,
-        "140/205/96"^^isc:RGB ,
-        "#8CCD60"^^isc:RGBHex ;
+    sdo:color "#8CCD60"^^isc:RGBHex ;
 .
 
 isc:Burdigalian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Бурдигал"@bg ,
@@ -677,7 +649,8 @@ isc:Burdigalian
         "布迪加尔期"@zh ;
     skos:broader isc:Miocene ;
     skos:definition "A time period from 20.44 to 15.98 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "n2"^^isc:ccgmShortCode ;
     skos:prefLabel "Burdigalian"@en ;
     time:hasBeginning [
             isc:inMYA 20.44
@@ -687,14 +660,12 @@ isc:Burdigalian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 18 ;
-    sdo:color
-        "0/0/75/0"^^isc:CMYK ,
-        "255/255/65"^^isc:RGB ,
-        "#FFFF41"^^isc:RGBHex ;
+    sdo:color "#FFFF41"^^isc:RGBHex ;
 .
 
 isc:Calabrian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Калабрий"@bg ,
@@ -719,7 +690,8 @@ isc:Calabrian
         "卡拉布里亚期"@zh ;
     skos:broader isc:Pleistocene ;
     skos:definition "A time period from 1.8 to 0.774 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "q2"^^isc:ccgmShortCode ;
     skos:prefLabel "Calabrian"@en ;
     time:hasBeginning [
             isc:inMYA 1.8
@@ -729,14 +701,12 @@ isc:Calabrian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 7 ;
-    sdo:color
-        "0/5/25/0"^^isc:CMYK ,
-        "255/242/186"^^isc:RGB ,
-        "#FFF2BA"^^isc:RGBHex ;
+    sdo:color "#FFF2BA"^^isc:RGBHex ;
 .
 
 isc:Callovian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Калов"@bg ,
@@ -761,7 +731,8 @@ isc:Callovian
         "卡洛夫期"@zh ;
     skos:broader isc:MiddleJurassic ;
     skos:definition "A time period from 165.3 to 161.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "j4"^^isc:ccgmShortCode ;
     skos:prefLabel "Callovian"@en ;
     time:hasBeginning [
             isc:inMYA 165.3 ;
@@ -773,14 +744,12 @@ isc:Callovian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 55 ;
-    sdo:color
-        "25/0/5/0"^^isc:CMYK ,
-        "191/231/229"^^isc:RGB ,
-        "#BFE7E5"^^isc:RGBHex ;
+    sdo:color "#BFE7E5"^^isc:RGBHex ;
 .
 
 isc:Calymmian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Калим"@bg ,
@@ -805,7 +774,8 @@ isc:Calymmian
         "盖层纪"@zh ;
     skos:broader isc:Mesoproterozoic ;
     skos:definition "A time period from 1600 to 1400 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "MP1"^^isc:ccgmShortCode ;
     skos:prefLabel "Calymmian"@en ;
     time:hasBeginning [
             isc:inMYA 1600
@@ -815,14 +785,12 @@ isc:Calymmian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 164 ;
-    sdo:color
-        "0/24/45/0"^^isc:CMYK ,
-        "253/192/122"^^isc:RGB ,
-        "#FDC07A"^^isc:RGBHex ;
+    sdo:color "#FDC07A"^^isc:RGBHex ;
 .
 
 isc:CambrianStage10
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Камбрий - 10 етаж"@bg ,
@@ -847,7 +815,8 @@ isc:CambrianStage10
         "第十期"@zh ;
     skos:broader isc:Furongian ;
     skos:definition "A time period from 489.5 to 485.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep10"^^isc:ccgmShortCode ;
     skos:prefLabel "Cambrian-Stage 10"@en ;
     time:hasBeginning [
             isc:inMYA 489.5 ;
@@ -859,14 +828,12 @@ isc:CambrianStage10
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 142 ;
-    sdo:color
-        "10/0/20/0"^^isc:CMYK ,
-        "230/245/201"^^isc:RGB ,
-        "#E6F5C9"^^isc:RGBHex ;
+    sdo:color "#E6F5C9"^^isc:RGBHex ;
 .
 
 isc:CambrianStage2
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Камбрий - 2 етаж"@bg ,
@@ -891,7 +858,8 @@ isc:CambrianStage2
         "第二期"@zh ;
     skos:broader isc:Terreneuvian ;
     skos:definition "A time period from 521 to 509 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep3"^^isc:ccgmShortCode ;
     skos:prefLabel "Cambrian-Stage 2"@en ;
     time:hasBeginning [
             isc:inMYA 521 ;
@@ -903,14 +871,12 @@ isc:CambrianStage2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 152 ;
-    sdo:color
-        "35/15/45/0"^^isc:CMYK ,
-        "166/186/128"^^isc:RGB ,
-        "#A6BA80"^^isc:RGBHex ;
+    sdo:color "#A6BA80"^^isc:RGBHex ;
 .
 
 isc:CambrianStage3
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Камбрий - 3 етаж"@bg ,
@@ -935,7 +901,8 @@ isc:CambrianStage3
         "第三期"@zh ;
     skos:broader isc:CambrianSeries2 ;
     skos:definition "A time period from 521 to 514 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep2"^^isc:ccgmShortCode ;
     skos:prefLabel "Cambrian-Stage 3"@en ;
     time:hasBeginning [
             isc:inMYA 521 ;
@@ -947,14 +914,12 @@ isc:CambrianStage3
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 153 ;
-    sdo:color
-        "35/10/45/0"^^isc:CMYK ,
-        "166/197/131"^^isc:RGB ,
-        "#A6C583"^^isc:RGBHex ;
+    sdo:color "#A6C583"^^isc:RGBHex ;
 .
 
 isc:CambrianStage4
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Камбрий - 4 етаж"@bg ,
@@ -979,7 +944,8 @@ isc:CambrianStage4
         "第四期"@zh ;
     skos:broader isc:CambrianSeries2 ;
     skos:definition "A time period from 514 to 509 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep4"^^isc:ccgmShortCode ;
     skos:prefLabel "Cambrian-Stage 4"@en ;
     time:hasBeginning [
             isc:inMYA 514 ;
@@ -991,14 +957,12 @@ isc:CambrianStage4
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 150 ;
-    sdo:color
-        "30/10/40/0"^^isc:CMYK ,
-        "179/202/142"^^isc:RGB ,
-        "#B3CA8E"^^isc:RGBHex ;
+    sdo:color "#B3CA8E"^^isc:RGBHex ;
 .
 
 isc:Campanian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кампан"@bg ,
@@ -1023,7 +987,8 @@ isc:Campanian
         "坎佩尼期"@zh ;
     skos:broader isc:UpperCretaceous ;
     skos:definition "A time period from 83.6 to 72.1 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "k5"^^isc:ccgmShortCode ;
     skos:prefLabel "Campanian"@en ;
     time:hasBeginning [
             isc:inMYA 83.6 ;
@@ -1035,14 +1000,12 @@ isc:Campanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 37 ;
-    sdo:color
-        "10/0/50/0"^^isc:CMYK ,
-        "230/244/127"^^isc:RGB ,
-        "#E6F47F"^^isc:RGBHex ;
+    sdo:color "#E6F47F"^^isc:RGBHex ;
 .
 
 isc:Capitanian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Капитан"@bg ,
@@ -1067,7 +1030,8 @@ isc:Capitanian
         "卡匹敦期"@zh ;
     skos:broader isc:Guadalupian ;
     skos:definition "A time period from 264.28 to 259.51 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p7"^^isc:ccgmShortCode ;
     skos:prefLabel "Capitanian"@en ;
     time:hasBeginning [
             isc:inMYA 264.28 ;
@@ -1079,14 +1043,12 @@ isc:Capitanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 82 ;
-    sdo:color
-        "0/40/35/0"^^isc:CMYK ,
-        "251/154/133"^^isc:RGB ,
-        "#FB9A85"^^isc:RGBHex ;
+    sdo:color "#FB9A85"^^isc:RGBHex ;
 .
 
 isc:Carnian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Карн"@bg ,
@@ -1111,7 +1073,8 @@ isc:Carnian
         "卡尼期"@zh ;
     skos:broader isc:UpperTriassic ;
     skos:definition "A time period from 237 to 227 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "t5"^^isc:ccgmShortCode ;
     skos:prefLabel "Carnian"@en ;
     time:hasBeginning [
             isc:inMYA 237 ;
@@ -1123,14 +1086,12 @@ isc:Carnian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 68 ;
-    sdo:color
-        "20/35/0/0"^^isc:CMYK ,
-        "201/155/203"^^isc:RGB ,
-        "#C99BCB"^^isc:RGBHex ;
+    sdo:color "#C99BCB"^^isc:RGBHex ;
 .
 
 isc:Cenomanian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ценоман"@bg ,
@@ -1155,7 +1116,8 @@ isc:Cenomanian
         "森诺曼期"@zh ;
     skos:broader isc:UpperCretaceous ;
     skos:definition "A time period from 100.5 to 93.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "k1"^^isc:ccgmShortCode ;
     skos:prefLabel "Cenomanian"@en ;
     time:hasBeginning [
             isc:inMYA 100.5
@@ -1165,14 +1127,12 @@ isc:Cenomanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 41 ;
-    sdo:color
-        "30/0/70/0"^^isc:CMYK ,
-        "179/222/83"^^isc:RGB ,
-        "#B3DE53"^^isc:RGBHex ;
+    sdo:color "#B3DE53"^^isc:RGBHex ;
 .
 
 isc:Changhsingian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Чангшинг"@bg ,
@@ -1197,7 +1157,8 @@ isc:Changhsingian
         "长兴期"@zh ;
     skos:broader isc:Lopingian ;
     skos:definition "A time period from 254.14 to 251.902 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p9"^^isc:ccgmShortCode ;
     skos:prefLabel "Changhsingian"@en ;
     time:hasBeginning [
             isc:inMYA 254.14 ;
@@ -1209,14 +1170,12 @@ isc:Changhsingian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 79 ;
-    sdo:color
-        "0/25/20/0"^^isc:CMYK ,
-        "252/192/178"^^isc:RGB ,
-        "#FCC0B2"^^isc:RGBHex ;
+    sdo:color "#FCC0B2"^^isc:RGBHex ;
 .
 
 isc:Chattian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хат"@bg ,
@@ -1241,7 +1200,8 @@ isc:Chattian
         "恰特期"@zh ;
     skos:broader isc:Oligocene ;
     skos:definition "A time period from 27.82 to 23.03 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e9"^^isc:ccgmShortCode ;
     skos:prefLabel "Chattian"@en ;
     time:hasBeginning [
             isc:inMYA 27.82
@@ -1251,18 +1211,17 @@ isc:Chattian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 22 ;
-    sdo:color
-        "0/10/30/0"^^isc:CMYK ,
-        "254/230/170"^^isc:RGB ,
-        "#FEE6AA"^^isc:RGBHex ;
+    sdo:color "#FEE6AA"^^isc:RGBHex ;
 .
 
 isc:Chibanian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader isc:Pleistocene ;
     skos:definition "A time period from 0.774 to 0.129 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "q3"^^isc:ccgmShortCode ;
     skos:prefLabel "Chibanian"@en ;
     time:hasBeginning [
             isc:inMYA 0.774
@@ -1272,14 +1231,12 @@ isc:Chibanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 6 ;
-    sdo:color
-        "0/5/20/0"^^isc:CMYK ,
-        "255/242/199"^^isc:RGB ,
-        "#FFF2C7"^^isc:RGBHex ;
+    sdo:color "#FFF2C7"^^isc:RGBHex ;
 .
 
 isc:Coniacian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кониак"@bg ,
@@ -1304,7 +1261,8 @@ isc:Coniacian
         "科尼亚克期"@zh ;
     skos:broader isc:UpperCretaceous ;
     skos:definition "A time period from 89.8 to 86.3 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "k3"^^isc:ccgmShortCode ;
     skos:prefLabel "Coniacian"@en ;
     time:hasBeginning [
             isc:inMYA 89.8 ;
@@ -1316,14 +1274,12 @@ isc:Coniacian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 39 ;
-    sdo:color
-        "20/0/60/0"^^isc:CMYK ,
-        "204/233/104"^^isc:RGB ,
-        "#CCE968"^^isc:RGBHex ;
+    sdo:color "#CCE968"^^isc:RGBHex ;
 .
 
 isc:Cryogenian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Криоген"@bg ,
@@ -1348,7 +1304,8 @@ isc:Cryogenian
         "成冰纪"@zh ;
     skos:broader isc:Neoproterozoic ;
     skos:definition "A time period from 720 to 635 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "NP2"^^isc:ccgmShortCode ;
     skos:prefLabel "Cryogenian"@en ;
     time:hasBeginning [
             isc:inMYA 720 ;
@@ -1360,14 +1317,12 @@ isc:Cryogenian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 159 ;
-    sdo:color
-        "0/20/60/0"^^isc:CMYK ,
-        "254/204/92"^^isc:RGB ,
-        "#FECC5C"^^isc:RGBHex ;
+    sdo:color "#FECC5C"^^isc:RGBHex ;
 .
 
 isc:Danian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Дан"@bg ,
@@ -1392,7 +1347,8 @@ isc:Danian
         "丹麦期"@zh ;
     skos:broader isc:Paleocene ;
     skos:definition "A time period from 66.0 to 61.6 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e1"^^isc:ccgmShortCode ;
     skos:prefLabel "Danian"@en ;
     time:hasBeginning [
             isc:inMYA 66.0
@@ -1402,14 +1358,12 @@ isc:Danian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 33 ;
-    sdo:color
-        "0/30/55/0"^^isc:CMYK ,
-        "253/180/98"^^isc:RGB ,
-        "#FDB462"^^isc:RGBHex ;
+    sdo:color "#FDB462"^^isc:RGBHex ;
 .
 
 isc:Dapingian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Дапинг"@bg ,
@@ -1434,7 +1388,8 @@ isc:Dapingian
         "大坪期"@zh ;
     skos:broader isc:MiddleOrdovician ;
     skos:definition "A time period from 470.0 to 467.3 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "o3"^^isc:ccgmShortCode ;
     skos:prefLabel "Dapingian"@en ;
     time:hasBeginning [
             isc:inMYA 470.0 ;
@@ -1446,14 +1401,12 @@ isc:Dapingian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 136 ;
-    sdo:color
-        "60/0/40/0"^^isc:CMYK ,
-        "102/192/146"^^isc:RGB ,
-        "#66C092"^^isc:RGBHex ;
+    sdo:color "#66C092"^^isc:RGBHex ;
 .
 
 isc:Darriwilian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Даривил"@bg ,
@@ -1478,7 +1431,8 @@ isc:Darriwilian
         "达瑞威尔期"@zh ;
     skos:broader isc:MiddleOrdovician ;
     skos:definition "A time period from 467.3 to 458.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "o4"^^isc:ccgmShortCode ;
     skos:prefLabel "Darriwilian"@en ;
     time:hasBeginning [
             isc:inMYA 467.3 ;
@@ -1490,14 +1444,12 @@ isc:Darriwilian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 135 ;
-    sdo:color
-        "55/0/35/0"^^isc:CMYK ,
-        "116/198/156"^^isc:RGB ,
-        "#74C69C"^^isc:RGBHex ;
+    sdo:color "#74C69C"^^isc:RGBHex ;
 .
 
 isc:Drumian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Друм"@bg ,
@@ -1522,7 +1474,8 @@ isc:Drumian
         "鼓山期"@zh ;
     skos:broader isc:Miaolingian ;
     skos:definition "A time period from 504.5 to 500.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep6"^^isc:ccgmShortCode ;
     skos:prefLabel "Drumian"@en ;
     time:hasBeginning [
             isc:inMYA 504.5 ;
@@ -1534,14 +1487,12 @@ isc:Drumian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 147 ;
-    sdo:color
-        "25/5/35/0"^^isc:CMYK ,
-        "191/217/157"^^isc:RGB ,
-        "#BFD99D"^^isc:RGBHex ;
+    sdo:color "#BFD99D"^^isc:RGBHex ;
 .
 
 isc:Ectasian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ектаз"@bg ,
@@ -1566,7 +1517,8 @@ isc:Ectasian
         "延展纪"@zh ;
     skos:broader isc:Mesoproterozoic ;
     skos:definition "A time period from 1400 to 1200 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "MP2"^^isc:ccgmShortCode ;
     skos:prefLabel "Ectasian"@en ;
     time:hasBeginning [
             isc:inMYA 1400
@@ -1576,14 +1528,12 @@ isc:Ectasian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 163 ;
-    sdo:color
-        "0/20/40/0"^^isc:CMYK ,
-        "253/204/138"^^isc:RGB ,
-        "#FDCC8A"^^isc:RGBHex ;
+    sdo:color "#FDCC8A"^^isc:RGBHex ;
 .
 
 isc:Ediacaran
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Едиакар"@bg ,
@@ -1608,7 +1558,8 @@ isc:Ediacaran
         "埃迪卡拉纪"@zh ;
     skos:broader isc:Neoproterozoic ;
     skos:definition "A time period from 635 to 538.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "NP3"^^isc:ccgmShortCode ;
     skos:prefLabel "Ediacaran"@en ;
     time:hasBeginning [
             isc:inMYA 635 ;
@@ -1620,14 +1571,12 @@ isc:Ediacaran
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 158 ;
-    sdo:color
-        "0/15/55/0"^^isc:CMYK ,
-        "254/217/106"^^isc:RGB ,
-        "#FED96A"^^isc:RGBHex ;
+    sdo:color "#FED96A"^^isc:RGBHex ;
 .
 
 isc:Eifelian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пйфел"@bg ,
@@ -1652,7 +1601,8 @@ isc:Eifelian
         "艾菲尔期"@zh ;
     skos:broader isc:MiddleDevonian ;
     skos:definition "A time period from 393.3 to 387.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "d4"^^isc:ccgmShortCode ;
     skos:prefLabel "Eifelian"@en ;
     time:hasBeginning [
             isc:inMYA 393.3 ;
@@ -1664,14 +1614,12 @@ isc:Eifelian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 112 ;
-    sdo:color
-        "5/15/50/0"^^isc:CMYK ,
-        "241/213/118"^^isc:RGB ,
-        "#F1D576"^^isc:RGBHex ;
+    sdo:color "#F1D576"^^isc:RGBHex ;
 .
 
 isc:Emsian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Емѿ"@bg ,
@@ -1696,7 +1644,8 @@ isc:Emsian
         "艾姆斯期"@zh ;
     skos:broader isc:LowerDevonian ;
     skos:definition "A time period from 407.6 to 393.3 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "d3"^^isc:ccgmShortCode ;
     skos:prefLabel "Emsian"@en ;
     time:hasBeginning [
             isc:inMYA 407.6 ;
@@ -1708,14 +1657,12 @@ isc:Emsian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 114 ;
-    sdo:color
-        "10/15/50/0"^^isc:CMYK ,
-        "229/208/117"^^isc:RGB ,
-        "#E5D075"^^isc:RGBHex ;
+    sdo:color "#E5D075"^^isc:RGBHex ;
 .
 
 isc:Eoarchean
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Еоархай"@bg ,
@@ -1742,7 +1689,8 @@ isc:Eoarchean
         "始太古代"@zh ;
     skos:broader isc:Archean ;
     skos:definition "A time period from 4031 to 3600 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "EA"^^isc:ccgmShortCode ;
     skos:prefLabel "Eoarchean"@en ;
     time:hasBeginning [
             isc:inMYA 4031 ;
@@ -1753,14 +1701,12 @@ isc:Eoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 176 ;
-    sdo:color
-        "10/100/0/0"^^isc:CMYK ,
-        "218/3/127"^^isc:RGB ,
-        "#DA037F"^^isc:RGBHex ;
+    sdo:color "#DA037F"^^isc:RGBHex ;
 .
 
 isc:Famennian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фамен"@bg ,
@@ -1785,7 +1731,8 @@ isc:Famennian
         "法门期"@zh ;
     skos:broader isc:UpperDevonian ;
     skos:definition "A time period from 372.2 to 358.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "d7"^^isc:ccgmShortCode ;
     skos:prefLabel "Famennian"@en ;
     time:hasBeginning [
             isc:inMYA 372.2 ;
@@ -1797,14 +1744,12 @@ isc:Famennian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 108 ;
-    sdo:color
-        "5/5/20/0"^^isc:CMYK ,
-        "242/237/179"^^isc:RGB ,
-        "#F2EDB3"^^isc:RGBHex ;
+    sdo:color "#F2EDB3"^^isc:RGBHex ;
 .
 
 isc:Floian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Flo"@cs ,
@@ -1828,7 +1773,8 @@ isc:Floian
         "弗洛期"@zh ;
     skos:broader isc:LowerOrdovician ;
     skos:definition "A time period from 477.7 to 470.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "o2"^^isc:ccgmShortCode ;
     skos:prefLabel "Floian"@en ;
     time:hasBeginning [
             isc:inMYA 477.7 ;
@@ -1840,14 +1786,12 @@ isc:Floian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 138 ;
-    sdo:color
-        "75/0/45/0"^^isc:CMYK ,
-        "65/176/135"^^isc:RGB ,
-        "#41B087"^^isc:RGBHex ;
+    sdo:color "#41B087"^^isc:RGBHex ;
 .
 
 isc:Fortunian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фортун"@bg ,
@@ -1872,7 +1816,8 @@ isc:Fortunian
         "好运期"@zh ;
     skos:broader isc:Terreneuvian ;
     skos:definition "A time period from 538.8 to 529 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep1"^^isc:ccgmShortCode ;
     skos:prefLabel "Fortunian"@en ;
     time:hasBeginning [
             isc:inMYA 538.8 ;
@@ -1884,14 +1829,12 @@ isc:Fortunian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 155 ;
-    sdo:color
-        "40/15/50/0"^^isc:CMYK ,
-        "153/181/117"^^isc:RGB ,
-        "#99B575"^^isc:RGBHex ;
+    sdo:color "#99B575"^^isc:RGBHex ;
 .
 
 isc:Frasnian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фран"@bg ,
@@ -1916,7 +1859,8 @@ isc:Frasnian
         "弗拉斯期"@zh ;
     skos:broader isc:UpperDevonian ;
     skos:definition "A time period from 382.7 to 372.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "d6"^^isc:ccgmShortCode ;
     skos:prefLabel "Frasnian"@en ;
     time:hasBeginning [
             isc:inMYA 382.7 ;
@@ -1928,14 +1872,12 @@ isc:Frasnian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 109 ;
-    sdo:color
-        "5/5/30/0"^^isc:CMYK ,
-        "242/237/173"^^isc:RGB ,
-        "#F2EDAD"^^isc:RGBHex ;
+    sdo:color "#F2EDAD"^^isc:RGBHex ;
 .
 
 isc:Gelasian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Gelas"@cs ,
@@ -1959,7 +1901,8 @@ isc:Gelasian
         "格拉斯期"@zh ;
     skos:broader isc:Pleistocene ;
     skos:definition "A time period from 2.58 to 1.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "q1"^^isc:ccgmShortCode ;
     skos:prefLabel "Gelasian"@en ;
     time:hasBeginning [
             isc:inMYA 2.58
@@ -1969,14 +1912,12 @@ isc:Gelasian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 8 ;
-    sdo:color
-        "0/5/30/0"^^isc:CMYK ,
-        "255/237/179"^^isc:RGB ,
-        "#FFEDB3"^^isc:RGBHex ;
+    sdo:color "#FFEDB3"^^isc:RGBHex ;
 .
 
 isc:Givetian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Живет"@bg ,
@@ -2001,7 +1942,8 @@ isc:Givetian
         "吉维特期"@zh ;
     skos:broader isc:MiddleDevonian ;
     skos:definition "A time period from 387.7 to 382.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "d5"^^isc:ccgmShortCode ;
     skos:prefLabel "Givetian"@en ;
     time:hasBeginning [
             isc:inMYA 387.7 ;
@@ -2013,14 +1955,12 @@ isc:Givetian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 111 ;
-    sdo:color
-        "5/10/45/0"^^isc:CMYK ,
-        "241/225/133"^^isc:RGB ,
-        "#F1E185"^^isc:RGBHex ;
+    sdo:color "#F1E185"^^isc:RGBHex ;
 .
 
 isc:Gorstian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Горѿт"@bg ,
@@ -2045,7 +1985,8 @@ isc:Gorstian
         "格斯特期"@zh ;
     skos:broader isc:Ludlow ;
     skos:definition "A time period from 427.4 to 425.6 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "s6"^^isc:ccgmShortCode ;
     skos:prefLabel "Gorstian"@en ;
     time:hasBeginning [
             isc:inMYA 427.4 ;
@@ -2057,18 +1998,17 @@ isc:Gorstian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 121 ;
-    sdo:color
-        "20/0/10/0"^^isc:CMYK ,
-        "204/236/221"^^isc:RGB ,
-        "#CCECDD"^^isc:RGBHex ;
+    sdo:color "#CCECDD"^^isc:RGBHex ;
 .
 
 isc:Greenlandian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader isc:Holocene ;
     skos:definition "A time period from 0.0117 to 0.0082 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "q5"^^isc:ccgmShortCode ;
     skos:prefLabel "Greenlandian"@en ;
     time:hasBeginning [
             isc:inMYA 0.0117
@@ -2078,14 +2018,12 @@ isc:Greenlandian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 3 ;
-    sdo:color
-        "0/10/15/0"^^isc:CMYK ,
-        "254/236/219"^^isc:RGB ,
-        "#FEECDB"^^isc:RGBHex ;
+    sdo:color "#FEECDB"^^isc:RGBHex ;
 .
 
 isc:Guzhangian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Жужанг"@bg ,
@@ -2110,7 +2048,8 @@ isc:Guzhangian
         "古丈期"@zh ;
     skos:broader isc:Miaolingian ;
     skos:definition "A time period from 500.5 to 497 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep7"^^isc:ccgmShortCode ;
     skos:prefLabel "Guzhangian"@en ;
     time:hasBeginning [
             isc:inMYA 500.5 ;
@@ -2122,14 +2061,12 @@ isc:Guzhangian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 146 ;
-    sdo:color
-        "20/5/30/0"^^isc:CMYK ,
-        "204/223/170"^^isc:RGB ,
-        "#CCDFAA"^^isc:RGBHex ;
+    sdo:color "#CCDFAA"^^isc:RGBHex ;
 .
 
 isc:Gzhelian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Гжел"@bg ,
@@ -2154,7 +2091,8 @@ isc:Gzhelian
         "格热尔期"@zh ;
     skos:broader isc:UpperPennsylvanian ;
     skos:definition "A time period from 303.7 to 298.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "c7"^^isc:ccgmShortCode ;
     skos:prefLabel "Gzhelian"@en ;
     time:hasBeginning [
             isc:inMYA 303.7 ;
@@ -2166,14 +2104,12 @@ isc:Gzhelian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 92 ;
-    sdo:color
-        "20/10/15/0"^^isc:CMYK ,
-        "204/212/199"^^isc:RGB ,
-        "#CCD4C7"^^isc:RGBHex ;
+    sdo:color "#CCD4C7"^^isc:RGBHex ;
 .
 
 isc:Hadean
     a skos:Concept ;
+    gts:rank rank:Eon ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Hád (spodní hranice není definována)"@cs ,
@@ -2197,7 +2133,8 @@ isc:Hadean
         "冥古宙（非正式）"@zh ;
     skos:broader isc:Precambrian ;
     skos:definition "A time period from 4567 to 4031 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "HA"^^isc:ccgmShortCode ;
     skos:prefLabel "Hadean"@en ;
     time:hasBeginning [
             isc:inMYA 4567
@@ -2208,14 +2145,12 @@ isc:Hadean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 177 ;
-    sdo:color
-        "30/100/0/0"^^isc:CMYK ,
-        "174/2/126"^^isc:RGB ,
-        "#AE027E"^^isc:RGBHex ;
+    sdo:color "#AE027E"^^isc:RGBHex ;
 .
 
 isc:Hauterivian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хотрив"@bg ,
@@ -2240,7 +2175,8 @@ isc:Hauterivian
         "豪特里维期"@zh ;
     skos:broader isc:LowerCretaceous ;
     skos:definition "A time period from 132.6 to 125.77 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "b3"^^isc:ccgmShortCode ;
     skos:prefLabel "Hauterivian"@en ;
     time:hasBeginning [
             isc:inMYA 132.6 ;
@@ -2251,14 +2187,12 @@ isc:Hauterivian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 46 ;
-    sdo:color
-        "35/0/55/0"^^isc:CMYK ,
-        "166/217/117"^^isc:RGB ,
-        "#A6D975"^^isc:RGBHex ;
+    sdo:color "#A6D975"^^isc:RGBHex ;
 .
 
 isc:Hettangian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хетанж"@bg ,
@@ -2283,7 +2217,8 @@ isc:Hettangian
         "赫唐期"@zh ;
     skos:broader isc:LowerJurassic ;
     skos:definition "A time period from 201.4 to 199.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "I1"^^isc:ccgmShortCode ;
     skos:prefLabel "Hettangian"@en ;
     time:hasBeginning [
             isc:inMYA 201.4 ;
@@ -2295,14 +2230,12 @@ isc:Hettangian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 63 ;
-    sdo:color
-        "70/5/0/0"^^isc:CMYK ,
-        "78/179/211"^^isc:RGB ,
-        "#4EB3D3"^^isc:RGBHex ;
+    sdo:color "#4EB3D3"^^isc:RGBHex ;
 .
 
 isc:Hirnantian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хирнант"@bg ,
@@ -2327,7 +2260,8 @@ isc:Hirnantian
         "赫南特期"@zh ;
     skos:broader isc:UpperOrdovician ;
     skos:definition "A time period from 445.2 to 443.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "o7"^^isc:ccgmShortCode ;
     skos:prefLabel "Hirnantian"@en ;
     time:hasBeginning [
             isc:inMYA 445.2 ;
@@ -2339,14 +2273,12 @@ isc:Hirnantian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 131 ;
-    sdo:color
-        "35/0/30/0"^^isc:CMYK ,
-        "166/219/171"^^isc:RGB ,
-        "#A6DBAB"^^isc:RGBHex ;
+    sdo:color "#A6DBAB"^^isc:RGBHex ;
 .
 
 isc:Homerian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Хомер"@bg ,
@@ -2371,7 +2303,8 @@ isc:Homerian
         "侯默期"@zh ;
     skos:broader isc:Wenlock ;
     skos:definition "A time period from 430.5 to 427.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "s5"^^isc:ccgmShortCode ;
     skos:prefLabel "Homerian"@en ;
     time:hasBeginning [
             isc:inMYA 430.5 ;
@@ -2383,14 +2316,12 @@ isc:Homerian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 123 ;
-    sdo:color
-        "20/0/15/0"^^isc:CMYK ,
-        "204/235/209"^^isc:RGB ,
-        "#CCEBD1"^^isc:RGBHex ;
+    sdo:color "#CCEBD1"^^isc:RGBHex ;
 .
 
 isc:Induan
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Инд"@bg ,
@@ -2415,7 +2346,8 @@ isc:Induan
         "印度期"@zh ;
     skos:broader isc:LowerTriassic ;
     skos:definition "A time period from 251.902 to 251.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "t1"^^isc:ccgmShortCode ;
     skos:prefLabel "Induan"@en ;
     time:hasBeginning [
             isc:inMYA 251.902 ;
@@ -2426,19 +2358,18 @@ isc:Induan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 74 ;
-    sdo:color
-        "35/70/0/0"^^isc:CMYK ,
-        "164/70/159"^^isc:RGB ,
-        "#A4469F"^^isc:RGBHex ;
+    sdo:color "#A4469F"^^isc:RGBHex ;
 .
 
 isc:Jiangshanian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel "江山期"@zh ;
     skos:broader isc:Furongian ;
     skos:definition "A time period from 494 to 489.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep9"^^isc:ccgmShortCode ;
     skos:prefLabel "Jiangshanian"@en ;
     time:hasBeginning [
             isc:inMYA 494 ;
@@ -2450,14 +2381,12 @@ isc:Jiangshanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 143 ;
-    sdo:color
-        "15/0/25/0"^^isc:CMYK ,
-        "217/240/187"^^isc:RGB ,
-        "#D9F0BB"^^isc:RGBHex ;
+    sdo:color "#D9F0BB"^^isc:RGBHex ;
 .
 
 isc:Kasimovian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Каѿимов"@bg ,
@@ -2482,7 +2411,8 @@ isc:Kasimovian
         "卡西莫夫期"@zh ;
     skos:broader isc:UpperPennsylvanian ;
     skos:definition "A time period from 307.0 to 303.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "c6"^^isc:ccgmShortCode ;
     skos:prefLabel "Kasimovian"@en ;
     time:hasBeginning [
             isc:inMYA 307.0 ;
@@ -2494,14 +2424,12 @@ isc:Kasimovian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 93 ;
-    sdo:color
-        "25/10/15/0"^^isc:CMYK ,
-        "191/208/197"^^isc:RGB ,
-        "#BFD0C5"^^isc:RGBHex ;
+    sdo:color "#BFD0C5"^^isc:RGBHex ;
 .
 
 isc:Katian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кат"@bg ,
@@ -2526,7 +2454,8 @@ isc:Katian
         "凯迪期"@zh ;
     skos:broader isc:UpperOrdovician ;
     skos:definition "A time period from 453.0 to 445.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "o6"^^isc:ccgmShortCode ;
     skos:prefLabel "Katian"@en ;
     time:hasBeginning [
             isc:inMYA 453.0 ;
@@ -2538,14 +2467,12 @@ isc:Katian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 132 ;
-    sdo:color
-        "40/0/35/0"^^isc:CMYK ,
-        "153/214/159"^^isc:RGB ,
-        "#99D69F"^^isc:RGBHex ;
+    sdo:color "#99D69F"^^isc:RGBHex ;
 .
 
 isc:Kimmeridgian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кимеридж"@bg ,
@@ -2570,7 +2497,8 @@ isc:Kimmeridgian
         "启莫里支期"@zh ;
     skos:broader isc:UpperJurassic ;
     skos:definition "A time period from 154.8 to 149.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "j6"^^isc:ccgmShortCode ;
     skos:prefLabel "Kimmeridgian"@en ;
     time:hasBeginning [
             isc:inMYA 154.8 ;
@@ -2582,14 +2510,12 @@ isc:Kimmeridgian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 52 ;
-    sdo:color
-        "20/0/0/0"^^isc:CMYK ,
-        "204/236/244"^^isc:RGB ,
-        "#CCECF4"^^isc:RGBHex ;
+    sdo:color "#CCECF4"^^isc:RGBHex ;
 .
 
 isc:Kungurian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кунгур"@bg ,
@@ -2614,7 +2540,8 @@ isc:Kungurian
         "孔古尔期"@zh ;
     skos:broader isc:Cisuralian ;
     skos:definition "A time period from 283.5 to 273.01 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p4"^^isc:ccgmShortCode ;
     skos:prefLabel "Kungurian"@en ;
     time:hasBeginning [
             isc:inMYA 283.5 ;
@@ -2626,14 +2553,12 @@ isc:Kungurian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 86 ;
-    sdo:color
-        "10/45/40/0"^^isc:CMYK ,
-        "227/135/118"^^isc:RGB ,
-        "#E38776"^^isc:RGBHex ;
+    sdo:color "#E38776"^^isc:RGBHex ;
 .
 
 isc:Ladinian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ладин"@bg ,
@@ -2658,7 +2583,8 @@ isc:Ladinian
         "拉迪尼亚期"@zh ;
     skos:broader isc:MiddleTriassic ;
     skos:definition "A time period from 242 to 237 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "t4"^^isc:ccgmShortCode ;
     skos:prefLabel "Ladinian"@en ;
     time:hasBeginning [
             isc:inMYA 242 ;
@@ -2670,14 +2596,12 @@ isc:Ladinian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 70 ;
-    sdo:color
-        "20/45/0/0"^^isc:CMYK ,
-        "201/131/191"^^isc:RGB ,
-        "#C983BF"^^isc:RGBHex ;
+    sdo:color "#C983BF"^^isc:RGBHex ;
 .
 
 isc:Langhian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ланг"@bg ,
@@ -2702,7 +2626,8 @@ isc:Langhian
         "兰海期"@zh ;
     skos:broader isc:Miocene ;
     skos:definition "A time period from 15.98 to 13.82 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "n3"^^isc:ccgmShortCode ;
     skos:prefLabel "Langhian"@en ;
     time:hasBeginning [
             isc:inMYA 15.98
@@ -2712,14 +2637,12 @@ isc:Langhian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 17 ;
-    sdo:color
-        "0/0/70/0"^^isc:CMYK ,
-        "255/255/77"^^isc:RGB ,
-        "#FFFF4D"^^isc:RGBHex ;
+    sdo:color "#FFFF4D"^^isc:RGBHex ;
 .
 
 isc:Lochkovian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ложков"@bg ,
@@ -2744,7 +2667,8 @@ isc:Lochkovian
         "洛赫科夫期"@zh ;
     skos:broader isc:LowerDevonian ;
     skos:definition "A time period from 419.2 to 410.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "d1"^^isc:ccgmShortCode ;
     skos:prefLabel "Lochkovian"@en ;
     time:hasBeginning [
             isc:inMYA 419.2 ;
@@ -2756,14 +2680,12 @@ isc:Lochkovian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 117 ;
-    sdo:color
-        "10/25/60/0"^^isc:CMYK ,
-        "229/183/90"^^isc:RGB ,
-        "#E5B75A"^^isc:RGBHex ;
+    sdo:color "#E5B75A"^^isc:RGBHex ;
 .
 
 isc:Ludfordian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лудфорд"@bg ,
@@ -2788,7 +2710,8 @@ isc:Ludfordian
         "卢德福德期"@zh ;
     skos:broader isc:Ludlow ;
     skos:definition "A time period from 425.6 to 423.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "s7"^^isc:ccgmShortCode ;
     skos:prefLabel "Ludfordian"@en ;
     time:hasBeginning [
             isc:inMYA 425.6 ;
@@ -2800,14 +2723,12 @@ isc:Ludfordian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 120 ;
-    sdo:color
-        "15/0/10/0"^^isc:CMYK ,
-        "217/240/223"^^isc:RGB ,
-        "#D9F0DF"^^isc:RGBHex ;
+    sdo:color "#D9F0DF"^^isc:RGBHex ;
 .
 
 isc:Lutetian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лютеѿ"@bg ,
@@ -2832,7 +2753,8 @@ isc:Lutetian
         "卢台特期"@zh ;
     skos:broader isc:Eocene ;
     skos:definition "A time period from 47.8 to 41.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e5"^^isc:ccgmShortCode ;
     skos:prefLabel "Lutetian"@en ;
     time:hasBeginning [
             isc:inMYA 47.8
@@ -2842,14 +2764,12 @@ isc:Lutetian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 27 ;
-    sdo:color
-        "0/30/40/0"^^isc:CMYK ,
-        "253/180/130"^^isc:RGB ,
-        "#FDB482"^^isc:RGBHex ;
+    sdo:color "#FDB482"^^isc:RGBHex ;
 .
 
 isc:Maastrichtian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Маѿтрихт"@bg ,
@@ -2874,7 +2794,8 @@ isc:Maastrichtian
         "马斯特里赫特期"@zh ;
     skos:broader isc:UpperCretaceous ;
     skos:definition "A time period from 72.1 to 66.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "k6"^^isc:ccgmShortCode ;
     skos:prefLabel "Maastrichtian"@en ;
     time:hasBeginning [
             isc:inMYA 72.1 ;
@@ -2885,18 +2806,17 @@ isc:Maastrichtian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 36 ;
-    sdo:color
-        "5/0/45/0"^^isc:CMYK ,
-        "242/250/140"^^isc:RGB ,
-        "#F2FA8C"^^isc:RGBHex ;
+    sdo:color "#F2FA8C"^^isc:RGBHex ;
 .
 
 isc:Meghalayan
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader isc:Holocene ;
     skos:definition "A time period from 0.0042 million years ago to the present" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "q7"^^isc:ccgmShortCode ;
     skos:prefLabel "Meghalayan"@en ;
     time:hasBeginning [
             isc:inMYA 0.0042
@@ -2906,14 +2826,12 @@ isc:Meghalayan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 1 ;
-    sdo:color
-        "0/10/5/0"^^isc:CMYK ,
-        "253/237/236"^^isc:RGB ,
-        "#FDEDEC"^^isc:RGBHex ;
+    sdo:color "#FDEDEC"^^isc:RGBHex ;
 .
 
 isc:Mesoarchean
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Мезоархай"@bg ,
@@ -2940,7 +2858,8 @@ isc:Mesoarchean
         "中太古代"@zh ;
     skos:broader isc:Archean ;
     skos:definition "A time period from 3200 to 2800 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "MA"^^isc:ccgmShortCode ;
     skos:prefLabel "Mesoarchean"@en ;
     time:hasBeginning [
             isc:inMYA 3200
@@ -2950,14 +2869,12 @@ isc:Mesoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 173 ;
-    sdo:color
-        "0/60/5/0"^^isc:CMYK ,
-        "247/104/169"^^isc:RGB ,
-        "#F768A9"^^isc:RGBHex ;
+    sdo:color "#F768A9"^^isc:RGBHex ;
 .
 
 isc:Messinian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Меѿин"@bg ,
@@ -2982,7 +2899,8 @@ isc:Messinian
         "墨西拿期"@zh ;
     skos:broader isc:Miocene ;
     skos:definition "A time period from 7.246 to 5.333 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "n6"^^isc:ccgmShortCode ;
     skos:prefLabel "Messinian"@en ;
     time:hasBeginning [
             isc:inMYA 7.246
@@ -2992,14 +2910,12 @@ isc:Messinian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 14 ;
-    sdo:color
-        "0/0/55/0"^^isc:CMYK ,
-        "255/255/115"^^isc:RGB ,
-        "#FFFF73"^^isc:RGBHex ;
+    sdo:color "#FFFF73"^^isc:RGBHex ;
 .
 
 isc:Moscovian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Моѿков"@bg ,
@@ -3024,7 +2940,8 @@ isc:Moscovian
         "莫斯科期"@zh ;
     skos:broader isc:MiddlePennsylvanian ;
     skos:definition "A time period from 315.2 to 307.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "c5"^^isc:ccgmShortCode ;
     skos:prefLabel "Moscovian"@en ;
     time:hasBeginning [
             isc:inMYA 315.2 ;
@@ -3036,14 +2953,12 @@ isc:Moscovian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 96 ;
-    sdo:color
-        "30/10/20/0"^^isc:CMYK ,
-        "179/203/185"^^isc:RGB ,
-        "#B3CBB9"^^isc:RGBHex ;
+    sdo:color "#B3CBB9"^^isc:RGBHex ;
 .
 
 isc:Neoarchean
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пеоархай"@bg ,
@@ -3070,7 +2985,8 @@ isc:Neoarchean
         "新太古代"@zh ;
     skos:broader isc:Archean ;
     skos:definition "A time period from 2800 to 2500 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "NA"^^isc:ccgmShortCode ;
     skos:prefLabel "Neoarchean"@en ;
     time:hasBeginning [
             isc:inMYA 2800
@@ -3080,14 +2996,12 @@ isc:Neoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 172 ;
-    sdo:color
-        "0/40/5/0"^^isc:CMYK ,
-        "249/155/193"^^isc:RGB ,
-        "#F99BC1"^^isc:RGBHex ;
+    sdo:color "#F99BC1"^^isc:RGBHex ;
 .
 
 isc:Norian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пор"@bg ,
@@ -3112,7 +3026,8 @@ isc:Norian
         "诺利克期"@zh ;
     skos:broader isc:UpperTriassic ;
     skos:definition "A time period from 227 to 208.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "t6"^^isc:ccgmShortCode ;
     skos:prefLabel "Norian"@en ;
     time:hasBeginning [
             isc:inMYA 227 ;
@@ -3124,18 +3039,17 @@ isc:Norian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 67 ;
-    sdo:color
-        "15/30/0/0"^^isc:CMYK ,
-        "214/170/211"^^isc:RGB ,
-        "#D6AAD3"^^isc:RGBHex ;
+    sdo:color "#D6AAD3"^^isc:RGBHex ;
 .
 
 isc:Northgrippian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader isc:Holocene ;
     skos:definition "A time period from 0.0082 to 0.0042 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "q6"^^isc:ccgmShortCode ;
     skos:prefLabel "Northgrippian"@en ;
     time:hasBeginning [
             isc:inMYA 0.0082
@@ -3145,14 +3059,12 @@ isc:Northgrippian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 2 ;
-    sdo:color
-        "0/10/10/0"^^isc:CMYK ,
-        "253/236/228"^^isc:RGB ,
-        "#FDECE4"^^isc:RGBHex ;
+    sdo:color "#FDECE4"^^isc:RGBHex ;
 .
 
 isc:Olenekian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Оленек"@bg ,
@@ -3177,7 +3089,8 @@ isc:Olenekian
         "奥伦尼克期"@zh ;
     skos:broader isc:LowerTriassic ;
     skos:definition "A time period from 247.2 to 251.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "t2"^^isc:ccgmShortCode ;
     skos:prefLabel "Olenekian"@en ;
     time:hasBeginning [
             isc:inMYA 247.2
@@ -3187,14 +3100,12 @@ isc:Olenekian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 73 ;
-    sdo:color
-        "30/65/0/0"^^isc:CMYK ,
-        "176/81/165"^^isc:RGB ,
-        "#B051A5"^^isc:RGBHex ;
+    sdo:color "#B051A5"^^isc:RGBHex ;
 .
 
 isc:Orosirian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ороѿир"@bg ,
@@ -3219,7 +3130,8 @@ isc:Orosirian
         "造山纪"@zh ;
     skos:broader isc:Paleoproterozoic ;
     skos:definition "A time period from 2050 to 1800 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "PP3"^^isc:ccgmShortCode ;
     skos:prefLabel "Orosirian"@en ;
     time:hasBeginning [
             isc:inMYA 2050
@@ -3229,14 +3141,12 @@ isc:Orosirian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 167 ;
-    sdo:color
-        "0/60/15/0"^^isc:CMYK ,
-        "247/104/152"^^isc:RGB ,
-        "#F76898"^^isc:RGBHex ;
+    sdo:color "#F76898"^^isc:RGBHex ;
 .
 
 isc:Oxfordian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Окѿфорд"@bg ,
@@ -3261,7 +3171,8 @@ isc:Oxfordian
         "牛津期"@zh ;
     skos:broader isc:UpperJurassic ;
     skos:definition "A time period from 161.5 to 154.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "j5"^^isc:ccgmShortCode ;
     skos:prefLabel "Oxfordian"@en ;
     time:hasBeginning [
             isc:inMYA 161.5 ;
@@ -3273,14 +3184,12 @@ isc:Oxfordian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 53 ;
-    sdo:color
-        "25/0/0/0"^^isc:CMYK ,
-        "191/231/241"^^isc:RGB ,
-        "#BFE7F1"^^isc:RGBHex ;
+    sdo:color "#BFE7F1"^^isc:RGBHex ;
 .
 
 isc:Paibian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Паиб"@bg ,
@@ -3305,7 +3214,8 @@ isc:Paibian
         "排碧期"@zh ;
     skos:broader isc:Furongian ;
     skos:definition "A time period from 497 to 494 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep8"^^isc:ccgmShortCode ;
     skos:prefLabel "Paibian"@en ;
     time:hasBeginning [
             isc:inMYA 497 ;
@@ -3317,14 +3227,12 @@ isc:Paibian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 145 ;
-    sdo:color
-        "20/0/35/0"^^isc:CMYK ,
-        "204/235/174"^^isc:RGB ,
-        "#CCEBAE"^^isc:RGBHex ;
+    sdo:color "#CCEBAE"^^isc:RGBHex ;
 .
 
 isc:Paleoarchean
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеоархай"@bg ,
@@ -3351,7 +3259,8 @@ isc:Paleoarchean
         "古太古代"@zh ;
     skos:broader isc:Archean ;
     skos:definition "A time period from 3600 to 3200 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "PA"^^isc:ccgmShortCode ;
     skos:prefLabel "Paleoarchean"@en ;
     time:hasBeginning [
             isc:inMYA 3600
@@ -3361,14 +3270,12 @@ isc:Paleoarchean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 174 ;
-    sdo:color
-        "0/75/0/0"^^isc:CMYK ,
-        "244/68/159"^^isc:RGB ,
-        "#F4449F"^^isc:RGBHex ;
+    sdo:color "#F4449F"^^isc:RGBHex ;
 .
 
 isc:Piacenzian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Пиачен"@bg ,
@@ -3393,7 +3300,8 @@ isc:Piacenzian
         "皮亚琴期"@zh ;
     skos:broader isc:Pliocene ;
     skos:definition "A time period from 3.60 to 2.58 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "n8"^^isc:ccgmShortCode ;
     skos:prefLabel "Piacenzian"@en ;
     time:hasBeginning [
             isc:inMYA 3.6
@@ -3403,14 +3311,12 @@ isc:Piacenzian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 11 ;
-    sdo:color
-        "0/0/25/0"^^isc:CMYK ,
-        "255/255/191"^^isc:RGB ,
-        "#FFFFBF"^^isc:RGBHex ;
+    sdo:color "#FFFFBF"^^isc:RGBHex ;
 .
 
 isc:Pliensbachian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Плиинѿбах"@bg ,
@@ -3435,7 +3341,8 @@ isc:Pliensbachian
         "普连斯巴奇期"@zh ;
     skos:broader isc:LowerJurassic ;
     skos:definition "A time period from 192.9 to 184.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "I3"^^isc:ccgmShortCode ;
     skos:prefLabel "Pliensbachian"@en ;
     time:hasBeginning [
             isc:inMYA 192.9 ;
@@ -3447,14 +3354,12 @@ isc:Pliensbachian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 61 ;
-    sdo:color
-        "50/5/0/0"^^isc:CMYK ,
-        "128/197/221"^^isc:RGB ,
-        "#80C5DD"^^isc:RGBHex ;
+    sdo:color "#80C5DD"^^isc:RGBHex ;
 .
 
 isc:Pragian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Праг"@bg ,
@@ -3479,7 +3384,8 @@ isc:Pragian
         "布拉格期"@zh ;
     skos:broader isc:LowerDevonian ;
     skos:definition "A time period from 410.8 to 407.6 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "d2"^^isc:ccgmShortCode ;
     skos:prefLabel "Pragian"@en ;
     time:hasBeginning [
             isc:inMYA 410.8 ;
@@ -3491,14 +3397,12 @@ isc:Pragian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 115 ;
-    sdo:color
-        "10/20/55/0"^^isc:CMYK ,
-        "229/196/104"^^isc:RGB ,
-        "#E5C468"^^isc:RGBHex ;
+    sdo:color "#E5C468"^^isc:RGBHex ;
 .
 
 isc:Priabonian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Приабон"@bg ,
@@ -3523,7 +3427,8 @@ isc:Priabonian
         "普里阿邦期"@zh ;
     skos:broader isc:Eocene ;
     skos:definition "A time period from 37.71 to 33.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e7"^^isc:ccgmShortCode ;
     skos:prefLabel "Priabonian"@en ;
     time:hasBeginning [
             isc:inMYA 37.71
@@ -3533,14 +3438,14 @@ isc:Priabonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 25 ;
-    sdo:color
-        "0/20/30/0"^^isc:CMYK ,
-        "253/205/161"^^isc:RGB ,
-        "#FDCDA1"^^isc:RGBHex ;
+    sdo:color "#FDCDA1"^^isc:RGBHex ;
 .
 
 isc:Pridoli
     a skos:Concept ;
+    gts:rank
+        rank:Age ,
+        rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Пржидол"@bg ,
@@ -3565,7 +3470,8 @@ isc:Pridoli
         "普里多利世"@zh ;
     skos:broader isc:Silurian ;
     skos:definition "A time period from 423.0 to 419.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "S4"^^isc:ccgmShortCode ;
     skos:prefLabel "Pridoli"@en ;
     time:hasBeginning [
             isc:inMYA 423.0 ;
@@ -3577,14 +3483,12 @@ isc:Pridoli
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 119 ;
-    sdo:color
-        "10/0/10/0"^^isc:CMYK ,
-        "230/245/225"^^isc:RGB ,
-        "#E6F5E1"^^isc:RGBHex ;
+    sdo:color "#E6F5E1"^^isc:RGBHex ;
 .
 
 isc:Rhaetian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Рет"@bg ,
@@ -3609,7 +3513,8 @@ isc:Rhaetian
         "瑞替期"@zh ;
     skos:broader isc:UpperTriassic ;
     skos:definition "A time period from 208.5 to 201.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "t7"^^isc:ccgmShortCode ;
     skos:prefLabel "Rhaetian"@en ;
     time:hasBeginning [
             isc:inMYA 208.5 ;
@@ -3621,14 +3526,12 @@ isc:Rhaetian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 66 ;
-    sdo:color
-        "10/25/0/0"^^isc:CMYK ,
-        "227/185/219"^^isc:RGB ,
-        "#E3B9DB"^^isc:RGBHex ;
+    sdo:color "#E3B9DB"^^isc:RGBHex ;
 .
 
 isc:Rhuddanian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Рудан"@bg ,
@@ -3653,7 +3556,8 @@ isc:Rhuddanian
         "鲁丹期"@zh ;
     skos:broader isc:Llandovery ;
     skos:definition "A time period from 443.8 to 440.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "s1"^^isc:ccgmShortCode ;
     skos:prefLabel "Rhuddanian"@en ;
     time:hasBeginning [
             isc:inMYA 443.8 ;
@@ -3665,14 +3569,12 @@ isc:Rhuddanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 129 ;
-    sdo:color
-        "35/0/25/0"^^isc:CMYK ,
-        "166/220/181"^^isc:RGB ,
-        "#A6DCB5"^^isc:RGBHex ;
+    sdo:color "#A6DCB5"^^isc:RGBHex ;
 .
 
 isc:Rhyacian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Риац"@bg ,
@@ -3697,7 +3599,8 @@ isc:Rhyacian
         "层侵纪"@zh ;
     skos:broader isc:Paleoproterozoic ;
     skos:definition "A time period from 2300 to 2050 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "PP2"^^isc:ccgmShortCode ;
     skos:prefLabel "Rhyacian"@en ;
     time:hasBeginning [
             isc:inMYA 2300
@@ -3707,14 +3610,12 @@ isc:Rhyacian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 168 ;
-    sdo:color
-        "0/65/20/0"^^isc:CMYK ,
-        "247/91/137"^^isc:RGB ,
-        "#F75B89"^^isc:RGBHex ;
+    sdo:color "#F75B89"^^isc:RGBHex ;
 .
 
 isc:Roadian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Роад"@bg ,
@@ -3739,7 +3640,8 @@ isc:Roadian
         "罗德期"@zh ;
     skos:broader isc:Guadalupian ;
     skos:definition "A time period from 273.01 to 266.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p5"^^isc:ccgmShortCode ;
     skos:prefLabel "Roadian"@en ;
     time:hasBeginning [
             isc:inMYA 273.01 ;
@@ -3751,14 +3653,12 @@ isc:Roadian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 85 ;
-    sdo:color
-        "0/50/45/0"^^isc:CMYK ,
-        "251/128/105"^^isc:RGB ,
-        "#FB8069"^^isc:RGBHex ;
+    sdo:color "#FB8069"^^isc:RGBHex ;
 .
 
 isc:Rupelian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Рупел"@bg ,
@@ -3783,7 +3683,8 @@ isc:Rupelian
         "鲁珀利期"@zh ;
     skos:broader isc:Oligocene ;
     skos:definition "A time period from 33.9 to 27.82 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e8"^^isc:ccgmShortCode ;
     skos:prefLabel "Rupelian"@en ;
     time:hasBeginning [
             isc:inMYA 33.9
@@ -3793,14 +3694,12 @@ isc:Rupelian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 24 ;
-    sdo:color
-        "0/15/35/0"^^isc:CMYK ,
-        "254/217/154"^^isc:RGB ,
-        "#FED99A"^^isc:RGBHex ;
+    sdo:color "#FED99A"^^isc:RGBHex ;
 .
 
 isc:Sakmarian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Сакмар"@bg ,
@@ -3825,7 +3724,8 @@ isc:Sakmarian
         "萨克马尔期"@zh ;
     skos:broader isc:Cisuralian ;
     skos:definition "A time period from 293.51 to 290.1 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p2"^^isc:ccgmShortCode ;
     skos:prefLabel "Sakmarian"@en ;
     time:hasBeginning [
             isc:inMYA 293.51 ;
@@ -3837,14 +3737,12 @@ isc:Sakmarian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 88 ;
-    sdo:color
-        "10/55/50/0"^^isc:CMYK ,
-        "227/111/92"^^isc:RGB ,
-        "#E36F5C"^^isc:RGBHex ;
+    sdo:color "#E36F5C"^^isc:RGBHex ;
 .
 
 isc:Sandbian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Сандб"@bg ,
@@ -3869,7 +3767,8 @@ isc:Sandbian
         "桑比期"@zh ;
     skos:broader isc:UpperOrdovician ;
     skos:definition "A time period from 458.4 to 453.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "o5"^^isc:ccgmShortCode ;
     skos:prefLabel "Sandbian"@en ;
     time:hasBeginning [
             isc:inMYA 458.4 ;
@@ -3881,14 +3780,12 @@ isc:Sandbian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 133 ;
-    sdo:color
-        "45/0/40/0"^^isc:CMYK ,
-        "140/208/148"^^isc:RGB ,
-        "#8CD094"^^isc:RGBHex ;
+    sdo:color "#8CD094"^^isc:RGBHex ;
 .
 
 isc:Santonian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Сантон"@bg ,
@@ -3913,7 +3810,8 @@ isc:Santonian
         "桑托期"@zh ;
     skos:broader isc:UpperCretaceous ;
     skos:definition "A time period from 86.3 to 83.6 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "k4"^^isc:ccgmShortCode ;
     skos:prefLabel "Santonian"@en ;
     time:hasBeginning [
             isc:inMYA 86.3 ;
@@ -3925,14 +3823,12 @@ isc:Santonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 38 ;
-    sdo:color
-        "15/0/55/0"^^isc:CMYK ,
-        "217/239/116"^^isc:RGB ,
-        "#D9EF74"^^isc:RGBHex ;
+    sdo:color "#D9EF74"^^isc:RGBHex ;
 .
 
 isc:Selandian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Селанд"@bg ,
@@ -3957,7 +3853,8 @@ isc:Selandian
         "塞兰特期"@zh ;
     skos:broader isc:Paleocene ;
     skos:definition "A time period from 61.6 to 59.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e2"^^isc:ccgmShortCode ;
     skos:prefLabel "Selandian"@en ;
     time:hasBeginning [
             isc:inMYA 61.6
@@ -3967,14 +3864,12 @@ isc:Selandian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 31 ;
-    sdo:color
-        "0/25/55/0"^^isc:CMYK ,
-        "254/191/101"^^isc:RGB ,
-        "#FEBF65"^^isc:RGBHex ;
+    sdo:color "#FEBF65"^^isc:RGBHex ;
 .
 
 isc:Serpukhovian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Серпухов"@bg ,
@@ -3999,7 +3894,8 @@ isc:Serpukhovian
         "谢尔普霍夫期"@zh ;
     skos:broader isc:UpperMississippian ;
     skos:definition "A time period from 330.9 to 323.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "c3"^^isc:ccgmShortCode ;
     skos:prefLabel "Serpukhovian"@en ;
     time:hasBeginning [
             isc:inMYA 330.9 ;
@@ -4011,14 +3907,12 @@ isc:Serpukhovian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 100 ;
-    sdo:color
-        "25/15/55/0"^^isc:CMYK ,
-        "191/194/107"^^isc:RGB ,
-        "#BFC26B"^^isc:RGBHex ;
+    sdo:color "#BFC26B"^^isc:RGBHex ;
 .
 
 isc:Serravallian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Саравал"@bg ,
@@ -4043,7 +3937,8 @@ isc:Serravallian
         "塞拉瓦尔期"@zh ;
     skos:broader isc:Miocene ;
     skos:definition "A time period from 13.82 to 11.63 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "n4"^^isc:ccgmShortCode ;
     skos:prefLabel "Serravallian"@en ;
     time:hasBeginning [
             isc:inMYA 13.82
@@ -4053,14 +3948,12 @@ isc:Serravallian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 16 ;
-    sdo:color
-        "0/0/65/0"^^isc:CMYK ,
-        "255/255/89"^^isc:RGB ,
-        "#FFFF59"^^isc:RGBHex ;
+    sdo:color "#FFFF59"^^isc:RGBHex ;
 .
 
 isc:Sheinwoodian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Шейнуд"@bg ,
@@ -4085,7 +3978,8 @@ isc:Sheinwoodian
         "申伍德期"@zh ;
     skos:broader isc:Wenlock ;
     skos:definition "A time period from 433.4 to 430.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "s4"^^isc:ccgmShortCode ;
     skos:prefLabel "Sheinwoodian"@en ;
     time:hasBeginning [
             isc:inMYA 433.4 ;
@@ -4097,14 +3991,12 @@ isc:Sheinwoodian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 124 ;
-    sdo:color
-        "25/0/20/0"^^isc:CMYK ,
-        "191/230/195"^^isc:RGB ,
-        "#BFE6C3"^^isc:RGBHex ;
+    sdo:color "#BFE6C3"^^isc:RGBHex ;
 .
 
 isc:Siderian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Сидер"@bg ,
@@ -4129,7 +4021,8 @@ isc:Siderian
         "成铁纪"@zh ;
     skos:broader isc:Paleoproterozoic ;
     skos:definition "A time period from 2500 to 2300 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "PP1"^^isc:ccgmShortCode ;
     skos:prefLabel "Siderian"@en ;
     time:hasBeginning [
             isc:inMYA 2500
@@ -4139,14 +4032,12 @@ isc:Siderian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 171 ;
-    sdo:color
-        "0/70/25/0"^^isc:CMYK ,
-        "247/79/124"^^isc:RGB ,
-        "#F74F7C"^^isc:RGBHex ;
+    sdo:color "#F74F7C"^^isc:RGBHex ;
 .
 
 isc:Sinemurian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Синемур"@bg ,
@@ -4171,7 +4062,8 @@ isc:Sinemurian
         "辛涅穆尔期"@zh ;
     skos:broader isc:LowerJurassic ;
     skos:definition "A time period from 199.5 to 192.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "I2"^^isc:ccgmShortCode ;
     skos:prefLabel "Sinemurian"@en ;
     time:hasBeginning [
             isc:inMYA 199.5 ;
@@ -4183,14 +4075,12 @@ isc:Sinemurian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 62 ;
-    sdo:color
-        "60/5/0/0"^^isc:CMYK ,
-        "103/188/216"^^isc:RGB ,
-        "#67BCD8"^^isc:RGBHex ;
+    sdo:color "#67BCD8"^^isc:RGBHex ;
 .
 
 isc:Statherian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Статер"@bg ,
@@ -4215,7 +4105,8 @@ isc:Statherian
         "固结纪"@zh ;
     skos:broader isc:Paleoproterozoic ;
     skos:definition "A time period from 1800 to 1600 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "PP4"^^isc:ccgmShortCode ;
     skos:prefLabel "Statherian"@en ;
     time:hasBeginning [
             isc:inMYA 1800
@@ -4225,14 +4116,12 @@ isc:Statherian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 166 ;
-    sdo:color
-        "0/55/10/0"^^isc:CMYK ,
-        "248/117/167"^^isc:RGB ,
-        "#F875A7"^^isc:RGBHex ;
+    sdo:color "#F875A7"^^isc:RGBHex ;
 .
 
 isc:Stenian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Стен"@bg ,
@@ -4257,7 +4146,8 @@ isc:Stenian
         "狭带纪"@zh ;
     skos:broader isc:Mesoproterozoic ;
     skos:definition "A time period from 1200 to 1000 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "MP3"^^isc:ccgmShortCode ;
     skos:prefLabel "Stenian"@en ;
     time:hasBeginning [
             isc:inMYA 1200
@@ -4267,14 +4157,12 @@ isc:Stenian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 162 ;
-    sdo:color
-        "0/15/35/0"^^isc:CMYK ,
-        "254/217/154"^^isc:RGB ,
-        "#FED99A"^^isc:RGBHex ;
+    sdo:color "#FED99A"^^isc:RGBHex ;
 .
 
 isc:Telychian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Телич"@bg ,
@@ -4299,7 +4187,8 @@ isc:Telychian
         "特列奇期"@zh ;
     skos:broader isc:Llandovery ;
     skos:definition "A time period from 438.5 to 433.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "s3"^^isc:ccgmShortCode ;
     skos:prefLabel "Telychian"@en ;
     time:hasBeginning [
             isc:inMYA 438.5 ;
@@ -4311,14 +4200,12 @@ isc:Telychian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 126 ;
-    sdo:color
-        "25/0/15/0"^^isc:CMYK ,
-        "191/230/207"^^isc:RGB ,
-        "#BFE6CF"^^isc:RGBHex ;
+    sdo:color "#BFE6CF"^^isc:RGBHex ;
 .
 
 isc:Thanetian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Танет"@bg ,
@@ -4343,7 +4230,8 @@ isc:Thanetian
         "塔内提期"@zh ;
     skos:broader isc:Paleocene ;
     skos:definition "A time period from 59.2 to 56.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e3"^^isc:ccgmShortCode ;
     skos:prefLabel "Thanetian"@en ;
     time:hasBeginning [
             isc:inMYA 59.2
@@ -4353,14 +4241,12 @@ isc:Thanetian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 30 ;
-    sdo:color
-        "0/25/50/0"^^isc:CMYK ,
-        "253/191/111"^^isc:RGB ,
-        "#FDBF6F"^^isc:RGBHex ;
+    sdo:color "#FDBF6F"^^isc:RGBHex ;
 .
 
 isc:Tithonian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Титон"@bg ,
@@ -4385,7 +4271,8 @@ isc:Tithonian
         "提通期"@zh ;
     skos:broader isc:UpperJurassic ;
     skos:definition "A time period from 149.2 to 145 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "j7"^^isc:ccgmShortCode ;
     skos:prefLabel "Tithonian"@en ;
     time:hasBeginning [
             isc:inMYA 149.2 ;
@@ -4397,14 +4284,12 @@ isc:Tithonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 51 ;
-    sdo:color
-        "15/0/0/0"^^isc:CMYK ,
-        "217/241/247"^^isc:RGB ,
-        "#D9F1F7"^^isc:RGBHex ;
+    sdo:color "#D9F1F7"^^isc:RGBHex ;
 .
 
 isc:Toarcian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Тоар"@bg ,
@@ -4429,7 +4314,8 @@ isc:Toarcian
         "托阿尔期"@zh ;
     skos:broader isc:LowerJurassic ;
     skos:definition "A time period from 184.2 to 174.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "I4"^^isc:ccgmShortCode ;
     skos:prefLabel "Toarcian"@en ;
     time:hasBeginning [
             isc:inMYA 184.2 ;
@@ -4441,14 +4327,12 @@ isc:Toarcian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 60 ;
-    sdo:color
-        "40/5/0/0"^^isc:CMYK ,
-        "153/206/227"^^isc:RGB ,
-        "#99CEE3"^^isc:RGBHex ;
+    sdo:color "#99CEE3"^^isc:RGBHex ;
 .
 
 isc:Tonian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Тон"@bg ,
@@ -4473,7 +4357,8 @@ isc:Tonian
         "拉伸纪"@zh ;
     skos:broader isc:Neoproterozoic ;
     skos:definition "A time period from 1000 to 720 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "NP1"^^isc:ccgmShortCode ;
     skos:prefLabel "Tonian"@en ;
     time:hasBeginning [
             isc:inMYA 1000
@@ -4484,14 +4369,12 @@ isc:Tonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 161 ;
-    sdo:color
-        "0/25/65/0"^^isc:CMYK ,
-        "254/191/78"^^isc:RGB ,
-        "#FEBF4E"^^isc:RGBHex ;
+    sdo:color "#FEBF4E"^^isc:RGBHex ;
 .
 
 isc:Tortonian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Тортон"@bg ,
@@ -4516,7 +4399,8 @@ isc:Tortonian
         "托尔顿期"@zh ;
     skos:broader isc:Miocene ;
     skos:definition "A time period from 11.63 to 7.246 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "n5"^^isc:ccgmShortCode ;
     skos:prefLabel "Tortonian"@en ;
     time:hasBeginning [
             isc:inMYA 11.63
@@ -4526,14 +4410,12 @@ isc:Tortonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 15 ;
-    sdo:color
-        "0/0/60/0"^^isc:CMYK ,
-        "255/255/102"^^isc:RGB ,
-        "#FFFF66"^^isc:RGBHex ;
+    sdo:color "#FFFF66"^^isc:RGBHex ;
 .
 
 isc:Tournaisian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Турней"@bg ,
@@ -4558,7 +4440,8 @@ isc:Tournaisian
         "杜内期"@zh ;
     skos:broader isc:LowerMississippian ;
     skos:definition "A time period from 358.9 to 346.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "c1"^^isc:ccgmShortCode ;
     skos:prefLabel "Tournaisian"@en ;
     time:hasBeginning [
             isc:inMYA 358.9 ;
@@ -4570,14 +4453,12 @@ isc:Tournaisian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 107 ;
-    sdo:color
-        "45/15/55/0"^^isc:CMYK ,
-        "140/176/108"^^isc:RGB ,
-        "#8CB06C"^^isc:RGBHex ;
+    sdo:color "#8CB06C"^^isc:RGBHex ;
 .
 
 isc:Tremadocian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Тремадок"@bg ,
@@ -4602,7 +4483,8 @@ isc:Tremadocian
         "特马豆克期"@zh ;
     skos:broader isc:LowerOrdovician ;
     skos:definition "A time period from 485.4 to 477.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "o1"^^isc:ccgmShortCode ;
     skos:prefLabel "Tremadocian"@en ;
     time:hasBeginning [
             isc:inMYA 485.4 ;
@@ -4614,14 +4496,12 @@ isc:Tremadocian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 141 ;
-    sdo:color
-        "80/0/50/0"^^isc:CMYK ,
-        "51/169/126"^^isc:RGB ,
-        "#33A97E"^^isc:RGBHex ;
+    sdo:color "#33A97E"^^isc:RGBHex ;
 .
 
 isc:Turonian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Турон"@bg ,
@@ -4646,7 +4526,8 @@ isc:Turonian
         "土仑期"@zh ;
     skos:broader isc:UpperCretaceous ;
     skos:definition "A time period from 93.9 to 89.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "k2"^^isc:ccgmShortCode ;
     skos:prefLabel "Turonian"@en ;
     time:hasBeginning [
             isc:inMYA 93.9
@@ -4657,14 +4538,12 @@ isc:Turonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 40 ;
-    sdo:color
-        "25/0/65/0"^^isc:CMYK ,
-        "191/227/93"^^isc:RGB ,
-        "#BFE35D"^^isc:RGBHex ;
+    sdo:color "#BFE35D"^^isc:RGBHex ;
 .
 
 isc:UpperPleistocene
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿен плейѿтоцен"@bg ,
@@ -4685,7 +4564,8 @@ isc:UpperPleistocene
         "晚更新世"@zh ;
     skos:broader isc:Pleistocene ;
     skos:definition "A time period from 0.129 to 0.0117 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "q4"^^isc:ccgmShortCode ;
     skos:prefLabel "Late Pleistocene"@en ;
     time:hasBeginning [
             isc:inMYA 0.129
@@ -4695,14 +4575,12 @@ isc:UpperPleistocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 5 ;
-    sdo:color
-        "0/5/15/0"^^isc:CMYK ,
-        "255/242/211"^^isc:RGB ,
-        "#FFF2D3"^^isc:RGBHex ;
+    sdo:color "#FFF2D3"^^isc:RGBHex ;
 .
 
 isc:Valanginian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Валанжин"@bg ,
@@ -4727,7 +4605,8 @@ isc:Valanginian
         "凡兰吟期"@zh ;
     skos:broader isc:LowerCretaceous ;
     skos:definition "A time period from 132.6 to 139.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "b2"^^isc:ccgmShortCode ;
     skos:prefLabel "Valanginian"@en ;
     time:hasBeginning [
             isc:inMYA 132.6 ;
@@ -4739,14 +4618,12 @@ isc:Valanginian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 47 ;
-    sdo:color
-        "40/0/60/0"^^isc:CMYK ,
-        "153/211/106"^^isc:RGB ,
-        "#99D36A"^^isc:RGBHex ;
+    sdo:color "#99D36A"^^isc:RGBHex ;
 .
 
 isc:Visean
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Визей"@bg ,
@@ -4771,7 +4648,8 @@ isc:Visean
         "韦宪期"@zh ;
     skos:broader isc:MiddleMississippian ;
     skos:definition "A time period from 346.7 to 330.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "c2"^^isc:ccgmShortCode ;
     skos:prefLabel "Visean"@en ;
     time:hasBeginning [
             isc:inMYA 346.7 ;
@@ -4783,14 +4661,12 @@ isc:Visean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 103 ;
-    sdo:color
-        "35/15/55/0"^^isc:CMYK ,
-        "166/185/108"^^isc:RGB ,
-        "#A6B96C"^^isc:RGBHex ;
+    sdo:color "#A6B96C"^^isc:RGBHex ;
 .
 
 isc:Wordian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Уорд"@bg ,
@@ -4815,7 +4691,8 @@ isc:Wordian
         "沃德期"@zh ;
     skos:broader isc:Guadalupian ;
     skos:definition "A time period from 266.9 to 264.28 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p6"^^isc:ccgmShortCode ;
     skos:prefLabel "Wordian"@en ;
     time:hasBeginning [
             isc:inMYA 266.9 ;
@@ -4827,14 +4704,12 @@ isc:Wordian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 83 ;
-    sdo:color
-        "0/45/40/0"^^isc:CMYK ,
-        "251/141/118"^^isc:RGB ,
-        "#FB8D76"^^isc:RGBHex ;
+    sdo:color "#FB8D76"^^isc:RGBHex ;
 .
 
 isc:Wuchiapingian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Вучиапинг"@bg ,
@@ -4859,7 +4734,8 @@ isc:Wuchiapingian
         "吴家坪期"@zh ;
     skos:broader isc:Lopingian ;
     skos:definition "A time period from 259.51 to 254.14 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "p8"^^isc:ccgmShortCode ;
     skos:prefLabel "Wuchiapingian"@en ;
     time:hasBeginning [
             isc:inMYA 259.51 ;
@@ -4871,18 +4747,17 @@ isc:Wuchiapingian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 81 ;
-    sdo:color
-        "0/30/25/0"^^isc:CMYK ,
-        "252/180/162"^^isc:RGB ,
-        "#FCB4A2"^^isc:RGBHex ;
+    sdo:color "#FCB4A2"^^isc:RGBHex ;
 .
 
 isc:Wuliuan
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader isc:Miaolingian ;
     skos:definition "A time period from 509 to 504.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "ep5"^^isc:ccgmShortCode ;
     skos:prefLabel "Wuliuan"@en ;
     time:hasBeginning [
             isc:inMYA 509 ;
@@ -4894,14 +4769,12 @@ isc:Wuliuan
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 149 ;
-    sdo:color
-        "30/5/40/0"^^isc:CMYK ,
-        "179/212/146"^^isc:RGB ,
-        "#B3D492"^^isc:RGBHex ;
+    sdo:color "#B3D492"^^isc:RGBHex ;
 .
 
 isc:Ypresian
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ипреѿ"@bg ,
@@ -4926,7 +4799,8 @@ isc:Ypresian
         "伊普雷斯期"@zh ;
     skos:broader isc:Eocene ;
     skos:definition "A time period from 56.0 to 47.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "e4"^^isc:ccgmShortCode ;
     skos:prefLabel "Ypresian"@en ;
     time:hasBeginning [
             isc:inMYA 56.0
@@ -4936,14 +4810,12 @@ isc:Ypresian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 29 ;
-    sdo:color
-        "0/35/45/0"^^isc:CMYK ,
-        "252/167/115"^^isc:RGB ,
-        "#FCA773"^^isc:RGBHex ;
+    sdo:color "#FCA773"^^isc:RGBHex ;
 .
 
 isc:Zanclean
     a skos:Concept ;
+    gts:rank rank:Age ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Занклѿки"@bg ,
@@ -4968,7 +4840,8 @@ isc:Zanclean
         "赞克勒期"@zh ;
     skos:broader isc:Pliocene ;
     skos:definition "A time period from 5.333 to 3.6 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
+    skos:notation "n7"^^isc:ccgmShortCode ;
     skos:prefLabel "Zanclean"@en ;
     time:hasBeginning [
             isc:inMYA 5.333
@@ -4978,22 +4851,21 @@ isc:Zanclean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 13 ;
-    sdo:color
-        "0/0/30/0"^^isc:CMYK ,
-        "255/255/179"^^isc:RGB ,
-        "#FFFFB3"^^isc:RGBHex ;
+    sdo:color "#FFFFB3"^^isc:RGBHex ;
 .
 
 isc:LowerMississippian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "前期ミシシッピアン紀"@ja ,
         "早密西西比世"@zh ;
     skos:broader isc:Mississippian ;
     skos:definition "A time period from 358.9 to 346.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower isc:Tournaisian ;
+    skos:notation "C1c1"^^isc:ccgmShortCode ;
     skos:prefLabel "Early Mississippian"@en ;
     time:hasBeginning [
             isc:inMYA 358.9 ;
@@ -5005,22 +4877,21 @@ isc:LowerMississippian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 105 ;
-    sdo:color
-        "45/15/55/0"^^isc:CMYK ,
-        "128/171/108"^^isc:RGB ,
-        "#80AB6C"^^isc:RGBHex ;
+    sdo:color "#80AB6C"^^isc:RGBHex ;
 .
 
 isc:LowerPennsylvanian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "前期ペンシルバニア紀"@ja ,
         "早宾夕法尼亚世"@zh ;
     skos:broader isc:Pennsylvanian ;
     skos:definition "A time period from 323.2 to 315.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower isc:Bashkirian ;
+    skos:notation "C2c4"^^isc:ccgmShortCode ;
     skos:prefLabel "Early Pennsylvanian"@en ;
     time:hasBeginning [
             isc:inMYA 323.2 ;
@@ -5032,22 +4903,21 @@ isc:LowerPennsylvanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 98 ;
-    sdo:color
-        "45/10/20/0"^^isc:CMYK ,
-        "140/190/180"^^isc:RGB ,
-        "#8CBEB4"^^isc:RGBHex ;
+    sdo:color "#8CBEB4"^^isc:RGBHex ;
 .
 
 isc:MiddleMississippian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "中期ミシシッピアン紀"@ja ,
         "中密西西比世"@zh ;
     skos:broader isc:Mississippian ;
     skos:definition "A time period from 346.7 to 330.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower isc:Visean ;
+    skos:notation "C1c2"^^isc:ccgmShortCode ;
     skos:prefLabel "Middle Mississippian"@en ;
     time:hasBeginning [
             isc:inMYA 346.7 ;
@@ -5059,22 +4929,21 @@ isc:MiddleMississippian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 102 ;
-    sdo:color
-        "35/15/55/0"^^isc:CMYK ,
-        "153/180/108"^^isc:RGB ,
-        "#99B46C"^^isc:RGBHex ;
+    sdo:color "#99B46C"^^isc:RGBHex ;
 .
 
 isc:MiddlePennsylvanian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "中期ペンシルバニア紀"@ja ,
         "中宾夕法尼亚世"@zh ;
     skos:broader isc:Pennsylvanian ;
     skos:definition "A time period from 315.2 to 307.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower isc:Moscovian ;
+    skos:notation "C2c5"^^isc:ccgmShortCode ;
     skos:prefLabel "Middle Pennsylvanian"@en ;
     time:hasBeginning [
             isc:inMYA 315.2 ;
@@ -5086,22 +4955,21 @@ isc:MiddlePennsylvanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 95 ;
-    sdo:color
-        "30/10/20/0"^^isc:CMYK ,
-        "166/199/183"^^isc:RGB ,
-        "#A6C7B7"^^isc:RGBHex ;
+    sdo:color "#A6C7B7"^^isc:RGBHex ;
 .
 
 isc:UpperMississippian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "後期ミシシッピアン紀"@ja ,
         "晚密西西比世"@zh ;
     skos:broader isc:Mississippian ;
     skos:definition "A time period from 330.9 to 323.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower isc:Serpukhovian ;
+    skos:notation "C1c3"^^isc:ccgmShortCode ;
     skos:prefLabel "Late Mississippian"@en ;
     time:hasBeginning [
             isc:inMYA 330.9 ;
@@ -5113,14 +4981,12 @@ isc:UpperMississippian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 101 ;
-    sdo:color
-        "25/15/55/0"^^isc:CMYK ,
-        "179/190/108"^^isc:RGB ,
-        "#B3BE6C"^^isc:RGBHex ;
+    sdo:color "#B3BE6C"^^isc:RGBHex ;
 .
 
 isc:CambrianSeries2
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Камбрий - 2 ѿериѿ"@bg ,
@@ -5145,10 +5011,11 @@ isc:CambrianSeries2
         "第二世"@zh ;
     skos:broader isc:Cambrian ;
     skos:definition "A time period from 521 to 509 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:CambrianStage3 ,
         isc:CambrianStage4 ;
+    skos:notation "Ep2"^^isc:ccgmShortCode ;
     skos:prefLabel "Cambrian Series 2"@en ;
     time:hasBeginning [
             isc:inMYA 521 ;
@@ -5160,14 +5027,12 @@ isc:CambrianSeries2
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 151 ;
-    sdo:color
-        "40/10/50/0"^^isc:CMYK ,
-        "153/192/120"^^isc:RGB ,
-        "#99C078"^^isc:RGBHex ;
+    sdo:color "#99C078"^^isc:RGBHex ;
 .
 
 isc:Carboniferous
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Карбон"@bg ,
@@ -5192,10 +5057,11 @@ isc:Carboniferous
         "石炭纪"@zh ;
     skos:broader isc:Paleozoic ;
     skos:definition "A time period from 358.9 to 298.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Mississippian ,
         isc:Pennsylvanian ;
+    skos:notation "C"^^isc:ccgmShortCode ;
     skos:prefLabel "Carboniferous"@en ;
     time:hasBeginning [
             isc:inMYA 358.9 ;
@@ -5207,14 +5073,12 @@ isc:Carboniferous
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 104 ;
-    sdo:color
-        "60/15/30/0"^^isc:CMYK ,
-        "103/165/153"^^isc:RGB ,
-        "#67A599"^^isc:RGBHex ;
+    sdo:color "#67A599"^^isc:RGBHex ;
 .
 
 isc:Cretaceous
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Креда"@bg ,
@@ -5239,10 +5103,11 @@ isc:Cretaceous
         "白垩纪"@zh ;
     skos:broader isc:Mesozoic ;
     skos:definition "A time period from 145.0 to 66.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:LowerCretaceous ,
         isc:UpperCretaceous ;
+    skos:notation "K"^^isc:ccgmShortCode ;
     skos:prefLabel "Cretaceous"@en ;
     time:hasBeginning [
             isc:inMYA 145.0 ;
@@ -5253,14 +5118,12 @@ isc:Cretaceous
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 49 ;
-    sdo:color
-        "50/0/75/0"^^isc:CMYK ,
-        "127/198/78"^^isc:RGB ,
-        "#7FC64E"^^isc:RGBHex ;
+    sdo:color "#7FC64E"^^isc:RGBHex ;
 .
 
 isc:Lopingian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лопинг"@bg ,
@@ -5285,10 +5148,11 @@ isc:Lopingian
         "乐平世"@zh ;
     skos:broader isc:Permian ;
     skos:definition "A time period from 259.51 to 251.902 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Changhsingian ,
         isc:Wuchiapingian ;
+    skos:notation "P3"^^isc:ccgmShortCode ;
     skos:prefLabel "Lopingian"@en ;
     time:hasBeginning [
             isc:inMYA 259.51 ;
@@ -5300,14 +5164,12 @@ isc:Lopingian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 80 ;
-    sdo:color
-        "0/35/30/0"^^isc:CMYK ,
-        "251/167/148"^^isc:RGB ,
-        "#FBA794"^^isc:RGBHex ;
+    sdo:color "#FBA794"^^isc:RGBHex ;
 .
 
 isc:LowerOrdovician
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ранен Ордовик"@bg ,
@@ -5332,10 +5194,11 @@ isc:LowerOrdovician
         "早奥陶世"@zh ;
     skos:broader isc:Ordovician ;
     skos:definition "A time period from 485.4 to 470.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Floian ,
         isc:Tremadocian ;
+    skos:notation "O1"^^isc:ccgmShortCode ;
     skos:prefLabel "Early Ordovician"@en ;
     time:hasBeginning [
             isc:inMYA 485.4 ;
@@ -5347,14 +5210,12 @@ isc:LowerOrdovician
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 139 ;
-    sdo:color
-        "90/0/60/0"^^isc:CMYK ,
-        "26/157/111"^^isc:RGB ,
-        "#1A9D6F"^^isc:RGBHex ;
+    sdo:color "#1A9D6F"^^isc:RGBHex ;
 .
 
 isc:LowerTriassic
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Раннен Триаѿ"@bg ,
@@ -5379,10 +5240,11 @@ isc:LowerTriassic
         "早三叠世"@zh ;
     skos:broader isc:Triassic ;
     skos:definition "A time period from 251.902 to 247.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Induan ,
         isc:Olenekian ;
+    skos:notation "T1"^^isc:ccgmShortCode ;
     skos:prefLabel "Early Triassic"@en ;
     time:hasBeginning [
             isc:inMYA 251.902 ;
@@ -5393,14 +5255,12 @@ isc:LowerTriassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 75 ;
-    sdo:color
-        "40/75/0/0"^^isc:CMYK ,
-        "152/57/153"^^isc:RGB ,
-        "#983999"^^isc:RGBHex ;
+    sdo:color "#983999"^^isc:RGBHex ;
 .
 
 isc:Ludlow
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лудлоу"@bg ,
@@ -5425,10 +5285,11 @@ isc:Ludlow
         "卢德洛世"@zh ;
     skos:broader isc:Silurian ;
     skos:definition "A time period from 427.4 to 419.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Gorstian ,
         isc:Ludfordian ;
+    skos:notation "S3"^^isc:ccgmShortCode ;
     skos:prefLabel "Ludlow"@en ;
     time:hasBeginning [
             isc:inMYA 427.4 ;
@@ -5440,14 +5301,12 @@ isc:Ludlow
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 122 ;
-    sdo:color
-        "25/0/15/0"^^isc:CMYK ,
-        "191/230/207"^^isc:RGB ,
-        "#BFE6CF"^^isc:RGBHex ;
+    sdo:color "#BFE6CF"^^isc:RGBHex ;
 .
 
 isc:MiddleDevonian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Среден Девон"@bg ,
@@ -5472,10 +5331,11 @@ isc:MiddleDevonian
         "中泥盆世"@zh ;
     skos:broader isc:Devonian ;
     skos:definition "A time period from 393.3 to 382.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Eifelian ,
         isc:Givetian ;
+    skos:notation "D2"^^isc:ccgmShortCode ;
     skos:prefLabel "Middle Devonian"@en ;
     time:hasBeginning [
             isc:inMYA 393.3 ;
@@ -5487,14 +5347,12 @@ isc:MiddleDevonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 113 ;
-    sdo:color
-        "5/20/55/0"^^isc:CMYK ,
-        "241/200/104"^^isc:RGB ,
-        "#F1C868"^^isc:RGBHex ;
+    sdo:color "#F1C868"^^isc:RGBHex ;
 .
 
 isc:MiddleOrdovician
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Среден Ордовик"@bg ,
@@ -5519,10 +5377,11 @@ isc:MiddleOrdovician
         "中奥陶世"@zh ;
     skos:broader isc:Ordovician ;
     skos:definition "A time period from 470.0 to 458.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Dapingian ,
         isc:Darriwilian ;
+    skos:notation "O2"^^isc:ccgmShortCode ;
     skos:prefLabel "Middle Ordovician"@en ;
     time:hasBeginning [
             isc:inMYA 470.0 ;
@@ -5534,14 +5393,12 @@ isc:MiddleOrdovician
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 137 ;
-    sdo:color
-        "70/0/50/0"^^isc:CMYK ,
-        "77/180/126"^^isc:RGB ,
-        "#4DB47E"^^isc:RGBHex ;
+    sdo:color "#4DB47E"^^isc:RGBHex ;
 .
 
 isc:MiddleTriassic
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Среден Триаѿ"@bg ,
@@ -5566,10 +5423,11 @@ isc:MiddleTriassic
         "中三叠世"@zh ;
     skos:broader isc:Triassic ;
     skos:definition "A time period from 247.2 to 237 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Anisian ,
         isc:Ladinian ;
+    skos:notation "T2"^^isc:ccgmShortCode ;
     skos:prefLabel "Middle Triassic"@en ;
     time:hasBeginning [
             isc:inMYA 247.2
@@ -5580,14 +5438,12 @@ isc:MiddleTriassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 72 ;
-    sdo:color
-        "30/55/0/0"^^isc:CMYK ,
-        "177/104/177"^^isc:RGB ,
-        "#B168B1"^^isc:RGBHex ;
+    sdo:color "#B168B1"^^isc:RGBHex ;
 .
 
 isc:Neogene
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пеоген"@bg ,
@@ -5612,10 +5468,11 @@ isc:Neogene
         "晚第三纪"@zh ;
     skos:broader isc:Cenozoic ;
     skos:definition "A time period from 23.03 to 2.58 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Miocene ,
         isc:Pliocene ;
+    skos:notation "N"^^isc:ccgmShortCode ;
     skos:prefLabel "Neogene"@en ;
     time:hasBeginning [
             isc:inMYA 23.03
@@ -5625,14 +5482,12 @@ isc:Neogene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 21 ;
-    sdo:color
-        "0/10/90/0"^^isc:CMYK ,
-        "255/230/25"^^isc:RGB ,
-        "#FFE619"^^isc:RGBHex ;
+    sdo:color "#FFE619"^^isc:RGBHex ;
 .
 
 isc:Oligocene
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Олигоцен"@bg ,
@@ -5657,10 +5512,11 @@ isc:Oligocene
         "渐新世"@zh ;
     skos:broader isc:Paleogene ;
     skos:definition "A time period from 33.9 to 23.03 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Chattian ,
         isc:Rupelian ;
+    skos:notation "E3"^^isc:ccgmShortCode ;
     skos:prefLabel "Oligocene"@en ;
     time:hasBeginning [
             isc:inMYA 33.9
@@ -5670,14 +5526,12 @@ isc:Oligocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 23 ;
-    sdo:color
-        "0/25/45/0"^^isc:CMYK ,
-        "254/192/122"^^isc:RGB ,
-        "#FEC07A"^^isc:RGBHex ;
+    sdo:color "#FEC07A"^^isc:RGBHex ;
 .
 
 isc:Pliocene
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Плиоцен"@bg ,
@@ -5702,10 +5556,11 @@ isc:Pliocene
         "上新世"@zh ;
     skos:broader isc:Neogene ;
     skos:definition "A time period from 5.333 to 2.58 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Piacenzian ,
         isc:Zanclean ;
+    skos:notation "N2"^^isc:ccgmShortCode ;
     skos:prefLabel "Pliocene"@en ;
     time:hasBeginning [
             isc:inMYA 5.333
@@ -5715,14 +5570,12 @@ isc:Pliocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 12 ;
-    sdo:color
-        "0/0/40/0"^^isc:CMYK ,
-        "255/255/153"^^isc:RGB ,
-        "#FFFF99"^^isc:RGBHex ;
+    sdo:color "#FFFF99"^^isc:RGBHex ;
 .
 
 isc:Quaternary
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Кватернер"@bg ,
@@ -5747,10 +5600,11 @@ isc:Quaternary
         "第四纪"@zh ;
     skos:broader isc:Cenozoic ;
     skos:definition "A time period from 2.58 million years ago to the present" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Holocene ,
         isc:Pleistocene ;
+    skos:notation "Q"^^isc:ccgmShortCode ;
     skos:prefLabel "Quaternary"@en ;
     time:hasBeginning [
             isc:inMYA 2.58
@@ -5760,14 +5614,12 @@ isc:Quaternary
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 10 ;
-    sdo:color
-        "0/0/50/0"^^isc:CMYK ,
-        "249/249/127"^^isc:RGB ,
-        "#F9F97F"^^isc:RGBHex ;
+    sdo:color "#F9F97F"^^isc:RGBHex ;
 .
 
 isc:Terreneuvian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Теренеув"@bg ,
@@ -5792,10 +5644,11 @@ isc:Terreneuvian
         "纽芬兰世"@zh ;
     skos:broader isc:Cambrian ;
     skos:definition "A time period from 538.8 to 521 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:CambrianStage2 ,
         isc:Fortunian ;
+    skos:notation "Ep1"^^isc:ccgmShortCode ;
     skos:prefLabel "Terreneuvian"@en ;
     time:hasBeginning [
             isc:inMYA 538.8 ;
@@ -5807,14 +5660,12 @@ isc:Terreneuvian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 157 ;
-    sdo:color
-        "45/15/55/0"^^isc:CMYK ,
-        "140/176/108"^^isc:RGB ,
-        "#8CB06C"^^isc:RGBHex ;
+    sdo:color "#8CB06C"^^isc:RGBHex ;
 .
 
 isc:UpperDevonian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿен Девон"@bg ,
@@ -5835,10 +5686,11 @@ isc:UpperDevonian
         "晚泥盆世"@zh ;
     skos:broader isc:Devonian ;
     skos:definition "A time period from 382.7 to 358.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Famennian ,
         isc:Frasnian ;
+    skos:notation "D3"^^isc:ccgmShortCode ;
     skos:prefLabel "Late Devonian"@en ;
     time:hasBeginning [
             isc:inMYA 382.7 ;
@@ -5850,14 +5702,12 @@ isc:UpperDevonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 110 ;
-    sdo:color
-        "5/10/35/0"^^isc:CMYK ,
-        "241/225/157"^^isc:RGB ,
-        "#F1E19D"^^isc:RGBHex ;
+    sdo:color "#F1E19D"^^isc:RGBHex ;
 .
 
 isc:UpperPennsylvanian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿен Пенѿилван"@bg ,
@@ -5878,10 +5728,11 @@ isc:UpperPennsylvanian
         "晚宾夕法尼亚世"@zh ;
     skos:broader isc:Pennsylvanian ;
     skos:definition "A time period from 307.0 to 298.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Gzhelian ,
         isc:Kasimovian ;
+    skos:notation "C2c6c7"^^isc:ccgmShortCode ;
     skos:prefLabel "Late Pennsylvanian"@en ;
     time:hasBeginning [
             isc:inMYA 307.0 ;
@@ -5893,14 +5744,12 @@ isc:UpperPennsylvanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 94 ;
-    sdo:color
-        "25/10/20/0"^^isc:CMYK ,
-        "191/208/186"^^isc:RGB ,
-        "#BFD0BA"^^isc:RGBHex ;
+    sdo:color "#BFD0BA"^^isc:RGBHex ;
 .
 
 isc:Wenlock
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Венлок"@bg ,
@@ -5925,10 +5774,11 @@ isc:Wenlock
         "温洛克世"@zh ;
     skos:broader isc:Silurian ;
     skos:definition "A time period from 433.4 to 427.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Homerian ,
         isc:Sheinwoodian ;
+    skos:notation "S2"^^isc:ccgmShortCode ;
     skos:prefLabel "Wenlock"@en ;
     time:hasBeginning [
             isc:inMYA 433.4 ;
@@ -5940,10 +5790,7 @@ isc:Wenlock
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 125 ;
-    sdo:color
-        "30/0/20/0"^^isc:CMYK ,
-        "179/225/194"^^isc:RGB ,
-        "#B3E1C2"^^isc:RGBHex ;
+    sdo:color "#B3E1C2"^^isc:RGBHex ;
 .
 
 <https://linked.data.gov.au/org/ics>
@@ -5954,6 +5801,7 @@ isc:Wenlock
 
 isc:Cenozoic
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пеозой"@bg ,
@@ -5980,11 +5828,12 @@ isc:Cenozoic
         "新生代"@zh ;
     skos:broader isc:Phanerozoic ;
     skos:definition "A time period from 66.0 million years ago to the present" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Neogene ,
         isc:Paleogene ,
         isc:Quaternary ;
+    skos:notation "CZ"^^isc:ccgmShortCode ;
     skos:prefLabel "Cenozoic"@en ;
     time:hasBeginning [
             isc:inMYA 66.0
@@ -5994,14 +5843,12 @@ isc:Cenozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 32 ;
-    sdo:color
-        "40/0/5/0"^^isc:CMYK ,
-        "242/249/29"^^isc:RGB ,
-        "#F2F91D"^^isc:RGBHex ;
+    sdo:color "#F2F91D"^^isc:RGBHex ;
 .
 
 isc:Devonian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Девон"@bg ,
@@ -6026,11 +5873,12 @@ isc:Devonian
         "泥盆纪"@zh ;
     skos:broader isc:Paleozoic ;
     skos:definition "A time period from 419.2 to 358.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:LowerDevonian ,
         isc:MiddleDevonian ,
         isc:UpperDevonian ;
+    skos:notation "D"^^isc:ccgmShortCode ;
     skos:prefLabel "Devonian"@en ;
     time:hasBeginning [
             isc:inMYA 419.2 ;
@@ -6042,14 +5890,12 @@ isc:Devonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 116 ;
-    sdo:color
-        "20/40/75/0"^^isc:CMYK ,
-        "203/140/55"^^isc:RGB ,
-        "#CB8C37"^^isc:RGBHex ;
+    sdo:color "#CB8C37"^^isc:RGBHex ;
 .
 
 isc:Furongian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фуронг"@bg ,
@@ -6074,11 +5920,12 @@ isc:Furongian
         "芙蓉世"@zh ;
     skos:broader isc:Cambrian ;
     skos:definition "A time period from 497 to 485.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:CambrianStage10 ,
         isc:Jiangshanian ,
         isc:Paibian ;
+    skos:notation "Ep4"^^isc:ccgmShortCode ;
     skos:prefLabel "Furongian"@en ;
     time:hasBeginning [
             isc:inMYA 497 ;
@@ -6090,14 +5937,12 @@ isc:Furongian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 144 ;
-    sdo:color
-        "30/0/40/0"^^isc:CMYK ,
-        "179/224/149"^^isc:RGB ,
-        "#B3E095"^^isc:RGBHex ;
+    sdo:color "#B3E095"^^isc:RGBHex ;
 .
 
 isc:Guadalupian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Гуадалуп"@bg ,
@@ -6122,11 +5967,12 @@ isc:Guadalupian
         "瓜德鲁普世"@zh ;
     skos:broader isc:Permian ;
     skos:definition "A time period from 273.01 to 259.51 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Capitanian ,
         isc:Roadian ,
         isc:Wordian ;
+    skos:notation "P2"^^isc:ccgmShortCode ;
     skos:prefLabel "Guadalupian"@en ;
     time:hasBeginning [
             isc:inMYA 273.01 ;
@@ -6138,14 +5984,12 @@ isc:Guadalupian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 84 ;
-    sdo:color
-        "0/55/50/0"^^isc:CMYK ,
-        "251/116/92"^^isc:RGB ,
-        "#FB745C"^^isc:RGBHex ;
+    sdo:color "#FB745C"^^isc:RGBHex ;
 .
 
 isc:Holocene
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Холоцен"@bg ,
@@ -6170,11 +6014,12 @@ isc:Holocene
         "全新世"@zh ;
     skos:broader isc:Quaternary ;
     skos:definition "A time period from 0.0117 million years ago to the present" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Greenlandian ,
         isc:Meghalayan ,
         isc:Northgrippian ;
+    skos:notation "Q2"^^isc:ccgmShortCode ;
     skos:prefLabel "Holocene"@en ;
     time:hasBeginning [
             isc:inMYA 0.0117
@@ -6184,14 +6029,12 @@ isc:Holocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 4 ;
-    sdo:color
-        "0/10/20/0"^^isc:CMYK ,
-        "254/235/210"^^isc:RGB ,
-        "#FEEBD2"^^isc:RGBHex ;
+    sdo:color "#FEEBD2"^^isc:RGBHex ;
 .
 
 isc:Jurassic
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Юра"@bg ,
@@ -6216,11 +6059,12 @@ isc:Jurassic
         "侏罗纪"@zh ;
     skos:broader isc:Mesozoic ;
     skos:definition "A time period from 201.4 to 145.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:LowerJurassic ,
         isc:MiddleJurassic ,
         isc:UpperJurassic ;
+    skos:notation "J"^^isc:ccgmShortCode ;
     skos:prefLabel "Jurassic"@en ;
     time:hasBeginning [
             isc:inMYA 201.4 ;
@@ -6232,14 +6076,12 @@ isc:Jurassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 64 ;
-    sdo:color
-        "80/0/5/0"^^isc:CMYK ,
-        "52/178/201"^^isc:RGB ,
-        "#34B2C9"^^isc:RGBHex ;
+    sdo:color "#34B2C9"^^isc:RGBHex ;
 .
 
 isc:Llandovery
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Лиандовери"@bg ,
@@ -6264,11 +6106,12 @@ isc:Llandovery
         "兰多维列世"@zh ;
     skos:broader isc:Silurian ;
     skos:definition "A time period from 443.8 to 433.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Aeronian ,
         isc:Rhuddanian ,
         isc:Telychian ;
+    skos:notation "S1"^^isc:ccgmShortCode ;
     skos:prefLabel "Llandovery"@en ;
     time:hasBeginning [
             isc:inMYA 443.8 ;
@@ -6280,14 +6123,12 @@ isc:Llandovery
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 128 ;
-    sdo:color
-        "40/0/25/0"^^isc:CMYK ,
-        "153/215/179"^^isc:RGB ,
-        "#99D7B3"^^isc:RGBHex ;
+    sdo:color "#99D7B3"^^isc:RGBHex ;
 .
 
 isc:LowerDevonian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ранен Девон"@bg ,
@@ -6312,11 +6153,12 @@ isc:LowerDevonian
         "早泥盆世"@zh ;
     skos:broader isc:Devonian ;
     skos:definition "A time period from 419.2 to 393.3 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Emsian ,
         isc:Lochkovian ,
         isc:Pragian ;
+    skos:notation "D1"^^isc:ccgmShortCode ;
     skos:prefLabel "Early Devonian"@en ;
     time:hasBeginning [
             isc:inMYA 419.2 ;
@@ -6328,14 +6170,12 @@ isc:LowerDevonian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 118 ;
-    sdo:color
-        "10/30/65/0"^^isc:CMYK ,
-        "229/172/77"^^isc:RGB ,
-        "#E5AC4D"^^isc:RGBHex ;
+    sdo:color "#E5AC4D"^^isc:RGBHex ;
 .
 
 isc:Mesoproterozoic
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Мезопротерозой"@bg ,
@@ -6360,11 +6200,12 @@ isc:Mesoproterozoic
         "中元古代"@zh ;
     skos:broader isc:Proterozoic ;
     skos:definition "A time period from 1600 to 1000 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Calymmian ,
         isc:Ectasian ,
         isc:Stenian ;
+    skos:notation "MP"^^isc:ccgmShortCode ;
     skos:prefLabel "Mesoproterozoic"@en ;
     time:hasBeginning [
             isc:inMYA 1600
@@ -6374,14 +6215,12 @@ isc:Mesoproterozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 165 ;
-    sdo:color
-        "0/30/55/0"^^isc:CMYK ,
-        "253/180/98"^^isc:RGB ,
-        "#FDB462"^^isc:RGBHex ;
+    sdo:color "#FDB462"^^isc:RGBHex ;
 .
 
 isc:Mesozoic
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Мезозой"@bg ,
@@ -6406,11 +6245,12 @@ isc:Mesozoic
         "中生代"@zh ;
     skos:broader isc:Phanerozoic ;
     skos:definition "A time period from 251.902 to 66.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Cretaceous ,
         isc:Jurassic ,
         isc:Triassic ;
+    skos:notation "MZ"^^isc:ccgmShortCode ;
     skos:prefLabel "Mesozoic"@en ;
     time:hasBeginning [
             isc:inMYA 251.902 ;
@@ -6421,22 +6261,21 @@ isc:Mesozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 76 ;
-    sdo:color
-        "60/0/10/0"^^isc:CMYK ,
-        "103/197/202"^^isc:RGB ,
-        "#67C5CA"^^isc:RGBHex ;
+    sdo:color "#67C5CA"^^isc:RGBHex ;
 .
 
 isc:Miaolingian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:broader isc:Cambrian ;
     skos:definition "A time period from 509 to 497 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Drumian ,
         isc:Guzhangian ,
         isc:Wuliuan ;
+    skos:notation "Ep3"^^isc:ccgmShortCode ;
     skos:prefLabel "Miaolingian"@en ;
     time:hasBeginning [
             isc:inMYA 509 ;
@@ -6448,14 +6287,12 @@ isc:Miaolingian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 148 ;
-    sdo:color
-        "35/5/45/0"^^isc:CMYK ,
-        "166/207/134"^^isc:RGB ,
-        "#A6CF86"^^isc:RGBHex ;
+    sdo:color "#A6CF86"^^isc:RGBHex ;
 .
 
 isc:Mississippian
     a skos:Concept ;
+    gts:rank rank:Sub-Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Миѿиѿип"@bg ,
@@ -6480,11 +6317,12 @@ isc:Mississippian
         "密西西比亚纪"@zh ;
     skos:broader isc:Carboniferous ;
     skos:definition "A time period from 358.9 to 323.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:LowerMississippian ,
         isc:MiddleMississippian ,
         isc:UpperMississippian ;
+    skos:notation "C1"^^isc:ccgmShortCode ;
     skos:prefLabel "Mississippian"@en ;
     time:hasBeginning [
             isc:inMYA 358.9 ;
@@ -6496,14 +6334,12 @@ isc:Mississippian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 106 ;
-    sdo:color
-        "60/25/55/0"^^isc:CMYK ,
-        "103/143/102"^^isc:RGB ,
-        "#678F66"^^isc:RGBHex ;
+    sdo:color "#678F66"^^isc:RGBHex ;
 .
 
 isc:Neoproterozoic
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "пеопротерозой"@bg ,
@@ -6528,11 +6364,12 @@ isc:Neoproterozoic
         "新元古代"@zh ;
     skos:broader isc:Proterozoic ;
     skos:definition "A time period from 1000 to 538.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Cryogenian ,
         isc:Ediacaran ,
         isc:Tonian ;
+    skos:notation "NP"^^isc:ccgmShortCode ;
     skos:prefLabel "Neoproterozoic"@en ;
     time:hasBeginning [
             isc:inMYA 1000
@@ -6543,14 +6380,12 @@ isc:Neoproterozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 160 ;
-    sdo:color
-        "0/30/70/0"^^isc:CMYK ,
-        "254/179/66"^^isc:RGB ,
-        "#FEB342"^^isc:RGBHex ;
+    sdo:color "#FEB342"^^isc:RGBHex ;
 .
 
 isc:Ordovician
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ордовик"@bg ,
@@ -6575,11 +6410,12 @@ isc:Ordovician
         "奥陶纪"@zh ;
     skos:broader isc:Paleozoic ;
     skos:definition "A time period from 485.4 to 443.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:LowerOrdovician ,
         isc:MiddleOrdovician ,
         isc:UpperOrdovician ;
+    skos:notation "O"^^isc:ccgmShortCode ;
     skos:prefLabel "Ordovician"@en ;
     time:hasBeginning [
             isc:inMYA 485.4 ;
@@ -6591,14 +6427,12 @@ isc:Ordovician
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 140 ;
-    sdo:color
-        "100/0/60/0"^^isc:CMYK ,
-        "0/146/112"^^isc:RGB ,
-        "#009270"^^isc:RGBHex ;
+    sdo:color "#009270"^^isc:RGBHex ;
 .
 
 isc:Paleocene
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеоцен"@bg ,
@@ -6625,11 +6459,12 @@ isc:Paleocene
         "古新世"@zh ;
     skos:broader isc:Paleogene ;
     skos:definition "A time period from 66.0 to 56.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Danian ,
         isc:Selandian ,
         isc:Thanetian ;
+    skos:notation "E1"^^isc:ccgmShortCode ;
     skos:prefLabel "Paleocene"@en ;
     time:hasBeginning [
             isc:inMYA 66.0
@@ -6639,14 +6474,12 @@ isc:Paleocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 34 ;
-    sdo:color
-        "0/40/60/0"^^isc:CMYK ,
-        "253/167/95"^^isc:RGB ,
-        "#FDA75F"^^isc:RGBHex ;
+    sdo:color "#FDA75F"^^isc:RGBHex ;
 .
 
 isc:Paleogene
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеоген"@bg ,
@@ -6673,11 +6506,12 @@ isc:Paleogene
         "早第三纪"@zh ;
     skos:broader isc:Cenozoic ;
     skos:definition "A time period from 66.0 to 23.03 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Eocene ,
         isc:Oligocene ,
         isc:Paleocene ;
+    skos:notation "E"^^isc:ccgmShortCode ;
     skos:prefLabel "Paleogene"@en ;
     time:hasBeginning [
             isc:inMYA 66.0
@@ -6687,14 +6521,12 @@ isc:Paleogene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 35 ;
-    sdo:color
-        "5/0/90/0"^^isc:CMYK ,
-        "253/154/82"^^isc:RGB ,
-        "#FD9A52"^^isc:RGBHex ;
+    sdo:color "#FD9A52"^^isc:RGBHex ;
 .
 
 isc:Pennsylvanian
     a skos:Concept ;
+    gts:rank rank:Sub-Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Пенѿилван"@bg ,
@@ -6719,11 +6551,12 @@ isc:Pennsylvanian
         "宾夕法尼亚亚纪"@zh ;
     skos:broader isc:Carboniferous ;
     skos:definition "A time period from 323.2 to 298.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:LowerPennsylvanian ,
         isc:MiddlePennsylvanian ,
         isc:UpperPennsylvanian ;
+    skos:notation "C2"^^isc:ccgmShortCode ;
     skos:prefLabel "Pennsylvanian"@en ;
     time:hasBeginning [
             isc:inMYA 323.2 ;
@@ -6735,14 +6568,12 @@ isc:Pennsylvanian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 99 ;
-    sdo:color
-        "50/10/20/0"^^isc:CMYK ,
-        "126/188/198"^^isc:RGB ,
-        "#7EBCC6"^^isc:RGBHex ;
+    sdo:color "#7EBCC6"^^isc:RGBHex ;
 .
 
 isc:Permian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Перм"@bg ,
@@ -6767,11 +6598,12 @@ isc:Permian
         "二叠纪"@zh ;
     skos:broader isc:Paleozoic ;
     skos:definition "A time period from 298.9 to 251.902 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Cisuralian ,
         isc:Guadalupian ,
         isc:Lopingian ;
+    skos:notation "P"^^isc:ccgmShortCode ;
     skos:prefLabel "Permian"@en ;
     time:hasBeginning [
             isc:inMYA 298.9 ;
@@ -6783,14 +6615,12 @@ isc:Permian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 91 ;
-    sdo:color
-        "5/75/75/0"^^isc:CMYK ,
-        "240/64/40"^^isc:RGB ,
-        "#F04028"^^isc:RGBHex ;
+    sdo:color "#F04028"^^isc:RGBHex ;
 .
 
 isc:Phanerozoic
     a skos:Concept ;
+    gts:rank rank:Eon ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Фанерозой"@bg ,
@@ -6814,11 +6644,12 @@ isc:Phanerozoic
         "fanerozoikum"@sv ,
         "显生宙"@zh ;
     skos:definition "A time period from 538.8 million years ago to the present" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Cenozoic ,
         isc:Mesozoic ,
         isc:Paleozoic ;
+    skos:notation "PH"^^isc:ccgmShortCode ;
     skos:prefLabel "Phanerozoic"@en ;
     time:hasBeginning [
             isc:inMYA 538.8 ;
@@ -6829,14 +6660,12 @@ isc:Phanerozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 156 ;
-    sdo:color
-        "40/0/5/0"^^isc:CMYK ,
-        "154/217/221"^^isc:RGB ,
-        "#9AD9DD"^^isc:RGBHex ;
+    sdo:color "#9AD9DD"^^isc:RGBHex ;
 .
 
 isc:Precambrian
     a skos:Concept ;
+    gts:rank rank:Super-Eon ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Прекамбрий"@bg ,
@@ -6860,11 +6689,12 @@ isc:Precambrian
         "prekambrium"@sv ,
         "前寒武纪"@zh ;
     skos:definition "A time period from 4567 to 538.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Archean ,
         isc:Hadean ,
         isc:Proterozoic ;
+    skos:notation "PE"^^isc:ccgmShortCode ;
     skos:prefLabel "Precambrian"@en ;
     time:hasBeginning [
             isc:inMYA 4567
@@ -6875,14 +6705,12 @@ isc:Precambrian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 178 ;
-    sdo:color
-        "0/75/30/0"^^isc:CMYK ,
-        "247/67/112"^^isc:RGB ,
-        "#F74370"^^isc:RGBHex ;
+    sdo:color "#F74370"^^isc:RGBHex ;
 .
 
 isc:Proterozoic
     a skos:Concept ;
+    gts:rank rank:Eon ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Протерозой"@bg ,
@@ -6907,11 +6735,12 @@ isc:Proterozoic
         "元古宙"@zh ;
     skos:broader isc:Precambrian ;
     skos:definition "A time period from 2500 to 538.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Mesoproterozoic ,
         isc:Neoproterozoic ,
         isc:Paleoproterozoic ;
+    skos:notation "PR"^^isc:ccgmShortCode ;
     skos:prefLabel "Proterozoic"@en ;
     time:hasBeginning [
             isc:inMYA 2500
@@ -6922,14 +6751,12 @@ isc:Proterozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 170 ;
-    sdo:color
-        "0/80/35/0"^^isc:CMYK ,
-        "247/53/99"^^isc:RGB ,
-        "#F73563"^^isc:RGBHex ;
+    sdo:color "#F73563"^^isc:RGBHex ;
 .
 
 isc:Triassic
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Триаѿ"@bg ,
@@ -6954,11 +6781,12 @@ isc:Triassic
         "三叠纪"@zh ;
     skos:broader isc:Mesozoic ;
     skos:definition "A time period from 251.902 to 201.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:LowerTriassic ,
         isc:MiddleTriassic ,
         isc:UpperTriassic ;
+    skos:notation "T"^^isc:ccgmShortCode ;
     skos:prefLabel "Triassic"@en ;
     time:hasBeginning [
             isc:inMYA 251.902 ;
@@ -6970,14 +6798,12 @@ isc:Triassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 78 ;
-    sdo:color
-        "50/80/0/0"^^isc:CMYK ,
-        "129/43/146"^^isc:RGB ,
-        "#812B92"^^isc:RGBHex ;
+    sdo:color "#812B92"^^isc:RGBHex ;
 .
 
 isc:UpperJurassic
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿна Юра"@bg ,
@@ -6998,11 +6824,12 @@ isc:UpperJurassic
         "晚侏罗世"@zh ;
     skos:broader isc:Jurassic ;
     skos:definition "A time period from 161.5 to 145 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Kimmeridgian ,
         isc:Oxfordian ,
         isc:Tithonian ;
+    skos:notation "J3"^^isc:ccgmShortCode ;
     skos:prefLabel "Late Jurassic"@en ;
     time:hasBeginning [
             isc:inMYA 161.5 ;
@@ -7014,14 +6841,12 @@ isc:UpperJurassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 54 ;
-    sdo:color
-        "30/0/0/0"^^isc:CMYK ,
-        "179/227/238"^^isc:RGB ,
-        "#B3E3EE"^^isc:RGBHex ;
+    sdo:color "#B3E3EE"^^isc:RGBHex ;
 .
 
 isc:UpperOrdovician
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿен Ордовик"@bg ,
@@ -7042,11 +6867,12 @@ isc:UpperOrdovician
         "晚奥陶世"@zh ;
     skos:broader isc:Ordovician ;
     skos:definition "A time period from 458.4 to 443.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Hirnantian ,
         isc:Katian ,
         isc:Sandbian ;
+    skos:notation "O3"^^isc:ccgmShortCode ;
     skos:prefLabel "Late Ordovician"@en ;
     time:hasBeginning [
             isc:inMYA 458.4 ;
@@ -7058,14 +6884,12 @@ isc:UpperOrdovician
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 134 ;
-    sdo:color
-        "50/0/40/0"^^isc:CMYK ,
-        "127/202/147"^^isc:RGB ,
-        "#7FCA93"^^isc:RGBHex ;
+    sdo:color "#7FCA93"^^isc:RGBHex ;
 .
 
 isc:UpperTriassic
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿен Триаѿ"@bg ,
@@ -7086,11 +6910,12 @@ isc:UpperTriassic
         "晚三叠世"@zh ;
     skos:broader isc:Triassic ;
     skos:definition "A time period from 237 to 201.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Carnian ,
         isc:Norian ,
         isc:Rhaetian ;
+    skos:notation "T3"^^isc:ccgmShortCode ;
     skos:prefLabel "Late Triassic"@en ;
     time:hasBeginning [
             isc:inMYA 237 ;
@@ -7102,14 +6927,12 @@ isc:UpperTriassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 69 ;
-    sdo:color
-        "25/40/0/0"^^isc:CMYK ,
-        "189/140/195"^^isc:RGB ,
-        "#BD8CC3"^^isc:RGBHex ;
+    sdo:color "#BD8CC3"^^isc:RGBHex ;
 .
 
 isc:Archean
     a skos:Concept ;
+    gts:rank rank:Eon ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "прхай"@bg ,
@@ -7136,12 +6959,13 @@ isc:Archean
         "太古宙"@zh ;
     skos:broader isc:Precambrian ;
     skos:definition "A time period from 4031 to 2500 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Eoarchean ,
         isc:Mesoarchean ,
         isc:Neoarchean ,
         isc:Paleoarchean ;
+    skos:notation "AR"^^isc:ccgmShortCode ;
     skos:prefLabel "Archean"@en ;
     time:hasBeginning [
             isc:inMYA 4031 ;
@@ -7152,14 +6976,12 @@ isc:Archean
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 175 ;
-    sdo:color
-        "0/100/0/0"^^isc:CMYK ,
-        "240/4/127"^^isc:RGB ,
-        "#F0047F"^^isc:RGBHex ;
+    sdo:color "#F0047F"^^isc:RGBHex ;
 .
 
 isc:Cambrian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Камбрий"@bg ,
@@ -7184,12 +7006,13 @@ isc:Cambrian
         "寒武纪"@zh ;
     skos:broader isc:Paleozoic ;
     skos:definition "A time period from 538.8 to 485.4 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:CambrianSeries2 ,
         isc:Furongian ,
         isc:Miaolingian ,
         isc:Terreneuvian ;
+    skos:notation "Ep"^^isc:ccgmShortCode ;
     skos:prefLabel "Cambrian"@en ;
     time:hasBeginning [
             isc:inMYA 538.8 ;
@@ -7201,14 +7024,12 @@ isc:Cambrian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 154 ;
-    sdo:color
-        "50/20/65/0"^^isc:CMYK ,
-        "127/160/86"^^isc:RGB ,
-        "#7FA056"^^isc:RGBHex ;
+    sdo:color "#7FA056"^^isc:RGBHex ;
 .
 
 isc:Cisuralian
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Циѿурал"@bg ,
@@ -7233,12 +7054,13 @@ isc:Cisuralian
         "乌拉尔世"@zh ;
     skos:broader isc:Permian ;
     skos:definition "A time period from 298.9 to 273.01 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Artinskian ,
         isc:Asselian ,
         isc:Kungurian ,
         isc:Sakmarian ;
+    skos:notation "P1"^^isc:ccgmShortCode ;
     skos:prefLabel "Cisuralian"@en ;
     time:hasBeginning [
             isc:inMYA 298.9 ;
@@ -7250,14 +7072,12 @@ isc:Cisuralian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 90 ;
-    sdo:color
-        "5/65/60/0"^^isc:CMYK ,
-        "239/88/69"^^isc:RGB ,
-        "#EF5845"^^isc:RGBHex ;
+    sdo:color "#EF5845"^^isc:RGBHex ;
 .
 
 isc:Eocene
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Еоцен"@bg ,
@@ -7282,12 +7102,13 @@ isc:Eocene
         "始新世"@zh ;
     skos:broader isc:Paleogene ;
     skos:definition "A time period from 56.0 to 33.9 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Bartonian ,
         isc:Lutetian ,
         isc:Priabonian ,
         isc:Ypresian ;
+    skos:notation "E2"^^isc:ccgmShortCode ;
     skos:prefLabel "Eocene"@en ;
     time:hasBeginning [
             isc:inMYA 56.0
@@ -7297,14 +7118,12 @@ isc:Eocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 28 ;
-    sdo:color
-        "0/30/50/0"^^isc:CMYK ,
-        "253/180/108"^^isc:RGB ,
-        "#FDB46C"^^isc:RGBHex ;
+    sdo:color "#FDB46C"^^isc:RGBHex ;
 .
 
 isc:LowerJurassic
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ранна Юра"@bg ,
@@ -7329,12 +7148,13 @@ isc:LowerJurassic
         "早侏罗世"@zh ;
     skos:broader isc:Jurassic ;
     skos:definition "A time period from 201.4 to 174.7 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Hettangian ,
         isc:Pliensbachian ,
         isc:Sinemurian ,
         isc:Toarcian ;
+    skos:notation "J1"^^isc:ccgmShortCode ;
     skos:prefLabel "Early Jurassic"@en ;
     time:hasBeginning [
             isc:inMYA 201.4 ;
@@ -7346,14 +7166,12 @@ isc:LowerJurassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 65 ;
-    sdo:color
-        "75/5/0/0"^^isc:CMYK ,
-        "66/174/208"^^isc:RGB ,
-        "#42AED0"^^isc:RGBHex ;
+    sdo:color "#42AED0"^^isc:RGBHex ;
 .
 
 isc:MiddleJurassic
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Средна Юра"@bg ,
@@ -7378,12 +7196,13 @@ isc:MiddleJurassic
         "中侏罗世"@zh ;
     skos:broader isc:Jurassic ;
     skos:definition "A time period from 174.7 to 161.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Aalenian ,
         isc:Bajocian ,
         isc:Bathonian ,
         isc:Callovian ;
+    skos:notation "J2"^^isc:ccgmShortCode ;
     skos:prefLabel "Middle Jurassic"@en ;
     time:hasBeginning [
             isc:inMYA 174.7 ;
@@ -7395,14 +7214,12 @@ isc:MiddleJurassic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 59 ;
-    sdo:color
-        "50/0/5/0"^^isc:CMYK ,
-        "128/207/216"^^isc:RGB ,
-        "#80CFD8"^^isc:RGBHex ;
+    sdo:color "#80CFD8"^^isc:RGBHex ;
 .
 
 isc:Paleoproterozoic
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеопротерозой"@bg ,
@@ -7429,12 +7246,13 @@ isc:Paleoproterozoic
         "古元古代"@zh ;
     skos:broader isc:Proterozoic ;
     skos:definition "A time period from 2500 to 1600 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Orosirian ,
         isc:Rhyacian ,
         isc:Siderian ,
         isc:Statherian ;
+    skos:notation "PP"^^isc:ccgmShortCode ;
     skos:prefLabel "Paleoproterozoic"@en ;
     time:hasBeginning [
             isc:inMYA 2500
@@ -7444,14 +7262,12 @@ isc:Paleoproterozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 169 ;
-    sdo:color
-        "0/75/30/0"^^isc:CMYK ,
-        "247/67/112"^^isc:RGB ,
-        "#F74370"^^isc:RGBHex ;
+    sdo:color "#F74370"^^isc:RGBHex ;
 .
 
 isc:Pleistocene
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Плейѿтоцен"@bg ,
@@ -7476,12 +7292,13 @@ isc:Pleistocene
         "更新世"@zh ;
     skos:broader isc:Quaternary ;
     skos:definition "A time period from 2.58 to 0.0117 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Calabrian ,
         isc:Chibanian ,
         isc:Gelasian ,
         isc:UpperPleistocene ;
+    skos:notation "Q1"^^isc:ccgmShortCode ;
     skos:prefLabel "Pleistocene"@en ;
     time:hasBeginning [
             isc:inMYA 2.58
@@ -7491,14 +7308,12 @@ isc:Pleistocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 9 ;
-    sdo:color
-        "0/5/40/0"^^isc:CMYK ,
-        "255/239/175"^^isc:RGB ,
-        "#FFEFAF"^^isc:RGBHex ;
+    sdo:color "#FFEFAF"^^isc:RGBHex ;
 .
 
 isc:Silurian
     a skos:Concept ;
+    gts:rank rank:Period ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Силур"@bg ,
@@ -7523,12 +7338,13 @@ isc:Silurian
         "志留纪"@zh ;
     skos:broader isc:Paleozoic ;
     skos:definition "A time period from 443.8 to 419.2 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Llandovery ,
         isc:Ludlow ,
         isc:Pridoli ,
         isc:Wenlock ;
+    skos:notation "S"^^isc:ccgmShortCode ;
     skos:prefLabel "Silurian"@en ;
     time:hasBeginning [
             isc:inMYA 443.8 ;
@@ -7540,14 +7356,12 @@ isc:Silurian
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 130 ;
-    sdo:color
-        "30/0/25/0"^^isc:CMYK ,
-        "179/225/182"^^isc:RGB ,
-        "#B3E1B6"^^isc:RGBHex ;
+    sdo:color "#B3E1B6"^^isc:RGBHex ;
 .
 
 isc:LowerCretaceous
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Ранна Креда"@bg ,
@@ -7570,7 +7384,7 @@ isc:LowerCretaceous
         "早白垩世"@zh ;
     skos:broader isc:Cretaceous ;
     skos:definition "A time period from 145.0 to 100.5 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Albian ,
         isc:Aptian ,
@@ -7578,6 +7392,7 @@ isc:LowerCretaceous
         isc:Berriasian ,
         isc:Hauterivian ,
         isc:Valanginian ;
+    skos:notation "K1"^^isc:ccgmShortCode ;
     skos:prefLabel "Early Cretaceous"@en ;
     time:hasBeginning [
             isc:inMYA 145.0 ;
@@ -7588,14 +7403,12 @@ isc:LowerCretaceous
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 50 ;
-    sdo:color
-        "45/0/70/0"^^isc:CMYK ,
-        "140/205/87"^^isc:RGB ,
-        "#8CCD57"^^isc:RGBHex ;
+    sdo:color "#8CCD57"^^isc:RGBHex ;
 .
 
 isc:Miocene
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Миоцен"@bg ,
@@ -7620,7 +7433,7 @@ isc:Miocene
         "中新世"@zh ;
     skos:broader isc:Neogene ;
     skos:definition "A time period from 23.03 to 5.333 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Aquitanian ,
         isc:Burdigalian ,
@@ -7628,6 +7441,7 @@ isc:Miocene
         isc:Messinian ,
         isc:Serravallian ,
         isc:Tortonian ;
+    skos:notation "N1"^^isc:ccgmShortCode ;
     skos:prefLabel "Miocene"@en ;
     time:hasBeginning [
             isc:inMYA 23.03
@@ -7637,14 +7451,12 @@ isc:Miocene
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 20 ;
-    sdo:color
-        "0/0/100/0"^^isc:CMYK ,
-        "255/255/0"^^isc:RGB ,
-        "#FFFF00"^^isc:RGBHex ;
+    sdo:color "#FFFF00"^^isc:RGBHex ;
 .
 
 isc:Paleozoic
     a skos:Concept ;
+    gts:rank rank:Era ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Палеозой"@bg ,
@@ -7671,7 +7483,7 @@ isc:Paleozoic
         "古生代"@zh ;
     skos:broader isc:Phanerozoic ;
     skos:definition "A time period from 251.902 to 538.8 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Cambrian ,
         isc:Carboniferous ,
@@ -7679,6 +7491,7 @@ isc:Paleozoic
         isc:Ordovician ,
         isc:Permian ,
         isc:Silurian ;
+    skos:notation "PZ"^^isc:ccgmShortCode ;
     skos:prefLabel "Paleozoic"@en ;
     time:hasBeginning [
             isc:inMYA 251.902 ;
@@ -7690,14 +7503,12 @@ isc:Paleozoic
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 77 ;
-    sdo:color
-        "40/10/40/0"^^isc:CMYK ,
-        "153/192/141"^^isc:RGB ,
-        "#99C08D"^^isc:RGBHex ;
+    sdo:color "#99C08D"^^isc:RGBHex ;
 .
 
 isc:UpperCretaceous
     a skos:Concept ;
+    gts:rank rank:Epoch ;
     rdfs:isDefinedBy ts:gts2020 ;
     skos:altLabel
         "Къѿна Креда"@bg ,
@@ -7718,7 +7529,7 @@ isc:UpperCretaceous
         "晚白垩世"@zh ;
     skos:broader isc:Cretaceous ;
     skos:definition "A time period from 100.5 to 66.0 million years ago" ;
-    skos:inScheme <https://w3id.org/profile/gts-skos-2> ;
+    skos:inScheme <https://w3id.org/profile/gts-skos> ;
     skos:narrower
         isc:Campanian ,
         isc:Cenomanian ,
@@ -7726,6 +7537,7 @@ isc:UpperCretaceous
         isc:Maastrichtian ,
         isc:Santonian ,
         isc:Turonian ;
+    skos:notation "K2"^^isc:ccgmShortCode ;
     skos:prefLabel "Late Cretaceous"@en ;
     time:hasBeginning [
             isc:inMYA 100.5
@@ -7735,16 +7547,17 @@ isc:UpperCretaceous
         ] ;
     prov:wasDerivedFrom ts:gts2020 ;
     sh:order 42 ;
-    sdo:color
-        "35/0/75/0"^^isc:CMYK ,
-        "166/216/74"^^isc:RGB ,
-        "#A6D84A"^^isc:RGBHex ;
+    sdo:color "#A6D84A"^^isc:RGBHex ;
 .
 
-<https://w3id.org/profile/gts-skos-2>
+cs:
     a skos:ConceptScheme ;
     dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
-    owl:versionIRI <https://w3id.org/profile/gts-skos-2/2023-09> ;
+    dcterms:created "2020-06-05"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/ics> ;
+    dcterms:modified "2023-11-09"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/ics> ;
+    owl:versionIRI <https://w3id.org/profile/gts-skos/2023-09> ;
     owl:versionInfo "2023-09" ;
     skos:definition """This is a SKOS vocabulary presentation of the International Chronostratigraphic Chart with all time intervals represented as SKOS Concepts. Beginning and End ages are given for each time interval in units of Millions of Years Ago (MYA).
 
@@ -7758,9 +7571,5 @@ Ages/Stages are indicated as being narrower than Series / Epochs which are in tu
     sdo:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
     sdo:copyrightHolder <https://linked.data.gov.au/org/ics> ;
     sdo:copyrightNotice "(c) International Commission on Stratigraphy, 2023"@en ;
-    dcterms:creator <https://linked.data.gov.au/org/ics> ;
-    dcterms:created "2020-06-05"^^xsd:date ;
-    dcterms:modified "2022-11-28"^^xsd:date ;
     sdo:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dcterms:publisher <https://linked.data.gov.au/org/ics> ;
 .
