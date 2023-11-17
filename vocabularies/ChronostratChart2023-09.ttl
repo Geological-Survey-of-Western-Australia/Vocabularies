@@ -15,7 +15,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ischart:Ages
     a skos:Collection ;
-    rdfs:isDefinedBy cs: ;
+    rdfs:isDefinedBy cs: ; 
     skos:definition "An age is the smallest hierarchical geochronologic unit and is equivalent to a chronostratigraphic stage. These are thousands to millions of years in length"@en ;
     skos:historyNote "This Collection was created from the age ranks of the Chart" ;
     skos:inScheme cs: ;
