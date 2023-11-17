@@ -1,4 +1,4 @@
-PREFIX vann: <http://purl.org/vocab/vann/>
+PREFIX vann: <http://purl.org/vocab/vann/> 
 
 [
     vann:preferredNamespacePrefix "gts" ;
