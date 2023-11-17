@@ -16,10 +16,8 @@ def _get_vocab_files():
     directories = Path(".").glob("./vocabularies")
     files = []
     for directory in directories:
-        files += directory.glob("**/*.ttl")
-    for file in files:
-        if "vocabularies/background/" in str(file):
-            files.remove(file)
+        if "vocabularies/background" not in str(directory):
+            files += directory.glob("**/*.ttl")
     return files
 
 
