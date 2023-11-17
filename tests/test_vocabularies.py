@@ -16,14 +16,14 @@ def _get_vocab_files():
     directories = Path(".").glob("./vocabularies")
     background = Path(".").glob("./vocabularies/background")
     files = []
-    bacgroundFiles = []
+    backgroundFiles = []
     for directory in directories:
         files += directory.glob("**/*.ttl")
     for directory in background:
-        bacgroundFiles += directory.glob("**/*.ttl")
-    for file in files:
-        if file in backgroundFiles:
-            files.remove(file)
+        backgroundFiles += directory.glob("**/*.ttl")
+    for backgroundFile in backgroundFiles:
+        if backgroundFile in files:
+            files.remove(backgroundFile)
     return files
 
 
