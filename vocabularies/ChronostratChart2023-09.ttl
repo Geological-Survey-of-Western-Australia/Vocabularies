@@ -247,7 +247,7 @@ ischart:RGBHex
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
 .
 
-ischart:SubPeriod
+ischart:SubPeriods
     a skos:Collection ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A sub-period an informal geochronologic time unit that is only defined for the Carboniferous Period. the two instances are tens of millions of years in length"@en ;
@@ -256,7 +256,7 @@ ischart:SubPeriod
     skos:member
         ischart:Mississippian ,
         ischart:Pennsylvanian ;
-    skos:prefLabel "Eons"@en ;
+    skos:prefLabel "Sub-Periods"@en ;
 .
 
 ischart:SuperEons
