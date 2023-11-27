@@ -29,3 +29,7 @@ rdfs:isDefinedBy
 sh:order
     rdfs:label "order" ;
 .
+
+<http://resource.geosciml.org/ontology/timescale/gts#rank>
+    rdfs:label "rank" ;
+.
