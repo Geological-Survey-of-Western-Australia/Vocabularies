@@ -14,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :australian-height-datum-TAS83
     a skos:Concept ;
-    dcterms:source "https://www.icsm.gov.au/australian-height-datum"^^xsd:anyURI ;
+    dcterms:source "https://www.icsm.gov.au/australian-height-datum"^^xsd:anyURI ; 
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "AHD"@en ,
