@@ -358,12 +358,8 @@ BASE <https://w3id.org/profile/vocpub/validator/>
 <created>
     a sh:PropertyShape ;
     sh:message "Requirement 2.15 - created date - violated" ;
-    sh:path [
-        sh:alternativePath (
-            sh:path sdo:dateCreated
-            sh:path dcterms:created
-        ) ;
-    ] ;
+    sh:path sdo:dateCreated ;
+    sh:alternativePath dcterms:created ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:or (
@@ -376,12 +372,8 @@ BASE <https://w3id.org/profile/vocpub/validator/>
 <modified>
     a sh:PropertyShape ;
     sh:message "Requirement 2.15 - modified date - violated" ;
-    sh:path [
-        sh:alternativePath (
-            sh:path sdo:dateModified
-            sh:path dcterms:modified
-        ) ;
-    ] ;
+    sh:path sdo:dateModified ;
+    sh:alternativePath dcterms:modified ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
     sh:or (
@@ -394,14 +386,9 @@ BASE <https://w3id.org/profile/vocpub/validator/>
 <creator>
     a sh:PropertyShape ;
     sh:message "Requirement 2.1.6 Each vocabulary MUST have at least one creator, indicated using sdo:creator or dcterms:creator predicate and exactly one publisher, indicated using sdo:publisher or dcterms:publisher, all of which MUST be IRIs indicating instances of sdo:Person, or sdo:Organization. This error message is for creator" ;
-    sh:path [
-        sh:alternativePath (
-            sh:path sdo:creator
-            sh:path dcterms:creator
-        ) ;
-    ] ;
+    sh:path sdo:creator ;
+    sh:alternativePath dcterms:creator ;
     sh:minCount 1 ;
-
     sh:or (
         [ sh:class sdo:Organization ]
         [ sh:class sdo:Person ]
@@ -410,12 +397,8 @@ BASE <https://w3id.org/profile/vocpub/validator/>
 
 <publisher>
     a sh:PropertyShape ;
-    sh:path [
-        sh:alternativePath (
-            sh:path sdo:publisher
-            sh:path dcterms:publisher
-        ) ;
-    ] ;
+    sh:path sdo:publisher ;
+    sh:alternativePath dcterms:publisher ;
     sh:minCount 1 ;
     sh:message "Requirement 2.1.6 Each vocabulary MUST have at least one creator, indicated using sdo:creator or dcterms:creator predicate and exactly one publisher, indicated using sdo:publisher or dcterms:publisher, all of which MUST be IRIs indicating instances of sdo:Person, or sdo:Organization. This error message is for publisher" ;
     sh:or (
@@ -516,12 +499,8 @@ BASE <https://w3id.org/profile/vocpub/validator/>
 <theming>
     a sh:PropertyShape ;
     sh:message "Requirement 2.1.12 High-level theming of a vocabulary SHOULD be given by using the sdo:keywords predicate indicating Concepts from another vocabulary. Alternatively, dcat:theme MAY be used. Text literal values for either predicate SHOULD NOT be used" ;
-    sh:path [
-        sh:alternativePath (
-            sh:path sdo:keywords
-            sh:path dcat:theme
-        ) ;
-    ] ;
+    sh:path sdo:keywords ;
+    sh:alternativePath dcat:theme ;
     sh:nodeKind sh:IRI ;
 .
 
