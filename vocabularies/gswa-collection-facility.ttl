@@ -1,21 +1,19 @@
-PREFIX : <https://linked.data.gov.au/def/gswa-collection-facilities/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://linked.data.gov.au/def/gswa-collection-facilities>
+PREFIX : <https://draft.com/gswa-collection-facilities/>
+PREFIX cs: <https://draft.com/gswa-collection-facilities>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :carlisle
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "Carlisle is one of several offices maintained by the Department of Mines, Industry Regulation and Safety within the Perth metropolitan area. The site includes several buildings encompassing separate functions of the Geological Survey of Western Australia, and is located at 37 Harris St, Carlisle WA 6101."@en ;
+    skos:definition "Carlisle is one of several offices maintained by the Department of Energy, Mines, Industry Regulation and Safety within the Perth metropolitan area. The site includes several buildings encompassing separate functions of the Geological Survey of Western Australia, and is located at 37 Harris St, Carlisle WA 6101."@en ;
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
     skos:narrower
@@ -39,7 +37,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :carlisle-records-building
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The Carlisle Records building is a Department of Mines, Industry Regulation and Safety facility housing various key collections, including departmental Records (physical and digital), library assets and geological slides. The building is located on the Carlisle site at 37 Harris St, Carlisle WA 6101."@en ;
+    skos:definition "The Carlisle Records building is a Department of Energy, Mines, Industry Regulation and Safety facility housing various key collections, including departmental Records (physical and digital), library assets and geological slides. The building is located on the Carlisle site at 37 Harris St, Carlisle WA 6101."@en ;
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
     skos:prefLabel "Carlisle Records building"@en ;
@@ -96,7 +94,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "KRO"@en ,
         "Kalgoorlie office"@en ;
-    skos:closeMatch <https://linked.data.gov.au/def/dmirs-offices/kalgoorlie-office> ;
+    skos:closeMatch <https://draft.com/demirs-offices/kalgoorlie-office> ;
     skos:definition "The Kalgoorlie regional office is a facility of the Geological Survey of Western Australia primarily housing staff, but also hosting some small collections. The building is located on the Kalgoorlie site at the corner of Hunter and Broadwood Sts, West Kalgoorlie WA 6430."@en ;
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
@@ -108,7 +106,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :mineral-house
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "Mineral House is one of several offices maintained by the Department of Mines, Industry Regulation and Safety within the Perth metropolitan area, and is the department's main administrative office. The building is located at 100 Plain St, East Perth WA 6004."@en ;
+    skos:definition "Mineral House is one of several offices maintained by the Department of Energy, Mines, Industry Regulation and Safety within the Perth metropolitan area, and is the department's main administrative office. The building is located at 100 Plain St, East Perth WA 6004."@en ;
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
     skos:narrower
@@ -131,7 +129,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 :mineral-house-library
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "The Mineral House Library houses the main collections of scientific literature (books and journals) and key historical images, documents and assets belonging to the Department of Mines, Industry Regulation and Safety. The Library is located on Level 1 of Mineral House, 100 Plain St, East Perth WA 6004."@en ;
+    skos:definition "The Mineral House Library houses the main collections of scientific literature (books and journals) and key historical images, documents and assets belonging to the Department of Energy, Mines, Industry Regulation and Safety. The Library is located on Level 1 of Mineral House, 100 Plain St, East Perth WA 6004."@en ;
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
     skos:prefLabel "Mineral House Library"@en ;
@@ -204,22 +202,16 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a sdo:Organization ;
-    sdo:name "Geological Survey of Western Australia" ;
-    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
+<https://linked.data.g​ov.au/org/gswa>
+    a schema:Organization ;
+    schema:name "Gswa" ;
+    schema:url ""^^xsd:anyURI ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-09-06"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "gswa-collection-facilities"^^xsd:token ;
-    dcterms:modified "2023-09-06"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
-    reg:status agldwgstatus:stable ;
+    reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
+    owl:versionIRI :1.1 ;
     skos:definition "Names and physical locations of facilities housing Geological Survey of Western Australia (GSWA) collections of physical objects. The list includes buildings or designated parts of buildings, as well as external storage facilities. "@en ;
     skos:hasTopConcept
         :carlisle ,
@@ -228,29 +220,39 @@ cs:
         :mineral-house ,
         :perth-mint ,
         :western-australian-museum ;
-    skos:historyNote "Administrative compilation based on Department of Mines, Industry Regulation and Safety locations and Western Australian Museum locations."@en ;
+    skos:historyNote "Administrative compilation based on Department of Energy, Mines, Industry Regulation and Safety locations and Western Australian Museum locations."@en ;
     skos:prefLabel "GSWA collection facilities"@en ;
     prov:qualifiedAttribution
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent [
-                    a prov:Agent ;
-                    rdfs:label "Erin Gray"
-                ]
+            prov:agent
+                [
+                    a schema:Organization ;
+                    schema:name "Angela Riganti" ;
+                    schema:url ""^^xsd:anyURI ;
+                ] ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent [
-                    a prov:Agent ;
-                    rdfs:label "Sarah Martin"
-                ]
+            prov:agent
+                [
+                    a schema:Organization ;
+                    schema:name "Erin Gray" ;
+                    schema:url ""^^xsd:anyURI ;
+                ] ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent [
-                    a prov:Agent ;
-                    rdfs:label "Angela Riganti"
-                ]
+            prov:agent
+                [
+                    a schema:Organization ;
+                    schema:name "Sarah Martin" ;
+                    schema:url ""^^xsd:anyURI ;
+                ] ;
         ] ;
+    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:dateCreated "2023-09-06"^^xsd:date ;
+    schema:dateModified "2023-12-01"^^xsd:date ;
+    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    schema:version "1.1" ;
 .
-
