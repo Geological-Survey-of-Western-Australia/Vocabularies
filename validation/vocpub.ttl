@@ -360,8 +360,8 @@ BASE <https://w3id.org/profile/vocpub/validator/>
     sh:message "Requirement 2.15 - created date - violated" ;
     sh:path [
         sh:alternativePath (
-            sdo:dateCreated
-            dcterms:created
+            sh:path sdo:dateCreated
+            sh:path dcterms:created
         ) ;
     ] ;
     sh:minCount 1 ;
@@ -396,8 +396,8 @@ BASE <https://w3id.org/profile/vocpub/validator/>
     sh:message "Requirement 2.1.6 Each vocabulary MUST have at least one creator, indicated using sdo:creator or dcterms:creator predicate and exactly one publisher, indicated using sdo:publisher or dcterms:publisher, all of which MUST be IRIs indicating instances of sdo:Person, or sdo:Organization. This error message is for creator" ;
     sh:path [
         sh:alternativePath (
-            sdo:creator
-            dcterms:creator
+            sh:path sdo:creator
+            sh:path dcterms:creator
         ) ;
     ] ;
     sh:minCount 1 ;
@@ -412,8 +412,8 @@ BASE <https://w3id.org/profile/vocpub/validator/>
     a sh:PropertyShape ;
     sh:path [
         sh:alternativePath (
-            sdo:publisher
-            dcterms:publisher
+            sh:path sdo:publisher
+            sh:path dcterms:publisher
         ) ;
     ] ;
     sh:minCount 1 ;
@@ -518,8 +518,8 @@ BASE <https://w3id.org/profile/vocpub/validator/>
     sh:message "Requirement 2.1.12 High-level theming of a vocabulary SHOULD be given by using the sdo:keywords predicate indicating Concepts from another vocabulary. Alternatively, dcat:theme MAY be used. Text literal values for either predicate SHOULD NOT be used" ;
     sh:path [
         sh:alternativePath (
-            sdo:keywords
-            dcat:theme
+            sh:path sdo:keywords
+            sh:path dcat:theme
         ) ;
     ] ;
     sh:nodeKind sh:IRI ;
