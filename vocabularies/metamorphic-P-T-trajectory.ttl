@@ -168,7 +168,7 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
+<https://linked.data.gov.au/org/gswa>
     a prov:Agent ;
     rdfs:label "Gswa" ;
 .
@@ -176,10 +176,10 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-01"^^xsd:date ;
-    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
     dcterms:identifier "metamorphic-P-T-trajectory"^^xsd:token ;
     dcterms:modified "2023-11-01"^^xsd:date ;
-    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     skos:definition """Terms used to describe the sequence of pressure(P) – temperature(T) conditions that occurred in a given rock body over a period of time (t) of a particular metamorphic event. Also called P–T–t paths.
