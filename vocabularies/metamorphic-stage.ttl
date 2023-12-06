@@ -110,7 +110,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
+<https://linked.data.gov.au/org/gswa>
     a prov:Agent ;
     rdfs:label "Gswa" ;
 .
@@ -118,10 +118,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-01"^^xsd:date ;
-    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
     dcterms:identifier "metamorphic-stage"^^xsd:token ;
     dcterms:modified "2023-11-01"^^xsd:date ;
-    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     skos:definition """Terms used to describe the stage of metamorphism of rocks based on the nature of the change in pressure and temperature conditions to which the rocks are subjected. Definitions are taken or derived from:
