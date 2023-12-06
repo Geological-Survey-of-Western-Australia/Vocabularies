@@ -6,7 +6,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX schema: <https://schema.org/>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -202,10 +202,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
+<https://linked.data.gov.au/org/gswa>
+    a sdo:Organization ;
+    sdo:name "Geological Survey of Western Australia" ;
+    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
@@ -227,32 +227,29 @@ cs:
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
-                    schema:name "Angela Riganti" ;
-                    schema:url ""^^xsd:anyURI ;
+                    a prov:Agent ;
+                    sdo:name "Angela Riganti" ;
                 ] ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
-                    schema:name "Erin Gray" ;
-                    schema:url ""^^xsd:anyURI ;
+                    a prov:Agent ;
+                    sdo:name "Erin Gray" ;
                 ] ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
-                    schema:name "Sarah Martin" ;
-                    schema:url ""^^xsd:anyURI ;
+                    a prov:Agent ;
+                    sdo:name "Sarah Martin" ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
-    schema:dateCreated "2023-09-06"^^xsd:date ;
-    schema:dateModified "2023-12-01"^^xsd:date ;
-    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
-    schema:version "1.1" ;
+    sdo:creator <https://linked.data.gov.au/org/gswa> ;
+    sdo:dateCreated "2023-09-06"^^xsd:date ;
+    sdo:dateModified "2023-12-01"^^xsd:date ;
+    sdo:publisher <https://linked.data.gov.au/org/gswa> ;
+    sdo:version "1.1" ;
 .

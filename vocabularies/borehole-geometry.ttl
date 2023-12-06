@@ -6,6 +6,7 @@ PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsibl
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -363,8 +364,9 @@ https://help.dugeo.com/m/faq/l/167077-height-datums-and-abbreviations""" ;
 .
 
 <https://linked.data.gov.au/org/gswa>
-    a prov:Agent ;
-    rdfs:label "Gswa" ;
+    a sdo:Organization ;
+    sdo:name "Geological Survey of Western Australia" ;
+    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
@@ -398,14 +400,14 @@ cs:
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Erin Gray"
+                    sdo:name "Erin Gray" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Angela Riganti"
+                    sdo:name "Angela Riganti" ;
                 ]
         ] ;
 .

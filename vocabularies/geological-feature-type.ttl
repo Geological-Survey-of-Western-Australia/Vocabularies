@@ -88,7 +88,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "https://pubs.geoscienceworld.org/segweb/economicgeology/article/60/8/1620/17535/Typical-features-of-metallogenic-provinces"^^xsd:anyURI ,
         "https://www.britannica.com/science/metallogenic-province"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "A geographic area or section of the Earth's crust characterized by a particular assemblage of mineral deposits, or by one or more distinctive types/styles of mineralization. The concept underscores the genesis and regional-to-global distribution of mineral deposits, with emphasis on their relationship in space and time to regional petrological and tectonic features of the Earth's crust."@en ;
+    skos:definition "A geographic area or section of the Earth's crust characterized by a particular assemblage ofmineral deposits, or by one or more distinctive types/styles of mineralization. The concept underscores the genesis and regional-to-global distribution of mineral deposits, with emphasis on their relationship in space and time to regional petrological and tectonic features of the Earth's crust."@en ;
     skos:historyNote "Petrascheck WE, 1965. Typical features of metallogenic provinces: Economic Geology and the Bulletin of the Society of Economic Geologists (December 1965), v. 60 (8), p. 1620–1634." ;
     skos:inScheme cs: ;
     skos:prefLabel "metallogenic province"@en ;
@@ -206,21 +206,21 @@ cs:
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Angela Riganti"
+                    sdo:name "Angela Riganti" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "David Martin"
+                    sdo:name "David Martin" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Erin Gray"
+                    sdo:name "Erin Gray" ;
                 ]
         ] ;
 .

@@ -183,7 +183,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     dcterms:source "https://en.wikipedia.org/wiki/Depth_in_a_well"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "In the resources industry, the depth of any point in a borehole/drillhole/well is the measurement of the distance between a reference point or elevation and that point. It is the most common method of reference for locations in a borehole. In the minerals industry, it usually refers to the distance from the drill collar. In the oil industry, 'depth' also refers to the location itself. By extension, depth can refer to locations below, or distances from, a reference point or elevation, even when there is no well. In that sense, depth is a concept related to elevation, albeit in the opposite direction. Depth in a borehole is not necessarily measured vertically or along a straight line. Because boreholes are not always drilled vertically, there may be two 'depths' for every given point in a borehole: the measured depth (MD) measured along the path of the borehole, and the true vertical depth (TVD), the absolute vertical distance between the reference datum and the point in the borehole. In perfectly vertical holes, the TVD equals the MD; otherwise, the TVD is less than the MD measured from the same datum. Common references used are reduced level (RL), drill collar, ground level (GL), drilling rig floor (DF), rotary table (RT), kelly bushing (KB or RKB) and mean sea level (MSL)."@en ;
+    skos:definition "In the resources industry,the depth of any point in a borehole/drillhole/well is the measurement of the distance between a reference point or elevation and that point. It is the most common method of reference for locations in a borehole. In the minerals industry, it usually refers to the distance from the drill collar. Inthe oil industry, 'depth' also refers to the location itself. By extension, depth can refer to locations below, or distances from, a reference point or elevation, even when there is no well. In that sense, depth is a concept related toelevation, albeit in the opposite direction. Depth in a borehole is not necessarily measured vertically or along a straight line. Because boreholes are not always drilled vertically, there may be two 'depths' for every given point in a borehole: themeasured depth(MD)measured along the path of theborehole, and thetrue vertical depth(TVD), the absolute vertical distance between thereference datumand the point in theborehole. In perfectly vertical holes, the TVD equals the MD; otherwise, the TVD is less than the MD measured from the same datum. Common references used are reduced level (RL), drill collar, ground level (GL),drilling rigfloor (DF),rotary table(RT),kelly bushing(KB or RKB) andmean sea level(MSL)."@en ;
     skos:historyNote "An umbrella term for resources industry concepts related to the reference points from which depth is measured in boreholes/wells." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -333,7 +333,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "RL"@en ,
         "relative level"@en ;
-    skos:definition "Reduced level (or relative level, RL) in surveying refers to equating elevations of survey points with reference to a common assumed datum (usually AHD). It is a vertical distance between survey point and adopted datum plane, thus it is considered as the base elevation that is used as reference to reckon heights or depths of other important places. Reduced here means equating and level means elevations. Datum may be a real or imaginary location, commonly with a nominated elevation of straight zero."@en ;
+    skos:definition "Reduced level (or relative level, RL)insurveyingrefers to equating elevations of survey points with reference to a common assumeddatum (usually AHD). It is a vertical distance between survey point and adopted datum plane, thus it is considered as the base elevation that is used as reference to reckon heights or depths of other important places.Reduced here means equating and level means elevations. Datum may be a real or imaginary location, commonly with a nominated elevation of straightzero."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "reduced level"@en ;
     skos:topConceptOf cs: ;
@@ -441,14 +441,14 @@ cs:
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Erin Gray"
+                    sdo:name "Erin Gray" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Angela Riganti"
+                    sdo:name "Angela Riganti" ;
                 ]
         ] ;
 .

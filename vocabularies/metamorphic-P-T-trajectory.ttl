@@ -6,6 +6,7 @@ PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsibl
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -13,9 +14,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Describes the apparent direction of the sequential path on a P–T diagram, where the x-axis is temperature, and the y-axis is pressure (with positive ordinates above the abscissa). Anticlockwise P–T paths are those in which the thermal maximum (peak temperature) is reached prior to the peak pressure being attained. These P–T paths generally reflect high (geo)thermal gradient and heat flow conditions."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.
 d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path""" ;
     skos:inScheme cs: ;
     skos:prefLabel "anticlockwise"@en ;
@@ -26,9 +27,9 @@ d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path""" ;
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Describes the apparent direction of the sequential path on a P–T diagram, where the x-axis is temperature, and the y-axis is pressure (with positive ordinates above the abscissa). Clockwise P–T paths are those in which peak pressure is reached prior to peak temperature being attained. These P–T paths generally reflect burial and subsequent heating under low to intermediate (geo)thermal gradient and heat flow conditions."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.
 d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path""" ;
     skos:inScheme cs: ;
     skos:prefLabel "clockwise"@en ;
@@ -39,9 +40,9 @@ d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path""" ;
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the pressure (P) remains constant over a period of time (t) during a metamorphic event."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.
 d) https://en.wikipedia.org/wiki/Isobaric_process""" ;
     skos:inScheme cs: ;
     skos:narrower
@@ -55,9 +56,9 @@ d) https://en.wikipedia.org/wiki/Isobaric_process""" ;
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the pressure (P) remains constant as temperature decreases (i.e. cooling) over a period of time (t)."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.""" ;
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "isobaric cooling"@en ;
 .
@@ -66,9 +67,9 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the pressure (P) remains constant as temperature increases (i.e. heating) over a period of time (t)."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.""" ;
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "isobaric heating"@en ;
 .
@@ -77,9 +78,9 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the temperature (T) remains constant over a period of time (t), during a metamorphic event."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.
 d) https://en.wikipedia.org/wiki/Isothermal_process""" ;
     skos:inScheme cs: ;
     skos:narrower
@@ -93,9 +94,9 @@ d) https://en.wikipedia.org/wiki/Isothermal_process""" ;
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the temperature (T) remains constant while the pressure decreases over a period of time (t)."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.""" ;
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "isothermal pressure decrease"@en ;
 .
@@ -104,9 +105,9 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the temperature (T) remains constant while pressure increases over a period of time (t)."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.""" ;
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "isothermal pressure increase"@en ;
 .
@@ -115,9 +116,9 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the pressure (P) remains nearly constant over a period of time (t) during a metamorphic cooling event."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.""" ;
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "near-isobaric cooling"@en ;
     skos:topConceptOf cs: ;
@@ -127,9 +128,9 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the pressure (P) remains nearly constant over a period of time (t) during a metamorphic heating event."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.""" ;
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "near-isobaric heating"@en ;
     skos:topConceptOf cs: ;
@@ -139,9 +140,9 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the temperature (T) remains nearly constant over a period of time (t) during a metamorphic compression event."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.""" ;
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "near-isothermal compression"@en ;
     skos:topConceptOf cs: ;
@@ -151,9 +152,9 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metamorphic conditions under which the temperature (T) remains nearly constant over a period of time (t) during a metamorphic decompression event."@en ;
-    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201.
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928.
-c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330.""" ;
+    skos:historyNote """a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society,v.134,p.201–213, doi:10.1144/gsjgs.134.2.0201.
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928.
+c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "near-isothermal decompression"@en ;
     skos:topConceptOf cs: ;
@@ -169,8 +170,9 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
 .
 
 <https://linked.data.gov.au/org/gswa>
-    a prov:Agent ;
-    rdfs:label "Gswa" ;
+    a sdo:Organization ;
+    sdo:name "Geological Survey of Western Australia" ;
+    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
@@ -185,9 +187,9 @@ cs:
     skos:definition """Terms used to describe the sequence of pressure(P) – temperature(T) conditions that occurred in a given rock body over a period of time (t) of a particular metamorphic event. Also called P–T–t paths.
 
 Definitions are largely derived from: 
-a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v. 134, p. 201–213, doi:10.1144/gsjgs.134.2.0201)
-b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology, v. 25, no. 4, p. 894–928)
-c) Harley, 1989 (Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine, v. 126, no. 3, p. 215–247, doi:10.1017/S0016756800022330)
+a) England, PC and Richardson, SW 1977, The influence of erosion upon the mineral facies of rocks from different metamorphic environments: Journal of the Geological Society, v.134, p.201–213, doi:10.1144/gsjgs.134.2.0201)
+b) England, PC and Thompson, AB 1984, Pressure-temperature-time paths of regional metamorphism I. Heat transfer during the evolution of thickened continental crust: Journal of Petrology,v.25,no.4,p.894–928)
+c) Harley, 1989 (Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geological Magazine,v.126,no.3,p.215–247, doi:10.1017/S0016756800022330)
 d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path."""@en ;
     skos:hasTopConcept
         :anticlockwise ,
@@ -206,14 +208,14 @@ d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path."""@en ;
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Fawna Korhonen"
+                    sdo:name "Fawna Korhonen" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Dave Kelsey"
+                    sdo:name "Dave Kelsey" ;
                 ]
         ] ;
 .

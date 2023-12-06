@@ -6,6 +6,7 @@ PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsibl
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -41,7 +42,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "A low area in the Earth’s crust, of tectonic origin, underlain by a substantial thickness of sedimentary rocks that possess unifying characteristics of stratigraphy and structure due to their deposition during a regionally restricted episode of crustal depression or a related sequence of such episodes. As well as being applied to the deposited rocks, or to their outcrop area after erosion, the term is used also for the actual crustal depression in which they accumulated. Sedimentary basins range in size from small continental basins to large oceanic basins. The essential element of the concept is the tectonic creation of relief, to provide both a source of sediment and a relatively low place for the deposition of that sediment (after Miall, 2000). In the Western Australian context, most Precambrian basins are tectonic components of either cratons or orogens, whereas Phanerozoic basins do not have an immediate tectonic relationship to any orogen."@en ;
     skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS). Definition adapted from:
 a) Geological Survey of Western Australia, 1990, Geology and Mineral Resources of Western Australia: Geological Survey of Western Australia, Memoir 3, 827p.
-b) Miall, AD 2000, Principles of Sedimentary Basin Analysis, 3rd ed.: Berlin, Heidelberg, New York, London, Paris, Tokyo, Hong Kong: Springer-Verlag, 616p.""" ;
+b) Miall, AD 2000,Principles of Sedimentary Basin Analysis, 3rd ed.: Berlin, Heidelberg, New York, London, Paris, Tokyo, Hong Kong: Springer-Verlag, 616p.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "basin"@en ;
     skos:topConceptOf cs: ;
@@ -287,8 +288,9 @@ Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and th
 .
 
 <https://linked.data.gov.au/org/gswa>
-    a prov:Agent ;
-    rdfs:label "Gswa" ;
+    a sdo:Organization ;
+    sdo:name "Geological Survey of Western Australia" ;
+    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
@@ -331,14 +333,14 @@ The concepts outline the type of tectonic elements that are recognized and/or in
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Erin Gray"
+                    sdo:name "Erin Gray" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Angela Riganti"
+                    sdo:name "Angela Riganti" ;
                 ]
         ] ;
 .
