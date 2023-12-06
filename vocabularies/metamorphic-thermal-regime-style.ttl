@@ -107,7 +107,7 @@ c) Brown, M and Johnson, T 2018, Secular change in metamorphism and the onset of
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
+<https://linked.data.gov.au/org/gswa>
     a prov:Agent ;
     rdfs:label "Gswa" ;
 .
@@ -115,10 +115,10 @@ c) Brown, M and Johnson, T 2018, Secular change in metamorphism and the onset of
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-01"^^xsd:date ;
-    dcterms:creator <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
     dcterms:identifier "metamorphic-thermal-regime"^^xsd:token ;
     dcterms:modified "2023-11-01"^^xsd:date ;
-    dcterms:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     skos:definition "Terms that describe the ratio of temperature to pressure (T/P) during metamorphism, defining a classification scheme based on thermal gradient that is regarded as the most appropriate for building a temporal geodynamic context for metamorphic data. Some of these terms only partly correspond to metamorphic facies fields and classic-style terminology such as Barrovian and Buchan (i.e. correspondence is not one-for-one)."@en ;
