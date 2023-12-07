@@ -1,4 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/metamorphic-thermal-regime/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/metamorphic-thermal-regime>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -6,6 +7,7 @@ PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsibl
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -123,6 +125,7 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
+    reg:status agldwgstatus:stable ;
     skos:definition "Terms that describe the ratio of temperature to pressure (T/P) during metamorphism, defining a classification scheme based on thermal gradient that is regarded as the most appropriate for building a temporal geodynamic context for metamorphic data. Some of these terms only partly correspond to metamorphic facies fields and classic-style terminology such as Barrovian and Buchan (i.e. correspondence is not one-for-one)."@en ;
     skos:hasTopConcept
         :high-t-p-ratio ,

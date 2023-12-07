@@ -1,3 +1,4 @@
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <http://resource.geosciml.org/classifier/ics/ischart>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX gts: <http://resource.geosciml.org/ontology/timescale/gts#>
@@ -6,6 +7,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX sdo: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -7807,6 +7809,7 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
     owl:versionIRI <https://w3id.org/profile/gts-skos/2023-09> ;
     owl:versionInfo "2023-09" ;
+    reg:status agldwgstatus:experimental ;
     skos:definition """This is a SKOS vocabulary presentation of the time units of the International Chronostratigraphic Chart represented as SKOS Concepts. Beginning and End ages are given for each unit in units of Millions of Years Ago (MYA)."""@en ;
     skos:hasTopConcept
         ischart:Phanerozoic ,
