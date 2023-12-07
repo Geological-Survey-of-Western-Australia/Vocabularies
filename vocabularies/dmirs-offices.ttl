@@ -1,5 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/dmirs-offices/>
-PREFIX cs: <https://draft.com/dmirs-offices>
+PREFIX cs: <https://linked.data.gov.au/def/dmirs-offices>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -317,7 +317,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "Kalgoorlie office"@en ;
-    skos:closeMatch <https://draft.com/gswa-collection-facilities/kalgoorlie-regional-office> ;
+    skos:closeMatch <https://linked.data.gov.au/def/gswa-collection-facilities/kalgoorlie-regional-office> ;
     skos:definition "The Kalgoorlie office is one of several regional offices maintained by the Department of Energy, Mines, Industry Regulation and Safety, representing the department in the Goldfields and Esperance regions. In addition to administrative functions of the Department and of the Geological Survey of Western Australia, the Kalgoorlie office houses the Joe (JH) Lord Core Library, East Mine Inspectorate and Kalgoorlie Mining Registrar. The office is at the corner of Hunter and Broadwood Streets, West Kalgoorlie WA 6430."@en ;
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
