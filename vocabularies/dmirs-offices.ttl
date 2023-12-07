@@ -368,14 +368,14 @@ cs:
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Angela Riganti"
+                    sdo:name "Angela Riganti" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
                     a prov:Agent ;
-                    rdfs:label "Erin Gray"
+                    sdo:name "Erin Gray" ;
                 ]
         ] ;
 .

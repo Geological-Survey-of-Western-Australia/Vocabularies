@@ -7514,7 +7514,7 @@ sdo:PropertyValueSpecification
 
 sdo:Protein
     rdfs:label "Protein" ;
-    rdfs:comment "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single molecule that one can point to are all of type schema:Protein. A protein can thus be a subclass of another protein, e.g. schema:Protein as a UniProt record can have multiple isoforms inside it which would also be schema:Protein. They can be imagined, synthetic, hypothetical or naturally occurring." ;
+    rdfs:comment "Protein is here used in its widest possible definition, as classes of amino acid based molecules. Amyloid-beta Protein in human (UniProt P05067), eukaryota (e.g. an OrthoDB group) or even a single molecule that one can point to are all of type sdo:Protein. A protein can thus be a subclass of another protein, e.g. sdo:Protein as a UniProt record can have multiple isoforms inside it which would also be sdo:Protein. They can be imagined, synthetic, hypothetical or naturally occurring." ;
 .
 
 sdo:Protozoa
