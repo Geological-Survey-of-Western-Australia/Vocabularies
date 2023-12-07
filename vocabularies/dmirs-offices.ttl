@@ -293,7 +293,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "https://www.dmirs.wa.gov.au/content/regional-offices"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gswa>
+<https://linked.data.g​ov.au/org/gswa>
     a schema:Organization ;
     schema:name "Gswa" ;
     schema:url ""^^xsd:anyURI ;
@@ -360,7 +360,7 @@ cs:
             prov:agent
                 [
                     a schema:Organization ;
-                    schema:name "Erin Gray" ;
+                    schema:name "Angela Riganti" ;
                     schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ,
@@ -369,13 +369,13 @@ cs:
             prov:agent
                 [
                     a schema:Organization ;
-                    schema:name "Angela Riganti" ;
+                    schema:name "Erin Gray" ;
                     schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
     schema:dateCreated "2023-09-13"^^xsd:date ;
     schema:dateModified "2023-12-01"^^xsd:date ;
-    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
     schema:version "1.1" ;
 .
