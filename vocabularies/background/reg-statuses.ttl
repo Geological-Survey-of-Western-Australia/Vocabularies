@@ -34,6 +34,7 @@ Note that just like the original form of this vocabulary, while it is a SKOS voc
     dcterms:rights "(c) Commonwealth of Australia 2021"@en ;
     dcterms:created "2018-07-23"^^xsd:date ;
     dcterms:source <http://purl.org/linked-data/registry> ;
+    skos:historyNote "This vocabulary was derived from the Registry Ontology by Eplimorphics which itself was derived from ISO19135" ;
     skos:hasTopConcept :accepted , :notAccepted ;
 .
 
@@ -43,7 +44,7 @@ Note that just like the original form of this vocabulary, while it is a SKOS voc
     sdo:url "https://www.epimorphics.com"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/agldwg>
+<https://linked.data.gov.au/org/agldwg>
     a sdo:Organization ;
     sdo:name "Australian Government Linked Data Working Group" ;
     sdo:url "http://www.linked.data.gov.au"^^xsd:anyURI ;
