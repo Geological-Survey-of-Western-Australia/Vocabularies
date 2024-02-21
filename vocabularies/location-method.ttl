@@ -1,5 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/location-method>
-PREFIX cs: <https://linked.data.gov.au/deflocation-method>
+PREFIX cs: <https://linked.data.gov.au/def/location-method>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -565,7 +565,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
-    owl:versionIRI <https://linked.data.gov.au/deflocation-method/1> ;
+    owl:versionIRI <https://linked.data.gov.au/def/location-method/1> ;
     skos:definition "Methods used to spatially locate geological features and exploration, mining and related infrastructure sites. These can be either features directly observed in the field (e.g. site/outcrop descriptions, structural readings, etc.) or obtained from legacy and current documents/datasets (e.g. airphotos, maps, previously published reports, exploration reports, etc.). Each location method has a spatial accuracy that indicates an estimate of the approximate error in the location. Captured geographical locations for geological or mining features are expressed as a set of coordinates (latitude and longitude degrees), with or without an elevation above or below sea level."@en ;
     skos:hasTopConcept
         :airphoto-mga ,
