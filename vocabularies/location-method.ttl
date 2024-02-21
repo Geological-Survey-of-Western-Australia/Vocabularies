@@ -1,0 +1,617 @@
+PREFIX : <https://linked.data.gov.au/def/location-method>
+PREFIX cs: <https://linked.data.gov.au/deflocation-method>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:100k-geological-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:100 000 geological maps, typically with an accuracy of about 100 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:100 000 geological map (MGA)"@en ;
+.
+
+:100k-topographic-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:100 000 topographic maps, typically with an accuracy of about 100 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:100 000 topographic map (MGA)"@en ;
+.
+
+:1M-geological-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:1 000 000 geological maps, typically with an accuracy of about 1000 m (1 kilometre). Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:1 000 000 geological map (MGA)"@en ;
+.
+
+:1M-topographic-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:1 000 000 topographic maps, typically with an accuracy of about 1000 m (1 kilometre). Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:1 000 000 topographic map (MGA)"@en ;
+.
+
+:250k-geological-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:250 000 geological maps, typically with an accuracy of about 250 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:250 000 geological map (MGA)"@en ;
+.
+
+:250k-topographic-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:250 000 topographic maps, typically with an accuracy of about 250 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:250 000 topographic map (MGA)"@en ;
+.
+
+:25k-geological-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:25 000 geological maps, typically with an accuracy of about 25 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:25 000 geological map (MGA)"@en ;
+.
+
+:25k-topographic-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:25 000 topographic maps, typically with an accuracy of about 25 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:25 000 topographic map (MGA)"@en ;
+.
+
+:500k-geological-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:500 000 geological maps, typically with an accuracy of about 500 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:500 000 geological map (MGA)"@en ;
+.
+
+:500k-topographic-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:500 000 topographic maps, typically with an accuracy of about 500 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:500 000 topographic map (MGA)"@en ;
+.
+
+:50k-geological-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:50 000 geological maps, typically with an accuracy of about 50 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:50 000 geological map (MGA)"@en ;
+.
+
+:50k-topographic-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published 1:50 000 topographic maps, typically with an accuracy of about 50 m. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "1:50 000 topographic map (MGA)"@en ;
+.
+
+:airphoto-alos-mga
+    a skos:Concept ;
+    skos:definition "Geographical location of points marked on hardcopy airphotos (or images thereof) determined by visual comparison with georeferenced imagery acquired by the Advanced Land Observing Satellite (ALOS; https://earth.esa.int/eogateway/missions/alos). Captured as Map Grid of Australia (MGA) 1994 coordinates. Accuracy is typically within 25 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "capture from airphoto using ALOS (MGA)"@en ;
+    schema:citation "https://earth.esa.int/eogateway/missions/alos"^^xsd:anyURI ;
+.
+
+:airphoto-landsat-tm-mga
+    a skos:Concept ;
+    skos:definition "Geographical location of points marked on hardcopy airphotos (or images thereof) determined by determined visual comparison with georeferenced imagery acquired by NASA's Landsat Thematic Mapper (TM ) satellites. Captured as Map Grid of Australia (MGA) 1994 coordinates. Accuracy is typically within 25 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "capture from airphoto using Landsat TM (MGA)"@en ;
+    schema:citation "https://landsat.gsfc.nasa.gov/thematic-mapper/"^^xsd:anyURI ;
+.
+
+:airphoto-mga
+    a skos:Concept ;
+    skos:altLabel
+        "aerial photograph (MGA)"@en ,
+        "air photo (MGA)"@en ;
+    skos:definition "Geographical location of points marked on hardcopy airphotos (or images thereof) determined by visual comparison with georeferenced imagery. Captured as Map Grid of Australia (MGA) 1994 coordinates. Accuracy varies from 5 to 100 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :airphoto-alos-mga ,
+        :airphoto-landsat-tm-mga ,
+        :airphoto-orthophoto-mga ,
+        :airphoto-spot-p-mga ,
+        :rectified-airphoto-mga ;
+    skos:prefLabel "airphoto (MGA)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:airphoto-orthophoto-mga
+    a skos:Concept ;
+    skos:definition "Geographical location of points marked on hardcopy airphotos (or images thereof) determined by visual comparison with georeferenced orthophotographs, i.e. aerial photos taken with a high resolution camera that have been geometrically corrected to give a uniform scale. Captured as Map Grid of Australia (MGA) 1994 coordinates. Accuracy depends on the scale of the airphoto and ranges between 25 m and 100 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "capture from airphoto using orthophotograph (MGA)"@en ;
+    schema:citation "https://en.wikipedia.org/wiki/Orthophoto"^^xsd:anyURI ;
+.
+
+:airphoto-spot-p-mga
+    a skos:Concept ;
+    skos:definition "Geographical location of points marked on hardcopy airphotos (or images thereof) determined by visual comparison with georeferenced imagery acquired by Satellite Pour l'Observation de la Terre (SPOT P), a commercial satellite imaging system which uses a Panchromatic sensor to capture highly detailed black and white images. Captured as Map Grid of Australia (MGA) 1994 coordinates. Accuracy is typically 25 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "capture from airphoto using SPOT P (MGA)"@en ;
+    schema:citation "https://earth.esa.int/eogateway/missions/spot"^^xsd:anyURI ;
+.
+
+:compass
+    a skos:Concept ;
+    skos:definition "The determination of one's position by using a compass. The method uses angular measurements (with or without additional linear measurements) to determine the positions of points or survey lines. Accuracy is variable."@en ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :compass-clinometer ,
+        :compass-tape ;
+    skos:prefLabel "compass surveying"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://www.iamcivilengineer.com/2017/12/what-is-compass-surveying.html"^^xsd:anyURI ;
+.
+
+:compass-clinometer
+    a skos:Concept ;
+    skos:altLabel "CC"@en ;
+    skos:definition "Used when the determination of a position is assisted by measuring the vertical inclination between a compass user and recognized objects in the distance; commonly combined with triangulation/bearing measurements. Accuracy is variable."@en ;
+    skos:historyNote "Used in the mineral resources exploration and mining industry, and captured by GSWA via mineral exploration reports." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compass clinometer"@en ;
+    schema:citation "https://www.youtube.com/watch?v=Sd3GtgXP-_w"^^xsd:anyURI ;
+.
+
+:compass-tape
+    a skos:Concept ;
+    skos:altLabel
+        "CT"@en ,
+        "compass and chain"@en ;
+    skos:definition "A surveying method by which a tape (or rope, chain or any long object) is laid out in lines to determine the linear measurement and the compass is used to give bearings (angular measurement), allowing the position of objects to be calculated. Accuracy is variable."@en ;
+    skos:historyNote "Used in the mineral resources exploration and mining industry, and captured by GSWA via mineral exploration reports." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "compass and tape"@en ;
+.
+
+:continuous-gyroscopic-survey
+    a skos:Concept ;
+    skos:altLabel "gyro survey"@en ;
+    skos:definition "A type of downhole orientation survey that uses a non-magnetic gyroscopic surveying instrument to continuously locate points along a borehole."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "continuous gyroscopic survey"@en ;
+    schema:citation "https://petrowiki.spe.org/Directional_survey_instruments"^^xsd:anyURI ;
+.
+
+:copied-point
+    a skos:Concept ;
+    skos:definition "Used when a primary site is duplicated in a distinct (but often dependent) dataset. This is applied, for example, when a primary site for an environmental group site is copied from a matching mining site to enable use in a dependent database; typically, a new site identity is generated at this point that complies with the new database structure."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "copied point"@en ;
+.
+
+:database
+    a skos:Concept ;
+    skos:definition "Geographical location retrieved from a separate dataset."@en ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :copied-point ,
+        :external-database ,
+        :textual-load ;
+    skos:prefLabel "database"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:differential-GPS
+    a skos:Concept ;
+    skos:altLabel
+        "DGPS"@en ,
+        "Differential GPS"@en ,
+        "Differential Global Positioning System"@en ;
+    skos:definition "Geographical location acquired with a Differential Global Positioning System (DGPS), i.e. a receiver instrument that utilises a network of fixed-position, ground-based reference stations that calculate the difference between their highly accurate known position and their less accurate satellite-derived position, thereby increasing the accuracy compared to a Global Positioning System that only utilises satellite stations. Accuracy varies from 15 m to a few centimetres, but it is commonly within 1 m. Captured using the World Geodetic System 1984 or, in Australia, the Geocentric Datum of Australia 1994."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Differential GPS (WGS-84/GDA-94)"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://en.wikipedia.org/wiki/Differential_GPS"^^xsd:anyURI ;
+.
+
+:document
+    a skos:Concept ;
+    skos:definition "Geographical location retrieved from a figure, image (including photos) or text, either individually or within a written document."@en ;
+    skos:historyNote "Compiled by GSWA" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :mineral-exploration-report ,
+        :published-report ,
+        :unpublished-report ;
+    skos:prefLabel "document"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:downhole-survey
+    a skos:Concept ;
+    skos:altLabel "down-hole survey"@en ;
+    skos:definition "Location of points along a borehole obtained while conducting downhole surveys."@en ;
+    skos:historyNote "Used in the mineral resources exploration and mining industry, and captured by GSWA via mineral exploration reports." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :continuous-gyroscopic-survey ,
+        :single-shot-survey ;
+    skos:prefLabel "downhole orientation survey"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://www.geologyforinvestors.com/down-hole-geophysics-mineral-exporation/"^^xsd:anyURI ;
+.
+
+:estimate
+    a skos:Concept ;
+    skos:altLabel "guess"@en ;
+    skos:definition "Used when the location of a site (e.g. drilling site) is known to be within a mineral tenement, but no precise coordinates are known. An estimated location of this type could be given the coordinates of the central point of the tenement, or coordinates are best estimated based on available data."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "estimate within tenement"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:external-database
+    a skos:Concept ;
+    skos:definition "Geographical location derived from a database source external to that of the organisation recording the observation. Accuracy is estimated to be within 100 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "external database (WGS/GDA)"@en ;
+.
+
+:ga-common-earth-model
+    a skos:Concept ;
+    skos:definition "Geographical location based on Geoscience Australia (GA) Common Earth Model, a unified representation of Australia's geology that allows users to explore geological aspects of an area in detail. Accuracy estimated to be around 100 m."@en ;
+    skos:historyNote "Geoscience Australia's Common Earth Model is a collection of data compiled from various sources that aims to give a unified overview of the geology of Australia. The data are visualised in the Geoscience Australia 3D Data Viewer software, enabling users to interactively explore and analyze the geological features and formations of different locations across Australia." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "GA Common Earth Model (WGS-84)"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://ecat.ga.gov.au/geonetwork/dashboard/api/records/a7f66a7e-6791-4a45-8611-41050120a1eb"^^xsd:anyURI ;
+.
+
+:geological-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published geological maps at various scales. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :100k-geological-map-mga ,
+        :1M-geological-map-mga ,
+        :250k-geological-map-mga ,
+        :25k-geological-map-mga ,
+        :500k-geological-map-mga ,
+        :50k-geological-map-mga ,
+        :non-standard-geological-map-mga ;
+    skos:prefLabel "geological map (MGA)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:google-earth
+    a skos:Concept ;
+    skos:definition "Geographical location determined from Google Earth, a virtual model of Earth which uses the World Geodetic System 1984 (WGS-84) as its coordinate system. Typically accurate to 50 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites. Google Earth is a computer program that renders a 3D representation of Earth based primarily on satellite imagery. The program maps the Earth by superimposing satellite images, aerial photography, and GIS data onto a 3D globe, allowing users to see cities and landscapes from various angles." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Google Earth (WGS-84)"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation
+        "https://en.wikipedia.org/wiki/Google_Earth"^^xsd:anyURI ,
+        "https://www.google.com.au/earth/"^^xsd:anyURI ;
+.
+
+:gps
+    a skos:Concept ;
+    skos:altLabel
+        "GPS coordinates"@en ,
+        "Global Positioning System"@en ,
+        "Navigational GPS"@en ;
+    skos:definition "Geographical location obtained by using a Global Positioning System (GPS), i.e. via triangulation using at least four satellites and a receiver (such as a smartphone or GPS device). Note that the use of drones to capture GPS coordinates falls in this category."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites. The Global Positioning System (GPS) is a satellite-based radio navigation system that provides geolocation and time information to a GPS receiver anywhere on or near the Earth where there is an unobstructed line of sight to four or more GPS satellites (each satellite sends information about its position and the current time, and the receiver calculates how far away each satellite is based on how long it took for the messages to arrive; then, the receiver uses this information to triangulate the user's exact position on Earth). It was fully operational by 1993." ;
+    skos:inScheme cs: ;
+    skos:narrower :gps-wgs84-gda94 ;
+    skos:prefLabel "GPS"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://en.wikipedia.org/wiki/Global_Positioning_System"^^xsd:anyURI ;
+.
+
+:gps-wgs84-gda94
+    a skos:Concept ;
+    skos:definition "Geographical location derived by a measurement of location and time via Global Positioning System (GPS) — it uses multilateration to connect a receiver to a network of satellites to determine the position coordinates of the receiver. The default coordinate system for GPS is the World Geodetic System 1984; in Australia the Geocentric Datum of Australia 1994 (or 2020) is also used. Modern GPS receivers can be accurate to 10 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:narrower :gps-wgs84-gda94-legacy ;
+    skos:prefLabel "GPS observation (WGS-84/GDA-94)"@en ;
+.
+
+:gps-wgs84-gda94-legacy
+    a skos:Concept ;
+    skos:definition "Used to identify the location method for legacy points whose coordinates were captured via Global Positioning System (GPS) prior to May 1, 2000. Due to improvements in the accuracy of GPS devices over time, accuracy is estimated to vary between 100 and 200 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "GPS observation (WGS-84/GDA-94) - legacy"@en ;
+.
+
+:landsatTM-mga
+    a skos:Concept ;
+    skos:definition "Geographical location captured by using georeferenced imagery acquired by NASA's Landsat Thematic Mapper (TM) satellites. Accuracy is estimated to be within 100 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites. The Thematic Mapper is an advanced sensor carried aboard NASA Landsat satellites, used to collect high-resolution imagery in the visible, near infrared and short-wave infrared spectra of light." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Landsat TM (MGA)"@en ;
+    schema:citation "https://landsat.gsfc.nasa.gov/thematic-mapper/"^^xsd:anyURI ;
+.
+
+:lidar
+    a skos:Concept ;
+    skos:altLabel
+        "LADAR"@en ,
+        "LIDAR"@en ,
+        "Lidar"@en ;
+    skos:definition "Geographical location obtained using the 'laser imaging detection and ranging' (LiDAR) method, whereby the coordinates of a point are measured from ground control points using a laser to measure the time it takes for the reflected light to return to the receiver). Typically, a Global Navigation Satellite System receiver configured over a georeferenced control point is used to link the data in with the WGS (World Geodetic System). Horizontal and vertical accuracies vary, but can be as low as 1 cm or less."@en ;
+    skos:historyNote "LiDAR is a ground or airborne surveying technology that uses laser pulses to create high-resolution models of ground elevation or underground workings." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "LiDAR"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://en.wikipedia.org/wiki/Lidar"^^xsd:anyURI ;
+.
+
+:mineral-exploration-report
+    a skos:Concept ;
+    skos:definition "Geographical location retrieved from a map, image, or text within an exploration report."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "mineral exploration report (MGA/WGS/GDA)"@en ;
+.
+
+:non-standard-geological-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from a geological map that uses a different scale, projection, or set of symbols from standard geological maps. Accuracy is estimated at 100 m. Non-standard geological maps are usually produced for specific areas or at specific sizes/scales, usually to highlight the geology of a defined area or geological region, or to present specific sets of features."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "non-standard geological map (MGA)"@en ;
+.
+
+:non-standard-topographic-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from a topographic map that uses a different scale, projection, or set of symbols from standard topographic maps. Accuracy is estimated at 100 m. Non-standard topographic maps are usually produced for specific areas or at specific sizes/scales, usually to highlight the topography of a defined area or region, or to present specific sets of features."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "non-standard topographic map (MGA)"@en ;
+.
+
+:orthophoto-mga
+    a skos:Concept ;
+    skos:definition "Geographical location captured by using orthophotographs, i.e. aerial photos taken with a high-resolution camera that have been geometrically corrected to give a uniform scale. Captured as Map Grid of Australia (MGA) 1994 coordinates. Accuracy is typically within 5 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:narrower :panoramic-image-mga ;
+    skos:prefLabel "orthophotograph (MGA)"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://en.wikipedia.org/wiki/Orthophoto"^^xsd:anyURI ;
+.
+
+:panoramic-image-mga
+    a skos:Concept ;
+    skos:definition "Geographical location of points marked on panoramic photographs using georeferenced orthophotographs, i.e. aerial photos taken with a high resolution camera that have been geometrically corrected to give a uniform scale. Typically used to position the location of specific geological features on cliff/scarp that cannot be accessed directly during mapping. Captured as Map Grid of Australia (MGA) 1994 coordinates. Accuracy is typically within 25 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "capture from panoramic image using orthophotograph (MGA)"@en ;
+.
+
+:published-report
+    a skos:Concept ;
+    skos:definition "Geographical location retrieved from a map, image, or text within a published document, e.g. an article in a journal, published thesis, etc. Accuracy estimated to be within 100 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "published report (MGA/WGS/GDA)"@en ;
+.
+
+:rectified-airphoto-mga
+    a skos:Concept ;
+    skos:definition "Geographical location of points marked on the back of hardcopy airphotos (or images thereof) determined by: 1) scanning and rectifying position marks on the back of the airphoto; 2) scanning and rectifying the front of the airphoto; 3) overlaying a mirror image of the rectified scan of the back of the airphoto onto the rectified scan of the front. Captured as Map Grid of Australia (MGA) 1994 coordinates. Accuracy depends on the scale of the airphoto and ranges between 25 m and 100 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "capture from rectified airphoto scans (MGA)"@en ;
+.
+
+:rtk
+    a skos:Concept ;
+    skos:altLabel "RTK"@en ;
+    skos:definition "This method involves surveying of an area to correct for common errors in Global Navigation Satellite Systems (GNSS) in real time. It uses measurements of the phase of the signal's carrier wave in addition to the information content of the signal, and relies on a single reference station or interpolated virtual station to provide real-time corrections. Typically the accuracy of this method is within 1 or 2 cm, horizontally and vertically."@en ;
+    skos:historyNote "Used in the mineral resources exploration and mining industry, and captured by GSWA via mineral exploration reports." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "real time kinematic"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://en.wikipedia.org/wiki/Real-time_kinematic_positioning"^^xsd:anyURI ;
+.
+
+:satellite
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Satellite_imagery> ;
+    skos:definition "Geographic location captured by using satellite images (also Earth observation imagery, spaceborne photography, or simply satellite photo) are images of Earth collected by imaging satellites operated by governments and businesses around the world."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :landsatTM-mga ,
+        :spot-p ;
+    skos:prefLabel "satellite imagery"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:single-shot-survey
+    a skos:Concept ;
+    skos:altLabel "Eastman survey"@en ;
+    skos:definition "A type of downhole orientation survey that uses a single shot, photographic borehole drift indicator to locate points along a borehole. This type of survey mostly applies to older boreholes, as it has been superseded by modern tools such as the gyroscope."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "single shot survey"@en ;
+    schema:citation
+        "https://www.mindat.org/glossary/Eastman_survey_instrument"^^xsd:anyURI ,
+        "https://www.rocksoliddata.com.au/articles/downhole-survey-azimuths/"^^xsd:anyURI ;
+.
+
+:spot-p
+    a skos:Concept ;
+    skos:definition "Geographical location captured using georeferenced imagery acquired by Satellite Pour l'Observation de la Terre (SPOT P, a commercial satellite imaging system which uses a Panchromatic sensor to capture highly detailed black and white images). Accuracy is estimated to be within 20 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "SPOT P (MGA)"@en ;
+    schema:citation "https://earth.esa.int/eogateway/missions/spot"^^xsd:anyURI ;
+.
+
+:surveyed-grid
+    a skos:Concept ;
+    skos:altLabel "SGRID"@en ;
+    skos:definition "Location of points within a large area of land which has been surveyed, measured and mapped."@en ;
+    skos:historyNote "Used in the mineral resources exploration and mining industry, and captured by GSWA via mineral exploration reports." ;
+    skos:inScheme cs: ;
+    skos:narrower :surveyed-ground-control ;
+    skos:prefLabel "surveyed grid"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:surveyed-ground-control
+    a skos:Concept ;
+    skos:definition "Geographical location measured from ground control points, i.e. points whose coordinates were accurately determined by surveyors. Accuracy is typically within 1 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "surveyed from ground control (WGS-84/GDA-94)"@en ;
+    schema:citation
+        "https://www.heliguy.com/blogs/posts/guide-to-using-ground-control-points"^^xsd:anyURI ,
+        "https://www.pix4d.com/blog/why-ground-control-points-important/"^^xsd:anyURI ;
+.
+
+:textual-load
+    a skos:Concept ;
+    skos:definition "The position of a feature is loaded from another, usually older, dataset."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "textual load"@en ;
+.
+
+:topographic-map-mga
+    a skos:Concept ;
+    skos:definition "Geographical location determined from published topographic maps at various scales. Captured as Map Grid of Australia (MGA) 1994 coordinates."@en ;
+    skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :100k-topographic-map-mga ,
+        :1M-topographic-map-mga ,
+        :250k-topographic-map-mga ,
+        :25k-topographic-map-mga ,
+        :500k-topographic-map-mga ,
+        :50k-topographic-map-mga ,
+        :non-standard-topographic-map-mga ;
+    skos:prefLabel "topographic map (MGA)"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:totalstation
+    a skos:Concept ;
+    skos:altLabel
+        "TS"@en ,
+        "TST"@en ;
+    skos:definition "A total station (TS) or total station theodolite (TST) is an electronic/optical instrument used for surveying and building construction. It is an electronic transit theodolite integrated with electronic distance measurement (EDM) to measure both vertical and horizontal angles and the slope distance from the instrument to a particular point, and an on-board computer to collect data and perform triangulation calculations."@en ;
+    skos:historyNote "Used in the mineral resources exploration and mining industry, and captured by GSWA via mineral exploration reports." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "total station"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "https://en.wikipedia.org/wiki/Total_station"^^xsd:anyURI ;
+.
+
+:unknown
+    a skos:Concept ;
+    skos:altLabel "unknown accuracy"@en ;
+    skos:definition "The location method used to derive position coordinates of a given point is not known. Accuracy cannot be estimated."@en ;
+    skos:historyNote "Used by GSWA to record geological observations or exploration/mining/infrastructure sites for which the location method has not been identified." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "unknown"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:unpublished-report
+    a skos:Concept ;
+    skos:definition "Geographical location retrieved from a map, image, or text within a written, unpublished document, e.g. an internal report, unpublished thesis, etc. Accuracy estimated to be within 100 m."@en ;
+    skos:historyNote "Used by GSWA to capture locations of geological observations or exploration/mining/infrastructure sites." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "unpublished report (MGA/WGS/GDA)"@en ;
+.
+
+<https://linked.data.g​ov.au/org/gswa>
+    a schema:Organization ;
+    schema:name "Gswa" ;
+    schema:url ""^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
+    owl:versionIRI <https://linked.data.gov.au/deflocation-method/1> ;
+    skos:definition "Methods used to spatially locate geological features and exploration, mining and related infrastructure sites. These can be either features directly observed in the field (e.g. site/outcrop descriptions, structural readings, etc.) or obtained from legacy and current documents/datasets (e.g. airphotos, maps, previously published reports, exploration reports, etc.). Each location method has a spatial accuracy that indicates an estimate of the approximate error in the location. Captured geographical locations for geological or mining features are expressed as a set of coordinates (latitude and longitude degrees), with or without an elevation above or below sea level."@en ;
+    skos:hasTopConcept
+        :airphoto-mga ,
+        :compass ,
+        :database ,
+        :differential-GPS ,
+        :document ,
+        :downhole-survey ,
+        :estimate ,
+        :ga-common-earth-model ,
+        :geological-map-mga ,
+        :google-earth ,
+        :gps ,
+        :lidar ,
+        :orthophoto-mga ,
+        :rtk ,
+        :satellite ,
+        :surveyed-grid ,
+        :topographic-map-mga ,
+        :totalstation ,
+        :unknown ;
+    skos:historyNote "Derived from the GSWA's WAROX table [GSD_REF].[LOCMETHODS] and [MINEDEX].[Site].[MethodType]"@en ;
+    skos:prefLabel "Location method"@en ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole isoroles:custodian ;
+            prov:agent
+                [
+                    a schema:Organization ;
+                    schema:name "Terry Farrell" ;
+                    schema:url ""^^xsd:anyURI ;
+                ] ;
+        ] ,
+        [
+            dcat:hadRole isoroles:custodian ;
+            prov:agent
+                [
+                    a schema:Organization ;
+                    schema:name "Angela Riganti" ;
+                    schema:url ""^^xsd:anyURI ;
+                ] ;
+        ] ;
+    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:dateCreated "2022-11-23"^^xsd:date ;
+    schema:dateModified "2022-11-23"^^xsd:date ;
+    schema:keywords "Geodesy" ;
+    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    schema:version "1" ;
+.
