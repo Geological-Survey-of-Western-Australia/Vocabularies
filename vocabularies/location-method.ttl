@@ -1,4 +1,4 @@
-PREFIX : <https://linked.data.gov.au/def/location-method>
+PREFIX : <https://linked.data.gov.au/def/location-method/>
 PREFIX cs: <https://linked.data.gov.au/def/location-method>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
