@@ -238,7 +238,7 @@ The CRIRSCO Code is closely related to the JORC Code used in Australasia to repo
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
+                    a schema:Person ;
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ,
@@ -246,7 +246,7 @@ The CRIRSCO Code is closely related to the JORC Code used in Australasia to repo
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
+                    a schema:Person ;
                     schema:name "Erin Gray" ;
                 ] ;
         ] ;

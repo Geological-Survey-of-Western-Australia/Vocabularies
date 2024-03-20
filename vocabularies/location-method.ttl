@@ -594,16 +594,15 @@ cs:
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
+                    a schema:Person ;
                     schema:name "Terry Farrell" ;
-                    schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
+                    a schema:Person ;
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ;

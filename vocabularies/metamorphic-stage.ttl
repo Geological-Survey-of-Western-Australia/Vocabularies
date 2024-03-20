@@ -146,14 +146,14 @@ Fettes, D and Desmons, J (eds.) 2007, Metamorphic Rocks: a classification and gl
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Fawna Korhonen" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Dave Kelsey" ;
                 ]
         ] ;

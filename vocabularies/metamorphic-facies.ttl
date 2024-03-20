@@ -273,14 +273,14 @@ cs:
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Dave Kelsey" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Fawna Korhonen" ;
                 ]
         ] ;

@@ -205,21 +205,21 @@ cs:
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Angela Riganti" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "David Martin" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Erin Gray" ;
                 ]
         ] ;

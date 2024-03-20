@@ -224,7 +224,7 @@ The JORC Code vocabulary covers [MINEDEX].[ResourceEstimate.ResourceCategory], i
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
+                    a schema:Person ;
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ,
@@ -232,7 +232,7 @@ The JORC Code vocabulary covers [MINEDEX].[ResourceEstimate.ResourceCategory], i
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
+                    a schema:Person ;
                     schema:name "Erin Gray" ;
                 ] ;
         ] ;

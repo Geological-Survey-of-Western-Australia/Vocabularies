@@ -402,14 +402,14 @@ cs:
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Erin Gray" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Angela Riganti" ;
                 ]
         ] ;

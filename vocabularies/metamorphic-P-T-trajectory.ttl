@@ -210,14 +210,14 @@ d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path."""@en ;
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Fawna Korhonen" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
+                    schema:Person
                     sdo:name "Dave Kelsey" ;
                 ]
         ] ;

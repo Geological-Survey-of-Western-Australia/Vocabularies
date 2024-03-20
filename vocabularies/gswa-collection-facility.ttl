@@ -227,7 +227,7 @@ cs:
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
+                    a schema:Person ;
                     schema:name "Erin Gray" ;
                 ] ;
         ] ,
@@ -235,15 +235,15 @@ cs:
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
-                  schema:name "Angela Riganti" ;
+                    a schema:Person ;
+                    schema:name "Angela Riganti" ;
                 ] ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Organization ;
+                    a schema:Person ;
                     schema:name "Sarah Martin" ;
                 ] ;
         ] ;
