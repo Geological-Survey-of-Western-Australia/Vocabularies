@@ -205,7 +205,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <https://linked.data.gov.au/org/gswa>
     a schema:Organization ;
     schema:name "Geological Survey of Western Australia" ;
-    schema:url ""^^xsd:anyURI ;
+    schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
@@ -229,7 +229,6 @@ cs:
                 [
                     a schema:Organization ;
                     schema:name "Erin Gray" ;
-                    schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ,
         [
@@ -237,8 +236,7 @@ cs:
             prov:agent
                 [
                     a schema:Organization ;
-                    schema:name "Angela Riganti" ;
-                    schema:url ""^^xsd:anyURI ;
+                  schema:name "Angela Riganti" ;
                 ] ;
         ] ,
         [
@@ -247,7 +245,6 @@ cs:
                 [
                     a schema:Organization ;
                     schema:name "Sarah Martin" ;
-                    schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
