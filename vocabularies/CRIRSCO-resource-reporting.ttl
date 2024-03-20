@@ -239,6 +239,7 @@ The CRIRSCO Code is closely related to the JORC Code used in Australasia to repo
             prov:agent
                 [
                     a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ,
@@ -247,6 +248,7 @@ The CRIRSCO Code is closely related to the JORC Code used in Australasia to repo
             prov:agent
                 [
                     a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
                     schema:name "Erin Gray" ;
                 ] ;
         ] ;

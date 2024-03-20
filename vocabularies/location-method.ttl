@@ -595,6 +595,7 @@ cs:
             prov:agent
                 [
                     a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
                     schema:name "Terry Farrell" ;
                 ] ;
         ] ,
@@ -603,6 +604,7 @@ cs:
             prov:agent
                 [
                     a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ;

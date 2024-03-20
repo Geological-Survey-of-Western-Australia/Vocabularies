@@ -225,6 +225,7 @@ The JORC Code vocabulary covers [MINEDEX].[ResourceEstimate.ResourceCategory], i
             prov:agent
                 [
                     a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ,
@@ -233,6 +234,7 @@ The JORC Code vocabulary covers [MINEDEX].[ResourceEstimate.ResourceCategory], i
             prov:agent
                 [
                     a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
                     schema:name "Erin Gray" ;
                 ] ;
         ] ;
