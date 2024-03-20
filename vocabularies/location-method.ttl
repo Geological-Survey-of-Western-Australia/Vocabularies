@@ -558,7 +558,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.g​ov.au/org/gswa>
     a schema:Organization ;
-    schema:name "Gswa" ;
+    schema:name "Geological Survey of Western Australia" ;
     schema:url ""^^xsd:anyURI ;
 .
 

@@ -209,7 +209,7 @@ cs:Scoping-Study
 
 <https://linked.data.gov.au/org/gswa>
     a schema:Organization ;
-    schema:name "Gswa" ;
+    schema:name "Geological Survey of Western Australia" ;
     schema:url ""^^xsd:anyURI ;
 .
 
