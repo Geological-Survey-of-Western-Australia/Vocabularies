@@ -453,7 +453,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "MBTU_Ml"@en ,
         "kBTU/ML"@en ;
-    skos:definition "A measure of oil quality or energy density defined as the energy in 1000 BTU (British Thermal Units; 1 055 000 J) per million litres."@en ;
+    skos:definition "A measure of oil quality or energy density defined as the energy in 1000 BTU (British Thermal Units; 1 055 000 J) per million litres."@en ;
     skos:inScheme cs: ;
     skos:notation "MBTU/Ml"^^xsd:token ;
     skos:prefLabel "thousand British thermal units per megalitre"@en ;
@@ -518,7 +518,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "l_50 kg"@en ;
     skos:definition "A proportional concentration ratio typically used for cement mixtures. The number of litres of water added to 50 kg of additive(s)."@en ;
     skos:inScheme cs: ;
-    skos:notation "l/50 kg"^^xsd:token ;
+    skos:notation "l/50 kg"^^xsd:token ;
     skos:prefLabel "litres per 50 kg sack"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/L-PER-50SACK"^^xsd:anyURI ;
@@ -543,10 +543,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://linked.data.gov.au/def/geou/LB_F-PER-100FT2>
     a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/geou> ;
-    skos:altLabel "lbf_100 ft²"@en ;
-    skos:definition "Pounds force per 100 square feet (lbf/100 ft²) is a British (imperial) and US pressure unit. The number of pounds force applied to an area of 100 ft²."@en ;
+    skos:altLabel "lbf_100 ft²"@en ;
+    skos:definition "Pounds force per 100 square feet (lbf/100 ft²) is a British (imperial) and US pressure unit. The number of pounds force applied to an area of 100 ft²."@en ;
     skos:inScheme cs: ;
-    skos:notation "lbf/100 ft²"^^xsd:token ;
+    skos:notation "lbf/100 ft²"^^xsd:token ;
     skos:prefLabel "pounds force per 100 square feet"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/LB_F-PER-100FT2"^^xsd:anyURI ;
@@ -570,10 +570,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://linked.data.gov.au/def/geou/LB_M-PER-100FT2>
     a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/geou> ;
-    skos:altLabel "lb_100 ft²"@en ;
-    skos:definition "Pounds per 100 square feet (lb/100 ft²) is a British (imperial) and US pressure unit. The force equivalent to the number of pounds mass under standard gravity conditions applied to an area of 100 ft²."@en ;
+    skos:altLabel "lb_100 ft²"@en ;
+    skos:definition "Pounds per 100 square feet (lb/100 ft²) is a British (imperial) and US pressure unit. The force equivalent to the number of pounds mass under standard gravity conditions applied to an area of 100 ft²."@en ;
     skos:inScheme cs: ;
-    skos:notation "lb/100 ft²"^^xsd:token ;
+    skos:notation "lb/100 ft²"^^xsd:token ;
     skos:prefLabel "pounds per 100 square feet"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/LB_M-PER-100FT2"^^xsd:anyURI ;
@@ -585,9 +585,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "lb/50kg"@en ,
         "lb_50 kg"@en ;
-    skos:definition "A proportional concentration ratio typically used for cement mixtures. The number of pounds of water added to 50 kg of additive(s)."@en ;
+    skos:definition "A proportional concentration ratio typically used for cement mixtures. The number of pounds of water added to 50 kg of additive(s)."@en ;
     skos:inScheme cs: ;
-    skos:notation "lb/50 kg"^^xsd:token ;
+    skos:notation "lb/50 kg"^^xsd:token ;
     skos:prefLabel "pounds per 50 kg sack"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/LB_M-PER-50SAC"^^xsd:anyURI ;
@@ -697,7 +697,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "MMBTU/ML"@en ,
         "MMBTU_Ml"@en ;
-    skos:definition "A measure of oil quality or energy density defined as the energy in 1 000 000 British thermal units (BTU) (1 055 000 000 J) per million litres."@en ;
+    skos:definition "A measure of oil quality or energy density defined as the energy in 1 000 000 British thermal units (BTU) (1 055 000 000 J) per million litres."@en ;
     skos:inScheme cs: ;
     skos:notation "MMBTU/Ml"^^xsd:token ;
     skos:prefLabel "million British thermal units per megalitre"@en ;
@@ -775,7 +775,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://linked.data.gov.au/def/geou/MilliD>
     a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/geou> ;
-    skos:definition "A measure of permeability. A medium with a permeability of 1 millidarcy (mD) permits a flow of 0.001 cm³/s of a fluid with viscosity 1 cP (1 mPa·s) under a pressure gradient of 1 atm/cm acting across an area of 1 cm²."@en ;
+    skos:definition "A measure of permeability. A medium with a permeability of 1 millidarcy (mD) permits a flow of 0.001 cm³/s of a fluid with viscosity 1 cP (1 mPa·s) under a pressure gradient of 1 atm/cm acting across an area of 1 cm²."@en ;
     skos:inScheme cs: ;
     skos:notation "md"^^xsd:token ;
     skos:prefLabel "millidarcy"@en ;
@@ -1011,7 +1011,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "MOA"@en ,
         "minute arc"@en ,
         "minute of arc"@en ;
-    skos:definition "A minute of arc, arcminute, or minute arc (MOA), is a unit of angular measurement equal to one sixtieth (1/60) of one degree (circle/21 600), or π/10 800 radians. In turn, a second of arc or arcsecond is one sixtieth (1/60) of one minute of arc. Since one degree is defined as one three hundred and sixtieth (1/360) of a rotation, one minute of arc is 1/21 600 of a rotation. Prime (') is the symbol for the arcminute."@en ;
+    skos:definition "A minute of arc, arcminute, or minute arc (MOA), is a unit of angular measurement equal to one sixtieth (1/60) of one degree (circle/21 600), or π/10 800 radians. In turn, a second of arc or arcsecond is one sixtieth (1/60) of one minute of arc. Since one degree is defined as one three hundred and sixtieth (1/360) of a rotation, one minute of arc is 1/21 600 of a rotation. Prime (') is the symbol for the arcminute."@en ;
     skos:inScheme cs: ;
     skos:notation "'"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "arcminute"@en ;
@@ -1025,7 +1025,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "ARCSEC"@en ,
         "second of arc"@en ;
-    skos:definition "Arcsecond is a unit of angular measure, also called the second of arc, equal to 1/60 arcminute. One arcsecond is a very small angle: there are 1 296 000 in a circle. The International System of Units (SI) recommends double prime (ʺ) as the symbol for the arcsecond. The symbol has become common in astronomy, where very small angles are stated in milliarcseconds (mas)."@en ;
+    skos:definition "Arcsecond is a unit of angular measure, also called the second of arc, equal to 1/60 arcminute. One arcsecond is a very small angle: there are 1 296 000 in a circle. The International System of Units (SI) recommends double prime (ʺ) as the symbol for the arcsecond. The symbol has become common in astronomy, where very small angles are stated in milliarcseconds (mas)."@en ;
     skos:inScheme cs: ;
     skos:notation "\""^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "arcsecond"@en ;
@@ -1036,7 +1036,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/ATM>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The standard atmosphere (atm) is an international reference pressure defined as 101.325 kPa and formerly used as unit of pressure. For practical purposes it has been replaced by the bar which is 100 kPa. The difference of about 1% is not significant for many applications, and is within the error range of common pressure gauges."@en ;
+    skos:definition "The standard atmosphere (atm) is an international reference pressure defined as 101.325 kPa and formerly used as unit of pressure. For practical purposes it has been replaced by the bar which is 100 kPa. The difference of about 1% is not significant for many applications, and is within the error range of common pressure gauges."@en ;
     skos:inScheme cs: ;
     skos:notation "atm"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "standard atmosphere"@en ;
@@ -1047,7 +1047,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/BAR>
     a skos:Concept ;
     rdfs:isDefinedBy <https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The bar is a non-International System of Units (SI) unit of pressure, defined by the International Union of Pure and Applied Chemistry (IUPAC) as exactly equal to 100 000 Pa. It is about equal to the atmospheric pressure on Earth at sea level, and since 1982 the IUPAC has recommended that the standard for atmospheric pressure should be harmonized to 100 000 Pa = 1 bar ≈ 750.0616827 Torr. Units derived from the bar are the megabar (Mbar), kilobar (kbar), decibar (dbar), centibar (cbar) and millibar (mbar or mb). They are not part of either the SI or Centimetre–Gram–Second (CGS) system of units, but they are accepted for use with the SI."@en ;
+    skos:definition "The bar is a non-International System of Units (SI) unit of pressure, defined by the International Union of Pure and Applied Chemistry (IUPAC) as exactly equal to 100 000 Pa. It is about equal to the atmospheric pressure on Earth at sea level, and since 1982 the IUPAC has recommended that the standard for atmospheric pressure should be harmonized to 100 000 Pa = 1 bar ≈ 750.0616827 Torr. Units derived from the bar are the megabar (Mbar), kilobar (kbar), decibar (dbar), centibar (cbar) and millibar (mbar or mb). They are not part of either the SI or Centimetre–Gram–Second (CGS) system of units, but they are accepted for use with the SI."@en ;
     skos:inScheme cs: ;
     skos:notation "bar"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "bar"@en ;
@@ -1131,7 +1131,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "carat"@en ,
         "carats"@en ,
         "cts"@en ;
-    skos:definition "The carat is a unit of mass equal to 200 mg (0.2 g) and is used for measuring gemstones and pearls. The current definition, sometimes known as the metric carat, was adopted in 1907 at the Fourth General Conference on Weights and Measures, and soon afterward in many countries around the world. The carat is divisible into one hundred points of 2 mg each. Other subdivisions, and slightly different mass values, have been used in the past in different locations. In terms of diamonds, a paragon is a flawless stone of at least 100 carats (20 g). The ANSI X.12 EDI standard abbreviation for the carat is CD."@en ;
+    skos:definition "The carat is a unit of mass equal to 200 mg (0.2 g) and is used for measuring gemstones and pearls. The current definition, sometimes known as the metric carat, was adopted in 1907 at the Fourth General Conference on Weights and Measures, and soon afterward in many countries around the world. The carat is divisible into one hundred points of 2 mg each. Other subdivisions, and slightly different mass values, have been used in the past in different locations. In terms of diamonds, a paragon is a flawless stone of at least 100 carats (20 g). The ANSI X.12 EDI standard abbreviation for the carat is CD."@en ;
     skos:inScheme cs: ;
     skos:notation "ct"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "carat"@en ;
@@ -1172,7 +1172,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "CM2"@en ,
         "square centimeter"@en ;
-    skos:definition "A unit of area equal to that of a square of sides 1 cm."@en ;
+    skos:definition "A unit of area equal to that of a square of sides 1 cm."@en ;
     skos:inScheme cs: ;
     skos:notation "cm²"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "square centimetre"@en ;
@@ -1407,7 +1407,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "cm/s²"@en ,
         "cm_s²"@en ,
         "gal"@en ;
-    skos:definition "The galileo (or Gal) is the unit of acceleration of free fall used extensively in the science of gravimetry. The galileo is defined as 1 cm/s². Unfortunately, the galileo is often denoted with the symbol Gal, not to be confused with the gallon that also uses the same symbol (gal)."@en ;
+    skos:definition "The galileo (or Gal) is the unit of acceleration of free fall used extensively in the science of gravimetry. The galileo is defined as 1 cm/s². Unfortunately, the galileo is often denoted with the symbol Gal, not to be confused with the gallon that also uses the same symbol (gal)."@en ;
     skos:historyNote "https://en.wikipedia.org/wiki/Gal_(unit)" ;
     skos:inScheme cs: ;
     skos:notation "Gal"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
@@ -1553,7 +1553,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:altLabel "gr_UK"@en ;
-    skos:definition "A grain is a unit of measurement of mass that is nominally based upon the mass of a single seed of a cereal. The grain is the only unit of mass measure common to the three traditional English mass and weight systems; the obsolete Tower grain was, by definition, exactly 1/64 of a troy grain. Since 1958, the grain or troy grain measure has been defined in terms of units of mass in the International System of Units (SI) as precisely 64.79891 mg. Thus, 1 gm ≈ 15.4323584 grains. There are precisely 7000 grains per avoirdupois pound in the imperial and US customary units, and 5760 grains in the troy pound."@en ;
+    skos:definition "A grain is a unit of measurement of mass that is nominally based upon the mass of a single seed of a cereal. The grain is the only unit of mass measure common to the three traditional English mass and weight systems; the obsolete Tower grain was, by definition, exactly 1/64 of a troy grain. Since 1958, the grain or troy grain measure has been defined in terms of units of mass in the International System of Units (SI) as precisely 64.79891 mg. Thus, 1 gm ≈ 15.4323584 grains. There are precisely 7000 grains per avoirdupois pound in the imperial and US customary units, and 5760 grains in the troy pound."@en ;
     skos:inScheme cs: ;
     skos:notation "gr{UK}"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "grain"@en ;
@@ -1587,7 +1587,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/GigaBYTE>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means 10⁹ in the International System of Units (SI), therefore 1 GB is 1 000 000 000 B. The unit symbol for the gigabyte is GB or Gbyte, but not Gb (lower case b) which is typically used for the gigabit. Historically, the term has also been used in some fields of computer science and information technology to denote the gibibyte, or 1073741824 B."@en ;
+    skos:definition "The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means 10⁹ in the International System of Units (SI), therefore 1 GB is 1 000 000 000 B. The unit symbol for the gigabyte is GB or Gbyte, but not Gb (lower case b) which is typically used for the gigabit. Historically, the term has also been used in some fields of computer science and information technology to denote the gibibyte, or 1073741824 B."@en ;
     skos:inScheme cs: ;
     skos:notation "GB"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "gigabyte"@en ;
@@ -3851,7 +3851,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
+<https://linked.data.gov.au/org/gswa>
     a schema:Organization ;
     schema:name "Geological Survey of Western Australia" ;
     schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
@@ -4176,9 +4176,9 @@ cs:
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2023-11-01"^^xsd:date ;
     schema:dateModified "2023-11-01"^^xsd:date ;
-    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
 .
