@@ -3,7 +3,7 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/metamorphic-P-T-trajectory>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -208,7 +208,7 @@ d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path."""@en ;
     skos:prefLabel "Metamorphic P–T trajectory"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole isoroles:custodian ;
+            dcat:hadRole dataroles:custodian ;
             prov:agent [
                     a schema:Person ;
                     schema:email ""^^xsd:anyURI ;
@@ -216,7 +216,7 @@ d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path."""@en ;
                 ]
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            dcat:hadRole dataroles:custodian ;
             prov:agent [
                     a schema:Person ;
                     schema:email ""^^xsd:anyURI ;

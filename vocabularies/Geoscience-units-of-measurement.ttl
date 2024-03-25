@@ -1,7 +1,7 @@
 PREFIX : <https://linked.data.gov.au/def/uom-geoscience/>
 PREFIX cs: <https://linked.data.gov.au/def/uom-geoscience>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
+PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -4159,7 +4159,7 @@ cs:
     skos:prefLabel "Geoscience units of measurement"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole isoroles:custodian ;
+            dcat:hadRole dataroles:custodian ;
             prov:agent
                 [
                     a schema:Person ;
@@ -4168,7 +4168,7 @@ cs:
                 ] ;
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            dcat:hadRole dataroles:custodian ;
             prov:agent
                 [
                     a schema:Person ;
