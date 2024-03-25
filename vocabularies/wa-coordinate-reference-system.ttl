@@ -8,7 +8,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
@@ -708,9 +708,9 @@ Note EPGS registry""" ;
 .
 
 <https://linked.data.gov.au/org/gswa>
-    a sdo:Organization ;
-    sdo:name "Geological Survey of Western Australia" ;
-    sdo:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
@@ -744,15 +744,17 @@ cs:
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
-                    sdo:name "Erin Gray" ;
+                    a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
+                    schema:name "Erin Gray" ;
                 ]
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent [
-                    a prov:Agent ;
-                    sdo:name "Angela Riganti" ;
+                    a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
+                    schema:name "Angela Riganti" ;
                 ]
         ] ;
 .
