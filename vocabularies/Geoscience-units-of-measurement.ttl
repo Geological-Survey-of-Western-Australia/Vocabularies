@@ -1,7 +1,7 @@
 PREFIX : <https://linked.data.gov.au/def/uom-geoscience/>
 PREFIX cs: <https://linked.data.gov.au/def/uom-geoscience>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX isoroles: <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -9,10 +9,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-<http://qudt.org/vocab/unit/BIT>
-    skos:notation "b"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-.
 
 <http://linked.data.gov.au/def/geou/BBLOE>
     a skos:Concept ;
@@ -265,7 +261,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://linked.data.gov.au/def/geou/FRAC>
     a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/geou> ;
-    skos:altLabel "·"@en ;
     skos:definition "A fraction whose denominator is a power of ten and whose numerator is expressed by figures placed to the right of a decimal point."@en ;
     skos:inScheme cs: ;
     skos:notation "."^^xsd:token ;
@@ -316,7 +311,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/geou> ;
     skos:altLabel "g_kg"@en ;
-    skos:definition "Grams per kilogram (g/kg) is a measure of concentration. The number of grams of a material of interest within the mass of one kilogram of total material."@en ;
+    skos:definition "Grams per kilogram (g/kg) is a measure of concentration. The number of grams of a material of interest within the mass of 1 kg of total material."@en ;
     skos:inScheme cs: ;
     skos:notation "g/kg"^^xsd:token ;
     skos:prefLabel "grams per kilogram"@en ;
@@ -387,7 +382,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "h_ft"@en ,
         "hr/ft"@en ;
-    skos:definition "An imperial unit for linear velocity. Used in borehole drilling to describe the rate of penetration and describes the number of hours taken to penetrate one foot of material."@en ;
+    skos:definition "An imperial unit for linear velocity. Used in borehole drilling to describe the rate of penetration and describes the number of hours taken to penetrate 1 ft of material."@en ;
     skos:inScheme cs: ;
     skos:notation "h/ft"^^xsd:token ;
     skos:prefLabel "hours per foot"@en ;
@@ -401,7 +396,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "h_m"@en ,
         "hr/m"@en ;
-    skos:definition "A unit for linear velocity. Used in borehole drilling to describe the rate of penetration and describes the number of hours taken to penetrate one metre of material."@en ;
+    skos:definition "A unit for linear velocity. Used in borehole drilling to describe the rate of penetration and describes the number of hours taken to penetrate 1 m of material."@en ;
     skos:inScheme cs: ;
     skos:notation "h/m"^^xsd:token ;
     skos:prefLabel "hours per metre"@en ;
@@ -427,7 +422,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "MBOE_Ml"@en ,
         "kBOE/ML"@en ;
-    skos:definition "A measure of oil quality or energy density defined as the energy equivalent to 1000 barrel of oil equivalents (6.1178632×1012 J) per million litres."@en ;
+    skos:definition "A measure of oil quality or energy density defined as the energy equivalent to 1000 barrel of oil equivalents (6.1178632×10¹² J) per million litres."@en ;
     skos:inScheme cs: ;
     skos:notation "MBOE/Ml"^^xsd:token ;
     skos:prefLabel "thousand barrels of oil equivalent per megalitre"@en ;
@@ -453,7 +448,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "MBTU_Ml"@en ,
         "kBTU/ML"@en ;
-    skos:definition "A measure of oil quality or energy density defined as the energy in 1000 BTU (British Thermal Units; 1 055 000 J) per million litres."@en ;
+    skos:definition "A measure of oil quality or energy density defined as the energy in 1000 BTU (British Thermal Units; 1 055 000 J) per million litres."@en ;
     skos:inScheme cs: ;
     skos:notation "MBTU/Ml"^^xsd:token ;
     skos:prefLabel "thousand British thermal units per megalitre"@en ;
@@ -518,7 +513,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "l_50 kg"@en ;
     skos:definition "A proportional concentration ratio typically used for cement mixtures. The number of litres of water added to 50 kg of additive(s)."@en ;
     skos:inScheme cs: ;
-    skos:notation "l/50 kg"^^xsd:token ;
+    skos:notation "l/50 kg"^^xsd:token ;
     skos:prefLabel "litres per 50 kg sack"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/L-PER-50SACK"^^xsd:anyURI ;
@@ -543,10 +538,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://linked.data.gov.au/def/geou/LB_F-PER-100FT2>
     a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/geou> ;
-    skos:altLabel "lbf_100 ft²"@en ;
-    skos:definition "Pounds force per 100 square feet (lbf/100 ft²) is a British (imperial) and US pressure unit. The number of pounds force applied to an area of 100 ft²."@en ;
+    skos:altLabel "lbf_100 ft²"@en ;
+    skos:definition "Pounds force per 100 square feet (lbf/100 ft²) is a British (imperial) and US pressure unit. The number of pounds force applied to an area of 100 ft²."@en ;
     skos:inScheme cs: ;
-    skos:notation "lbf/100 ft²"^^xsd:token ;
+    skos:notation "lbf/100 ft²"^^xsd:token ;
     skos:prefLabel "pounds force per 100 square feet"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/LB_F-PER-100FT2"^^xsd:anyURI ;
@@ -559,9 +554,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "lb_in"@en ,
         "lbf/in"@en ,
         "pounds force per inch"@en ;
-    skos:definition "A measure of the resistance offered by an elastic body to deformation. The length change of a body, in inches relative to the force applied, in pounds force."@en ;
+    skos:definition "A measure of the resistance offered by an elastic body to deformation. The length change of a body, in inches, relative to the force applied, in pounds force."@en ;
     skos:inScheme cs: ;
-    skos:notation "lb/in"^^xsd:token ;
+    skos:notation "lbf/in"^^xsd:token ;
     skos:prefLabel "pounds per inch"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/LB_F-PER-IN"^^xsd:anyURI ;
@@ -570,10 +565,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://linked.data.gov.au/def/geou/LB_M-PER-100FT2>
     a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/geou> ;
-    skos:altLabel "lb_100 ft²"@en ;
-    skos:definition "Pounds per 100 square feet (lb/100 ft²) is a British (imperial) and US pressure unit. The force equivalent to the number of pounds mass under standard gravity conditions applied to an area of 100 ft²."@en ;
+    skos:altLabel "lb_100 ft²"@en ;
+    skos:definition "Pounds per 100 square feet (lb/100 ft²) is a British (imperial) and US pressure unit. The force equivalent to the number of pounds mass under standard gravity conditions applied to an area of 100 ft²."@en ;
     skos:inScheme cs: ;
-    skos:notation "lb/100 ft²"^^xsd:token ;
+    skos:notation "lb/100 ft²"^^xsd:token ;
     skos:prefLabel "pounds per 100 square feet"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/LB_M-PER-100FT2"^^xsd:anyURI ;
@@ -585,9 +580,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "lb/50kg"@en ,
         "lb_50 kg"@en ;
-    skos:definition "A proportional concentration ratio typically used for cement mixtures. The number of pounds of water added to 50 kg of additive(s)."@en ;
+    skos:definition "A proportional concentration ratio typically used for cement mixtures. The number of pounds of water added to 50 kg of additive(s)."@en ;
     skos:inScheme cs: ;
-    skos:notation "lb/50 kg"^^xsd:token ;
+    skos:notation "lb/50 kg"^^xsd:token ;
     skos:prefLabel "pounds per 50 kg sack"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://linked.data.gov.au/def/geou/LB_M-PER-50SAC"^^xsd:anyURI ;
@@ -697,7 +692,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "MMBTU/ML"@en ,
         "MMBTU_Ml"@en ;
-    skos:definition "A measure of oil quality or energy density defined as the energy in 1 000 000 British thermal units (BTU) (1 055 000 000 J) per million litres."@en ;
+    skos:definition "A measure of oil quality or energy density defined as the energy in 1 000 000 British thermal units (BTU) (1 055 000 000 J) per million litres."@en ;
     skos:inScheme cs: ;
     skos:notation "MMBTU/Ml"^^xsd:token ;
     skos:prefLabel "million British thermal units per megalitre"@en ;
@@ -775,7 +770,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://linked.data.gov.au/def/geou/MilliD>
     a skos:Concept ;
     rdfs:isDefinedBy <http://linked.data.gov.au/def/geou> ;
-    skos:definition "A measure of permeability. A medium with a permeability of 1 millidarcy (mD) permits a flow of 0.001 cm³/s of a fluid with viscosity 1 cP (1 mPa·s) under a pressure gradient of 1 atm/cm acting across an area of 1 cm²."@en ;
+    skos:definition "A measure of permeability. A medium with a permeability of 1 millidarcy (mD) permits a flow of 0.001 cm³/s of a fluid with viscosity 1 cP (1 mPa·s) under a pressure gradient of 1 atm/cm acting across an area of 1 cm²."@en ;
     skos:inScheme cs: ;
     skos:notation "md"^^xsd:token ;
     skos:prefLabel "millidarcy"@en ;
@@ -1011,7 +1006,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "MOA"@en ,
         "minute arc"@en ,
         "minute of arc"@en ;
-    skos:definition "A minute of arc, arcminute, or minute arc (MOA), is a unit of angular measurement equal to one sixtieth (1/60) of one degree (circle/21 600), or π/10 800 radians. In turn, a second of arc or arcsecond is one sixtieth (1/60) of one minute of arc. Since one degree is defined as one three hundred and sixtieth (1/360) of a rotation, one minute of arc is 1/21 600 of a rotation. Prime (') is the symbol for the arcminute."@en ;
+    skos:definition "A minute of arc, arcminute, or minute arc (MOA), is a unit of angular measurement equal to one sixtieth (1/60) of one degree (circle/21 600), or π/10 800 radians. In turn, a second of arc or arcsecond is one sixtieth (1/60) of one minute of arc. Since one degree is defined as one three hundred and sixtieth (1/360) of a rotation, one minute of arc is 1/21 600 of a rotation. Prime (') is the symbol for the arcminute."@en ;
     skos:inScheme cs: ;
     skos:notation "'"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "arcminute"@en ;
@@ -1025,7 +1020,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "ARCSEC"@en ,
         "second of arc"@en ;
-    skos:definition "Arcsecond is a unit of angular measure, also called the second of arc, equal to 1/60 arcminute. One arcsecond is a very small angle: there are 1 296 000 in a circle. The International System of Units (SI) recommends double prime (ʺ) as the symbol for the arcsecond. The symbol has become common in astronomy, where very small angles are stated in milliarcseconds (mas)."@en ;
+    skos:definition "Arcsecond is a unit of angular measure, also called the second of arc, equal to 1/60 arcminute. One arcsecond is a very small angle: there are 1 296 000 in a circle. The International System of Units (SI) recommends double prime (ʺ) as the symbol for the arcsecond. The symbol has become common in astronomy, where very small angles are stated in milliarcseconds (mas)."@en ;
     skos:inScheme cs: ;
     skos:notation "\""^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "arcsecond"@en ;
@@ -1036,7 +1031,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/ATM>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The standard atmosphere (atm) is an international reference pressure defined as 101.325 kPa and formerly used as unit of pressure. For practical purposes it has been replaced by the bar which is 100 kPa. The difference of about 1% is not significant for many applications, and is within the error range of common pressure gauges."@en ;
+    skos:definition "The standard atmosphere (atm) is an international reference pressure defined as 101.325 kPa and formerly used as unit of pressure. For practical purposes it has been replaced by the bar which is 100 kPa. The difference of about 1% is not significant for many applications, and is within the error range of common pressure gauges."@en ;
     skos:inScheme cs: ;
     skos:notation "atm"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "standard atmosphere"@en ;
@@ -1044,10 +1039,25 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:citation "http://qudt.org/vocab/unit/ATM"^^xsd:anyURI ;
 .
 
+<http://qudt.org/vocab/unit/AU>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:altLabel
+        "a. u"@en ,
+        "au"@en ,
+        "ua"@en ;
+    skos:definition "An astronomical unit, abbreviated as AU, au, a. u, or ua is a unit of length equal to 149,597,870,700 m (92,955,807.273 mi) or approximately the mean Earth–Sun distance."@en ;
+    skos:inScheme cs: ;
+    skos:notation "AU"^^xsd:token ;
+    skos:prefLabel "astronomical unit"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "http://qudt.org/vocab/unit/AU"^^xsd:anyURI ;
+.
+
 <http://qudt.org/vocab/unit/BAR>
     a skos:Concept ;
     rdfs:isDefinedBy <https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The bar is a non-International System of Units (SI) unit of pressure, defined by the International Union of Pure and Applied Chemistry (IUPAC) as exactly equal to 100 000 Pa. It is about equal to the atmospheric pressure on Earth at sea level, and since 1982 the IUPAC has recommended that the standard for atmospheric pressure should be harmonized to 100 000 Pa = 1 bar ≈ 750.0616827 Torr. Units derived from the bar are the megabar (Mbar), kilobar (kbar), decibar (dbar), centibar (cbar) and millibar (mbar or mb). They are not part of either the SI or Centimetre–Gram–Second (CGS) system of units, but they are accepted for use with the SI."@en ;
+    skos:definition "The bar is a non-International System of Units (SI) unit of pressure, defined by the International Union of Pure and Applied Chemistry (IUPAC) as exactly equal to 100 000 Pa. It is about equal to the atmospheric pressure on Earth at sea level, and since 1982 the IUPAC has recommended that the standard for atmospheric pressure should be harmonized to 100 000 Pa = 1 bar ≈ 750.0616827 Torr. Units derived from the bar are the megabar (Mbar), kilobar (kbar), decibar (dbar), centibar (cbar) and millibar (mbar or mb). They are not part of either the SI or Centimetre–Gram–Second (CGS) system of units, but they are accepted for use with the SI."@en ;
     skos:inScheme cs: ;
     skos:notation "bar"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "bar"@en ;
@@ -1065,6 +1075,20 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "barrel"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://qudt.org/vocab/unit/BBL"^^xsd:anyURI ;
+.
+
+<http://qudt.org/vocab/unit/BIT>
+    a skos:Concept ;
+    skos:altLabel "bit"@en ;
+    skos:definition "The bit is the most basic unit of information in computing and digital communications, representing the capacity of data storage systems or communication channels. The name is a portmanteau of binary digit. A byte corresponds to 8 bits. Terms for large quantities of bits can be formed using the standard range of SI prefixes for powers of 10, e.g., kilo = 10³ = 1000 (as in kilobit or kbit), mega = 10⁶ = 1 000 000 (as in megabit or Mbit) and giga = 10⁹ = 1 000 000 000 (as in gigabit or Gbit). These prefixes are more often used for multiples of bytes, as in kilobyte (1 kB = 8000 bit), megabyte (1 MB = 8 000 000 bit), and gigabyte (1 GB = 8 000 000 000 bit)."@en ;
+    skos:inScheme cs: ;
+    skos:notation "b"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:prefLabel "bit"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation
+        "http://qudt.org/vocab/unit/BIT"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Bit"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Units_of_information"^^xsd:anyURI ;
 .
 
 <http://qudt.org/vocab/unit/BQ>
@@ -1100,8 +1124,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "BTU/LB"@en ,
         "BTU/lb"@en ,
         "BTU_IT/lb"@en ,
-        "BTU{IT}_lb"@en ,
-        "Btuɪᴛ/lb"@en ;
+        "BTU{IT}_lb"@en ;
     skos:definition "The amount of energy generated by a pound of substance is measured in British thermal units (IT) per pound of mass (Btu{IT}/lb). 1 Btu{IT}/lb is equivalent to 2.326 x 10³ J/kg."@en ;
     skos:inScheme cs: ;
     skos:notation "BTU{IT}/lb"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
@@ -1131,7 +1154,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "carat"@en ,
         "carats"@en ,
         "cts"@en ;
-    skos:definition "The carat is a unit of mass equal to 200 mg (0.2 g) and is used for measuring gemstones and pearls. The current definition, sometimes known as the metric carat, was adopted in 1907 at the Fourth General Conference on Weights and Measures, and soon afterward in many countries around the world. The carat is divisible into one hundred points of 2 mg each. Other subdivisions, and slightly different mass values, have been used in the past in different locations. In terms of diamonds, a paragon is a flawless stone of at least 100 carats (20 g). The ANSI X.12 EDI standard abbreviation for the carat is CD."@en ;
+    skos:definition "The carat is a unit of mass equal to 200 mg (0.2 g) and is used for measuring gemstones and pearls. The current definition, sometimes known as the metric carat, was adopted in 1907 at the Fourth General Conference on Weights and Measures, and soon afterward in many countries around the world. The carat is divisible into one hundred points of 2 mg each. Other subdivisions, and slightly different mass values, have been used in the past in different locations. In terms of diamonds, a paragon is a flawless stone of at least 100 carats (20 g). The ANSI X.12 EDI standard abbreviation for the carat is CD."@en ;
     skos:inScheme cs: ;
     skos:notation "ct"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "carat"@en ;
@@ -1172,7 +1195,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "CM2"@en ,
         "square centimeter"@en ;
-    skos:definition "A unit of area equal to that of a square of sides 1 cm."@en ;
+    skos:definition "A unit of area equal to that of a square of sides 1 cm."@en ;
     skos:inScheme cs: ;
     skos:notation "cm²"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "square centimetre"@en ;
@@ -1205,6 +1228,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:citation
         "http://qudt.org/vocab/unit/CentiPOISE"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Poise_(unit)"^^xsd:anyURI ;
+.
+
+<http://qudt.org/vocab/unit/Ci>
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:definition "The curie (symbol Ci) is a non-International System of Units (SI) unit of radioactivity, named after Marie and Pierre Curie. It is defined as 1 Ci = 3.7 × 10¹⁰ decays per second. Its continued use is discouraged. One curie is roughly the activity of 1 gram of the radium isotope Ra, a substance studied by the Curies. The SI derived unit of radioactivity is the becquerel (Bq), which equates to one decay per second. Therefore: 1 Ci = 3.7 × 10¹⁰ Bq and 1 Bq = 2.703 × 10⁻¹¹ Ci."@en ;
+    skos:inScheme cs: ;
+    skos:notation "Ci"^^xsd:token ;
+    skos:prefLabel "curie"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "http://qudt.org/vocab/unit/Ci"^^xsd:anyURI ;
 .
 
 <http://qudt.org/vocab/unit/DAY>
@@ -1407,7 +1441,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "cm/s²"@en ,
         "cm_s²"@en ,
         "gal"@en ;
-    skos:definition "The galileo (or Gal) is the unit of acceleration of free fall used extensively in the science of gravimetry. The galileo is defined as 1 cm/s². Unfortunately, the galileo is often denoted with the symbol Gal, not to be confused with the gallon that also uses the same symbol (gal)."@en ;
+    skos:definition "The galileo (or Gal) is the unit of acceleration of free fall used extensively in the science of gravimetry. The galileo is defined as 1 cm/s². Unfortunately, the galileo is often denoted with the symbol Gal, not to be confused with the gallon that also uses the same symbol (gal)."@en ;
     skos:historyNote "https://en.wikipedia.org/wiki/Gal_(unit)" ;
     skos:inScheme cs: ;
     skos:notation "Gal"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
@@ -1477,10 +1511,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "G_CM3"@en ,
         "g/cc"@en ,
         "g_cm³"@en ,
-        "gcm³"@en ,
+        "gcm⁻³"@en ,
         "gm/cc"@en ,
-        "gm/cm³"@en ,
-        "gm³"@en ;
+        "gm/cm³"@en ;
     skos:definition "Gram per cubic centimetre is an International System of Units (SI) derived unit of density, defined by mass in grams divided by volume in cubic centimetres. The official SI symbol is g.cm⁻³, or equivalently g/cm³. Also defined as 0.001-fold of the SI base unit kilogram divided by the 0.000 001-fold of the power of the SI base unit metre with the exponent 3."@en ;
     skos:inScheme cs: ;
     skos:notation "g/cm³"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
@@ -1553,7 +1586,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:altLabel "gr_UK"@en ;
-    skos:definition "A grain is a unit of measurement of mass that is nominally based upon the mass of a single seed of a cereal. The grain is the only unit of mass measure common to the three traditional English mass and weight systems; the obsolete Tower grain was, by definition, exactly 1/64 of a troy grain. Since 1958, the grain or troy grain measure has been defined in terms of units of mass in the International System of Units (SI) as precisely 64.79891 mg. Thus, 1 gm ≈ 15.4323584 grains. There are precisely 7000 grains per avoirdupois pound in the imperial and US customary units, and 5760 grains in the troy pound."@en ;
+    skos:definition "A grain is a unit of measurement of mass that is nominally based upon the mass of a single seed of a cereal. The grain is the only unit of mass measure common to the three traditional English mass and weight systems; the obsolete Tower grain was, by definition, exactly 1/64 of a troy grain. Since 1958, the grain or troy grain measure has been defined in terms of units of mass in the International System of Units (SI) as precisely 64.79891 mg. Thus, 1 gram ≈ 15.4323584 grains. There are precisely 7000 grains per avoirdupois pound in the imperial and US customary units, and 5760 grains in the troy pound."@en ;
     skos:inScheme cs: ;
     skos:notation "gr{UK}"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "grain"@en ;
@@ -1565,7 +1598,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:altLabel "J/kg"@en ;
-    skos:definition "The International System of Units (SI) unit of radiation dose. Radiation carries energy, and when it is absorbed by matter the matter receives this energy. The dose is the amount of energy deposited per unit of mass. One gray is defined to be the dose of one joule of energy absorbed per kilogram of matter, or 100 rad. The unit is named for the British physician L. Harold Gray (1905–1965), an authority on the use of radiation in the treatment of cancer."@en ;
+    skos:definition "The International System of Units (SI) unit of radiation dose. Radiation carries energy, and when it is absorbed by matter the matter receives this energy. The dose is the amount of energy deposited per unit of mass. One gray is defined to be the dose of one joule of energy absorbed per kilogram of matter, or 100 rad. The unit is named for the British physician L Harold Gray (1905–65), an authority on the use of radiation in the treatment of cancer."@en ;
     skos:inScheme cs: ;
     skos:notation "Gy"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "gray"@en ;
@@ -1587,7 +1620,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/GigaBYTE>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means 10⁹ in the International System of Units (SI), therefore 1 GB is 1 000 000 000 B. The unit symbol for the gigabyte is GB or Gbyte, but not Gb (lower case b) which is typically used for the gigabit. Historically, the term has also been used in some fields of computer science and information technology to denote the gibibyte, or 1073741824 B."@en ;
+    skos:definition "The gigabyte is a multiple of the unit byte for digital information storage. The prefix giga means 10⁹ in the International System of Units (SI), therefore 1 GB is 1 000 000 000 B. The unit symbol for the gigabyte is GB or Gbyte, but not Gb (lowercase b) which is typically used for the gigabit. Historically, the term has also been used in some fields of computer science and information technology to denote the gibibyte, or 1073741824 B."@en ;
     skos:inScheme cs: ;
     skos:notation "GB"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "gigabyte"@en ;
@@ -1646,7 +1679,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/IN>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "An inch (in) is the name of a unit of length in a number of different systems, including imperial units, and US customary units. There are 36 inches in a yard and 12 inches in a foot, and one inch equals 25.4 mm. The difference between a US customary inch and an imperial inch is insignificant for most applications (the accepted value of 25.4 mm is 1.7 millionths of an inch longer than the old imperial inch and 2 millionths of an inch shorter than the old US inch). Corresponding units of area and volume are the square inch and the cubic inch."@en ;
+    skos:definition "An inch (in) is the name of a unit of length in a number of different systems, including imperial units, and US customary units. There are 36 in in a yard and 12 in in a foot, and 1 in equals 25.4 mm. The difference between a US customary inch and an imperial inch is insignificant for most applications (the accepted value of 25.4 mm is 1.7 millionths of an inch longer than the old imperial inch and 2 millionths of an inch shorter than the old US inch). Corresponding units of area and volume are the square inch and the cubic inch."@en ;
     skos:inScheme cs: ;
     skos:notation "in"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "inch"@en ;
@@ -1697,7 +1730,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/KiloBAR>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The kilobar (kbar) is derived from the bar and is equivalent to 1000 or 103 bars. It is not an International System of Units (SI) or Centimetre–Gram–Second (CGS) unit, but is accepted for use with the SI."@en ;
+    skos:definition "The kilobar (kbar) is derived from the bar and is equivalent to 1000 or 10³ bars. It is not an International System of Units (SI) or Centimetre–Gram–Second (CGS) unit, but is accepted for use with the SI."@en ;
     skos:inScheme cs: ;
     skos:notation "kbar"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "kilobar"@en ;
@@ -1858,7 +1891,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/KiloN>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The kilonewton (KN) is a multiple of the unit newton (N), the International System of Units (SI) unit of force."@en ;
+    skos:definition "The kilonewton (kN) is a multiple of the unit newton (N), the International System of Units (SI) unit of force."@en ;
     skos:inScheme cs: ;
     skos:notation "kN"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "kilonewton"@en ;
@@ -1869,7 +1902,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/KiloPA>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "Kilopascal (kPa) is a unit of pressure. 1 kPa is approximately the pressure exerted by a 10 g mass resting on a 1 cm² area. 101.3 kPa = 1 atm. There are 1000 pascals in 1 kilopascal."@en ;
+    skos:definition "Kilopascal (kPa) is a unit of pressure. 1 kPa is approximately the pressure exerted by a 10 g mass resting on a 1 cm² area. 101.3 kPa = 1 atm. There are 1000 Pa in 1 kPa."@en ;
     skos:inScheme cs: ;
     skos:notation "kPa"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "kilopascal"@en ;
@@ -1883,7 +1916,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "L"@en ,
         "liter"@en ;
-    skos:definition "The litre (l or L) is a non-International System of Units (SI) metric system unit of volume equal to 1 dm³, 1000 cm³ or 1/1000 m³. If the lower case \"L\" is used as the symbol, it is sometimes rendered as a cursive \"l\" to help distinguish it from the capital \"I\", although this usage has no official approval by any international bureau."@en ;
+    skos:definition "The litre (l or L) is a non-International System of Units (SI) metric system unit of volume equal to 1 dm³, 1000 cm³ or 1/1000 m³. If the lowercase \"l\" is used as the symbol, it is sometimes rendered as a cursive \"l\" to help distinguish it from the capital \"I\", although this usage has no official approval by any international bureau."@en ;
     skos:inScheme cs: ;
     skos:notation "l"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "litre"@en ;
@@ -2116,7 +2149,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "mc"@en ,
         "meters cubed"@en ,
         "metres cubed"@en ;
-    skos:definition "The International System of Units (SI) unit of volume, equal to 1 × 10⁻⁶ cm³, 1000 l, 35.3147 ft³ or 1.30795 yd³. A cubic metre holds about 264.17 gal (US) or 219.99 gal{Imp}."@en ;
+    skos:definition "The International System of Units (SI) unit of volume, equal to 1 × 10⁶ cm³, 1000 l, 35.3147 ft³ or 1.30795 yd³. A cubic metre holds about 264.17 gal (US) or 219.99 gal{Imp}."@en ;
     skos:inScheme cs: ;
     skos:notation "m³"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "cubic metre"@en ;
@@ -2180,7 +2213,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:altLabel
         "MILE2"@en ,
-        "sq mi"@en ;
+        "sq mi"@en ,
+        "square imperial mile"@en ;
     skos:definition "The square mile is an imperial and US unit of measure for an area equal to the area of a square of one statute mile. It should not be confused with miles square, which refers to the number of miles on each side squared. For instance, 20 miles square (20 × 20 mi) is equal to 400 square miles. One square mile is equivalent to: 4 014 489 600 in², 27 878 400 ft², 3 097 600 yd², 640 acres, 258.9988110336 ha, 2560 roods, 25 899 881 103.36 cm², 2 589 988.110336 m², 2.589988110336 km². When applied to a portion of the Earth's surface, which is curved rather than flat, 'square mile' is an informal synonym for section."@en ;
     skos:inScheme cs: ;
     skos:notation "mi²"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
@@ -2315,7 +2349,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:altLabel
         "Microgrammes Per Gram"@en ,
-        "NG/G"@en ,
         "UG/G"@en ,
         "µg_g"@en ;
     skos:definition "A measure of concentration. The number of micrograms (μg) of a material of interest within the mass of 1 g of total material. Also defined as one part per 10⁶ (million) by mass of the measurand in the matrix."@en ;
@@ -2421,7 +2454,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/MicroSV>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "The microsievert is a measure of dose equivalent for ionizing radiation, equal to one-millionth of one sievert or 10–6 sievert."@en ;
+    skos:definition "The microsievert is a measure of dose equivalent for ionizing radiation, equal to one-millionth of one sievert or 10⁻⁶ sievert."@en ;
     skos:inScheme cs: ;
     skos:notation "µSv"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "microsievert"@en ;
@@ -2436,7 +2469,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:definition "0.001-fold of the unit of acceleration called Gal according to the Centimetre–Gram–Second (CGS) system of units."@en ;
     skos:inScheme cs: ;
-    skos:notation "mgal"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:notation "mGal"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "milligal"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://qudt.org/vocab/unit/MilliGAL"^^xsd:anyURI ;
@@ -2682,7 +2715,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:altLabel "nanometer"@en ;
-    skos:definition "A nanometre (nm) is a unit of length equivalent to one-billionth of one metre or 10−9 metres. Also defined as 0.000000001-fold of the International System of Units (SI) base unit metre."@en ;
+    skos:definition "A nanometre (nm) is a unit of length equivalent to one-billionth of one metre or 10⁻⁹ metres. Also defined as 0.000000001-fold of the International System of Units (SI) base unit metre."@en ;
     skos:inScheme cs: ;
     skos:notation "nm"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "nanometre"@en ;
@@ -2693,7 +2726,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 <http://qudt.org/vocab/unit/NanoSEC>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
-    skos:definition "A nanosecond is an International System of Units (SI) unit of time equal to one-billionth of one second (10–9 or 1/1 000 000 000 s). One nanosecond is to one second as one second is to 31.69 years."@en ;
+    skos:definition "A nanosecond is an International System of Units (SI) unit of time equal to one-billionth of one second (10⁻⁹ or 1/1 000 000 000 s). One nanosecond is to one second as one second is to 31.69 years."@en ;
     skos:inScheme cs: ;
     skos:notation "ns"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "nanosecond"@en ;
@@ -2960,6 +2993,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:citation "http://qudt.org/vocab/unit/PetaJ"^^xsd:anyURI ;
 .
 
+<http://qudt.org/vocab/unit/R>
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:definition "Not to be confused with roentgen equivalent man or roentgen equivalent physical. The roentgen (symbol R) is an obsolete unit of measurement for the kerma of X-rays and gamma rays up to 3 MeV."@en ;
+    skos:inScheme cs: ;
+    skos:notation "R"^^<http://qudt.org/vocab/unit/R> ;
+    skos:prefLabel "roentgen"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "http://qudt.org/vocab/unit/R"^^xsd:anyURI ;
+.
+
 <http://qudt.org/vocab/unit/RAD>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
@@ -2971,6 +3015,28 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:citation
         "http://qudt.org/vocab/unit/RAD"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Radian"^^xsd:anyURI ;
+.
+
+<http://qudt.org/vocab/unit/RAD_R>
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:definition "The rad is a deprecated unit of absorbed radiation dose, defined as 1 rad = 0.01 Gy = 0.01 J/kg. It was originally defined in CGS units in 1953 as the dose causing 100 ergs of energy to be absorbed by one gram of matter. It has been replaced by the gray in most of the world. A related unit, the roentgen, was formerly used to quantify the number of rad deposited into a target when it was exposed to radiation. The F-factor can used to convert between rad and roentgens. The material absorbing the radiation can be human tissue or silicon microchips or any other medium (for example, air, water, lead shielding, etc.)."@en ;
+    skos:inScheme cs: ;
+    skos:notation "RAD_R"^^<http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:prefLabel "rad"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "http://qudt.org/vocab/unit/RAD_R"^^xsd:anyURI ;
+.
+
+<http://qudt.org/vocab/unit/REM>
+    a skos:Concept ;
+    rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:definition "A rem is a deprecated unit used to measure the biological effects of ionizing radiation. The rem is defined as equal to 0.01 sievert, which is the more commonly used unit outside of the United States. Equivalent dose, effective dose and committed dose can all be measured in units of rem. These quantities are products of the absorbed dose in rads and weighting factors. These factors must be selected for each exposure situation; there is no universally applicable conversion constant from rad to rem. A rem is a large dose of radiation, so the millirem (mrem), which is one thousandth of a rem, is often used for the dosages commonly encountered, such as the amount of radiation received from medical x-rays and background sources."@en ;
+    skos:inScheme cs: ;
+    skos:notation "REM"^^<http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
+    skos:prefLabel "rem"@en ;
+    skos:topConceptOf cs: ;
+    schema:citation "http://qudt.org/vocab/unit/REM"^^xsd:anyURI ;
 .
 
 <http://qudt.org/vocab/unit/REV-PER-HR>
@@ -3137,7 +3203,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:altLabel "Tbyte"@en ;
-    skos:definition "The terabyte (TB) is a multiple of the unit byte for digital information. The prefix tera means 10¹² in the International System of Units (SI), and therefore 1 TB is 1 000 000 000 000 B (1 trillion bytes) or 1000 GB. 1 TB in binary prefixes is 0.9095 tebibytes, or 931.32 gibibytes. The unit symbol for the terabyte is TB or TByte, but not Tb (lower case b) which refers to terabit."@en ;
+    skos:definition "The terabyte (TB) is a multiple of the unit byte for digital information. The prefix tera means 10¹² in the International System of Units (SI), and therefore 1 TB is 1 000 000 000 000 B (1 trillion bytes) or 1000 GB. 1 TB in binary prefixes is 0.9095 tebibytes, or 931.32 gibibytes. The unit symbol for the terabyte is TB or TByte, but not Tb (lowercase b) which refers to terabit."@en ;
     skos:inScheme cs: ;
     skos:notation "TB"^^<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> ;
     skos:prefLabel "terabyte"@en ;
@@ -3301,20 +3367,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "https://www.investopedia.com/terms/b/bd.asp"^^xsd:anyURI ;
 .
 
-:BIT
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:altLabel "bit"@en ;
-    skos:definition "The bit is the most basic unit of information in computing and digital communications, representing the capacity of data storage systems or communication channels. The name is a portmanteau of binary digit. A byte corresponds to 8 bits. Terms for large quantities of bits can be formed using the standard range of SI prefixes for powers of 10, e.g., kilo = 10³ = 1000 (as in kilobit or kbit), mega = 10⁶ = 1 000 000 (as in megabit or Mbit) and giga = 10⁹ = 1 000 000 000 (as in gigabit or Gbit). These prefixes are more often used for multiples of bytes, as in kilobyte (1 kB = 8000 bit), megabyte (1 MB = 8 000 000 bit), and gigabyte (1 GB = 8 000 000 000 bit)."@en ;
-    skos:inScheme cs: ;
-    skos:prefLabel "bit"@en ;
-    skos:topConceptOf cs: ;
-    schema:citation
-        "http://qudt.org/vocab/unit/BIT"^^xsd:anyURI ,
-        "https://en.wikipedia.org/wiki/Bit"^^xsd:anyURI ,
-        "https://en.wikipedia.org/wiki/Units_of_information"^^xsd:anyURI ;
-.
-
 :Bq-PER-GM
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -3400,7 +3452,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "°C_km"@en ;
-    skos:definition "Degrees Celsius per kilometre is a measure of geothermal gradient, expressed as temperature in degrees Celsius (°C) divided by depth in kilometres (km). Use of use of degree Celsius per kilobar (or per gigapascal) is preferred, as the conversion from pressure to kilometre (depth) requires the rock density to be known."@en ;
+    skos:definition "Degrees Celsius per kilometre is a measure of geothermal gradient, expressed as temperature in degrees Celsius (°C) divided by depth in kilometres (km). Use of degree Celsius per kilobar (or per gigapascal) is preferred, as the conversion from pressure to kilometre (depth) requires the rock density to be known."@en ;
     skos:historyNote "Kelsey, DE and Hand, M, 2015, On ultrahigh temperature crustal metamorphism: Phase equilibria, trace element thermometry, bulk composition, heat sources, timescales and tectonic settings; Geoscience Frontiers, v. 6(3), p. 311–356, ISSN 1674-9871, https://doi.org/10.1016/j.gsf.2014.09.006." ;
     skos:inScheme cs: ;
     skos:notation "°C/km"^^xsd:token ;
@@ -3544,17 +3596,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-:KiloFT3
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:altLabel "thousand cubic meters"@en ;
-    skos:definition "Thousand cubic metres is a unit of volume, defined as the volume of a cube with sides of 1000 m in length."@en ;
-    skos:inScheme cs: ;
-    skos:notation "TCM"^^xsd:token ;
-    skos:prefLabel "thousand cubic metres"@en ;
-    skos:topConceptOf cs: ;
-.
-
 :KiloGM-PER-TON_M
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -3578,6 +3619,17 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "km²"^^xsd:token ;
     skos:prefLabel "square kilometre"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:KiloM3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel "thousand cubic meters"@en ;
+    skos:definition "Thousand cubic metres is a unit of volume, defined as the volume of a cube with sides of 1000 m in length."@en ;
+    skos:inScheme cs: ;
+    skos:notation "TCM"^^xsd:token ;
+    skos:prefLabel "thousand cubic metres"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -3714,7 +3766,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "dose rate"@en ,
         "dose units"@en ,
         "nGy_h"@en ;
-    skos:definition "A measure of radiation dose, expressed as nanograys per hour. The gray (Gy) is an International System of Units (SI) unit for the measurement of radiation exposure, equivalent to the energy 'deposited' in a kilogram of a substance by the radiation. Exposure is also referred to as absorbed dose. The important concept is that exposure is measured by what radiation does to substances, not anything particular about the radiation itself. The gray is a large unit and for normal radiation protection levels a series of prefixes are used: nanogray (nGy) is one thousand millionth of a gray (1/1 000 000 000), microgray (µGy) is one millionth of a gray (1/1 000 000), milligray (mGy) is one thousandth of a gray (1/1000)."@en ;
+    skos:definition "A measure of radiation dose, expressed as nanograys per hour. The gray (Gy) is an International System of Units (SI) unit for the measurement of radiation exposure, equivalent to the energy 'deposited' in a kilogram of a substance by the radiation. Exposure is also referred to as absorbed dose. The important concept is that exposure is measured by what radiation does to substances, not anything particular about the radiation itself. The gray is a large unit and for normal radiation protection levels a series of prefixes are used: nanogray (nGy) is one billionth of a gray (1/1 000 000 000), microgray (µGy) is one millionth of a gray (1/1 000 000), milligray (mGy) is one thousandth of a gray (1/1000)."@en ;
     skos:inScheme cs: ;
     skos:notation "nGy/h"^^xsd:token ;
     skos:prefLabel "nanogray per hour"@en ;
@@ -3726,21 +3778,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
-        "OZ-TR/TS"@en ,
-        "Troy Ounce Per Short Imperial Ton"@en ,
-        "oz{troy}_st"@en ,
-        "oz t/st"@en ;
-    skos:definition "A measure of concentration. The number of troy ounces of a material of interest within the mass of 1 st of total material."@en ;
-    skos:inScheme cs: ;
-    skos:notation "oz{troy}/st"^^xsd:token ;
-    skos:prefLabel "troy ounce per short ton"@en ;
-    skos:topConceptOf cs: ;
-.
-
-:OZ_TROY-PER-TON_SHORT
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:altLabel
         "OZ-TR/TL"@en ,
         "Troy Ounce Per Long Imperial Ton"@en ,
         "oz{troy}_ton"@en ,
@@ -3749,6 +3786,21 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:inScheme cs: ;
     skos:notation "oz{troy}/ton"^^xsd:token ;
     skos:prefLabel "troy ounce per long ton"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:OZ_TROY-PER-TON_SHORT
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "OZ-TR/TS"@en ,
+        "Troy Ounce Per Short Imperial Ton"@en ,
+        "oz{troy}_st"@en ,
+        "oz t/st"@en ;
+    skos:definition "A measure of concentration. The number of troy ounces of a material of interest within the mass of 1 st of total material."@en ;
+    skos:inScheme cs: ;
+    skos:notation "oz{troy}/st"^^xsd:token ;
+    skos:prefLabel "troy ounce per short ton"@en ;
     skos:topConceptOf cs: ;
 .
 
@@ -3772,7 +3824,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "phi"@en ;
-    skos:definition "Latitude degrees are the units of measurement for the angular distance of a place north or south of the earth's equator. Lines of constant latitude run east and west, parallel to the equator, and range from 0 degrees at the equator to 90 degrees at the North or South poles. There are different kinds of latitude — geocentric, astronomical, and geographic (or geodetic) — but there are only minor differences between them. In most common references, geodetic latitude is implied. Geodetic latitude is the arc subtended by the equatorial plane and the normal line that can be drawn at a given point on Earth’s surface. It is measured in degrees, minutes and seconds or decimal degrees, north or south of the equator. Geodetic latitude angles are usually denoted by the Greek lower-case letter phi (ϕ or φ), with upper-case N or S to indicate whether the location is in the Northern or Southern hemisphere. One degree of latitude covers about 111 km (69 mi) and can be further divided into 60 minutes and 60 seconds."@en ;
+    skos:definition "Latitude degrees are the units of measurement for the angular distance of a place north or south of the earth's equator. Lines of constant latitude run east and west, parallel to the equator, and range from 0 degrees at the equator to 90 degrees at the North or South poles. There are different kinds of latitude — geocentric, astronomical, and geographic (or geodetic) — but there are only minor differences between them. In most common references, geodetic latitude is implied. Geodetic latitude is the arc subtended by the equatorial plane and the normal line that can be drawn at a given point on Earth’s surface. It is measured in degrees, minutes and seconds or decimal degrees, north or south of the equator. Geodetic latitude angles are usually denoted by the Greek lowercase letter phi (ϕ or φ), with uppercase N or S to indicate whether the location is in the Northern or Southern hemisphere. One degree of latitude covers about 111 km (69 mi) and can be further divided into 60 minutes and 60 seconds."@en ;
     skos:inScheme cs: ;
     skos:notation "ϕ"^^xsd:token ;
     skos:prefLabel "latitude degree"@en ;
@@ -3851,15 +3903,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/org/gswa>
+<https://linked.data.g​ov.au/org/gswa>
     a schema:Organization ;
-    schema:name "Geological Survey of Western Australia" ;
-    schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
+    schema:name "Gswa" ;
+    schema:url ""^^xsd:anyURI ;
 .
 
 cs:
     a skos:ConceptScheme ;
-    reg:status <https://linked.data.gov.au/def/reg-statuses/experimental> ;
+    reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
     owl:versionIRI :1 ;
     skos:definition "A list of units of measurement relevant for geoscience and the administration of statutory submissions from the resource industries. The list is based on the Geological Survey of Queensland (GSQ) Geoscience Profile of the Quantities, Units, Dimensions & Types (QUDT) ontology and vocabularies lists (https://linked.data.gov.au/def/geou and https://www.qudt.org/doc/DOC_VOCAB-UNITS.html - version 2.1.29). QUDT is based largely on the international standard for metric units (International System of Units, or SI) but also includes units from other systems, notably the Centimetre–Gram–Second (CGS or cgs) system of units and most US Customary and British imperial units for length, weight and heat. Wherever applicable, the SI standard is used for conversions between non-SI units (https://www.qudt.org/pages/QUDToverviewPage.html). Commonly used multiples of base units are also included, and the list has been expanded to include units of measurements for time that are relevant to earth sciences; for these, notations follow the recommendations of Norman et al. (2011), available at http://www.dmp.wa.gov.au/Documents/Geological-Survey/Use-and-reporting-of-geochronology.pdf). Some QUDT definitions have been extended, mostly to clarify what the unit is a measure of. Notations are the correct symbol to use for the unit of measurement; common variations of these are indicated as alternate labels, but their use is strongly discouraged. English spelling is preferred over American spelling (e.g. metre, not meter). Other rules and style conventions for spelling units names follow the 2008 Edition of the Guide for International System of Units (SI), NIST Special Publication 811, National Institute of Standards and Technology, US Department of Commerce (https://physics.nist.gov/cuu/pdf/sp811.pdf)."@en ;
     skos:hasTopConcept
@@ -3940,8 +3992,10 @@ cs:
         <http://qudt.org/vocab/unit/ARCMIN> ,
         <http://qudt.org/vocab/unit/ARCSEC> ,
         <http://qudt.org/vocab/unit/ATM> ,
+        <http://qudt.org/vocab/unit/AU> ,
         <http://qudt.org/vocab/unit/BAR> ,
         <http://qudt.org/vocab/unit/BBL> ,
+        <http://qudt.org/vocab/unit/BIT> ,
         <http://qudt.org/vocab/unit/BQ> ,
         <http://qudt.org/vocab/unit/BTU_IT> ,
         <http://qudt.org/vocab/unit/BTU_IT-PER-LB> ,
@@ -3952,6 +4006,7 @@ cs:
         <http://qudt.org/vocab/unit/CentiM2> ,
         <http://qudt.org/vocab/unit/CentiM3> ,
         <http://qudt.org/vocab/unit/CentiPOISE> ,
+        <http://qudt.org/vocab/unit/Ci> ,
         <http://qudt.org/vocab/unit/DAY> ,
         <http://qudt.org/vocab/unit/DEG> ,
         <http://qudt.org/vocab/unit/DEG_C> ,
@@ -4079,7 +4134,10 @@ cs:
         <http://qudt.org/vocab/unit/PSI> ,
         <http://qudt.org/vocab/unit/PetaBYTE> ,
         <http://qudt.org/vocab/unit/PetaJ> ,
+        <http://qudt.org/vocab/unit/R> ,
         <http://qudt.org/vocab/unit/RAD> ,
+        <http://qudt.org/vocab/unit/RAD_R> ,
+        <http://qudt.org/vocab/unit/REM> ,
         <http://qudt.org/vocab/unit/REV-PER-HR> ,
         <http://qudt.org/vocab/unit/REV-PER-MIN> ,
         <http://qudt.org/vocab/unit/S> ,
@@ -4103,7 +4161,6 @@ cs:
         :BANK_M3 ,
         :BBL_US ,
         :BBL_US_d ,
-        :BIT ,
         :Bq-PER-GM ,
         :CARAT-PER-100-TON_M ,
         :CARAT-PER-STONE ,
@@ -4121,9 +4178,9 @@ cs:
         :GigaYR ,
         :KiloCARAT ,
         :KiloFT2 ,
-        :KiloFT3 ,
         :KiloGM-PER-TON_M ,
         :KiloM2 ,
+        :KiloM3 ,
         :KiloYR ,
         :LAMBDA ,
         :M3-PER-TON ,
@@ -4159,26 +4216,26 @@ cs:
     skos:prefLabel "Geoscience units of measurement"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole dataroles:custodian ;
+            dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Erin Gray" ;
+                    a schema:Organization ;
+                    schema:name "Angela Riganti" ;
+                    schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ,
         [
-            dcat:hadRole dataroles:custodian ;
+            dcat:hadRole isoroles:custodian ;
             prov:agent
                 [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Angela Riganti" ;
+                    a schema:Organization ;
+                    schema:name "Erin Gray" ;
+                    schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
     schema:dateCreated "2023-11-01"^^xsd:date ;
     schema:dateModified "2023-11-01"^^xsd:date ;
-    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
     schema:version "1" ;
 .
