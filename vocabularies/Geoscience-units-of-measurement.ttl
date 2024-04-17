@@ -3912,7 +3912,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.1 ;
     skos:definition "A list of units of measurement relevant for geoscience and the administration of statutory submissions from the resource industries. The list is based on the Geological Survey of Queensland (GSQ) Geoscience Profile of the Quantities, Units, Dimensions & Types (QUDT) ontology and vocabularies lists (https://linked.data.gov.au/def/geou and https://www.qudt.org/doc/DOC_VOCAB-UNITS.html - version 2.1.29). QUDT is based largely on the international standard for metric units (International System of Units, or SI) but also includes units from other systems, notably the Centimetre–Gram–Second (CGS or cgs) system of units and most US Customary and British imperial units for length, weight and heat. Wherever applicable, the SI standard is used for conversions between non-SI units (https://www.qudt.org/pages/QUDToverviewPage.html). Commonly used multiples of base units are also included, and the list has been expanded to include units of measurements for time that are relevant to earth sciences; for these, notations follow the recommendations of Norman et al. (2011), available at http://www.dmp.wa.gov.au/Documents/Geological-Survey/Use-and-reporting-of-geochronology.pdf). Some QUDT definitions have been extended, mostly to clarify what the unit is a measure of. Notations are the correct symbol to use for the unit of measurement; common variations of these are indicated as alternate labels, but their use is strongly discouraged. English spelling is preferred over American spelling (e.g. metre, not meter). Other rules and style conventions for spelling units names follow the 2008 Edition of the Guide for International System of Units (SI), NIST Special Publication 811, National Institute of Standards and Technology, US Department of Commerce (https://physics.nist.gov/cuu/pdf/sp811.pdf)."@en ;
     skos:hasTopConcept
         <http://linked.data.gov.au/def/geou/BBLOE> ,
@@ -4220,7 +4220,7 @@ cs:
             prov:agent
                 [
                     a schema:Organization ;
-                    schema:name "Angela Riganti" ;
+                    schema:name "Erin Gray" ;
                     schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ,
@@ -4229,13 +4229,13 @@ cs:
             prov:agent
                 [
                     a schema:Organization ;
-                    schema:name "Erin Gray" ;
+                    schema:name "Angela Riganti" ;
                     schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ;
     schema:creator <https://linked.data.g​ov.au/org/gswa> ;
     schema:dateCreated "2023-11-01"^^xsd:date ;
-    schema:dateModified "2023-11-01"^^xsd:date ;
+    schema:dateModified "2023-04-15"^^xsd:date ;
     schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.1" ;
 .
