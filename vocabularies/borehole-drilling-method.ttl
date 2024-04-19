@@ -138,8 +138,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:coiled-tubing ,
-        cs:downhole-motor ;
+        :coiled-tubing ,
+        :downhole-motor ;
     skos:prefLabel "hybrid drilling"@en ;
     skos:topConceptOf cs: ;
 .
@@ -184,8 +184,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower
         cgibdm:cable_tool_drilling ,
         cgibdm:direct_push ,
-        cs:drop-core-drilling ,
-        cs:hydraulic-jet ;
+        :drop-core-drilling ,
+        :hydraulic-jet ;
     skos:prefLabel "non-rotary drilling"@en ;
     skos:topConceptOf cs: ;
 .
@@ -261,14 +261,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower
         cgibdm:auger ,
         cgibdm:sonic ,
-        cs:air-core ,
-        cs:bucket-drilling ,
-        cs:core-drilling ,
-        cs:hydraulic-rotary ,
-        cs:reverse-circulation ,
-        cs:rotary-air-blast ,
-        cs:rotary-hammer ,
-        cs:vacuum ;
+        :air-core ,
+        :bucket-drilling ,
+        :core-drilling ,
+        :hydraulic-rotary ,
+        :reverse-circulation ,
+        :rotary-air-blast ,
+        :rotary-hammer ,
+        :vacuum ;
     skos:prefLabel "rotary drilling"@en ;
     skos:topConceptOf cs: ;
 .
@@ -344,7 +344,7 @@ cgibdm:auger
     skos:inScheme cs: ;
     skos:narrower
         cgibdm:hand_auger ,
-        cs:power-auger ;
+        :power-auger ;
     skos:notation "AUG"^^xsd:token ;
     skos:prefLabel "auger drilling"@en ;
     schema:citation "http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/auger"^^xsd:anyURI ;
@@ -414,8 +414,8 @@ cgibdm:diamond_core
     skos:definition "Diamond core drilling (or diamond drilling) utilizes an annular diamond- or tungsten-carbide-impregnated drillbit attached to the end of rotating hollow drill rods to cut a cylindrical core of solid rock. Fine to microfine, industrial-grade diamonds are used. They are set within a matrix of varying hardness, from brass to high-grade steel. Matrix hardness, diamond size and dosing can be varied according to the rock which must be cut. Holes within the bit allow water to be delivered to the cutting face. This provides three essential functions: lubrication, cooling and removal of drill cuttings from the hole. Core samples are retrieved via the use of a core tube, a hollow tube placed inside the rod string and pumped with water until it locks into the core barrel. As the core is drilled, the core barrel slides over the core as it is cut. An 'overshot' attached to the end of the winch cable is lowered inside the rod string and locks on to the backend (aka head assembly), located on the top end of the core barrel. The winch is retracted, pulling the core tube to the surface. The core does not drop out of the inside of the core tube when lifted because either a split ring core lifter or basket retainer allow the core to move into, but not back out of the tube."@en ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:conventional-core ,
-        cs:wireline-core ;
+        :conventional-core ,
+        :wireline-core ;
     skos:notation "DD"^^xsd:token ;
     skos:prefLabel "diamond core"@en ;
     schema:citation
@@ -435,7 +435,7 @@ cgibdm:direct_push
         cgibdm:mackereth_core ,
         cgibdm:probe ,
         cgibdm:window_sampler ,
-        cs:piston-core ;
+        :piston-core ;
     skos:prefLabel "direct push drilling"@en ;
     schema:citation "http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/direct_push"^^xsd:anyURI ;
 .
@@ -568,10 +568,10 @@ cs:
     owl:versionIRI <http://draft.com/borehole-drilling-method-western-australia/1.0> ;
     skos:definition "A list of drilling methods routinely used by the mineral and energy resource industries. The drilling methods are grouped into three main categories based on the dominant motion of the drillstem (i.e. the string of pipe that transmits power from the surface down to the drillbit) and drillbit (the part of the bottom-hole assembly that cuts, grinds or breaks the bottom-hole formation to make the hole). Specifically, the presence/absence of rotation in either or both is used as the main distinguishing factor, hence the main grouping into rotary, non-rotary and hybrid. Most drilling used by the mineral and energy resource industries falls into the rotary drilling category. Note that alternative classification schemes can use parameters such as the hole-making method in combination with the hole-clearing and stabilizing method and/or the type of sample produced (e.g. core versus chips). These methods can cross over between the main categories used here; for example, percussion drilling can be used in conjunction with rotary, non-rotary and hybrid methods and the term is not always qualified in company reports. In addition, many drilling rigs are multipurpose and hence can use a combination of drilling methods, including in the same borehole; for example, reverse circulation drilling can be followed by diamond drilling — however, these are both rotary drilling methods. Definitions are compiled from a variety of sources, including the Australian Drilling Industry Association's Drilling Manual (2018, Sixth edition), existing published vocabularies, drilling company webpages, Wikipedia, and a variety reports/publications."@en ;
     skos:hasTopConcept
-        cs:hybrid-drilling ,
-        cs:non-rotary ,
-        cs:rotary-drilling ,
-        cs:unknown ;
+        :hybrid-drilling ,
+        :non-rotary ,
+        :rotary-drilling ,
+        :unknown ;
     skos:historyNote "This vocabulary stems from and restructures the CGI's Borehole Drilling Method vocabulary, taking into account the common methods and terminology usage in the mineral and energy resource industry in Western Australia. IRIs are shared only when no changes were introduced to definitions. Notations largely stem from those used in GSWA's Drillhole database  ([DRILLHOLES].[Interfaces].[LookupHoleType])."@en ;
     skos:prefLabel "Borehole drilling method"@en ;
     prov:qualifiedAttribution
