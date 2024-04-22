@@ -56,8 +56,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "The bucket rig is a form of the rotary drill rig. It uses mechanical or hydraulic drive to rotate a kelly (i.e. a steel bar with a hole drilled through the middle for a fluid path) which is attached to the bucket. This type of rig normally utilizes a square friction type or round locking type kelly with three or four telescoping sections which can extend to 30 m or more. Bucket rigs may be equipped to drill holes from 25.4 cm to 152.4 cm in diameter. Bucket drilling uses a cylindrical bucket with cutting blades or teeth mounted on a hinged bottom to repeatedly cut and lift sediments from the borehole. To drill, the bucket is rotated to allow the bottom of the cutting teeth to fill the bucket. When the bucket is full, it is raised by cable."@en ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:Bauer-bucket ,
-        cs:Calweld ;
+        :Bauer-bucket ,
+        :Calweld ;
     skos:prefLabel "bucket drilling"@en ;
     schema:citation
         "https://www.mining.com/description-for-bucket-drilling-method/#:~:text=Bucket%20drilling%20uses%20a%20cylindrical"^^xsd:anyURI ,
