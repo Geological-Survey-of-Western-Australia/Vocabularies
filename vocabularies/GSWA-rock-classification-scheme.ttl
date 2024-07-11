@@ -9764,7 +9764,7 @@ Chilingar, GV, Bissell, HJ and Wolf, KH 1967, Chapter 5 Diagenesis of Carbonate 
     schema:citation "https://glossary.americangeosciences.org/term/felsic"^^xsd:anyURI ;
 .
 
-GSWA:GSWA-rock-code
+:GSWA-rock-code
     a rdfs:Datatype ;
     schema:name "GSWA rock code" ;
     schema:description "GSWA's codes used for mapping lithologies and lithostratigraphic/lithotectonic units" ;
