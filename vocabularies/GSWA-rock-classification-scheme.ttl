@@ -9765,12 +9765,10 @@ Chilingar, GV, Bissell, HJ and Wolf, KH 1967, Chapter 5 Diagenesis of Carbonate 
 .
 
 GSWA:GSWA-rock-code
-    a skos:Concept ;
-    skos:prefLabel "GSWA rock code"@en ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
-    schema:dateCreated "2024-07-11"^^xsd:date ;
-    schema:dateModified "2024-07-11"^^xsd:date ;
-    skos:definition "GSWA's codes used for mapping lithologies and lithostratigraphic/lithotectonic units"
+    a rdfs:Datatype ;
+    schema:name "GSWA rock code" ;
+    schema:description "GSWA's codes used for mapping lithologies and lithostratigraphic/lithotectonic units" ;
+
 .
 cs:
     a skos:ConceptScheme ;
