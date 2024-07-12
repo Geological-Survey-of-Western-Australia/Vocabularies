@@ -1,5 +1,4 @@
 PREFIX : <https://linked.data.gov.au/def/GSWA-rock-classification-scheme/>
-PREFIX GSWA: <https://linked.data.gov.au/def/>
 PREFIX cs: <https://linked.data.gov.au/def/GSWA-rock-classification-scheme>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
@@ -11,18 +10,11 @@ PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<https://linked.data.gov.au/def/GSWA-rock-classification-scheme/-psammitic-and-pelitic-migmatite-interlayered>
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Composite silicate metamorphic rock derived from a siliciclastic sedimentary or metasedimentary succession consisting of interleaved sandstone and mudstone beds, and pervasively heterogeneous on a meso- to megascopic scale. It typically consists of darker (melanosome) and lighter (leucosome) parts. The darker parts usually exhibit features of metamorphic rocks, whereas the lighter parts are of igneous appearance. See definition of migmatite in Fettes and Desmond (2007, p. 176)."@en ;
-    skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
-    skos:inScheme cs: ;
-    skos:notation "mhi"^^:GSWA-rock-code ;
-    skos:prefLabel "psammitic and pelitic migmatite; interlayered"@en ;
-    skos:topConceptOf cs: ;
-    schema:citation
-        "https://glossary.americangeosciences.org/term/pelitic"^^xsd:anyURI ,
-        "https://glossary.americangeosciences.org/term/psammitic"^^xsd:anyURI ;
+:GSWA-rock-code
+    a rdfs:Datatype ;
+    schema:name "GSWA rock code" ;
+    schema:description "GSWA's codes used for mapping lithologies and lithostratigraphic/lithotectonic units" ;
+
 .
 
 :alkali-feldspar-granite
@@ -555,7 +547,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:altLabel "calcareous rock"@en ;
     skos:broader :sedimentary-carbonate ;
-    skos:definition "A sedimentary rock consisting of more than 50% by weight of carbonate minerals, otherwise uncategorised (adapted from Glossary of geology (2011, 5th edition revised). GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A sedimentary rock consisting of more than 50% by weight of carbonate minerals, otherwise uncategorised (adapted from Glossary of geology (2011, 5th edition revised). GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "kn"^^:GSWA-rock-code ;
@@ -615,7 +607,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-carbonatite ;
-    skos:definition "An igneous (intrusive, extrusive or volcaniclastic) carbonate-rich rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "An igneous (intrusive, extrusive or volcaniclastic) carbonate-rich rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "rn"^^:GSWA-rock-code ;
@@ -767,7 +759,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :sedimentary-other-chemical-or-biochemical ;
-    skos:definition "A sedimentary rock composed primarily of material formed by precipitation from solution or colloidal suspension, by the deposition of insoluble precipitates, or resulting from the chemical processes and activities of living organisms — otherwise uncategorized. Adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011). GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A sedimentary rock composed primarily of material formed by precipitation from solution or colloidal suspension, by the deposition of insoluble precipitates, or resulting from the chemical processes and activities of living organisms — otherwise uncategorized. Adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011). GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "cn"^^:GSWA-rock-code ;
@@ -1692,7 +1684,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-felsic-volcanic ;
-    skos:definition "A demonstrably felsic igneous volcanic rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A demonstrably felsic igneous volcanic rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "fn"^^:GSWA-rock-code ;
@@ -1855,17 +1847,13 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
 :ferro-carbonatite
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:broader :igneous-carbonatite ;
     skos:definition "A variety of carbonatite where the main carbonate is iron-rich. Also used for a chemically derived carbonatite in which weight percent CaO / (CaO+MgO+FeO+Fe₂O₃+MnO) < 0.8 and MgO < (FeO+Fe₂O₃+MnO) (Fig. 2.2, p. 10). Adapted from Le Maitre et al. (2005, p.  10 and 79)."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005)." ;
     skos:inScheme cs: ;
     skos:notation "rf"^^:GSWA-rock-code ;
     skos:prefLabel "ferro-carbonatite"@en ;
-    skos:topConceptOf cs: ;
     schema:citation "https://glossary.americangeosciences.org/term/dolomitecarbonatite"^^xsd:anyURI ;
-.
-
-:ferroan-carbonatite
-    skos:broader :igneous-carbonatite ;
 .
 
 :ferruginous-fault-rock
@@ -1999,7 +1987,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-foid-bearing-intrusive ;
-    skos:definition "A silica-undersaturated intrusive rock with a modal content of feldspathoid minerals greater than 0, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A silica-undersaturated intrusive rock with a modal content of feldspathoid minerals greater than 0, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "dn"^^:GSWA-rock-code ;
@@ -2080,7 +2068,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-feldspathoid-bearing-volcanic ;
-    skos:definition "A silica-undersaturated volcanic rock with a modal content of feldspathoid minerals greater than 0%, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A silica-undersaturated volcanic rock with a modal content of feldspathoid minerals greater than 0%, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "ln"^^:GSWA-rock-code ;
@@ -2495,7 +2483,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-felsic-intrusive ;
-    skos:definition "A demonstrably felsic igneous intrusive rocks, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A demonstrably felsic igneous intrusive rocks, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "gn"^^:GSWA-rock-code ;
@@ -3019,7 +3007,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-kalsilitic ;
-    skos:definition "An ultramafic volcanic rock defined in the kalsilite-bearing rock classification as a rock containing kalsilite, but no leucite or melilite (Le Maitre et al., 2005, p. 94), but otherwise uncategorized. GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or subvolcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "An ultramafic volcanic rock defined in the kalsilite-bearing rock classification as a rock containing kalsilite, but no leucite or melilite (Le Maitre et al., 2005, p. 94), but otherwise uncategorized. GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or subvolcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005). See also https://academic.oup.com/petrology/article/63/5/egac026/6553206." ;
     skos:inScheme cs: ;
     skos:notation "wn"^^:GSWA-rock-code ;
@@ -3053,7 +3041,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-kimberlite ;
-    skos:definition "A rock of kimberlitic affinity (i.e. defined as containing at least 35% olivine and no leucite), but otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A rock of kimberlitic affinity (i.e. defined as containing at least 35% olivine and no leucite), but otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "pn"^^:GSWA-rock-code ;
@@ -3200,7 +3188,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-lamproites ;
-    skos:definition "A demonstrably felsic igneous volcanic rocks, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery. GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or subvolcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks."@en ;
+    skos:definition "A demonstrably felsic igneous volcanic rocks, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System. GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or subvolcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "in"^^:GSWA-rock-code ;
@@ -3322,7 +3310,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-lamprophyres ;
-    skos:definition "A lamprophyric rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A lamprophyric rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "yn"^^:GSWA-rock-code ;
@@ -3706,7 +3694,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-mafic-intrusive ;
-    skos:definition "A demonstrably mafic intrusive or a coarse-grained constituent of an extrusive succession, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A demonstrably mafic intrusive or a coarse-grained constituent of an extrusive succession, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "on"^^:GSWA-rock-code ;
@@ -3765,7 +3753,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-mafic-volcanic ;
-    skos:definition "A demonstrably mafic igneous volcanic rocks, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A demonstrably mafic igneous volcanic rocks, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "bn"^^:GSWA-rock-code ;
@@ -3965,7 +3953,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-melilitic ;
-    skos:definition "A demonstrably ultramafic intrusive rock consisting essentially of melilite, pyroxene and olivine, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A demonstrably ultramafic intrusive rock consisting essentially of melilite, pyroxene and olivine, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "en"^^:GSWA-rock-code ;
@@ -5243,12 +5231,12 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
 :mixed-lithology
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:broader :mixed ;
     skos:definition "A prefix used in GSWA's Explanatory Notes system (ENS) to characterize interleaved lithologies that cannot be separated at the scale of mapping, with the first code representing the volumetrically most abundant lithology. Typically reserved for (a) lithologies that are tectonically interleaved, and (b) intrusive lithologies and their host. Interlayered lithologies in sedimentary successions are covered under sedimentary rock types, and the prefix 'j' is used specifically to describe lithologies hosting xenolith/inclusion."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "x"^^:GSWA-rock-code ;
     skos:prefLabel "mixed lithology"@en ;
-    skos:topConceptOf cs: ;
 .
 
 :mixed-siliciclastic-and-volcanic-rocks
@@ -5557,16 +5545,12 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
 :mylonitized-metavolcanic-or-metavolcaniclastic-rock
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:broader :meta-igneous-volcanic-or-volcaniclastic ;
     skos:definition "A metamorphosed volcanic or volcaniclastic rock otherwise uncategorized that is characterized by a well-developed schistosity resulting from tectonic reduction of grain size (cf. definition of mylonite in Fettes and Desmons, 2007, p. 177)."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "mvy"^^:GSWA-rock-code ;
     skos:prefLabel "mylonitized metavolcanic or metavolcaniclastic rock"@en ;
-    skos:topConceptOf cs: ;
-.
-
-:mylonitized-metavolcanic-rock
-    skos:broader :meta-igneous-volcanic-or-volcaniclastic ;
 .
 
 :mylonitized-pelite
@@ -6109,7 +6093,17 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
 .
 
 :psammitic-and-pelitic-migmatite-interlayered
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
     skos:broader :metasedimentary-siliciclastic-psammite-and-pelite-interlayered ;
+    skos:definition "Composite silicate metamorphic rock derived from a siliciclastic sedimentary or metasedimentary succession consisting of interleaved sandstone and mudstone beds, and pervasively heterogeneous on a meso- to megascopic scale. It typically consists of darker (melanosome) and lighter (leucosome) parts. The darker parts usually exhibit features of metamorphic rocks, whereas the lighter parts are of igneous appearance. See definition of migmatite in Fettes and Desmond (2007, p. 176)."@en ;
+    skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:notation "mhi"^^:GSWA-rock-code ;
+    skos:prefLabel "psammitic and pelitic migmatite; interlayered"@en ;
+    schema:citation
+        "https://glossary.americangeosciences.org/term/pelitic"^^xsd:anyURI ,
+        "https://glossary.americangeosciences.org/term/psammitic"^^xsd:anyURI ;
 .
 
 :psammitic-and-pelitic-schist-interlayered
@@ -7185,7 +7179,7 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :sedimentary-siliciclastic ;
-    skos:definition "A sedimentary rock that is silicon-bearing (in the form of quartz and silicates) and is composed principally of broken fragments that are derived from pre-existing rocks or minerals and that have been transported some distance from their places of origin, but otherwise uncategorized. Adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011). GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A sedimentary rock that is silicon-bearing (in the form of quartz and silicates) and is composed principally of broken fragments that are derived from pre-existing rocks or minerals and that have been transported some distance from their places of origin, but otherwise uncategorized. Adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011). GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "sn"^^:GSWA-rock-code ;
@@ -7367,16 +7361,12 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
 :silicified-metavolcanic-or-metavolcaniclastic-rock
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:broader :meta-igneous-volcanic-or-volcaniclastic ;
     skos:definition "A metamorphosed volcanic or volcaniclastic rock otherwise uncategorized and affected by silicification, i.e. hydrothermal alteration resulting in a net addition of silica to the rock. There is no implication on the timing of alteration relative to other metamorphic processes (e.g. regional metamorphism) that may have affected the rock."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "mvq"^^:GSWA-rock-code ;
     skos:prefLabel "silicified metavolcanic or metavolcaniclastic rock"@en ;
-    skos:topConceptOf cs: ;
-.
-
-:silicified-metavolcanic-rock
-    skos:broader :meta-igneous-volcanic-or-volcaniclastic ;
 .
 
 :silicified-pelite
@@ -7465,19 +7455,15 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
     skos:prefLabel "spessartite"@en ;
 .
 
-:spongolite
-    skos:broader :sedimentary-other-chemical-or-biochemical ;
-.
-
 :spongolite-spicularite
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
+    skos:broader :sedimentary-other-chemical-or-biochemical ;
     skos:definition "A sediment or rock composed principally of the remains of sponges. A sediment predominantly composed of discrete spicules is termed a spicularite, whereas one predominantly composed of rigid bodied sponges is termed a spongolite. Adapted from Gammon (1978) and Glossary of geology (5th edition revised; Neuendorf et al., 2011)."@en ;
     skos:historyNote "Gammon, PR, 1978, Spiculites and spongolites: in Sedimentology, Encyclopedia of Earth Science, Springer Berlin Heidelberg, p. 1130–1134. doi.org/10.1007/3-540-31079-7_219." ;
     skos:inScheme cs: ;
     skos:notation "cs"^^:GSWA-rock-code ;
     skos:prefLabel "spongolite/spicularite"@en ;
-    skos:topConceptOf cs: ;
     schema:citation "https://glossary.americangeosciences.org/term/spongolite"^^xsd:anyURI ;
 .
 
@@ -7764,7 +7750,7 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-ultramafic-intrusive ;
-    skos:definition "A demonstrably ultramafic (M>90%) intrusive rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery."@en ;
+    skos:definition "A demonstrably ultramafic (M>90%) intrusive rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System."@en ;
     skos:historyNote "Based on the IUGS classification of igneous rocks (Le Maitre et al., 2005) and GSWA usage." ;
     skos:inScheme cs: ;
     skos:notation "an"^^:GSWA-rock-code ;
@@ -7811,7 +7797,7 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :igneous-ultramafic-volcanic-and-volcaniclastic ;
-    skos:definition "A demonstrably ultramafic igneous volcanic rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery. GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or subvolcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks."@en ;
+    skos:definition "A demonstrably ultramafic igneous volcanic rock, otherwise uncategorized. GSWA usage of this term is restricted to rocks that are partially weathered or are identified using remote sensing imagery, and the use of the related code/notation is limited to GSWA's Explanatory Notes System. GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or subvolcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "un"^^:GSWA-rock-code ;
@@ -7933,7 +7919,7 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :unknown ;
-    skos:definition "A rock so altered, weathered or of such a fine grain size that an inference on the protolith or origin of the rock cannot be made. Also used to allocate a lithology to sample legacy data where a lithology was not known."@en ;
+    skos:definition "A rock so altered, weathered or of such a fine grain size that an inference on the protolith or origin of the rock cannot be made. Also used to allocate a lithology to sample legacy data where a lithology was not known. The use of the related code/notation is limited to GSWA's Field observation database (WAROX)."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:notation "nk"^^:GSWA-rock-code ;
@@ -8125,13 +8111,13 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
 :mixed
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :mixed ;
     skos:definition "A prefix used in GSWA's Explanatory Notes system (ENS) to characterize the presence of more than one rock type."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
-    skos:narrower :mixed ;
+    skos:narrower :mixed-lithology ;
     skos:notation "x"^^:GSWA-rock-code ;
     skos:prefLabel "mixed"@en ;
+    skos:topConceptOf cs: ;
 .
 
 :sedimentary
@@ -8150,7 +8136,7 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
 :unknown
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "A group name for lithologies so altered, weathered or of such a fine grain size that an inference on the protolith or origin of the rock cannot be made. Also used to allocate a lithology to sample legacy data where a lithology was not known."@en ;
+    skos:definition "A group name for lithologies so altered, weathered or of such a fine grain size that an inference on the protolith or origin of the rock cannot be made. Also used to allocate a lithology to sample legacy data where a lithology was not known. The use of the related code/notation is limited to GSWA's Field observation database (WAROX)."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:narrower :unknown-lithology ;
@@ -8387,8 +8373,8 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
     skos:inScheme cs: ;
     skos:narrower
         :metavolcanic-and-metavolcaniclastic-rock ,
-        :mylonitized-metavolcanic-rock ,
-        :silicified-metavolcanic-rock ;
+        :mylonitized-metavolcanic-or-metavolcaniclastic-rock ,
+        :silicified-metavolcanic-or-metavolcaniclastic-rock ;
     skos:notation "mv"^^:GSWA-rock-code ;
     skos:prefLabel "meta-igneous volcanic or volcaniclastic"@en ;
     skos:topConceptOf cs: ;
@@ -9187,7 +9173,7 @@ Embry, AF, Klovan, JE 1971, A late Devonian reef tract on northeastern Banks Isl
         :carbonatitic-volcaniclastic-sandstone-siltstone ,
         :carbonatitic-volcaniclastic-sediment-matrix-breccia ,
         :dolomite-carbonatite ,
-        :ferroan-carbonatite ;
+        :ferro-carbonatite ;
     skos:notation "r"^^:GSWA-rock-code ;
     skos:prefLabel "igneous carbonatite"@en ;
     skos:topConceptOf cs: ;
@@ -9515,7 +9501,7 @@ Chilingar, GV, Bissell, HJ and Wolf, KH 1967, Chapter 5 Diagenesis of Carbonate 
         :pisolite ,
         :radiolarite ,
         :siliceous-sinter ,
-        :spongolite ,
+        :spongolite-spicularite ,
         :travertine ;
     skos:notation "c"^^:GSWA-rock-code ;
     skos:prefLabel "sedimentary other chemical or biochemical"@en ;
@@ -9764,28 +9750,12 @@ Chilingar, GV, Bissell, HJ and Wolf, KH 1967, Chapter 5 Diagenesis of Carbonate 
     schema:citation "https://glossary.americangeosciences.org/term/felsic"^^xsd:anyURI ;
 .
 
-:GSWA-rock-code
-    a rdfs:Datatype ;
-    schema:name "GSWA rock code" ;
-    schema:description "GSWA's codes used for mapping lithologies and lithostratigraphic/lithotectonic units" ;
-
-.
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
     owl:versionIRI :1 ;
-    skos:definition """Listing of rock types and lithological nomenclature (and related codes) used by the Geological Survey of Western Australia (GSWA) for the dual purpose of recording lithologies during mapping / core logging, and for representing mappable lithostratigraphic/lithotectonic units in the State. Rather than attempting to cover for all existing rock types and lithologies, the GSWA’s scheme and terms in this vocabulary are specifically informed by Western Australian geology; a companion vocabulary covers lithological equivalents for regolith materials.
-
-Apart from the approach to classification of some volcanic (pyroclastic) rocks, GSWA's lithological nomenclature largely conforms to internationally recognized classifications such as Le Maitre et al. (2005) for plutonic/intrusive rocks and Fettes and Desmons (2007) for metamorphic rocks. Note that: a) GSWA prefers the term intrusive to plutonic, as it carries no inference on depth of emplacement; b) GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or sub-volcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks; c) some intrusive mafic/ultramafic terminology is allowed for cumulate rocks originating from thick volcanic successions. In the absence of a single unified scheme for sedimentary rocks, multiple sources were considered, and definitions rely heavily on the Glossary of geology (5th edition, revised; Neuendorf et al., 2011). Full references listed under History Note.
-
-GSWA’s rock classification scheme is designed to provide consistent terminology within the organization, and primarily relies on features observable in all rocks at outcrop scale, in hand specimen, and in thin section. Additional terms cover for broader combinations of multiple lithologies encountered during mapping (especially for sedimentary rocks, e.g. ‘siliciclastic + lesser carbonate’), and to ensure a coherent approach across different rock types (e.g. use of ‘mylonitized’ for all metamorphic rock groups, even if some would be rare occurrences or difficult to identify in the field). Definitions in this vocabulary are largely compiled or derived from the quoted references and the Glossary of Geology (5th edition, revised, Neuendorf et al., 2011), with adaptions based on recommended GSWA usage; metamorphic lithologies are often derived from definitions of non-metamorphosed equivalents. Some mineralogical/petrological knowledge is expected of the reader.
-
-Two separate notations are included for each lithology. In addition to the lithological codes for use in a digital environment (one to four lower-case letters), a second notation discriminates usage in different systems: a) ‘E’ denotes lithological codes uniquely reserved for use on maps, in reference to the Explanatory Notes System (ENS) that underpins GSWA’s geological framework for Western Australia; b) ‘W’ denotes lithological codes restricted to field observations / core logging, in reference to GSWA’s field observation database WAROX; c) ‘B’ denotes codes that can be used in both ENS and WAROX (the majority). Note that ENS-only codes also include some terms based on lithogeochemistry or genetic connotation (e.g. komatiitic basalt), and that codes in this system are supplemented by primary and secondary qualifiers (not covered in this vocabulary. A concerted effort has been made to match WAROX-only codes with those generated via qualifiers in ENS, but in a few instances alphabetical limitations have prevented this (i.e. the code used in WAROX has a different meaning from the same string of letters generated in ENS); these are highlighted in the concept definitions.
-
-The approach behind GSWA’s rock classification scheme is documented in Tyler at al. (2004; https://dmpbookshop.eruditetechnologies.com.au/product/the-revised-gswa-rock-classification-scheme.do). Details of GSWA’s code construction for ENS can be found in Riganti et al. (2013; https://dmpbookshop.eruditetechnologies.com.au/product/gswa-code-builder-constructing-and-unravelling-gswa-geological-codes.do) and in a companion application, the GSWA Code Builder (ENS codes only), available from the Department’s Data and Software Centre (https://dasc.demirs.wa.gov.au/)."""@en ;
+    skos:definition "Listing of rock types and lithological nomenclature (and related codes) used by the Geological Survey of Western Australia (GSWA) for the dual purpose of recording lithologies during mapping / core logging, and for representing mappable lithostratigraphic/lithotectonic units in the State. Rather than attempting to cover for all existing rock types and lithologies, the GSWA’s scheme and terms in this vocabulary are specifically informed by Western Australian geology; a companion vocabulary covers lithological equivalents for regolith materials./n Apart from the approach to classification of some volcanic (pyroclastic) rocks, GSWA's lithological nomenclature largely conforms to internationally recognized classifications such as Le Maitre et al. (2005) for plutonic/intrusive rocks and Fettes and Desmons (2007) for metamorphic rocks. Note that: a) GSWA prefers the term intrusive to plutonic, as it carries no inference on depth of emplacement; b) GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or sub-volcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks; c) some intrusive mafic/ultramafic terminology is allowed for cumulate rocks originating from thick volcanic successions. In the absence of a single unified scheme for sedimentary rocks, multiple sources were considered, and definitions rely heavily on the Glossary of geology (5th edition, revised; Neuendorf et al., 2011). Full references listed under History Note./n GSWA’s rock classification scheme is designed to provide consistent terminology within the organization, and primarily relies on features observable in all rocks at outcrop scale, in hand specimen, and in thin section. Additional terms cover for broader combinations of multiple lithologies encountered during mapping (especially for sedimentary rocks, e.g. ‘siliciclastic + lesser carbonate’), and to ensure a coherent approach across different rock types (e.g. use of ‘mylonitized’ for all metamorphic rock groups, even if some would be rare occurrences or difficult to identify in the field). Definitions in this vocabulary are largely compiled or derived from the quoted references and the Glossary of Geology (5th edition, revised, Neuendorf et al., 2011), with adaptions based on recommended GSWA usage; metamorphic lithologies are often derived from definitions of non-metamorphosed equivalents. Some mineralogical/petrological knowledge is expected of the reader./n Each concept is characterized by a notation consisting of one to four lower-case letters. This notation represents the lithological code used for mapping lithologies and labelling lithostratigraphic units on maps. Note that in the GSWA's scheme, some lithological codes are reserved for use in the Field Observation database (WAROX) or the Explanatory Notes System (ENS) only; the latter are highlighted in the concept definitions and should not be used for field observations. Also note that in ENS codes are supplemented by primary and secondary qualifiers (not covered in this vocabulary); a concerted effort has been made to match WAROX-only codes with those generated via qualifiers in ENS, but in a few instances alphabetical limitations have prevented this (i.e. the code used in WAROX has a slightly different meaning from the same string of letters generated in ENS)./n The approach behind GSWA’s rock classification scheme is documented in Tyler at al. (2004; https://dmpbookshop.eruditetechnologies.com.au/product/the-revised-gswa-rock-classification-scheme.do). Details of GSWA’s code construction for ENS can be found in Riganti et al. (2013; https://dmpbookshop.eruditetechnologies.com.au/product/gswa-code-builder-constructing-and-unravelling-gswa-geological-codes.do) and in a companion application, the GSWA Code Builder (ENS codes only), available from the Department’s Data and Software Centre (https://dasc.demirs.wa.gov.au/)."@en ;
     skos:hasTopConcept
-        <https://linked.data.gov.au/def/GSWA-rock-classification-scheme/-psammitic-and-pelitic-migmatite-interlayered> ,
-        :ferro-carbonatite ,
         :hydrothermal ,
         :igneous ,
         :igneous-carbonatite ,
@@ -9834,14 +9804,11 @@ The approach behind GSWA’s rock classification scheme is documented in Tyler a
         :metasedimentary-siliciclastic-psephite ,
         :metasedimentary-siliciclastic-semipelite ,
         :metasomatic ,
-        :mixed-lithology ,
-        :mylonitized-metavolcanic-or-metavolcaniclastic-rock ,
+        :mixed ,
         :sedimentary ,
         :sedimentary-carbonate ,
         :sedimentary-other-chemical-or-biochemical ,
         :sedimentary-siliciclastic ,
-        :silicified-metavolcanic-or-metavolcaniclastic-rock ,
-        :spongolite-spicularite ,
         :unknown ,
         :xenolith-or-inclusion-bearing ;
     skos:historyNote """Derived from a revision of tables shared by the GSWA's field observation database, WAROX, and GSWA's Explanatory Notes System (ENS): [GEOLOGY].[Warox_REF.RockType], [GEOLOGY].[Warox_REF.RockName], and [GEOLOGY].[ENS_REF].[QUALIFIER] that are integral to GSWA's approach to map lithologies in the field and to code lithostratigraphic/lithotectonic units in the State. NB RockName is considered an equivalent term of lithology.
@@ -9860,7 +9827,7 @@ MAIN REFERENCES used for compilation:
                 [
                     a schema:Person ;
                     schema:email ""^^xsd:anyURI ;
-                    schema:name "Angela Riganti" ;
+                    schema:name "Terry Farrell" ;
                 ] ;
         ] ,
         [
@@ -9869,7 +9836,7 @@ MAIN REFERENCES used for compilation:
                 [
                     a schema:Person ;
                     schema:email ""^^xsd:anyURI ;
-                    schema:name "Terry Farrell" ;
+                    schema:name "Angela Riganti" ;
                 ] ;
         ] ,
         [
@@ -9883,10 +9850,7 @@ MAIN REFERENCES used for compilation:
         ] ;
     schema:creator <https://linked.data.g​ov.au/org/gswa> ;
     schema:dateCreated "2024-06-28"^^xsd:date ;
-    schema:dateModified "2024-07-05"^^xsd:date ;
-    schema:keywords
-        "Geology" ,
-        "Geology framework" ;
+    schema:dateModified "2024-07-12"^^xsd:date ;
     schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
     schema:version "1" ;
 .
