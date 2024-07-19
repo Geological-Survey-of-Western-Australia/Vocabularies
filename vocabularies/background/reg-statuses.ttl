@@ -3,7 +3,7 @@ PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl:  <http://www.w3.org/2002/07/owl#>
 PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
-PREFIX sdo: <https://schema.org/>
+PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX reg:  <http://purl.org/linked-data/registry#>
 PREFIX dcterms:  <http://purl.org/dc/terms/>
@@ -40,29 +40,29 @@ Note that just like the original form of this vocabulary, while it is a SKOS voc
 .
 
 <https://www.epimorphics.com>
-    a sdo:Organization ;
-    sdo:name "Epimorphics" ;
-    sdo:url "https://www.epimorphics.com"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "Epimorphics" ;
+    schema:url "https://www.epimorphics.com"^^xsd:anyURI ;
 .
 
 <https://linked.data.gov.au/org/agldwg>
-    a sdo:Organization ;
-    sdo:name "Australian Government Linked Data Working Group" ;
-    sdo:url "http://www.linked.data.gov.au"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "Australian Government Linked Data Working Group" ;
+    schema:url "http://www.linked.data.gov.au"^^xsd:anyURI ;
 .
 
 <https://orcid.org/0000-0002-8742-7730>
-    a sdo:Person ;
-    sdo:honorificPrefix "Dr" ;
-    sdo:name "Nicholas J. Car" ;
-    sdo:email "nicholas.car@anu.edu.au"^^xsd:anyURI ;
-    sdo:affiliation <https://linked.data.gov.au/org/anu> ;
+    a schema:Person ;
+    schema:honorificPrefix "Dr" ;
+    schema:name "Nicholas J. Car" ;
+    schema:email "nicholas.car@anu.edu.au"^^xsd:anyURI ;
+    schema:affiliation <https://linked.data.gov.au/org/anu> ;
 .
 
 <https://linked.data.gov.au/org/anu>
-    a sdo:Organization ;
-    sdo:name "Australian National University" ;
-    sdo:url "https://www.anu.edu.au"^^xsd:anyURI ;
+    a schema:Organization ;
+    schema:name "Australian National University" ;
+    schema:url "https://www.anu.edu.au"^^xsd:anyURI ;
 .
 
 reg:Status a owl:Class;
@@ -79,7 +79,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
     rdfs:isDefinedBy cs: ;
-    sdo:color "#1bc13f" ;
+    schema:color "#1bc13f" ;
 .
 
 :addition a skos:Concept, reg:Status ;
@@ -88,7 +88,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :stable ;
-    sdo:color "#4ac11b" ;
+    schema:color "#4ac11b" ;
 .
 
 :deprecated a skos:Concept, reg:Status ;
@@ -98,7 +98,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :accepted ;
-    sdo:color "#a86a0d" ;
+    schema:color "#a86a0d" ;
 .
 
 :experimental a skos:Concept, reg:Status ;
@@ -109,7 +109,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :valid ;
-    sdo:color "#eae72c" ;
+    schema:color "#eae72c" ;
 .
 
 :invalid a skos:Concept, reg:Status ;
@@ -119,7 +119,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :notAccepted ;
-    sdo:color "#ea3c2c" ;
+    schema:color "#ea3c2c" ;
 .
 
 :notAccepted a skos:Concept, reg:Status ;
@@ -130,7 +130,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     skos:topConceptOf cs: ;
     rdfs:isDefinedBy cs: ;
-    sdo:color "#ea9e2c" ;
+    schema:color "#ea9e2c" ;
 .
 
 :original a skos:Concept, reg:Status ;
@@ -139,7 +139,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :stable ;
-    sdo:color "#38a30e" ;
+    schema:color "#38a30e" ;
 .
 
 :reserved a skos:Concept, reg:Status ;
@@ -149,7 +149,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :notAccepted ;
-    sdo:color "#9b8d79" ;
+    schema:color "#9b8d79" ;
 .
 
 :retired a skos:Concept, reg:Status ;
@@ -160,7 +160,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deprecated ;
-    sdo:color "#ad5b24" ;
+    schema:color "#ad5b24" ;
 .
 
 :stable a skos:Concept, reg:Status ;
@@ -170,7 +170,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :valid ;
-    sdo:color "#2e8c09" ;
+    schema:color "#2e8c09" ;
 .
 
 :submitted a skos:Concept, reg:Status ;
@@ -180,7 +180,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :notAccepted ;
-    sdo:color "#248bad" ;
+    schema:color "#248bad" ;
 .
 
 :superseded a skos:Concept, reg:Status ;
@@ -191,7 +191,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :deprecated ;
-    sdo:color "#ad7624" ;
+    schema:color "#ad7624" ;
 .
 
 :unstable a skos:Concept, reg:Status ;
@@ -201,7 +201,7 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     skos:broader :valid ;
     owl:sameAs reg:statusStable ;
-    sdo:color "#678c09" ;
+    schema:color "#678c09" ;
 .
 
 :valid a skos:Concept, reg:Status ;
@@ -211,5 +211,5 @@ reg:Status a owl:Class;
     skos:inScheme cs: ;
     rdfs:isDefinedBy cs: ;
     skos:broader :accepted ;
-    sdo:color "#36a80d" ;
+    schema:color "#36a80d" ;
 .
