@@ -1,4 +1,4 @@
-PREFIX : <https://linked.data.gov.au/def/GSWA-vocabulary-themes>
+PREFIX : <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 PREFIX cs: <https://linked.data.gov.au/defGSWA-vocabulary-themes>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX default1: <https://linked.data.gov.au/defGSWA-vocabulary-themes/>
