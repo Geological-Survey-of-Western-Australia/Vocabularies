@@ -1,7 +1,7 @@
 PREFIX : <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
-PREFIX cs: <https://linked.data.gov.au/defGSWA-vocabulary-themes>
+PREFIX cs: <https://linked.data.gov.au/def/GSWA-vocabulary-themes>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX default1: <https://linked.data.gov.au/defGSWA-vocabulary-themes/>
+PREFIX default1: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
