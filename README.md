@@ -28,7 +28,7 @@ The final publication step is for a persistent web identifier to be allocated to
 
 ### Publication tool
 
-The system used to present vocabularies online is the free [VocPrez](https://docs.kurrawong.ai/prez/Overview) tool.
+The system used to present vocabularies online is the free [Prez](https://docs.kurrawong.ai/prez/Overview) tool.
 
 ## Copyright & License
 
