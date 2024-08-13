@@ -20,13 +20,15 @@ Each individual vocabulary includes:
 
 ### Publication procedure
 
-GSWA uses a committee system to determine what vocabularies it would like to create or repurpose from elsewhere. Subject matter experts usually assembles the basis of a vocabulary using an Excel template tool, [VocExel](https://tools.dev.kurrawong.ai/vocexcel), which converts Excel workbooks to technical data. The technical data is then sent to this repository which validates it and, if successful, automatically loads it for publication at <https://vocabulary.gswa.kurrawong.ai/v/vocab>.
+GSWA uses a committee system to determine what vocabularies it would like to create or repurpose from elsewhere. Subject matter experts usually assembles the basis of a vocabulary using an Excel template tool, [VocExel](https://tools.dev.kurrawong.ai/vocexcel), which converts Excel workbooks to technical data. The technical data is then sent to this repository which validates it and, if successful, automatically loads it for publication at:
+
+* [GSWA's vocabulary website](https://vocabulary.gswa.kurrawong.ai/v/vocab)
 
 The final publication step is for a persistent web identifier to be allocated to a vocabulary via the Australian Government Linked Data Working Group (<https://www.linked.data.gov.au/>).
 
 ### Publication tool
 
-The technical tool used to present vocabularies online is the free VocPrez (https://github.com/RDFLib/Prez).
+The system used to present vocabularies online is the free [VocPrez](https://docs.kurrawong.ai/prez/Overview) tool.
 
 ## Copyright & License
 
