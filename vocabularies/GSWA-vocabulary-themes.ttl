@@ -122,10 +122,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:citation "https://www.eia.gov/energyexplained/us-energy-facts/"^^xsd:anyURI ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
+<https://linked.data.gov.au/org/gswa>
     a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 :resources
@@ -191,9 +191,9 @@ cs:
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-06-06"^^xsd:date ;
     schema:dateModified "2024-07-12"^^xsd:date ;
-    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
 .

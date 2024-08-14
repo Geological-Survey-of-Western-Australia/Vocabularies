@@ -8157,10 +8157,10 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
+<https://linked.data.gov.au/org/gswa>
     a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 :arkose
@@ -9855,9 +9855,9 @@ MAIN REFERENCES used for compilation:
                     schema:name "David Martin" ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-06-28"^^xsd:date ;
     schema:dateModified "2024-07-12"^^xsd:date ;
-    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
 .

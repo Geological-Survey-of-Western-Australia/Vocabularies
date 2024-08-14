@@ -3903,10 +3903,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
+<https://linked.data.gov.au/org/gswa>
     a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
 cs:
@@ -4233,9 +4233,9 @@ cs:
                     schema:url ""^^xsd:anyURI ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2023-11-01"^^xsd:date ;
     schema:dateModified "2024-04-15"^^xsd:date ;
-    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1.2" ;
 .
