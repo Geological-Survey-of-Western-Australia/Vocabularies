@@ -27,7 +27,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "Caldwell bucket drilling"@en ;
-    skos:definition "A proprietary drilling method commonly used in opal mining, and more recently potash mining, involving a large rotating bucket on the end of a drillstem. Used for large diameter open holes up to 3 m wide. Also known as Calweld bucket drilling. The name originates from the California Welding Company that originally produced the rigs."@en ;
+    skos:definition "A proprietary drilling method commonly used in opal mining, and more recently potash mining, involving a large rotating bucket on the end of a drillstem. Used for large diameter open holes up to 3 m wide. Also known as Calweld bucket drilling. The name originates from the California Welding Company that originally produced the rigs."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "Calweld"@en ;
     schema:citation "https://www.opalquest.com/blogs/news/mining-methods-equipment"^^xsd:anyURI ;
@@ -53,7 +53,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "bucket auger"@en ;
-    skos:definition "The bucket rig is a form of the rotary drill rig. It uses mechanical or hydraulic drive to rotate a kelly (i.e. a steel bar with a hole drilled through the middle for a fluid path) which is attached to the bucket. This type of rig normally utilizes a square friction type or round locking type kelly with three or four telescoping sections which can extend to 30 m or more. Bucket rigs may be equipped to drill holes from 25.4 cm to 152.4 cm in diameter. Bucket drilling uses a cylindrical bucket with cutting blades or teeth mounted on a hinged bottom to repeatedly cut and lift sediments from the borehole. To drill, the bucket is rotated to allow the bottom of the cutting teeth to fill the bucket. When the bucket is full, it is raised by cable."@en ;
+    skos:definition "The bucket rig is a form of the rotary drill rig. It uses mechanical or hydraulic drive to rotate a kelly (i.e. a steel bar with a hole drilled through the middle for a fluid path) which is attached to the bucket. This type of rig normally utilizes a square friction type or round locking type kelly with three or four telescoping sections which can extend to 30 m or more. Bucket rigs may be equipped to drill holes from 25.4 cm to 152.4 cm in diameter. Bucket drilling uses a cylindrical bucket with cutting blades or teeth mounted on a hinged bottom to repeatedly cut and lift sediments from the borehole. To drill, the bucket is rotated to allow the bottom of the cutting teeth to fill the bucket. When the bucket is full, it is raised by cable."@en ;
     skos:inScheme cs: ;
     skos:narrower
         :Bauer-bucket ,
@@ -222,7 +222,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "RC"@en ,
         "RC hammer drilling"@en ,
         "reverse circulation drilling"@en ;
-    skos:definition "The drilling mechanism for reverse circulation (RC) drilling is a pneumatic reciprocating piston known as a 'hammer' driving a tungsten-steel drillbit. Compressed air passes down to the drillbit along the annular space between an outer and inner drill rod to return to the surface inside the rods carrying drill cuttings. This is the reverse of the air path employed in normal ‘open hole’ rotary percussion drilling (including RAB drilling). At the top of the hole, the air and drill cuttings are passed through a cyclone to collect the cuttings for sampling. The RC drilling technique prevents the upcoming sample from being contaminated with material from the wall of the hole above the sampling depth. RC drilling utilizes much larger rigs and machinery and comparatively higher air pressure. Depths of up to 500 m are routinely achieved."@en ;
+    skos:definition "The drilling mechanism for reverse circulation (RC) drilling is a pneumatic reciprocating piston known as a 'hammer' driving a tungsten-steel drillbit. Compressed air passes down to the drillbit along the annular space between an outer and inner drill rod to return to the surface inside the rods carrying drill cuttings. This is the reverse of the air path employed in normal ‘open hole’ rotary percussion drilling (including RAB drilling). At the top of the hole, the air and drill cuttings are passed through a cyclone to collect the cuttings for sampling. The RC drilling technique prevents the upcoming sample from being contaminated with material from the wall of the hole above the sampling depth. RC drilling utilizes much larger rigs and machinery and comparatively higher air pressure. Depths of up to 500 m are routinely achieved."@en ;
     skos:exactMatch cgibdm:reverse_circulation_drilling ;
     skos:inScheme cs: ;
     skos:notation "RC"^^xsd:token ;
@@ -311,7 +311,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:altLabel
         "VAC"@en ,
         "vacuum drilling"@en ;
-    skos:definition "Vacuum drilling is principally designed for mineral exploration drilling to provide a low-cost, efficient recovery of uncontaminated drill samples. Vacuum drilling uses a tungsten carbide tipped blade bit to make the hole. The cuttings are then ‘sucked’ up the drillpipe using an industrial vacuum pump. The sample is separated from the air flow through a sealed cyclone into a transparent collection (vacuum) flask. Any remaining fine material is removed by a secondary filter before the air passes through the vacuum pump and vented to the atmosphere. In softer material, drilling with this method is a fast, accurate and economical method of obtaining samples. Although hole depths of 50 m or more have been recorded, most are less than 10 m."@en ;
+    skos:definition "Vacuum drilling is principally designed for mineral exploration drilling to provide a low-cost, efficient recovery of uncontaminated drill samples. Vacuum drilling uses a tungsten carbide tipped blade bit to make the hole. The cuttings are then ‘sucked’ up the drillpipe using an industrial vacuum pump. The sample is separated from the air flow through a sealed cyclone into a transparent collection (vacuum) flask. Any remaining fine material is removed by a secondary filter before the air passes through the vacuum pump and vented to the atmosphere. In softer material, drilling with this method is a fast, accurate and economical method of obtaining samples. Although hole depths of 50 m or more have been recorded, most are less than 10 m."@en ;
     skos:exactMatch cgibdm:vacuum ;
     skos:historyNote "Australian Drilling Industry Association 2018, Chapter 3, The Drilling Manual, Sixth edition: Australian Drilling Industry Association, p. 214." ;
     skos:inScheme cs: ;
@@ -396,7 +396,7 @@ cgibdm:delft_sampler
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
     skos:altLabel "Delft continuous sampler"@en ;
     skos:definition "The Delft continuous sampler, developed by GeoDelft, is used for obtaining high quality samples within very soft cohesive soils. The sampling system is available in two sizes to take continuous samples, 29 or 66 mm in diameter, normally with a maximum penetration of about 18 m. A steel outer tube is pushed into the ground using standard CPT (cone penetrometer test) equipment and the soil sample core is fed into a thin-walled plastic inner tube as the sampler advances. After extraction, the samples are cut into 1 m lengths and placed in purpose-made cases, being retained in the plastic tubes."@en ;
-    skos:historyNote "Begemann, HKSP 1974, The delft continuous soilsampler: Bulletin of the International Association of Engineering Geology, v. 10, p. 35–37, doi:10.1007/BF02634629." ;
+    skos:historyNote "Begemann, HKSP 1974, The delft continuous soilsampler: Bulletin of the International Association of Engineering Geology, v. 10, p. 35–37, doi:10.1007/BF02634629." ;
     skos:inScheme cs: ;
     skos:prefLabel "Delft sampler"@en ;
     schema:citation
@@ -426,7 +426,7 @@ cgibdm:diamond_core
 cgibdm:direct_push
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "Direct push technology includes several types of drilling rigs and drilling equipment that advance a drillstring by pushing or hammering without rotating the drillstring. Direct push rigs include both cone penetration testing rigs and direct push sampling rigs such as a PowerProbe or Geoprobe. Direct push rigs typically are limited to drilling in unconsolidated soil materials and very soft rock. Direct push drilling rigs use hydraulic cylinders and a hydraulic hammer in advancing a hollow core sampler, typically no longer than 2 m, to gather soil and groundwater samples. The core pipe has a valve on top that is used to create a vacuum at the top of the core when pulling the core out of the sediment. The method can be used in up to 5 m of water."@en ;
+    skos:definition "Direct push technology includes several types of drilling rigs and drilling equipment that advance a drillstring by pushing or hammering without rotating the drillstring. Direct push rigs include both cone penetration testing rigs and direct push sampling rigs such as a PowerProbe or Geoprobe. Direct push rigs typically are limited to drilling in unconsolidated soil materials and very soft rock. Direct push drilling rigs use hydraulic cylinders and a hydraulic hammer in advancing a hollow core sampler, typically no longer than 2 m, to gather soil and groundwater samples. The core pipe has a valve on top that is used to create a vacuum at the top of the core when pulling the core out of the sediment. The method can be used in up to 5 m of water."@en ;
     skos:historyNote "CGI Borehole drilling method vocabulary" ;
     skos:inScheme cs: ;
     skos:narrower
@@ -472,7 +472,7 @@ cgibdm:hand_auger
 cgibdm:kasten_core
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "Large volume, relatively undisturbed sediment core (~3 m long) from a Kasten Corer. The corer is constructed of stainless steel and is square in cross-section. A weight of several hundred kilograms on top of the corer pushes it 2 to 3 m into the seabed."@en ;
+    skos:definition "Large volume, relatively undisturbed sediment core (~3 m long) from a Kasten Corer. The corer is constructed of stainless steel and is square in cross-section. A weight of several hundred kilograms on top of the corer pushes it 2 to 3 m into the seabed."@en ;
     skos:historyNote "CGI Borehole drilling method vocabulary" ;
     skos:inScheme cs: ;
     skos:prefLabel "Kasten core"@en ;
@@ -482,7 +482,7 @@ cgibdm:kasten_core
 cgibdm:mackereth_core
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "The Mackereth corer (Mackereth, 1958; Smith, 1959) is a pneumatic device that consists of a cylindrical aluminium chamber about 1.2 m long and 0.5 m in diameter. The apparatus is lowered to the lake floor on a rope, and air hoses connect the chamber to the vessel at the water surface. Compressed air is used to pump the water out of the chamber and then to force the inner core barrel downward through the chamber and into the sediment. The method can recover single-drive moderate (up to 12 m) cores from lakes of diverse depths. Mackereth cores can be deployed on virtually any small craft and can be used in water depths up to 100 m."@en ;
+    skos:definition "The Mackereth corer (Mackereth, 1958; Smith, 1959) is a pneumatic device that consists of a cylindrical aluminium chamber about 1.2 m long and 0.5 m in diameter. The apparatus is lowered to the lake floor on a rope, and air hoses connect the chamber to the vessel at the water surface. Compressed air is used to pump the water out of the chamber and then to force the inner core barrel downward through the chamber and into the sediment. The method can recover single-drive moderate (up to 12 m) cores from lakes of diverse depths. Mackereth cores can be deployed on virtually any small craft and can be used in water depths up to 100 m."@en ;
     skos:historyNote "CGI Borehole drilling method vocabulary" ;
     skos:inScheme cs: ;
     skos:prefLabel "Mackereth core"@en ;
@@ -492,7 +492,7 @@ cgibdm:mackereth_core
 cgibdm:mackintosh_probe
     a skos:Concept ;
     rdfs:isDefinedBy <http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod> ;
-    skos:definition "The Mackintosh tool consists of rods that can be threaded together with barrel connectors and which are normally fitted with a driving point at their base, and a light hand-operated driving hammer at their top. The tool provides a very economical method of determining the thickness of soft deposits such as peat. The driving point is streamlined in longitudinal section with a maximum diameter of 27 mm. The drive hammer has a total weight of about 4 kg. The rods are 1.2 m long and 12 mm diameter. The device is often used to provide a depth profile by driving the point and rods into the ground with equal blows of the full drop height available from the hammer: the number of blows for each 150 mm of penetration is recorded."@en ;
+    skos:definition "The Mackintosh tool consists of rods that can be threaded together with barrel connectors and which are normally fitted with a driving point at their base, and a light hand-operated driving hammer at their top. The tool provides a very economical method of determining the thickness of soft deposits such as peat. The driving point is streamlined in longitudinal section with a maximum diameter of 27 mm. The drive hammer has a total weight of about 4 kg. The rods are 1.2 m long and 12 mm diameter. The device is often used to provide a depth profile by driving the point and rods into the ground with equal blows of the full drop height available from the hammer: the number of blows for each 150 mm of penetration is recorded."@en ;
     skos:historyNote "Clayton, CRI, Matthews, MC, and Simons, NE 1995, Site investigation: A Handbook for engineers: Blackwell Science, Oxford, 584p." ;
     skos:inScheme cs: ;
     skos:prefLabel "Mackintosh probe"@en ;
@@ -519,7 +519,7 @@ cgibdm:sonic
         "SON"@en ,
         "sonic drilling"@en ,
         "vibratory"@en ;
-    skos:definition "A sonic or vibratory drillhead works by sending high-frequency resonant vibrations down the drillstring to the drillbit, while the operator controls these frequencies to suit the specific conditions of the soil/rock geology. Vibrations may also be generated within the drillhead. The frequency is generally between 50 and 180 Hz (cycles per second) and can be varied by the operator. Resonance magnifies the amplitude of the drillbit, which fluidizes the soil particles at the bit face, allowing for fast and easy penetration through most geological formations. An internal spring system isolates these vibrational forces from the rest of the drill rig."@en ;
+    skos:definition "A sonic or vibratory drillhead works by sending high-frequency resonant vibrations down the drillstring to the drillbit, while the operator controls these frequencies to suit the specific conditions of the soil/rock geology. Vibrations may also be generated within the drillhead. The frequency is generally between 50 and 180 Hz (cycles per second) and can be varied by the operator. Resonance magnifies the amplitude of the drillbit, which fluidizes the soil particles at the bit face, allowing for fast and easy penetration through most geological formations. An internal spring system isolates these vibrational forces from the rest of the drill rig."@en ;
     skos:historyNote "Powersd, JP, Corwin, AB, Schmall, PC and Kaeck, WE 2007, Construction dewatering and groundwater control: New Methods and Applications, Third edition: John Wyley and Sons Inc., 624p." ;
     skos:inScheme cs: ;
     skos:notation "SON"^^xsd:token ;
