@@ -434,7 +434,7 @@ cs:
         :reduced-level ,
         :seismic-reference-datum ,
         <http://linked.data.gov.au/def/depth-reference/water-bottom> ;
-    skos:historyNote "Derived from [WAPIMS].[dbo].[WellPermanentDatumType], [WAPIMS].[dbo].[BoreholeVerticalReferenceType], and [WAPIMS].[dbo].[WellDepthReferenceType] with additions from the unpublished Geoscience Australia's Depth Reference Type vocabulary. Also refers to Geological Survey of Queensland's Depth Reference vocabulary (https://vocabs.gsq.digital/object?uri=http://linked.data.gov.au/def/depth-reference), with considerably expanded definitions."@en ;
+    skos:historyNote "Derived from [WAPIMS].[dbo].[WellPermanentDatumType], [WAPIMS].[dbo].[BoreholeVerticalReferenceType], and [WAPIMS].[dbo].[WellDepthReferenceType] with additions from the unpublished Geoscience Australia's Depth Reference Type vocabulary. Also refers to Geological Survey of Queensland's Depth Reference vocabulary (http://linked.data.gov.au/def/depth-reference), with considerably expanded definitions."@en ;
     skos:prefLabel "Vertical/depth reference systems"@en ;
     prov:qualifiedAttribution
         [
