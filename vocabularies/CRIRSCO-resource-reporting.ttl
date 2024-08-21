@@ -1,4 +1,4 @@
-PREFIX cs: <https://linked.data.gov.au/def/CRIRSCO-mineral-resource-reporting>
+PREFIX cs: <https://linked.data.gov.au/def/CRIRSCO-mineral-resource-reporting/>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
