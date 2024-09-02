@@ -122,6 +122,7 @@ cs:
         :onshore ;
     skos:historyNote "Terms and definitions are predominantly sourced from the Geological Survey of Queensland's (GSQ) Borehole start point vocabulary (http:/linked.data.gov.au/def/borehole-start-point), with some modifications and additional concepts."@en ;
     skos:prefLabel "Borehole start point setting"@en ;
+    schema:keywords theme:resources ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
