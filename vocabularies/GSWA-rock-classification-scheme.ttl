@@ -9860,9 +9860,8 @@ MAIN REFERENCES used for compilation:
     schema:dateCreated "2024-06-28"^^xsd:date ;
     schema:dateModified "2024-07-12"^^xsd:date ;
     schema:keywords
-        theme:legislation ,
-        theme:geology-framework ,
-        theme:data-acquisition ;
+        theme:geology-mapping ,
+        theme:geology-framework ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
 .
