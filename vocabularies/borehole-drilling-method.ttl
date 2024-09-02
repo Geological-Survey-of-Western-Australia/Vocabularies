@@ -574,6 +574,7 @@ cs:
         :unknown ;
     skos:historyNote "This vocabulary stems from and restructures the CGI's Borehole Drilling Method vocabulary, taking into account the common methods and terminology usage in the mineral and energy resource industry in Western Australia. IRIs are shared only when no changes were introduced to definitions. Notations largely stem from those used in GSWA's Drillhole database  ([DRILLHOLES].[Interfaces].[LookupHoleType])."@en ;
     skos:prefLabel "Borehole drilling method"@en ;
+    schema:keywords theme:resources ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
