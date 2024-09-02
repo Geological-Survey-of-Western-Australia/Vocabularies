@@ -10,6 +10,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 
 :Bauer-bucket
     a skos:Concept ;
@@ -574,6 +575,7 @@ cs:
         :unknown ;
     skos:historyNote "This vocabulary stems from and restructures the CGI's Borehole Drilling Method vocabulary, taking into account the common methods and terminology usage in the mineral and energy resource industry in Western Australia. IRIs are shared only when no changes were introduced to definitions. Notations largely stem from those used in GSWA's Drillhole database  ([DRILLHOLES].[Interfaces].[LookupHoleType])."@en ;
     skos:prefLabel "Borehole drilling method"@en ;
+    schema:keywords theme:resources ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;

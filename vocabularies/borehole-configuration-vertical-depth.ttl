@@ -11,6 +11,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 
 :australian-height-datum-TAS83
     a skos:Concept ;
@@ -436,6 +437,8 @@ cs:
         <https://linked.data.gov.au/def/depth-reference/water-bottom> ;
     skos:historyNote "Derived from [WAPIMS].[dbo].[WellPermanentDatumType], [WAPIMS].[dbo].[BoreholeVerticalReferenceType], and [WAPIMS].[dbo].[WellDepthReferenceType] with additions from the unpublished Geoscience Australia's Depth Reference Type vocabulary. Also refers to Geological Survey of Queensland's Depth Reference vocabulary (https://linked.data.gov.au/def/depth-reference), with considerably expanded definitions."@en ;
     skos:prefLabel "Vertical/depth reference systems"@en ;
+    schema:keywords
+        theme:geology-mapping ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;

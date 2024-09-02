@@ -8,6 +8,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 
 cs:Competent-Person
     a skos:Concept ;
@@ -257,4 +258,7 @@ The CRIRSCO Code is closely related to the JORC Code used in Australasia to repo
     schema:dateModified "2023-12-04"^^xsd:date ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
+    schema:keywords
+        theme:resources-mineral ,
+        theme:legislation ;
 .

@@ -11,6 +11,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 
 
 :albany-esperance-sandplain
@@ -3237,6 +3238,7 @@ cs:
     dcterms:identifier "Australian-physiographic-units"^^xsd:token ;
     dcterms:modified "2023-09-20"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:keywords theme:geology-framework ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status agldwgstatus:stable ;
