@@ -15,8 +15,10 @@ def vocpub_graph() -> Graph:
 def _get_vocab_files():
     directories = Path(".").glob("./vocabularies")
     background = Path(".").glob("./vocabularies/background")
+    system = Path(".").glob("./vocabularies/system")
     files = []
     backgroundFiles = []
+    systemFiles = []
     for directory in directories:
         files += directory.glob("**/*.ttl")
     for directory in background:
@@ -24,6 +26,11 @@ def _get_vocab_files():
     for backgroundFile in backgroundFiles:
         if backgroundFile in files:
             files.remove(backgroundFile)
+    for directory in system:
+        systemFiles += directory.glob("**/*.ttl")
+    for systemFile in systemFiles:
+        if systemFile in files:
+            files.remove(systemFile)
     return files
 
 
