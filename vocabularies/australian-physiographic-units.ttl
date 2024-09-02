@@ -3238,7 +3238,6 @@ cs:
     dcterms:identifier "Australian-physiographic-units"^^xsd:token ;
     dcterms:modified "2023-09-20"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:keywords theme:geology-framework ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status agldwgstatus:stable ;
