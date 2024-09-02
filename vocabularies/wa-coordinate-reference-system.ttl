@@ -11,6 +11,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
+
 
 :geographic
     a skos:Collection ;
@@ -740,6 +742,8 @@ cs:
         :wgs84 ;
     skos:historyNote "Historical and current coordinate references systems used in maps and publications by the Geological Survey of Western Australia since its inception."@en ;
     skos:prefLabel "Western Australian coordinate reference systems"@en ;
+    schema:keywords
+        theme:geology-mapping ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
