@@ -11,6 +11,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 
 :high-t-p-ratio
     a skos:Concept ;
@@ -126,6 +127,8 @@ cs:
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status agldwgstatus:stable ;
+    schema:keywords
+        theme:geology ;
     skos:definition "Terms that describe the ratio of temperature to pressure (T/P) during metamorphism, defining a classification scheme based on thermal gradient that is regarded as the most appropriate for building a temporal geodynamic context for metamorphic data. Some of these terms only partly correspond to metamorphic facies fields and classic-style terminology such as Barrovian and Buchan (i.e. correspondence is not one-for-one)."@en ;
     skos:hasTopConcept
         :high-t-p-ratio ,
