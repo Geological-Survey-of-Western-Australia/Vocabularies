@@ -14,6 +14,8 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX ts: <http://resource.geosciml.org/vocabulary/timescale/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
+
 
 ischart:Ages
     a skos:Collection ;
@@ -7821,4 +7823,6 @@ cs:
     schema:copyrightHolder <https://linked.data.gov.au/org/ics> ;
     schema:copyrightNotice "(c) International Commission on Stratigraphy, 2023"@en ;
     schema:license <https://creativecommons.org/licenses/by/4.0/> ;
+    schema:keywords
+        theme:geology-framework ;
 .
