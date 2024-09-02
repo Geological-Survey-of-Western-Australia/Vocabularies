@@ -398,6 +398,7 @@ cs:
         :true-vertical-depth ;
     skos:historyNote "Concepts used by the resources industry. Some covered in [WAPIMS].[dbo.DeviationSurveyPoint]."@en ;
     skos:prefLabel "Borehole geometry"@en ;
+    schema:keywords theme:resources ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
