@@ -11,6 +11,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 
 :physiographic-division
     a skos:Concept ;
@@ -69,6 +70,8 @@ cs:
         :physiographic-region ;
     skos:historyNote "The scheme for Australian physiographic units is derived from: Pain, C, Gregory, L, Wilson, P and McKenzie, N (2011), The physiographic regions of Australia – Explanatory notes 2011; Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain (dataset available at https://www.asris.csiro.au/themes/PhysioRegions.html). The Geological Survey of Western Australia's regolith classification system is available at https://dmpbookshop.eruditetechnologies.com.au/product/revised-classification-system-for-regolith-in-western-australia-and-the-recommended-approach-to-regolith-mapping.do (2024 update including physiographic units is in progress)."@en ;
     skos:prefLabel "Physiographic unit types"@en ;
+    schema:keywords
+        theme:geology-framework ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
