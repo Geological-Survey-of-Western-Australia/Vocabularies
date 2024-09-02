@@ -1,0 +1,3 @@
+PREFIX theme: https://linked.data.gov.au/def/GSWA-vocabulary-themes/
+
+<https://linked.data.gov.au/def/reg-statuses> schema:keywords theme:administration .
