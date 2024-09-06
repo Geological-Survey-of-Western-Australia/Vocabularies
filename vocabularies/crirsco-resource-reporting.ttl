@@ -218,7 +218,7 @@ PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.1 ;
     skos:definition "Terminology defined by the Committee for Mineral Reserves International Reporting Standards (CRIRSCO; https://www.crirsco.com/) based on the International Reporting Template (IRT; https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf). The IRT is a document that draws on the best of the CRIRSCO-style reporting standards, the JORC Code (Australasia), SAMREC Code (South Africa), Reporting Code (UK / Western Europe), CIM Guidelines (Canada), SME Guide (USA) and Certification Code (Chile). These reporting standards are recognized and adopted worldwide for market-related reporting and financial investment."@en ;
     skos:hasTopConcept
         :Competent-Person ,
@@ -258,7 +258,7 @@ The CRIRSCO Code is closely related to the JORC Code used in Australasia to repo
     schema:dateCreated "2023-11-01"^^xsd:date ;
     schema:dateModified "2023-12-04"^^xsd:date ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.1: updated IRI to use lowercase characters" ;
     schema:keywords
         theme:resources-mineral ,
         theme:legislation ;
