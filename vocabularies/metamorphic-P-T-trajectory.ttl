@@ -11,7 +11,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
+PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :anticlockwise
     a skos:Concept ;
