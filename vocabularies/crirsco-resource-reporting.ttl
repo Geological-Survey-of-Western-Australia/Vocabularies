@@ -1,4 +1,5 @@
-PREFIX cs: <https://linked.data.gov.au/def/CRIRSCO-mineral-resource-reporting/>
+PREFIX : <https://linked.data.gov.au/def/crirsco-mineral-resource-reporting/>
+PREFIX cs: <https://linked.data.gov.au/def/crirsco-mineral-resource-reporting>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -10,7 +11,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX theme: <https://linked.data.gov.au/def/GSWA-vocabulary-themes/>
 
-cs:Competent-Person
+:Competent-Person
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Competent-Person> ;
@@ -22,7 +23,7 @@ cs:Competent-Person
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Exploration-Results
+:Exploration-Results
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Exploration-Results> ;
@@ -34,7 +35,7 @@ cs:Exploration-Results
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Exploration-Target
+:Exploration-Target
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Exploration-Target> ;
@@ -46,7 +47,7 @@ cs:Exploration-Target
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Feasibility-Study
+:Feasibility-Study
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Feasibility-Study> ;
@@ -58,7 +59,7 @@ cs:Feasibility-Study
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Indicated-Resource
+:Indicated-Resource
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch <https://linked.data.gov.au/def/JORC-Code/Mineral-Resource> ;
@@ -70,7 +71,7 @@ cs:Indicated-Resource
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Inferred-Resource
+:Inferred-Resource
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch <https://linked.data.gov.au/def/JORC-Code/Mineral-Resource> ;
@@ -82,7 +83,7 @@ cs:Inferred-Resource
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Measured-Resource
+:Measured-Resource
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch <https://linked.data.gov.au/def/JORC-Code/Mineral-Resource> ;
@@ -94,7 +95,7 @@ cs:Measured-Resource
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Mineral
+:Mineral
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A Mineral is any substance, extracted for value, occurring naturally in or on the Earth, in or under water or in tailings, residues or stockpiles, having been formed by or subjected to a geological process but excludes, water, oil and gas."@en ;
@@ -105,7 +106,7 @@ cs:Mineral
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Mineral-Reserve
+:Mineral-Reserve
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Ore-Reserve> ;
@@ -113,14 +114,14 @@ cs:Mineral-Reserve
     skos:historyNote "https://www.crirsco.com/template/" ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:Probable-Reserve ,
-        cs:Proved-Reserve ;
+        :Probable-Reserve ,
+        :Proved-Reserve ;
     skos:prefLabel "Mineral Reserve"@en ;
     skos:topConceptOf cs: ;
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Mineral-Resource
+:Mineral-Resource
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Mineral-Resource> ;
@@ -128,15 +129,15 @@ cs:Mineral-Resource
     skos:historyNote "https://www.crirsco.com/template/" ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:Indicated-Resource ,
-        cs:Inferred-Resource ,
-        cs:Measured-Resource ;
+        :Indicated-Resource ,
+        :Inferred-Resource ,
+        :Measured-Resource ;
     skos:prefLabel "Mineral Resource"@en ;
     skos:topConceptOf cs: ;
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Modifying-Factors
+:Modifying-Factors
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Modifying-Factors> ;
@@ -148,7 +149,7 @@ cs:Modifying-Factors
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Pre-Feasibility-Study
+:Pre-Feasibility-Study
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Pre-Feasibility-Study> ;
@@ -160,7 +161,7 @@ cs:Pre-Feasibility-Study
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Probable-Reserve
+:Probable-Reserve
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch <https://linked.data.gov.au/def/JORC-Code/Ore-Reserve> ;
@@ -172,7 +173,7 @@ cs:Probable-Reserve
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Proved-Reserve
+:Proved-Reserve
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch <https://linked.data.gov.au/def/JORC-Code/Ore-Reserve> ;
@@ -184,7 +185,7 @@ cs:Proved-Reserve
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Public-reports
+:Public-reports
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Public-reports> ;
@@ -196,7 +197,7 @@ cs:Public-reports
     schema:citation "https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf"^^xsd:anyURI ;
 .
 
-cs:Scoping-Study
+:Scoping-Study
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/JORC-Code/Scoping-Study> ;
@@ -217,20 +218,20 @@ cs:Scoping-Study
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
-    owl:versionIRI <https://linked.data.gov.au/def/CRIRSCO-mineral-resource-reporting/1> ;
+    owl:versionIRI :1 ;
     skos:definition "Terminology defined by the Committee for Mineral Reserves International Reporting Standards (CRIRSCO; https://www.crirsco.com/) based on the International Reporting Template (IRT; https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf). The IRT is a document that draws on the best of the CRIRSCO-style reporting standards, the JORC Code (Australasia), SAMREC Code (South Africa), Reporting Code (UK / Western Europe), CIM Guidelines (Canada), SME Guide (USA) and Certification Code (Chile). These reporting standards are recognized and adopted worldwide for market-related reporting and financial investment."@en ;
     skos:hasTopConcept
-        cs:Competent-Person ,
-        cs:Exploration-Results ,
-        cs:Exploration-Target ,
-        cs:Feasibility-Study ,
-        cs:Mineral ,
-        cs:Mineral-Reserve ,
-        cs:Mineral-Resource ,
-        cs:Modifying-Factors ,
-        cs:Pre-Feasibility-Study ,
-        cs:Public-reports ,
-        cs:Scoping-Study ;
+        :Competent-Person ,
+        :Exploration-Results ,
+        :Exploration-Target ,
+        :Feasibility-Study ,
+        :Mineral ,
+        :Mineral-Reserve ,
+        :Mineral-Resource ,
+        :Modifying-Factors ,
+        :Pre-Feasibility-Study ,
+        :Public-reports ,
+        :Scoping-Study ;
     skos:historyNote """https://www.crirsco.com/docs/CRIRSCO_International_Reporting_Template_November_2019.pdf. 
 The CRIRSCO Code is closely related to the JORC Code used in Australasia to report mineral resources (sl), as required by the Mines and Mineral Deposits (MINEDEX) system maintained by the Geological Survey of Western Australia."""@en ;
     skos:prefLabel "CRIRSCO mineral resource reporting"@en ;
