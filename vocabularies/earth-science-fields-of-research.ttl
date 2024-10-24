@@ -1,0 +1,15 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/def/Earth-science-fields-of-research/geotourism>
+    a skos:Concept ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/Earth-science-fields-of-research> ;
+    skos:broader <https://linked.data.gov.au/def/Earth-science-fields-of-research/land-use-and-environmental-planning> ;
+    skos:definition "Tourism that sustains or enhances the distinctive geographical character of a place — its environment, heritage, aesthetics, culture, and the well-being of its residents​."@en ;
+    skos:historyNote "Compiled by the Geological Survey of Western Australia. Definition from the Australian Geoscience Council." ;
+    skos:inScheme <https://linked.data.gov.au/def/Earth-science-fields-of-research> ;
+    skos:prefLabel "geotourism"@en ;
+    schema:citation "https://www.agc.org.au/wp-content/uploads/2023/06/Understanding-Geotourism-GeoRegions-and-Geoparks-in-Australia-NGS-June-2023.pdf"^^xsd:anyURI ;
+.
