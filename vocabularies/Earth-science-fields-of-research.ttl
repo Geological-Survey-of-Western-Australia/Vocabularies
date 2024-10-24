@@ -8,6 +8,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 
 :applied-geophysics-
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370601> ;
@@ -4087,4 +4089,5 @@ cs:
     schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-framework> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
+    reg:status agldwgstatus:stable ;
 .
