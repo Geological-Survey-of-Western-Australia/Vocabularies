@@ -1,5 +1,5 @@
-PREFIX : <https://linked.data.gov.au/def/Earth-science-fields-of-research/>
-PREFIX cs: <https://linked.data.gov.au/def/Earth-science-fields-of-research>
+PREFIX : <https://linked.data.gov.au/def/earth-science-fields-of-research/>
+PREFIX cs: <https://linked.data.gov.au/def/earth-science-fields-of-research>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -903,7 +903,7 @@ Wenk H-R and Bulakh A, 2004, Mineral genesis: in Minerals: Their Constitution a
 :geoheritage
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader <https://linked.data.gov.au/def/Earth-science-fields-of-research/history,-heritage-and-archeology> ;
+    skos:broader <https://linked.data.gov.au/def/earth-science-fields-of-research/history,-heritage-and-archeology> ;
     skos:definition "The identification of global, national, state-wide, or local features of geology (such as igneous, metamorphic, sedimentary, stratigraphic, structural, geochemical, mineralogical, paleontological, geomorphical, pedological, and hydrological attributes) that are: (a) intrinsically important or culturally important sites; (b) offer information or insights into the formation or evolution of the Earth, or into the history of science, or (c) that can be used for research, teaching, or reference. Geoheritage is inextricably linked to geoconservation, for the preservation of these sites for posterity."@en ;
     skos:historyNote """Definition adapted from:
 Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, definition, scope and scale: Journal of the Royal Society of Western Australia, v. 90, p. 53–87.""" ;
@@ -1260,7 +1260,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     skos:prefLabel "ground spectral imaging"@en ;
 .
 
-<https://linked.data.gov.au/def/Earth-science-fields-of-research/heritage,-archive-and-museum-studies-not-elsewhere-classified>
+<https://linked.data.gov.au/def/earth-science-fields-of-research/heritage,-archive-and-museum-studies-not-elsewhere-classified>
     a skos:Concept ;
     rdfs:isDefinedBy
         cs: ,
@@ -3087,7 +3087,7 @@ Saraswati, PK and Srinivasan, MS 2015, Micropaleontology: principles and applica
         cs: ,
         <https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:altLabel "archaeology"@en ;
-    skos:broader <https://linked.data.gov.au/def/Earth-science-fields-of-research/history,-heritage-and-archeology> ;
+    skos:broader <https://linked.data.gov.au/def/earth-science-fields-of-research/history,-heritage-and-archeology> ;
     skos:definition "The study of human cultures through the recovery and analysis of their material relics."@en ;
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/4301> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
@@ -3488,7 +3488,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
         "https://glossary.americangeosciences.org/term/environmentalscience"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/Earth-science-fields-of-research/history,-heritage-and-archeology>
+<https://linked.data.gov.au/def/earth-science-fields-of-research/history,-heritage-and-archeology>
     a skos:Concept ;
     rdfs:isDefinedBy
         cs: ,
@@ -3845,7 +3845,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     rdfs:isDefinedBy
         cs: ,
         <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broader <https://linked.data.gov.au/def/Earth-science-fields-of-research/history,-heritage-and-archeology> ;
+    skos:broader <https://linked.data.gov.au/def/earth-science-fields-of-research/history,-heritage-and-archeology> ;
     skos:definition "Studies related to the identification, collection, curation, conservation, interpretation, use and management of cultural and natural heritage, by examining the variety of locations through which this happens such as objects and collections, museums, heritage places, intangible cultural heritage, and international heritage practice."@en ;
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/4302> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition compiled by Geological Survey of Western Australia from multiple sources." ;
@@ -4061,8 +4061,8 @@ cs:
         :earth-system-science ,
         :engineering ,
         :environmental-sciences ,
-        <https://linked.data.gov.au/def/Earth-science-fields-of-research/heritage,-archive-and-museum-studies-not-elsewhere-classified> ,
-        <https://linked.data.gov.au/def/Earth-science-fields-of-research/history,-heritage-and-archeology> ,
+        <https://linked.data.gov.au/def/earth-science-fields-of-research/heritage,-archive-and-museum-studies-not-elsewhere-classified> ,
+        <https://linked.data.gov.au/def/earth-science-fields-of-research/history,-heritage-and-archeology> ,
         :human-society ,
         :information-and-computing-sciences ,
         :physical-sciences ,
