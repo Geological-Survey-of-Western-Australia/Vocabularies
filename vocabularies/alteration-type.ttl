@@ -8,6 +8,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 
 :albitic-alteration
     a skos:Concept ;
@@ -762,6 +763,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
+    reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
     owl:versionIRI :1 ;
     skos:definition "Compilation of terms that describe the classification of alteration in a rock, with a focus on hydrothermal processes (i.e. mineralogical, chemical and textural changes resulting from the interaction of hot aqueous fluids with the rocks through which they circulate, under evolving physico-chemical conditions), and excluding weathering, mineralization and direct metamorphic or magmatic processes. Classification is based on the identification of the most important alteration mineral, the distinctive mineral assemblage, or the chemical changes that have occurred during alteration. Definitions are largely from Pirajno (2009), the Glossary of geology (5th edition revised; Neuendorf et.al., 2011), Thompson et al. (1996), and Wikipedia."@en ;
     skos:hasTopConcept
