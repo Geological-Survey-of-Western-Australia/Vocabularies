@@ -8,6 +8,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 
 :intense
     a skos:Concept ;
@@ -115,6 +116,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
+    reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
     owl:versionIRI :1 ;
     skos:definition "A compilation of terms that describe the degree to which (i.e. how much) a rock or a mineral has been affected by alteration. Alteration in this context is considered as a modification of the original lithology caused by meteoric, connate, metamorphic or magmatic-derived fluids, excluding the weathering environment, mineralization and direct magmatic or metamorphic processes. These concepts are generally used as convenient field or petrographic descriptive terms. Definitions are largely from Pirajno (2009) and the Glossary of geology (5th edition revised; Neuendorf et. al., 2011)."@en ;
     skos:hasTopConcept
