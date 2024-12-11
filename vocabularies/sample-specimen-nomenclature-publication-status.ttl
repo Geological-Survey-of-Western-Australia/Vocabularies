@@ -580,7 +580,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI :1.0 ;
+    owl:versionIRI :1 ;
     skos:definition "Listing of standard nomenclature types (typus) and publication statuses that may characterize fossil, mineral or meteorite samples/specimens held in the Geological Survey of Western Australia's collections. These terms should only be applied to physical items, and are not applicable to derived results or data. This vocabulary includes terms for type specimens as recognized under several international nomenclature codes (see History Note for details). Taxonomic schemes applied to different classes of objects each have their own set of accepted types, and can define the same term differently, so care should be taken to use the correct nomenclature when referring to type specimens; to minimize confusion, individual terms have been labelled with a suffix indicating the relevant code. Note that multiple statuses can apply to a single specimen (e.g. by definition a type specimen will always be described-and-published)."@en ;
     skos:hasTopConcept
         :non-type-specimen ,
@@ -601,11 +601,11 @@ GSWA distinguishes samples from specimens on the basis of the latter including b
     prov:qualifiedAttribution
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent <http://orcid.org/0000-0002-5129-2467> ;
+            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
+            prov:agent <http://orcid.org/0000-0002-5129-2467> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-12-09"^^xsd:date ;
@@ -615,5 +615,5 @@ GSWA distinguishes samples from specimens on the basis of the latter including b
         <https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-paleontology> ,
         <https://linked.data.gov.au/def/gswa-vocabulary-themes/sample-acquisition-management> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1.0" ;
+    schema:version "1" ;
 .
