@@ -8,6 +8,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 
 <http://orcid.org/0000-0002-5129-2467>
     a schema:Person ;
@@ -580,6 +581,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
+    reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
     owl:versionIRI :1 ;
     skos:definition "Listing of standard nomenclature types (typus) and publication statuses that may characterize fossil, mineral or meteorite samples/specimens held in the Geological Survey of Western Australia's collections. These terms should only be applied to physical items, and are not applicable to derived results or data. This vocabulary includes terms for type specimens as recognized under several international nomenclature codes (see History Note for details). Taxonomic schemes applied to different classes of objects each have their own set of accepted types, and can define the same term differently, so care should be taken to use the correct nomenclature when referring to type specimens; to minimize confusion, individual terms have been labelled with a suffix indicating the relevant code. Note that multiple statuses can apply to a single specimen (e.g. by definition a type specimen will always be described-and-published)."@en ;
     skos:hasTopConcept
