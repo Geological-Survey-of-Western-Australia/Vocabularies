@@ -1,4 +1,4 @@
-PREFIX : <https://linked.data.gov.au/def/sample-specimen-curation-status>
+PREFIX : <https://linked.data.gov.au/def/sample-specimen-curation-status/>
 PREFIX cs: <https://linked.data.gov.au/defSample-specimen-curation-status>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX default1: <https://linked.data.gov.au/defSample-specimen-curation-status/>
