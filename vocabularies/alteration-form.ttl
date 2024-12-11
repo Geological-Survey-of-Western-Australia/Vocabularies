@@ -1,5 +1,5 @@
-PREFIX : <https://linked.data.gov.au/def/gswa-alteration-form/>
-PREFIX cs: <https://linked.data.gov.au/def/gswa-alteration-form>
+PREFIX : <https://linked.data.gov.au/def/alteration-form/>
+PREFIX cs: <https://linked.data.gov.au/def/alteration-form>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -118,8 +118,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "not altered"@en ;
     skos:definition "A rock with no visible signs of alteration, in which primary minerals, fabrics (including primary pore space) and chemistry are unchanged."@en ;
     skos:exactMatch
-        <https://linked.data.gov.au/def/gswa-alteration-intensity/unaltered> ,
-        <https://linked.data.gov.au/def/gswa-alteration-type/unaltered> ;
+        <https://linked.data.gov.au/def/alteration-intensity/unaltered> ,
+        <https://linked.data.gov.au/def/alteration-type/unaltered> ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
     skos:prefLabel "unaltered"@en ;
