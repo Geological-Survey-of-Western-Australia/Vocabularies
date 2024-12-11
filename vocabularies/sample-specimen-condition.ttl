@@ -1,4 +1,4 @@
-PREFIX : <https://linked.data.gov.au/def/sample-specimen-condition>
+PREFIX : <https://linked.data.gov.au/def/sample-specimen-condition/>
 PREFIX cs: <https://linked.data.gov.au/defSample-specimen-condition>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX default1: <https://linked.data.gov.au/defSample-specimen-condition/>
