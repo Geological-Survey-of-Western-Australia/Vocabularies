@@ -1,6 +1,6 @@
-PREFIX cs: <https://linked.data.gov.au/def/sample-specimen-nomenclature-publication-status/>
+PREFIX : <https://linked.data.gov.au/def/sample-specimen-nomenclature-publication-status/>
+PREFIX cs: <https://linked.data.gov.au/def/sample-specimen-nomenclature-publication-status>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX default1: <https://linked.data.gov.au/def/sample-specimen-nomenclature-publication-status/>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -15,11 +15,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:name "0000 0002 5129 2467" ;
 .
 
-cs:allotype-ICZN
+:allotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zoological allotype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "An obsolete term, no longer regulated by the International Code of Zoological Nomenclature (ICZN), for a designated specimen of opposite sex to the holotype. No equivalent exists in the International Code of Nomenclature for algae, fungi and plants (ICN)."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -27,24 +27,24 @@ cs:allotype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:cited
+:cited
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "quoted"@en ,
         "referenced"@en ;
-    skos:broader cs:specimen-publication-status ;
+    skos:broader :specimen-publication-status ;
     skos:definition "A sample or specimen that has been mentioned or listed in a formal (peer-reviewed) scientific publication, but not imaged (drawn or photographed) or formally described. This term is only applicable to non-type samples or specimens."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "cited"@en ;
 .
 
-cs:cotype-ICZN
+:cotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zoological cotype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "An obsolete term no longer regulated by the International Code of Zoological Nomenclature (ICZN), formerly used for either syntype or paratype, but that should not now be used in zoological nomenclature. No equivalent exists in the International Code of Nomenclature for algae, fungi and plants (ICN)."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -52,11 +52,11 @@ cs:cotype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:cotype-IMA
+:cotype-IMA
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "mineral cotype"@en ;
-    skos:broader cs:type-specimen-mineral ;
+    skos:broader :type-specimen-mineral ;
     skos:definition "In the International Mineralogical Association's mineral nomenclature scheme (IMA), specimens (designated by the author) as those used to obtain quantitative data for the original description. Specimens examined only visually should not be considered cotypes."@en ;
     skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
     skos:inScheme cs: ;
@@ -64,23 +64,23 @@ cs:cotype-IMA
     schema:citation "http://www.minsocam.org/msa/ima/ima98(05).pdf"^^xsd:anyURI ;
 .
 
-cs:described-and-published
+:described-and-published
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader cs:specimen-publication-status ;
+    skos:broader :specimen-publication-status ;
     skos:definition "A sample or specimen to which a name or identification and full description has been applied in a formal (peer-reviewed) publication. 'Described and published' can be interchangeable with 'figured' if a specimen is illustrated in the primary reference; illustration is common in primary descriptions, but is not a requirement, especially where large collections of specimens are being described together."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "described and published"@en ;
 .
 
-cs:epitype-ICN-or-PICMN
+:epitype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical epitype"@en ,
         "microbialite epitype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), a specimen or illustration selected to serve as an interpretative type when the holotype, lectotype, or previously designated neotype, or all original material associated with a validly published name, cannot be identified for the purpose of the precise application of the name to a taxon. No equivalent exists in the International Code of Zoological Nomenclature (ICZN)."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -88,7 +88,7 @@ cs:epitype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:ex-type-ICN-or-PICMN
+:ex-type-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -96,7 +96,7 @@ cs:ex-type-ICN-or-PICMN
         "ex-holotype"@en ,
         "ex-isotype"@en ,
         "microbialite ex-type"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), a living isolate obtained from the type of a name when this is a culture permanently preserved in a metabolically inactive state. No equivalent exists in the International Code of Zoological Nomenclature (ICZN)."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -104,32 +104,32 @@ cs:ex-type-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:figured
+:figured
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "imaged"@en ;
-    skos:broader cs:specimen-publication-status ;
+    skos:broader :specimen-publication-status ;
     skos:definition "A sample or specimen that has been imaged (drawn or photographed) in a formal (peer-reviewed) scientific publication. Imaging may be in service of demonstrating the specimen's identity, preservation, interpretation, or any other purpose; these specimens are often conserved alongside type specimens due to their highly representative nature, and/or selection to illustrate particular or significant features. 'Figured' is partially interchangeable with 'described and published' and/or 'formally identified' in that specimen illustrations are essentially independent of whether a specimen is mentioned, formally identified and/or fully described within a publication."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "figured"@en ;
 .
 
-cs:formally-identified
+:formally-identified
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader cs:non-type-specimen ;
+    skos:broader :non-type-specimen ;
     skos:definition "A specimen to which a name or identification has been applied in a formal (peer-reviewed) publication, but that was not described in detail in that same publication. 'Formally identified' can be interchangeable with 'figured' if a specimen is illustrated in the same reference, although illustration is more common for cases where material is being formally described."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "formally identified"@en ;
 .
 
-cs:hapantotype-ICZN
+:hapantotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zoological hapantotype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "In the International Code of Zoological Nomenclature (ICZN), one or more preparations consisting of directly related individuals representing distinct stages in the life cycle, which together form the name-bearing type in an extant species of protistan. A hapantotype, while a series of individuals, is a holotype that must not be restricted by lectotype selection; however, if a hapantotype is found to contain individuals of more than one species, components may be excluded until it contains individuals of only one species. No equivalent exists in the International Code of Nomenclature for algae, fungi and plants (ICN)."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -137,13 +137,13 @@ cs:hapantotype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:holotype-ICN-or-PICMN
+:holotype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical holotype"@en ,
         "microbialite holotype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), the one specimen or illustration indicated as the nomenclatural type by the author(s) of a name of a new species or infraspecific taxon or, when no type was indicated, used by the author(s) when preparing the account of the new taxon."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -151,13 +151,13 @@ cs:holotype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:holotype-ICZN
+:holotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "zoological cotype"@en ,
         "zoological holotype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "In the International Code of Zoological Nomenclature (ICZN), the single specimen (except in the case of a hapantotype) designated or otherwise fixed as the name-bearing type of a nominal species or subspecies when the nominal taxon is established."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -165,11 +165,11 @@ cs:holotype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:holotype-IMA
+:holotype-IMA
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "mineral holotype"@en ;
-    skos:broader cs:type-specimen-mineral ;
+    skos:broader :type-specimen-mineral ;
     skos:definition "In the International Mineralogical Association's mineral nomenclature scheme (IMA), a single specimen (designated by the author) from which all the data for the original description were obtained. Where portions of such a specimen have been sent to other museums for preservation, the author will designate each of these as ‘part of the holotype.’"@en ;
     skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
     skos:inScheme cs: ;
@@ -177,23 +177,23 @@ cs:holotype-IMA
     schema:citation "http://www.minsocam.org/msa/ima/ima98(05).pdf"^^xsd:anyURI ;
 .
 
-cs:informally-identified
+:informally-identified
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader cs:non-type-specimen ;
+    skos:broader :non-type-specimen ;
     skos:definition "A specimen that has never been mentioned, named, described or identified in a formal (peer-reviewed) publication, but has had an informal name applied, whether in the field, by a curator or visiting expert, or in an informal publication (such as unpublished or internal reports, or theses)."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "informally identified"@en ;
 .
 
-cs:isoepitype-ICN-or-PICMN
+:isoepitype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical isoepitype"@en ,
         "microbialite isoepitype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), a duplicate specimen of the epitype. No equivalent exists in the International Code of Zoological Nomenclature (ICZN)."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -201,13 +201,13 @@ cs:isoepitype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:isolectotype-ICN-or-PICMN
+:isolectotype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical isolectotype"@en ,
         "microbialite isolectotype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), a duplicate specimen of the lectotype. No equivalent exists in the International Code of Zoological Nomenclature (ICZN)."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -215,13 +215,13 @@ cs:isolectotype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:isoneotype-ICN-or-PICMN
+:isoneotype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical isoneotype"@en ,
         "microbialite isoneotype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), a duplicate specimen of the neotype. No equivalent exists in the International Code of Zoological Nomenclature (ICZN)."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -229,13 +229,13 @@ cs:isoneotype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:isonym-ICN-or-PICMN
+:isonym-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical isonym"@en ,
         "microbialite isonym"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), the same name based on the same type, published independently at different times perhaps by different authors. Note: only the earliest isonym has nomenclatural status. No equivalent exists in the International Code of Zoological Nomenclature (ICZN)."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -243,13 +243,13 @@ cs:isonym-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:isosyntype-ICN-or-PICMN
+:isosyntype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical isosyntype"@en ,
         "microbialite isosyntype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), a duplicate specimen of a syntype. No equivalent exists in the International Code of Zoological Nomenclature (ICZN)."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -257,13 +257,13 @@ cs:isosyntype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:isotype-ICN-or-PICMN
+:isotype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical isotype"@en ,
         "microbialite isotype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), a duplicate specimen of the holotype. No equivalent exists in the International Code of Zoological Nomenclature (ICZN)."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -271,13 +271,13 @@ cs:isotype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:lectotype-ICN-or-PICMN
+:lectotype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical lectotype"@en ,
         "microbialite lectotype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), one specimen or illustration designated from the original material as the nomenclatural type if the name was published without a holotype, or if the holotype is lost or destroyed, or if a type is found to belong to more than one taxon."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -285,11 +285,11 @@ cs:lectotype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:lectotype-ICZN
+:lectotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zoological lectotype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "In the International Code of Zoological Nomenclature (ICZN), a syntype designated as the single name-bearing type specimen subsequent to the establishment of a nominal species or subspecies."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -297,13 +297,13 @@ cs:lectotype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:neotype-ICN-or-PICMN
+:neotype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical neotype"@en ,
         "microbialite neotype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), a specimen or illustration selected to serve as nomenclatural type if no original material is extant or as long as it is missing."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -311,11 +311,11 @@ cs:neotype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:neotype-ICZN
+:neotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zoological neotype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "In the International Code of Zoological Nomenclature (ICZN), the single specimen designated as the name-bearing type of a nominal species or subspecies when there is a need to define the nominal taxon objectively and no name-bearing type is believed to be extant. If stability and universality are threatened, because an existing name-bearing type is either taxonomically inadequate or not in accord with the prevailing usage of a name, the International Commission of Zoological Nomenclature may use its plenary power to set aside that type and designate a neotype."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -323,11 +323,11 @@ cs:neotype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:neotype-IMA
+:neotype-IMA
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "mineral neotype"@en ;
-    skos:broader cs:type-specimen-mineral ;
+    skos:broader :type-specimen-mineral ;
     skos:definition "In the International Mineralogical Association's mineral nomenclature scheme (IMA), a specimen chosen by the author of a redefinition or re-examination of a species to represent the species when the holotype or cotypes cannot be found. It must be shown that every attempt has been made to locate the originally described material. Neotypes can also be designated when examination of all holotypes and cotypes has shown that the definitive unit-cell parameters and chemical composition cannot be experimentally determined. All neotypes require the approval of the Commission on New Minerals and Mineral Names of the International Mineralogical Association."@en ;
     skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
     skos:inScheme cs: ;
@@ -335,11 +335,11 @@ cs:neotype-IMA
     schema:citation "http://www.minsocam.org/msa/ima/ima98(05).pdf"^^xsd:anyURI ;
 .
 
-cs:paralectotype-ICZN
+:paralectotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zoological paralectotype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "In the International Code of Zoological Nomenclature (ICZN), each specimen of a former syntype series remaining after the designation of a lectotype. No equivalent exists in the International Code of Nomenclature for algae, fungi and plants (ICN)."@en ;
     skos:historyNote "Adapted from the ICZN glossary" ;
     skos:inScheme cs: ;
@@ -347,13 +347,13 @@ cs:paralectotype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:paratype-ICN-or-PICMN
+:paratype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical paratype"@en ,
         "microbialite paratype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), any specimen cited in the protologue that is neither the holotype nor an isotype, nor one of the syntypes if in the protologue two or more specimens were simultaneously designated as types."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -361,13 +361,13 @@ cs:paratype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:paratype-ICZN
+:paratype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "zoological cotype"@en ,
         "zoological paratype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "In the International Code of Zoological Nomenclature (ICZN), each specimen of a type series other than the holotype."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -375,7 +375,7 @@ cs:paratype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:reference-sample-specimen
+:reference-sample-specimen
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A sample or specimen that is considered a key reference or exemplar for a specific locality, stratigraphic unit, geological feature or class of geological object."@en ;
@@ -385,13 +385,13 @@ cs:reference-sample-specimen
     skos:topConceptOf cs: ;
 .
 
-cs:syntype-ICN-or-PICMN
+:syntype-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "botanical syntype"@en ,
         "microbialite syntype"@en ;
-    skos:broader cs:type-specimen-ICN-or-PICMN ;
+    skos:broader :type-specimen-ICN-or-PICMN ;
     skos:definition "In the International Code of Nomenclature for algae, fungi and plants (ICN) and the Proposed International Code of Microbialite Nomenclature (PICMN), any specimen cited in the protologue when there is no holotype, or any of two or more specimens simultaneously designated in the protologue as types."@en ;
     skos:historyNote "Adapted from the ICN glossary." ;
     skos:inScheme cs: ;
@@ -399,13 +399,13 @@ cs:syntype-ICN-or-PICMN
     schema:citation "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-cs:syntype-ICZN
+:syntype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "zoological cotype"@en ,
         "zoological syntype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "In the International Code of Zoological Nomenclature (ICZN), each specimen of a type series from which neither a holotype nor a lectotype has been designated. The syntypes collectively constitute the name-bearing type."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -413,11 +413,11 @@ cs:syntype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:topotype-ICZN
+:topotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zoological topotype"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "An obsolete term, no longer regulated by the International Code of Zoological Nomenclature (ICZN), for a specimen originating from the type locality of the species or subspecies to which it is thought to belong, whether or not the specimen is part of the type series. No equivalent exists in the International Code of Nomenclature for algae, fungi and plants (ICN)."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -425,11 +425,11 @@ cs:topotype-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:type-series-ICZN
+:type-series-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "zoological type series"@en ;
-    skos:broader cs:type-specimen-ICZN ;
+    skos:broader :type-specimen-ICZN ;
     skos:definition "In the International Code of Zoological Nomenclature (ICZN), the series of specimens on which the original author bases a new nominal species-group taxon. In the absence of a holotype designation, any such specimen is eligible for subsequent designation as the name-bearing type (lectotype); pending lectotype designation, all the specimens of the type series are syntypes and collectively they constitute the name-bearing type. Excluded from the type series are any specimens that the original author expressly excludes or refers to as distinct variants, or doubtfully includes in the taxon. No equivalent exists in the International Code of Nomenclature for algae, fungi and plants (ICN) ."@en ;
     skos:historyNote "Adapted from the ICZN glossary." ;
     skos:inScheme cs: ;
@@ -437,7 +437,7 @@ cs:type-series-ICZN
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:type-specimen-meteorite
+:type-specimen-meteorite
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Reference sample of a named meteorite deposited in an approved type-specimen repository and meeting the minimum mass requirements, as set forward by the Meteorite Nomenclature Committee (also known as NomCom) of The Meteorological Society. NomCom regulations require a meteorite type specimen to be a minimum mass of 20 g or 20% of the total mass, whichever is the lesser amount. Suitable type-specimen repositories are described as 'institutions that have well-curated meteorite collections and long-standing commitments to such curation' (section 7.1). Unlike other nomenclatural codes, meteorites only recognize a single classification of type specimen."@en ;
@@ -460,20 +460,20 @@ cs:type-specimen-meteorite
     schema:url ""^^xsd:anyURI ;
 .
 
-cs:non-type-specimen
+:non-type-specimen
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A specimen that has never been designated as a nomenclatural type or type specimen, of any variety, in a formal (peer-reviewed) scientific publication or work."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:formally-identified ,
-        cs:informally-identified ;
+        :formally-identified ,
+        :informally-identified ;
     skos:prefLabel "non-type specimen"@en ;
     skos:topConceptOf cs: ;
 .
 
-cs:type-specimen-fossil
+:type-specimen-fossil
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
@@ -484,8 +484,8 @@ cs:type-specimen-fossil
     skos:historyNote "Definition compiled by Geological Survey of Western Australia based on the ICZN and IBN glossaries." ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:type-specimen-ICN-or-PICMN ,
-        cs:type-specimen-ICZN ;
+        :type-specimen-ICN-or-PICMN ,
+        :type-specimen-ICZN ;
     skos:prefLabel "type specimen - fossil"@en ;
     skos:topConceptOf cs: ;
     schema:citation
@@ -493,84 +493,84 @@ cs:type-specimen-fossil
         "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:specimen-publication-status
+:specimen-publication-status
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The status of a specimen in relation to how it has been portrayed in the scientific literature (e.g. figured, cited)"@en ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:cited ,
-        cs:described-and-published ,
-        cs:figured ;
+        :cited ,
+        :described-and-published ,
+        :figured ;
     skos:prefLabel "specimen publication status"@en ;
     skos:topConceptOf cs: ;
 .
 
-cs:type-specimen-mineral
+:type-specimen-mineral
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Reference samples for the definition of mineral species as per the mineral nomenclature scheme of the International Mineralogical Association (IMA). Although a vast number of minerals, especially those discovered in antiquity, have no designated type minerals, modern practise is to deposit all type minerals in a 'non-private, institutional, professionally curated, research-oriented' museum, with the type status of each specimen clearly designated."@en ;
     skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:cotype-IMA ,
-        cs:holotype-IMA ,
-        cs:neotype-IMA ;
+        :cotype-IMA ,
+        :holotype-IMA ,
+        :neotype-IMA ;
     skos:prefLabel "type specimen - mineral"@en ;
     skos:topConceptOf cs: ;
     schema:citation "http://www.minsocam.org/msa/ima/ima98(05).pdf"^^xsd:anyURI ;
 .
 
-cs:type-specimen-ICZN
+:type-specimen-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "name-bearing type"@en ,
         "zoological type"@en ;
-    skos:broader cs:type-specimen-fossil ;
+    skos:broader :type-specimen-fossil ;
     skos:definition "A specimen (or series of specimens) that provides the objective standard of reference whereby the application of the name of a nominal taxon can be determined, under the provisions of the International Code of Zoological Nomenclature (ICZN; 1999, with 2012 amendments). Type specimens are generally divided into primary (e.g. holotype, lectotype, syntype, neotype) or secondary (e.g. paratype, paralectotype) types, with primary types being of greater scientific importance. Recognizing that name-bearing types are international standards of reference, type specimens should be deposited in an institution that maintains a research collection, with proper facilities for preserving them and making them accessible for study."@en ;
     skos:historyNote "Adapted from the ICZN glossary and Recommendation 16C." ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:allotype-ICZN ,
-        cs:cotype-ICZN ,
-        cs:hapantotype-ICZN ,
-        cs:holotype-ICZN ,
-        cs:lectotype-ICZN ,
-        cs:neotype-ICZN ,
-        cs:paralectotype-ICZN ,
-        cs:paratype-ICZN ,
-        cs:syntype-ICZN ,
-        cs:topotype-ICZN ,
-        cs:type-series-ICZN ;
+        :allotype-ICZN ,
+        :cotype-ICZN ,
+        :hapantotype-ICZN ,
+        :holotype-ICZN ,
+        :lectotype-ICZN ,
+        :neotype-ICZN ,
+        :paralectotype-ICZN ,
+        :paratype-ICZN ,
+        :syntype-ICZN ,
+        :topotype-ICZN ,
+        :type-series-ICZN ;
     skos:prefLabel "type specimen - ICZN"@en ;
     schema:citation "https://www.iczn.org/the-code/the-code-online/"^^xsd:anyURI ;
 .
 
-cs:type-specimen-ICN-or-PICMN
+:type-specimen-ICN-or-PICMN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "nomenclatural type"@en ,
         "typus"@en ;
-    skos:broader cs:type-specimen-fossil ;
+    skos:broader :type-specimen-fossil ;
     skos:definition "A specimen designated as the element to which the name of a taxon is permanently attached, under the provisions of the International Code of Nomenclature for algae, fungi and plants (ICN; Shenzen Code, 2018); the type specimen is not necessarily the most typical or representative element of a taxon. Type specimens are generally divided into primary (e.g. holotype, lectotype, syntype, neotype) or secondary (e.g. paratype) types, with primary types being of greater scientific importance. As part of the requirements for taxonomic validity, type specimens are recommended to be held in public collections with a policy of giving bona fide researchers access to deposited material, and should be scrupulously conserved. Note that although microbialites are officially excluded from the ICN, the Proposed International Code of Microbialite Nomenclature (PICMN, Grey and Awramik, 2020) specifies that 'Provisions in the Shenzhen Code Articles 9 and 10 should be followed in designating and naming microbialite types, and for reference to terminology relating to different types (e.g. lectotype, paratype, etc.) and the rules governing their use' (point 11, p. 196), with that advice followed herein."@en ;
     skos:historyNote "Adapted from the ICN glossary, Article 7.2, Recommendation 7A.1, and Grey and Awramik (2020; Grey, K and Awramik, SM 2020, Handbook for the study and description of microbialites: Geological Survey of Western Australia, Bulletin 147, 278p.)." ;
     skos:inScheme cs: ;
     skos:narrower
-        cs:epitype-ICN-or-PICMN ,
-        cs:ex-type-ICN-or-PICMN ,
-        cs:holotype-ICN-or-PICMN ,
-        cs:isoepitype-ICN-or-PICMN ,
-        cs:isolectotype-ICN-or-PICMN ,
-        cs:isoneotype-ICN-or-PICMN ,
-        cs:isonym-ICN-or-PICMN ,
-        cs:isosyntype-ICN-or-PICMN ,
-        cs:isotype-ICN-or-PICMN ,
-        cs:lectotype-ICN-or-PICMN ,
-        cs:neotype-ICN-or-PICMN ,
-        cs:paratype-ICN-or-PICMN ,
-        cs:syntype-ICN-or-PICMN ;
+        :epitype-ICN-or-PICMN ,
+        :ex-type-ICN-or-PICMN ,
+        :holotype-ICN-or-PICMN ,
+        :isoepitype-ICN-or-PICMN ,
+        :isolectotype-ICN-or-PICMN ,
+        :isoneotype-ICN-or-PICMN ,
+        :isonym-ICN-or-PICMN ,
+        :isosyntype-ICN-or-PICMN ,
+        :isotype-ICN-or-PICMN ,
+        :lectotype-ICN-or-PICMN ,
+        :neotype-ICN-or-PICMN ,
+        :paratype-ICN-or-PICMN ,
+        :syntype-ICN-or-PICMN ;
     skos:prefLabel "type specimen - ICN or PICMN"@en ;
     schema:citation
         "https://dmpbookshop.eruditetechnologies.com.au/product/microbialites.do"^^xsd:anyURI ,
@@ -580,15 +580,15 @@ cs:type-specimen-ICN-or-PICMN
 
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI default1:1.0 ;
+    owl:versionIRI :1.0 ;
     skos:definition "Listing of standard nomenclature types (typus) and publication statuses that may characterize fossil, mineral or meteorite samples/specimens held in the Geological Survey of Western Australia's collections. These terms should only be applied to physical items, and are not applicable to derived results or data. This vocabulary includes terms for type specimens as recognized under several international nomenclature codes (see History Note for details). Taxonomic schemes applied to different classes of objects each have their own set of accepted types, and can define the same term differently, so care should be taken to use the correct nomenclature when referring to type specimens; to minimize confusion, individual terms have been labelled with a suffix indicating the relevant code. Note that multiple statuses can apply to a single specimen (e.g. by definition a type specimen will always be described-and-published)."@en ;
     skos:hasTopConcept
-        cs:non-type-specimen ,
-        cs:reference-sample-specimen ,
-        cs:specimen-publication-status ,
-        cs:type-specimen-fossil ,
-        cs:type-specimen-meteorite ,
-        cs:type-specimen-mineral ;
+        :non-type-specimen ,
+        :reference-sample-specimen ,
+        :specimen-publication-status ,
+        :type-specimen-fossil ,
+        :type-specimen-meteorite ,
+        :type-specimen-mineral ;
     skos:historyNote """The following have been used for the compilation of this vocabulary:
 1) International Code of Zoological Nomenclature (ICZN; 1999, with 2012 amendments) - www.iczn.org/the-code/the-code-online
 2) International Code of Nomenclature for algae, fungi and plants (ICN; Shenzen Code, 2018) - www.iapt-taxon.org/nomen/pages/main/glossary.html
