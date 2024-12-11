@@ -1,0 +1,296 @@
+PREFIX : <https://linked.data.gov.au/def/sample-specimen-curation-status>
+PREFIX cs: <https://linked.data.gov.au/defSample-specimen-curation-status>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX default1: <https://linked.data.gov.au/defSample-specimen-curation-status/>
+PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<http://orcid.org/0000-0002-5129-2467>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "0000 0002 5129 2467" ;
+.
+
+:archived
+    a skos:Concept ;
+    skos:altLabel "in storage"@en ;
+    skos:definition "A sample or specimen held at a storage location in an archived state, i.e. the sample/specimen has been fully assessed, prepared and recorded."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/in-storage> ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "archived"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:awaiting-registration
+    a skos:Concept ;
+    skos:definition "A sample flagged for permanent archiving, but currently in temporary storage awaiting registration."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "awaiting registration"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:consumed
+    a skos:Concept ;
+    skos:broader :deaccessioned ;
+    skos:definition "No part or amount of the sample or specimen remains extant as a result of intentional (e.g. analysis or processing) events. This excludes any child materials developed from the original destroyed sample. Any corresponding records in the collection management system(s) should be archived."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "consumed"@en ;
+.
+
+:destroyed
+    a skos:Concept ;
+    skos:broader :deaccessioned ;
+    skos:definition "No part or amount of the sample or specimen remains extant as a result of unintentional (e.g. accidental damage) events. This excludes any child materials developed from the original destroyed sample. Any corresponding records in the collection management system(s) should be archived."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "destroyed"@en ;
+.
+
+:discarded
+    a skos:Concept ;
+    skos:altLabel "disposed of"@en ;
+    skos:broader :deaccessioned ;
+    skos:definition "Sample or specimen has been intentionally removed from formal collections due to a perceived lack of space, the material's unsuitability for storage (e.g. hazardous), poor condition, and/or limited utility or applicability to ongoing studies (e.g. unknown origin/provenance). Disposed material is generally placed in the trash or informally donated due to a lack of value. Any corresponding records in the collection management system(s) should be archived."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "discarded"@en ;
+.
+
+:donated
+    a skos:Concept ;
+    skos:broader :deaccessioned ;
+    skos:definition "Sample or specimen has been permanently transferred to another organization through mutual agreement or arrangement. Any corresponding records in the collection management system(s) should be archived."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "donated"@en ;
+.
+
+:in-transit
+    a skos:Concept ;
+    skos:definition "The sample or specimen is being moved between locations."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/in-transit> ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "in transit"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:loaned-in
+    a skos:Concept ;
+    skos:broader :loan ;
+    skos:definition "Sample or specimen brought in temporarily from an outside source or organization under a limited-term agreement."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "loaned in"@en ;
+.
+
+:long-term-loan
+    a skos:Concept ;
+    skos:broader :loan ;
+    skos:definition "Sample or specimen is outside its registered storage facility on the basis of a loan agreement with an external researcher or organization, where that agreement has a longer than standard duration. This is common for material loaned for display in static galleries, where the loan may be reviewed and renewed periodically in lieu of a fixed-term agreement."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "long-term loan"@en ;
+.
+
+:lost
+    a skos:Concept ;
+    skos:definition "Location of sample or specimen is not known. Any corresponding records in the collection management system(s) should be preserved, and retrieved should the sample/specimen be recovered."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/lost> ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "lost"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:on-display
+    a skos:Concept ;
+    skos:altLabel "exhibited"@en ;
+    skos:definition "A sample or specimen held in a museum or other location for display, education and/or demonstration purposes. Displays can be located indoors or outdoors. May refer to specimens on loan that are on public display."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/on-display> ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "on display"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:on-loan-external
+    a skos:Concept ;
+    skos:altLabel "loaned out"@en ;
+    skos:broader :loan ;
+    skos:definition "Sample or specimen is outside its registered storage facility on the basis of a limited-term agreement with an external researcher or organization."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "on loan - external"@en ;
+.
+
+:on-loan-internal
+    a skos:Concept ;
+    skos:broader :loan ;
+    skos:definition "Sample or specimen is outside its registered storage facility on the basis of a limited-term agreement with an internal staff member."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "on loan - internal"@en ;
+.
+
+:permanent-loan
+    a skos:Concept ;
+    skos:broader :loan ;
+    skos:definition "Sample or specimen is outside its registered storage facility on the basis of an agreement with an external researcher or organization, where there is no time limit set on the loan's duration and no program of loan review. Permanent loans are similar to donations, except that the loaning organization retains the right to recall the sample/specimen if required."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "permanent loan"@en ;
+.
+
+:processing
+    a skos:Concept ;
+    skos:definition "The sample or specimen is at a laboratory, university, or other facility external to its registered storage facility to undergo processing or analysis."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/processing> ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "processing"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:quarantined
+    a skos:Concept ;
+    skos:definition "A sample or specimen placed in temporary or permanent isolation due to suspected or proven contamination or safety concerns. Isolation can be either spatial (separate cupboard) or engineered (suitable storage material, e.g. lead shield)."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "quarantined"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:restituted
+    a skos:Concept ;
+    skos:altLabel "repatriated"@en ;
+    skos:broader :deaccessioned ;
+    skos:definition "Sample or specimen that has been returned to the country or community of origin along with the unconditional rights to that object. This may include digital restitution, i.e. where only images and documentations are returned to the country or community of origin."@en ;
+    skos:historyNote "Definition adpted from https://www.nma.gov.au/about/publications/repatriation-handbook/chapter-1." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "restituted"@en ;
+.
+
+:sampled-under-agreement
+    a skos:Concept ;
+    skos:broader :collected ;
+    skos:definition "A sample collected from material (such as core or cuttings) held in the organization's collections as part of a departmental agreement or permit, normally by an external party for destructive analysis and research. Sampled-under-agreement also applies to any derivative samples/specimens and remnant materials, as well as related data, images and reports — the return/submission of which is a mandatory requirement of the agreement."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "sampled under agreement"@en ;
+.
+
+:stolen
+    a skos:Concept ;
+    skos:definition "A sample or specimen removed without permission or legal right and without any intention of return, and its whereabouts are unknown. Any corresponding records in the collection management system(s) should be preserved, and retrieved should the sample/specimen be recovered."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "stolen"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:temporary-holding
+    a skos:Concept ;
+    skos:definition "A sample or specimen that is being stored on a temporary basis, either for a set period or until a specific condition is met. This holding may be in preparation for destruction, transfer to another organization, or as a result of legislative or legal processes (such as confiscation of illegally obtained materials or evidence for an investigation)."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "temporary holding"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://orcid.org/0000-0002-7645-5031>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "0000 0002 7645 5031" ;
+.
+
+:collected
+    a skos:Concept ;
+    skos:definition "A sample collected from a sampling location and held in temporary storage prior to examination, analysis, or transfer to permanent or semi-permanent storage."@en ;
+    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/collected> ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:narrower :sampled-under-agreement ;
+    skos:prefLabel "collected"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/gswa>
+    a schema:Organization ;
+    schema:name "Gswa" ;
+    schema:url ""^^xsd:anyURI ;
+.
+
+:deaccessioned
+    a skos:Concept ;
+    skos:definition "A sample or specimen removed from storage or not retained permanently, based on a perceived lack of space, the material's unsuitability for storage (e.g. hazardous), poor condition, and/or limited utility or applicability to ongoing studies. Any corresponding records in the collection management system(s) should be archived."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :consumed ,
+        :destroyed ,
+        :discarded ,
+        :donated ,
+        :restituted ;
+    skos:prefLabel "deaccessioned"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:loan
+    a skos:Concept ;
+    skos:altLabel "borrowed"@en ;
+    skos:definition "A sample or specimen moved outside its registered storage facility on the basis of a formal agreement with a person or institution, usually for display or study purposes."@en ;
+    skos:historyNote "Compiled by Geological Survey of Western Australia" ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :loaned-in ,
+        :long-term-loan ,
+        :on-loan-external ,
+        :on-loan-internal ,
+        :permanent-loan ;
+    skos:prefLabel "loan"@en ;
+    skos:topConceptOf cs: ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    owl:versionIRI default1:1.0 ;
+    skos:definition "The status of a sample or specimen in relation to curation processes (e.g. the recording and organization of items in a collection), both before and after storage/archiving, and with respect to its display or storage location at a specific point in time."@en ;
+    skos:hasTopConcept
+        :archived ,
+        :awaiting-registration ,
+        :collected ,
+        :deaccessioned ,
+        :in-transit ,
+        :loan ,
+        :lost ,
+        :on-display ,
+        :processing ,
+        :quarantined ,
+        :stolen ,
+        :temporary-holding ;
+    skos:historyNote "Compiled by the Geological Survey of Western Australia to assist in the management of its physical sample/specimen collections. GSWA distinguishes samples from specimens on the basis of the latter including both primary and derived materials and having been accessioned into a suitable management system."@en ;
+    skos:prefLabel "Sample/specimen curation status"@en ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole isoroles:custodian ;
+            prov:agent <http://orcid.org/0000-0002-5129-2467> ;
+        ] ,
+        [
+            dcat:hadRole isoroles:custodian ;
+            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
+        ] ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2024-12-09"^^xsd:date ;
+    schema:dateModified "2024-12-09"^^xsd:date ;
+    schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/sample-acquisition-management> ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "1.0" ;
+.
