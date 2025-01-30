@@ -1,5 +1,5 @@
-PREFIX : <https://linked.data.gov.au/def/sample-specimen-curation-status/>
-PREFIX cs: <https://linked.data.gov.au/def/sample-specimen-curation-status>
+PREFIX : <https://linked.data.gov.au/def/sample-curation-status/>
+PREFIX cs: <https://linked.data.gov.au/def/sample-curation-status>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
