@@ -193,7 +193,7 @@ Note EPGS registry""" ;
         "AGD_1966"@en ,
         "Australian Geodetic Datum 1966"@en ;
     skos:definition "The first official national Australian Geodetic Datum (AGD), proclaimed in the Australian Commonwealth Gazette No. 84 of 6 October 1966. Area of use: Australia onshore and offshore, and Papua New Guinea onshore."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/queensland-crs/agd1966> ;
+    skos:exactMatch <https://linked.data.gov.au/def/queensland-crs/agd1966> ;
     skos:inScheme cs: ;
     skos:notation
         "EPSG:4202"^^<https://epsg.io/> ,
@@ -213,7 +213,7 @@ Note EPGS registry""" ;
         "AGD_1984"@en ,
         "Australian Geodetic Datum 1984"@en ;
     skos:definition "An update to the official Australian Geodetic Datum (AGD), adopted and in effect from 1984. The AGD84 national system replaced AGD66 but was officially adopted only in Queensland, South Australia and Western Australia; it was later replaced by GDA94. Area of use: Australia – Queensland, South Australia, Western Australia, federal areas offshore west of 129°E."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/queensland-crs/agd1984> ;
+    skos:exactMatch <https://linked.data.gov.au/def/queensland-crs/agd1984> ;
     skos:inScheme cs: ;
     skos:notation
         "EPSG:4203"^^<https://epsg.io/> ,
@@ -389,7 +389,7 @@ Note EPGS registry""" ;
 :gda2020
     a skos:Concept ;
     dcterms:source
-        "https:///linked.data.gov.au/def/queensland-crs/gda2020"^^xsd:anyURI ,
+        "https://linked.data.gov.au/def/queensland-crs/gda2020"^^xsd:anyURI ,
         "https://epsg.io/7844"^^xsd:anyURI ,
         "https://www.icsm.gov.au/sites/default/files/GDA2020TechnicalManualV1.1.1.pdf"^^xsd:anyURI ;
     skos:altLabel
@@ -397,7 +397,7 @@ Note EPGS registry""" ;
         "GDA_2020"@en ,
         "Geocentric Datum of Australia 2020"@en ;
     skos:definition "The official geodetic datum adopted nationally in June 2020. GDA2020 is a coordinate reference system with an origin that coincides with a determination of the centre of mass of the earth, hence the term geocentric. GDA2020 is a plate-fixed or static coordinate datum based on the International Terrestrial Reference Frame 1992 (ITRF92), held at the reference epoch of 1 January 2020. Area of use is the same as GDA94, i.e. all the areas contained within Australia’s marine jurisdiction (within 200 nautical miles of Australia) and its external territories, and the areas of Australia’s continental shelf beyond 200 nautical miles as confirmed by the United Nations Commission on the Limits of the Continental Shelf: Australia including Lord Howe Island, Macquarie Island, Ashmore and Cartier Islands, Christmas Island, Cocos (Keeling) Islands, Norfolk Island; all onshore and offshore."@en ;
-    skos:exactMatch <https:///linked.data.gov.au/def/queensland-crs/gda2020> ;
+    skos:exactMatch <https://linked.data.gov.au/def/queensland-crs/gda2020> ;
     skos:inScheme cs: ;
     skos:notation
         "EPSG:7844"^^<https://epsg.io/> ,
@@ -715,6 +715,8 @@ Note EPGS registry""" ;
     schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-13"^^xsd:date ;
@@ -722,8 +724,8 @@ cs:
     dcterms:identifier "wa-coordinate-reference-systems"^^xsd:token ;
     dcterms:modified "2023-09-13"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
     reg:status agldwgstatus:stable ;
     skos:definition "The coordinate reference systems (geographic and projected) used and referred to within Western Australia. It includes historical and current reference systems, Universal Transverse Mercator (UTM) zones, and, where applicable, notations based on the EPSG registry (https://epsg.io/). Some concepts are included to account for legacy data/maps with limited information."@en ;
     skos:hasTopConcept
@@ -742,8 +744,7 @@ cs:
         :wgs84 ;
     skos:historyNote "Historical and current coordinate references systems used in maps and publications by the Geological Survey of Western Australia since its inception."@en ;
     skos:prefLabel "Western Australian coordinate reference systems"@en ;
-    schema:keywords
-        theme:geology-mapping ;
+    schema:keywords theme:geology-mapping ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
@@ -763,3 +764,8 @@ cs:
         ] ;
 .
 
+<https://linked.data.gov.au/def/queensland-crs/agd1966> schema:name "AGD66" .
+<https://linked.data.gov.au/def/queensland-crs/agd1984> schema:name "AGD84" .
+<https://linked.data.gov.au/def/queensland-crs/gda1994> schema:name "GDA94" .
+<https://linked.data.gov.au/def/queensland-crs/gda2020> schema:name "GDA2020" .
+<https://linked.data.gov.au/def/queensland-crs/wgs1984> schema:name "WGS84" .

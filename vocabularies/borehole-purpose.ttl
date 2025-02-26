@@ -10,24 +10,14 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 
-:storage-liquids-other-than-water
-    skos:narrowMatch <http://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage> ;
-.
-
-:water-supply-mining
-    skos:broadMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/water-supply> ,
-        <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/watersupply> ;
-.
-
 :acid-leachate-testing
     a skos:Concept ;
     rdfs:isDefinedBy
-        <https:///linked.data.gov.au/def/borehole-sub-purpose> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose> ,
         cs: ;
     skos:broader :environmental ;
     skos:definition "A well or bore drilled to recover strata samples for their use in acid leachate testing."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/acid-leachate-testing> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-sub-purpose/acid-leachate-testing> ;
     skos:inScheme cs: ;
     skos:prefLabel "acid leachate testing"@en ;
     schema:citation "https://linked.data.gov.au/def/borehole-sub-purpose/acid-leachate-testing"^^xsd:anyURI ;
@@ -55,7 +45,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "blast hole"@en ;
     skos:broader :mining-development-and-production ;
     skos:definition "A well or bore drilled to facilitate the installation and subsequent detonation of explosives, pulverising material and throwing it away from the wall or face, reducing the effort required to advance the face or recover and remove materials."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/blasthole> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-sub-purpose/blasthole> ;
     skos:inScheme cs: ;
     skos:prefLabel "blasthole"@en ;
     schema:citation "http://linked.data.gov.au/def/borehole-sub-purpose/blasthole"^^xsd:anyURI ;
@@ -68,7 +58,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "A cased borehole drilled for the installation of electric cables, optic fibres and related services in an underground mine."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
-    skos:narrowMatch <http://linked.data.gov.au/def/borehole-sub-purpose/electricity> ;
+    skos:narrowMatch <https://linked.data.gov.au/def/borehole-sub-purpose/electricity> ;
     skos:prefLabel "cable services"@en ;
 .
 
@@ -101,7 +91,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broadMatch <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/dewatering> ;
     skos:broader :hydrogeology-mining ;
-    skos:definition "A borehole drilled and cased to enable the removal of groundwater from a mine. Mine dewatering is critical when a mine extends below the water table and groundwater does, due to gravity, infiltrate the mine workings."@en ;
+    skos:definition "A borehole drilled and cased to enable the removal of groundwater from a mine. Mine dewatering is critical when a mine extends below the water table and groundwater does, due to gravity, infiltrate the mine workings."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "dewatering (mining)"@en ;
     schema:citation "https://en.wikipedia.org/wiki/Mine_dewatering"^^xsd:anyURI ;
@@ -110,7 +100,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 :disposal-fluid-energy
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broadMatch <http://linked.data.gov.au/def/borehole-sub-purpose/disposal> ;
+    skos:broadMatch <https://linked.data.gov.au/def/borehole-sub-purpose/disposal> ;
     skos:broader :service-fluid-energy ;
     skos:closeMatch <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/disposal> ;
     skos:definition "A well, often a depleted production well, into which waste fluids can be injected into an isolated formation for safe disposal. Disposal wells are typically subject to regulatory requirements to avoid the contamination of freshwater aquifers."@en ;
@@ -122,7 +112,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 :disposal-hydrogeology
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broadMatch <http://linked.data.gov.au/def/borehole-sub-purpose/disposal> ;
+    skos:broadMatch <https://linked.data.gov.au/def/borehole-sub-purpose/disposal> ;
     skos:broader :hydrogeology ;
     skos:closeMatch <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/disposal> ;
     skos:definition "A well in which fluids are injected rather than produced, where the primary objective is to dispose of fluid/water into an isolated formation."@en ;
@@ -179,7 +169,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broader :injection-fluid-energy ;
     skos:definition "A well/borehole drilled to force gas into the target reservoir, whether to enhance fluid recovery or for temporary/permanent storage."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/gas-flood> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-sub-purpose/gas-flood> ;
     skos:historyNote "Adapted from PPDM Well Status & Classification v3." ;
     skos:inScheme cs: ;
     skos:prefLabel "gas injection well (fluid energy)"@en ;
@@ -192,8 +182,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "engineering drilling"@en ;
     skos:closeMatch
         <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geotechnicalSurvey> ,
-        <http://linked.data.gov.au/def/borehole-sub-purpose/geotech> ,
-        <http://linked.data.gov.au/def/borehole-sub-purpose/geotechnical-properties> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/geotech> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/geotechnical-properties> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/geothermal> ;
     skos:definition "Geotechnical or engineering drilling is carried out to determine soil and rock characteristics in order to facilitate infrastructure and mine planning. It includes the collection of rock and soil samples to determine physical properties (e.g. strength, hardness, fracture and fault frequency) for geotechnical analysis and to identify where unsafe rock or soil conditions could trigger a structural collapse or cause a hazardous scenario during, for example, an earthquake or flooding event. Geotechnical drilling is conducted to assess the potential construction sites of both above and below ground projects, including but not limited to buildings and storage structures, dams, bridges, roads, wharves and other civil works, and below surface projects such as tunnels and shafts (including all open pits and underground mining areas), access or inspection holes, or to facilitate installation of monitoring equipment (e.g. tiltmeters/inclinometers, piezometers and other sensors). Geotechnical work can overlap with environmental drilling on sites where there is a potential for environmental hazards."@en ;
     skos:historyNote "Modified from Australian Drilling Industry Association (2020; The Drilling Manual, Sixth Edition)." ;
@@ -205,7 +195,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 :grade-control
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broadMatch <http://linked.data.gov.au/def/borehole-sub-purpose/mineral-ore-body-assessment> ;
+    skos:broadMatch <https://linked.data.gov.au/def/borehole-sub-purpose/mineral-ore-body-assessment> ;
     skos:broader :mining-development-and-production ;
     skos:definition "A borehole drilled to estimate grade and location of resources/material in the ground (in-situ) to an acceptable degree of confidence for mining to be economic."@en ;
     skos:historyNote "Australian Drilling Industry Association (2020; The Drilling Manual, Sixth Edition)." ;
@@ -233,7 +223,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:narrowMatch
         <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/groundwaterLevelMonitoring> ,
         <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/waterQualityMonitoring> ,
-        <http://linked.data.gov.au/def/borehole-sub-purpose/observation> ;
+        <https://linked.data.gov.au/def/borehole-sub-purpose/observation> ;
     skos:prefLabel "groundwater monitoring"@en ;
 .
 
@@ -290,7 +280,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     skos:prefLabel "managed aquifer recharge"@en ;
     skos:relatedMatch
         <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/recharge> ,
-        <http://linked.data.gov.au/def/borehole-sub-purpose/water-injection> ;
+        <https://linked.data.gov.au/def/borehole-sub-purpose/water-injection> ;
 .
 
 :materials-characterization
@@ -322,7 +312,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     skos:definition "A service well drilled with the purpose of monitoring the movement of gases and liquids in the subsurface, formation pressure and temperature, seismicity, and injected CO2 plumes."@en ;
     skos:historyNote "Compiled in collaboration with the Australian Geothermal Association." ;
     skos:inScheme cs: ;
-    skos:narrowMatch <http://linked.data.gov.au/def/borehole-sub-purpose/observation> ;
+    skos:narrowMatch <https://linked.data.gov.au/def/borehole-sub-purpose/observation> ;
     skos:prefLabel "observation (fluid energy)"@en ;
 .
 
@@ -347,9 +337,9 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     skos:broader :storage ;
     skos:definition "A well drilled to inject fluids (e.g. CO₂) into deep subsurface rock formations for long-term storage. The process is also referred to as geosequestration (GS) in general, or more specifically as 'carbon capture and storage' (CCS) in the case of CO₂ or 'greenhouse gas storage' (GHG). Fluids are commonly captured from an industrial (e.g. steel and cement production) or energy-related source (e.g. a power plant or natural gas processing facility)."@en ;
     skos:inScheme cs: ;
-    skos:narrowMatch <http://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage> ;
+    skos:narrowMatch <https://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage> ;
     skos:prefLabel "permanent storage"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-purpose/greenhouse-gas-storage> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-purpose/greenhouse-gas-storage> ;
     schema:citation "https://www.epa.gov/uic/class-vi-wells-used-geologic-sequestration-carbon-dioxide#well_def"^^xsd:anyURI ;
 .
 
@@ -358,13 +348,13 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     rdfs:isDefinedBy cs: ;
     skos:broader :exploration-exploitation-fluid-energy-resources ;
     skos:definition "A well/borehole drilled to extract a fluid energy resource for commercial purposes."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/petroleum-production> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-sub-purpose/petroleum-production> ;
     skos:historyNote "Adapted from PPDM Well Status & Classification v3." ;
     skos:inScheme cs: ;
     skos:narrowMatch <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonProduction> ;
     skos:notation "PR"^^: ;
     skos:prefLabel "production (fluid energy)"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-purpose/geothermal> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-purpose/geothermal> ;
     schema:citation "https://ppdm.org/ppdm/PPDM/resources/PPDM/Resources.aspx"^^xsd:anyURI ;
 .
 
@@ -375,7 +365,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     skos:definition "A well drilled to both produce and inject fluids, either cyclically or simultaneously."@en ;
     skos:historyNote "Adapted from PPDM Well Status & Classification v3." ;
     skos:inScheme cs: ;
-    skos:narrowMatch <http://linked.data.gov.au/def/borehole-sub-purpose/petroleum-injection> ;
+    skos:narrowMatch <https://linked.data.gov.au/def/borehole-sub-purpose/petroleum-injection> ;
     skos:notation "PR/IN"^^: ;
     skos:prefLabel "production/injection (fluid energy)"@en ;
     schema:citation "https://ppdm.org/ppdm/PPDM/resources/PPDM/Resources.aspx"^^xsd:anyURI ;
@@ -385,7 +375,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "disposal (mining)"@en ;
-    skos:broadMatch <http://linked.data.gov.au/def/borehole-sub-purpose/disposal> ;
+    skos:broadMatch <https://linked.data.gov.au/def/borehole-sub-purpose/disposal> ;
     skos:broader :hydrogeology-mining ;
     skos:definition "A borehole drilled for the purpose of pumping water into an aquifer for disposal at some distance from a mine as a means of dewatering."@en ;
     skos:historyNote "Modified from Department of Water (2013) Western Australian water in mining guideline: Department of Water, Water Licensing Delivery Series Report 12, 75 p. https://www.wa.gov.au/system/files/2022-10/Western-Australian-water-in-mining-guideline.pdf" ;
@@ -398,7 +388,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :service-fluid-energy ;
-    skos:definition "In the petroleum and geothermal industries, a relief well is drilled to intersect and remedy a geothermal well where control has been or may be lost (e.g. blowout)."@en ;
+    skos:definition "In the petroleum and geothermal industries, a relief well is drilled to intersect and remedy a geothermal well where control has been or may be lost (e.g. blowout)."@en ;
     skos:historyNote "Compiled in collaboration with the Australian Geothermal Association." ;
     skos:inScheme cs: ;
     skos:prefLabel "relief (fluid energy)"@en ;
@@ -423,7 +413,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
     skos:prefLabel "rescue"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-sub-purpose/refuge> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-sub-purpose/refuge> ;
 .
 
 :resource-definition-and-conversion-to-ore-reserves
@@ -431,7 +421,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     rdfs:isDefinedBy cs: ;
     skos:broader :mining-development-and-production ;
     skos:definition "Drilling to determine the size and grade of an orebody in order to improve confidence in the Mineral Resource and Ore Reserve classification."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/resource-assessment> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-sub-purpose/resource-assessment> ;
     skos:historyNote "Australian Drilling Industry Association (2020; The Drilling Manual, Sixth Edition)." ;
     skos:inScheme cs: ;
     skos:prefLabel "resource definition and conversion to ore reserves"@en ;
@@ -475,11 +465,11 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/stratigraphicInvestigation> ;
     skos:broader :geological-investigation ;
     skos:definition "A borehole drilled to determine the lithological and stratigraphic intervals present at a location and/or to evaluate emerging technologies. Typically to enhance geological understanding of an area and/or to investigate the presence of geological setting(s) favourable for mineralization. It is most commonly associated with government drilling programs."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic> ;
     skos:inScheme cs: ;
     skos:prefLabel "stratigraphic/research (geology)"@en ;
     schema:citation "https://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic"^^xsd:anyURI ;
@@ -489,7 +479,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/stratigraphicInvestigation> ;
     skos:broader :exploration-exploitation-fluid-energy-resources ;
     skos:definition "A well drilled primarily with the intention of gathering geological data or to evaluate new technologies. The information may include stratigraphy, temperature gradient, heat flow, reservoir presence and quality."@en ;
@@ -515,7 +505,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     skos:broader :geological-investigation ;
     skos:definition "A borehole/well drilled to investigate the attitude of strata and structural/tectonic relationships of rock units at a location. Typically to enhance geological understanding of an area and/or to investigate the presence of geological setting(s) favourable for mineralization. Most commonly associated with government drilling programs or early stages of exploration. The concept is similar to 'stratigraphic/structural/research (mineral exploration)', but is distinct in not having a primary economic focus."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/structure> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/structure> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/structure> ;
     skos:inScheme cs: ;
     skos:prefLabel "structural (geology)"@en ;
@@ -527,12 +517,12 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     rdfs:isDefinedBy cs: ;
     skos:broader :environmental ;
     skos:definition "A borehole/well drilled to identify the presence of stygofauna and facilitate the monitoring of its biodiversity and overall 'health' parameters. Stygofauna, also known as subterranean aquatic fauna, are aquatic fauna that inhabit the water filled pore spaces, voids, cracks and fissures of most rock types and groundwater systems such as aquifers or underground caves."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/stygofauna-monitoring> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-sub-purpose/stygofauna-monitoring> ;
     skos:historyNote """Humphreys, WF 2006, Groundwater fauna paper prepared for the 2006 Australian State of the Environment Committee, Department of the Environment and Heritage, Canberra.,
 Humphreys, WF, 2008, ‘Rising Down Under: Developments in subterranean biodiversity in Australia from a groundwater fauna perspective’, Invertebrate Systematics, 22, 85-101.,
 https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-assessment-background-information-on-sampling-bores-for-stygofauna.pdf""" ;
     skos:inScheme cs: ;
-    skos:narrowMatch <http://linked.data.gov.au/def/borehole-sub-purpose/environmental> ;
+    skos:narrowMatch <https://linked.data.gov.au/def/borehole-sub-purpose/environmental> ;
     skos:prefLabel "stygofauna monitoring"@en ;
 .
 
@@ -587,7 +577,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     rdfs:isDefinedBy cs: ;
     skos:broader :injection-fluid-energy ;
     skos:definition "A well/borehole drilled to force water into the target reservoir, usually to enhance energy fluid recovery."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/water-flood> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-sub-purpose/water-flood> ;
     skos:historyNote "Adapted from PPDM Well Status & Classification v3." ;
     skos:inScheme cs: ;
     skos:prefLabel "water injection well (fluid energy)"@en ;
@@ -614,6 +604,9 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
     skos:prefLabel "water supply (exploration/mining)"@en ;
+    skos:broadMatch
+        <https://linked.data.gov.au/def/borehole-sub-purpose/water-supply> ,
+        <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/watersupply> ;
 .
 
 :water-supply-fluid-energy
@@ -621,7 +614,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     rdfs:isDefinedBy cs: ;
     skos:altLabel "WSW"@en ;
     skos:broadMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/water-supply> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/water-supply> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/watersupply> ;
     skos:broader :service-fluid-energy ;
     skos:definition "A well drilled to retrieve water to support petroleum and geothermal operations."@en ;
@@ -713,7 +706,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
 
 <https://linked.data.gov.au/org/gswa>
     a schema:Organization ;
-    schema:name "Gswa" ;
+    schema:name "GSWA" ;
     schema:url ""^^xsd:anyURI ;
 .
 
@@ -744,8 +737,8 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:historyNote "Adapted from PPDM Well Status & Classification v3." ;
     skos:inScheme cs: ;
     skos:narrowMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/gas-flood> ,
-        <http://linked.data.gov.au/def/borehole-sub-purpose/water-flood> ;
+        <https://linked.data.gov.au/def/borehole-sub-purpose/gas-flood> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/water-flood> ;
     skos:narrower
         :gas-injection-well-fluid-energy ,
         :water-injection-well-fluid-energy ;
@@ -758,14 +751,14 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/investigation> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/investigation> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/research> ;
     skos:definition "Drilling for the primary purpose of understanding the geological characteristics of the site, such as stratigraphy, structure, and physical or chemical rock properties. These boreholes are generally drilled as part of scientific/technical investigations conducted by government or research organizations."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
     skos:narrowMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/fault-delineation> ,
-        <http://linked.data.gov.au/def/borehole-sub-purpose/intrusion-delineation> ;
+        <https://linked.data.gov.au/def/borehole-sub-purpose/fault-delineation> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/intrusion-delineation> ;
     skos:narrower
         :stratigraphic-geology ,
         :stratigraphic-research-drilling-geology ,
@@ -782,7 +775,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:exactMatch <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationNaturalUndergroundStorage> ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
-    skos:narrowMatch <http://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage> ;
+    skos:narrowMatch <https://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage> ;
     skos:narrower
         :permanent-storage ,
         :transient-storage-gases ,
@@ -802,7 +795,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
         <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/environmentalMonitoring> ,
         <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/pollutionMonitoring> ,
         <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/remediation> ,
-        <http://linked.data.gov.au/def/borehole-sub-purpose/environmental> ;
+        <https://linked.data.gov.au/def/borehole-sub-purpose/environmental> ;
     skos:narrower
         :acid-leachate-testing ,
         :materials-characterization ,
@@ -833,7 +826,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/service> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/service> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/service> ;
     skos:broader :exploration-exploitation-fluid-energy-resources ;
     skos:definition "A well drilled to provide maintenance and monitoring during fluid energy production, which may include supply, disposal, relief, and observation."@en ;
@@ -863,7 +856,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
         :groundwater-production ,
         :reinjection-hydrogeology ;
     skos:prefLabel "hydrogeology"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-purpose/water> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-purpose/water> ;
     skos:topConceptOf cs: ;
 .
 
@@ -871,7 +864,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broadMatch
-        <http://linked.data.gov.au/def/borehole-sub-purpose/service> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/service> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/service> ;
     skos:broader :mining-development-and-production ;
     skos:definition "Boreholes drilled to provide services such as the transport of water, compressed air, other gases or materials; placement of electric cables and airlines; or raise bores for access or ventilation. It includes drilling conducted during mine rescue operations."@en ;
@@ -898,9 +891,9 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:inScheme cs: ;
     skos:narrowMatch
         <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geothermalEnergy> ,
-        <http://linked.data.gov.au/def/borehole-purpose/geothermal> ,
-        <http://linked.data.gov.au/def/borehole-purpose/petroleum> ,
-        <http://linked.data.gov.au/def/borehole-sub-purpose/heat-flow> ;
+        <https://linked.data.gov.au/def/borehole-purpose/geothermal> ,
+        <https://linked.data.gov.au/def/borehole-purpose/petroleum> ,
+        <https://linked.data.gov.au/def/borehole-sub-purpose/heat-flow> ;
     skos:narrower
         :appraisal-fluid-energy ,
         :development-fluid-energy ,
@@ -918,7 +911,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :exploration-exploitation-minerals-and-basic-raw-materials ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-purpose/mineral> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-purpose/mineral> ;
     skos:definition "A borehole drilled at the surface or underground to develop mines and/or quarries to facilitate production of economic minerals and basic raw materials. It includes drilling for underground services such as cables, water pipes, access and airways."@en ;
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
@@ -934,10 +927,12 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:prefLabel "mining (development and production)"@en ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.0 ;
     skos:definition "The primary purpose for which a borehole was drilled or any secondary purpose that the borehole may acquire during its lifecycle. The vocabulary focuses on drilling purposes within the resources industry, with a focus on terminology as applied in the Geological Survey of Western Australia (GSWA) databases. Some terms covered by jurisdictional legislation are highlighted in the provenance field. Variations in terminology within definitions (i.e. usage of borehole, well and wellbore) stem from usage in different sectors of the resources industry, but for the purpose of this vocabulary are considered to be equivalent. In the context of this vocabulary, the term fluid energy refers to sources such as gas, petroleum and geothermal, as covered by the Petroleum Legislation Amendment Act 2024, and is exclusive of mineral sources of energy (e.g. coal, uranium). "@en ;
     skos:hasTopConcept
         :environmental ,
@@ -951,12 +946,12 @@ cs:
         :storage ,
         :unknown ;
     skos:historyNote """Definitions in this vocabulary were compiled from authoritative sources and/or adapted from related vocabularies:
-1) The Drilling Manual, Sixth Edition, 2020,  Australian Drilling Industry Association (ADIA)
+1) The Drilling Manual, Sixth Edition, 2020,  Australian Drilling Industry Association (ADIA)
 2) Australian Drilling Manual 1995, Australian Drilling Industry Training Committee Limited
-3) European Commission (Europa) INSPIRE registry - Borehole Purpose (http://inspire.ec.europa.eu/codelist/BoreholePurposeValue)
-4) Geological Survey of Queensland (GSQ) - Borehole Purpose (http://linked.data.gov.au/def/borehole-purpose) and Borehole Sub-Purpose (http://linked.data.gov.au/def/borehole-sub-purpose)
-5) Geoscience Australia (GA) - Borehole Geology - Purpose (https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose)
-6) PPDM Association - (https://ppdm.org/ppdm/PPDM/resources/Technical_Publications/PPDM/Technical_Publications.aspx)
+3) European Commission (Europa) INSPIRE registry - Borehole Purpose (http://inspire.ec.europa.eu/codelist/BoreholePurposeValue)
+4) Geological Survey of Queensland (GSQ) - Borehole Purpose (http://linked.data.gov.au/def/borehole-purpose) and Borehole Sub-Purpose (http://linked.data.gov.au/def/borehole-sub-purpose)
+5) Geoscience Australia (GA) - Borehole Geology - Purpose (https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose)
+6) PPDM Association - (https://ppdm.org/ppdm/PPDM/resources/Technical_Publications/PPDM/Technical_Publications.aspx)
 7) Mining Proposal Guidance v 4.0, January 2023, Department of Energy, Mines, Industry Regulation and Safety (DEMIRS)
 8) Western Australian water in mining guideline, 2013, Department of Water.
 9) Minimum Construction Requirements for Water Bores in Australia, 2020, National Uniform Drillers Licensing Committee
@@ -986,5 +981,107 @@ This vocabulary was discussed at a national level via the Government Geoscience 
     schema:dateModified "2025-02-03"^^xsd:date ;
     schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/resources> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .
+
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/dewatering> schema:name "dewatering" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/disposal> schema:name "disposal" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/environmentalMonitoring> schema:name "environmental monitoring" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationEnergyResources> schema:name "exploration exploitation  energy resources" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationNonmetallicMineralDeposits> schema:name "exploration exploitation non metallic mineral deposits" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationRawMaterial> schema:name "exploration exploitation raw material" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationNaturalUndergroundStorage> schema:name "exploration natural underground storage" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geologicalSurvey> schema:name "geological survey" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geophysicalSurvey> schema:name "geophysical survey" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geotechnicalSurvey> schema:name "geotechnical survey" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geothermalEnergy> schema:name "geothermal energy" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/groundwaterLevelMonitoring> schema:name "groundwater level monitoring" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonAppraisal> schema:name "hydrocarbon appraisal" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonExploration> schema:name "hydrocarbon exploration" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonProduction> schema:name "hydrocarbon production" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrogeologicalSurvey> schema:name "hydrogeological survey" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/industrialWaterSupply> schema:name "industrial water supply" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/irrigation> schema:name "irrigation" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/mineralExplorationExtraction> schema:name "mineral exploration estraction" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/pollutionMonitoring> schema:name "pollution monitoring" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/recharge> schema:name "rechard" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/remediation> schema:name "remediation" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/shotHole> schema:name "shot hole" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/waterQualityMonitoring> schema:name "water quality monitoring" .
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/waterSupply> schema:name "water supply" .
+
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/appraisal> schema:name "appraisal" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/development> schema:name "development" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/environmental> schema:name "environmental" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/exploration> schema:name "exploration" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/geothermal> schema:name "geothermal" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/hydrological> schema:name "hydrological" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/monitoring> schema:name "monitoring" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/research> schema:name "research" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/sequestration> schema:name "sequestration" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/service> schema:name "service" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/stratigraphicInvestigation> schema:name "stratigraphic investigation" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/structure> schema:name "structure" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/unknown> schema:name "unknown" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/watersupply> schema:name "water supply" .
+
+
+<https://linked.data.gov.au/def/borehole-sub-purpose/acid-leachate-testing> schema:name "acid leachate testing" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/blasthole> schema:name "blasthole" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/disposal> schema:name "disposal" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/electricity> schema:name "electricity" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/environmental> schema:name "environmental" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/fault-delineation> schema:name "fault delineation" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/gas-flood> schema:name "gas flood" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/geotech> schema:name "geotech" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/geotechnical-properties> schema:name "geotechnical properties" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/heat-flow> schema:name "heat flow" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/intrusion-delineation> schema:name "intrusion delineation" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/investigation> schema:name "investigation" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/mineral-ore-body-assessment> schema:name "mineral ore body assessment" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/observation> schema:name "observation" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/petroleum-injection> schema:name "petroleum injection" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/petroleum-production> schema:name "petroleum production" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/refuge> schema:name "refuge" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/resource-assessment> schema:name "resource assessment" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/service> schema:name "service" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic> schema:name "stratigraphic" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/structure> schema:name "structure" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/stygofauna-monitoring> schema:name "stygofauna monitoring" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/water-flood> schema:name "water flood" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/water-injection> schema:name "water injection" .
+<https://linked.data.gov.au/def/borehole-sub-purpose/water-supply> schema:name "water supply" .
+
+<https://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage>
+    schema:description "Wells that deposit carbon dioxide into an underground geological formation after capture from large point sources, such as a cement factory or biomass power plant."@en ;
+    schema:name "Carbon Capture and Storage"@en ;
+.
+
+<https://linked.data.gov.au/def/borehole-purpose/geothermal>
+    schema:description "Wells and bores drilled under permits governed by the Queensland Geothermal Energy Act 2010"@en ;
+    schema:name "Geothermal"@en ;
+.
+
+<https://linked.data.gov.au/def/borehole-purpose/greenhouse-gas-storage>
+    schema:description "Wells and bores drilled under permits governed by the Queensland Greenhouse Gas Storage Act 2009"@en ;
+    schema:name "Greenhouse Gas Storage"@en ;
+.
+
+<https://linked.data.gov.au/def/borehole-purpose/mineral>
+    schema:description "Wells and bores drilled to facilitate the mining of minerals, excluding coal and oil shale, under permits governed by the Queensland Mineral Resources Act (1989)"@en ;
+    schema:name "Mineral"@en ;
+.
+
+<https://linked.data.gov.au/def/borehole-purpose/petroleum>
+    schema:description "Wells and bores drilled under permits governed by the Queensland Petroleum Act 1923 and Petroleum and Gas (Production and Safety) Act 2004. This includes water observation, water disposal, and water supply wells drilled under the relevant Petroleum Acts rather than the Water Act."@en ;
+    schema:name "Petroleum"@en ;
+.
+
+<https://linked.data.gov.au/def/borehole-purpose/water>
+    schema:description "Wells and bores drilled under permits governed by the Queensland Water Act 2000. A well or bore is only considered a water well or bore where drilled under the Water Act, e.g. a well or bore drilled to serve a water observation function under the Petroleum Act is considered a Petroleum Well with an Observation function or sub-purpose. Additional rights, obligations, and responsibilities may be conferred by intersecting legislation on wells and bores drilled by mineral and coal permit holders and petroleum and gas permit holders under the Mineral Resources Act 1989 and the Petroleum and Gas (Production and Safety) Act 2004 respectively."@en ;
+    schema:name "Water"@en ;
+.
+
+<https://linked.data.gov.au/def/borehole-sub-purpose> schema:name "Borehole Sub-Purpose Vocabulary" .

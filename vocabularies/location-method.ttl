@@ -448,7 +448,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :satellite
     a skos:Concept ;
-    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Satellite_imagery> ;
+    rdfs:isDefinedBy cs: ;
     skos:definition "Geographic location captured by using satellite images (also Earth observation imagery, spaceborne photography, or simply satellite photo) are images of Earth collected by imaging satellites operated by governments and businesses around the world."@en ;
     skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
     skos:inScheme cs: ;
@@ -457,6 +457,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
         :spot-p ;
     skos:prefLabel "satellite imagery"@en ;
     skos:topConceptOf cs: ;
+    schema:citation "https://en.wikipedia.org/wiki/Satellite_imagery"^^xsd:anyURI ;
 .
 
 :single-shot-survey
@@ -563,10 +564,12 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
-    owl:versionIRI <https://linked.data.gov.au/def/location-method/1> ;
+    owl:versionIRI :1.0 ;
     skos:definition "Methods used to spatially locate geological features and exploration, mining and related infrastructure sites. These can be either features directly observed in the field (e.g. site/outcrop descriptions, structural readings, etc.) or obtained from legacy and current documents/datasets (e.g. airphotos, maps, previously published reports, exploration reports, etc.). Each location method has a spatial accuracy that indicates an estimate of the approximate error in the location. Captured geographical locations for geological or mining features are expressed as a set of coordinates (latitude and longitude degrees), with or without an elevation above or below sea level."@en ;
     skos:hasTopConcept
         :airphoto-mga ,
@@ -614,5 +617,5 @@ cs:
     schema:dateModified "2022-11-23"^^xsd:date ;
     schema:keywords theme:geology-mapping ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .

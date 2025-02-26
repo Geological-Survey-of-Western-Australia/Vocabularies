@@ -54,7 +54,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     skos:historyNote "Resources industry concept" ;
     skos:inScheme cs: ;
     skos:prefLabel "horizontal"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-design/lateral> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-design/lateral> ;
     skos:topConceptOf cs: ;
 .
 
@@ -76,7 +76,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "downhole"@en ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-design/inclineddown> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-design/inclineddown> ;
     skos:definition "A borehole drilled from the start point at a pre-set nonvertical angle below horizontal (drilled downwards)."@en ;
     skos:historyNote "Mineral industry concept" ;
     skos:inScheme cs: ;
@@ -87,7 +87,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "uphole"@en ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-design/inclinedup> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-design/inclinedup> ;
     skos:definition "A borehole drilled from the start point at a pre-set nonvertical angle above horizontal (drilled upwards)."@en ;
     skos:historyNote "Mineral industry concept" ;
     skos:inScheme cs: ;
@@ -98,7 +98,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     a skos:Concept ;
     dcterms:source "https://glossary.americangeosciences.org/term/lateraldrill"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-design/lateral> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-design/lateral> ;
     skos:definition "A borehole drilled with geosteering equipment with the intent of controlling the trajectory to drill laterally within a targeted stratigraphic interval or intervals. Usually, but not always, drilled close to horizontal and for relatively short distances."@en ;
     skos:historyNote "Energy industry concept" ;
     skos:inScheme cs: ;
@@ -109,7 +109,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     a skos:Concept ;
     dcterms:source "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-design/vertical> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-design/vertical> ;
     skos:definition "A borehole drilled in a vertical downwards direction with the intent of maintaining a vertical trajectory. Deviations up to 2° from the vertical line are usually accepted as 'vertical’."@en ;
     skos:historyNote "Resources industry concept" ;
     skos:inScheme cs: ;
@@ -133,6 +133,8 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-01"^^xsd:date ;
@@ -140,8 +142,8 @@ cs:
     dcterms:identifier "borehole-configuration"^^xsd:token ;
     dcterms:modified "2023-09-01"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
     reg:status agldwgstatus:stable ;
     schema:keywords theme:resources ;
     skos:definition "A description of the intended configuration and trajectory of a borehole, covering concepts from the energy and mineral resources industry. Note that most of the concepts in this vocabulary apply to both the process of drilling (e.g. directional drilling), as well as to an actual borehole (e.g. directional well), even if the definitions in this vocabulary focus specifically on the latter."@en ;
@@ -172,3 +174,8 @@ cs:
         ] ;
 .
 
+<https://linked.data.gov.au/def/borehole-design/deviated> schema:name "deviated" .
+<https://linked.data.gov.au/def/borehole-design/inclineddown> schema:name "inclined down" .
+<https://linked.data.gov.au/def/borehole-design/inclinedup> schema:name "inclined up" .
+<https://linked.data.gov.au/def/borehole-design/lateral> schema:name "lateral" .
+<https://linked.data.gov.au/def/borehole-design/vertical> schema:name "vertical" .

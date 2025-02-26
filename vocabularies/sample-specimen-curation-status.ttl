@@ -21,7 +21,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:altLabel "in storage"@en ;
     skos:definition "A sample or specimen held at a storage location in an archived state, i.e. the sample/specimen has been fully assessed, prepared and recorded."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/in-storage> ;
+    skos:exactMatch <https://linked.data.gov.au/def/sample-location-status/in-storage> ;
     skos:historyNote "Compiled by Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "archived"@en ;
@@ -83,7 +83,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The sample or specimen is being moved between locations."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/in-transit> ;
+    skos:exactMatch <https://linked.data.gov.au/def/sample-location-status/in-transit> ;
     skos:historyNote "Compiled by Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "in transit"@en ;
@@ -114,7 +114,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Location of sample or specimen is not known. Any corresponding records in the collection management system(s) should be preserved, and retrieved should the sample/specimen be recovered."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/lost> ;
+    skos:exactMatch <https://linked.data.gov.au/def/sample-location-status/lost> ;
     skos:historyNote "Compiled by Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "lost"@en ;
@@ -126,7 +126,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:altLabel "exhibited"@en ;
     skos:definition "A sample or specimen held in a museum or other location for display, education and/or demonstration purposes. Displays can be located indoors or outdoors. May refer to specimens on loan that are on public display."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/on-display> ;
+    skos:exactMatch <https://linked.data.gov.au/def/sample-location-status/on-display> ;
     skos:historyNote "Compiled by Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "on display"@en ;
@@ -168,7 +168,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The sample or specimen is at a laboratory, university, or other facility external to its registered storage facility to undergo processing or analysis."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/processing> ;
+    skos:exactMatch <https://linked.data.gov.au/def/sample-location-status/processing> ;
     skos:historyNote "Compiled by Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "processing"@en ;
@@ -236,7 +236,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A sample collected from a sampling location and held in temporary storage prior to examination, analysis, or transfer to permanent or semi-permanent storage."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/sample-location-status/collected> ;
+    skos:exactMatch <https://linked.data.gov.au/def/sample-location-status/collected> ;
     skos:historyNote "Compiled by Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:narrower :sampled-under-agreement ;
@@ -283,10 +283,12 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:topConceptOf cs: ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.0 ;
     skos:definition "The status of a sample or specimen in relation to curation processes (e.g. the recording and organization of items in a collection), both before and after storage/archiving, and with respect to its display or storage location at a specific point in time."@en ;
     skos:hasTopConcept
         :archived ,
@@ -317,5 +319,12 @@ cs:
     schema:dateModified "2024-12-09"^^xsd:date ;
     schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/sample-acquisition-management> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .
+
+<https://linked.data.gov.au/def/sample-location-status/collected> schema:name "collected" .
+<https://linked.data.gov.au/def/sample-location-status/in-storage> schema:name "in storage" .
+<https://linked.data.gov.au/def/sample-location-status/in-transit> schema:name "in transit" .
+<https://linked.data.gov.au/def/sample-location-status/lost> schema:name "lost" .
+<https://linked.data.gov.au/def/sample-location-status/on-display> schema:name "on display" .
+<https://linked.data.gov.au/def/sample-location-status/processing> schema:name "processing" .

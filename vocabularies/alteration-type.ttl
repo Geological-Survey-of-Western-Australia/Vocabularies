@@ -20,8 +20,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "A form of sodic alteration in which primary minerals (alkali feldspar) are replaced by albite to form albite-rich rocks (e.g. albitites). This type of alteration is usually associated with rare element mineralization (Nb, Ta, Sn, W, Li, Be). Cf. sodic alteration."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:albitic-alteration> ;
-    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Pirajno (2009; Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.)." ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/albitic-alteration> ;
+    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Pirajno (2009; Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.)." ;
     skos:inScheme cs: ;
     skos:prefLabel "albitic alteration"@en ;
     skos:topConceptOf cs: ;
@@ -38,7 +38,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "A type of advanced argillic alteration where alunite-group minerals (alunite, natroalunite and jarosite) are the dominant phase. Typically related to the presence of abundant sulfate ions and Al-rich protoliths."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:alunite-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/alunite-alteration> ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
     skos:inScheme cs: ;
     skos:prefLabel "alunitic alteration"@en ;
@@ -48,7 +48,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 :argillic-alteration-intermediate
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:argillic-alteration> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/argillic-alteration> ;
     skos:broader :argillic-alteration ;
     skos:definition "A type of argilllic alteration defined by the presence of montmorillonite, illite, chlorite, kaolin group clays (kaolinite, dickite, halloysite, allophane) and minor sericite. K-feldspar may remain unaltered, and K, Ca, Mg and Na may not entirely leach out. Precursor textures are usually preserved."@en ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
@@ -77,8 +77,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Alteration defined by calcium-bearing silicate minerals such as diopside and wollastonite. Calc–silicate skarn or hornfels are typical within impure limestone or dolomite strata adjacent to an intruding igneous rock."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/calcsilicate_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:calc-silicate-alteration> ;
-    skos:historyNote "Definition adapted from Wikipedia and Glossary of Geology (5th edition revised, Neuendorf et al., 2011)." ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/calc-silicate-alteration> ;
+    skos:historyNote "Definition adapted from Wikipedia and Glossary of Geology (5th edition revised, Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:prefLabel "calc-silicate alteration"@en ;
     skos:topConceptOf cs: ;
@@ -106,7 +106,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "The formation of chlorite is typical of many hydrothermal systems, particularly in peripheral propylitic alteration or as retrograde overprinting alteration, commonly as a replacement of pyroxene and amphibole minerals or biotite."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/chloritic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:chlorite-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/chlorite-alteration> ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
     skos:inScheme cs: ;
     skos:prefLabel "chloritic alteration"@en ;
@@ -119,7 +119,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:definition "The reactions between primary magmatic minerals and the water-rich solutions that separate from the same body of magma at a late stage in its cooling history (with, for example, pyroxene being replaced by amphibole)."@en ;
     skos:exactMatch <http://resource.geosciml.org/classifier/cgi/alterationtype/deuteric_alteration> ;
-    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011)." ;
+    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:prefLabel "deuteric alteration"@en ;
     skos:topConceptOf cs: ;
@@ -146,8 +146,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "The formation of epidote in country rocks by hydrothermal alteration. Also refers to the alteration of rocks in which plagioclase feldspar is albitized, whereby the anorthite molecule is freed for the formation of epidote and zoisite (a process often accompanied by chloritization)."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/epidote_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:epidote-alteration> ;
-    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011)." ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/epidote-alteration> ;
+    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:prefLabel "epidote alteration"@en ;
     skos:topConceptOf cs: ;
@@ -167,7 +167,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 :fluorite-and-topaz-alteration
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "Alteration involving the destabilization and destruction of feldspars and biotite to form the assemblage quartz + muscovite with varying amounts of topaz, tourmaline, fluorite oxides (cassiterite, hematite, wolframite, scheelite and sulfides of Fe, Cu, Mo, Bi), and Cu–Bi–Pb sulfosalts. Common in continental porphyry systems and with granitic intrusions within argillaceous–arenaceous rock sequences, and with Sn–W mineralization systems."@en ;
+    skos:definition "Alteration involving the destabilization and destruction of feldspars and biotite to form the assemblage quartz + muscovite with varying amounts of topaz, tourmaline, fluorite oxides (cassiterite, hematite, wolframite, scheelite and sulfides of Fe, Cu, Mo, Bi), and Cu–Bi–Pb sulfosalts. Common in continental porphyry systems and with granitic intrusions within argillaceous–arenaceous rock sequences, and with Sn–W mineralization systems."@en ;
     skos:historyNote "Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p." ;
     skos:inScheme cs: ;
     skos:prefLabel "fluorite and topaz alteration"@en ;
@@ -180,7 +180,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Localized high-temperature alteration involving the destabilization and destruction of feldspars and biotite to form quartz and muscovite with varying amounts of topaz, tourmaline, lepidolite, fluorite, oxides (cassiterite, hematite, wolframite, scheelite), sulfides of Fe, Cu, Mo, Bi, and Cu–Bi–Pb sulfosalts."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/greisen> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:greisenisation> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/greisenisation> ;
     skos:historyNote "Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p." ;
     skos:inScheme cs: ;
     skos:prefLabel "greisenization"@en ;
@@ -229,7 +229,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "The presence of alteration is noted, but the type of alteration is not otherwise classified or described."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:undefined-alteration-assemblage> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/undefined-alteration-assemblage> ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
     skos:prefLabel "hydrothermal alteration - unspecified"@en ;
@@ -240,12 +240,12 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "kaolinitization"@en ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:argillic-alteration> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/argillic-alteration> ;
     skos:definition "The replacement or breakdown of silicate minerals to form kaolinite and other kaolinite-group minerals (e.g. dickite), typically in acid to intermediate rocks. Kaolinization is observed in the marginal argillic zone of high-sulfidation systems, as well as in near-surface, steam-heated environments, in vein-type deposits, as massive argillic alteration zones of low-sulfidation epithermal environments, and in greisen and derived pegmatites and aplites. Kaolinite can also form during supergene weathering, but dickite is restricted to hydrothermal environments."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/kaolinitic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:kaolinitic-alteration> ;
-    skos:historyNote "Dill, HG 2016, Kaolin: Soil, rock and ore: From the mineral to the magmatic, sedimentary and metamorphic environments: Earth Science reviews, v. 161, p. 16–129." ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/kaolinitic-alteration> ;
+    skos:historyNote "Dill, HG 2016, Kaolin: Soil, rock and ore: From the mineral to the magmatic, sedimentary and metamorphic environments: Earth Science reviews, v. 161, p. 16–129." ;
     skos:inScheme cs: ;
     skos:prefLabel "kaolinitic alteration"@en ;
     skos:topConceptOf cs: ;
@@ -274,9 +274,9 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "quartz–sericite–pyrite"@en ,
         "sericitic alteration"@en ,
         "sericitization"@en ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:argillic-alteration> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/argillic-alteration> ;
     skos:definition "Alteration typified by the assemblage quartz–sericite–pyrite (QSP) typically resulting from removal of sodium, calcium, and magnesium from calc-alkalic rocks, with pervasive replacement of silicates by micaceous phyllosilicates, muting the original rock texture. It is a common style of alteration in porphyry base-metal systems around a central zone of potassic alteration. More specifically, it relates to hydrogen-ion (H+) metasomatism of silicate minerals such as K-feldspar, plagioclase and biotite."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:phyllic-alteration> ;
+    skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/phyllic-alteration> ;
     skos:historyNote "Definition compiled from multiple sources." ;
     skos:inScheme cs: ;
     skos:prefLabel "phyllic alteration (QSP)"@en ;
@@ -298,10 +298,10 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "microclinisation"@en ,
         "microclinization"@en ,
         "potassic metasomatism"@en ;
-    skos:definition "High-temperature alteration resulting in the formation of K-feldspar and biotite (porphyry systems), and adularia (epithermal systems), from the replacement of plagioclase and mafic silicate minerals. It is usually accompanied by sulfides ± anhydrite ± biotite."@en ;
+    skos:definition "High-temperature alteration resulting in the formation of K-feldspar and biotite (porphyry systems), and adularia (epithermal systems), from the replacement of plagioclase and mafic silicate minerals. It is usually accompanied by sulfides ± anhydrite ± biotite."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/potassic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:potassic-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/potassic-alteration> ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
     skos:inScheme cs: ;
     skos:prefLabel "potassic alteration"@en ;
@@ -319,10 +319,10 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Alteration characterized by the addition of H20 and CO2, and locally S, with no appreciable H+ metasomatism. Typically results in the formation of epidote, chlorite, Mg-Fe-Ca carbonates, albite, K-feldspar and pyrite. In some systems, propylitic alteration is mineralogically zoned from inner actinolite-rich to outer epidote-rich alteration."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/propylitic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:propyllitic-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/propyllitic-alteration> ;
     skos:historyNote """Definition adapted from:
-1) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
-2) Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p.""" ;
+1) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
+2) Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "propylitic alteration"@en ;
     skos:topConceptOf cs: ;
@@ -342,7 +342,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Alteration of country rocks due to the ionic replacement by iron and sulfur atoms combining to form pyrite."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/pyritic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:pyritic-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/pyritic-alteration> ;
     skos:historyNote "Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "pyritic alteration"@en ;
@@ -355,7 +355,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Metasomatic alteration typical of dykes and mafic rocks in contact with or proximal to serpentinized ultramafic rocks. The mafic rocks are altered by high pH, Ca2+ and OH− fluids, which are a byproduct of the serpentinization process, and become rodingites, i.e. metasomatic rocks rich in grossular–andradite garnet, calcic pyroxene, and variable amounts of vesuvianite, epidote and scapolite."@en ;
-    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Wikipedia." ;
+    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "rodingitization"@en ;
     skos:topConceptOf cs: ;
@@ -371,7 +371,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Alteration of calcium-bearing plagioclase feldspar to a characteristic assemblage of minerals called saussurite. The typical assemblage includes albite (or oligoclase), zoisite or epidote, together with variable amounts of calcite, sericite, prehnite, and calcium-aluminium silicates other than those of the epidote group. The plagioclase may be reconstituted into a more sodium-rich variety (albite), although the original form of the crystal is usually retained. Typically related to residual fluids in the late stages of magmatic crystallization or hydrothermal alteration, and especially common in mafic rocks due to their high calcium content."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/saussuritised> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:saussurite-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/saussurite-alteration> ;
     skos:historyNote "Definition compiled from multiple sources." ;
     skos:inScheme cs: ;
     skos:prefLabel "saussuritization"@en ;
@@ -392,7 +392,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "A hydrothermal or deuteric (or metamorphic) process involving the introduction of, alteration to, or replacement by 'sericite', i.e. the formation of fine-grained white mica (e.g. sericite, phengite or paragonite) in country rocks. See also Phyllic (QSP) alteration."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/sericitic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:sericitic-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/sericitic-alteration> ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
     skos:prefLabel "sericitic / white mica alteration"@en ;
@@ -409,8 +409,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Replacement of magnesium-rich silicate minerals (e.g. olivine, pyroxenes, or amphiboles) in dunites, peridotites or other ultramafic rocks by serpentine minerals."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/serpentinisation> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:serpentinised> ;
-    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Wikipedia." ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/serpentinised> ;
+    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "serpentinization"@en ;
     skos:topConceptOf cs: ;
@@ -423,7 +423,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The replacement or breakdown of silicate minerals by reaction with free silica. Not to be confused with silicification."@en ;
-    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011)." ;
+    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:prefLabel "silication"@en ;
     skos:topConceptOf cs: ;
@@ -440,8 +440,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Silicification or silicic alteration is hydrothermal alteration in which the quartz, opal, chalcedony, jasper, or other forms of amorphous silica content of the rock increases. Commonly caused by a net addition of silica in the altered rock, but silicification may also occur by decomposition reactions where quartz is a byproduct (desilication) or by cation leaching in silica-stable systems. Silicification involves dissolution of rock minerals and precipitation of silica, but the term can also refer to the permeation process that occurs during petrification of organic materials (e.g. to create fossil wood). Not to be confused with silication."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/silicification> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:silica-alteration-silicified> ;
-    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Wikipedia" ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/silica-alteration-silicified> ;
+    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Wikipedia" ;
     skos:inScheme cs: ;
     skos:prefLabel "silicification"@en ;
     skos:topConceptOf cs: ;
@@ -454,7 +454,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "calcic skarn"@en ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:skarn> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/skarn> ;
     skos:broader :skarn ;
     skos:definition "Generally forms replacement zones in wallrocks (exoskarn - in limestone or occasionally mafic to intermediate volcanic rocks), or within intrusions (endoskarn). Andradite and diopside occur in oxidized assemblages related to porphyry Cu systems; grossular and hedenbergite are more common in reduced skarns (Au, W, and Sn)."@en ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
@@ -469,7 +469,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel
         "magnesian skarn"@en ,
         "magnesium skarn"@en ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:skarn> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/skarn> ;
     skos:broader :skarn ;
     skos:definition "Metasomatic replacement of dolomitic limestone. High-temperature magnesian skarns are characterized by forsterite and diopside and low-temperature magnesian skarns contain serpentinite and talc. Both occur as retrograde minerals after forsterite and clinopyroxene."@en ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
@@ -482,9 +482,9 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "retrograde skarn"@en ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:skarn> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/skarn> ;
     skos:broader :skarn ;
-    skos:definition "The overprinting of earlier (prograde) skarn alteration in the form of epidote, amphibole, chlorite, and other hydrous phases. It is typically structurally controlled and more pronounced in shallow environments; but may also affect adjacent wallrock limestone."@en ;
+    skos:definition "The overprinting of earlier (prograde) skarn alteration in the form of epidote, amphibole, chlorite, and other hydrous phases. It is typically structurally controlled and more pronounced in shallow environments; but may also affect adjacent wallrock limestone."@en ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
     skos:inScheme cs: ;
     skos:prefLabel "skarn - retrograde stage"@en ;
@@ -495,9 +495,9 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "sodic–calcic alteration"@en ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:skarn> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/skarn> ;
     skos:definition "Alteration commonly found in deeper parts of porphyry systems and defined by albite (sodic plagioclase) and actinolite. Cf. albitic alteration."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:sodic-alteration> ;
+    skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/sodic-alteration> ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
     skos:inScheme cs: ;
     skos:prefLabel "sodic alteration"@en ;
@@ -523,9 +523,9 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "steatitization"@en ,
         "talc–carbonate alteration"@en ,
         "talc–chlorite–carbonate alteration"@en ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:skarn> ;
-    skos:definition "Talc alteration or steatitization is the introduction of, alteration to, or replacement by, talc (steatite), especially the act or process of hydrothermal alteration of ultrabasic rocks that results in the formation of a talcose rock (such as steatite, soapstone, or relatively pure concentrations of talc). The formation of talc, usually with carbonate ± chlorite ± magnetite, as a replacement/alteration phase is typical of hydrothermal mineral deposits in Archean greenstone belts."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:talc-alteration> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/skarn> ;
+    skos:definition "Talc alteration or steatitization is the introduction of, alteration to, or replacement by, talc (steatite), especially the act or process of hydrothermal alteration of ultrabasic rocks that results in the formation of a talcose rock (such as steatite, soapstone, or relatively pure concentrations of talc). The formation of talc, usually with carbonate ± chlorite ± magnetite, as a replacement/alteration phase is typical of hydrothermal mineral deposits in Archean greenstone belts."@en ;
+    skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/talc-alteration> ;
     skos:historyNote "Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "talc alteration"@en ;
@@ -539,7 +539,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Tourmaline alteration of country rocks, i.e. a pneumatolytic modification of a pre-existing rock in which boron-rich, late-stage fluids react with the mineral assemblage of the primary rock (usually granite), eventually producing a rock consisting of tourmaline and quartz."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:tourmaline-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/tourmaline-alteration> ;
     skos:historyNote "Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p." ;
     skos:inScheme cs: ;
     skos:prefLabel "tourmalinization"@en ;
@@ -582,7 +582,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Regionally extensive alteration around epithermal and geothermal systems. Mineralogical changes from zeolite-rich to propylitic assemblages reflect increasing depth and temperature."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:zeolitic-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/zeolitic-alteration> ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
     skos:inScheme cs: ;
     skos:prefLabel "zeolitic alteration"@en ;
@@ -625,7 +625,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broadMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:argillic-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/argillic-alteration> ;
     skos:broader :argillic-alteration ;
     skos:definition "A type of argillic alteration defined by intensive acid attack and more or less complete leaching of the alkali cations with complete destruction of the feldspars and mafic silicate phases, resulting in an assemblage of dickite, kaolinite, pyrophillite, baryte, alunite and diaspore. In addition, sulfides, topaz, tourmaline and a range of amorphous clays may be present. Found in porphyry systems, in the inner zone of hydrothermal base and precious metal-bearing veins, and most typically in high-sulfur hydrothermal systems."@en ;
     skos:historyNote "Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p." ;
@@ -646,7 +646,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Alteration caused by oxidizing fluids resulting in the formation of hematite and some K-feldspar, sericite, chlorite and epidote. The term 'red rock alteration' is not recommended for use in describing alteration, as it does not qualify the mineral changes in the rock (e.g. Na or K enrichment) and may be confused with oxidation processes more typical of weathering."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:hematite-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/hematite-alteration> ;
     skos:historyNote "Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p." ;
     skos:inScheme cs: ;
     skos:narrower :jasperoid-alteration ;
@@ -666,9 +666,9 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "sulphidation"@en ,
         "sulphide alteration"@en ,
         "sulphidization"@en ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:skarn> ;
+    skos:broadMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/skarn> ;
     skos:definition "Sulfide mineral alteration of country rocks, i.e. the deposition of pyrite and other sulfides (e.g. pyrrhotite, chalcopyrite, etc.) by hydrothermal processes."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:sulphide-alteration> ;
+    skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/sulphide-alteration> ;
     skos:historyNote "Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower :pyritic-alteration ;
@@ -690,8 +690,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Alteration that introduces clay minerals including kaolinite, smectite and illite as a replacement of plagioclase and amphibole due to intense H+ metasomatism and acid leaching, at temperatures between 100° and 300°C."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/argillic_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:argillic-alteration> ;
-    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Wikipedia." ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/argillic-alteration> ;
+    skos:historyNote "Definition adapted from Glossary of Geology (5th edition revised, Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower
         :argillic-alteration-advanced ,
@@ -712,7 +712,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "Alteration of both Ca-rich and silicate rock involving anion metasomatism with introduction of CO₂ and formation or replacement of carbonate minerals."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/carbonate_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:carbonate-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/carbonate-alteration> ;
     skos:historyNote "Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -731,7 +731,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:definition "A type of hematitic alteration defined by complete replacement of limestone, and occasionally other rock types, by fine-grained quartz; commonly associated with brecciation. Involves oxidation of minerals and the formation of hematite (hematitic jasperoids), in some cases with considerable amounts of pyrite (sulfidic jasperoids)."@en ;
     skos:exactMatch
         <http://resource.geosciml.org/classifier/cgi/alterationtype/red_rock_alteration> ,
-        <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:jasperoid-alteration> ;
+        <https://linked.data.gov.au/def/gsq-geochem/alteration/jasperoid-alteration> ;
     skos:inScheme cs: ;
     skos:narrower
         :hematitic-jasperoid ,
@@ -749,8 +749,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "prograde skarn"@en ,
         "skarn - prograde"@en ;
     skos:definition "The alteration of pure limestone and dolomite by introduction of Si, Al, Fe and Mg. Typical skarn minerals include pyroxene, garnet, vesuvianite, wollastonite, actinolite, magnetite or hematite, epidote and scapolite."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/gsq-gchm:alteration/ltrtn:skarn> ;
-    skos:historyNote "Einaudi, MT, Meinert, LD and Newberry, RJ 1981, Skarn deposits, in 75th anniversary volume: 1906–1980 (1st edition) edited by B Skinner: Economic Geology Publishing Company, Littleton, Colorado, USA, p. 317–391, doi:10.5382/AV75.11." ;
+    skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/alteration/skarn> ;
+    skos:historyNote "Einaudi, MT, Meinert, LD and Newberry, RJ 1981, Skarn deposits, in 75th anniversary volume: 1906–1980 (1st edition) edited by B Skinner: Economic Geology Publishing Company, Littleton, Colorado, USA, p. 317–391, doi:10.5382/AV75.11." ;
     skos:inScheme cs: ;
     skos:narrower
         :skarn-calcic ,
@@ -761,11 +761,13 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     schema:citation "https://glossary.americangeosciences.org/term/skarn"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
-    skos:definition "Compilation of terms that describe the classification of alteration in a rock, with a focus on hydrothermal processes (i.e. mineralogical, chemical and textural changes resulting from the interaction of hot aqueous fluids with the rocks through which they circulate, under evolving physico-chemical conditions), and excluding weathering, mineralization and direct metamorphic or magmatic processes. Classification is based on the identification of the most important alteration mineral, the distinctive mineral assemblage, or the chemical changes that have occurred during alteration. Definitions are largely from Pirajno (2009), the Glossary of geology (5th edition revised; Neuendorf et.al., 2011), Thompson et al. (1996), and Wikipedia."@en ;
+    owl:versionIRI :1.0 ;
+    skos:definition "Compilation of terms that describe the classification of alteration in a rock, with a focus on hydrothermal processes (i.e. mineralogical, chemical and textural changes resulting from the interaction of hot aqueous fluids with the rocks through which they circulate, under evolving physico-chemical conditions), and excluding weathering, mineralization and direct metamorphic or magmatic processes. Classification is based on the identification of the most important alteration mineral, the distinctive mineral assemblage, or the chemical changes that have occurred during alteration. Definitions are largely from Pirajno (2009), the Glossary of geology (5th edition revised; Neuendorf et.al., 2011), Thompson et al. (1996), and Wikipedia."@en ;
     skos:hasTopConcept
         :albitic-alteration ,
         :alkali-metasomatism ,
@@ -803,9 +805,9 @@ cs:
         :zeolitic-alteration ;
     skos:historyNote """Derived from GSWA's WAROX database's table [GEOLOGY].[Warox_REF].[AltStyle] and expanded to include additional terms from the GeoSciML vocabulary Alteration Type (http://cgi.vocabs.ga.gov.au/object?uri=http%3A//resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype).
 Definitions compiled from:
-1) Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p.
-2) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
-3) Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p. https://www.academia.edu/9125625/Atlas_of_Alteration"""@en ;
+1) Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p.
+2) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
+3) Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals: St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p. https://www.academia.edu/9125625/Atlas_of_Alteration"""@en ;
     skos:prefLabel "Alteration type"@en ;
     prov:qualifiedAttribution
         [
@@ -821,5 +823,153 @@ Definitions compiled from:
     schema:dateModified "2024-12-02"^^xsd:date ;
     schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .
+
+<https://linked.data.gov.au/def/gsq-geochem/alteration/albitic-alteration> schema:name "albitic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/alunite-alteration> schema:name "alunite alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/argillic-alteration> schema:name "argillic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/calc-silicate-alteration> schema:name "calc silicate alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/carbonate-alteration> schema:name "carbonate alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/chlorite-alteration> schema:name "chlorite alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/epidote-alteration> schema:name "epidote alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/greisenisation> schema:name "greisenisation" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/hematite-alteration> schema:name "hematite alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/jasperoid-alteration> schema:name "jasperoid alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/kaolinitic-alteration> schema:name "kaolinitic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/phyllic-alteration> schema:name "phyllic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/potassic-alteration> schema:name "potassic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/propyllitic-alteration> schema:name "propyllitic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/pyritic-alteration> schema:name "pyritic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/saussurite-alteration> schema:name "saussurite alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/sericitic-alteration> schema:name "sericitic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/serpentinised> schema:name "serpentinised" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/silica-alteration-silicified> schema:name "silica alteration silicified" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/skarn> schema:name "skarn" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/sodic-alteration> schema:name "sodic alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/sulphide-alteration> schema:name "sulphide alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/talc-alteration> schema:name "talc alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/tourmaline-alteration> schema:name "tourmaline alteration" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/undefined-alteration-assemblage> schema:name "undefined alteration assemblage" .
+<https://linked.data.gov.au/def/gsq-geochem/alteration/zeolitic-alteration> schema:name "zeolitic alteration" .
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration>
+    schema:description "missing"@en ;
+    schema:name "advanced argillic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration>
+    schema:description "missing"@en ;
+    schema:name "albitic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified>
+    schema:description "Rock is altered, but type not specified. Any alteration type allowed."@en ;
+    schema:name "alteration type not specified"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration>
+    schema:description "missing"@en ;
+    schema:name "alunitic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/argillic_alteration>
+    schema:description "missing"@en ;
+    schema:name "argillic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/calcsilicate_alteration>
+    schema:description "missing"@en ;
+    schema:name "calcsilicate alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/carbonate_alteration>
+    schema:description "missing"@en ;
+    schema:name "carbonate alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/chloritic_alteration>
+    schema:description "missing"@en ;
+    schema:name "chloritic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/deuteric_alteration>
+    schema:description "missing"@en ;
+    schema:name "deuteric alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/epidote_alteration>
+    schema:description "missing"@en ;
+    schema:name "epidote alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/greisen>
+    schema:description "missing"@en ;
+    schema:name "greisen"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration>
+    schema:description "missing"@en ;
+    schema:name "hematitic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/kaolinitic_alteration>
+    schema:description "missing"@en ;
+    schema:name "kaolinitic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/not_altered>
+    schema:description "Rock or sediment not altered."@en ;
+    schema:name "not altered"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/potassic_alteration>
+    schema:description "missing"@en ;
+    schema:name "potassic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/propylitic_alteration>
+    schema:description "missing"@en ;
+    schema:name "propylitic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/pyritic_alteration>
+    schema:description "missing"@en ;
+    schema:name "pyritic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/red_rock_alteration>
+    schema:description "missing"@en ;
+    schema:name "red rock alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/saussuritised>
+    schema:description "missing"@en ;
+    schema:name "saussuritised"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/sericitic_alteration>
+    schema:description "missing"@en ;
+    schema:name "sericitic alteration"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/serpentinisation>
+    schema:description "missing"@en ;
+    schema:name "serpentinisation"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/silicification>
+    schema:description "missing"@en ;
+    schema:name "silicification"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation>
+    schema:description "missing"@en ;
+    schema:name "uralitisation"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration>
+    schema:description "missing"@en ;
+    schema:name "zeolitic alteration"@en ;
+.
+

@@ -209,6 +209,8 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.1 schema:name "1.1" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
@@ -260,3 +262,5 @@ cs:
         theme:administration ,
         theme:sample-acquisition-management ;
 .
+
+<https://linked.data.gov.au/def/demirs-offices/kalgoorlie-office> schema:name "Kalgoorlie Office" .

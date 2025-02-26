@@ -5,8 +5,8 @@ PREFIX ischart: <http://resource.geosciml.org/classifier/ics/ischart/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rank: <http://resource.geosciml.org/ontology/timescale/rank/>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX sdo: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-sdo:#>
+PREFIX sdo: <https://sdo:.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX time: <http://www.w3.org/2006/time#>
@@ -7943,7 +7943,7 @@ ischart:UpperCretaceous
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
+    # dcterms:conformsTo <https://w3id.org/profile/vocpub/4.6> ;
     dcterms:created "2024-11-26"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/ics> ;
     dcterms:modified "2024-11-22"^^xsd:date ;
@@ -8273,3 +8273,15 @@ Kaynak gösterimi: Cohen, K.M., Finney, S.C., Gibbard, P.L. & Fan, J.-X. (2013; 
         "Tarptautinė stratigrafijos komisija"@lt ;
     sdo:url "https://stratigraphy.org"^^xsd:anyURI ;
 .
+
+<http://resource.geosciml.org/ontology/timescale/gts#rank> sdo:name "rank" .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSA> sdo:name "ratified GSSA" .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> sdo:name "ratified GSSP" .
+<http://resource.geosciml.org/ontology/timescale/rank/Age> sdo:name "Age" .
+<http://resource.geosciml.org/ontology/timescale/rank/Eon> sdo:name "Eon" .
+<http://resource.geosciml.org/ontology/timescale/rank/Epoch> sdo:name "Epoch" .
+<http://resource.geosciml.org/ontology/timescale/rank/Era> sdo:name "Era" .
+<http://resource.geosciml.org/ontology/timescale/rank/Period> sdo:name "Period" .
+<http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> sdo:name "Sub-Period" .
+<http://resource.geosciml.org/ontology/timescale/rank/Super-Eon> sdo:name "Super-Eon" .
+<http://resource.geosciml.org/vocabulary/timescale/gts2020> sdo:name "Geological Timescale 2020" .

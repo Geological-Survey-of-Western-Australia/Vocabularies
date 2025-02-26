@@ -344,6 +344,8 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
         "https://www.dmp.wa.gov.au/Safety/Regional-inspectorate-boundaries-9872.aspx"^^xsd:anyURI ;
 .
 
+:1.1 schema:name "1.1" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;

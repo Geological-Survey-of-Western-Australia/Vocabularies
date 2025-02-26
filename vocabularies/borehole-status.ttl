@@ -16,22 +16,22 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "failed"@en ;
     skos:broader :drilling-completed-post-operational ;
     skos:definition "All borehole operations and activities are prematurely terminated due to unforeseen circumstances, e.g. surface ground failure or borehole collapse (with or without equipment being stuck). Borehole should undergo necessary rehabilitation."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/prematurely-terminated-mineral> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/prematurely-terminated-mineral> ;
     skos:historyNote "Mineral resources industry concept. Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:narrowMatch
-        <http://linked.data.gov.au/def/borehole-status/abandoned-bogged> ,
-        <http://linked.data.gov.au/def/borehole-status/abandoned-caving-broken-ground> ,
-        <http://linked.data.gov.au/def/borehole-status/abandoned-mechanical-reason> ,
-        <http://linked.data.gov.au/def/borehole-status/abandoned-no-recovery> ,
-        <http://linked.data.gov.au/def/borehole-status/abandoned-too-deep> ,
-        <http://linked.data.gov.au/def/borehole-status/abandoned-too-hard> ,
-        <http://linked.data.gov.au/def/borehole-status/abandoned-water-table> ,
-        <http://linked.data.gov.au/def/borehole-status/equipment-in-borehole> ,
-        <http://linked.data.gov.au/def/borehole-status/hazard-in-borehole> ;
+        <https://linked.data.gov.au/def/borehole-status/abandoned-bogged> ,
+        <https://linked.data.gov.au/def/borehole-status/abandoned-caving-broken-ground> ,
+        <https://linked.data.gov.au/def/borehole-status/abandoned-mechanical-reason> ,
+        <https://linked.data.gov.au/def/borehole-status/abandoned-no-recovery> ,
+        <https://linked.data.gov.au/def/borehole-status/abandoned-too-deep> ,
+        <https://linked.data.gov.au/def/borehole-status/abandoned-too-hard> ,
+        <https://linked.data.gov.au/def/borehole-status/abandoned-water-table> ,
+        <https://linked.data.gov.au/def/borehole-status/equipment-in-borehole> ,
+        <https://linked.data.gov.au/def/borehole-status/hazard-in-borehole> ;
     skos:prefLabel "abandoned - mineral"@en ;
     skos:relatedMatch
-        <http://linked.data.gov.au/def/borehole-status/abandoned> ,
+        <https://linked.data.gov.au/def/borehole-status/abandoned> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/abandoned> ;
 .
 
@@ -40,8 +40,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broader :planning-and-approval ;
     skos:definition "Drilling of a borehole has been approved by the relevant authorities, whether within a resource company, a government regulatory agency (e.g. as part of government-supported exploration drilling initiatives or for research purposes), indigenous representative groups, a research organisation, or as part of geotechnical investigations and/or infrastructure programs. Drilling has not yet commenced."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/approved> ;
-    skos:historyNote "Definition adapted from DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/approved> ;
+    skos:historyNote "Definition adapted from DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
     skos:inScheme cs: ;
     skos:prefLabel "approved"@en ;
     schema:citation "https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance.pdf"^^xsd:anyURI ;
@@ -55,8 +55,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "temporarily plugged"@en ;
     skos:broader :operational-suspended ;
     skos:definition "A borehole where a cap (usually a PVC cap secured with a screw) or a plug have been put temporarily in place during interim rehabilitation or to allow for the possibility of re-entering the hole (e.g. during a pause in operations and/or maintenance), e.g. to prevent fauna from falling into the hole. A permanent rehabilitation should follow at the completion of the operations."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/capped> ;
-    skos:historyNote "Mineral industry concept; definition adapted from DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023) (https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance (v. 1, December 2023).pdf)." ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/capped> ;
+    skos:historyNote "Mineral industry concept; definition adapted from DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023) (https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance (v. 1, December 2023).pdf)." ;
     skos:inScheme cs: ;
     skos:prefLabel "capped"@en ;
     schema:citation "https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance.pdf"^^xsd:anyURI ;
@@ -68,7 +68,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "C&S"@en ;
     skos:broader :operational-suspended ;
     skos:definition "A well in which casing has been installed, but is suspended and inactive pending installation of completion, monitoring or other equipment."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/cased-and-suspended> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/cased-and-suspended> ;
     skos:inScheme cs: ;
     skos:prefLabel "cased and suspended"@en ;
 .
@@ -78,7 +78,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broader :post-operational ;
     skos:definition "Decommissioning is a broad stage that involves the timely, safe, and environmentally responsible removal of, or otherwise satisfactorily dealing with, drilling-related property, equipment or infrastructure that is not in use, has not been maintained in working order such that it can be used, and has no demonstrable future use (i.e. has no associated permissioning documents allowing for and outlining plans for future use). The term is predominantly used in the energy industry."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/decommissioned> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/decommissioned> ;
     skos:historyNote "Definition adapted from NOPSEMA webpage." ;
     skos:inScheme cs: ;
     skos:prefLabel "decommissioned"@en ;
@@ -92,7 +92,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "completed"@en ,
         "drilled"@en ;
     skos:broader :operational ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-status/drilling-completed> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-status/drilling-completed> ;
     skos:definition "Drilling of the borehole is completed, but operations involving the borehole are continuing (e.g. installation of production infrastructure, wirelogging, etc.). Note that in the Australian Coal Logging Standards v3.1 (CoalLog), 'completed' status is closer in meaning to 'abandoned' in this vocabulary)."@en ;
     skos:exactMatch <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/completed> ;
     skos:historyNote "Definition modified from the Geoscience Australia and Geological Survey of Queensland Borehole Status vocabularies." ;
@@ -105,7 +105,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broader :operational-suspended ;
     skos:definition "Drilling operations have been temporarily suspended (e.g. due to adverse weather conditions, maintenance, or other reasons)."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/drilling-suspended> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/drilling-suspended> ;
     skos:historyNote "Definition modified from the Geoscience Australia and Geological Survey of Queensland Borehole Status vocabularies." ;
     skos:inScheme cs: ;
     skos:prefLabel "drilling suspended"@en ;
@@ -117,7 +117,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "gas injection"@en ;
     skos:broader :injecting ;
     skos:definition "A reservoir maintenance or secondary recovery method that uses injected gas to supplement the pressure in an oil reservoir or field. This concept includes injecting for the purpose of permanent gas storage (e.g. CO₂)."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/injecting-gas> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/injecting-gas> ;
     skos:historyNote "Definition adapted from Schlumberger's Glossary." ;
     skos:inScheme cs: ;
     skos:prefLabel "injecting gas"@en ;
@@ -132,7 +132,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "waterflooding"@en ;
     skos:broader :injecting ;
     skos:definition "Waterflooding or water injection is where water is injected into the oil reservoir, to maintain the pressure (also known as voidage replacement) or to drive oil towards the wells, and thereby increase production. Water-injection wells are common offshore, where filtered and treated seawater is injected into a lower water-bearing section of the reservoir. The concept includes water recharge of aquifers."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/injecting-water> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/injecting-water> ;
     skos:historyNote "Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "WI"^^: ;
@@ -146,7 +146,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :operational ;
     skos:definition "A borehole/well that is actively monitoring reservoir, aquifer or other geological parameters, such as water level, water quality, fluid pressure."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/monitoring> ,
+        <https://linked.data.gov.au/def/borehole-status/monitoring> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/monitoring> ;
     skos:historyNote "Definition adapted from Geoscience Australia's Borehole Status vocabulary (in turn modified from CoalLog)." ;
     skos:inScheme cs: ;
@@ -158,10 +158,10 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broader :planning-and-approval ;
     skos:definition "A borehole that was proposed in concept and/or approved on application, but was never drilled. This does not include the circumstance where the status is 'unknown'."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/not-drilled> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/not-drilled> ;
     skos:inScheme cs: ;
     skos:prefLabel "not drilled"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-status/not-approved> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-status/not-approved> ;
 .
 
 :planned
@@ -172,7 +172,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
     skos:prefLabel "planned"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-status/proposed> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-status/proposed> ;
 .
 
 :plugged-and-abandoned
@@ -196,12 +196,12 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "drillhole"@en ,
         "mounded"@en ;
     skos:broader :plugged ;
-    skos:definition "A borehole that has been securely plugged below ground, with the remaining void backfilled to the surface with low permeability material, and with a mound of low permeability material (approximately 250 mm high by 800 mm wide and up to 2 m for large diameter drillholes) covered with topsoil to facilitate water shedding away from the drillhole and prevent subsidence."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/plugged-and-backfilled> ;
-    skos:historyNote "Mineral industry concept. Definition adapted from the DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023) document." ;
+    skos:definition "A borehole that has been securely plugged below ground, with the remaining void backfilled to the surface with low permeability material, and with a mound of low permeability material (approximately 250 mm high by 800 mm wide and up to 2 m for large diameter drillholes) covered with topsoil to facilitate water shedding away from the drillhole and prevent subsidence."@en ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/plugged-and-backfilled> ;
+    skos:historyNote "Mineral industry concept. Definition adapted from the DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023) document." ;
     skos:inScheme cs: ;
     skos:prefLabel "plugged and backfilled"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-status/backfilled> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-status/backfilled> ;
     schema:citation "https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance.pdf"^^xsd:anyURI ;
 .
 
@@ -211,18 +211,18 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :operational ;
     skos:definition "The status of a borehole during which liquids or gas are being extracted from the borehole."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/producing> ,
+        <https://linked.data.gov.au/def/borehole-status/producing> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/producing> ;
     skos:historyNote "Derived from PPDM Wellbore Status vocabulary (2014)." ;
     skos:inScheme cs: ;
     skos:narrowMatch
-        <http://linked.data.gov.au/def/borehole-status/producing-csg> ,
-        <http://linked.data.gov.au/def/borehole-status/producing-gas> ,
-        <http://linked.data.gov.au/def/borehole-status/producing-geothermal-energy> ,
-        <http://linked.data.gov.au/def/borehole-status/producing-oil> ,
-        <http://linked.data.gov.au/def/borehole-status/producing-shale-gas> ,
-        <http://linked.data.gov.au/def/borehole-status/producing-tight-gas> ,
-        <http://linked.data.gov.au/def/borehole-status/producing-water> ;
+        <https://linked.data.gov.au/def/borehole-status/producing-csg> ,
+        <https://linked.data.gov.au/def/borehole-status/producing-gas> ,
+        <https://linked.data.gov.au/def/borehole-status/producing-geothermal-energy> ,
+        <https://linked.data.gov.au/def/borehole-status/producing-oil> ,
+        <https://linked.data.gov.au/def/borehole-status/producing-shale-gas> ,
+        <https://linked.data.gov.au/def/borehole-status/producing-tight-gas> ,
+        <https://linked.data.gov.au/def/borehole-status/producing-water> ;
     skos:notation "PR"^^: ;
     skos:prefLabel "producing"@en ;
 .
@@ -233,7 +233,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :operational ;
     skos:definition "The status of a borehole that alternately produces and injects liquid or gas into a borehole."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/producing-and-injecting> ,
+        <https://linked.data.gov.au/def/borehole-status/producing-and-injecting> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/producingAndInjecting> ;
     skos:historyNote "Derived from PPDM Wellbore Status vocabulary (2014)." ;
     skos:inScheme cs: ;
@@ -250,7 +250,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:historyNote "Definition modified from Geoscience Australia's Borehole Status vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "proposed"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-status/application> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-status/application> ;
 .
 
 :reaming
@@ -258,7 +258,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broader :drilling ;
     skos:definition "The process of enlarging a borehole, for example when a drilling bit has worn down from its original size or lithological plastic flow into the wellbore requires the reinstating of the original hole size."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/reaming> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/reaming> ;
     skos:inScheme cs: ;
     skos:prefLabel "reaming"@en ;
     schema:citation "https://monroeengineering.com/blog/drilling-vs-boring-vs-reaming-whats-the-difference/"^^xsd:anyURI ;
@@ -269,7 +269,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:broader :operational-suspended ;
     skos:definition "A borehole/well with one or more valves temporarily closed in the direction of flow."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/shut-in> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/shut-in> ;
     skos:inScheme cs: ;
     skos:notation "SI"^^: ;
     skos:prefLabel "shut in"@en ;
@@ -281,7 +281,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :operational-suspended ;
     skos:definition "Borehole operations have been halted for a significant period of time or in a manner that requires significant effort for the resumption of activities. The borehole can be plugged downhole and fluids injected on top of the plug in order to create a temporary seal to prevent hydrocarbon leakage. The surface equipment remains in place. Suspended is never the final status of a borehole."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/suspended> ,
+        <https://linked.data.gov.au/def/borehole-status/suspended> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/suspended> ;
     skos:historyNote "Definition modified from the Geoscience Australia Borehole Status vocabulary (in turn modified from PPDM Wellbore Status vocabulary, 2014)." ;
     skos:inScheme cs: ;
@@ -294,7 +294,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:definition "The status of the borehole is unknown (or has not been recorded)."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/unknown> ,
+        <https://linked.data.gov.au/def/borehole-status/unknown> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/unknown> ;
     skos:inScheme cs: ;
     skos:prefLabel "unknown"@en ;
@@ -310,8 +310,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "unplugged"@en ;
     skos:broader :post-operational ;
     skos:definition "A borehole that is not rehabilitated. Typically this includes boreholes drilled prior to mandatory rehabilitation legislation coming into effect."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/unrehabilitated> ;
-    skos:historyNote "Definition adapted from the DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/unrehabilitated> ;
+    skos:historyNote "Definition adapted from the DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
     skos:inScheme cs: ;
     skos:prefLabel "unrehabilitated"@en ;
     schema:citation "https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance.pdf"^^xsd:anyURI ;
@@ -321,10 +321,10 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :operational-suspended ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-status/operational-not-producing> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-status/operational-not-producing> ;
     skos:definition "Activities relating to production wells, for example logging activities, recompletion, testing, repairs, maintenance, plug and abandonment and demobilisation."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/workover> ,
+        <https://linked.data.gov.au/def/borehole-status/workover> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/workover> ;
     skos:historyNote "Definition adapted from Schlumberger's Glossary." ;
     skos:inScheme cs: ;
@@ -344,20 +344,20 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :post-operational ;
     skos:definition "All borehole operations and activities are terminated. The operator has left the site with no intention of returning to the borehole. Note that this is similar to 'completed' status in the Australian Coal Logging Standards v3.1 (CoalLog). Also note that 'abandoned - energy' is similar to 'rehabilitated' as used by the mineral resources industry."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/abandoned> ,
+        <https://linked.data.gov.au/def/borehole-status/abandoned> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/abandoned> ;
     skos:historyNote "Energy industry concept. Definition adapted from Geoscience Australia's Borehole Status vocabulary (in turn modified from PPDM Wellbore Status vocabulary, 2014)." ;
     skos:inScheme cs: ;
     skos:narrowMatch
-        <http://linked.data.gov.au/def/borehole-status/cased-and-abandoned> ,
-        <http://linked.data.gov.au/def/borehole-status/casing-removed> ,
-        <http://linked.data.gov.au/def/borehole-status/cemented> ,
-        <http://linked.data.gov.au/def/borehole-status/equipment-in-borehole> ,
-        <http://linked.data.gov.au/def/borehole-status/hazard-in-borehole> ;
+        <https://linked.data.gov.au/def/borehole-status/cased-and-abandoned> ,
+        <https://linked.data.gov.au/def/borehole-status/casing-removed> ,
+        <https://linked.data.gov.au/def/borehole-status/cemented> ,
+        <https://linked.data.gov.au/def/borehole-status/equipment-in-borehole> ,
+        <https://linked.data.gov.au/def/borehole-status/hazard-in-borehole> ;
     skos:narrower :plugged-and-abandoned ;
     skos:notation "A"^^: ;
     skos:prefLabel "abandoned - energy"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-status/technically-abandoned> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-status/technically-abandoned> ;
     schema:citation "https://ppdm.org/ppdm/PPDM/IPDS/Well_Status_Classification/PPDM/Well_Status_Classification.aspx"^^xsd:anyURI ;
 .
 
@@ -365,7 +365,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :in-progress ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-status/drilling-in-progress> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-status/drilling-in-progress> ;
     skos:definition "A stage referring to the collection of activities that specifically occur while a borehole is being drilled, from groundbreaking to reaching the intended depth/zone."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
@@ -379,13 +379,13 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "drilled"@en ;
     skos:broader :post-operational ;
     skos:definition "Drilling of the borehole is complete and no further activity (other than decommissioning/rehabilitation) is planned. Note that in the Australian Coal Logging Standards v3.1 (CoalLog), 'completed' status is closer in meaning to 'abandoned' in this vocabulary)."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/drilling-completed> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/drilling-completed> ;
     skos:historyNote "Definition modified from the Geoscience Australia and Geological Survey of Queensland Borehole Status vocabularies." ;
     skos:inScheme cs: ;
     skos:narrowMatch
-        <http://linked.data.gov.au/def/borehole-status/completed-blade-refusal> ,
-        <http://linked.data.gov.au/def/borehole-status/completed-failed-to-reach-bedrock> ,
-        <http://linked.data.gov.au/def/borehole-status/failed-to-reach-target> ;
+        <https://linked.data.gov.au/def/borehole-status/completed-blade-refusal> ,
+        <https://linked.data.gov.au/def/borehole-status/completed-failed-to-reach-bedrock> ,
+        <https://linked.data.gov.au/def/borehole-status/failed-to-reach-target> ;
     skos:narrower :abandoned-mineral ;
     skos:prefLabel "drilling completed - post-operational"@en ;
 .
@@ -396,7 +396,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :operational ;
     skos:definition "The status of a borehole commencing from the rig being moved onsite up until the time that drilling is completed. Note that this stage does not include any operations at the drillsite and within the borehole that follow the completion of drilling the hole. Note that this corresponds to the status of 'drilling' in the PPDM Wellbore Status vocabulary 2014."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/drilling-in-progress> ,
+        <https://linked.data.gov.au/def/borehole-status/drilling-in-progress> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/inprogress> ;
     skos:historyNote "Definition adapted from Geoscience Australia's Borehole Status vocabulary (in turn modified from PPDM Wellbore Status vocabulary, 2014, and CoalLog)." ;
     skos:inScheme cs: ;
@@ -415,9 +415,9 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :rehabilitated ;
     skos:definition "A permanently, securely plugged borehole, usually at a prescribed distance below the ground. Note that 'plugged' is similar to the PPDM definitions of 'plugged and abandoned' as used by the energy industry. Under current regulation, backfilling is a mandatory requirement."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/plugged> ,
+        <https://linked.data.gov.au/def/borehole-status/plugged> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/plugged> ;
-    skos:historyNote "Mineral industry concept. Definition adapted from the Geoscience Australia Borehole Status vocabulary (in turn modified from PPDM Wellbore Status vocabulary, 2014), and DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
+    skos:historyNote "Mineral industry concept. Definition adapted from the Geoscience Australia Borehole Status vocabulary (in turn modified from PPDM Wellbore Status vocabulary, 2014), and DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
     skos:inScheme cs: ;
     skos:narrower :plugged-and-backfilled ;
     skos:prefLabel "plugged"@en ;
@@ -430,15 +430,15 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :post-operational ;
     skos:definition "In the mineral industry, the borehole site has been fully rehabilitated. Note that this status is similar to the PPDM definitions of 'abandoned' as used by the energy industry."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/permanently-abandoned> ,
+        <https://linked.data.gov.au/def/borehole-status/permanently-abandoned> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/rehabilitated> ;
     skos:historyNote "Definition adapted from CoalLog (v. 3.1)." ;
     skos:inScheme cs: ;
     skos:narrowMatch
-        <http://linked.data.gov.au/def/borehole-status/cemented> ,
-        <http://linked.data.gov.au/def/borehole-status/permanently-sealed-csg> ,
-        <http://linked.data.gov.au/def/borehole-status/wellhead-in-situ> ,
-        <http://linked.data.gov.au/def/borehole-status/wellhead-retrieved> ;
+        <https://linked.data.gov.au/def/borehole-status/cemented> ,
+        <https://linked.data.gov.au/def/borehole-status/permanently-sealed-csg> ,
+        <https://linked.data.gov.au/def/borehole-status/wellhead-in-situ> ,
+        <https://linked.data.gov.au/def/borehole-status/wellhead-retrieved> ;
     skos:narrower :plugged ;
     skos:prefLabel "rehabilitated"@en ;
     schema:citation "https://www.ausimm.com/insights-and-resources/resources/codes-and-standards/coallog/"^^xsd:anyURI ;
@@ -457,7 +457,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :operational ;
     skos:definition "The status of a borehole during which fluids (commonly gas and water) are injected rather than produced, typically with the primary objective of maintaining/increasing reservoir pressure to enhance production. Injection wells are also used to dispose of treated wastewater, recharge aquifers, tap geothermal energy, and in environmental remediation for the cleanup of contaminated soil or groundwater; the concept includes injecting for permanent storage. Boreholes/wells are specifically designed/drilled for this purpose, although a production well can be converted into an injection well and vice versa."@en ;
     skos:exactMatch
-        <http://linked.data.gov.au/def/borehole-status/injecting> ,
+        <https://linked.data.gov.au/def/borehole-status/injecting> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/injecting> ;
     skos:historyNote "Derived from PPDM Wellbore Status vocabulary (2014)." ;
     skos:inScheme cs: ;
@@ -483,7 +483,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         :planned ,
         :proposed ;
     skos:prefLabel "planning and approval"@en ;
-    skos:relatedMatch <http://linked.data.gov.au/def/borehole-status/proposed> ;
+    skos:relatedMatch <https://linked.data.gov.au/def/borehole-status/proposed> ;
     skos:topConceptOf cs: ;
 .
 
@@ -491,7 +491,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A borehole that is no longer operating and for which activities are completed, i.e. the borehole is fully decommissioned/rehabilitated."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/post-operational> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/post-operational> ;
     skos:inScheme cs: ;
     skos:narrower
         :abandoned-energy ,
@@ -508,7 +508,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     rdfs:isDefinedBy cs: ;
     skos:altLabel "in progress"@en ;
     skos:definition "The status of a borehole from the commencement to the completion of drilling operations, and including the production/investigation stages."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/operational> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/operational> ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -526,10 +526,10 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A borehole where drilling has been halted but for which operations/activities are not completed, and the borehole has not been fully decommissioned/rehabilitated. This stage includes the potential resumption of drilling."@en ;
-    skos:exactMatch <http://linked.data.gov.au/def/borehole-status/not-operational> ;
+    skos:exactMatch <https://linked.data.gov.au/def/borehole-status/not-operational> ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
     skos:inScheme cs: ;
-    skos:narrowMatch <http://linked.data.gov.au/def/borehole-status/suspended> ;
+    skos:narrowMatch <https://linked.data.gov.au/def/borehole-status/suspended> ;
     skos:narrower
         :capped ,
         :cased-and-suspended ,
@@ -541,10 +541,12 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:topConceptOf cs: ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.0 ;
     skos:definition "The stage of a borehole in relation to the lifecycle of the borehole, from proposal and operational stages through to completion and rehabilitation, and with a focus on terminology as applied in the Geological Survey of Western Australia (GSWA) databases. The vocabulary focuses on standard terminology from the energy and mineral resources sectors, highlighting instances where the same term carries different meaning in different fields. In the context of this vocabulary, the term fluid energy refers to sources such as gas, petroleum and geothermal, as covered by the Petroleum Legislation Amendment Act 2024, and is exclusive of mineral sources of energy (e.g. coal, uranium). Note that the currency of borehole status data in GSWA's databases is time-stamped, reflecting information gathered from a borehole operator’s well completion report or from a responsible regulatory authority at a specific point in time; subsequent changes are unlikely to be recorded."@en ;
     skos:hasTopConcept
         :operational ,
@@ -573,5 +575,82 @@ cs:
     schema:dateModified "2025-02-03"^^xsd:date ;
     schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/resources> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .
+
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/abandoned> schema:name "abandoned" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/completed> schema:name "completed" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/injecting> schema:name "injecting" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/inprogress> schema:name "in progress" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/monitoring> schema:name "monitoring" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/plugged> schema:name "plugged" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/pluggedAndAbandoned> schema:name "plugged & abandoned" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/producing> schema:name "producing" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/producingAndInjecting> schema:name "producing & injecting" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/proposed> schema:name "proposed" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/rehabilitated> schema:name "rehabilitated" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/suspended> schema:name "suspended" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/unknown> schema:name "unknown" .
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/workover> schema:name "workover" .
+
+
+<https://linked.data.gov.au/def/borehole-status/abandoned> schema:name "abandoned" .
+<https://linked.data.gov.au/def/borehole-status/abandoned-bogged> schema:name "abandoned bogged" .
+<https://linked.data.gov.au/def/borehole-status/abandoned-caving-broken-ground> schema:name "abandoned caving broken ground" .
+<https://linked.data.gov.au/def/borehole-status/abandoned-mechanical-reason> schema:name "abandoned mechanical reason" .
+<https://linked.data.gov.au/def/borehole-status/abandoned-no-recovery> schema:name "abandoned no recovery" .
+<https://linked.data.gov.au/def/borehole-status/abandoned-too-deep> schema:name "abandoned too deep" .
+<https://linked.data.gov.au/def/borehole-status/abandoned-too-hard> schema:name "abandoned too hard" .
+<https://linked.data.gov.au/def/borehole-status/abandoned-water-table> schema:name "abandoned water table" .
+<https://linked.data.gov.au/def/borehole-status/application> schema:name "application" .
+<https://linked.data.gov.au/def/borehole-status/approved> schema:name "approved" .
+<https://linked.data.gov.au/def/borehole-status/backfilled> schema:name "backfilled" .
+<https://linked.data.gov.au/def/borehole-status/capped> schema:name "capped" .
+<https://linked.data.gov.au/def/borehole-status/cased-and-abandoned> schema:name "cased and abandoned" .
+<https://linked.data.gov.au/def/borehole-status/cased-and-suspended> schema:name "cased and suspended" .
+<https://linked.data.gov.au/def/borehole-status/casing-removed> schema:name "casing removed" .
+<https://linked.data.gov.au/def/borehole-status/cemented> schema:name "cemented" .
+<https://linked.data.gov.au/def/borehole-status/completed-blade-refusal> schema:name "completed blade refusal" .
+<https://linked.data.gov.au/def/borehole-status/completed-failed-to-reach-bedrock> schema:name "completed failed to reach bedrock" .
+<https://linked.data.gov.au/def/borehole-status/decommissioned> schema:name "decommissioned" .
+<https://linked.data.gov.au/def/borehole-status/drilling-completed> schema:name "drilling completed" .
+<https://linked.data.gov.au/def/borehole-status/drilling-in-progress> schema:name "drilling in progress" .
+<https://linked.data.gov.au/def/borehole-status/drilling-suspended> schema:name "drilling suspended" .
+<https://linked.data.gov.au/def/borehole-status/equipment-in-borehole> schema:name "equipment in borehole" .
+<https://linked.data.gov.au/def/borehole-status/failed-to-reach-target> schema:name "failed to reach target" .
+<https://linked.data.gov.au/def/borehole-status/hazard-in-borehole> schema:name "hazard in borehole" .
+<https://linked.data.gov.au/def/borehole-status/injecting> schema:name "injecting" .
+<https://linked.data.gov.au/def/borehole-status/injecting-gas> schema:name "injecting gas" .
+<https://linked.data.gov.au/def/borehole-status/injecting-water> schema:name "injecting water" .
+<https://linked.data.gov.au/def/borehole-status/monitoring> schema:name "monitoring" .
+<https://linked.data.gov.au/def/borehole-status/not-approved> schema:name "not approved" .
+<https://linked.data.gov.au/def/borehole-status/not-drilled> schema:name "not drilled" .
+<https://linked.data.gov.au/def/borehole-status/not-operational> schema:name "not operational" .
+<https://linked.data.gov.au/def/borehole-status/operational> schema:name "operational" .
+<https://linked.data.gov.au/def/borehole-status/operational-not-producing> schema:name "operational not producing" .
+<https://linked.data.gov.au/def/borehole-status/permanently-abandoned> schema:name "permanently abandoned" .
+<https://linked.data.gov.au/def/borehole-status/permanently-sealed-csg> schema:name "permanently sealed csg" .
+<https://linked.data.gov.au/def/borehole-status/plugged> schema:name "plugged" .
+<https://linked.data.gov.au/def/borehole-status/plugged-and-backfilled> schema:name "plugged and backfilled" .
+<https://linked.data.gov.au/def/borehole-status/post-operational> schema:name "post operational" .
+<https://linked.data.gov.au/def/borehole-status/prematurely-terminated-mineral> schema:name "prematurely terminated mineral" .
+<https://linked.data.gov.au/def/borehole-status/producing> schema:name "producing" .
+<https://linked.data.gov.au/def/borehole-status/producing-and-injecting> schema:name "producing and injecting" .
+<https://linked.data.gov.au/def/borehole-status/producing-csg> schema:name "producing csg" .
+<https://linked.data.gov.au/def/borehole-status/producing-gas> schema:name "producing gas" .
+<https://linked.data.gov.au/def/borehole-status/producing-geothermal-energy> schema:name "producing geothermal energy" .
+<https://linked.data.gov.au/def/borehole-status/producing-oil> schema:name "producing oil" .
+<https://linked.data.gov.au/def/borehole-status/producing-shale-gas> schema:name "producing shale gas" .
+<https://linked.data.gov.au/def/borehole-status/producing-tight-gas> schema:name "producing tight gas" .
+<https://linked.data.gov.au/def/borehole-status/producing-water> schema:name "producing water" .
+<https://linked.data.gov.au/def/borehole-status/proposed> schema:name "proposed" .
+<https://linked.data.gov.au/def/borehole-status/reaming> schema:name "reaming" .
+<https://linked.data.gov.au/def/borehole-status/shut-in> schema:name "shut in" .
+<https://linked.data.gov.au/def/borehole-status/suspended> schema:name "suspended" .
+<https://linked.data.gov.au/def/borehole-status/technically-abandoned> schema:name "technically abandoned" .
+<https://linked.data.gov.au/def/borehole-status/unknown> schema:name "unknown" .
+<https://linked.data.gov.au/def/borehole-status/unrehabilitated> schema:name "unrehabilitated" .
+<https://linked.data.gov.au/def/borehole-status/wellhead-in-situ> schema:name "wellhead in situ" .
+<https://linked.data.gov.au/def/borehole-status/wellhead-retrieved> schema:name "wellhead retrieved" .
+<https://linked.data.gov.au/def/borehole-status/workover> schema:name "workover" .

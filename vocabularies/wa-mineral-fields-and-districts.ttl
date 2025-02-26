@@ -904,6 +904,8 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-12"^^xsd:date ;
@@ -911,8 +913,8 @@ cs:
     dcterms:identifier "wa-mineral-fields-and-districts"^^xsd:token ;
     dcterms:modified "2023-09-12"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
     reg:status agldwgstatus:stable ;
     skos:definition "The State of Western Australia is divided into various Mineral Fields that represent administrative land subdivisions under which mining is administered in the State according to Section 16 of the Mining Act 1978. Some mineral fields are further subdivided into Districts. Mineral field and district boundaries can be changed by proclamation under the Mining Act 1978 — the listing provided is current as of June 2023. Each mineral field or district is characterized by a two-digit prefix code used for map representations and tenement indexing. Most districts and some mineral fields are also characterized by an upper case letter code: these are historical identifiers currently not applied, but are relevant for legacy mining tenement information. Field and district proclamations date back as far as the late 1890s; individual entities may have undergone several alterations of boundaries and even been changed from district to field (NB the gazetted date provided usually refers to the first entity). In gold-endowed areas, mineral fields were originally classified as 'Goldfields', but this categorisation stopped with the ratification of the Mining Act 1978. In terms of management, tenements under each mineral field are administered under a designated Mining Registrar (here expressed as collections). Information for this vocabulary was sourced from the Tengraph (Web) Help (https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx), the Department of Mines, Industry Regulation and Safety (https://dmp.wa.gov.au/History-and-locations-of-the-12531.aspx) and a dedicated Wikipedia (https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia) webpages, as well as the consolidated printed version of the 1904 Act and individual Western Australian Government Gazettes."@en ;
     skos:hasTopConcept

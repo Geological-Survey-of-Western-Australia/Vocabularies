@@ -296,6 +296,8 @@ Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and th
     schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-01"^^xsd:date ;
@@ -303,8 +305,8 @@ cs:
     dcterms:identifier "tectonic-unit-type"^^xsd:token ;
     dcterms:modified "2023-11-01"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
     reg:status agldwgstatus:stable ;
     skos:definition "This vocabulary lists the types of tectonic and lithotectonic units that are used to define the geological framework / 4D evolution of Western Australia and are relevant to the duties of the Geological Survey of Western Australia (GSWA). A tectonic unit is defined as a named mass/body of rock with defined geological characteristics (geological structure, sedimentary stratigraphy, magmatic activity, metamorphism, metallogeny and alteration) and evolutionary history different from that of surrounding/contiguous units. A lithotectonic (or lithostructural) unit is defined as an assemblage of rocks unified on the basis of structural or deformational features, mutual relationships, origin, or historical evolution, that: a) is a subset of a larger tectonic unit (e.g. inlier/outlier), b) incorporates components from more than one tectonic units (e.g. greenstone belt), and c) encompasses large tectonic components of the State of Western Australia and/or facilitates the grouping of common tectonic elements at the highest level of the State tectonic hierarchy (e.g. large igneous provinces). Tectonic unit types are an integral part of GSWA's Explanatory Notes System (ENS), a digital repository of detailed unit descriptions that integrates stratigraphic relationships with links to all tectonic units and events recognized in Western Australia. This vocabulary does not attempt to show hierarchical relationships between tectonic types as enforced in ENS, as many are not one-to-one relationships."@en ;
     skos:hasTopConcept
@@ -352,3 +354,18 @@ The concepts outline the type of tectonic elements that are recognized and/or in
         ] ;
 .
 
+<https://linked.data.gov.au/def/geofeatures/Basin> schema:name "Basin" .
+<https://linked.data.gov.au/def/geofeatures/Craton> schema:name "Craton" .
+<https://linked.data.gov.au/def/geofeatures/LargeIgneousProvince> schema:name "Large Igneous Province" .
+<https://linked.data.gov.au/def/geofeatures/Orogen> schema:name "Orogen" .
+<https://linked.data.gov.au/def/geofeatures/Province> schema:name "Province" .
+<https://linked.data.gov.au/def/geofeatures/SedimentaryBasin> schema:name "Sedimentary Basin" .
+<https://linked.data.gov.au/def/geofeatures/SeismicProvince> schema:name "Seismic Province" .
+<https://linked.data.gov.au/def/geofeatures/Subbasin> schema:name "Subbasin" .
+<https://linked.data.gov.au/def/geofeatures/Subprovince> schema:name "Subprovince" .
+<https://linked.data.gov.au/def/geofeatures/Suite> schema:name "Suite" .
+<https://linked.data.gov.au/def/geofeatures/Superbasin> schema:name "Superbasin" .
+<https://linked.data.gov.au/def/geofeatures/Supersuite> schema:name "Supersuite" .
+<https://linked.data.gov.au/def/geofeatures/Terrane> schema:name "Terrane" .
+<https://linked.data.gov.au/def/geofeatures/inlier> schema:name "inlier" .
+<https://linked.data.gov.au/def/geofeatures/outlier> schema:name "outlier" .

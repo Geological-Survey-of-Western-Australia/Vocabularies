@@ -59,7 +59,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "mineral cotype"@en ;
     skos:broader :type-specimen-mineral ;
     skos:definition "In the International Mineralogical Association's mineral nomenclature scheme (IMA), specimens (designated by the author) as those used to obtain quantitative data for the original description. Specimens examined only visually should not be considered cotypes."@en ;
-    skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
+    skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
     skos:inScheme cs: ;
     skos:prefLabel "cotype - IMA"@en ;
     schema:citation "http://www.minsocam.org/msa/ima/ima98(05).pdf"^^xsd:anyURI ;
@@ -172,7 +172,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "mineral holotype"@en ;
     skos:broader :type-specimen-mineral ;
     skos:definition "In the International Mineralogical Association's mineral nomenclature scheme (IMA), a single specimen (designated by the author) from which all the data for the original description were obtained. Where portions of such a specimen have been sent to other museums for preservation, the author will designate each of these as ‘part of the holotype.’"@en ;
-    skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
+    skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
     skos:inScheme cs: ;
     skos:prefLabel "holotype - IMA"@en ;
     schema:citation "http://www.minsocam.org/msa/ima/ima98(05).pdf"^^xsd:anyURI ;
@@ -330,7 +330,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:altLabel "mineral neotype"@en ;
     skos:broader :type-specimen-mineral ;
     skos:definition "In the International Mineralogical Association's mineral nomenclature scheme (IMA), a specimen chosen by the author of a redefinition or re-examination of a species to represent the species when the holotype or cotypes cannot be found. It must be shown that every attempt has been made to locate the originally described material. Neotypes can also be designated when examination of all holotypes and cotypes has shown that the definitive unit-cell parameters and chemical composition cannot be experimentally determined. All neotypes require the approval of the Commission on New Minerals and Mineral Names of the International Mineralogical Association."@en ;
-    skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
+    skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
     skos:inScheme cs: ;
     skos:prefLabel "neotype - IMA"@en ;
     schema:citation "http://www.minsocam.org/msa/ima/ima98(05).pdf"^^xsd:anyURI ;
@@ -441,7 +441,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 :type-specimen-meteorite
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:definition "Reference sample of a named meteorite deposited in an approved type-specimen repository and meeting the minimum mass requirements, as set forward by the Meteorite Nomenclature Committee (also known as NomCom) of The Meteorological Society. NomCom regulations require a meteorite type specimen to be a minimum mass of 20 g or 20% of the total mass, whichever is the lesser amount. Suitable type-specimen repositories are described as 'institutions that have well-curated meteorite collections and long-standing commitments to such curation' (section 7.1). Unlike other nomenclatural codes, meteorites only recognize a single classification of type specimen."@en ;
+    skos:definition "Reference sample of a named meteorite deposited in an approved type-specimen repository and meeting the minimum mass requirements, as set forward by the Meteorite Nomenclature Committee (also known as NomCom) of The Meteorological Society. NomCom regulations require a meteorite type specimen to be a minimum mass of 20 g or 20% of the total mass, whichever is the lesser amount. Suitable type-specimen repositories are described as 'institutions that have well-curated meteorite collections and long-standing commitments to such curation' (section 7.1). Unlike other nomenclatural codes, meteorites only recognize a single classification of type specimen."@en ;
     skos:historyNote "Adapted from Committee on meteorite nomenclature (2015)." ;
     skos:inScheme cs: ;
     skos:prefLabel "type specimen - meteorite"@en ;
@@ -511,7 +511,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Reference samples for the definition of mineral species as per the mineral nomenclature scheme of the International Mineralogical Association (IMA). Although a vast number of minerals, especially those discovered in antiquity, have no designated type minerals, modern practise is to deposit all type minerals in a 'non-private, institutional, professionally curated, research-oriented' museum, with the type status of each specimen clearly designated."@en ;
-    skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
+    skos:historyNote "Adapted from Dunn and Mandarino (1987; Dunn, PJ and Mandarino, JA 1987, Formal definitions of type mineral specimens: American Mineralogist, v. 72(11–12), p. 1269–1270.)" ;
     skos:inScheme cs: ;
     skos:narrower
         :cotype-IMA ,
@@ -555,7 +555,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "nomenclatural type"@en ,
         "typus"@en ;
     skos:broader :type-specimen-fossil ;
-    skos:definition "A specimen designated as the element to which the name of a taxon is permanently attached, under the provisions of the International Code of Nomenclature for algae, fungi and plants (ICN; Shenzen Code, 2018); the type specimen is not necessarily the most typical or representative element of a taxon. Type specimens are generally divided into primary (e.g. holotype, lectotype, syntype, neotype) or secondary (e.g. paratype) types, with primary types being of greater scientific importance. As part of the requirements for taxonomic validity, type specimens are recommended to be held in public collections with a policy of giving bona fide researchers access to deposited material, and should be scrupulously conserved. Note that although microbialites are officially excluded from the ICN, the Proposed International Code of Microbialite Nomenclature (PICMN, Grey and Awramik, 2020) specifies that 'Provisions in the Shenzhen Code Articles 9 and 10 should be followed in designating and naming microbialite types, and for reference to terminology relating to different types (e.g. lectotype, paratype, etc.) and the rules governing their use' (point 11, p. 196), with that advice followed herein."@en ;
+    skos:definition "A specimen designated as the element to which the name of a taxon is permanently attached, under the provisions of the International Code of Nomenclature for algae, fungi and plants (ICN; Shenzen Code, 2018); the type specimen is not necessarily the most typical or representative element of a taxon. Type specimens are generally divided into primary (e.g. holotype, lectotype, syntype, neotype) or secondary (e.g. paratype) types, with primary types being of greater scientific importance. As part of the requirements for taxonomic validity, type specimens are recommended to be held in public collections with a policy of giving bona fide researchers access to deposited material, and should be scrupulously conserved. Note that although microbialites are officially excluded from the ICN, the Proposed International Code of Microbialite Nomenclature (PICMN, Grey and Awramik, 2020) specifies that 'Provisions in the Shenzhen Code Articles 9 and 10 should be followed in designating and naming microbialite types, and for reference to terminology relating to different types (e.g. lectotype, paratype, etc.) and the rules governing their use' (point 11, p. 196), with that advice followed herein."@en ;
     skos:historyNote "Adapted from the ICN glossary, Article 7.2, Recommendation 7A.1, and Grey and Awramik (2020; Grey, K and Awramik, SM 2020, Handbook for the study and description of microbialites: Geological Survey of Western Australia, Bulletin 147, 278p.)." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -579,10 +579,12 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.0 ;
     skos:definition "Listing of standard nomenclature types (typus) and publication statuses that may characterize fossil, mineral or meteorite samples/specimens held in the Geological Survey of Western Australia's collections. These terms should only be applied to physical items, and are not applicable to derived results or data. This vocabulary includes terms for type specimens as recognized under several international nomenclature codes (see History Note for details). Taxonomic schemes applied to different classes of objects each have their own set of accepted types, and can define the same term differently, so care should be taken to use the correct nomenclature when referring to type specimens; to minimize confusion, individual terms have been labelled with a suffix indicating the relevant code. Note that multiple statuses can apply to a single specimen (e.g. by definition a type specimen will always be described-and-published)."@en ;
     skos:hasTopConcept
         :non-type-specimen ,
@@ -592,11 +594,11 @@ cs:
         :type-specimen-meteorite ,
         :type-specimen-mineral ;
     skos:historyNote """The following have been used for the compilation of this vocabulary:
-1) International Code of Zoological Nomenclature (ICZN; 1999, with 2012 amendments) - www.iczn.org/the-code/the-code-online
-2) International Code of Nomenclature for algae, fungi and plants (ICN; Shenzen Code, 2018) - www.iapt-taxon.org/nomen/pages/main/glossary.html
-3) Guidelines for Meteorite Nomenclature (version dated July 2015) - www.lpi.usra.edu/meteor/docs/nc-guidelines.htm
-4) International Mineralogical Association's mineral nomenclature scheme (IMA; published 1987) - www.minsocam.org/msa/ima/ima98(05).pdf
-5) Although not yet official, the Proposed International Code of Microbialite Nomenclature (PICMN, Grey and Awramik, 2020) specifies that 'Provisions in the Shenzhen Code Articles 9 and 10 should be followed in designating and naming microbialite types, and for reference to terminology relating to different types (e.g. lectotype, paratype, etc.) and the rules governing their use' (point 11, p. 196), and that advice is followed herein. Reference: Grey, K and Awramik, SM 2020, Handbook for the study and description of microbialites: Geological Survey of Western Australia, Bulletin 147, 278p.
+1) International Code of Zoological Nomenclature (ICZN; 1999, with 2012 amendments) - www.iczn.org/the-code/the-code-online
+2) International Code of Nomenclature for algae, fungi and plants (ICN; Shenzen Code, 2018) - www.iapt-taxon.org/nomen/pages/main/glossary.html
+3) Guidelines for Meteorite Nomenclature (version dated July 2015) - www.lpi.usra.edu/meteor/docs/nc-guidelines.htm
+4) International Mineralogical Association's mineral nomenclature scheme (IMA; published 1987) - www.minsocam.org/msa/ima/ima98(05).pdf
+5) Although not yet official, the Proposed International Code of Microbialite Nomenclature (PICMN, Grey and Awramik, 2020) specifies that 'Provisions in the Shenzhen Code Articles 9 and 10 should be followed in designating and naming microbialite types, and for reference to terminology relating to different types (e.g. lectotype, paratype, etc.) and the rules governing their use' (point 11, p. 196), and that advice is followed herein. Reference: Grey, K and Awramik, SM 2020, Handbook for the study and description of microbialites: Geological Survey of Western Australia, Bulletin 147, 278p.
 Note that a number of international codes of nomenclature are not included in this vocabulary due to their inapplicability to geological materials (i.e. International Code of Nomenclature of Prokaryotes, International Code of Nomenclature for Cultivated Plants, International Code of Virus Classification and Nomenclature, International Code of Phytosociological Nomenclature).
 GSWA distinguishes samples from specimens on the basis of the latter including both primary and derived materials and having been accessioned into a suitable management system."""@en ;
     skos:prefLabel "Sample/specimen nomenclature and publication status"@en ;
@@ -617,5 +619,5 @@ GSWA distinguishes samples from specimens on the basis of the latter including b
         <https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-paleontology> ,
         <https://linked.data.gov.au/def/gswa-vocabulary-themes/sample-acquisition-management> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .

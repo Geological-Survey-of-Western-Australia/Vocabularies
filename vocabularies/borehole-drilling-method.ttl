@@ -563,10 +563,12 @@ cgibdm:window_sampler
     schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
-    owl:versionIRI <http://draft.com/borehole-drilling-method-western-australia/1.0> ;
+    owl:versionIRI :1.0 ;
     skos:definition "A list of drilling methods routinely used by the mineral and energy resource industries. The drilling methods are grouped into three main categories based on the dominant motion of the drillstem (i.e. the string of pipe that transmits power from the surface down to the drillbit) and drillbit (the part of the bottom-hole assembly that cuts, grinds or breaks the bottom-hole formation to make the hole). Specifically, the presence/absence of rotation in either or both is used as the main distinguishing factor, hence the main grouping into rotary, non-rotary and hybrid. Most drilling used by the mineral and energy resource industries falls into the rotary drilling category. Note that alternative classification schemes can use parameters such as the hole-making method in combination with the hole-clearing and stabilizing method and/or the type of sample produced (e.g. core versus chips). These methods can cross over between the main categories used here; for example, percussion drilling can be used in conjunction with rotary, non-rotary and hybrid methods and the term is not always qualified in company reports. In addition, many drilling rigs are multipurpose and hence can use a combination of drilling methods, including in the same borehole; for example, reverse circulation drilling can be followed by diamond drilling — however, these are both rotary drilling methods. Definitions are compiled from a variety of sources, including the Australian Drilling Industry Association's Drilling Manual (2018, Sixth edition), existing published vocabularies, drilling company webpages, Wikipedia, and a variety reports/publications."@en ;
     skos:hasTopConcept
         :hybrid-drilling ,
@@ -601,3 +603,82 @@ cs:
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1.0" ;
 .
+
+:1.0 schema:name "1.0" .
+
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/RAB_drilling>
+    schema:description "Percussion rotary air blast drilling (RAB) drilling is an 'open hole' rotary percussion drilling method where rock or sediment chips are derived by using a drag bit or pneumatic reciprocating piston-driven hammer, and the cuttings are blown up the outside of the drill rods by air, or a combination of air and foam, and collected at the surface. It is used most frequently in the mineral exploration industry."@en ;
+    schema:name "rotary air blast drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/air_core>
+    schema:description "Air core drilling and related methods use hardened steel or tungsten blades to bore a hole into unconsolidated ground. The drill bit has three blades arranged around the bit head, which cut the unconsolidated ground. The rods are hollow and contain an inner tube which sits inside the hollow outer rod barrel. The drill cuttings are removed by injection of compressed air into the hole via the annular area between the innertube and the drill rod. The cuttings are then blown back to surface up the inner tube where they pass through the sample separating system and are collected if needed. Drilling continues with the addition of rods to the top of the drill string. Air core drilling can occasionally produce small chunks of cored rock."@en ;
+    schema:name "air core"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/coiled_tubing_drilling>
+    schema:description "Coiled tubing drilling (CTD) is a trenchless technique that uses coiled tubing spooled on a large reel instead of metal pipes. CTD is used in both mineral and petroleum industry. In the latter, CTD is commonly used in existing wellbores for re-entry drilling or sidetracking through the production tubing, for new shallow wells, deepening conventional wells and for drilling under-balanced. Complex CTD operations, including directional drilling and cased completions, require pipe handling equipment, large diameter coiled tubing, fluid handling equipment for mixing, cleaning and recirculating, provisions for handling long bottom hole assemblies (BHA) and blowout preventer (BOP) stacks."@en ;
+    schema:name "coiled tubing drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/conventional_core>
+    schema:description "Core drilling using a diamond or tungsten carbide bit and a core barrel with fibreglass inner sleeves. To retrieve the core samples, the complete rod string and core barrel assembly has to be removed from the hole. Conventional coring is much more time consuming than wireline coring, as each rod has to be removed from the hole individually, then lowered back into the hole to continue to advance the boring and collect the next core sample. Used in the oil industry."@en ;
+    schema:name "conventional core"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/core_drilling>
+    schema:description "A core of sediment, soil, or rock is derived by an unspecified core drilling method."@en ;
+    schema:name "core drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/hydraulic_rotary_drilling>
+    schema:description "A drilling method using a drill stem equipped with a bit that is rotated to cut and grind the rock with a fluid pumped down the stem to force cuttings up through the annular space between the stem and the wall of the hole. Oil well drilling of this type utilises tri-cone roller, carbide embedded, fixed-cutter diamond, or diamond-impregnated drill bits. This is preferred because there is no need to return intact samples to surface for assay as the objective is to reach a formation containing oil or natural gas. Sizable machinery is used, enabling depths of several kilometres to be penetrated. Rotating hollow drill pipes carry down bentonite and barite infused drilling muds to lubricate, cool, and clean the drilling bit, control downhole pressures, stabilize the wall of the borehole and remove drill cuttings."@en ;
+    schema:name "hydraulic rotary drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/mud_rotary_drilling>
+    schema:description "Mud rotary drilling is a method for wellbore excavation. It involves the use of a spinning drill bit aided by a semi-fluid mixture known as mud. Mud rotary drilling is adaptable for a wide range of trenchless construction situations, and is considered the most versatile and common of drilling methods."@en ;
+    schema:name "mud rotary drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/percussion_drilling>
+    schema:description "A drilling method whereby rock or sediment chips or fragments (cuttings) are derived by use of a percussion (hammer) method, with or without rotary action."@en ;
+    schema:name "percussion drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/piston_core>
+    schema:description "A drilling method that uses a piston to drive the core barrel. Produces high quality long cores."@en ;
+    schema:name "piston core"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/power_auger>
+    schema:description "Mechanically-driven auger drilling, typically used in hard ground or for holes that are too wide or deep for hand auger drilling. Auger drilling is done with a helical screw which is driven into the ground with rotation; the earth is lifted up the borehole by the blade of the screw. Small power augers can be portable or mounted on the back of a utility truck, with larger auger rigs used for construction, like sinking piles for bridge foundations or mine shafts."@en ;
+    schema:name "power auger"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/reverse_circulation_drilling>
+    schema:description "The drilling mechanism for reverse circulation (RC) drilling is a pneumatic reciprocating piston known as a \"hammer\" driving a tungsten-steel drill bit. Compressed air passes down to the drill bit along the annular space between an outer and inner drill rod to return to the surface carrying drill cuttings. This is the reverse of the air path employed in normal ‘open hole’ rotary percussion drilling (including RAB drilling). At the top of the hole, the air and drill cuttings are passed through a cyclone to collect the cuttings for sampling. The RC drilling technique prevents the upcoming sample from being contaminated with material from the wall of the hole above the sampling depth. RC drilling utilises much larger rigs and machinery and depths of up to 500 metres are routinely achieved."@en ;
+    schema:name "reverse circulation drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_drilling>
+    schema:description "A drilling method using a drill stem equipped with a bit that is rotated"@en ;
+    schema:name "rotary drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/rotary_hammer_drilling>
+    schema:description "A percussion drilling method using a cutting tool powered by compressed air that creates a rapid percussion effect coupled with rotary action to drill hard rocks."@en ;
+    schema:name "rotary hammer drilling"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/vacuum>
+    schema:description "Vacuum drilling is principally designed for mineral exploration drilling to provide a low cost, efficient recovery of uncontaminated drill samples. Vacuum Drilling systems comprise a vacuum pump, oil bath filter, sample separator, vacuum swivel and drive shaft adaptor to rotary drilling head. The vacuum pump can be driven either hydraulically or mechanically from the existing drill rig power pack. Alternatively, a separate independent drive source can be provided. Samples are removed from the rod string via the vacuum swivel mounted above the rotary head. Then, cuttings proceed to the two-stage sample separator for removal from the air stream, and are collected in the bulk sample flask. Separated air is then passed through the oil bath filter to be discharged from the vacuum pump."@en ;
+    schema:name "vacuum"@en ;
+.
+
+<http://resource.geosciml.org/classifierscheme/cgi/2016.01/boreholedrillingmethod>
+    schema:description "This scheme specifies concepts used to describe methods used to drill a borehole, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme."@en ;
+    schema:name "Borehole Drilling Method"@en ;
+.
+
