@@ -120,6 +120,8 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-01"^^xsd:date ;
@@ -127,8 +129,8 @@ cs:
     dcterms:identifier "metamorphic-stage"^^xsd:token ;
     dcterms:modified "2023-11-01"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
     reg:status agldwgstatus:stable ;
     skos:definition """Terms used to describe the stage of metamorphism of rocks based on the nature of the change in pressure and temperature conditions to which the rocks are subjected. Definitions are taken or derived from:
 Fettes, D and Desmons, J (eds.) 2007, Metamorphic Rocks: a classification and glossary of terms — Recommendations of the International Union of Geological Sciences Subcommission on the Systematics of Metamorphic Rocks: Cambridge University Press, 244p."""@en ;

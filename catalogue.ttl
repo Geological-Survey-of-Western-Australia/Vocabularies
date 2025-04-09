@@ -1,0 +1,52 @@
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX catns: <https://example.com/demo-vocabs/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://example.com/demo-vocabs>
+    a schema:DataCatalog ;
+    schema:hasPart
+        <https://linked.data.gov.au/def/alteration-form> ,
+        <https://linked.data.gov.au/def/alteration-intensity> ,
+        <https://linked.data.gov.au/def/alteration-type> ,
+        <https://linked.data.gov.au/def/australian-physiographic-units> ,
+        <https://linked.data.gov.au/def/borehole-configuration> ,
+        <https://linked.data.gov.au/def/borehole-drilling-method-western-australia> ,
+        <https://linked.data.gov.au/def/borehole-geometry> ,
+        <https://linked.data.gov.au/def/borehole-purpose-wa> ,
+        <https://linked.data.gov.au/def/borehole-start-point-setting> ,
+        <https://linked.data.gov.au/def/borehole-status-wa> ,
+        <https://linked.data.gov.au/def/CRIRSCO-mineral-resource-reporting> ,
+        <https://linked.data.gov.au/def/dmirs-offices> ,
+        <https://linked.data.gov.au/def/earthsci-for> ,
+        <https://linked.data.gov.au/def/geological-feature-type> ,
+        <https://linked.data.gov.au/def/gswa-collection-facilities> ,
+        <https://linked.data.gov.au/def/gswa-rock-classification-scheme> ,
+        <https://linked.data.gov.au/def/gswa-vocabulary-themes> ,
+        <https://linked.data.gov.au/def/JORC-Code> ,
+        <https://linked.data.gov.au/def/location-method> ,
+        <https://linked.data.gov.au/def/metamorphic-P-T-trajectory> ,
+        <https://linked.data.gov.au/def/metamorphic-facies> ,
+        <https://linked.data.gov.au/def/metamorphic-stage> ,
+        <https://linked.data.gov.au/def/metamorphic-thermal-regime> ,
+        <https://linked.data.gov.au/def/physiographic-unit-types> ,
+        <https://linked.data.gov.au/def/sample-condition> ,
+        <https://linked.data.gov.au/def/sample-curation-status> ,
+        <https://linked.data.gov.au/def/sample-nomenclature-publication-status> ,
+        <https://linked.data.gov.au/def/tectonic-unit-type> ,
+        <https://linked.data.gov.au/def/uom-geoscience> ,
+        <https://linked.data.gov.au/def/vertical-depth-reference-systems> ,
+        <https://linked.data.gov.au/def/wa-coordinate-reference-systems> ,
+        <https://linked.data.gov.au/def/wa-mineral-fields-and-districts> ;
+    schema:codeRepository "https://github.com/kurrawong/demo-vocabs" ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023"^^xsd:gYear ;
+    schema:dateModified "2025-02-26"^^xsd:date ;
+    schema:description "Vocabularies authored by the Geological Survey of WA" ;
+    schema:name "GSWA Vocabularies" ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    reg:status astatus:stable ;
+.

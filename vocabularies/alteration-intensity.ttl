@@ -114,10 +114,12 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     schema:url ""^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.0 ;
     skos:definition "A compilation of terms that describe the degree to which (i.e. how much) a rock or a mineral has been affected by alteration. Alteration in this context is considered as a modification of the original lithology caused by meteoric, connate, metamorphic or magmatic-derived fluids, excluding the weathering environment, mineralization and direct magmatic or metamorphic processes. These concepts are generally used as convenient field or petrographic descriptive terms. Definitions are largely from Pirajno (2009) and the Glossary of geology (5th edition revised; Neuendorf et. al., 2011)."@en ;
     skos:hasTopConcept
         :intense ,
@@ -127,8 +129,8 @@ cs:
         :unknown ,
         :weak ;
     skos:historyNote """Derived from GSWA's WAROX database's table [GEOLOGY].[Warox_REF].[Intensity]. Definitions compiled from:
-1) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
-2) Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p."""@en ;
+1) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
+2) Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p."""@en ;
     skos:prefLabel "Alteration intensity"@en ;
     prov:qualifiedAttribution
         [
@@ -144,5 +146,5 @@ cs:
     schema:dateModified "2024-12-02"^^xsd:date ;
     schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .

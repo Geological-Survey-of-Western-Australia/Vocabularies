@@ -412,6 +412,8 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-06"^^xsd:date ;
@@ -419,8 +421,8 @@ cs:
     dcterms:identifier "vertical-depth-reference-systems"^^xsd:token ;
     dcterms:modified "2023-09-06"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
     reg:status agldwgstatus:stable ;
     skos:definition "The point or level from which heights and depths are measured and referenced to for an entity or activity. Typically these are expressed relative to a common global or regional reference datum such as the Australian Height Datum (AHD) or can be related to local reference systems. Specific emphasis is placed on elevation references used by resource exploration and drilling programs, whereby depths are measured relative to local reference datums or specific parts of a borehole/drilling platform. Concepts in this vocabulary include both reference datums (e.g. mean sea level) and how depths are expressed relative to them (e.g. mean sea level height)."@en ;
     skos:hasTopConcept
@@ -457,3 +459,12 @@ cs:
                 ]
         ] ;
 .
+
+<https://linked.data.gov.au/def/depth-reference> schema:name "Depth Reference" .
+<https://linked.data.gov.au/def/depth-reference/australian-height-datum> schema:name "australian height datum" .
+<https://linked.data.gov.au/def/depth-reference/drill-collar> schema:name "drill collar" .
+<https://linked.data.gov.au/def/depth-reference/kelly-bushing> schema:name "kelly bushing" .
+<https://linked.data.gov.au/def/depth-reference/mean-sea-level> schema:name "mean sea level" .
+<https://linked.data.gov.au/def/depth-reference/metres-sub-sea> schema:name "metres sub sea" .
+<https://linked.data.gov.au/def/depth-reference/rotary-table> schema:name "rotary table" .
+<https://linked.data.gov.au/def/depth-reference/seismic-reference-datum> schema:name "seismic reference datum" .

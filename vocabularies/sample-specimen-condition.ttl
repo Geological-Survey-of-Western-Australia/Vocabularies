@@ -689,10 +689,12 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:topConceptOf cs: ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.0 ;
     skos:definition "List of terms describing the condition, completeness and risk/hazard profile of individual samples/specimens, including any specific requirements needed for the preservation of the object."@en ;
     skos:hasTopConcept
         :enhanced ,
@@ -724,5 +726,5 @@ cs:
     schema:dateModified "2024-12-09"^^xsd:date ;
     schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/sample-acquisition-management> ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .

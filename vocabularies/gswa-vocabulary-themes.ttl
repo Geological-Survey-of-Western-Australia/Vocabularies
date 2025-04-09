@@ -1,7 +1,6 @@
 PREFIX : <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX cs: <https://linked.data.gov.au/def/gswa-vocabulary-themes>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX default1: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -74,7 +73,15 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:prefLabel "geology - paleontology"@en ;
 .
 
-<https://linked.data.gov.au/def/gswa-vocabulary-themesgeology–mapping>
+:geology-mapping
+    a skos:Concept ;
+    skos:broader :geology ;
+    skos:definition "Vocabularies related to the defining of geological elements of a region."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "geology - mapping"@en ;
+.
+
+:geology–mapping
     a skos:Concept ;
     skos:broader :geology ;
     skos:definition "Vocabularies related to the compilation of geological maps, i.e. graphic representations of the distribution, composition and structure of geological materials across the Earth's surface and at depth, depicting both observations and interpretations using symbols and colours. Included here are vocabularies related to topography (the practice of accurately and graphically delineating in detail, as on a map or chart or by a model, selected natural and man-made surface features of a region) and geodesy (the science concerned with the determination of the size and shape of the Earth and the precise location of points on its surface and subsurface), which are fundamental for the correct spatial representation of geological information."@en ;
@@ -95,7 +102,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/def/gswa-vocabulary-themesresources–energy>
+:resources–energy
     a skos:Concept ;
     skos:broader :resources ;
     skos:definition "Vocabularies related to the study, exploration for and exploitation of physical processes and natural concentrations of materials for the main purpose of power generation. Energy resources include (a) concentrations of solid and/or fluid, inorganic or fossilized organic materials naturally occurring on or in the Earth’s crust (e.g. non-renewable fossil fuels such as petroleum, and natural gases); (b) natural physical processes within the Earth’s crust, atmosphere and hydrosphere (i.e. renewable energy resources such as solar, wind, hydro, solar thermal, marine, geothermal) or human-controlled activities (e.g. bioenergy/biomass, energy storage); and (c) nuclear energy. Adapted from Glossary of geology (Neuendorf et. al., 2011, 5th edition revised)."@en ;
@@ -106,7 +113,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "https://www.energyfactsaustralia.org.au/explainers/energy-sources/"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/def/gswa-vocabulary-themesresources–mineral>
+:resources-mineral
     a skos:Concept ;
     skos:broader :resources ;
     skos:definition "Vocabularies related to the study, exploration for and exploitation of concentrations of natural inorganic or fossilized organic material occurring on or within the Earth’s crust, in sufficient quantity and quality to have reasonable prospects for economic extraction. Mineral resources are non-renewable and include metals (e.g. iron, copper, and aluminium), non-metals (e.g. salt, gypsum, clay, sand, phosphates), and rocks (e.g. dimension stones, basic raw materials)."@en ;
@@ -123,7 +130,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
+<https://linked.data.gov.au/org/gswa>
     a schema:Organization ;
     schema:name "Gswa" ;
     schema:url ""^^xsd:anyURI ;
@@ -134,8 +141,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:definition "Vocabularies related to the study, exploration for and exploitation of concentrations of solid, liquid, or gaseous materials in or on the Earth's crust in such form and amount that economic extraction of a commodity from the concentration is currently or potentially feasible. Adapted from Glossary of geology (Neuendorf et. al., 2011, 5th edition revised)."@en ;
     skos:inScheme cs: ;
     skos:narrower
-        <https://linked.data.gov.au/def/gswa-vocabulary-themesresources–energy> ,
-        <https://linked.data.gov.au/def/gswa-vocabulary-themesresources–mineral> ;
+        :resources–energy ,
+        :resources-mineral ;
     skos:prefLabel "resources"@en ;
     skos:topConceptOf cs: ;
     schema:citation "https://glossary.americangeosciences.org/term/resources"^^xsd:anyURI ;
@@ -151,7 +158,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         :geology-geochronology ,
         :geology-geophysics ,
         :geology-paleontology ,
-        <https://linked.data.gov.au/def/gswa-vocabulary-themesgeology–mapping> ;
+        :geology–mapping ;
     skos:prefLabel "geology"@en ;
     skos:topConceptOf cs: ;
     schema:citation
@@ -159,10 +166,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "https://glossary.americangeosciences.org/term/geology"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI default1:1 ;
+    owl:versionIRI :1.0 ;
     skos:definition "The overarching categorization of vocabularies prepared by the Geological Survey of Western Australia (GSWA)."@en ;
     skos:hasTopConcept
         :administration ,
@@ -192,10 +201,10 @@ cs:
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-06-06"^^xsd:date ;
     schema:dateModified "2024-12-02"^^xsd:date ;
     schema:keywords "Administration" ;
-    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:version "1.0" ;
 .

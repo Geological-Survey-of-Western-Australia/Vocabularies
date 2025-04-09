@@ -13,7 +13,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
-<http://linked.data.gov.au/def/borehole-start-point/from-pre-existing-hole>
+<https://linked.data.gov.au/def/borehole-start-point/from-pre-existing-hole>
     a skos:Concept ;
     dcterms:source "http://linked.data.gov.au/def/borehole-start-point/from-pre-existing-hole"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/borehole-start-point> ;
@@ -23,7 +23,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     skos:topConceptOf cs: ;
 .
 
-<http://linked.data.gov.au/def/borehole-start-point/open-pit-floor-or-wall>
+<https://linked.data.gov.au/def/borehole-start-point/open-pit-floor-or-wall>
     a skos:Concept ;
     dcterms:source "http://linked.data.gov.au/def/borehole-start-point/open-pit-floor-or-wall"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/borehole-start-point> ;
@@ -32,7 +32,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     skos:prefLabel "open pit floor or wall"@en ;
 .
 
-<http://linked.data.gov.au/def/borehole-start-point/underground>
+<https://linked.data.gov.au/def/borehole-start-point/underground>
     a skos:Concept ;
     dcterms:source "http://linked.data.gov.au/def/borehole-start-point/underground"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/borehole-start-point> ;
@@ -49,7 +49,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     skos:historyNote "Compiled by GSWA" ;
     skos:inScheme cs: ;
     skos:narrower
-        <http://linked.data.gov.au/def/borehole-start-point/open-pit-floor-or-wall> ,
+        <https://linked.data.gov.au/def/borehole-start-point/open-pit-floor-or-wall> ,
         :mining-byproduct-surface ;
     skos:prefLabel "man-made surface"@en ;
 .
@@ -76,7 +76,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 :offshore
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:closeMatch <http://linked.data.gov.au/def/borehole-start-point/offshore> ;
+    skos:closeMatch <https://linked.data.gov.au/def/borehole-start-point/offshore> ;
     skos:definition "Indicates that the borehole was drilled in marine waters / open sea from a floating vessel or fixed platform, such as a drill ship, jackup or semisubmersible rig, petroleum platform or a marine research vessel, on the seaward side of the baseline of the territorial sea (as defined in the Seas and Submerged Lands Act 1973, Registered 11 September 2019)."@en ;
     skos:historyNote """This concept is defined in conjunction with 'onshore' by taking into account the definition of territorial sea and its baseline as defined in the Seas and Submerged Lands Act 1973, Registered 11 September 2019
 https://www.legislation.gov.au/Details/C2008C00402""" ;
@@ -105,6 +105,8 @@ https://www.legislation.gov.au/Details/C2008C00399""" ;
     schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-06"^^xsd:date ;
@@ -112,13 +114,13 @@ cs:
     dcterms:identifier "borehole-start-point-setting"^^xsd:token ;
     dcterms:modified "2023-09-06"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
     reg:status agldwgstatus:stable ;
     skos:definition "Indicates the nature of the borehole start point location, i.e. the general setting and type of surrounding where the borehole is positioned (e.g. onshore, offshore, etc.)."@en ;
     skos:hasTopConcept
-        <http://linked.data.gov.au/def/borehole-start-point/from-pre-existing-hole> ,
-        <http://linked.data.gov.au/def/borehole-start-point/underground> ,
+        <https://linked.data.gov.au/def/borehole-start-point/from-pre-existing-hole> ,
+        <https://linked.data.gov.au/def/borehole-start-point/underground> ,
         :offshore ,
         :onshore ;
     skos:historyNote "Terms and definitions are predominantly sourced from the Geological Survey of Queensland's (GSQ) Borehole start point vocabulary (http:/linked.data.gov.au/def/borehole-start-point), with some modifications and additional concepts."@en ;
@@ -143,3 +145,6 @@ cs:
         ] ;
 .
 
+<https://linked.data.gov.au/def/borehole-start-point> schema:name "Borehole Start Point Vocabulary" .
+<https://linked.data.gov.au/def/borehole-start-point/natural-ground-surface> schema:name "natural ground surface" .
+<https://linked.data.gov.au/def/borehole-start-point/offshore> schema:name "offshore" .

@@ -9751,10 +9751,12 @@ Chilingar, GV, Bissell, HJ and Wolf, KH 1967, Chapter 5 Diagenesis of Carbonate 
     schema:citation "https://glossary.americangeosciences.org/term/felsic"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI :1 ;
+    owl:versionIRI :1.0 ;
     skos:definition """Listing of rock types and lithological nomenclature (and related codes) used by the Geological Survey of Western Australia (GSWA) for the dual purpose of recording lithologies during mapping / core logging, and for representing mappable lithostratigraphic/lithotectonic units in the State. Rather than attempting to cover for all existing rock types and lithologies, the GSWA’s scheme and terms in this vocabulary are specifically informed by Western Australian geology; a companion vocabulary covers lithological equivalents for regolith materials. 
 
 Apart from the approach to classification of some volcanic (pyroclastic) rocks, GSWA's lithological nomenclature largely conforms to internationally recognized classifications such as Le Maitre et al. (2005) for plutonic/intrusive rocks and Fettes and Desmons (2007) for metamorphic rocks. Note that: a) GSWA prefers the term intrusive to plutonic, as it carries no inference on depth of emplacement; b) GSWA's rock classification scheme prefers the use of volcanic terminology for any igneous rock formed on or near the Earth's surface, i.e. for those hypabyssal or sub-volcanic rocks such as dykes, sills, and cryptodomes that are demonstrably both spatially and temporally associated with extrusive volcanic rocks; c) some intrusive mafic/ultramafic terminology is allowed for cumulate rocks originating from thick volcanic successions. In the absence of a single unified scheme for sedimentary rocks, multiple sources were considered, and definitions rely heavily on the Glossary of geology (5th edition, revised; Neuendorf et al., 2011). Full references listed under History Note.
@@ -9863,5 +9865,537 @@ MAIN REFERENCES used for compilation:
         theme:geology-mapping ,
         theme:geology-framework ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "1" ;
+    schema:version "1.0" ;
 .
+
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparGranite> schema:name "alkali feldspar granite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/alkaliFeldsparSyenite> schema:name "alkali feldspar syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/amphibolite> schema:name "amphibolite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/andesite> schema:name "andesite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/anorthosite> schema:name "anorthosite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/anthraciteCoal> schema:name "anthracite coal" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/arenite> schema:name "arenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/basalt> schema:name "basalt" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/bituminousCoal> schema:name "bituminousCoal" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/boundstone> schema:name "boundstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateMudstone> schema:name "carbonate mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateRichMudstone> schema:name "carbonate-rich mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateSedimentaryRock> schema:name "carbonate sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonateWackestone> schema:name "carbonate wackestone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/carbonatite> schema:name "carbonatite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/chalk> schema:name "chalk" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticConglomerate> schema:name "clastic conglomerate" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticMudstone> schema:name "clastic mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSandstone> schema:name "clastic sandstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSedimentaryRock> schema:name "clastic sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/claystone> schema:name "claystone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/coal> schema:name "coal" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dacite> schema:name "dacite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/diamictite> schema:name "diamictite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/diorite> schema:name "diorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dolostone> schema:name "dolostone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/eclogite> schema:name "eclogite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/evaporite> schema:name "evaporite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidDiorite> schema:name "foidDiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidGabbro> schema:name "foidGabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzodiorite> schema:name "foid monzodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzogabbro> schema:name "foid monzogabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidMonzosyenite> schema:name "foid monzosyenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/foidSyenite> schema:name "foidSyenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/framestone> schema:name "framestone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/gabbro> schema:name "gabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/gneiss> schema:name "gneiss" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/grainstone> schema:name "grainstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/granodiorite> schema:name "granodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/granofels> schema:name "granofels" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/granulite> schema:name "granulite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/hornblendite> schema:name "hornblendite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/hornfels> schema:name "hornfels" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/igneousRock> schema:name "igneousRock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/latite> schema:name "latite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/lignite> schema:name "lignite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/limestone> schema:name "limestone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/marble> schema:name "marble" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/metamorphicRock> schema:name "metamorphic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/metasomaticRock> schema:name "metasomatic rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzodiorite> schema:name "monzodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzogabbro> schema:name "monzogabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzogranite> schema:name "monzogranite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/monzonite> schema:name "monzonite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/packstone> schema:name "packstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/paragneiss> schema:name "paragneiss" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/peat> schema:name "peat" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/pegmatite> schema:name "pegmatite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/peridotite> schema:name "peridotite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phosphorite> schema:name "phosphorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phyllite> schema:name "phyllite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/phyllonite> schema:name "phyllonite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAlkaliFeldsparSyenite> schema:name "quartz alkali feldspar syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzAnorthosite> schema:name "quartz anorthosite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzDiorite> schema:name "quartz diorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzGabbro> schema:name "quartz gabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzLatite> schema:name "quartz latite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzodiorite> schema:name "quartz monzodiorite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzogabbro> schema:name "quartz monzogabbro" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzMonzonite> schema:name "quartz monzonite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzSyenite> schema:name "quartz syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzTrachyte> schema:name "quartz trachyte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/quartzite> schema:name "quartzite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rhyolite> schema:name "rhyolite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rockGypsumOrAnhydrite> schema:name "rock gypsum or anhydrite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sand> schema:name "sand" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sandSizeSediment> schema:name "sand-size sediment" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/schist> schema:name "schist" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/sedimentaryRock> schema:name "sedimentary rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/shale> schema:name "shale" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/silicateMudstone> schema:name "silicate mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/syenite> schema:name "syenite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/syenogranite> schema:name "syenogranite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/tonalite> schema:name "tonalite" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/trachyte> schema:name "trachyte" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/travertine> schema:name "travertine" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/ultramaficIgneousRock> schema:name "ultramafic igneous rock" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/wacke> schema:name "wacke" .
+
+
+
+<http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_granite>
+    schema:description "Granitic rock that has a plagioclase to total feldspar ratio less than 0.1. QAPF field 2."@en ;
+    schema:name "alkali feldspar granite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/alkali_feldspar_syenite>
+    schema:description "Alkali feldspar syenitic rock that contains 0-5 percent quartz and no feldspathoid in the QAPF fraction. QAPF field 6."@en ;
+    schema:name "alkali feldspar syenite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/amphibolite>
+    schema:description "Metamorphic rock mainly consisting of green, brown or black amphibole and plagioclase (including albite), which combined form 75 percent or more of the rock, and both of which are present as major constituents. The amphibole constitutes 50 percent or more of the total mafic constituents and is present in an amount of 30 percent or more; other common minerals include quartz, clinopyroxene, garnet, epidote-group minerals, biotite, titanite and scapolite."@en ;
+    schema:name "amphibolite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/andesite>
+    schema:description "Fine-grained igneous rock with less than 20 percent quartz and less than 10 percent feldspathoid minerals in the QAPF fraction, in which the ratio of plagioclase to total feldspar is greater 0.65. Includes rocks defined modally in QAPF fields 9 and 10 or chemically in TAS field O2 as andesite. Basalt and andesite, which share the same QAPF fields, are distinguished chemically based on silica content, with basalt defined to contain less than 52 weight percent silica. If chemical data are not available, the color index is used to distinguish the categories, with basalt defined to contain greater than 35 percent mafic minerals by volume or greater than 40 percent mafic minerals by weight. Typically consists of plagioclase (frequently zoned from labradorite to oligoclase), pyroxene, hornblende and/or biotite. Fine grained equivalent of dioritic rock."@en ;
+    schema:name "andesite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/anorthosite>
+    schema:description "Anorthositic rock that contains between 0 and 5 percent quartz and no feldspathoid mineral in the QAPF fraction. QAPF field 10."@en ;
+    schema:name "anorthosite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/anthracite_coal>
+    schema:description "Coal that has vitrinite mean random reflectance greater than 2.0% (determined in conformance with ISO 7404-5). Less than 12-14 percent volatiles (dry, ash free), greater than 91 percent fixed carbon (dry, ash free basis). The highest rank coal; very hard, glossy, black, with semimetallic luster, semi conchoidal fracture."@en ;
+    schema:name "anthracite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/arenite>
+    schema:description "Clastic sandstone that contains less than 10 percent matrix. Matrix is mud-size silicate minerals (clay, feldspar, quartz, rock fragments, and alteration products) of detrital or diagenetic nature."@en ;
+    schema:name "arenite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/basalt>
+    schema:description "Fine-grained or porphyritic igneous rock with less than 20 percent quartz, and less than 10 percent feldspathoid minerals, in which the ratio of plagioclase to total feldspar is greater 0.65. Typically composed of calcic plagioclase and clinopyroxene; phenocrysts typically include one or more of calcic plagioclase, clinopyroxene, orthopyroxene, and olivine. Includes rocks defined modally in QAPF fields 9 and 10 or chemically in TAS field B as basalt. Basalt and andesite are distinguished chemically based on silica content, with basalt defined to contain less than 52 weight percent silica. If chemical data are not available, the color index is used to distinguish the categories, with basalt defined to contain greater than 35 percent mafic minerals by volume or greater than 40 percent mafic minerals by weight."@en ;
+    schema:name "basalt"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/bituminous_coal>
+    schema:description "Coal that has vitrinite mean random reflectance greater than 0.6% and less than 2.0% (determined in conformance with ISO 7404-5), or has a gross calorific value greater than 24 MJ/kg (determined in conformance with ISO 1928). Hard, black, organic rich sedimentary rock; contains less than 91 percent fixed carbon on a dry, mineral-matter-free basis, and greater than 13-14 percent volatiles (dry, ash free). Formed from the compaction or induration of variously altered plant remains similar to those of peaty deposits."@en ;
+    schema:name "bituminous coal"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/boundstone>
+    schema:description "Sedimentary carbonate rock with preserved biogenic texture, whose original components were bound and encrusted together during deposition by the action of plants and animals during deposition, and remained substantially in the position of growth."@en ;
+    schema:name "boundstone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/carbonate_mudstone>
+    schema:description "Mudstone that consists of greater than 50 percent carbonate minerals of any origin in the mud size fraction."@en ;
+    schema:name "carbonate mudstone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/carbonate_rich_mudstone>
+    schema:description "Mudstone that contains between 10 and 50 percent carbonate minerals in the mud size fraction. Carbonate origin is not specified."@en ;
+    schema:name "carbonate rich mudstone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/carbonate_sedimentary_rock>
+    schema:description "Sedimentary rock in which at least 50 percent of the primary and/or recrystallized constituents are composed of one (or more) of the carbonate minerals calcite, aragonite, magnesite or dolomite."@en ;
+    schema:name "carbonate sedimentary rock"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/carbonate_wackestone>
+    schema:description "Carbonate sedimentary rock with discernible mud supported depositional texture and containing greater than 10 percent allochems, and constituent particles are of intrabasinal origin. If particles are not intrabasinal, categorization as a mudstone or wackestone should be considered."@en ;
+    schema:name "carbonate wackestone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/carbonatite>
+    schema:description "Igneous rock composed of more than 50 percent modal carbonate minerals."@en ;
+    schema:name "carbonatite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/chalk>
+    schema:description "A generally soft, white, very fine-grained, extremely pure, porous limestone. It forms under marine conditions from the gradual accumulation of skeletal elements from minute planktonic green algae (cocoliths), associated with varying proportions of larger microscopic fragments of bivalves, foraminifera and ostracods. It is common to find flint and chert nodules embedded in chalk."@en ;
+    schema:name "chalk"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/clastic_conglomerate>
+    schema:description "Clastic sedimentary rock composed of at least 30 percent rounded to subangular fragments larger than 2 mm in diameter; typically contains finer grained material in interstices between larger fragments. If more than 15 percent of the fine grained matrix is of indeterminant clastic or diagenetic origin and the fabric is matrix supported, may also be categorized as wackestone. If rock has unsorted or poorly sorted texture with a wide range of particle sizes, may also be categorized as diamictite."@en ;
+    schema:name "conglomerate"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/clastic_mudstone>
+    schema:description "Clastic sedimentary rock consisting of less than 30 percent gravel-size (2 mm) particles and with a mud to sand ratio greater than 1."@en ;
+    schema:name "mudstone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/clastic_sandstone>
+    schema:description "Clastic sedimentary rock in which less than 30 percent of particles are greater than 2 mm in diameter (gravel) and the sand to mud ratio is at least 1."@en ;
+    schema:name "sandstone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/clastic_sedimentary_rock>
+    schema:description "Sedimentary rock in which at least 50 percent of the constituent particles were derived from erosion, weathering, or mass-wasting of pre-existing earth materials, and transported to the place of deposition by mechanical agents such as water, wind, ice and gravity."@en ;
+    schema:name "clastic sedimentary rock"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/claystone>
+    schema:description "Mudstone that contains no detectable silt, inferred to consist virtually entirely of clay-size particles."@en ;
+    schema:name "claystone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/coal>
+    schema:description "A consolidated organic sedimentary material having less than 75% moisture. This category includes low, medium, and high rank coals according to International Classification of In-Seam Coal (United Nations, 1998), thus including lignite. Sapropelic coal is not distinguished in this category from humic coals. Formed from the compaction or induration of variously altered plant remains similar to those of peaty deposits."@en ;
+    schema:name "coal"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/dacite>
+    schema:description "Fine grained or porphyritic crystalline rock that contains less than 90 percent mafic minerals, between 20 and 60 percent quartz in the QAPF fraction, and has a plagioclase to total feldspar ratio greater than 0.65. Includes rocks defined modally in QAPF fields 4 and 5 or chemically in TAS Field O3. Typcially composed of quartz and sodic plagioclase with minor amounts of biotite and/or hornblende and/or pyroxene; fine-grained equivalent of granodiorite and tonalite."@en ;
+    schema:name "dacite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/diamictite>
+    schema:description "Unsorted or poorly sorted, clastic sedimentary rock with a wide range of particle sizes including a muddy matrix. Biogenic materials that have such texture are excluded. Distinguished from conglomerate, sandstone, mudstone based on polymodality and lack of structures related to transport and deposition of sediment by moving air or water. If more than 10 percent of the fine grained matrix is of indeterminant clastic or diagenetic origin and the fabric is matrix supported, may also be categorized as wacke."@en ;
+    schema:name "diamictite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/diorite>
+    schema:description "Phaneritic crystalline rock consisting of intermediate plagioclase, commonly with hornblende and often with biotite or augite; colour index M less than 90, sodic plagioclase (An0-An50), no feldspathoid, and between 0 and 5 percent quartz. Includes rocks defined modally in QAPF field 10 as diorite."@en ;
+    schema:name "diorite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/dolostone>
+    schema:description "Pure carbonate sedimentary rock with a ratio of magnesium carbonate to calcite (plus aragonite) greater than 1 to 1."@en ;
+    schema:name "dolomite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/eclogite>
+    schema:description "Metamorphic rock composed of 75 percent or more (by volume) omphacite and garnet, both of which are present as major constituents, the amount of neither of them being higher than 75 percent (by volume); the presence of plagioclase precludes classification as an eclogite."@en ;
+    schema:name "eclogite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/evaporite>
+    schema:description "Nonclastic sedimentary rock composed of at least 50 percent non-carbonate salts, including chloride, sulfate or borate minerals; formed through precipitation of mineral salts from a saline solution (non-carbonate salt rock)."@en ;
+    schema:name "evaporite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/foid_diorite>
+    schema:description "Foid dioritoid in which the plagioclase to total feldspar ratio is greater than 0.9. Includes rocks defined modally in QAPF field 14."@en ;
+    schema:name "foid diorite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/foid_gabbro>
+    schema:description "Foid gabbroid that has a plagioclase to total feldspar ratio greater than 0.9. Includes rocks defined modally in QAPF field 14."@en ;
+    schema:name "foid gabbro"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/foid_monzodiorite>
+    schema:description "Foid dioritoid in which the plagioclase to total feldspar ratio is between 0.1 and 0.9. Includes rocks defined modally in QAPF field 13."@en ;
+    schema:name "foid monzodiorite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/foid_monzogabbro>
+    schema:description "Foid gabbroid that has a plagioclase to total feldspar ratio between 0.5 and 0.9. Includes rocks defined modally in QAPF field 13."@en ;
+    schema:name "foid monzogabbro"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/foid_monzosyenite>
+    schema:description "Foid syenitoid rock that has a plagioclase to total feldspar ratio of between 0.1 and 0.5. Includes rocks defined modally in QAPF Field 12."@en ;
+    schema:name "foid monzosyenite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/foid_syenite>
+    schema:description "Foid syenitoid that has a plagioclase to total feldspar ratio of less than 0.1. Includes rocks defined modally in QAPF field 11."@en ;
+    schema:name "foid syenite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/framestone>
+    schema:description "Carbonate reef rock consisting of a rigid framework of colonies, shells or skeletons, with internal cavities filled with fine sediment; usually created through the activities of colonial organisms."@en ;
+    schema:name "framestone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/gabbro>
+    schema:description "Gabbroic rock that contains between 0 and 5 percent quartz and no feldspathoid mineral in the QAPF fraction. Includes rocks defined modally in QAPF Field 10 as gabbro."@en ;
+    schema:name "gabbro"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/gneiss>
+    schema:description "Foliated metamorphic rock with bands or lenticles rich in granular minerals alternating with bands or lenticles rich in minerals with a flaky or elongate prismatic habit. Mylonitic foliation or well developed, continuous schistosity (greater than 50 percent of the rock consists of grains participate in a planar or linear fabric) precludes classification with this concept."@en ;
+    schema:name "gneiss"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/grainstone>
+    schema:description "Carbonate sedimentary rock with recognizable depositional fabric that is grain-supported, and constituent particles are of intrabasinal origin; contains little or no mud matrix. Distinction from sandstone is based on interpretation of intrabasinal origin of clasts and grain-supported fabric, but grainstone definition does not include a grain size criteria."@en ;
+    schema:name "grainstone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/granodiorite>
+    schema:description "Phaneritic crystalline rock consisting essentially of quartz, sodic plagioclase and lesser amounts of alkali feldspar with minor hornblende and biotite. Includes rocks defined modally in QAPF field 4."@en ;
+    schema:name "granodiorite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/granofels>
+    schema:description "Metamorphic rock with granoblastic fabric and very little or no foliation (less than 10 percent of the mineral grains in the rock are elements in a planar or linear fabric). Grainsize not specified."@en ;
+    schema:name "granofels"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/granulite>
+    schema:description "Metamorphic rock of high metamorphic grade in which Fe-Mg silicate minerals are dominantly hydroxl-free; feldspar must be present, and muscovite is absent; rock contains less than 90 percent mafic minerals, less than 75 percent calcite and/or dolomite, less than 75 percent quartz, less than 50 percent iron-bearing minerals (hematite, magnetite, limonite-group, siderite, iron-sulfides), and less than 50 percent calc-silicate minerals."@en ;
+    schema:name "granulite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/hornblendite>
+    schema:description "Ultramafic rock that consists of greater than 40 percent hornblende plus pyroxene and has a hornblende to pyroxene ratio greater than 1. Includes olivine hornblendite, olivine-pyroxene hornblendite, pyroxene hornblendite, and hornblendite."@en ;
+    schema:name "hornblendite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/hornfels>
+    schema:description "Granofels formed by contact metamorphism, composed of a mosaic of equidimensional grains in a characteristically granoblastic or decussate matrix; porphyroblasts or relict phenocrysts may be present. Typically fine grained."@en ;
+    schema:name "hornfels"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/igneous_rock>
+    schema:description "rock formed as a result of igneous processes, for example intrusion and cooling of magma in the crust, or volcanic eruption."@en ;
+    schema:name "igneous rock"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/latite>
+    schema:description "Latitic rock that contains between 0 and 5 percent quartz and no feldspathoid in the QAPF fraction. QAPF field 8."@en ;
+    schema:name "latite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/lignite>
+    schema:description "Coal that has a gross calorific value less than 24 MJ/kg (determined in conformance with ISO 1928), and vitrinite mean random reflectance less than 0.6% (determined in conformance with ISO 7404-5). Gross calorific value is recalculated to a moist, ash free basis using bed moisture (determined according to ISO 1015 or ISO 5068). Includes all low-rank coals, including sub-bitiminous coal. A consolidated, dull, soft brown to black coal having many readily discernible plant fragments set in a finer grained organic matrix. Tends to crack and fall apart on drying. Operationally sub-bituminous and bitiminous coal are qualitatively distinguished based on brown streak for sub-bitiminous coal and black streak for bituminous coal."@en ;
+    schema:name "lignite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/limestone>
+    schema:description "Pure carbonate sedimentary rock with a calcite (plus aragonite) to dolomite ratio greater than 1 to 1. Includes limestone and dolomitic limestone."@en ;
+    schema:name "limestone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/marble>
+    schema:description "Metamorphic rock consisting of greater than 75 percent fine- to coarse-grained recrystallized calcite and/or dolomite; usually with a granoblastic, saccharoidal texture."@en ;
+    schema:name "marble"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/metamorphic_rock>
+    schema:description "Rock formed by solid-state mineralogical, chemical and/or structural changes to a pre-existing rock, in response to marked changes in temperature, pressure, shearing stress and chemical environment."@en ;
+    schema:name "metamorphic rock"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/metasomatic_rock>
+    schema:description "Rock that has fabric and composition indicating open-system mineralogical and chemical changes in response to interaction with a fluid phase, typically water rich."@en ;
+    schema:name "metasomatic rock"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/monzodiorite>
+    schema:description "Phaneritic crystalline igneous rock consisting of sodic plagioclase (An0 to An50), alkali feldspar, hornblende and biotite, with or without pyroxene, and 0 to 5 percent quartz. Includes rocks defined modally in QAPF field 9."@en ;
+    schema:name "monzodiorite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/monzogabbro>
+    schema:description "Monzogabbroic rock that contains between 0 an 5 percent quartz and no feldspathoid mineral in the QAPF fraction. Includes rocks defined modally in QAPF field 9 ."@en ;
+    schema:name "monzogabbro"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/monzogranite>
+    schema:description "Granite that has a plagiolcase to total feldspar ratio between 0.35 and 0.65. QAPF field 3b."@en ;
+    schema:name "monzogranite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/monzonite>
+    schema:description "Monzonitic rock that contains 0-5 percent quartz and no feldspathoid mineral in the QAPF fraction. Includes rocks defined modally in QAPF Field 8."@en ;
+    schema:name "monzonite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/packstone>
+    schema:description "Carbonate sedimentary rock with discernible grain supported depositional texture, containing greater than 10 percent grains, and constituent particles are of intrabasinal origin; intergranular spaces are filled by matrix."@en ;
+    schema:name "packstone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/paragneiss>
+    schema:description "A gneiss with mineralogy and texture indicating derivation from a sedimentary rock protolith. Typically consists of abundant quartz, mica, or calcsilicate minerals; aluminosilicate minerals or garnet commonly present. composition of rock tends to be more variable on a decimetric scale that in orthogneiss."@en ;
+    schema:name "paragneiss"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/peat>
+    schema:description "Unconsolidated organic-rich sediment composed of at least 50 percent semi-carbonised plant remains; individual remains commonly seen with unaided eye; yellowish brown to brownish black; generally fibrous texture; can be plastic or friable. In its natural state it can be readily cut and has a very high moisture content, generally greater than 90 percent. Liptinite to Inertinite ratio is less than one (Economic commission for Europe, committee on Sustainable Energy- United Nations (ECE-UN), 1998, International Classification of in-Seam Coals: Energy 19, 41 pp.)"@en ;
+    schema:name "peat"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/pegmatite>
+    schema:description "Exceptionally coarse grained crystalline rock with interlocking crystals; most grains are 1cm or more diameter; composition is generally that of granite, but the term may refer to the coarse grained facies of any type of igneous rock;usually found as irregular dikes, lenses, or veins associated with plutons or batholiths."@en ;
+    schema:name "pegmatite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/peridotite>
+    schema:description "Ultramafic rock consisting of more than 40 percent (by volume) olivine with pyroxene and/or amphibole and little or no feldspar. commonly altered to serpentinite. Includes rocks defined modally in the ultramafic rock classification as dunite, harzburgite, lherzolite, wehrlite, olivinite, pyroxene peridotite, pyroxene hornblende peridotite or hornblende peridotite."@en ;
+    schema:name "peridotite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/phosphorite>
+    schema:description "Sedimentary rock in which at least 50 percent of the primary or recrystallized constituents are phosphate minerals. Most commonly occurs as a bedded primary or reworked secondary marine rock, composed of microcrystalline carbonate fluorapatite in the form of lamina, pellets, oolites and nodules, and skeletal, shell and bone fragments."@en ;
+    schema:name "phosphorite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/phyllite>
+    schema:description "Rock with a well developed, continuous schistosity, an average grain size between 0.1 and 0.5 millimeters, and a silvery sheen on cleavage surfaces. Individual phyllosilicate grains are barely visible with the unaided eye."@en ;
+    schema:name "phyllite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/phyllonite>
+    schema:description "Mylonitic rock composed largely of fine-grained mica that imparts a sheen to foliation surfaces; may have flaser lamination, isoclinal folding, and deformed veins, which indicate significant shearing. Macroscopically resembles phyllite, but formed by mechanical degradation of initially coarser rock."@en ;
+    schema:name "phyllonite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_alkali_feldspar_syenite>
+    schema:description "Alkali feldspar syenitic rock that contains 5 to 20 percent quartz and no feldspathoid in the QAPF fraction. QAPF field 6*."@en ;
+    schema:name "quartz alkali feldspar syenite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_anorthosite>
+    schema:description "Anorthositic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 10*."@en ;
+    schema:name "quartz anorthosite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_diorite>
+    schema:description "Dioritic rock that contains between 5 to 20 percent quartz in the QAPF fraction. QAPF field 10*."@en ;
+    schema:name "quartz diorite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_gabbro>
+    schema:description "Gabbroic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 10*."@en ;
+    schema:name "quartz gabbro"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_latite>
+    schema:description "Latitic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 8*."@en ;
+    schema:name "quartz latite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_monzodiorite>
+    schema:description "Monzodioritic rock that contains between 5 and 20 percent quartz."@en ;
+    schema:name "quartz monzodiorite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_monzogabbro>
+    schema:description "Monzogabbroic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 9*."@en ;
+    schema:name "quartz monzogabbro"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_monzonite>
+    schema:description "Monzonitic rock that contains 5-20 percent quartz iin the QAPF fraction. Includes rocks defined modally in QAPF Field 8*."@en ;
+    schema:name "quartz monzonite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_syenite>
+    schema:description "Syenitic rock that contains between 5 and 20 percent quartz in the QAPF fraction. Defined modally in QAPF Field 7*."@en ;
+    schema:name "quartz syenite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartz_trachyte>
+    schema:description "Trachytic rock that contains between 5 and 20 percent quartz in the QAPF fraction. QAPF field 7*."@en ;
+    schema:name "quartz trachyte"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/quartzite>
+    schema:description "Metamorphic rock consisting of greater than or equal to 75 percent quartz; typically granoblastic texture."@en ;
+    schema:name "quartzite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/rhyolite>
+    schema:description "rhyolitoid in which the ratio of plagioclase to total feldspar is between 0.1 and 0.65."@en ;
+    schema:name "rhyolite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/rock_gypsum_or_anhydrite>
+    schema:description "Evaporite composed of at least 50 percent gypsum or anhydrite."@en ;
+    schema:name "gypsum or anhydrite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/sand>
+    schema:description "Clastic sediment in which less than 30 percent of particles are gravel (greater than 2 mm in diameter) and the sand to mud ratio is at least 1. More than half of the particles are of epiclastic origin."@en ;
+    schema:name "sand"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/sand_size_sediment>
+    schema:description "Sediment in which less than 30 percent of particles are gravel (greater than 2 mm in diameter) and the sand to mud ratio is at least 1. composition or genesis of clasts not specified."@en ;
+    schema:name "sand size sediment"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/schist>
+    schema:description "Foliated phaneritic metamorphic rock with well developed, continuous schistosity, meaning that greater than 50 percent of the rock by volume is mineral grains with a thin tabular, lamellar, or acicular prismatic crystallographic habit that are oriented in a continuous planar or linear fabric."@en ;
+    schema:name "schist"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/sedimentary_rock>
+    schema:description "Rock formed by accumulation and cementation of solid fragmental material deposited by air, water or ice, or as a result of other natural agents, such as precipitation from solution, the accumulation of organic material, or from biogenic processes, including secretion by organisms. Includes epiclastic deposits."@en ;
+    schema:name "sedimentary rock"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/shale>
+    schema:description "Laminated mudstone that will part or break along thin, closely spaced layers parallel to stratification."@en ;
+    schema:name "shale"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/silicate_mudstone>
+    schema:description "Mudstone that contains less than 10 percent carbonate minerals."@en ;
+    schema:name "silicate mudstone"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/syenite>
+    schema:description "Syenitic rock that contains between 0 and 5 percent quartz and no feldspathoid mineral in the QAPF fraction. Defined modally in QAPF Field 7."@en ;
+    schema:name "syenite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/syenogranite>
+    schema:description "Granite that has a plagiolcase to total feldspar ratio between 0.10 and 0.35. QAPF field 3a."@en ;
+    schema:name "syenogranite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/tonalite>
+    schema:description "Granitoid consisting of quartz and intermediate plagioclase, usually with biotite and amphibole. Includes rocks defined modally in QAPF field 5; ratio of plagioclase to total feldspar is greater than 0.9."@en ;
+    schema:name "tonalite"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/trachyte>
+    schema:description "Trachytoid that has a plagioclase to total feldspar ratio between 0.1 and 0.35, between 0 and 5 percent quartz in the QAPF fraction, and no feldspathoid minerals. QAPF field 7."@en ;
+    schema:name "trachyte"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/travertine>
+    schema:description "Biotically or abiotically precipitated calcium carbonate, from spring-fed, heated, or ambient-temperature water. May be white and spongy, various shades of orange, tan or gray, and ranges to dense, banded or laminated rock. Macrophytes, bryophytes, algae, cyanobacteria and other organisms often colonize the surface of travertine and may be preserved, to produce the porous varieties."@en ;
+    schema:name "travertine"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/ultramafic_igneous_rock>
+    schema:description "Igneous rock that consists of greater than 90 percent mafic minerals."@en ;
+    schema:name "ultramafic igneous rock"@en ;
+.
+
+<http://resource.geosciml.org/classifier/cgi/lithology/wacke>
+    schema:description "Clastic sandstone with more than 10 percent matrix of indeterminate detrital or diagenetic nature. Matrix is mud size silicate minerals (clay, feldspar, quartz, rock fragments, and alteration products)."@en ;
+    schema:name "wacke"@en ;
+.
+

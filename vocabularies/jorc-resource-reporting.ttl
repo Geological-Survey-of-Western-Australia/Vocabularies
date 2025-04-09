@@ -1,5 +1,5 @@
-PREFIX : <https://linked.data.gov.au/def/jorc-Code/>
-PREFIX cs: <https://linked.data.gov.au/def/jorc-Code>
+PREFIX : <https://linked.data.gov.au/def/JORC-Code/>
+PREFIX cs: <https://linked.data.gov.au/def/JORC-Code>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -199,6 +199,8 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     schema:name "Geological Survey of Western Australia" ;
     schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
+
+:1.1 schema:name "1.1" .
 
 cs:
     a skos:ConceptScheme ;

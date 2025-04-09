@@ -52,6 +52,8 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
 .
 
+:1.0 schema:name "1.0" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-06"^^xsd:date ;
@@ -59,8 +61,8 @@ cs:
     dcterms:identifier "physiographic-unit-types"^^xsd:token ;
     dcterms:modified "2023-09-06"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
-    owl:versionIRI :1 ;
-    owl:versionInfo "1" ;
+    owl:versionIRI :1.0 ;
+    owl:versionInfo "1.0" ;
     reg:status agldwgstatus:stable ;
     skos:definition """Characterization of the type of physiographic units used by the Geological Survey of Western Australia for mapping regolith and landforms in the State. A physiographic units is defined as 'A named geomorphological entity with internal coherence in its landform characteristics and landform evolutionary history. At the lowest levels, physiographic units reflect the underlying geology and have similar groupings of regolith materials that are related to the landform types, their evolution, and the underlying bedrock.' Physiographic unit types are based on the classification of Pain et al. (2011)* whereby three hierarchical types of units are identified for mapping at different scales. The list of identified units is compiled in a companion vocabulary — Australian physiographic units.
 *Pain, C, Gregory, L, Wilson, P and McKenzie, N (2011), The physiographic regions of Australia – Explanatory notes 2011; Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain (publication available at https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf; dataset available at https://www.asris.csiro.au/themes/PhysioRegions.html)."""@en ;
