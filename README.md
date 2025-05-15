@@ -40,8 +40,9 @@ Code & content may be reused according to the conditions of the [Creative Commen
 
 ## Contacts
 
-**Chee Ng**  
-_Manager Geoscience Data Architect_  
+**Department of Energy, Mines Industry Regulation and Safety**
+Geological Survey and Resource Strategy Division  
+<gswaopendata@demirs.wa.gov.au>
 [Geological Survey of Western Australia](https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx)
 
 For technical enquiries:
