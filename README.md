@@ -42,7 +42,8 @@ Code & content may be reused according to the conditions of the [Creative Commen
 
 **Geoscience Data and Technology**  
 <gswaopendata@demirs.wa.gov.au>
-[Geological Survey of Western Australia](https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx)
+
+[Geological Survey of Western Australia](https://www.wa.gov.au/organisation/geological-survey-of-western-australia/geological-survey-of-western-australia)
 
 For technical enquiries:
 
