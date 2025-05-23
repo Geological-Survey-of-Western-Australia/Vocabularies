@@ -1,0 +1,28 @@
+trigger: none
+
+stages:
+- stage: Validate
+  displayName: Validate Vocabularies
+
+  jobs:
+  - job: validate
+    displayName: Validate Vocabularies
+    pool:
+      vmImage: ubuntu-latest
+
+    steps:
+      - checkout: self
+        displayName: Checkout Vocabularies Repo
+
+      - task: UsePythonVersion@0
+        displayName: 'Use Python 3.11'
+        inputs:
+          versionSpec: '3.11'
+
+      - bash: |
+          pip install -r requirements.txt
+        displayName: Install Python dependencies
+
+      - bash: |
+          python -m pytest
+        displayName: Run validation with pytest
