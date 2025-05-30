@@ -1,0 +1,966 @@
+PREFIX : <https://linked.data.gov.au/def/wa-mineral-fields-and-districts/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/wa-mineral-fields-and-districts>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
+
+:kalgoorlie-mining-registrar
+    a skos:Collection ;
+    skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Kalgoorlie that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
+    skos:member
+        :broadarrow-mineral-field ,
+        :bulong-mineral-district ,
+        :dundas-mineral-field ,
+        :eastcoolgardie-mineral-district ,
+        :kanowna-mineral-district ,
+        :kurnalpi-mineral-district ,
+        :menzies-mineral-district ,
+        :ularring-mineral-district ,
+        :yerilla-mineral-district ;
+    skos:prefLabel "Kalgoorlie Mining Registrar"@en ;
+.
+
+:karratha-mining-registrar
+    a skos:Collection ;
+    skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Karratha that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
+    skos:member
+        :ashburton-mineral-field ,
+        :gascoyne-mineral-field ,
+        :kimberley-mineral-field ,
+        :westkimberley-mineral-field ,
+        :westpilbara-mineral-field ;
+    skos:prefLabel "Karratha Mining Registrar"@en ;
+.
+
+:leonora-mining-registrar
+    a skos:Collection ;
+    skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the town of Leonora that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
+    skos:member
+        :lawlers-mineral-district ,
+        :mtmalcolm-mineral-district ,
+        :mtmargaret-mineral-district ,
+        :mtmorgan-mineral-district ,
+        :niagara-mineral-district ;
+    skos:prefLabel "Leonora Mining Registrar"@en ;
+.
+
+:marblebar-mining-registrar
+    a skos:Collection ;
+    skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Perth that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
+    skos:member
+        :marblebar-mineral-district ,
+        :nullagine-mineral-district ;
+    skos:prefLabel "Marble Bar Mining Registrar"@en ;
+.
+
+:meekatharra-mining-registrar
+    a skos:Collection ;
+    skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Perth that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
+    skos:member
+        :meekatharra-mineral-district ,
+        :peakhill-mineral-field ,
+        :wiluna-mineral-district ;
+    skos:prefLabel "Meekatharra Mining Registrar"@en ;
+.
+
+:mountmagnet-mining-registrar
+    a skos:Collection ;
+    skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the town of Mount Magnet that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
+    skos:member
+        :blackrange-mineral-district ,
+        :cue-mineral-district ,
+        :daydawn-mineral-district ,
+        :mtmagnet-mineral-district ,
+        :yalgoo-mineral-field ;
+    skos:prefLabel "Mount Magnet Mining Registrar"@en ;
+.
+
+:perth-mining-registrar
+    a skos:Collection ;
+    skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the city of Perth that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
+    skos:member
+        :collieriver-mineral-field ,
+        :greenbushes-mineral-field ,
+        :northampton-mineral-field ,
+        :phillipsriver-mineral-field ,
+        :southwest-mineral-field ,
+        :warburton-mineral-field ;
+    skos:prefLabel "Perth Mining Registrar"@en ;
+.
+
+:southern-cross-mining-registrar
+    a skos:Collection ;
+    skos:definition "A function of the Department of Mines, Industry Regulation and Safety (DMIRS) located in the town of Southern Cross that is responsible for administering exploration and mining activities throughout nominated mineral fields and districts in Western Australia."@en ;
+    skos:inScheme cs: ;
+    rdfs:isDefinedBy cs: ;
+    skos:historyNote "Collection created for this vocabulary" ;
+    skos:member
+        :coolgardie-mineral-district ,
+        :kunnanalling-mineral-district ,
+        :yilgarn-mineral-field ;
+    skos:prefLabel "Southern Cross Mining Registrar"@en ;
+.
+
+:coolgardie-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Coolgardie M F"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Coolgardie area in the central-southern part of the State. The Coolgardie Mineral Field covers an area of 30,308 km2 and contains two districts. Gazetted on 6 April 1894, it is administered by the Southern Cross Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :coolgardie-mineral-district ,
+        :kunnanalling-mineral-district ;
+    skos:prefLabel "Coolgardie Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:eastcoolgardie-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "E Coolgardie M F"@en ,
+        "E Coolgardie M F  E Coolgardie Dist 26"@en ,
+        "East Coolgardie M F"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the East Coolgardie area in the central-southern part of the State. The East Coolgardie Mineral Field covers an area of 4662 km2 and contains two districts. Gazetted on 21 September 1894, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :bulong-mineral-district ,
+        :eastcoolgardie-mineral-district ;
+    skos:prefLabel "East Coolgardie Mineral field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:eastmurchison-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "East Murchison M F"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the East Murchison area in the central part of the State. The East Murchison Mineral Field covers an area of 67,490 km2 and contains three districts. Gazetted on 28 June 1895, it is administered by the Leonora, Perth, and Mt Magnet Mining Registrars."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :blackrange-mineral-district ,
+        :lawlers-mineral-district ,
+        :wiluna-mineral-district ;
+    skos:prefLabel "East Murchison Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:mtmargaret-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Mount Margaret River M F"@en ,
+        "Mt Margaret M F"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Mt Margaret area in the central part of the State. The Mt Margaret Mineral Field covers an area of 155,187 km2 and contains three districts. Gazetted on 12 March 1897, it is administered by the Leonora Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :mtmalcolm-mineral-district ,
+        :mtmargaret-mineral-district ,
+        :mtmorgan-mineral-district ;
+    skos:prefLabel "Mount Margaret Mineral field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:murchison-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Murchison M F"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Murchison area in the central-western part of the State. The Murchison Mineral Field covers an area of 65,977 km2 and contains four districts. Gazetted on 24 September 1891, it is administered by the Mt Magnet Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :cue-mineral-district ,
+        :daydawn-mineral-district ,
+        :meekatharra-mineral-district ,
+        :mtmagnet-mineral-district ;
+    skos:prefLabel "Murchison Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:northcoolgardie-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "N Coolgardie M F"@en ,
+        "North Coolgardie M F"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the area north of the Coolgardie town in the central-southern part of the State. The North Coolgardie Mineral Field covers an area of 35,242 km2 and contains four districts. Gazetted on 28 June 1895, it is administered by the Kalgoorlie and Leonora Mining Registrars."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :menzies-mineral-district ,
+        :niagara-mineral-district ,
+        :ularring-mineral-district ,
+        :yerilla-mineral-district ;
+    skos:prefLabel "North Coolgardie Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:northeastcoolgardie-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "N E Coolgardie M F"@en ,
+        "N/E Coolgardie M F"@en ,
+        "NE Coolgardie M F"@en ,
+        "North E Coolgardie M F"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the North East Coolgardie area in the central-southern part of the State. It covers an area of 53,364 km2 and contains two districts. Gazetted on 20 March 1896, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :kanowna-mineral-district ,
+        :kurnalpi-mineral-district ;
+    skos:prefLabel "North East Coolgardie Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:pilbara-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Pilbara M F"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Pilbara area in the central-northern part of the State. The Pilbara Mineral Field covers an area of 387,214 km2 and contains two districts. Gazetted on 1 October 1888, it is administered by the  Marble Bar Mining Registrar (currently based in Perth)."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :marblebar-mineral-district ,
+        :nullagine-mineral-district ;
+    skos:prefLabel "Pilbara Mineral field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:ashburton-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Ashburton M F 08"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Ashburton area in the northwestern part of the State. The Ashburton Mineral Field covers an area of 69,930 km2 and contains no districts. Gazetted on 11 December 1890, it is administered by the Karratha Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "08"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Ashburton Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:blackrange-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Black Range 57"@en ,
+        "Black Range District 57"@en ,
+        "E Murchison M F  Black Range Dist 57"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Black Range District is situated within the East Murchison Mineral Field in the central part of the state and covers an area of 22,976 km2. Gazetted on 3 June 1904, it is administered by the Mt Magnet Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "57"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "B"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Black Range District"@en ;
+.
+
+:broadarrow-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Broad Arrow M F 24"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Broad Arrow area in the central-southern part of the State. The Broad Arrow Mineral field covers an area of 2668 km2 and contains no districts. Gazetted on 17 November 1896, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "24"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "W"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Broad Arrow Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:bulong-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Bulong 25"@en ,
+        "Bulong District 25"@en ,
+        "E Coolgardie M F  Bulong Dist 25"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Bulong District is situated within the East Coolgardie Mineral Field in the central-southern part of the State, and covers an area of 2564 km2. Gazetted on 20 March 1896, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "25"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "Y"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Bulong District"@en ;
+.
+
+:collieriver-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Collie River M F 12"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Collie River area in the southwestern part of the State. The Collie River Mineral Field covers an area of 640 km2 and contains no districts. Gazetted on 21 February 1896, it is administered by the Perth Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "12"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Collie River Mineral field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:coolgardie-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Coolgardi District 15"@en ,
+        "Coolgardie 15"@en ,
+        "Coolgardie M F Coolgardie Dist 15"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Coolgardie District is situated within the Coolgardie Mineral Field in the central-southern part of the State, and covers an area of 24304 km2. Gazetted on 7 December 1894, it is administered by the Southern Cross Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "15"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Coolgardie District"@en ;
+.
+
+:cue-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Cue 20"@en ,
+        "Cue District 20"@en ,
+        "Murchison M F  Cue Dist 20"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Cue District is situated within the Murchison Mineral Field in the central-western part of the State and covers an area of 22,256 km2. Gazetted on 7 December 1894, it is administered by the Mt Magnet Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "20"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Cue District"@en ;
+.
+
+:daydawn-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Day Dawn 21"@en ,
+        "Day Dawn District 21"@en ,
+        "Murchison M F  Day Dawn Dist 21"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Day Dawn District is situated within the Murchison Mineral Field in the central part of the State. It covers an area of 2320 km2 and is administered by the Mt Magnet Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "21"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "D"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Day Dawn District"@en ;
+.
+
+:dundas-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Dundas M F 63"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Dundas area in the central-southern part of the State. The Dundas Mineral Field covers an area of 29,604 km2 and contains no district. Gazetted on 31 August 1893, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "63"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Dundas Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:eastcoolgardie-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "E Coolgardie M F"@en ,
+        "E Coolgardie M F  E Coolgardie Dist 26"@en ,
+        "East Coolgardie 26"@en ;
+    skos:definition "An administrative division of land in Western Australia, the East Coolgardie District is situated within the East Coolgardie Mineral Field in the central-southern part of the State. It covers an area of 2098 km2 and is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "26"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "E"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "East Coolgardie District"@en ;
+.
+
+:gascoyne-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Gascoyne M F 09"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Gascoyne area in the central-western part of the State. The Gascoyne Mineral Field covers an area of 130,535 km2 and contains no districts. Gazetted on 25 June 1897, it is administered by the Karratha Mining Registrar ."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "09"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Gascoyne Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:greenbushes-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Greenbushes M F 01"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Greenbushes area in the southwest of the State. The Greenbushes Mineral Field covers an area of 101 km2 and contains no districts. Gazetted on 7 April 1892, it is administered by the Perth Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "01"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Greenbushes Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:kanowna-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Kanowna 27"@en ,
+        "Kanowna District 27"@en ,
+        "N E Coolgardie M F  Kanowna Dist 27"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Kanowna District is situated within the North East Coolgardie Mineral Field in the central-southern part of the State, and covers an area of 2833 km2. Gazetted on 20 March 1896, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "27"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "X"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Kanowna District"@en ;
+.
+
+:kimberley-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Kimberley M F 80"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Kimberley area in the northeast of the State. The Kimberley Mineral Field covers an area of 224,834 km2 and contains no districts. Gazetted on 20 May 1886, it is administered by the Karratha Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "80"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Kimberley Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:kunnanalling-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Coolgardie M F Kunanalling Dist 16"@en ,
+        "Kunanalling District 16"@en ,
+        "Kunnanalling 16"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Kunnanalling District is situated within the Coolgardie Mineral Field in the central-southern part of the State and covers an area of 6004 km2. Gazetted on 27 August 1897, it is administered by the Southern Cross Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "16"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "S"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Kunnanalling District"@en ;
+.
+
+:kurnalpi-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Kurnalpi 28"@en ,
+        "Kurnalpi District 28"@en ,
+        "N E Coolgardie M F  Kurnalpi Dist 28"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Kurnalpi District is situated within the North East Coolgardie Mineral Field in the central-southern part of the State and covers an area of 50,531 km2. Gazetted on 20 March 1896, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "28"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "K"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Kurnalpi District"@en ;
+.
+
+:lawlers-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "E Murchison M F  Lawlers Dist 36"@en ,
+        "Lawlers 36"@en ,
+        "Lawlers District 36"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Lawlers District is situated within the East Murchison Goldfield in the central part of the State, and covers an area of 17,330 km2. Gazetted on 3 June 1904, it is administered by the Leonora Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "36"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Lawlers District"@en ;
+.
+
+:marblebar-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Marble Bar 45"@en ,
+        "Marble Bar District 45"@en ,
+        "Pilbara M F  Marble Bar Dist 45"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Marble Bar District is situated within the Pilbara Mineral Field in the central-northern part of the State. It covers an area of 359,698 km² and is administered by the Marble Bar Mining Registrar (currently based in Perth)."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "45"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Marble Bar District"@en ;
+.
+
+:meekatharra-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Meekatharra 51"@en ,
+        "Meekatharra District 51"@en ,
+        "Murchison M F  Meekatharra Dist 51"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Meekatharra District is situated within the Murchison Mineral Field, and covers an area of 31,727 km2. It is administered by the Meekatharra Mining Registrar (currently based in Perth)."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "51"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "N"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Meekatharra District"@en ;
+.
+
+:menzies-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Menzies 29"@en ,
+        "Menzies District 29"@en ,
+        "N Coolgardie M F  Menzies Dist 29"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Menzies District is situated within the North Coolgardie Mineral Field in the central-southern part of the State, and covers an area of 17,265 km². Gazetted on 12 March 1897, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "29"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "Z"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Menzies District"@en ;
+.
+
+:mtmagnet-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Mount Magnet District"@en ,
+        "Mt Magnet 58"@en ,
+        "Mt Magnet District 58"@en ,
+        "Murchison M F  Mt Magnet Dist 58"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Mt Magnet District is situated within the Murchison Mineral Field in the central-western part of the State, and covers an area of 9,674 km2. Gazetted on 7 December 1894, it is administered by the Mt Magnet Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "58"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "M"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Mt Magnet District"@en ;
+.
+
+:mtmalcolm-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Mt Malcolm 37"@en ,
+        "Mt Malcolm District"@en ,
+        "Mt Malcolm District 37"@en ,
+        "Mt Margaret M F  Mt Malcolm Dist 37"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Mount Malcolm District is situated within the Mt Margaret Mineral Field in the central part of the State, and covers an area of 15,587 km2. Gazetted on 12 March 1897, it is administered by the Leonora Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "37"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "C"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Mount Malcolm District"@en ;
+.
+
+:mtmargaret-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Mt Margaret 38"@en ,
+        "Mt Margaret District"@en ,
+        "Mt Margaret District 38"@en ,
+        "Mt Margaret M F  Mt Margaret Dist 38"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Mt Margaret District is situated within the Mt Margaret Mineral Field in the central part of the State, and covers an area of 103,322 km2.  Gazetted on 12 March 1897, it is administered by the Leonora Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "38"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "T"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Mount Margaret District"@en ;
+.
+
+:mtmorgan-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Mt Margaret M F  Mt Morgans Dist 39"@en ,
+        "Mt Morgans 39"@en ,
+        "Mt Morgans District"@en ,
+        "Mt Morgans District 39"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Mount Morgans District is situated within the Mt Margaret Mineral Field in the central part of the State and covers an area of 36,278 km2. Gazetted on 28 March 1902, it is administered by the Leonora Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "39"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "F"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Mount Morgans District"@en ;
+.
+
+:niagara-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "N Coolgardie M F  Niagara Dist 40"@en ,
+        "Niagara 40"@en ,
+        "Niagara District 40"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Niagara District is situated within the North Coolgardie Mineral Field in the central-southern part of the State, and covers an area of 1782 km2. Gazetted on 12 March 1897, it is administered by the Leonora Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "40"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "G"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Niagara District"@en ;
+.
+
+:northampton-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Northampton M F 66"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Northampton area in the central-western part of the State. It covers an area of 3377 km2 and  contains no districts. Gazetted on 1 January 1897, it is administered by the Perth Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "66"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Northampton Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:nullagine-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "Nullagine 46"@en ,
+        "Nullagine District 46"@en ,
+        "Pilbara M F  Nullagine Dist 46"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Nullagine District is situated within the Pilbara Mineral Field in the central-northern part of the state. It covers an area of 27,516 km2 and it is administered by the Marble Bar Mining Registrar (currently based in Perth)."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "46"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "L"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Nullagine District"@en ;
+.
+
+:peakhill-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Peak Hill M F 52"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Peak Hill area in the central part of the State. The Peak Hill Mineral Field covers an area of 84,330 km2 and contains no districts. Gazetted on 19 March 1897, it is administered by the Meekatharra Mining Registrar (currently based in Perth)."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "52"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "P"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Peak Hill Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:phillipsriver-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Phillips River M F 74"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Phillips River area in the southwestern part of the State. The Phillips River Mineral Field covers an area of 16,835 km2 and contains no districts. Gazetted on 14 July 1899, it is administered by the Perth Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "74"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Phillips River Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:southwest-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "South West M F"@en ,
+        "South-West M F"@en ,
+        "Southwest M F 70"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Southwest area in the southwestern part of the State. The Southwest Mineral Field covers an area of 229,561 km2 and contains no districts. Gazetted on 10 November 1961 (a district before this date), it is administered by the Perth Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "70"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "H"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Southwest Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:ularring-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "N Coolgardie M F  Ularring Dist 30"@en ,
+        "Ularring 30"@en ,
+        "Ularring District 30"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Ularring District is situated within the North Coolgardie Mineral Field in the central-southern part of the State and covers an area of 8011 km2. Gazetted on 12 March 1897, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "30"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Ularring District"@en ;
+.
+
+:warburton-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Warburton M F 69"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Warburton area in the central and southeastern part of the State. It covers an area of 521,233 km2 and contains no districts. Gazetted on 15 May 1981, it was formed by the amalgamation of the Eucla, Nabberu and Warburton Districts. It is administered by the Perth Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Warburton Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:westkimberley-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "West Kimberley M F 04"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the West Kimberley area in the northeast of the State. The West Kimberley Mineral Field covers an area of 255,373 km2 and contains no districts. Gazetted on 19 March 1920, it is administered by the Karratha Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "04"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "West Kimberley Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:westpilbara-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "West Pilbara M F 47"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the West Pilbara area in the northwestern part of the State. The West Pilbara Mineral Field covers an area of 75,711 km2 and contains no districts. Gazetted on 20 September 1895, it is administered by the Karratha Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "47"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "West Pilbara Mineral field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:wiluna-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "E Murchison M F  Wiluna Dist 53"@en ,
+        "Wiluna 53"@en ,
+        "Wiluna District 53"@en ;
+    skos:definition "An administrative division of land in Western Australia, thee Wiluna District is situated within the East Murchison Mineral Field in the central part of the State, and covers an area of 27,184 km2. Gazetted on 3 June 1904, it is administered by the Meekatharra Mining Registrar (currently based in Perth)."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "53"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "J"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Wiluna District"@en ;
+.
+
+:yalgoo-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Yalgoo M F 59"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Yalgoo area in the central-western part of the State. The Yalgoo Mineral Field covers an area of 60,165 km2 and contains no districts. Gazetted on 8 February 1895, it is administered by the Mt Magnet Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "59"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Yalgoo Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:yerilla-mineral-district
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel
+        "N Coolgardie M F  Yerilla Dist 31"@en ,
+        "Yerilla 31"@en ,
+        "Yerilla District 31"@en ;
+    skos:definition "An administrative division of land in Western Australia, the Yerilla District is situated within the North Coolgardie Mineral Field in the central-southern part of the State and covers an area of 8184 km2. Gazetted on 12 March 1897, it is administered by the Kalgoorlie Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation
+        "31"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ,
+        "R"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Yerilla District"@en ;
+.
+
+:yilgarn-mineral-field
+    a skos:Concept ;
+    dcterms:source
+        "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
+        "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
+    skos:altLabel "Yilgarn M F 77"@en ;
+    skos:definition "An administrative division of land in Western Australia that covers the Southern Cross area in the southwestern part of the State. The Yilgarn Mineral Field covers an area of 44,807 km2 and contains no districts. Gazetted on 1 October 1888, it is administered by the Southern Cross Mining Registrar."@en ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978." ;
+    skos:inScheme cs: ;
+    skos:notation "77"^^<https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx> ;
+    skos:prefLabel "Yilgarn Mineral Field"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/gswa>
+    a schema:Organization ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2023-09-12"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
+    dcterms:identifier "wa-mineral-fields-and-districts"^^xsd:token ;
+    dcterms:modified "2023-09-12"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    owl:versionIRI :1 ;
+    owl:versionInfo "1" ;
+    reg:status agldwgstatus:stable ;
+    skos:definition "The State of Western Australia is divided into various Mineral Fields that represent administrative land subdivisions under which mining is administered in the State according to Section 16 of the Mining Act 1978. Some mineral fields are further subdivided into Districts. Mineral field and district boundaries can be changed by proclamation under the Mining Act 1978 — the listing provided is current as of June 2023. Each mineral field or district is characterized by a two-digit prefix code used for map representations and tenement indexing. Most districts and some mineral fields are also characterized by an upper case letter code: these are historical identifiers currently not applied, but are relevant for legacy mining tenement information. Field and district proclamations date back as far as the late 1890s; individual entities may have undergone several alterations of boundaries and even been changed from district to field (NB the gazetted date provided usually refers to the first entity). In gold-endowed areas, mineral fields were originally classified as 'Goldfields', but this categorisation stopped with the ratification of the Mining Act 1978. In terms of management, tenements under each mineral field are administered under a designated Mining Registrar (here expressed as collections). Information for this vocabulary was sourced from the Tengraph (Web) Help (https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx), the Department of Mines, Industry Regulation and Safety (https://dmp.wa.gov.au/History-and-locations-of-the-12531.aspx) and a dedicated Wikipedia (https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia) webpages, as well as the consolidated printed version of the 1904 Act and individual Western Australian Government Gazettes."@en ;
+    skos:hasTopConcept
+        :ashburton-mineral-field ,
+        :broadarrow-mineral-field ,
+        :collieriver-mineral-field ,
+        :coolgardie-mineral-field ,
+        :dundas-mineral-field ,
+        :eastcoolgardie-mineral-field ,
+        :eastmurchison-mineral-field ,
+        :gascoyne-mineral-field ,
+        :greenbushes-mineral-field ,
+        :kimberley-mineral-field ,
+        :mtmargaret-mineral-field ,
+        :murchison-mineral-field ,
+        :northampton-mineral-field ,
+        :northcoolgardie-mineral-field ,
+        :northeastcoolgardie-mineral-field ,
+        :peakhill-mineral-field ,
+        :phillipsriver-mineral-field ,
+        :pilbara-mineral-field ,
+        :southwest-mineral-field ,
+        :warburton-mineral-field ,
+        :westkimberley-mineral-field ,
+        :westpilbara-mineral-field ,
+        :yalgoo-mineral-field ,
+        :yilgarn-mineral-field ;
+    skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978."@en ;
+    skos:prefLabel "Western Australian mineral fields and districts"@en ;
+    schema:keywords
+        theme:resources-mineral ,
+        theme:administration ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole dataroles:custodian ;
+            prov:agent [
+                    a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
+                    schema:name "Erin Gray" ;
+                ]
+        ] ,
+        [
+            dcat:hadRole dataroles:custodian ;
+            prov:agent [
+                    a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
+                    schema:name "Angela Riganti" ;
+                ]
+        ] ;
+.
+

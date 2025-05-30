@@ -1,0 +1,233 @@
+PREFIX : <https://linked.data.gov.au/def/geological-feature-type/>
+PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/geological-feature-type>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
+
+:formal-unit
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:altLabel
+        "lithostratigraphic unit"@en ,
+        "lithstrat unit"@en ;
+    skos:definition "Stratigraphic and lithodemic units that are formally defined and named in the Australian Stratigraphic Units Database (https://www.ga.gov.au/data-pubs/datastandards/reference-databases/stratigraphic-units) following conventions set out in the International Stratigraphic Guide (Salvador, 1994; an abridged version of the guide is available at https://stratigraphy.org/guide/index.html)."@en ;
+    skos:historyNote "One of the foundation elements in GSWA's Explanatory Notes System, used to define the geological framework of an area." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "formal unit"@en ;
+.
+
+:geological-event
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A temporally and conceivably spatially defined episode in Earth's history that leads/contributes to the modification of any of the Earth's systems (geosphere, hydrosphere, cryosphere, atmosphere and biosphere)."@en ;
+    skos:historyNote "One of the foundation elements in GSWA's Explanatory Notes System, used to define the geological framework of an area." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "geological event"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:georesources
+    a skos:Concept ;
+    dcterms:source "https://glossary.americangeosciences.org/term/resources"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Concentrations of naturally occurring solid, gas, and liquid geological materials within the earth’s crust (both on and below the surface) that occur in sufficient masses or volumes to have existing or potential economic and societal value. These resources include, but are not limited to, rock, metal and non-metal mineral resources, oil, natural gas, and geothermal energy resources; and environmental resources (water and soil)."@en ;
+    skos:historyNote "Definition compiled from American Geosciences Institute Glossary of Geology (5th edition)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "georesources"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:landform-feature
+    a skos:Concept ;
+    dcterms:source "https://glossary.americangeosciences.org/term/landform"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Any physical, recognizable form and feature of the Earth's surface having a characteristic shape and produced by natural causes. It includes major forms such as plain, plateau and mountain, and minor forms such as hill, valley, slope, esker and dune. Taken together, the landforms make up the surface configuration of the Earth."@en ;
+    skos:historyNote "Definition compiled from American Geosciences Institute Glossary of Geology (5th edition)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "landform feature"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:lithotectonic-unit
+    a skos:Concept ;
+    dcterms:source "https://glossary.americangeosciences.org/term/lithotectonicunit"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "An assemblage of rocks that is unified on the basis  of structural or deformational features, mutual relations, origin or historical evolution. It may be igneous, sedimentary, metamorphic or mixed."@en ;
+    skos:historyNote "American Geosciences Institute Glossary of Geology (5th edition)." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "lithotectonic unit"@en ;
+.
+
+:lithstrat-unit
+    a skos:Concept ;
+    dcterms:source "https://glossary.americangeosciences.org/term/lithostratigraphicunit"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A named body of rock (sedimentary, igneous, metamorphic or mixed), that is defined and characterized on the basis of its observable and distinctive lithological properties or combination of lithological properties and stratigraphic/field relations. It represents the basic unit of geological mapping and includes formally defined stratigraphic and lithodemic units (cf Australian Stratigraphic Units Database, www.ga.gov.au/data-pubs/datastandards/stratigraphic-units) as well as lithotectonic units defined solely on the basis of lithologic properties and inclusion within a tectonic unit."@en ;
+    skos:historyNote "One of the foundation elements in GSWA's Explanatory Notes System, used to define the geological framework of an area. Definition adapted from American Geosciences Institute Glossary of Geology (5th edition)." ;
+    skos:inScheme cs: ;
+    skos:narrower
+        :formal-unit ,
+        :lithotectonic-unit ;
+    skos:prefLabel "lithostratigraphic unit"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:metallogenic-province
+    a skos:Concept ;
+    dcterms:source
+        "https://en.wikipedia.org/wiki/Metallogeny"^^xsd:anyURI ,
+        "https://glossary.americangeosciences.org/term/metallogenicprovince"^^xsd:anyURI ,
+        "https://pubs.geoscienceworld.org/segweb/economicgeology/article/60/8/1620/17535/Typical-features-of-metallogenic-provinces"^^xsd:anyURI ,
+        "https://www.britannica.com/science/metallogenic-province"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A geographic area or section of the Earth's crust characterized by a particular assemblage ofmineral deposits, or by one or more distinctive types/styles of mineralization. The concept underscores the genesis and regional-to-global distribution of mineral deposits, with emphasis on their relationship in space and time to regional petrological and tectonic features of the Earth's crust."@en ;
+    skos:historyNote "Petrascheck WE, 1965. Typical features of metallogenic provinces: Economic Geology and the Bulletin of the Society of Economic Geologists (December 1965), v. 60 (8), p. 1620–1634." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "metallogenic province"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:mineral-system
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A unifying model comprising all of the geological and geodynamic factors, at all scales, that control the inception, evolution and preservation of an ore deposit. Critical components of a mineral system include a source of metals, a mode of transport, a site of deposition or accumulation where commodities become concentrated and are preserved to enable economically viable extraction during a given period. A mineral system model permits classification of known deposit types or styles into a genetically related family based on their association with the above factors."@en ;
+    skos:historyNote """McCuaig, TC, Beresford, S and Hronsky, J 2010, Translating the mineral systems approach into an effective exploration targeting system: Ore Geology Reviews, v. 38, p. 128–138.
+Wyborn, LAI, Heinrich, CA and Jaques, AL 1994, Australian Proterozoic mineral systems: Essential ingredients and mappable criteria: Proceedings of the Australasian Institute of Mining and Metallurgy Annual Conference, Darwin, 5–9 August 1994, p.109–115.""" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "mineral system"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:petroleum-supersystem
+    a skos:Concept ;
+    dcterms:source "https://www.publish.csiro.au/AJ/fulltext/AJ21018"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The petroleum supersystem concept, introduced by Bradshaw (1993), is a methodology to understand hydrocarbon occurrences throughout Australia at a continental-scale. The petroleum supersystem links sedimentary packages of similar age, structural history, depositional environment and hydrocarbon potential, both within and between basins. Thus, the petroleum supersystems approach can potentially be a powerful exploration tool for predicting the petroleum systems elements in frontier basins with limited datasets (Bradshaw et al 1994)."@en ;
+    skos:historyNote "Bradshaw MT, 1993. Australian petroleum systems. The PESA Journal 21, 43–53." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "petroleum supersystem"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:physiographic-unit
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A named geomorphological entity with internal coherence in its landform characteristics and landform evolutionary history. At the lowest levels, physiographic units reflect the underlying geology and have similar groupings of regolith materials that are related to the landform types, their evolution, and the underlying bedrock."@en ;
+    skos:historyNote "One of the foundation elements in GSWA's Explanatory Notes System, used to define the geological framework of an area. GSWA has adopted the classification scheme of Pain, C, Gregory, L, Wilson, P and McKenzie, N 2011, The physiographic regions of Australia — Explanatory notes: Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain, Canberra, Australian Capital Territory, 36p." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "physiographic unit"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:regolith-unit
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A body of unconsolidated to secondarily recemented materials that overlies more coherent bedrock, and that has been formed and shaped by weathering, erosion, transport and/or deposition of older material. It includes the weathered component of the underlying bedrock."@en ;
+    skos:historyNote "One of the foundation elements in GSWA's Explanatory Notes System, used to define the geological framework of an area. Definition adapted from Eggleton, RA (ed.) 2001, The regolith glossary: surficial geology, soils and landscapes: Cooperative Research Centre for Landscape Evolution and Mineral Exploration (CRC LEME), Canberra, Australian Capital Territory, 144p." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "regolith unit"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:structural-feature
+    a skos:Concept ;
+    dcterms:source
+        "https://glossary.americangeosciences.org/term/structuralfeature"^^xsd:anyURI ,
+        "https://www.britannica.com/science/geology/Structural-geology"^^xsd:anyURI ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A feature that describes the geometric relationship of rocks and geological features in general. Structural features are divided into two broad classes: those acquired during the genesis of a rock mass (primary structure, e.g. bedding) or by later deformation or displacement of primary structures and of the rocks (secondary structures, e.g. a fold or fault)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "structural feature"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:tectonic-feature
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A regional- to continental-scale element of the solid Earth that is the result of lithosphere or crustal-scale deformation, including magmatic and gravity-driven near-surface processes."@en ;
+    skos:historyNote "One of the foundation elements used to define the geological framework of an area. Tectonic features are rarely captured in GSWA's Explanatory Systems, but they are held in a spatial digital layer that captures the combined interpretation from remote sensing and ground observations." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "tectonic feature"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:tectonic-unit
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "A named body of rock with distinct geological or geophysical characteristics (e.g. structure, stratigraphy, magmatic activity, metamorphism, seismic velocity, electrical conductivity) that reflect a different interpreted tectonic setting and geological history from that of surrounding bodies of rock."@en ;
+    skos:historyNote "One of the foundation elements in GSWA's Explanatory Notes System, used to define the geological framework of an area." ;
+    skos:inScheme cs: ;
+    skos:prefLabel "tectonic unit"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/gswa>
+    a schema:Organization ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2023-09-06"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
+    dcterms:identifier "geological-feature-type"^^xsd:token ;
+    dcterms:modified "2023-09-06"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    owl:versionIRI :1 ;
+    owl:versionInfo "1" ;
+    reg:status agldwgstatus:stable ;
+    schema:keywords
+        theme:geology-framework ;
+    skos:definition "This vocabulary lists the fundamental types of geological features that are used to define the geological framework/4D evolution of Western Australia and are relevant to the duties of the Geological Survey of Western Australia. A geological feature is a physical or conceptual feature that is hypothesized to exist coherently in the Earth and that results from geological processes (definition largely derived from SWEET ontology http://sweetontology.net/realmGeol#geologicfeature)."@en ;
+    skos:hasTopConcept
+        :geological-event ,
+        :georesources ,
+        :landform-feature ,
+        :lithstrat-unit ,
+        :metallogenic-province ,
+        :mineral-system ,
+        :petroleum-supersystem ,
+        :physiographic-unit ,
+        :regolith-unit ,
+        :structural-feature ,
+        :tectonic-feature ,
+        :tectonic-unit ;
+    skos:historyNote "Largely derived from the structure GSWA's ENS (Explanatory Notes System) database."@en ;
+    skos:prefLabel "Geological feature type"@en ;
+    prov:qualifiedAttribution
+        [
+            dcat:hadRole dataroles:custodian ;
+            prov:agent [
+                    a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
+                    schema:name "Angela Riganti" ;
+                ]
+        ] ,
+        [
+            dcat:hadRole dataroles:custodian ;
+            prov:agent [
+                    a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
+                    schema:name "David Martin" ;
+                ]
+        ] ,
+        [
+            dcat:hadRole dataroles:custodian ;
+            prov:agent [
+                    a schema:Person ;
+                    schema:email ""^^xsd:anyURI ;
+                    schema:name "Erin Gray" ;
+                ]
+        ] ;
+.
+
