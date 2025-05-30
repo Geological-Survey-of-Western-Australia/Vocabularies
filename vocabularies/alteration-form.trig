@@ -1,0 +1,374 @@
+PREFIX : <https://linked.data.gov.au/def/alteration-form/>
+PREFIX cs: <https://linked.data.gov.au/def/alteration-form>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+
+<https://gswa/vocabs> {
+    :banding-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :layer-controlled ;
+        skos:definition "Alteration that selectively replaces specific bands within rocks."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "banding-controlled"@en ;
+    .
+    
+    :bedding-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel "stratabound"@en ;
+        skos:broader :layer-controlled ;
+        skos:definition "Alteration that selectively replaces specific beds within sedimentary rocks."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "bedding-controlled"@en ;
+    .
+    
+    :breccia-vein
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :hydrothermal-breccia-controlled ;
+        skos:definition "Alteration associated with a fissure containing cemented wallrock fragments."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "breccia vein"@en ;
+    .
+    
+    :fault-breccia
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :fault-controlled ;
+        skos:definition "Alteration associated with a fault displaying angular rock fragments resulting from fracturing."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "fault breccia"@en ;
+    .
+    
+    :foliation-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel "foliation parallel"@en ;
+        skos:broader :structure-controlled ;
+        skos:definition "Alteration confined to volumes of rocks exhibiting a foliation."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "foliation-controlled"@en ;
+    .
+    
+    :pervasive
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "complete"@en ,
+            "continuous"@en ,
+            "extensive"@en ,
+            "homogeneous"@en ,
+            "massive"@en ,
+            "ubiquitous"@en ,
+            "widespread"@en ;
+        skos:definition "Alteration characterized by the replacement of most, or all, original rock-forming minerals and obliteration of textures at the scale of observation."@en ;
+        skos:historyNote """Definition from:
+    1) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p. (p. 95)
+    2) Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals, St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p. (p. 3).""" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "pervasive"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :selectively-non-pervasive
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :selective ;
+        skos:definition "Alteration characterized by the replacement of only specific components (e.g. minerals, grains, clasts) of the original rock, with partial to complete obliteration of textures only in part of the area under observation."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "selectively non-pervasive"@en ;
+    .
+    
+    :selectively-pervasive
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :selective ;
+        skos:definition "Alteration characterized by the replacement of only specific components (e.g. minerals, grains, clasts) of the original rock, with partial to complete obliteration of textures across the whole area of observation."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "selectively pervasive"@en ;
+    .
+    
+    :shear-zone-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :structure-controlled ;
+        skos:definition "Alteration spatially associated with a shear zone."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "shear zone-controlled"@en ;
+    .
+    
+    :unaltered
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel "not altered"@en ;
+        skos:definition "A rock with no visible signs of alteration, in which primary minerals, fabrics (including primary pore space) and chemistry are unchanged."@en ;
+        skos:exactMatch
+            <https://linked.data.gov.au/def/alteration-intensity/unaltered> ,
+            <https://linked.data.gov.au/def/alteration-type/unaltered> ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "unaltered"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :unconformity-related
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :layer-controlled ;
+        skos:definition "Alteration that occurs at or around an unconformable or disconformable contact."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "unconformity-related"@en ;
+    .
+    
+    :vein-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "stockwork"@en ,
+            "veined"@en ;
+        skos:broader :structure-controlled ;
+        skos:definition "Alteration spatially associated with a vein."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "vein-controlled"@en ;
+    .
+    
+    :vug-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "vuggy"@en ,
+            "vugh"@en ;
+        skos:broader :structure-controlled ;
+        skos:definition "Alteration associated with small cavities in a vein or rock, usually lined with crystals of a different mineral composition from the enclosing rock."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "vug-controlled"@en ;
+    .
+    
+    :zoned-central
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :zoned ;
+        skos:definition "The central region of an alteration zone"@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "zoned-central"@en ;
+    .
+    
+    :zoned-inner
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :zoned ;
+        skos:definition "The inner region of an alteration zone."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "zoned-inner"@en ;
+    .
+    
+    :zoned-outer
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :zoned ;
+        skos:definition "The outer region of an alteration zone."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:prefLabel "zoned-outer"@en ;
+    .
+    
+    <https://orcid.org/0000-0001-5888-5102>
+        a schema:Person ;
+        schema:email ""^^xsd:anyURI ;
+        schema:name "0000 0001 5888 5102" ;
+    .
+    
+    <https://orcid.org/0000-0002-7645-5031>
+        a schema:Person ;
+        schema:email ""^^xsd:anyURI ;
+        schema:name "0000 0002 7645 5031" ;
+    .
+    
+    :fault-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :fracture-controlled ;
+        skos:definition "Alteration spatially associated with a fault."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:narrower :fault-breccia ;
+        skos:prefLabel "fault-controlled"@en ;
+    .
+    
+    :fracture-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel "fracture parallel"@en ;
+        skos:broader :structure-controlled ;
+        skos:definition "Alteration spatially associated with a fracture, i.e. with any break/separation in a geological formation with or without relative displacement of the parts (e.g. a joint or a fault)."@en ;
+        skos:historyNote "Definition from Pirajno (2009; Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p)." ;
+        skos:inScheme cs: ;
+        skos:narrower :fault-controlled ;
+        skos:prefLabel "fracture-controlled"@en ;
+    .
+    
+    :hydrothermal-breccia-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel "hydrothermal breccia"@en ;
+        skos:broader :structure-controlled ;
+        skos:definition "Alteration spatially associated with a breccia."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:narrower :breccia-vein ;
+        skos:prefLabel "hydrothermal breccia-controlled"@en ;
+    .
+    
+    <https://linked.data.gov.au/org/gswa>
+        a schema:Organization ;
+        schema:name "Gswa" ;
+        schema:url ""^^xsd:anyURI ;
+    .
+    
+    :selective
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "Alteration characterized by the replacement of only specific components (e.g. minerals, grains, clasts) of the original rock, with partial to complete obliteration of textures at the scale of observation."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:narrower
+            :selectively-non-pervasive ,
+            :selectively-pervasive ;
+        skos:prefLabel "selective"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :layer-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :non-pervasive ;
+        skos:definition "Alteration restricted to compositionally or texturally defined layers within rocks."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:narrower
+            :banding-controlled ,
+            :bedding-controlled ,
+            :unconformity-related ;
+        skos:prefLabel "layer-controlled"@en ;
+    .
+    
+    :non-pervasive
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "anastomosing"@en ,
+            "blebby"@en ,
+            "concentrated"@en ,
+            "diffuse"@en ,
+            "discrete"@en ,
+            "disseminated"@en ,
+            "heterogeneous"@en ,
+            "irregular"@en ,
+            "localised"@en ,
+            "localized"@en ,
+            "matrix"@en ,
+            "mottled"@en ,
+            "patchy"@en ,
+            "selective"@en ,
+            "semi-pervasive"@en ,
+            "spotty"@en ,
+            "variable"@en ,
+            "wispy"@en ;
+        skos:definition "Alteration that has replaced or filled in only certain portions of the rock at the scale of observation (e.g. the envelopes around veins), certain primary minerals, or pore spaces (including vesicles and interclast voids)."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:narrower
+            :layer-controlled ,
+            :structure-controlled ,
+            :zoned ;
+        skos:prefLabel "non-pervasive"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :zoned
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "aureole"@en ,
+            "selvage"@en ;
+        skos:broader :non-pervasive ;
+        skos:definition "Alteration that can be divided spatially into several mineralogically or texturally distinct regions, with systematic variations in mineral assemblages, compositions and/or textures."@en ;
+        skos:historyNote "Definition compiled by the Geological Survey of Western Australia." ;
+        skos:inScheme cs: ;
+        skos:narrower
+            :zoned-central ,
+            :zoned-inner ,
+            :zoned-outer ;
+        skos:prefLabel "zoned"@en ;
+    .
+    
+    :structure-controlled
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:broader :non-pervasive ;
+        skos:definition "Alteration spatially restricted to rocks within and/or immediately adjacent to structures such as shear zones, fault zones, veins, hydrothermal breccias, vugs or fractures."@en ;
+        skos:historyNote "Definition from Pirajno (2009; Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p)." ;
+        skos:inScheme cs: ;
+        skos:narrower
+            :foliation-controlled ,
+            :fracture-controlled ,
+            :hydrothermal-breccia-controlled ,
+            :shear-zone-controlled ,
+            :vein-controlled ,
+            :vug-controlled ;
+        skos:prefLabel "structure-controlled"@en ;
+    .
+    
+    cs:
+        a skos:ConceptScheme ;
+        reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
+        owl:versionIRI :1 ;
+        skos:definition "Compilation of terms that described geometry (i.e. the shape, distribution and configuration) of alteration in rocks and minerals as observed at the macro-, meso- and microscopic scale, and applying to the specific area of observation. Alteration in this context is defined as a modification of the original lithology caused by meteoric, connate, metamorphic, or magmatic-derived fluids, excluding the weathering environment, mineralization and direct magmatic or metamorphic processes. Definitions are largely taken from Pirajno (2009) and the Glossary of geology (Neuendorf et al., 2011)."@en ;
+        skos:hasTopConcept
+            :non-pervasive ,
+            :pervasive ,
+            :selective ,
+            :unaltered ;
+        skos:historyNote """Derived from GSWA's WAROX database's table  [GEOLOGY].[WAROX.REF].[AltForm], and expanded to include additional terms. Definitions compiled from:
+    1) Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p.
+    2) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
+    3) Thompson, JFH, Thompson, AJB and Allen, RL 1996, Atlas of alteration: A field and petrographic guide to hydrothermal alteration minerals, St. John's, Nfld: Geological Association of Canada, Mineral Deposits Division, 119p."""@en ;
+        skos:prefLabel "Alteration form"@en ;
+        prov:qualifiedAttribution
+            [
+                dcat:hadRole isoroles:custodian ;
+                prov:agent <https://orcid.org/0000-0002-7645-5031> ;
+            ] ,
+            [
+                dcat:hadRole isoroles:custodian ;
+                prov:agent <https://orcid.org/0000-0001-5888-5102> ;
+            ] ;
+        schema:creator <https://linked.data.gov.au/org/gswa> ;
+        schema:dateCreated "2024-12-02"^^xsd:date ;
+        schema:dateModified "2024-12-02"^^xsd:date ;
+        schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral> ;
+        schema:publisher <https://linked.data.gov.au/org/gswa> ;
+        schema:version "1" ;
+    .
+}
