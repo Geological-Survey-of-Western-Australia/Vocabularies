@@ -1,0 +1,264 @@
+PREFIX : <https://linked.data.gov.au/def/gswa-collection-facilities/>
+PREFIX cs: <https://linked.data.gov.au/def/gswa-collection-facilities>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
+
+<https://gswa/vocabs> {
+    :carlisle
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "Carlisle is one of several offices maintained by the Department of Energy, Mines, Industry Regulation and Safety within the Perth metropolitan area. The site includes several buildings encompassing separate functions of the Geological Survey of Western Australia, and is located at 37 Harris St, Carlisle WA 6101."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:narrower
+            :carlisle-laboratory ,
+            :carlisle-records-building ,
+            :field-logistics ,
+            :perth-core-library ;
+        skos:prefLabel "Carlisle"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :carlisle-laboratory
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "The Carlisle laboratory is a Geological Survey of Western Australia facility undertaking in-house sample processing (mainly for geochronology) that also houses the Petrographic slide collection. The building is located on the Carlisle site at 37 Harris St, Carlisle WA 6101."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Carlisle laboratory"@en ;
+    .
+    
+    :carlisle-records-building
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "The Carlisle Records building is a Department of Energy, Mines, Industry Regulation and Safety facility housing various key collections, including departmental Records (physical and digital), library assets and geological slides. The building is located on the Carlisle site at 37 Harris St, Carlisle WA 6101."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Carlisle Records building"@en ;
+    .
+    
+    :field-logistics
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel "Carlisle Stores and Transport building"@en ;
+        skos:definition "The field logistics building is a Geological Survey of Western Australia facility housing field vehicles and equipment, plus physical assets relating to the petroleum relinquishment and paleontology collections. The building is located on the Carlisle site at 37 Harris St, Carlisle WA 6101."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Field logistics"@en ;
+    .
+    
+    :harry-butler-research-centre
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel "WA Museum Welshpool Office"@en ;
+        skos:definition "The Harry Butler Research Centre houses the collections and research staff of the Western Australian Museum. The building is located at 49 Kew St, Welshpool WA 6106."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Harry Butler Research Centre"@en ;
+    .
+    
+    :iron-mountain
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "Kestrel"@en ,
+            "Reccal Australia"@en ;
+        skos:definition "The building mainly stores Western Australian petroleum seismic cartridges submitted by petroleum companies for archiving and future retrieval and processing of data. The building is located at 22–24 Ledgar Road, Balcatta WA 6021."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Iron Mountain Australia Group storage facility"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :joe-lord-core-library
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "Joe Lord Core Library"@en ,
+            "Kalgoorlie Core Library"@en ;
+        skos:definition "The JH (Joe) Lord Core Library is one of two Geological Survey of Western Australia storage and viewing facilities housing geological exploration materials (predominantly drillcores and samples) and related media. The building is located on the Kalgoorlie site at the corner of Hunter and Broadwood Sts, West Kalgoorlie WA 6430."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "JH (Joe) Lord Core Library"@en ;
+    .
+    
+    :kalgoorlie-regional-office
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "KRO"@en ,
+            "Kalgoorlie office"@en ;
+        skos:closeMatch <https://linked.data.gov.au/def/demirs-offices/kalgoorlie-office> ;
+        skos:definition "The Kalgoorlie regional office is a facility of the Geological Survey of Western Australia primarily housing staff, but also hosting some small collections. The building is located on the Kalgoorlie site at the corner of Hunter and Broadwood Sts, West Kalgoorlie WA 6430."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:narrower :joe-lord-core-library ;
+        skos:prefLabel "Kalgoorlie regional office"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :mineral-house
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "Mineral House is one of several offices maintained by the Department of Energy, Mines, Industry Regulation and Safety within the Perth metropolitan area, and is the department's main administrative office. The building is located at 100 Plain St, East Perth WA 6004."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:narrower
+            :mineral-house-foyer ,
+            :mineral-house-library ,
+            :mineral-house-other ;
+        skos:prefLabel "Mineral House"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :mineral-house-foyer
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "The foyer of Mineral House has display cabinets for sections of the GSWA's rock and mineral collections. The venue is open to the public during office hours and can be accessed via the main entrance to the building at 100 Plain St, East Perth WA 6004."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Mineral House foyer"@en ;
+    .
+    
+    :mineral-house-library
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "The Mineral House Library houses the main collections of scientific literature (books and journals) and key historical images, documents and assets belonging to the Department of Energy, Mines, Industry Regulation and Safety. The Library is located on Level 1 of Mineral House, 100 Plain St, East Perth WA 6004."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Mineral House Library"@en ;
+    .
+    
+    :mineral-house-other
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "Collections belonging to the Geological Survey of Western Australia are housed on various floors within Mineral House, including the ground floor (foyer), and levels 1, 4 and 5. Mineral House is located at 100 Plain St, East Perth WA 6004."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Mineral House other"@en ;
+    .
+    
+    :museum-of-the-goldfields
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel "Kalgoorlie Museum"@en ;
+        skos:definition "The Museum of the Goldfields is a regional branch of the Western Australian Museum, focused on the geology, biology and culture of the Goldfields region. The building is located at 17 Hannan Street, Kalgoorlie WA 6430."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Museum of the Goldfields"@en ;
+    .
+    
+    :perth-core-library
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "The Perth Core Library is one of two Geological Survey of Western Australia storage and viewing facilities housing geological exploration materials (predominantly drillcores and samples) and related media. The building is located on the Carlisle site at 37 Harris Street, Carlisle WA 6101."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Perth Core Library"@en ;
+    .
+    
+    :perth-mint
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:definition "The Perth Mint is a State-owned, precious-metal refinery and tourist venture. The Perth Mint's main administrative office, plus historical displays and collections, are housed at 310 Hay St, East Perth WA 6004."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "Perth Mint"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    :wa-museum-boola-bardip
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "Boola Bardip"@en ,
+            "WA Museum"@en ;
+        skos:definition "WA Museum Boola Bardip houses the Western Australian Museum's primary displays in Perth (including Earth and planetary sciences, terrestrial biology and cultural displays). The building is located in the Perth Cultural Centre, Perth WA 6000."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:prefLabel "WA Museum Boola Bardip"@en ;
+    .
+    
+    :western-australian-museum
+        a skos:Concept ;
+        rdfs:isDefinedBy cs: ;
+        skos:altLabel
+            "WA Museum"@en ,
+            "WAM"@en ;
+        skos:definition "The Western Australian Museum manages the State's primary archive of cultural and natural history assets. Established in 1891, the Western Australian Museum now comprises six public sites and a research and collections centre. The Museum is managed by the Department of Local Government, Sport and Cultural Industries."@en ;
+        skos:historyNote "Compiled by GSWA" ;
+        skos:inScheme cs: ;
+        skos:narrower
+            :harry-butler-research-centre ,
+            :museum-of-the-goldfields ,
+            :wa-museum-boola-bardip ;
+        skos:prefLabel "Western Australian Museum"@en ;
+        skos:topConceptOf cs: ;
+    .
+    
+    <https://linked.data.gov.au/org/gswa>
+        a schema:Organization ;
+        schema:name "Geological Survey of Western Australia" ;
+        schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
+    .
+    
+    cs:
+        a skos:ConceptScheme ;
+        reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
+        owl:versionIRI :1.1 ;
+        skos:definition "Names and physical locations of facilities housing Geological Survey of Western Australia (GSWA) collections of physical objects. The list includes buildings or designated parts of buildings, as well as external storage facilities. "@en ;
+        skos:hasTopConcept
+            :carlisle ,
+            :iron-mountain ,
+            :kalgoorlie-regional-office ,
+            :mineral-house ,
+            :perth-mint ,
+            :western-australian-museum ;
+        skos:historyNote "Administrative compilation based on Department of Energy, Mines, Industry Regulation and Safety locations and Western Australian Museum locations."@en ;
+        skos:prefLabel "GSWA collection facilities"@en ;
+        prov:qualifiedAttribution
+            [
+                dcat:hadRole dataroles:custodian ;
+                prov:agent
+                    [
+                        a schema:Person ;
+                        schema:email ""^^xsd:anyURI ;
+                        schema:name "Erin Gray" ;
+                    ] ;
+            ] ,
+            [
+                dcat:hadRole dataroles:custodian ;
+                prov:agent
+                    [
+                        a schema:Person ;
+                        schema:email ""^^xsd:anyURI ;
+                        schema:name "Angela Riganti" ;
+                    ] ;
+            ] ,
+            [
+                dcat:hadRole dataroles:custodian ;
+                prov:agent
+                    [
+                        a schema:Person ;
+                        schema:email ""^^xsd:anyURI ;
+                        schema:name "Sarah Martin" ;
+                    ] ;
+            ] ;
+        schema:creator <https://linked.data.gov.au/org/gswa> ;
+        schema:dateCreated "2023-09-06"^^xsd:date ;
+        schema:dateModified "2023-12-01"^^xsd:date ;
+        schema:publisher <https://linked.data.gov.au/org/gswa> ;
+        schema:version "1.1" ;
+        schema:keywords
+            theme:administration ,
+            theme:sample-acquisition-management ;
+    .
+}
