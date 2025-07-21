@@ -573,21 +573,11 @@ cs:
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:name "Erin Gray" ;
-                    schema:email ""^^xsd:anyURI ;
-                ] ;
+            prov:agent <https://orcid.org/0009-0002-5543-2719> ;
         ] ,
         [
             dcat:hadRole dataroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:name "Angela Riganti" ;
-                    schema:email ""^^xsd:anyURI ;
-                ] ;
+            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2023-10-25"^^xsd:date ;

@@ -1,0 +1,184 @@
+PREFIX : <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/>
+PREFIX cs: <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+:abandoned
+    a skos:Concept ;
+    dcterms:identifier "abandoned"^^xsd:token ;
+    skos:definition "All operations and activities are terminated. The operator has left the site with no intention of returning to the borehole. The borehole is not necessarily plugged.  Similar to CoalLog status \"completed\"."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "abandoned"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:completed
+    a skos:Concept ;
+    dcterms:identifier "completed"^^xsd:token ;
+    skos:definition "Drilling is completed. Production infrastructure may be installed.  The borehole has not necessarily been abandoned.  Note that the CoalLog \"completed\" status is more similar to \"abandoned\" in this vocabulary."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "completed"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:drillingSuspended
+    a skos:Concept ;
+    dcterms:identifier "drillingSuspended"^^xsd:token ;
+    skos:definition "Drilling operations have been temporarily suspended (eg, for weather, maintenance, or other reasons)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "drilling suspended"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:injecting
+    a skos:Concept ;
+    dcterms:identifier "injecting"^^xsd:token ;
+    skos:definition "The status of a borehole during which liquids or gas are being pumped into the borehole."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "injecting"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:inprogress
+    a skos:Concept ;
+    dcterms:identifier "inprogress"^^xsd:token ;
+    skos:definition "The status of a borehole commencing from the rig being moved onsite to the time that drilling operations are completed.  Similar to PPDM's \"drilling\", but different."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "in progress"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:monitoring
+    a skos:Concept ;
+    dcterms:identifier "monitoring"^^xsd:token ;
+    skos:definition "Borehole is being used for monitoring parameters such as water level, water quality, fluid pressure."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "monitoring"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:plugged
+    a skos:Concept ;
+    dcterms:identifier "plugged"^^xsd:token ;
+    skos:definition "The borehole has been filled or sealed. The extent of seal may vary from just plugged near the surface (eg, many coal boreholes) to plugged in order to prevent the migration of oil, gas, water, or other substance from one stratum to another (ie, PPDM definition)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "plugged"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:pluggedAndAbandoned
+    a skos:Concept ;
+    dcterms:identifier "pluggedAndAbandoned"^^xsd:token ;
+    skos:definition "An abandoned borehole that has also been plugged. The extent of seal may vary from just plugged near the surface (eg, many coal boreholes) to plugged to prevent the migration of oil, gas, water, or other substance from one stratum to another (ie, PPDM definition)."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "plugged and abandoned"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:producing
+    a skos:Concept ;
+    dcterms:identifier "producing"^^xsd:token ;
+    skos:definition "The status of a borehole during  which liquids or gas are being extracted from the borehole."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "producing"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:producingAndInjecting
+    a skos:Concept ;
+    dcterms:identifier "producingAndInjecting"^^xsd:token ;
+    skos:definition "The status of a borehole that alternately produces and injects liquid or gas into a borehole."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "producing and injecting"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:proposed
+    a skos:Concept ;
+    dcterms:identifier "proposed"^^xsd:token ;
+    skos:definition "A concept or application exists to drill a borehole, but drilling has not yet commenced or been approved.  Similar to PPDM's \"location\" classification, but different."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "proposed"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:rehabilitated
+    a skos:Concept ;
+    dcterms:identifier "rehabilitated"^^xsd:token ;
+    skos:definition "The borehole site has been fully rehabilitated. Note that this status is included within the PPDM definition of \"plugged and abandoned\"."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "rehabilitated"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:suspended
+    a skos:Concept ;
+    dcterms:identifier "suspended"^^xsd:token ;
+    skos:definition "Borehole operations have been halted for a significant period of time or in a manner that requires significant effort for the resumption of activities. The borehole can be plugged downhole and fluids injected on top of the plug in order to create a temporary seal to prevent hydrocarbon leakage. The surface equipment remains in place. Suspended is never the final status of a borehole."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "suspended"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:unknown
+    a skos:Concept ;
+    dcterms:identifier "unknown"^^xsd:token ;
+    rdfs:isDefinedBy <http://www.opengis.net/def/nil/OGC/0/unknown> ;
+    skos:definition "The drilling status of the borehole is unknown."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "unknown"@en ;
+    skos:topConceptOf cs: ;
+.
+
+:workover
+    a skos:Concept ;
+    dcterms:identifier "workover"^^xsd:token ;
+    skos:definition "Activities relating to production wells, etc. For example logging activities, recompletion, testing, repairs, maintenance, plug and abandonment and demobilisation."@en ;
+    skos:inScheme cs: ;
+    skos:prefLabel "workover"@en ;
+    skos:topConceptOf cs: ;
+.
+
+<https://linked.data.gov.au/org/ga>
+    a sdo:Organization ;
+    sdo:description "Geoscience Australia is Australia's pre-eminent public sector geoscience organisation. It is the nation's trusted advisor on the geology and geography of Australia. It applies science and technology to describe and understand the Earth for the benefit of Australia."@en ;
+    sdo:name "Geoscience Australia" ;
+    sdo:url "https://www.ga.gov.au"^^xsd:anyURI ;
+.
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2022-08-09"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/ga> ;
+    dcterms:identifier "BoreholeStatus"^^xsd:token ;
+    dcterms:modified "2022-08-09"^^xsd:date ;
+    dcterms:provenance "Geoscience Australia Borehole Status (BOREHOLE.LU_BOREHOLE_STATUS)"@en ;
+    dcterms:publisher <https://linked.data.gov.au/org/ga> ;
+    rdfs:seeAlso <https://pid.geoscience.gov.au/dataset/ga/148553> ;
+    owl:versionInfo "1" ;
+    skos:definition "\"Borehole status” information provided by Geoscience Australia (GA) is not guaranteed to be authoritative or current. GA is not a reporting or regulatory authority for borehole drilling, but it sources borehole information for its research purposes from various regulatory authorities in the States, Northern Territory and Commonwealth governments. The quality and currency of borehole status data in GA’s database reflects information gathered from a borehole operator’s well completion report or from a responsible regulatory authority on a particular date. Changes in a borehole’s status after GA sourced the borehole status information may not be reflected in GA’s data. Due to the wide variety of borehole types in GA’s database, GA’s vocabulary for “borehole status” is an amalgam of terms used by professional bodies (eg, PPDM, CoalLog) and regulatory authorities. Some of the terminology used across these professional domains and jurisdictions has varied over time, and in some cases the same term has a different meaning for different types of boreholes. GA has endeavoured to merge these sources of terminology into a consistent classification that applies for all borehole types."@en ;
+    skos:hasTopConcept
+        :abandoned ,
+        :completed ,
+        :drillingSuspended ,
+        :injecting ,
+        :inprogress ,
+        :monitoring ,
+        :plugged ,
+        :pluggedAndAbandoned ,
+        :producing ,
+        :producingAndInjecting ,
+        :proposed ,
+        :rehabilitated ,
+        :suspended ,
+        :unknown ,
+        :workover ;
+    skos:prefLabel "Borehole Geology - Status "@en ;
+    dcat:contactPoint "Team Lead - Information Services; Energy, Minerals and Groundwater Division" ;
+    skos:historyNote "Developed by Geoscience Australia" ;
+.

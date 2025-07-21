@@ -264,24 +264,6 @@ ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-A
     schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
 .
 
-<https://orcid.org/0000-0002-2104-6601>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 2104 6601" ;
-.
-
-<https://orcid.org/0000-0002-2280-1859>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 2280 1859" ;
-.
-
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
-
 :duplicate
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

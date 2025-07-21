@@ -332,12 +332,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     schema:citation "https://glossary.slb.com/en/terms/w/workover"^^xsd:anyURI ;
 .
 
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
-
 :abandoned-energy
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -555,12 +549,7 @@ cs:
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Erin Gray" ;
-                ] ;
+            prov:agent <https://orcid.org/0009-0002-5543-2719> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2025-02-03"^^xsd:date ;

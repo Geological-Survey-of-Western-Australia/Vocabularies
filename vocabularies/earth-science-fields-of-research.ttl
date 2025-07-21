@@ -2552,11 +2552,8 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
         "https://glossary.americangeosciences.org/term/volcanology"^^xsd:anyURI ;
 .
 
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
+
+
 
 :astronomical-sciences
     a skos:Concept ;
@@ -3899,11 +3896,7 @@ cs:
         [
             dcat:hadRole isoroles:custodian ;
             prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Erin Gray" ;
-                ] ;
+                <https://orcid.org/0009-0002-5543-2719> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2023-05-15"^^xsd:date ;

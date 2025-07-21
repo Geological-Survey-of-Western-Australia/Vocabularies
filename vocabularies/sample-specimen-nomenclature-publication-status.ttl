@@ -10,12 +10,6 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 
-<http://orcid.org/0000-0002-5129-2467>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 5129 2467" ;
-.
-
 :allotype-ICZN
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -449,11 +443,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     schema:citation "https://www.lpi.usra.edu/meteor/docs/nc-guidelines.htm#_Toc447369164"^^xsd:anyURI ;
 .
 
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
+
+
 
 :non-type-specimen
     a skos:Concept ;
@@ -601,7 +592,7 @@ GSWA distinguishes samples from specimens on the basis of the latter including b
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent <http://orcid.org/0000-0002-5129-2467> ;
+            prov:agent <https://orcid.org/0000-0002-5129-2467> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-12-09"^^xsd:date ;

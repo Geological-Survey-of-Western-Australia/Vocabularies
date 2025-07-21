@@ -192,18 +192,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:prefLabel "zoned-outer"@en ;
 .
 
-<https://orcid.org/0000-0001-5888-5102>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0001 5888 5102" ;
-.
-
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
-
 :fault-controlled
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

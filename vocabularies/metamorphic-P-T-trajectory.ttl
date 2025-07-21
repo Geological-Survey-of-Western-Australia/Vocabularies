@@ -206,19 +206,11 @@ d) https://en.wikipedia.org/wiki/Pressure-temperature-time_path."""@en ;
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
-            prov:agent [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Fawna Korhonen" ;
-                ]
+            prov:agent <https://orcid.org/0009-0003-0007-8342> ;
         ] ,
         [
             dcat:hadRole dataroles:custodian ;
-            prov:agent [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Dave Kelsey" ;
-                ]
-        ] ;
+            prov:agent <https://www.linkedin.com/in/david-kelsey-425746137/> ;
+        ]
 .
 

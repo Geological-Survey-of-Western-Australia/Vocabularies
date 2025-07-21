@@ -10,12 +10,6 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX reg: <http://purl.org/linked-data/registry#>
 
-<http://orcid.org/0000-0002-5129-2467>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 5129 2467" ;
-.
-
 :arsenic-bearing
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -487,11 +481,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:prefLabel "worn"@en ;
 .
 
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
+
+
 
 :cleaned
     a skos:Concept ;
@@ -707,7 +698,7 @@ cs:
     prov:qualifiedAttribution
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent <http://orcid.org/0000-0002-5129-2467> ;
+            prov:agent <https://orcid.org/0000-0002-5129-2467> ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;

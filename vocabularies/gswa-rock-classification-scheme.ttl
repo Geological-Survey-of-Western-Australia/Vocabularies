@@ -9825,30 +9825,15 @@ MAIN REFERENCES used for compilation:
     prov:qualifiedAttribution
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Terry Farrell" ;
-                ] ;
+            prov:agent <https://www.linkedin.com/in/terry-farrell-3b501126/> ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Angela Riganti" ;
-                ] ;
+            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "David Martin" ;
-                ] ;
+            prov:agent <https://www.linkedin.com/in/davidmcbmartin/> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-06-28"^^xsd:date ;

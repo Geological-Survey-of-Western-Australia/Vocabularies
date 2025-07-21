@@ -232,21 +232,12 @@ The CRIRSCO Code is closely related to the JORC Code used in Australasia to repo
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Angela Riganti" ;
-                ] ;
+            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ,
         [
             dcat:hadRole dataroles:custodian ;
             prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Erin Gray" ;
-                ] ;
+                <https://orcid.org/0009-0002-5543-2719> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2023-11-01"^^xsd:date ;

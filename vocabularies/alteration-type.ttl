@@ -592,17 +592,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "https://www.academia.edu/9125625/Atlas_of_Alteration"^^xsd:anyURI ;
 .
 
-<https://orcid.org/0000-0001-5888-5102>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0001 5888 5102" ;
-.
 
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
 
 :alkali-metasomatism
     a skos:Concept ;

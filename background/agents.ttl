@@ -8,3 +8,63 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:url "https://www.wa.gov.au/organisation/department-of-mines-petroleum-and-exploration/geological-survey-of-western-australia"^^xsd:anyURI ;
 .
 
+<https://orcid.org/0000-0002-7645-5031>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Angela Riganti" ;
+.
+
+
+<http://orcid.org/0000-0002-5129-2467>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Sarah K. Martin" ;
+.
+
+<https://orcid.org/0000-0001-5888-5102>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Paul Duuring" ;
+.
+
+<https://orcid.org/0000-0002-2104-6601>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Jack Lowrey" ;
+.
+
+<https://orcid.org/0000-0002-2280-1859>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Rose Turnbull" ;
+.
+
+<https://orcid.org/0009-0002-5543-2719>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Erin Marie Gray" ;
+.
+
+<https://orcid.org/0009-0003-0007-8342>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Fawna Korhonen" ;
+.
+
+<https://www.linkedin.com/in/david-kelsey-425746137/>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Dave Kelsey" ;
+.
+
+<https://www.linkedin.com/in/davidmcbmartin/>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "David Martin" ;
+.
+
+<https://www.linkedin.com/in/terry-farrell-3b501126/>
+    a schema:Person ;
+    schema:email ""^^xsd:anyURI ;
+    schema:name "Terry Farrell" ;
+.
