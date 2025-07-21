@@ -389,7 +389,7 @@ Note EPGS registry""" ;
 :gda2020
     a skos:Concept ;
     dcterms:source
-        "https:///linked.data.gov.au/def/queensland-crs/gda2020"^^xsd:anyURI ,
+        "https://linked.data.gov.au/def/queensland-crs/gda2020"^^xsd:anyURI ,
         "https://epsg.io/7844"^^xsd:anyURI ,
         "https://www.icsm.gov.au/sites/default/files/GDA2020TechnicalManualV1.1.1.pdf"^^xsd:anyURI ;
     skos:altLabel
@@ -397,7 +397,7 @@ Note EPGS registry""" ;
         "GDA_2020"@en ,
         "Geocentric Datum of Australia 2020"@en ;
     skos:definition "The official geodetic datum adopted nationally in June 2020. GDA2020 is a coordinate reference system with an origin that coincides with a determination of the centre of mass of the earth, hence the term geocentric. GDA2020 is a plate-fixed or static coordinate datum based on the International Terrestrial Reference Frame 1992 (ITRF92), held at the reference epoch of 1 January 2020. Area of use is the same as GDA94, i.e. all the areas contained within Australia’s marine jurisdiction (within 200 nautical miles of Australia) and its external territories, and the areas of Australia’s continental shelf beyond 200 nautical miles as confirmed by the United Nations Commission on the Limits of the Continental Shelf: Australia including Lord Howe Island, Macquarie Island, Ashmore and Cartier Islands, Christmas Island, Cocos (Keeling) Islands, Norfolk Island; all onshore and offshore."@en ;
-    skos:exactMatch <https:///linked.data.gov.au/def/queensland-crs/gda2020> ;
+    skos:exactMatch <https://linked.data.gov.au/def/queensland-crs/gda2020> ;
     skos:inScheme cs: ;
     skos:notation
         "EPSG:7844"^^<https://epsg.io/> ,
