@@ -42,11 +42,11 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
     rdfs:isDefinedBy cs: ;
     skos:broader :spectral-imaging ;
     skos:definition "Remotely sensed spectral imaging obtained from an airborne platform."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:airborne-spectral> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/airborne-spectral> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "airborne spectral imaging"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:airborne-spectral"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/airborne-spectral"^^xsd:anyURI ;
 .
 
 :applied-geophysics
@@ -110,14 +110,14 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
     skos:altLabel "bedrock geology"@en ;
     skos:broader :geology ;
     skos:definition "The study of the undifferentiated complex of rocks that underlies the rocks of interest in an area, i.e. the crust of the Earth below sedimentary deposits and regolith, extending downward to the Mohorovičić discontinuity. Basement geology may be self-referential in that it is also the study of defining what constitutes basement at regional and local scales, and whether geologically or economically defined."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:basement-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/basement-geology> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et. al., 2011), Wikipedia and the Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "basement geology"@en ;
     schema:citation
         "https://en.wikipedia.org/wiki/Basement_(geology)"^^xsd:anyURI ,
         "https://glossary.americangeosciences.org/term/basement"^^xsd:anyURI ,
-        "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:basement-geology"^^xsd:anyURI ;
+        "http://linked.data.gov.au/def/earth-science-data-category/basement-geology"^^xsd:anyURI ;
 .
 
 :basin-analysis
@@ -127,13 +127,13 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
     skos:broadMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370510> ;
     skos:broader :geology ;
     skos:definition "A geological method of studying sedimentary basins and their potential for energy/mineral commodities, by analysing the sediment fill itself (its composition, primary structures, and internal architecture) to synthesize the basin's geological history/evolution."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:basin-analysis> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/basin-analysis> ;
     skos:historyNote "Definition adapted from Wikipedia and the Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "basin analysis"@en ;
     schema:citation
         "https://en.wikipedia.org/wiki/Sedimentary_basin_analysis"^^xsd:anyURI ,
-        "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:basin-analysis"^^xsd:anyURI ;
+        "http://linked.data.gov.au/def/earth-science-data-category/basin-analysis"^^xsd:anyURI ;
 .
 
 :biogeochemistry
@@ -141,11 +141,11 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
     rdfs:isDefinedBy <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category> ;
     skos:broader :geochemistry ;
     skos:definition "A highly interdisciplinary field involving the integration of biology, geology and chemistry, and encompassing the study of the chemical, physical, geological and biological processes and reactions that govern the composition of the natural environment (including the biosphere, hydrosphere, atmosphere, pedosphere and the lithosphere)."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:biogeochemistry> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/biogeochemistry> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "biogeochemistry"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:biogeochemistry"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/biogeochemistry"^^xsd:anyURI ;
 .
 
 :biogeology
@@ -153,7 +153,7 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
     rdfs:isDefinedBy cs: ;
     skos:broader :geobiology ;
     skos:definition "The interdisciplinary study of biology and geology, embracing interactions between the Earth's biosphere and geosphere (i.e. lithosphere, hydrosphere, atmosphere and cryosphere). It encompasses the biological aspects of geology, e.g. systematic paleontology, the study of organically influenced sedimentation, or the identification of a concealed rock unit by the type of plant growing at the surface above it."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:biogeology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/biogeology> ;
     skos:historyNote """Definition adapted from:
 1) Glossary of geology (5th edition revised; Neuendorf et. al., 2011)
 2) Yin, H, Xie, S, Qing, J, Yan, J and Luo, G 2008, Discussion on geobiology, biogeology and geobiofacies: Sci. China Ser. D-Earth Sci., v. 51, p. 1516–1524, doi:10.1007/s11430-008-0120-6.""" ;
@@ -197,11 +197,11 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
     rdfs:isDefinedBy cs: ;
     skos:broader :geology ;
     skos:definition "Studies related to the identification of deep, subsurface geological sites that are suitable to act as reservoirs for the long-term storage of injected CO₂, to reduce greenhouse-gas emissions to the atmosphere."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:carbon-geostorage-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/carbon-geostorage-geology> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "carbon geostorage geology"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:carbon-geostorage-geology"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/carbon-geostorage-geology"^^xsd:anyURI ;
 .
 
 :cartography-and-digital-mapping
@@ -262,10 +262,10 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 :coal-geology
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:petroleum-and-coal-geology> ;
+    skos:broadMatch <http://linked.data.gov.au/def/earth-science-data-category/petroleum-and-coal-geology> ;
     skos:broader :energy-geoscience ;
     skos:definition "Coal geology includes the study of the sedimentation of coals and coal-bearing sequences; their stratigraphy, age and geographic distribution; their physical properties, including coal rank and quality, and the associated classification of coals; their hydrogeological characteristics; contained gases, and the contribution of coal deposits (amongst other rock types) to accumulations of oil and natural gas."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:coal-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/coal-geology> ;
     skos:historyNote """Definition adapted from:
 Thomas, L 2013, Coal Geology, Second Edition: John Wiley & Sons, Ltd, 444p., doi.10.1002/9781118385685.""" ;
     skos:inScheme cs: ;
@@ -329,11 +329,11 @@ Carlson, WD 2006, Three-dimensional imaging of earth and planetary materials: Ea
     rdfs:isDefinedBy cs: ;
     skos:broader :petroleum-geology ;
     skos:definition "The study of conventional (carbonate and clastic) petroleum systems that contain hydrocarbon accumulations and are defined as those where buoyant forces keep hydrocarbons in place below the sealing caprocks and permit petroleum (oil and/or natural gas) to flow readily from reservoirs into wellbores; i.e. are accessible by standard oilfield techniques and typically do not require advanced drilling, completions, and reservoir stimulation methods. Studies of conventional reservoir include assessment of rock properties, particularly porosity, permeability and compressibility, and of the timing and mechanism of trap formation, as petroleum source rocks, reservoir rocks, impermeable caprocks/seals must form in a favourable sequence to allow accumulation in reservoir rocks (following petroleum generation in source rocks and its ensuing migration therefrom)."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:conventional-reservoir-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/conventional-reservoir-geology> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "conventional reservoir geology"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:conventional-reservoir-geology"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/conventional-reservoir-geology"^^xsd:anyURI ;
 .
 
 :core-and-surface-sample-petrophysics
@@ -365,11 +365,11 @@ Carlson, WD 2006, Three-dimensional imaging of earth and planetary materials: Ea
     rdfs:isDefinedBy cs: ;
     skos:broader :spectral-imaging ;
     skos:definition "Spectral imaging (typically hyperspectral) of rock samples such as core."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:core-spectral> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/core-spectral> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "core spectral imaging"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:core-spectral"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/core-spectral"^^xsd:anyURI ;
 .
 
 :crystallography
@@ -478,13 +478,13 @@ Teodoriu, C and Opeyemi, B 2021, An outlook of drilling technologies and innovat
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :resources-engineering ;
-    skos:closeMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:drilling-engineering> ;
+    skos:closeMatch <http://linked.data.gov.au/def/earth-science-data-category/drilling-engineering> ;
     skos:definition "The science of designing as well as safely and economically making a hole (also called a well or wellbore) from the surface through a rock (or formation) to target potential energy or mineral resources in the subsurface and facilitate the evaluation of the geological intervals penetrated."@en ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia. Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "drilling engineering"@en ;
     schema:citation
-        "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:drilling-engineering"^^xsd:anyURI ,
+        "http://linked.data.gov.au/def/earth-science-data-category/drilling-engineering"^^xsd:anyURI ,
         "https://wiki.seg.org/wiki/Drilling_engineering"^^xsd:anyURI ;
 .
 
@@ -521,12 +521,12 @@ Teodoriu, C and Opeyemi, B 2021, An outlook of drilling technologies and innovat
     skos:definition "A branch of biology concerning interactions among organisms and their biophysical environment, which includes both biotic and abiotic components."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/3103> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:ecology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/ecology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:notation "3103"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:prefLabel "ecology"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:ecology"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/ecology"^^xsd:anyURI ;
 .
 
 :economic-analysis
@@ -545,7 +545,7 @@ Teodoriu, C and Opeyemi, B 2021, An outlook of drilling technologies and innovat
     rdfs:isDefinedBy cs: ;
     skos:broader :electrical-and-electromagnetic-methods-in-geophysics ;
     skos:definition "The use of geophysical methods to detect and image different electrical properties of the subsurface, by measuring naturally occurring (i.e. passive) or artificially introduced (i.e. active) voltage potentials, electrical currents, and/or electromagnetic fields. Subsurface electrical properties can be measured galvanically via direct electrode connection to the ground or inductively via electromagnetic field induction through the subsurface. The Electrical resistivity technique is used to determine the resistivity of subsurface materials, the Induced Polarization (IP) technique is used to measure the decay of voltage in the ground, and the Self-Potential (SP) technique looks for natural voltage sources underground."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:electrical-geophysics> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/electrical-geophysics> ;
     skos:historyNote "Definition adapted from United States Environmental Protection Agency." ;
     skos:inScheme cs: ;
     skos:prefLabel "electrical geophysics"@en ;
@@ -557,7 +557,7 @@ Teodoriu, C and Opeyemi, B 2021, An outlook of drilling technologies and innovat
     rdfs:isDefinedBy cs: ;
     skos:broader :electrical-and-electromagnetic-methods-in-geophysics ;
     skos:definition "The use of geophysical methods to detect and image the electrical properties of the subsurface by inducing electromagnetic (EM) energy within the subsurface (i.e. propagation of electromagnetic fields composed of an alternating electric intensity and magnetizing force) and measuring the response of earth materials."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:electromagnetic-geophysics> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/electromagnetic-geophysics> ;
     skos:historyNote "Definition adapted from United States Environmental Protection Agency." ;
     skos:inScheme cs: ;
     skos:notation "EM"^^xsd:token ;
@@ -607,7 +607,7 @@ Teodoriu, C and Opeyemi, B 2021, An outlook of drilling technologies and innovat
     skos:definition "A professional engineering discipline related to environmental science that encompasses broad scientific topics like chemistry, biology, ecology, geology, hydraulics, hydrology, microbiology, and mathematics to create solutions that will protect and also improve the health of living organisms and improve the quality of the environment."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/4011> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:environmental-engineering> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/environmental-engineering> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "4011"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -676,7 +676,7 @@ Moon, C 2021, Exploration Geochemistry, in Encyclopedia of Geology (Second Editi
     skos:definition "A planetary science discipline concerned with the geology of celestial bodies such as the planets and their moons, asteroids, comets, and meteorites, i.e. a science that applies principles and techniques of geology, geochemistry, and geophysics to the study of the nature, origin, and history of the condensed matter and gases in the solar system and beyond. It includes a) remote-sensing observations and in situ manned exploration of other planetary bodies, such as the Moon and Mars, Venus, Mercury, and 'earthlike' or 'rocky' satellite moons of the giant planets; b) the study of the chemistry, mineralogy (cosmic mineralogy), and history of objects that occur on the Earth but are of known or possible extraterrestrial origin (such as meteorites and tektites) or that are returned to the Earth (such as lunar samples); and c) the study of the effects of extraterrestrial processes (such as meteorite impact, solar energy changes, and tides) on the Earth in the present and past."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370507> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:extraterrestrial-geology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/extraterrestrial-geology> ;
     skos:historyNote "Adapted from the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et. al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "370507"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -691,11 +691,11 @@ Moon, C 2021, Exploration Geochemistry, in Encyclopedia of Geology (Second Editi
     rdfs:isDefinedBy <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category> ;
     skos:broader :geochemistry ;
     skos:definition "Analysis of the chemical and physical properties of fluids extracted from rocks and geological materials in the subsurface."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:fluid-extract-geochemistry> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/fluid-extract-geochemistry> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "fluid extract geochemistry"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:fluid-extract-geochemistry"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/fluid-extract-geochemistry"^^xsd:anyURI ;
 .
 
 :fluid-inclusion-geochemistry
@@ -758,7 +758,7 @@ Cowen, R 1979, Morphology, functional: in Paleontology, Encyclopedia of Earth Sc
     skos:altLabel "gemology"@en ;
     skos:broader :mineralogy-and-crystallography ;
     skos:definition "The science and study of natural and artificial gemstones, including their source, description, geology, origin, identification, grading and appraisal."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:gemmology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/gemmology> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:prefLabel "gemmology"@en ;
@@ -796,12 +796,12 @@ Wenk H-R and Bulakh A, 2004, Mineral genesis: in Minerals: Their Constitution an
     skos:definition "Geochemical data and information not otherwise described by other sub-categories of geochemistry."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370399> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geochemistry-not-elsewhere-classified> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geochemistry-not-elsewhere-classified> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:notation "370399"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:prefLabel "geochemistry not elsewhere classified"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geochemistry-not-elsewhere-classified"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/geochemistry-not-elsewhere-classified"^^xsd:anyURI ;
 .
 
 :geoconservation
@@ -822,7 +822,7 @@ Wenk H-R and Bulakh A, 2004, Mineral genesis: in Minerals: Their Constitution an
     skos:definition "A subfield of geophysics dealing with the forces and processes of the interior of the Earth. It applies physics, chemistry and mathematics to the understanding of how mantle convection leads to plate tectonics and geological phenomena such as seafloor spreading, mountain building, volcanoes, earthquakes, faulting and so on. It also attempts to probe the internal activities of the Earth by measuring magnetic fields, gravity, and seismic waves, as well as the mineralogy of rocks and their isotopic composition."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370604> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geodynamics> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geodynamics> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "370604"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -925,7 +925,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     skos:definition "Geological data and information not otherwise described by other sub-categories of geology."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370599> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geology-not-elsewhere-classified> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geology-not-elsewhere-classified> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020)." ;
     skos:inScheme cs: ;
     skos:notation "370599"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -970,13 +970,13 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/401902> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
-    skos:narrowMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geomechanics-and-resources-geotechnical-engineering> ;
+    skos:narrowMatch <http://linked.data.gov.au/def/earth-science-data-category/geomechanics-and-resources-geotechnical-engineering> ;
     skos:notation "401902"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:prefLabel "geomechanics and resources geotechnical engineering"@en ;
     schema:citation
         "https://en.wikipedia.org/wiki/Geomechanics"^^xsd:anyURI ,
         "https://glossary.americangeosciences.org/term/geomechanics"^^xsd:anyURI ,
-        "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geomechanics-and-resources-geotechnical-engineering"^^xsd:anyURI ;
+        "http://linked.data.gov.au/def/earth-science-data-category/geomechanics-and-resources-geotechnical-engineering"^^xsd:anyURI ;
 .
 
 :geometallurgy
@@ -997,7 +997,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
         "physical geology"@en ,
         "physiographic geology"@en ;
     skos:broader :physical-geography-and-environmental-geoscience ;
-    skos:closeMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geomorphology-and-regolith-and-landscape-evolution> ;
+    skos:closeMatch <http://linked.data.gov.au/def/earth-science-data-category/geomorphology-and-regolith-and-landscape-evolution> ;
     skos:definition "The scientific study of the general configuration of the Earth's surface, i.e. of the origin and evolution of topographic and bathymetric features created by physical, chemical or biological processes operating at or near the Earth's surface. Specifically studies dealing with the classification, description, nature, origin, processes, and development of present landforms and their relationships to underlying structures, and of the history of geological changes as recorded by these surface features. Geomorphology overlaps in meaning with physiography, with 'physiography' commonly regarded as a more descriptive and 'geomorphology' as a more interpretative study of landforms."@en ;
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370901> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
@@ -1015,7 +1015,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     rdfs:isDefinedBy cs: ;
     skos:broader :geophysics ;
     skos:definition "The study of fluid dynamics of naturally occurring flows, such as lava flows, oceans, and planetary atmospheres, on Earth and other planets."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geophysical-fluid-dynamics> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/geophysical-fluid-dynamics> ;
     skos:historyNote "Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "geophysical fluid dynamics"@en ;
@@ -1042,7 +1042,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     skos:definition "Geophysical data and information not otherwise described by other sub-categories of geophysics."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370699> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geophysics-not-elsewhere-classified> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geophysics-not-elsewhere-classified> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020)." ;
     skos:inScheme cs: ;
     skos:notation "370699"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -1102,12 +1102,12 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     rdfs:isDefinedBy cs: ;
     skos:broader :resources-engineering ;
     skos:definition "Engineering applied to the capture and storage of materials (commonly liquids and gases, and especially greenhouse gases) or energy (commonly gas or heat) in the subsurface of the Earth."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geostorage-engineering> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/geostorage-engineering> ;
     skos:historyNote "Definition adapted from University of New south Wales website and Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "geostorage engineering"@en ;
     schema:citation
-        "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geostorage-engineering"^^xsd:anyURI ,
+        "http://linked.data.gov.au/def/earth-science-data-category/geostorage-engineering"^^xsd:anyURI ,
         "https://www.unsw.edu.au/news/2021/07/geostorage--why-is-it-so-important-in-the-zero-carbon-world-"^^xsd:anyURI ;
 .
 
@@ -1128,7 +1128,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     rdfs:isDefinedBy cs: ;
     skos:broader :energy-geoscience ;
     skos:definition "The study of the accessible thermal energy stored within the Earth's crust, in order to access and extract it. It includes studies of related geological systems and the methods, materials and operations used in the production of energy."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geothermal-resource-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/geothermal-resource-geology> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "geothermal resource geology"@en ;
@@ -1168,7 +1168,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     skos:definition "The scientific discipline concerned with all aspects of ice and solid water on landmasses. It deals with the structure and properties of glaciers and ice sheets, their physical properties, formation and distribution, the dynamics of ice flow, and the interactions of ice accumulation with climate."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370902> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:glaciology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/glaciology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "370902"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -1193,7 +1193,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     rdfs:isDefinedBy cs: ;
     skos:broader :gravimetrics ;
     skos:definition "The study of variations (anomalies) in the Earth's gravity field via measurements of the spatial gradient of gravitational acceleration."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:gravity-gradiometry> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/gravity-gradiometry> ;
     skos:historyNote "Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "gravity gradiometry"@en ;
@@ -1289,7 +1289,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
         "paleogeology"@en ;
     skos:broader :geology ;
     skos:definition "The branch of geology concerned with the reconstruction and comprehension of the geological history of the Earth, i.e. the evolution of the Earth and its life forms from its origins to the present day. This discipline examines the vastness of geological time, measured in billions of years, and investigates changes in the Earth (gradual and sudden) over this deep time. It focuses on geological processes, such as plate tectonics, that have changed the Earth's surface and subsurface over time and the use of methods including stratigraphy, structural geology, paleontology, and sedimentology to tell the sequence of these events. It also focuses on the evolution of life during different time periods in the geologic time scale. Not to be confused with history of geology."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:historical-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/historical-geology> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "historical geology"@en ;
@@ -1303,7 +1303,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     rdfs:isDefinedBy cs: ;
     skos:broader :geology ;
     skos:definition "That branch of the history of science that documents the development of geological knowledge, including the history of observations of geological features, the history of theories to explain their origin, and the history of the organization and development of geological institutions and societies. The biographical study of geologists is included. Not to be confused with historical geology."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:history-of-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/history-of-geology> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:prefLabel "history of geology"@en ;
@@ -1316,13 +1316,13 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     skos:altLabel "water chemistry"@en ;
     skos:broader :geochemistry ;
     skos:definition "The chemistry of ground and surface waters, particularly the relationships between the chemical characteristics and quality of waters and the areal and regional geology. On a broader scale, the science that uses the tools and principles of chemistry to explain the mechanisms behind major geological systems such as the Earth's crust and its oceans."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:hydrogeochemistry> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/hydrogeochemistry> ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia. Definition adapted from Glossary of geology (5th edition, revised; Neuendorf et al., 2011) and Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "hydrogeochemistry"@en ;
     schema:citation
         "https://glossary.americangeosciences.org/term/hydrogeochemistry"^^xsd:anyURI ,
-        "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:hydrogeochemistry"^^xsd:anyURI ;
+        "http://linked.data.gov.au/def/earth-science-data-category/hydrogeochemistry"^^xsd:anyURI ;
 .
 
 :hydrogeology
@@ -1333,7 +1333,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
         "groundwater geology"@en ;
     skos:broader :physical-geography-and-environmental-geoscience ;
     skos:definition "The area of geology that deals with the distribution and movement of subsurface water (i.e. groundwater) in the soil and rocks of the Earth's crust, and with related geological aspects of surface waters."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:hydrogeology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/hydrogeology> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "hydrogeology"@en ;
@@ -1345,7 +1345,7 @@ Brocx, M and Semeniuk, V 2007, Geoheritage and geoconservation — history, defi
     rdfs:isDefinedBy cs: ;
     skos:broader :paleontology ;
     skos:definition "The study of the fossilized tracks, trails, burrows and excavations made by animals and more broadly the study of bioturbation, which is the reworking of sediment by animals. Ichnofossils or trace fossils are used to interpret paleoecological aspects of sedimentary environments."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:ichnology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/ichnology> ;
     skos:historyNote """Definition adapted from:
 Gingras, MK 2021, Ichnology, in Encyclopedia of Geology (Second Edition), edited by D Alderton and SA Elias: Academic Press, p. 669–680, doi.10.1016/B978-0-08-102908-4.00197-1.""" ;
     skos:inScheme cs: ;
@@ -1362,7 +1362,7 @@ Gingras, MK 2021, Ichnology, in Encyclopedia of Geology (Second Edition), edited
     rdfs:isDefinedBy cs: ;
     skos:broadMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370503> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:igneous-and-metamorphic-petrology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/igneous-and-metamorphic-petrology> ;
     skos:broader :petrology ;
     skos:definition "The branch of petrology that describes the composition, characteristics, textures, occurrence and origin of igneous rocks, i.e. those that are formed from magma. It relies heavily on the use of chemistry, chemical methods, and phase diagrams."@en ;
     skos:historyNote "Definition adapted from Wikipedia." ;
@@ -1407,12 +1407,12 @@ Gingras, MK 2021, Ichnology, in Encyclopedia of Geology (Second Edition), edited
     skos:definition "The broader field for the study of the chemistry of inorganic rocks, minerals, and other Earth materials that are not currently or once living."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370302> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:inorganic-geochemistry> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/inorganic-geochemistry> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:notation "370302"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:prefLabel "inorganic geochemistry"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:inorganic-geochemistry"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/inorganic-geochemistry"^^xsd:anyURI ;
 .
 
 :intangible-heritage
@@ -1437,7 +1437,7 @@ Gingras, MK 2021, Ichnology, in Encyclopedia of Geology (Second Edition), edited
         "invertebrate paleozoology"@en ;
     skos:broader :paleontology ;
     skos:definition "The branch of paleontology that studies the morphologic, taxonomic, systematic, stratigraphic, and biogeographic characteristics of organisms of the 'invertebrate' phyla, i.e. of those animals that lack notochords (non-vertebrates)."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:invertebrate-paleontology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/invertebrate-paleontology> ;
     skos:historyNote "Definition adapted from https://journals.ku.edu/InvertebratePaleo and https://www.floridamuseum.ufl.edu/invertpaleo/." ;
     skos:inScheme cs: ;
     skos:prefLabel "invertebrate paleontology"@en ;
@@ -1494,7 +1494,7 @@ Alexandre, P 2021, Lithogeochemistry, in Practical Geochemistry, Springer Textbo
     rdfs:isDefinedBy cs: ;
     skos:broader :geology ;
     skos:definition "A comprehensive study of the geological and geographical features of a subdivision of or area within a region (in this context defined as an area of land that has common natural features)."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:local-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/local-geology> ;
     skos:historyNote "Compiled by the Geological Survey of Western Australia" ;
     skos:inScheme cs: ;
     skos:prefLabel "local geology"@en ;
@@ -1521,7 +1521,7 @@ Alexandre, P 2021, Lithogeochemistry, in Practical Geochemistry, Springer Textbo
     skos:broadMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370607> ;
     skos:broader :magnetism-and-paleomagnetism ;
     skos:definition "The study of the Earth's magnetic field via non-invasive geophysical methods which measure perturbations in the Earth’s magnetic field caused by magnetic minerals in crustal rocks, specifically to image anomalies caused by source bodies within the subsurface."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:magnetics> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/magnetics> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:prefLabel "magnetics"@en ;
@@ -1546,7 +1546,7 @@ Alexandre, P 2021, Lithogeochemistry, in Practical Geochemistry, Springer Textbo
     rdfs:isDefinedBy cs: ;
     skos:broader :electrical-and-electromagnetic-methods-in-geophysics ;
     skos:definition "Magnetotellurics (MT) is a passive geophysical method used to infer the Earth's subsurface electrical resistivity/conductivity from measurements of natural variations of geomagnetic and geoelectric field at the Earth's surface, i.e. the use of natural electromagnetic signals to image subsurface electrical conductivity structure through electromagnetic induction."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:magnetotellurics> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/magnetotellurics> ;
     skos:historyNote """Definition adapted from:
 1) Wikipedia
 2) Unsworth, M 2007, Magnetotellurics, in Encyclopedia of Geomagnetism and Paleomagnetism, edited by D Gubbins and E Herrero-Bervera: Springer, Dordrecht, doi.10.1007/978-1-4020-4423-6_207.""" ;
@@ -1608,7 +1608,7 @@ Alexandre, P 2021, Lithogeochemistry, in Practical Geochemistry, Springer Textbo
     skos:altLabel "metamorphic history"@en ;
     skos:broadMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370503> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:igneous-and-metamorphic-petrology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/igneous-and-metamorphic-petrology> ;
     skos:broader :petrology ;
     skos:definition "The branch of petrology that describes the composition, characteristics, textures, occurrence and origin of metamorphic rocks, i.e. those derived from the transformation of existing rocks into new types. It relies heavily on the use of chemistry, chemical methods, and phase diagrams."@en ;
     skos:historyNote "Definition adapted from Wikipedia." ;
@@ -1697,7 +1697,7 @@ Schweitzer, MH 2004, Molecular paleontology: some current advances and problems:
     skos:definition "The study of natural phenomena that might have a negative effect on humans or the environment, specifically hazards encompassing geological and meteorological phenomena such as earthquakes, volcanic eruptions, wildfires, cyclonic storms, floods, droughts, avalanches and landslides, as well as phenomena such as natural radioactivity."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370903> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:natural-hazards> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/natural-hazards> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "370903"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -1792,14 +1792,14 @@ Castroviejo, R 2023, A practical guide to ore microscopy—Volume 1: mineral ide
     rdfs:isDefinedBy cs: ;
     skos:broader :petrology ;
     skos:definition "Organic petrology involves the study of organic matter (OM) in rocks, including its origin and thermal maturity due to burial within the Earth's crust."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:organic-petrology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/organic-petrology> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:notation ""^^xsd:token ;
     skos:prefLabel "organic petrology"@en ;
     schema:citation
         "https://research.csiro.au/oilandgas/wp-content/uploads/sites/49/2015/10/Organic-Petrology-2015.pdf"^^xsd:anyURI ,
-        "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:organic-petrology"^^xsd:anyURI ;
+        "http://linked.data.gov.au/def/earth-science-data-category/organic-petrology"^^xsd:anyURI ;
 .
 
 :paleobiogeography
@@ -1820,7 +1820,7 @@ Castroviejo, R 2023, A practical guide to ore microscopy—Volume 1: mineral ide
     skos:altLabel "palaeobotany"@en ;
     skos:broader :paleontology ;
     skos:definition "The branch of paleontology that studies the morphologic, taxonomic, systematic, stratigraphic, and biogeographic characteristics of plants, fungi and algae from geological contexts, and their use for the biological reconstruction of past environments (paleogeography), as well as the evolutionary history of plants and allied kingdoms, with a bearing upon the evolution of life in general. These fossils can be impressions or compressions of the plants left on the rock's surface, or 'petrified' objects, such as wood, which preserve the original plant material in rocklike form."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:paleobotany> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/paleobotany> ;
     skos:historyNote "Compiled by Geological Survey of Western Australia from multiple sources." ;
     skos:inScheme cs: ;
     skos:prefLabel "paleobotany"@en ;
@@ -1892,7 +1892,7 @@ Holliday, VT and Mandel, RD 2024, Paleoenvironmental Reconstruction, in Encyclop
     rdfs:isDefinedBy cs: ;
     skos:broader :micropaleontology ;
     skos:definition "Originally, the study of pollen and spores, extant and fossil (paleopalynology), including stratigraphic and paleoecological applications. Now includes the study of a wide range of other robust-walled, acid-insoluble microscopic remains of various plants, animals, fungal spores and protists, including kerogen and unidentifiable organic matter."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:palynology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/palynology> ;
     skos:historyNote """Definition adapted from:
 Traverse, A 2008, Paleopalynology: Springer, Dordrecht, The Netherlands, 813p.""" ;
     skos:inScheme cs: ;
@@ -1905,7 +1905,7 @@ Traverse, A 2008, Paleopalynology: Springer, Dordrecht, The Netherlands, 813p.""
     rdfs:isDefinedBy cs: ;
     skos:broader :seismic-surveys ;
     skos:definition "The detection of natural low frequency earth movements, commonly with the purpose of discerning geological structures and locating underground oil, gas, or other resources."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:passive-seismic> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/passive-seismic> ;
     skos:historyNote "Definition adapted from Wikipedia and Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:prefLabel "passive seismic"@en ;
@@ -1936,7 +1936,7 @@ Traverse, A 2008, Paleopalynology: Springer, Dordrecht, The Netherlands, 813p.""
     skos:definition "The fields of engineering concerned with activities related to the production of hydrocarbons to determine the way in which a reservoir is developed and depleted, i.e. the study and application of scientific and engineering principles to the fluid flow through a porous medium during the development and production of oil and gas reservoirs so as to obtain a high economic recovery."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/401907> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:reservoir-engineering> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/reservoir-engineering> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "401907"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -1976,7 +1976,7 @@ Traverse, A 2008, Paleopalynology: Springer, Dordrecht, The Netherlands, 813p.""
     skos:definition "Physical geographical and environmental science data and information not otherwise described by other sub-categories of physical geography."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370999> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:physical-geography-and-environmental-geoscience-not-elsewhere-classified> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/physical-geography-and-environmental-geoscience-not-elsewhere-classified> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "370999"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -2046,7 +2046,7 @@ Keulen, N, Malkki, SN and Graham, S 2020, Automated Quantitative Mineralogy Appl
         "industrial minerals geology"@en ;
     skos:broader :resource-geoscience ;
     skos:definition "The study of industrial mineral resources, i.e. geological materials that are mined/quarried for their commercial value and are not fuel (fuel minerals or mineral fuels) or sources of metals (metallic minerals) but are used in their natural state or after beneficiation either as raw materials or as additives in a wide range of applications based on their physical and/or chemical properties. These studies include the quantification of the physical properties, chemical properties, volumes, and limitations to development of quarry products. Quarry resources (also referred to as basic raw materials or industrial minerals) include, but may not be limited to, sand (including silica sand), clay, hard rock (including dimension stone), limestone (including metallurgical limestone), agricultural lime, gravel, gypsum, other construction and road building materials and materials which may substitute these raw materials."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:quarry-resource-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/quarry-resource-geology> ;
     skos:historyNote "Compiled by Geological Survey of western Australia." ;
     skos:inScheme cs: ;
     skos:prefLabel "quarry and extractive resource geology"@en ;
@@ -2062,7 +2062,7 @@ Keulen, N, Malkki, SN and Graham, S 2020, Automated Quantitative Mineralogy Appl
     skos:definition "The branch of geology that study environmental changes from 2.58 million years ago to the present. In particular, Quaternary geology study the process and deposits that developed during the Quaternary, a period characterized by glacial–interglacial cycles."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370905> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:quaternary-environments> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/quaternary-environments> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "370905"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -2119,7 +2119,7 @@ Banner, YL 2004, Radiogenic isotopes: systematics and applications to earth surf
     skos:altLabel "gamma-ray spectrometry"@en ;
     skos:broadMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370605> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geothermics-and-radiometrics> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geothermics-and-radiometrics> ;
     skos:broader :geothermics-and-radiometrics ;
     skos:definition "The radiometric, or gamma-ray spectrometric method is a geophysical process used to estimate concentrations of the radioelements potassium, uranium and thorium in the near surface."@en ;
     skos:historyNote "Definition adapted from Geoscience Australia website." ;
@@ -2133,7 +2133,7 @@ Banner, YL 2004, Radiogenic isotopes: systematics and applications to earth surf
     rdfs:isDefinedBy cs: ;
     skos:broader :geology ;
     skos:definition "The geological study of large-scale regions, providing a link between global and local geology, and a framework for site-specific studies."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:regional-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/regional-geology> ;
     skos:historyNote """Definition adapted from: 
 Roberts, DG and Bally, AW (Eds), 2012, Regional Geology and Tectonics: Phanerozoic Rift Systems and Sedimentary Basins: Elsevier, 528p., doi.10.1016/B978-0-444-56356-9.00019-5.""" ;
     skos:inScheme cs: ;
@@ -2159,7 +2159,7 @@ Roberts, DG and Bally, AW (Eds), 2012, Regional Geology and Tectonics: Phanerozo
         "surface geology"@en ,
         "surficial geology"@en ;
     skos:broader :physical-geography-and-environmental-geoscience ;
-    skos:closeMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:surface-geology> ;
+    skos:closeMatch <http://linked.data.gov.au/def/earth-science-data-category/surface-geology> ;
     skos:definition "The study of the geology of surficial deposits, i.e. those at or near the Earth's surface. It includes the study of soils and unconsolidated sediments, their geological features and structures, and their relationships to the underlying bedrock."@en ;
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370906> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
@@ -2213,7 +2213,7 @@ Roberts, DG and Bally, AW (Eds), 2012, Regional Geology and Tectonics: Phanerozo
     skos:altLabel "geomechanics"@en ;
     skos:broadMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370608> ;
     skos:broader :petrophysics-and-rock-mechanics ;
-    skos:closeMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geomechanics-and-resources-geotechnical-engineering> ;
+    skos:closeMatch <http://linked.data.gov.au/def/earth-science-data-category/geomechanics-and-resources-geotechnical-engineering> ;
     skos:definition "A theoretical and applied science of the physical behaviour of rocks and rock masses. In relation to geology, it is the branch of mechanics concerned with the response of rock and rock masses to the force fields of their physical environment."@en ;
     skos:historyNote "Compiled by Geological Survey of Western Australia from multiple sources." ;
     skos:inScheme cs: ;
@@ -2244,7 +2244,7 @@ Roberts, DG and Bally, AW (Eds), 2012, Regional Geology and Tectonics: Phanerozo
     rdfs:isDefinedBy cs: ;
     skos:broader :spectral-imaging ;
     skos:definition "Remotely sensed spectral imaging obtained from a platform in orbit outside the atmosphere of Earth."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:satellite-spectral> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/satellite-spectral> ;
     skos:historyNote "Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:prefLabel "satellite spectral imaging"@en ;
@@ -2270,7 +2270,7 @@ Daniel, RF and Kaldi, G 2008, Evaluating seal capacity of caprocks and intraform
     rdfs:isDefinedBy cs: ;
     skos:broader :petrology ;
     skos:definition "The study of the composition, characteristics, occurrence, and origin of sediments and sedimentary rocks."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:sedimentary-petrology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/sedimentary-petrology> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:notation ""^^xsd:token ;
@@ -2285,7 +2285,7 @@ Daniel, RF and Kaldi, G 2008, Evaluating seal capacity of caprocks and intraform
     skos:definition "The scientific study of sedimentary rocks and of the processes by which they were formed; the description, classification, origin, and interpretation of sediments."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370509> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:sedimentology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/sedimentology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf, 2011)." ;
     skos:inScheme cs: ;
     skos:notation "370509"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -2374,7 +2374,7 @@ Daniel, RF and Kaldi, G 2008, Evaluating seal capacity of caprocks and intraform
     skos:broadMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370511> ;
     skos:broader :structural-geology-and-tectonics ;
     skos:definition "The branch of geology that deals with the form (geometry), spatial arrangement, and internal structure of the rocks, and especially with the description, representation, and analysis of structures (e.g. bedding, folds, faults and fractures), chiefly on a meso- to macroscopic scale. The subject is similar to tectonics, but the latter is generally used for the broader regional or historical phases."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:structural-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/structural-geology> ;
     skos:historyNote "Definition adapted from Glossary of geology (5th edition revised; Neuendorf, 2011) and Schlumberger Oilfield Glossary." ;
     skos:inScheme cs: ;
     skos:prefLabel "structural geology"@en ;
@@ -2402,7 +2402,7 @@ National Research Council, 2010, 1 The Importance of Earth Surface Processes, La
     skos:definition "The subfield of hydrology concerned with above-earth water, in contrast to groundwater hydrology that deals with water below the surface of the Earth. Its applications include rainfall and runoff, the routes that surface water takes (for example through rivers or reservoirs), and the occurrence of floods and droughts."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370704> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:surfacewater-hydrology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/surfacewater-hydrology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "370704"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -2418,7 +2418,7 @@ National Research Council, 2010, 1 The Importance of Earth Surface Processes, La
     skos:broadMatch <https://linked.data.gov.au/def/anzsrc-for/2020/401306> ;
     skos:broader :geomatic-engineering ;
     skos:definition "The applied science of determining the two-dimensional or three-dimensional positions of points necessary to determine the area of any part of the Earth's (or other planetary body) surface, the lengths and directions of the boundary lines, and the contour of the surface, and of accurately delineating the whole on paper/digitally."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:surveying> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/surveying> ;
     skos:historyNote "Adapted from the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "401306"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -2485,11 +2485,11 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     rdfs:isDefinedBy cs: ;
     skos:broader :petroleum-geology ;
     skos:definition "The geological study of unconventional petroleum systems, which comprise formations with tight gas, tight oil, oil sands, oil shale, bitumen, gas shales, coal seam gas/coalbed methane, and gas hydrates, and are defined as those where petroleum is distributed throughout the reservoir at basin-wide scale and in which buoyant forces or the influence of a water column on the location of hydrocarbons in the reservoir are not significant."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:unconventional-reservoir-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/unconventional-reservoir-geology> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "unconventional reservoir geology"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:unconventional-reservoir-geology"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/unconventional-reservoir-geology"^^xsd:anyURI ;
 .
 
 :urban-geology
@@ -2542,7 +2542,7 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     skos:definition "The branch of geology that deals with volcanism (e.g. volcanoes, lava, magma), its causes and related geological, geophysical and geochemical phenomena."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370512> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:volcanology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/volcanology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:notation "370512"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -2579,13 +2579,13 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     skos:definition "The study of the Earth's atmosphere and its various inner-working physical processes."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/3701> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:atmospheric-sciences> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/atmospheric-sciences> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020); definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:narrower :climate-change-science ;
     skos:notation "3701"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:prefLabel "atmospheric sciences"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:atmospheric-sciences"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/atmospheric-sciences"^^xsd:anyURI ;
 .
 
 :biological-sciences
@@ -2594,14 +2594,14 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     skos:definition "The natural science that studies life and living organisms, including their physical structure, chemical processes, molecular interactions, physiological mechanisms, development and evolution."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/31> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:biological-sciences> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/biological-sciences> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:narrower :ecology ;
     skos:notation "31"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:prefLabel "biological sciences"@en ;
     skos:topConceptOf cs: ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:biological-sciences"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/biological-sciences"^^xsd:anyURI ;
 .
 
 :biostratigraphy
@@ -2626,7 +2626,7 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     skos:definition "Built environment refers to human-made conditions and physical features, and is commonly used in architecture, landscape architecture, urban and regional planning, public health, sociology, and anthropology, among others. These curated spaces provide the setting for human activity and were created to fulfill human desires and needs. The term can refer to a plethora of components including the traditionally associated buildings, cities, public infrastructure, transportation, open space, as well as more conceptual components like farmlands, dammed rivers, wildlife management, and even domesticated animals. Studies of the built environment often highlight the connection between physical space and social consequences. It impacts the environment and how society physically manoeuvers and functions, as well as less tangible aspects of society such as socioeconomic inequity and health."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/33> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:built-environment-and-design> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/built-environment-and-design> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower :urban-and-regional-planning ;
@@ -2750,7 +2750,7 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     skos:definition "The measure of changes in gravity due to variations in the density of the rocks to remotely map the distribution of different rock types and the structure of rocks in the Earth's subsurface."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370606> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:gravity> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/gravity> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:narrower :gravity-gradiometry ;
@@ -2783,7 +2783,7 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     skos:definition "The study of the history and structure of the ocean floor. It involves geophysical, geochemical, sedimentological and paleontological investigations of the ocean floor and coastal zone."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370504> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:marine-geoscience> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/marine-geoscience> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower :oceanography ;
@@ -2797,7 +2797,7 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     rdfs:isDefinedBy cs: ;
     skos:broader :paleontology ;
     skos:definition "The systematic study of microfossils (i.e. fossils too small to be observed without the aid of a microscope), their morphology, classification, and environmental and biostratigraphic significance. Microfossils can represent the remains, or partial remains, of a wide range of organism kingdoms and phyla, but palynomorphs are generally excluded."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:micropaleontology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/micropaleontology> ;
     skos:historyNote """Definition adapted from:
 Saraswati, PK and Srinivasan, MS 2015, Micropaleontology: principles and applications: Springer Cham, 224p., doi.10.1007/978-3-319-14574-7.""" ;
     skos:inScheme cs: ;
@@ -2831,7 +2831,7 @@ Saraswati, PK and Srinivasan, MS 2015, Micropaleontology: principles and applica
     skos:definition "The study of climates prior to the period of instrumental records, and of the causes of their variation, on either a local, regional or worldwide basis. It uses a variety of proxy methods from the Earth and life sciences to obtain data preserved within rocks, sediments, ice sheets, tree rings, corals, shells, and microfossils to determine the past states of the Earth's various climate regions and its atmospheric system."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370904> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:paleoclimatology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/paleoclimatology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower :paleoenvironmental-reconstruction ;
@@ -2863,7 +2863,7 @@ Saraswati, PK and Srinivasan, MS 2015, Micropaleontology: principles and applica
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/401304> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
-    skos:narrowMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:remote-sensing> ;
+    skos:narrowMatch <http://linked.data.gov.au/def/earth-science-data-category/remote-sensing> ;
     skos:narrower :spectral-imaging ;
     skos:notation "401304"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:prefLabel "photogrammetry and remote sensing"@en ;
@@ -2907,7 +2907,7 @@ Saraswati, PK and Srinivasan, MS 2015, Micropaleontology: principles and applica
     skos:definition "The scientific study of earthquakes and the propagation of elastic waves both natural and artificially generated through the Earth or through other planetary bodies. The field also includes studies of earthquake environmental effects such as tsunamis as well as diverse seismic sources such as volcanic, tectonic, oceanic, atmospheric, and artificial processes such as explosions. Seismic exploration is a method of exploration geophysics that uses the principles of seismology to estimate the properties of the Earth's subsurface from artificially generated seismic waves."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370609> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:seismology-and-seismic-exploration> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/seismology-and-seismic-exploration> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia and Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:narrower :seismic-surveys ;
@@ -2952,7 +2952,7 @@ Saraswati, PK and Srinivasan, MS 2015, Micropaleontology: principles and applica
     skos:definition "Urban planning, also known as town planning, city planning, regional planning, or rural planning in specific contexts, is a technical and political process that is focused on the development and design of land use and the built environment, including air, water, and the infrastructure passing into and out of urban areas, such as transportation, communications, and distribution networks, and their accessibility. Traditionally, urban planning followed a top-down approach in master planning the physical layout of human settlements, with a primary focus on public welfare (i.e. considerations of efficiency, sanitation, protection and use of the environment) as well as effects of the master plans on the social and economic activities. Over time, urban planning's focus has shifted to social and environmental factors to be a tool to improve the health and well-being of people while maintaining sustainability standards."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/3304> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:urban-and-regional-planning> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/urban-and-regional-planning> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower :land-use-and-environmental-planning ;
@@ -3070,7 +3070,7 @@ Ferrini, V, Carbotte, S, Ryan, W and Chan, S 2013, Geoscience data visualization
     skos:definition "The determination of the relative and absolute concentrations of the elements and their isotopes in the Earth and on Earth's surface."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370303> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:isotope-geochemistry> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/isotope-geochemistry> ;
     skos:historyNote """From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from:
 Kendall, C and Caldwell, EA 1998, Chapter 2: Fundamentals of Isotope Geochemistry, in Isotope Tracers in Catchment Hydrology, edited by C Kendall and JJ McDonnell: Amsterdam, Elsevier Science, p. 51–86.""" ;
     skos:inScheme cs: ;
@@ -3089,7 +3089,7 @@ Kendall, C and Caldwell, EA 1998, Chapter 2: Fundamentals of Isotope Geochemistr
     skos:definition "Land-use and environmental planning involves the regulation and commitment of land-use, as to how the landscape is used (whether for food production, forestry, nature conservation, water storage, urban development, mining, etc.), to ensure the most efficient, effective and beneficial management and utilization of resources, and to provide optimal environmental and social outcomes."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/330404> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:land-use-and-environmental-planning> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/land-use-and-environmental-planning> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3097,7 +3097,7 @@ Kendall, C and Caldwell, EA 1998, Chapter 2: Fundamentals of Isotope Geochemistr
         :geotourism ;
     skos:notation "330404"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     skos:prefLabel "land use and environmental planning"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:land-use-and-environmental-planning"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/land-use-and-environmental-planning"^^xsd:anyURI ;
 .
 
 :logging
@@ -3156,7 +3156,7 @@ Kendall, C and Caldwell, EA 1998, Chapter 2: Fundamentals of Isotope Geochemistr
     skos:definition "The study of the role of processes and compounds that are derived from living or once-living organisms, i.e. the study of the transformation undergone by organic matter of all types, whether of biological or man-made origin, in the Earth System. The transformations involved vary from those mediated by biological processes involved in the production of living tissue and the operation of food-chains, to those controlled by temperature and pressure at depth in the crust. Photochemical processes in the atmosphere and hydrosphere can also be important in controlling the environmental behaviour of some organic compounds."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370304> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:organic-geochemistry> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/organic-geochemistry> ;
     skos:historyNote """From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from: 
 Killops, SD and Killops, VJ 2013, Introduction to Organic Geochemistry: John Wiley & Sons, 408p.""" ;
     skos:inScheme cs: ;
@@ -3171,10 +3171,10 @@ Killops, SD and Killops, VJ 2013, Introduction to Organic Geochemistry: John Wil
 :petroleum-geology
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:petroleum-and-coal-geology> ;
+    skos:broadMatch <http://linked.data.gov.au/def/earth-science-data-category/petroleum-and-coal-geology> ;
     skos:broader :energy-geoscience ;
     skos:definition "Study of the mode of origin and conditions of accumulation of hydrocarbons in the Earth's crust; their exploration, involving application of the techniques of geophysics, geochemistry, paleontology, stratigraphy, and tectonics; and their evaluation. It includes the assessment of petroleum systems and their composite parts: source, migration pathways, reservoir, seal, and method of entrapment."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:petroleum-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/petroleum-geology> ;
     skos:historyNote """Definition adapted from:
 Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University Press, doi.10.1093/acref/9780199211944.001.00010.""" ;
     skos:inScheme cs: ;
@@ -3191,7 +3191,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:broadMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370608> ;
     skos:broader :petrophysics-and-rock-mechanics ;
     skos:definition "The study of the physical and chemical properties of rocks in relation to their interaction with fluids. A major application of petrophysics is in studying reservoirs for the hydrocarbon industry (especially the distribution of the pore system and its contained hydrocarbons and water)."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:petrophysics> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/petrophysics> ;
     skos:historyNote "Compiled by Geological Survey of Western Australia from multiple sources." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3227,14 +3227,14 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:altLabel "seismic surveying"@en ;
     skos:broader :seismology-and-seismic-exploration ;
     skos:definition "The science of the acquisition, processing, and analysis of seismic datasets measured and recorded with reference to a particular area of the Earth's surface, to evaluate the subsurface."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:seismic-surveys> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/seismic-surveys> ;
     skos:historyNote "Definition from Geological Survey of Queensland Earth science data category vocabulary." ;
     skos:inScheme cs: ;
     skos:narrower
         :active-seismic ,
         :passive-seismic ;
     skos:prefLabel "seismic surveys"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:seismic-surveys"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/earth-science-data-category/seismic-surveys"^^xsd:anyURI ;
 .
 
 :stakeholder-engagement
@@ -3292,7 +3292,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     rdfs:isDefinedBy cs: ;
     skos:broader :geophysics ;
     skos:definition "Geophysical methods that involve the use of electrical and electromagnetic fields to study the subsurface properties of the Earth. These methods exploit the interaction between electromagnetic waves and the electrical conductivity, permittivity, and magnetic susceptibility of subsurface materials."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:electrical-and-electromagnetic-methods-in-geophysics> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/electrical-and-electromagnetic-methods-in-geophysics> ;
     skos:historyNote "Definition adapted from https://geologyscience.com/geology-branches/." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3329,7 +3329,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "An interdisciplinary academic field that integrates physical, biological and information sciences to the study of the environment, and the solution of environmental problems. It specifically addresses: (1) social and political decision making and policy setting relative to the environment or environmental ethics, (2) the planning and management of natural and human resources with an emphasis on the social and political aspects, and (3) legal and regulatory aspects of environmental protection activities carried out by the government under its powers."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/41> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:environmental-sciences> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/environmental-sciences> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3363,7 +3363,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
 :mineralogy-and-crystallography
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;
-    skos:broadMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:mineralogy-and-crystallography> ;
+    skos:broadMatch <http://linked.data.gov.au/def/earth-science-data-category/mineralogy-and-crystallography> ;
     skos:broader :geology ;
     skos:definition "The scientific study of the chemistry, crystal structure, and physical properties of minerals and mineralized artifacts."@en ;
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370505> ;
@@ -3407,7 +3407,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "Information and computing (or computer) science (ICS) or computer and information science (CIS) (or sciences) is a field that emphasizes both computing and informatics, upholding the strong association between the fields of information sciences and computer sciences and treating computers as a tool rather than a field. Information science is primarily concerned with gathering, storing, disseminating, sharing and protecting any and all forms of information — it is a broad field, covering a myriad of different areas but is often referenced alongside computer science because of the incredibly useful nature of computers and computer programs in helping those studying and doing research in the field, particularly in helping to analyse data and in spotting patterns too broad for a human to intuitively perceive."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/46> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:information-and-computing-sciences> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/information-and-computing-sciences> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3430,7 +3430,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:broadMatch <https://linked.data.gov.au/def/anzsrc-for/2020/4019> ;
     skos:broader :engineering ;
     skos:definition "Engineering that applies various branches of science in order to create new technology that aims to protect, maintain, extract, and establish sustainable natural resources."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:resources-engineering> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/resources-engineering> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3449,7 +3449,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:altLabel "spectroscopy"@en ;
     skos:broader :photogrammetry-and-remote-sensing ;
     skos:definition "The use of multiple bands across the electromagnetic spectrum to create a dataset that contains many images of the same object, where each one of them is measured at a different wavelength. It includes multispectral imaging that typically captures three to fifteen spectral bands, and hyperspectral imaging that combines spectroscopy and digital photography to capture hundreds of wavelength bands."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:spectral-imaging> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/spectral-imaging> ;
     skos:historyNote """Definition adapted from:
 1) Glossary of geology (5th edition revised; Neuendorf et al., 2011)
 2) Wikipedia
@@ -3473,7 +3473,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     rdfs:isDefinedBy cs: ;
     skos:broader :resource-geoscience ;
     skos:definition "The study of concentrations of inorganic, naturally occurring, typically solid, typically non-renewable materials that are of intrinsic economic interest in or on the Earth's crust in such form, quality and quantity that there are reasonable prospects for eventual economic extraction. It includes the study of mineral systems, i.e. the combination of geological processes that are required to form and preserve an ore deposit. Also included is the characterization of orebodies (e.g. quantification of physical properties and chemical properties, and delineation of volumes, grades and geometry), and of limitations to the development and exploitation of mineral occurrences."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:mineral-resource-geology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/mineral-resource-geology> ;
     skos:historyNote "Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3517,7 +3517,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "The study of fuels, metals and other materials of economic interest; it is concerned with the distribution, value and availability of resources, and the cost and benefits of their recovery."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370508> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:resource-geology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/resource-geology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from www.encyclopedia.com." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3539,7 +3539,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "An all-embracing term for all fields of natural sciences related to the planet Earth. It is occasionally used as a synonym for geology or geological sciences, but this usage is misleading because in its wider scope earth science may be considered to include such subjects as meteorology, physical oceanography, soil chemistry, and agronomy."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/37> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:earth-sciences> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/earth-sciences> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition, revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3582,7 +3582,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "The study of the history, composition, relative ages and distribution of strata, and the interpretation of strata to elucidate Earth's history. The comparison, or correlation, of separated strata can include study of their form, distribution, lithology, fossil content, geophysical and geochemical properties, relative or numerical/absolute age, and their interpretation in terms of environment or mode of origin, and geological history."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370510> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:stratigraphy> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/stratigraphy> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Schlumberger Oilfield Glossary and Glossary of geology (5th edition revised; Neuendorf, 2011)." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3607,7 +3607,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "The science of dating and determining the time sequence of events in the history of the Earth, i.e. the study of the relative or numerical/absolute age of rocks, minerals and fossils. Numerical age is the measurement of age in years ('numerical' is preferred to 'absolute' ages, as the latter typically have some amount of error and are inexact) whereas relative age, in contrast, is the approximate age of rocks, fossils or minerals made by determining the age of the material relative to the age of and relationships with other surrounding material."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370502> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geochronology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geochronology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et. al., 2011) and Schlumberger Oilfield Glossary." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3634,7 +3634,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "A professional engineering discipline that focuses on spatial information (i.e. information that has a location) to design, develop, and operate systems for collecting and analysing spatial information about the land, the oceans, natural resources, and man-made features."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/4013> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geomatic-engineering> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geomatic-engineering> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3657,7 +3657,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:broadMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370503> ;
     skos:broader :geology ;
     skos:definition "That branch of geology dealing with the origin, occurrence, structure, and history of rocks, including the conditions under which they form. Petrology is broader in scope than petrography."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:petrology> ;
+    skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/petrology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3709,7 +3709,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/3709> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
-    skos:narrowMatch <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:physical-geography> ;
+    skos:narrowMatch <http://linked.data.gov.au/def/earth-science-data-category/physical-geography> ;
     skos:narrower
         :geomorphology-and-earth-surface-processes ,
         :glaciology ,
@@ -3735,7 +3735,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "The study of the distribution and amounts of the chemical elements in minerals, ores, rocks, soils, water, the atmosphere on Earth and within solid bodies of the solar system, including the distribution, circulation and abundance of elements (and their ions and isotopes), molecules, minerals, rocks and fluids."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/3703> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geochemistry> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geochemistry> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition, revised; Neuendorf et al., 2011)." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3765,7 +3765,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "A natural science concerned with the physical processes and physical properties of the Earth and its surrounding space environment, and the use of quantitative methods for their analysis. It includes several disciplines focusing on the study of the Earth's electrical, gravitational and magnetic fields and the propagation of elastic (seismic) waves within it."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/3706> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geophysics> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geophysics> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (5th edition revised; Neuendorf et al., 2011) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3800,7 +3800,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "The scientific study of life in the geological past through the analysis of fossils, including those of microscopic size, and of traces representing preserved behaviour, preserved in rocks. It is concerned with all aspects of the biology of ancient life forms: their shape and structure, evolutionary patterns, taxonomic relationships with each other and with modern living species, geographic distribution, and interrelationships with the environment."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370506> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:paleontology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/paleontology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from https://www.britannica.com/science/paleontology." ;
     skos:inScheme cs: ;
     skos:narrower
@@ -3831,7 +3831,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
     skos:definition "An Earth science concerned with the planet Earth and the rocks/materials of which it is made, the processes that act on these materials and by which these change over time, the products formed, to understand the history of the planet and its life forms since its origin, and including the study of physical forces that act on the Earth, the chemistry of its constituent materials, and the biology of its past inhabitants as revealed by fossils. Geology can also include the study of the solid features of any terrestrial planet or natural satellite such as Mars or the Moon. Modern geology significantly overlaps all other earth sciences, including hydrology and the atmospheric sciences, and so is treated as one major aspect of integrated Earth system science and planetary science."@en ;
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/3705> ,
-        <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category/rth-scnc-dt-ctgry:geology> ;
+        <http://linked.data.gov.au/def/earth-science-data-category/geology> ;
     skos:historyNote "From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from Glossary of geology (Neuendorf et. al., 2011, 5th edition revised) and Wikipedia." ;
     skos:inScheme cs: ;
     skos:narrower
