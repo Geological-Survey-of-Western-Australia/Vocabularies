@@ -121,8 +121,8 @@ cs:
         :unknown ,
         :weak ;
     skos:historyNote """Derived from GSWA's WAROX database's table [GEOLOGY].[Warox_REF].[Intensity]. Definitions compiled from:
-1) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
-2) Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p."""@en ;
+1) Pirajno, F 2009, Hydrothermal processes and mineral systems: Springer-Verlag, 1250p.
+2) Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p."""@en ;
     skos:prefLabel "Alteration intensity"@en ;
     prov:qualifiedAttribution
         [

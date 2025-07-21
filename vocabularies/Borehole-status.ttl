@@ -41,7 +41,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :planning-and-approval ;
     skos:definition "Drilling of a borehole has been approved by the relevant authorities, whether within a resource company, a government regulatory agency (e.g. as part of government-supported exploration drilling initiatives or for research purposes), indigenous representative groups, a research organisation, or as part of geotechnical investigations and/or infrastructure programs. Drilling has not yet commenced."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/borehole-status/approved> ;
-    skos:historyNote "Definition adapted from DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
+    skos:historyNote "Definition adapted from DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
     skos:inScheme cs: ;
     skos:prefLabel "approved"@en ;
     schema:citation "https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance.pdf"^^xsd:anyURI ;
@@ -56,7 +56,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :operational-suspended ;
     skos:definition "A borehole where a cap (usually a PVC cap secured with a screw) or a plug have been put temporarily in place during interim rehabilitation or to allow for the possibility of re-entering the hole (e.g. during a pause in operations and/or maintenance), e.g. to prevent fauna from falling into the hole. A permanent rehabilitation should follow at the completion of the operations."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/borehole-status/capped> ;
-    skos:historyNote "Mineral industry concept; definition adapted from DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023) (https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance (v. 1, December 2023).pdf)." ;
+    skos:historyNote "Mineral industry concept; definition adapted from DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023) (https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance (v. 1, December 2023).pdf)." ;
     skos:inScheme cs: ;
     skos:prefLabel "capped"@en ;
     schema:citation "https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance.pdf"^^xsd:anyURI ;
@@ -196,9 +196,9 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
         "drillhole"@en ,
         "mounded"@en ;
     skos:broader :plugged ;
-    skos:definition "A borehole that has been securely plugged below ground, with the remaining void backfilled to the surface with low permeability material, and with a mound of low permeability material (approximately 250 mm high by 800 mm wide and up to 2 m for large diameter drillholes) covered with topsoil to facilitate water shedding away from the drillhole and prevent subsidence."@en ;
+    skos:definition "A borehole that has been securely plugged below ground, with the remaining void backfilled to the surface with low permeability material, and with a mound of low permeability material (approximately 250 mm high by 800 mm wide and up to 2 m for large diameter drillholes) covered with topsoil to facilitate water shedding away from the drillhole and prevent subsidence."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/borehole-status/plugged-and-backfilled> ;
-    skos:historyNote "Mineral industry concept. Definition adapted from the DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023) document." ;
+    skos:historyNote "Mineral industry concept. Definition adapted from the DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023) document." ;
     skos:inScheme cs: ;
     skos:prefLabel "plugged and backfilled"@en ;
     skos:relatedMatch <http://linked.data.gov.au/def/borehole-status/backfilled> ;
@@ -311,7 +311,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:broader :post-operational ;
     skos:definition "A borehole that is not rehabilitated. Typically this includes boreholes drilled prior to mandatory rehabilitation legislation coming into effect."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/borehole-status/unrehabilitated> ;
-    skos:historyNote "Definition adapted from the DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
+    skos:historyNote "Definition adapted from the DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
     skos:inScheme cs: ;
     skos:prefLabel "unrehabilitated"@en ;
     schema:citation "https://www.dmp.wa.gov.au/Documents/Environment/Exploration-Rehabilitation-Guidance.pdf"^^xsd:anyURI ;
@@ -417,7 +417,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:exactMatch
         <http://linked.data.gov.au/def/borehole-status/plugged> ,
         <https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/plugged> ;
-    skos:historyNote "Mineral industry concept. Definition adapted from the Geoscience Australia Borehole Status vocabulary (in turn modified from PPDM Wellbore Status vocabulary, 2014), and DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
+    skos:historyNote "Mineral industry concept. Definition adapted from the Geoscience Australia Borehole Status vocabulary (in turn modified from PPDM Wellbore Status vocabulary, 2014), and DEMIRS Exploration and Prospecting Rehabilitation Guidance (v. 1, December 2023)." ;
     skos:inScheme cs: ;
     skos:narrower :plugged-and-backfilled ;
     skos:prefLabel "plugged"@en ;
