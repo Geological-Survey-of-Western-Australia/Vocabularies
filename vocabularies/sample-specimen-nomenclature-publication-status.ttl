@@ -455,12 +455,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     schema:name "0000 0002 7645 5031" ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :non-type-specimen
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

@@ -557,12 +557,6 @@ cgibdm:window_sampler
         "https://www.earthenvironmental.co.uk/window-sampling"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Geological Survey of Western Australia" ;
-    schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
-.
-
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;

@@ -282,12 +282,6 @@ ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-A
     schema:name "0000 0002 7645 5031" ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :duplicate
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

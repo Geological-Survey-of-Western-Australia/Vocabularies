@@ -1,0 +1,10 @@
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+<https://linked.data.gov.au/org/gswa>
+    a schema:Organization ;
+    schema:name "Geological Survey of Western Australia" ;
+    schema:url "https://www.wa.gov.au/organisation/department-of-mines-petroleum-and-exploration/geological-survey-of-western-australia"^^xsd:anyURI ;
+.
+

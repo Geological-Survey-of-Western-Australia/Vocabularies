@@ -290,12 +290,6 @@ Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and th
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Geological Survey of Western Australia" ;
-    schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
-.
-
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-01"^^xsd:date ;

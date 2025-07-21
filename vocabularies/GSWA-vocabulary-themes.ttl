@@ -123,12 +123,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.g​ov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :resources
     a skos:Concept ;
     skos:definition "Vocabularies related to the study, exploration for and exploitation of concentrations of solid, liquid, or gaseous materials in or on the Earth's crust in such form and amount that economic extraction of a commodity from the concentration is currently or potentially feasible. Adapted from Glossary of geology (Neuendorf et. al., 2011, 5th edition revised)."@en ;
@@ -192,10 +186,10 @@ cs:
                     schema:name "Angela Riganti" ;
                 ] ;
         ] ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-06-06"^^xsd:date ;
     schema:dateModified "2024-12-02"^^xsd:date ;
     schema:keywords "Administration" ;
-    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
 .

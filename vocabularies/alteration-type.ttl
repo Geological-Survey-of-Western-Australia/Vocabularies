@@ -677,12 +677,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     schema:citation "https://en.wikipedia.org/wiki/Sulfidation"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :argillic-alteration
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

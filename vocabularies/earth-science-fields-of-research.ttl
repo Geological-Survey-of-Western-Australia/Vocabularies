@@ -2961,12 +2961,6 @@ Saraswati, PK and Srinivasan, MS 2015, Micropaleontology: principles and applica
     schema:citation "https://en.wikipedia.org/wiki/Urban_planning"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :archeology
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/anzsrc-for/2020> ;

@@ -444,12 +444,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     schema:citation "https://www.ausimm.com/insights-and-resources/resources/codes-and-standards/coallog/"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :injecting
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

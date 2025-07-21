@@ -711,12 +711,6 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     schema:citation "https://iadclexicon.org/gas-storage-well-or-storage-well/"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :exploration-exploitation-minerals-and-basic-raw-materials
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

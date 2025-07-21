@@ -294,12 +294,6 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
         "https://www.dmirs.wa.gov.au/content/regional-offices"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Geological Survey of Western Australia" ;
-    schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
-.
-
 :karratha-office
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

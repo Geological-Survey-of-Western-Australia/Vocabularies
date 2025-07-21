@@ -244,12 +244,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :deaccessioned
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;

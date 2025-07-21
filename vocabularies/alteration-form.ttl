@@ -239,12 +239,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:prefLabel "hydrothermal breccia-controlled"@en ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :selective
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
