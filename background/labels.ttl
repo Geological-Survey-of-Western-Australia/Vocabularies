@@ -1,0 +1,151 @@
+PREFIX schema: <https://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+schema:Organization
+    schema:name "Organization" ;
+    schema:description "An organization such as a school, NGO, corporation, club, etc." ;
+.
+
+schema:Person
+    schema:name "Person" ;
+    schema:description "A person (alive, dead, undead, or fictional)." ;
+.
+
+schema:alternateName
+    schema:name "alternate name" ;
+    schema:description "An alias for the item." ;
+.
+
+
+
+<http://purl.org/dc/terms/creator> <https://schema.org/description> "An entity responsible for making the resource."@en .
+<http://purl.org/dc/terms/creator> <https://schema.org/name> "Creator"@en .
+<http://purl.org/dc/terms/source> <https://schema.org/description> "A related resource from which the described resource is derived."@en .
+<http://purl.org/dc/terms/source> <https://schema.org/name> "Source"@en .
+<http://purl.org/dc/terms/created> <https://schema.org/description> "Date of creation of the resource."@en .
+<http://purl.org/dc/terms/created> <https://schema.org/name> "Date Created"@en .
+<http://purl.org/dc/terms/modified> <https://schema.org/description> "Date on which the resource was changed."@en .
+<http://purl.org/dc/terms/modified> <https://schema.org/name> "Date Modified"@en .
+<http://purl.org/dc/terms/hasPart> <https://schema.org/description> "A related resource that is included either physically or logically in the described resource."@en .
+<http://purl.org/dc/terms/hasPart> <https://schema.org/name> "Has Part"@en .
+<http://purl.org/dc/terms/publisher> <https://schema.org/description> "An entity responsible for making the resource available."@en .
+<http://purl.org/dc/terms/publisher> <https://schema.org/name> "Publisher"@en .
+<http://purl.org/linked-data/registry#status> <https://schema.org/description> "The status of this register entry"@en .
+<http://purl.org/linked-data/registry#status> <https://schema.org/name> "status"@en .
+<http://purl.org/dc/terms/conformsTo> <https://schema.org/description> "An established standard to which the described resource conforms."@en .
+<http://purl.org/dc/terms/conformsTo> <https://schema.org/name> "Conforms To"@en .
+<http://purl.org/dc/terms/identifier> <https://schema.org/description> "An unambiguous reference to the resource within a given context."@en .
+<http://purl.org/dc/terms/identifier> <https://schema.org/name> "Identifier"@en .
+
+<http://www.w3.org/ns/prov#qualifiedAttribution> <https://schema.org/description> "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."@en .
+<http://www.w3.org/ns/prov#qualifiedAttribution> <https://schema.org/name> "qualified attribution" .
+<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://schema.org/description> "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes"@en .
+<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://schema.org/name> "has narrower match"@en .
+<http://www.w3.org/2004/02/skos/core#narrower> <https://schema.org/description> "Relates a concept to a concept that is more specific in meaning"@en .
+<http://www.w3.org/2004/02/skos/core#narrower> <https://schema.org/name> "has narrower"@en .
+<http://www.w3.org/2004/02/skos/core#note> <https://schema.org/description> "A general note, for any purpose"@en .
+<http://www.w3.org/2004/02/skos/core#note> <https://schema.org/name> "note"@en .
+<http://www.w3.org/ns/shacl#order> <https://schema.org/description> "Specifies the relative order of this compared to its siblings. For example use 0 for the first, 1 for the second."@en .
+<http://www.w3.org/ns/shacl#order> <https://schema.org/name> "order"@en .
+<http://www.w3.org/ns/prov#agent> <https://schema.org/name> "agent" .
+<http://www.w3.org/2006/time#hasBeginning> <https://schema.org/description> "Beginning of a temporal entity."@en .
+<http://www.w3.org/2006/time#hasBeginning> <https://schema.org/name> "has beginning"@en .
+<http://www.w3.org/2004/02/skos/core#Collection> <https://schema.org/description> "A meaningful collection of concepts"@en .
+<http://www.w3.org/2004/02/skos/core#Collection> <https://schema.org/name> "Collection"@en .
+<http://www.w3.org/ns/dx/prof/hasResource> <https://schema.org/description> "A resource which describes the nature of an artifact and the role it plays in relation to the Profile"@en .
+<http://www.w3.org/ns/dx/prof/hasResource> <https://schema.org/name> "has resource"@en .
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://schema.org/description> "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies"@en .
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://schema.org/name> "has top concept"@en .
+<http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/description> "Relates a concept to a concept that is more general in meaning"@en .
+<http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/name> "has broader"@en .
+<http://www.w3.org/2002/07/owl#versionIRI> <https://schema.org/description> "The property that identifies the version IRI of an ontology." .
+<http://www.w3.org/2002/07/owl#versionIRI> <https://schema.org/name> "versionIRI" .
+<http://www.w3.org/2002/07/owl#versionInfo> <https://schema.org/description> "The annotation property that provides version information for an ontology or another OWL construct." .
+<http://www.w3.org/2002/07/owl#versionInfo> <https://schema.org/name> "versionInfo" .
+<http://www.w3.org/ns/dx/prof/hasArtifact> <https://schema.org/description> "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor"@en .
+<http://www.w3.org/ns/dx/prof/hasArtifact> <https://schema.org/name> "has artifact" .
+<http://www.w3.org/2004/02/skos/core#altLabel> <https://schema.org/description> "An alternative lexical label for a resource"@en .
+<http://www.w3.org/2004/02/skos/core#altLabel> <https://schema.org/name> "alternative label"@en .
+<http://www.w3.org/2000/01/rdf-schema#comment> <https://schema.org/description> "A description of the subject resource." .
+<http://www.w3.org/2000/01/rdf-schema#comment> <https://schema.org/name> "comment" .
+<http://www.w3.org/2004/02/skos/core#notation> <https://schema.org/description> "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme"@en .
+<http://www.w3.org/2004/02/skos/core#notation> <https://schema.org/name> "notation"@en .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <https://schema.org/description> "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en .
+<http://www.w3.org/ns/prov#wasDerivedFrom> <https://schema.org/name> "was derived from" .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <https://schema.org/description> "The preferred lexical label for a resource, in a given language"@en .
+<http://www.w3.org/2004/02/skos/core#prefLabel> <https://schema.org/name> "preferred label"@en .
+<http://www.w3.org/2004/02/skos/core#exactMatch> <https://schema.org/description> "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch"@en .
+<http://www.w3.org/2004/02/skos/core#exactMatch> <https://schema.org/name> "has exact match"@en .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <https://schema.org/description> "The class of RDF datatypes." .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> <https://schema.org/name> "Datatype" .
+<http://www.w3.org/2004/02/skos/core#historyNote> <https://schema.org/description> "A note about the past state/use/meaning of a concept"@en .
+<http://www.w3.org/2004/02/skos/core#historyNote> <https://schema.org/name> "history note"@en .
+<http://www.w3.org/2004/02/skos/core#definition> <https://schema.org/description> "A statement or formal explanation of the meaning of a concept"@en .
+<http://www.w3.org/2004/02/skos/core#definition> <https://schema.org/name> "definition"@en .
+<http://www.w3.org/2004/02/skos/core#broadMatch> <https://schema.org/description> "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes"@en .
+<http://www.w3.org/2004/02/skos/core#broadMatch> <https://schema.org/name> "has broader match"@en .
+<http://www.w3.org/2004/02/skos/core#member> <https://schema.org/description> "Relates a collection to one of its members"@en .
+<http://www.w3.org/2004/02/skos/core#member> <https://schema.org/name> "has member"@en .
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://schema.org/description> "Relates a concept to the concept scheme that it is a top level concept of"@en .
+<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://schema.org/name> "is top concept in scheme"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <https://schema.org/description> "A set of concepts, optionally including statements about semantic relationships between those concepts"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> <https://schema.org/name> "Concept Scheme"@en .
+<http://www.w3.org/ns/dcat#Catalog> <https://schema.org/description> "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en .
+<http://www.w3.org/ns/dcat#Catalog> <https://schema.org/name> "Catalog"@en .
+<http://www.w3.org/2004/02/skos/core#relatedMatch> <https://schema.org/description> "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes"@en .
+<http://www.w3.org/2004/02/skos/core#relatedMatch> <https://schema.org/name> "has related match"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <https://schema.org/description> "Relates a resource (for example a concept) to a concept scheme in which it is included"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> <https://schema.org/name> "is in scheme"@en .
+<http://www.w3.org/ns/dx/prof/hasRole> <https://schema.org/description> "The function of an artifact described by a Resource Descriptor, such as specification, guidance etc."@en .
+<http://www.w3.org/ns/dx/prof/hasRole> <https://schema.org/name> "has role" .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://schema.org/name> "Concept"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://schema.org/description> "An idea or notion; a unit of thought" .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://schema.org/description> "An idea or notion; a unit of thought"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> <https://schema.org/name> "Concept" .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <https://schema.org/description> "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property"@en .
+<http://www.w3.org/2004/02/skos/core#closeMatch> <https://schema.org/name> "has close match"@en .
+<http://www.w3.org/ns/dcat#hadRole> <https://schema.org/description> "The function of an entity or agent with respect to another entity or resource."@en .
+<http://www.w3.org/ns/dcat#hadRole> <https://schema.org/name> "hadRole"@en .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/description> "The defininition of the subject resource." .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/name> "is defined by" .
+<http://www.w3.org/2004/02/skos/core#scopeNote> <https://schema.org/description> "A note that helps to clarify the meaning and/or the use of a concept"@en .
+<http://www.w3.org/2004/02/skos/core#scopeNote> <https://schema.org/name> "scope note"@en .
+<http://www.w3.org/2006/time#hasEnd> <https://schema.org/description> "End of a temporal entity."@en .
+<http://www.w3.org/2006/time#hasEnd> <https://schema.org/name> "has end"@en .
+<https://schema.org/license> <https://schema.org/description> "A license document that applies to this content, typically indicated by URL" .
+<https://schema.org/license> <https://schema.org/name> "license" .
+<https://schema.org/copyrightNotice> <https://schema.org/description> "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work" .
+<https://schema.org/copyrightNotice> <https://schema.org/name> "copyright notice" .
+<https://schema.org/citation> <https://schema.org/description> "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc" .
+<https://schema.org/citation> <https://schema.org/name> "citation" .
+<https://schema.org/dateModified> <https://schema.org/description> "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed" .
+<https://schema.org/dateModified> <https://schema.org/name> "date modified" .
+<https://schema.org/name> <https://schema.org/description> "The name of the item" .
+<https://schema.org/name> <https://schema.org/name> "name" .
+<https://schema.org/contributor> <https://schema.org/description> "A secondary contributor to the CreativeWork or Event" .
+<https://schema.org/contributor> <https://schema.org/name> "contributor" .
+<https://schema.org/description> <https://schema.org/description> "A description of the item" .
+<https://schema.org/description> <https://schema.org/name> "description" .
+<https://schema.org/url> <https://schema.org/description> "URL of the item" .
+<https://schema.org/url> <https://schema.org/name> "url" .
+<https://schema.org/dateCreated> <https://schema.org/description> "The date on which the CreativeWork was created or the item was added to a DataFeed" .
+<https://schema.org/dateCreated> <https://schema.org/name> "date created" .
+<https://schema.org/marginOfError> <https://schema.org/description> "A [[marginOfError]] for an [[Observation]]" .
+<https://schema.org/marginOfError> <https://schema.org/name> "margin of error" .
+<https://schema.org/creator> <https://schema.org/description> "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork" .
+<https://schema.org/creator> <https://schema.org/name> "creator" .
+<https://schema.org/version> <https://schema.org/description> "The version of the CreativeWork embodied by a specified resource" .
+<https://schema.org/version> <https://schema.org/name> "version" .
+<https://schema.org/keywords> <https://schema.org/description> "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property" .
+<https://schema.org/keywords> <https://schema.org/name> "keywords" .
+<https://schema.org/publisher> <https://schema.org/description> "The publisher of the creative work" .
+<https://schema.org/publisher> <https://schema.org/name> "publisher" .
+<https://schema.org/codeRepository> <https://schema.org/description> "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex)" .
+<https://schema.org/codeRepository> <https://schema.org/name> "code repository" .
+<https://schema.org/email> <https://schema.org/description> "Email address" .
+<https://schema.org/email> <https://schema.org/name> "email" .
+<https://schema.org/copyrightHolder> <https://schema.org/description> "The party holding the legal copyright to the CreativeWork" .
+<https://schema.org/copyrightHolder> <https://schema.org/name> "copyright holder" .
+<https://schema.org/color> <https://schema.org/description> "The color of the product" .
+<https://schema.org/color> <https://schema.org/name> "color" .
