@@ -448,7 +448,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :satellite
     a skos:Concept ;
-    rdfs:isDefinedBy <https://en.wikipedia.org/wiki/Satellite_imagery> ;
+    schema:citation "https://en.wikipedia.org/wiki/Satellite_imagery"^^xsd:anyURI ;
     skos:definition "Geographic location captured by using satellite images (also Earth observation imagery, spaceborne photography, or simply satellite photo) are images of Earth collected by imaging satellites operated by governments and businesses around the world."@en ;
     skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
     skos:inScheme cs: ;

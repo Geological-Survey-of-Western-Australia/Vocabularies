@@ -21,11 +21,6 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
     skos:notation "4605"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
 .
 
-:maritime-archeology-
-    skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/430108> ;
-    skos:notation "430108"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
-.
-
 :active-seismic
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -138,7 +133,7 @@ PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
 
 :biogeochemistry
     a skos:Concept ;
-    rdfs:isDefinedBy <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category> ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/earth-science-data-category> ;
     skos:broader :geochemistry ;
     skos:definition "A highly interdisciplinary field involving the integration of biology, geology and chemistry, and encompassing the study of the chemical, physical, geological and biological processes and reactions that govern the composition of the natural environment (including the biosphere, hydrosphere, atmosphere, pedosphere and the lithosphere)."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/biogeochemistry> ;
@@ -688,7 +683,7 @@ Moon, C 2021, Exploration Geochemistry, in Encyclopedia of Geology (Second Editi
 
 :fluid-extract-geochemistry
     a skos:Concept ;
-    rdfs:isDefinedBy <https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category> ;
+    rdfs:isDefinedBy <http://linked.data.gov.au/def/earth-science-data-category> ;
     skos:broader :geochemistry ;
     skos:definition "Analysis of the chemical and physical properties of fluids extracted from rocks and geological materials in the subsurface."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/fluid-extract-geochemistry> ;
@@ -1571,6 +1566,8 @@ Alexandre, P 2021, Lithogeochemistry, in Practical Geochemistry, Springer Textbo
     skos:inScheme cs: ;
     skos:prefLabel "maritime archeology"@en ;
     schema:citation "https://en.wikipedia.org/wiki/Maritime_archaeology"^^xsd:anyURI ;
+    skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/430108> ;
+    skos:notation "430108"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
 .
 
 :materials-conservation
@@ -2174,11 +2171,11 @@ Roberts, DG and Bally, AW (Eds), 2012, Regional Geology and Tectonics: Phanerozo
     rdfs:isDefinedBy cs: ;
     skos:broader :environmental-management ;
     skos:definition "The stage in the life-cycle of a project or mine where the resources have been extracted and the site or part thereof is being rehabilitated back to its original condition or an acceptable environmental standard."@en ;
-    skos:exactMatch <https://vocabs.gsq.digital/v/vocab/def:site-status/st-stts:rehabilitation> ;
+    skos:exactMatch <http://linked.data.gov.au/def/site-status/rehabilitation> ;
     skos:historyNote "Definition adapted from Geological Survey of Queensland Site status vocabulary." ;
     skos:inScheme cs: ;
     skos:prefLabel "rehabilitation"@en ;
-    schema:citation "https://vocabs.gsq.digital/v/vocab/def:site-status/st-stts:rehabilitation"^^xsd:anyURI ;
+    schema:citation "http://linked.data.gov.au/def/site-status/rehabilitation"^^xsd:anyURI ;
 .
 
 :renewable-energy-geoscience
@@ -3888,7 +3885,7 @@ cs:
         :information-and-computing-sciences ,
         :physical-sciences ,
         :stakeholder-engagement ;
-    skos:historyNote "The listing combines Earth Science-related entries in the Fields of Research vocabulary from the 2020 Australian and New Zealand Standard Research Classification (ANZSRC, https://vocabs.ardc.edu.au/viewById/316 and https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/latest-release), selected additions from the Geological Survey of Queensland (GSQ)'s Earth Science Data Category vocabulary (https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category), and supplementary concepts of relevance to the work of the Geological Survey of Western Australia (GSWA) and partner industry and research institutions. Definitions used are largely derived from: (a) the Glossary of Geology (Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p.), (b) Wikipedia (https://www.wikipedia.org/), (c) the GSQ's earth Science Data Category vocabulary (https://vocabs.gsq.digital/v/vocab/def:earth-science-data-category), and many other online resources."@en ;
+    skos:historyNote "The listing combines Earth Science-related entries in the Fields of Research vocabulary from the 2020 Australian and New Zealand Standard Research Classification (ANZSRC, https://vocabs.ardc.edu.au/viewById/316 and https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/latest-release), selected additions from the Geological Survey of Queensland (GSQ)'s Earth Science Data Category vocabulary (http://linked.data.gov.au/def/earth-science-data-category), and supplementary concepts of relevance to the work of the Geological Survey of Western Australia (GSWA) and partner industry and research institutions. Definitions used are largely derived from: (a) the Glossary of Geology (Neuendorf, KKE, Mehl Jr, JP and Jackson, JA (editors) 2011, Glossary of geology (5th edition, revised): American Geosciences Institute, Alexandria, Virginia, USA, 800p.), (b) Wikipedia (https://www.wikipedia.org/), (c) the GSQ's earth Science Data Category vocabulary (http://linked.data.gov.au/def/earth-science-data-category), and many other online resources."@en ;
     skos:prefLabel "Earth science fields of research"@en ;
     prov:qualifiedAttribution
         [

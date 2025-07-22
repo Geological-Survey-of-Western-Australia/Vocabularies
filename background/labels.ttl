@@ -154,3 +154,51 @@ schema:alternateName
 <http://linked.data.gov.au/def/borehole-start-point/offshore> schema:name "Offshore" .
 <https://linked.data.gov.au/def/borehole-start-point> schema:name "Offshore" .
 <https://linked.data.gov.au/def/borehole-start-point/natural-ground-surface> schema:name "Natural Ground Surface" .
+
+
+<https://creativecommons.org/licenses/by/4.0/> schema:name "Creative Commons BY 4.0" .
+
+
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian> schema:name "custodian" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticConglomerate> schema:name "Clastic Conglomerate" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticMudstone> schema:name "Clastic Mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSandstone> schema:name "Clastic Sandstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dolostone> schema:name "Dolostone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rockGypsumOrAnhydrite> schema:name "Rock Gypsum Or Anhydrite" .
+<http://linked.data.gov.au/def/geou> schema:name "Geological Units" .
+<http://linked.data.gov.au/def/geou/M3-PER-TON_M> schema:name "M3 per ton" .
+<http://linked.data.gov.au/def/iso-4217-currencies> schema:name "ISO 4217 Currencies" .
+<http://linked.data.gov.au/def/queensland-crs/agd1966> schema:name "AGD 1966" .
+<http://linked.data.gov.au/def/queensland-crs/agd1984> schema:name "AGD 1984" .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> schema:name "preferred namespace prefix" .
+<http://purl.org/vocab/vann/preferredNamespaceUri> schema:name "preferred namespace URI" .
+<http://qudt.org/vocab/unit/BBL_US> schema:name "Barrels (US)" .
+<http://qudt.org/vocab/unit/BBL_US-PER-DAY> schema:name "Barrels (US) per day" .
+<http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> schema:name "QUDT Units Vocabulary" .
+<http://www.w3.org/2002/07/owl#Datatype> schema:name "Datatype" .
+<http://www.w3.org/2004/02/skos/core#versionInfo> schema:name "version info" .
+<http://www.w3.org/2006/time#> schema:name "Time Ontology in OWL" .
+<https://linked.data.gov.au/def/borehole-design/deviated> schema:name "deviated" .
+<https://linked.data.gov.au/def/borehole-purpose-wa/storage-liquids-other-than-water> schema:name "storage liquids other than water" .
+<https://linked.data.gov.au/def/borehole-purpose-wa/water-supply-mining> schema:name "water supply mining" .
+<https://linked.data.gov.au/def/borehole-sub-purpose> schema:name "Borehole Sub Purpose" .
+<https://linked.data.gov.au/def/demirs-offices/kalgoorlie-office> schema:name "Kalgoorlie Office" .
+<https://linked.data.gov.au/def/earthsci-for/applied-geophysics-> schema:name "Applied Geophysics-" .
+<https://linked.data.gov.au/def/earthsci-for/data-management-and-data-science> schema:name "Data Management and Data Science" .
+<https://linked.data.gov.au/def/geofeatures/Basin> schema:name "Basin" .
+<https://linked.data.gov.au/def/geofeatures/Suite> schema:name "Suite" .
+<https://linked.data.gov.au/def/geofeatures/Supersuite> schema:name "Supersuite" .
+<https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-mapping> schema:name "Geology Mapping" .
+<https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral> schema:name "Resources Mineral" .
+<https://linked.data.gov.au/def/queensland-crs/gda1994> schema:name "GDA 1994" .
+<https://linked.data.gov.au/def/queensland-crs/gda2020> schema:name "GDA 2020" .
+<https://linked.data.gov.au/def/queensland-crs/wgs1984> schema:name "WGS 1984" .
+<https://linked.data.gov.au/def/reg-statuses/status> schema:name "status" .
+<https://prez.dev/Manifest> schema:name "Manifest" .
+<https://prez.dev/ManifestResourceRoles/CatalogueData> schema:name "Catalogue Data" .
+<https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels> schema:name "Incomplete Catalogue And Resource Labels" .
+<https://prez.dev/ManifestResourceRoles/ResourceData> schema:name "Resource Data" .
+<https://purl.org/NET/rdflicense/cc-by4.0> schema:name "CC BY 4.0" .
+<https://w3id.org/profile/vocpub/4.6> schema:name "VocPub 4.6" .
+<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> schema:name "QUDT Units Vocabulary" .
+<http://linked.data.gov.au/def/site-status/rehabilitation> schema:name "Rehabilitation" .

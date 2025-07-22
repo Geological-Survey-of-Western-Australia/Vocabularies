@@ -1,0 +1,15 @@
+PREFIX schema: <https://schema.org/>
+
+<http://resource.geosciml.org/classifier/ics/ischart/> schema:name "IS Chart" .
+<http://resource.geosciml.org/classifier/ics/ischart/2024-12> schema:name "2024-12" .
+<http://resource.geosciml.org/ontology/timescale/gts#> schema:name "Geological Time Scale" .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSA> schema:name "ratified GSSA" .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> schema:name "ratified GSSP" .
+<http://resource.geosciml.org/ontology/timescale/rank/Age> schema:name "Age" .
+<http://resource.geosciml.org/ontology/timescale/rank/Eon> schema:name "Eon" .
+<http://resource.geosciml.org/ontology/timescale/rank/Epoch> schema:name "Epoch" .
+<http://resource.geosciml.org/ontology/timescale/rank/Era> schema:name "Era" .
+<http://resource.geosciml.org/ontology/timescale/rank/Period> schema:name "Period" .
+<http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> schema:name "Sub-Period" .
+<http://resource.geosciml.org/ontology/timescale/rank/Super-Eon> schema:name "Super-Eon" .
+<http://resource.geosciml.org/vocabulary/timescale/> schema:name "Timescale" .

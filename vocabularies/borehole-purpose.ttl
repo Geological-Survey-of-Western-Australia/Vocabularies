@@ -22,9 +22,7 @@ PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 
 :acid-leachate-testing
     a skos:Concept ;
-    rdfs:isDefinedBy
-        <https:///linked.data.gov.au/def/borehole-sub-purpose> ,
-        cs: ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/borehole-sub-purpose> ;
     skos:broader :environmental ;
     skos:definition "A well or bore drilled to recover strata samples for their use in acid leachate testing."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/acid-leachate-testing> ;

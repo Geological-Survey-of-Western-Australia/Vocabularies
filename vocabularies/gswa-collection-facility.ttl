@@ -231,7 +231,7 @@ cs:
         ] ,
         [
             dcat:hadRole dataroles:custodian ;
-            prov:agent <http://orcid.org/0000-0002-5129-2467> ;
+            prov:agent <https://orcid.org/0000-0002-5129-2467> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2023-09-06"^^xsd:date ;

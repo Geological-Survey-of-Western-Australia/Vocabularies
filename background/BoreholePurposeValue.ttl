@@ -1,0 +1,181 @@
+PREFIX schema: <https://schema.org/>
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue>
+    schema:description "Purposes for which a borehole was drilled."@en ;
+    schema:name "Borehole Purpose"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/aquaculture>
+    schema:description "To supply water to aquaculture purposes."@en ;
+    schema:name "aquaculture"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/contingencyWaterSupply>
+    schema:description "Stand-by water supply in case of water deficiency."@en ;
+    schema:name "contingency water supply"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/dewatering>
+    schema:description "Dewatering is the removal of water from solid material or soil by wet classification, centrifugation, filtration, or similar solid-liquid separation processes. Removing or draining water from a riverbed, construction site, caisson, or mine shaft, by pumping or evaporation."@en ;
+    schema:name "dewatering"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/disposal>
+    schema:description "A well, often a depleted oil or gas well, into which waste fluids can be injected for safe disposal."@en ;
+    schema:name "disposal"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/drinkingWaterSupply>
+    schema:description "Well construction for drinking water."@en ;
+    schema:name "drinking water supply"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/emergencyWaterSupply>
+    schema:description "Well construction for emergency water supply."@en ;
+    schema:name "emergency water supply"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/environmentalMonitoring>
+    schema:description "Groundwater chemistry and groundwater level is monitored."@en ;
+    schema:name "environmental monitoring"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationEnergyResources>
+    schema:description "Examination of the subsurface with regard to the availability of fossil energy resources and planning the extraction thereof."@en ;
+    schema:name "exploration and exploitation of energy resources"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationNonmetallicMineralDeposits>
+    schema:description "Prospecting with regard to the availability and planning for excavation of nonmetallic mineral deposits, mainly for construction purposes, building stones, cement and ceramic or glass industry."@en ;
+    schema:name "exploration and exploitation of nonmetallic mineral deposits"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationRawMaterial>
+    schema:description "The discovery and identification of mineral resources, including the assessment of their importance and the evaluation of their economic potential."@en ;
+    schema:name "exploration and exploitation of raw material"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationNaturalUndergroundStorage>
+    schema:description "Examination of the subsurface's ability to store various materials."@en ;
+    schema:name "exploration of natural underground storage space"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/flowingShot>
+    schema:description "A flowing shot hole is a drilled hole for seismic purposes that has entered an underground water source that has sufficient pressure to cause the hole to 'overflow'."@en ;
+    schema:name "flowing shot"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geochemicalSurvey>
+    schema:description "Examination of chemical properties of the rock formation and /or the porosity fluids."@en ;
+    schema:name "geochemical survey, analyses"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geologicalSurvey>
+    schema:description "General examination of an area's geological entities."@en ;
+    schema:name "geological survey"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geophysicalSurvey>
+    schema:description "Examination of the subsurface's geophysical properties."@en ;
+    schema:name "geophysical survey"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geotechnicalSurvey>
+    schema:description "Geotechnical investigations performed to obtain information on the physical and mechanical properties of soil and rock around a site to design earthworks and foundations for proposed structures and for repair of distress to earthworks and structures caused by subsurface conditions."@en ;
+    schema:name "geotechnical survey, construction site characterization"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geothermalEnergy>
+    schema:description "Exploration pertaining to the utilization of geothermal energy resources and design of geothermal heat pumps."@en ;
+    schema:name "geothermal energy, geothermal heat exchangers"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/groundwaterLevelMonitoring>
+    schema:description "Construction of a gauge for recording groundwater level changes."@en ;
+    schema:name "groundwater level monitoring"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/heatStorage>
+    schema:description "Well to enable the underground to be used for heat storage."@en ;
+    schema:name "heat storage"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonAppraisal>
+    schema:description "Assessment of characteristics of a proven hydrocarbon accumulation."@en ;
+    schema:name "hydrocarbon appraisal"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonExploration>
+    schema:description "Exploration in an unproved area to test for a new field, a new pay, a deeper reservoir, or a shallower reservoir."@en ;
+    schema:name "hydrocarbon exploration"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonProduction>
+    schema:description "Production of petroleum oil and/or gas."@en ;
+    schema:name "hydrocarbon production"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrogeologicalSurvey>
+    schema:description "Examination of groundwater flow, the chemical properties of ground water, and transport of particles, solutes, and energy, as well as the management of the sustainable use of ground water resources."@en ;
+    schema:name "hydrogeological survey, water management"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/industrialWaterSupply>
+    schema:description "Well construction for industrial water supply."@en ;
+    schema:name "industrial water supply"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/irrigation>
+    schema:description "Well construction for irrigation purposes."@en ;
+    schema:name "irrigation"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/mineralExplorationExtraction>
+    schema:description "Well drilled for the purpose of locating and/or extracting mineral resources from the subsurface, usually through the injection and/or extraction of mineral bearing fluids."@en ;
+    schema:name "mineral exploration and extraction"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/mitigation>
+    schema:description "Lowering of the groundwater level to prevent the groundwater table to reach polluted sites."@en ;
+    schema:name "mitigation"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/pedologicalSurvey>
+    schema:description "Investigation to characterize types of soils."@en ;
+    schema:name "pedological survey"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/pollutionMonitoring>
+    schema:description "Monitoring of known pollution sites."@en ;
+    schema:name "pollution monitoring"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/recharge>
+    schema:description "(a) Aquifer Recharge Wells: Used to recharge depleted aquifers by injecting water from a variety of sources such as lakes, streams, domestic wastewater treatment plants, other aquifers, etc. (b) Saline Water Intrusion Barrier Wells: Used to inject water into fresh water aquifers to prevent intrusion of salt water into fresh water aquifers. (c) Subsidence Control Wells: Used to inject fluids into a non-oil or gas-producing zone to reduce or eliminate subsidence associated with overdraft of fresh water."@en ;
+    schema:name "recharge"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/remediation>
+    schema:description "Remediation in general. The removal of pollution or contaminants from groundwater, soil and other rock"@en ;
+    schema:name "remediation"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/shotHole>
+    schema:description "In connection with seismic surveys explosives are loaded into shot holes."@en ;
+    schema:name "shot hole"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/thermalCleaning>
+    schema:description "A kind of remediation. In situ cleaning of soil using heat, steam."@en ;
+    schema:name "sparging, thermal cleaning"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/waterQualityMonitoring>
+    schema:description "Monitoring to assess the nature and distribution of pollutants and contaminants in groundwater; the nature and distribution of naturally occurring chemical constituents; subsurface hydrologic conditions, and hydraulic properties of strata as they relate to pollutant and contaminant movement."@en ;
+    schema:name "water quality monitoring"@en ;
+.
+
+<http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/waterSupply>
+    schema:description "Water supply in general."@en ;
+    schema:name "water supply"@en ;
+.

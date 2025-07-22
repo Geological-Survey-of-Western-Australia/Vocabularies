@@ -15,7 +15,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 
-<http://orcid.org/0000-0002-5129-2467>
+<https://orcid.org/0000-0002-5129-2467>
     a schema:Person ;
     schema:email ""^^xsd:anyURI ;
     schema:name "Sarah K. Martin" ;
