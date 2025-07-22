@@ -7,7 +7,7 @@ PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -120,8 +120,8 @@ d) Van Kranendonk, MJ, Smithies, RH, Hickman, AH, Bagas, L, Williams, IR, and Fa
         "https://glossary.americangeosciences.org/term/outlier"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch
-        <https://linked.data.gov.au/def/geofeatures/inlier> ,
-        <https://linked.data.gov.au/def/geofeatures/outlier> ;
+        <https://linked.data.gov.au/def/geofeatures/Inlier> ,
+        <https://linked.data.gov.au/def/geofeatures/Outlier> ;
     skos:definition "A lithotectonic subdivision in Western Australia, used to identify an exposed group of rocks from an older tectonic unit that is surrounded by rocks from a younger tectonic units (inlier), or an exposed group of rocks from a younger tectonic unit that is surrounded by rocks from an older tectonic units (outlier). These are not tectonic units per se, but are commonly singled out both geographically and geologically. The Geological Survey of Western Australia's convention is to always list the broader unit inliers/outliers are part of in their name (e.g. Pinjarra Orogen, Leeuwin Inlier; or Bonaparte Basin, Mount Rob Outlier)."@en ;
     skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS). Definition adapted from:
 a) https://glossary.americangeosciences.org/term/inlier b) https://glossary.americangeosciences.org/term/outlier""" ;

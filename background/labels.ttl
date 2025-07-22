@@ -149,3 +149,8 @@ schema:alternateName
 <https://schema.org/copyrightHolder> <https://schema.org/name> "copyright holder" .
 <https://schema.org/color> <https://schema.org/description> "The color of the product" .
 <https://schema.org/color> <https://schema.org/name> "color" .
+
+
+<http://linked.data.gov.au/def/borehole-start-point/offshore> schema:name "Offshore" .
+<https://linked.data.gov.au/def/borehole-start-point> schema:name "Offshore" .
+<https://linked.data.gov.au/def/borehole-start-point/natural-ground-surface> schema:name "Natural Ground Surface" .
