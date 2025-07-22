@@ -172,6 +172,8 @@ c) Harley, SL 1989, The origins of granulites: a metamorphic perspective: Geolog
     skos:topConceptOf cs: ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-01"^^xsd:date ;

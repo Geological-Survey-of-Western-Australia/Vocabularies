@@ -304,9 +304,11 @@ ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-A
     schema:citation "https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/standardReferenceMaterial"^^xsd:anyURI ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI :1.0 ;
+    owl:versionIRI :1 ;
     skos:definition "The types of physical samples that are used to undertake quality assurance (QA) and quality control (QC) checks at all stages of the sampling, preparation and analytical processes, and/or to retain representative material for future reference. Note that QA and QC are often used collectively as a single term, but are in fact distinct procedures: QA 'refers to defect prevention', i.e. ‘the protocols and procedures that ensure that sampling and assaying is completed to the required quality’, whereas QC 'refers to defect detection', i.e. ‘the use of control samples and statistical analysis to ensure that assay results are reliable’ (Graindorge, 2010, p. 112; https://www.usgs.gov/data-management/manage-quality). This vocabulary thus also encapsulates terminology covering sample representability. "@en ;
     skos:hasTopConcept
         :analytical-blank ,

@@ -709,6 +709,8 @@ Note EPGS registry""" ;
     skos:prefLabel "WGS84 / UTM zone 52S"@en ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-13"^^xsd:date ;

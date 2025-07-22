@@ -366,6 +366,8 @@ https://help.dugeo.com/m/faq/l/167077-height-datums-and-abbreviations""" ;
     skos:prefLabel "true vertical depth subsea"@en ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-02"^^xsd:date ;

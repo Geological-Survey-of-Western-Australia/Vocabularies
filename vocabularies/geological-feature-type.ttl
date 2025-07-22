@@ -170,6 +170,8 @@ Wyborn, LAI, Heinrich, CA and Jaques, AL 1994, Australian Proterozoic mineral sy
     skos:topConceptOf cs: ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-09-06"^^xsd:date ;

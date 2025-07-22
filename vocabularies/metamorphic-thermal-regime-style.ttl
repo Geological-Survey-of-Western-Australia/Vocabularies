@@ -111,6 +111,8 @@ c) Brown, M and Johnson, T 2018, Secular change in metamorphism and the onset of
     skos:topConceptOf cs: ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     dcterms:created "2023-11-01"^^xsd:date ;

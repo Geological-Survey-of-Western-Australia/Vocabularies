@@ -922,6 +922,8 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:prefLabel "mining (development and production)"@en ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;

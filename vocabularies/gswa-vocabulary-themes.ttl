@@ -153,10 +153,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         "https://glossary.americangeosciences.org/term/geology"^^xsd:anyURI ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-    owl:versionIRI default1:1 ;
+    owl:versionIRI :1 ;
     skos:definition "The overarching categorization of vocabularies prepared by the Geological Survey of Western Australia (GSWA)."@en ;
     skos:hasTopConcept
         :administration ,
