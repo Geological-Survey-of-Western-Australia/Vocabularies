@@ -1,0 +1,27 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX schema: <https://schema.org/>
+
+[]    a <https://prez.dev/Manifest> ;
+    prof:hasResource
+        [
+            prof:hasArtifact "background/*.ttl" ;
+            prof:hasRole <https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels> ;
+            schema:description "RDF files containing many labels for the catalogue's content" ;
+            schema:name "Labels" ;
+        ] ,
+        [
+            prof:hasArtifact "catalogue.ttl" ;
+            prof:hasRole <https://prez.dev/ManifestResourceRoles/CatalogueData> ;
+            schema:description "The definition of, and metadata for, the container which here is a catalogue" ;
+            schema:name "Catalogue Definition" ;
+        ] ,
+        [
+            # dcterms:conformsTo <https://linked.data.gov.au/def/vocpub> ;
+            dcterms:conformsTo "vocpub.ttl" ;
+            prof:hasArtifact "vocabularies/*.ttl" ;
+            prof:hasRole <https://prez.dev/ManifestResourceRoles/ResourceData> ;
+            schema:description "DETSI vocabs" ;
+            schema:name "Resource Data" ;
+        ] ;
+.

@@ -1,0 +1,101 @@
+PREFIX schema: <https://schema.org/>
+
+<http://linked.data.gov.au/def/borehole-purpose>
+    schema:description "The primary purpose of a borehole based on the legislative State Act and/or the resources industry sector."@en ;
+    schema:name "Borehole Purpose"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage>
+    schema:description "Wells that deposit carbon dioxide into an underground geological formation after capture from large point sources, such as a cement factory or biomass power plant."@en ;
+    schema:name "Carbon Capture and Storage"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/coal>
+    schema:description "Wells and bores drilled to facilitate the mining of coal under permits governed by the Queensland Mineral Resources Act 1989"@en ;
+    schema:name "Coal"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/coal-seam-gas>
+    schema:description "Wells targetting coal seams where hydrocarbons are kept in place via adsorption to the coal surface and hydrostatic pressure"@en ;
+    schema:name "Coal Seam Gas"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/conventional-petroleum>
+    schema:description "Wells targetting conventional petroleum reservoirs where buoyant forces keep hydrocarbons in place below a sealing caprock."@en ;
+    schema:name "Conventional Petroleum"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/geothermal>
+    schema:description "Wells and bores drilled under permits governed by the Queensland Geothermal Energy Act 2010"@en ;
+    schema:name "Geothermal"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/greenhouse-gas-storage>
+    schema:description "Wells and bores drilled under permits governed by the Queensland Greenhouse Gas Storage Act 2009"@en ;
+    schema:name "Greenhouse Gas Storage"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/mineral>
+    schema:description "Wells and bores drilled to facilitate the mining of minerals, excluding coal and oil shale, under permits governed by the Queensland Mineral Resources Act (1989)"@en ;
+    schema:name "Mineral"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/non-industry>
+    schema:description "Wells and bores drilled by non-industry agents outside of the State Resources Acts"@en ;
+    schema:name "Non-Industry"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/oil-shale>
+    schema:description "Wells and bores drilled to facilitate the mining of oil shale under permits governed by the Queensland Mineral Resources Act 1989"@en ;
+    schema:name "Oil Shale"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/open-cut-coal-mining>
+    schema:description "Wells drilled for the purpose of assessing coal resources for an open cut coal mine."@en ;
+    schema:name "Open-Cut Coal Mining"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/petroleum>
+    schema:description "Wells and bores drilled under permits governed by the Queensland Petroleum Act 1923 and Petroleum and Gas (Production and Safety) Act 2004. This includes water observation, water disposal, and water supply wells drilled under the relevant Petroleum Acts rather than the Water Act."@en ;
+    schema:name "Petroleum"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/pggd>
+    schema:description "Borehole purposes applicable to regulatory notification forms."@en ;
+    schema:name "PGGD selection"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/shale-gas>
+    schema:description "Wells targetting shale that produces natural gas. A shale that is thermally mature enough and has sufficient gas content to produce economic quantities of natural gas."@en ;
+    schema:name "Shale Gas"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/shale-oil>
+    schema:description "Wells targetting shale that produces oil. Oil obtained by artificial maturation of oil shale. The process of artificial maturation uses controlled heating, or pyrolysis, of kerogen to release the shale oil."@en ;
+    schema:name "Shale Oil"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/tight-gas>
+    schema:description "Wells targetting gas from relatively impermeable reservoir rock."@en ;
+    schema:name "Tight Gas"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/tight-oil>
+    schema:description "Wells targetting oil from relatively impermeable reservoir rock."@en ;
+    schema:name "Tight Oil"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/unconventional-petroleum>
+    schema:description "Wells targetting unconventional reservoirs whose properties including porosity, permeability, or trapping mechanism differ from conventional reservoirs"@en ;
+    schema:name "Unconventional Petroleum"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/underground-coal-mining>
+    schema:description "Wells drilled for the purpose of assessing coal resources for an underground coal mine."@en ;
+    schema:name "Underground Coal Mining"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-purpose/water>
+    schema:description "Wells and bores drilled under permits governed by the Queensland Water Act 2000. A well or bore is only considered a water well or bore where drilled under the Water Act, e.g. a well or bore drilled to serve a water observation function under the Petroleum Act is considered a Petroleum Well with an Observation function or sub-purpose. Additional rights, obligations, and responsibilities may be conferred by intersecting legislation on wells and bores drilled by mineral and coal permit holders and petroleum and gas permit holders under the Mineral Resources Act 1989 and the Petroleum and Gas (Production and Safety) Act 2004 respectively."@en ;
+    schema:name "Water"@en ;
+.

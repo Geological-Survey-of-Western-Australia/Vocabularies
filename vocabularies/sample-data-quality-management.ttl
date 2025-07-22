@@ -141,7 +141,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/replicateFieldSpecimen> ;
-    skos:definition "A second sample of equal size (mass) and comparable material to the original, collected at a sample site at a later date and under possibly different conditions but using identical sampling and analytical procedures. Often designed to test environmental factors, such as seasonal effects on surficial samples, or to validate historical results for the purpose of due diligence."@en ;
+    skos:definition "A second sample of equal size (mass) and comparable material to the original, collected at a sample site at a later date and under possibly different conditions but using identical sampling and analytical procedures. Often designed to test environmental factors, such as seasonal effects on surficial samples, or to validate historical results for the purpose of due diligence."@en ;
     skos:historyNote "Definition from Smee et al. (2024)." ;
     skos:inScheme cs: ;
     skos:prefLabel "field repeat sample"@en ;
@@ -264,30 +264,6 @@ ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-A
     schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
 .
 
-<https://orcid.org/0000-0002-2104-6601>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 2104 6601" ;
-.
-
-<https://orcid.org/0000-0002-2280-1859>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 2280 1859" ;
-.
-
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
-
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
-.
-
 :duplicate
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -328,9 +304,11 @@ ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-A
     schema:citation "https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/standardReferenceMaterial"^^xsd:anyURI ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
-    owl:versionIRI :1.0 ;
+    owl:versionIRI :1 ;
     skos:definition "The types of physical samples that are used to undertake quality assurance (QA) and quality control (QC) checks at all stages of the sampling, preparation and analytical processes, and/or to retain representative material for future reference. Note that QA and QC are often used collectively as a single term, but are in fact distinct procedures: QA 'refers to defect prevention', i.e. ‘the protocols and procedures that ensure that sampling and assaying is completed to the required quality’, whereas QC 'refers to defect detection', i.e. ‘the use of control samples and statistical analysis to ensure that assay results are reliable’ (Graindorge, 2010, p. 112; https://www.usgs.gov/data-management/manage-quality). This vocabulary thus also encapsulates terminology covering sample representability. "@en ;
     skos:hasTopConcept
         :analytical-blank ,
@@ -350,8 +328,8 @@ cs:
     skos:historyNote """QA and QC details must be outlined as part of the JORC Table 1 requirements when reporting Exploration Results, Mineral Resource and Ore Reserve Estimates in Australia, particularly to the Australian Stock Exchange; other exchanges and other CRIRSCO reporting codes have similar rulings.
 
 Definitions compiled from:
-1) Geboy, NJ and Engle, MA 2011, Quality assurance and quality control of geochemical data—A primer for the  research scientist: US Geological Survey Open-File Report 2011–1187, 28 p.
-2) Smee, BW, Bloom, L, Arne, D and Heberlein, D 2024, Practical applications of quality assurance and quality control in mineral exploration, resource estimation and mining programmes: a review of recommended international practices: Geochemistry: Exploration, Environment, Analysis, v. 24, p. 1–21, doi:10.1144/geochem2023-046.
+1) Geboy, NJ and Engle, MA 2011, Quality assurance and quality control of geochemical data—A primer for the  research scientist: US Geological Survey Open-File Report 2011–1187, 28 p.
+2) Smee, BW, Bloom, L, Arne, D and Heberlein, D 2024, Practical applications of quality assurance and quality control in mineral exploration, resource estimation and mining programmes: a review of recommended international practices: Geochemistry: Exploration, Environment, Analysis, v. 24, p. 1–21, doi:10.1144/geochem2023-046.
 3) Hibbert, DB, Korte, E-H and Örnemark, U, 2021, Metrological and quality concepts in analytical chemistry (IUPAC Recommendations 2021): Pure and Applied Chemistry, v. 93, no. 9, p. 997–1048, doi:10.1515/pac-2019-0819.
 4) ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-Assets/LPD/Product-Information/Why-How-Matrix-Spike-ST-MATSPIKE-EN.pdf."""@en ;
     skos:prefLabel "Sample data quality management"@en ;

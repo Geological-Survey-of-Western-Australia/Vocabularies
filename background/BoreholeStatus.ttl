@@ -1,0 +1,81 @@
+PREFIX schema: <https://schema.org/>
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus>
+    schema:description "\"Borehole status” information provided by Geoscience Australia (GA) is not guaranteed to be authoritative or current. GA is not a reporting or regulatory authority for borehole drilling, but it sources borehole information for its research purposes from various regulatory authorities in the States, Northern Territory and Commonwealth governments. The quality and currency of borehole status data in GA’s database reflects information gathered from a borehole operator’s well completion report or from a responsible regulatory authority on a particular date. Changes in a borehole’s status after GA sourced the borehole status information may not be reflected in GA’s data. Due to the wide variety of borehole types in GA’s database, GA’s vocabulary for “borehole status” is an amalgam of terms used by professional bodies (eg, PPDM, CoalLog) and regulatory authorities. Some of the terminology used across these professional domains and jurisdictions has varied over time, and in some cases the same term has a different meaning for different types of boreholes. GA has endeavoured to merge these sources of terminology into a consistent classification that applies for all borehole types."@en ;
+    schema:name "Borehole Geology - Status "@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/abandoned>
+    schema:description "All operations and activities are terminated. The operator has left the site with no intention of returning to the borehole. The borehole is not necessarily plugged.  Similar to CoalLog status \"completed\"."@en ;
+    schema:name "abandoned"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/completed>
+    schema:description "Drilling is completed. Production infrastructure may be installed.  The borehole has not necessarily been abandoned.  Note that the CoalLog \"completed\" status is more similar to \"abandoned\" in this vocabulary."@en ;
+    schema:name "completed"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/drillingSuspended>
+    schema:description "Drilling operations have been temporarily suspended (eg, for weather, maintenance, or other reasons)."@en ;
+    schema:name "drilling suspended"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/injecting>
+    schema:description "The status of a borehole during which liquids or gas are being pumped into the borehole."@en ;
+    schema:name "injecting"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/inprogress>
+    schema:description "The status of a borehole commencing from the rig being moved onsite to the time that drilling operations are completed.  Similar to PPDM's \"drilling\", but different."@en ;
+    schema:name "in progress"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/monitoring>
+    schema:description "Borehole is being used for monitoring parameters such as water level, water quality, fluid pressure."@en ;
+    schema:name "monitoring"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/plugged>
+    schema:description "The borehole has been filled or sealed. The extent of seal may vary from just plugged near the surface (eg, many coal boreholes) to plugged in order to prevent the migration of oil, gas, water, or other substance from one stratum to another (ie, PPDM definition)."@en ;
+    schema:name "plugged"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/pluggedAndAbandoned>
+    schema:description "An abandoned borehole that has also been plugged. The extent of seal may vary from just plugged near the surface (eg, many coal boreholes) to plugged to prevent the migration of oil, gas, water, or other substance from one stratum to another (ie, PPDM definition)."@en ;
+    schema:name "plugged and abandoned"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/producing>
+    schema:description "The status of a borehole during  which liquids or gas are being extracted from the borehole."@en ;
+    schema:name "producing"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/producingAndInjecting>
+    schema:description "The status of a borehole that alternately produces and injects liquid or gas into a borehole."@en ;
+    schema:name "producing and injecting"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/proposed>
+    schema:description "A concept or application exists to drill a borehole, but drilling has not yet commenced or been approved.  Similar to PPDM's \"location\" classification, but different."@en ;
+    schema:name "proposed"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/rehabilitated>
+    schema:description "The borehole site has been fully rehabilitated. Note that this status is included within the PPDM definition of \"plugged and abandoned\"."@en ;
+    schema:name "rehabilitated"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/suspended>
+    schema:description "Borehole operations have been halted for a significant period of time or in a manner that requires significant effort for the resumption of activities. The borehole can be plugged downhole and fluids injected on top of the plug in order to create a temporary seal to prevent hydrocarbon leakage. The surface equipment remains in place. Suspended is never the final status of a borehole."@en ;
+    schema:name "suspended"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/unknown>
+    schema:description "The drilling status of the borehole is unknown."@en ;
+    schema:name "unknown"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholeStatus/workover>
+    schema:description "Activities relating to production wells, etc. For example logging activities, recompletion, testing, repairs, maintenance, plug and abandonment and demobilisation."@en ;
+    schema:name "workover"@en ;
+.

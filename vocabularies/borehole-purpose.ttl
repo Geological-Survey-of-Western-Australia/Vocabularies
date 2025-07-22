@@ -8,7 +8,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 
 :storage-liquids-other-than-water
     skos:narrowMatch <http://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage> ;
@@ -22,9 +22,7 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
 
 :acid-leachate-testing
     a skos:Concept ;
-    rdfs:isDefinedBy
-        <https:///linked.data.gov.au/def/borehole-sub-purpose> ,
-        cs: ;
+    rdfs:isDefinedBy <https://linked.data.gov.au/def/borehole-sub-purpose> ;
     skos:broader :environmental ;
     skos:definition "A well or bore drilled to recover strata samples for their use in acid leachate testing."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/borehole-sub-purpose/acid-leachate-testing> ;
@@ -630,12 +628,6 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:prefLabel "water supply (fluid energy)"@en ;
 .
 
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
-
 :exploration-minerals-and-basic-raw-materials
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -709,12 +701,6 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:narrower :in-situ-leaching-storage ;
     skos:prefLabel "transient storage - gases"@en ;
     schema:citation "https://iadclexicon.org/gas-storage-well-or-storage-well/"^^xsd:anyURI ;
-.
-
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
 .
 
 :exploration-exploitation-minerals-and-basic-raw-materials
@@ -934,6 +920,8 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:prefLabel "mining (development and production)"@en ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
@@ -974,12 +962,7 @@ This vocabulary was discussed at a national level via the Government Geoscience 
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Erin Gray" ;
-                ] ;
+            prov:agent <https://orcid.org/0009-0002-5543-2719> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2025-02-03"^^xsd:date ;

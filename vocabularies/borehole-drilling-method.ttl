@@ -6,7 +6,7 @@ PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -557,16 +557,12 @@ cgibdm:window_sampler
         "https://www.earthenvironmental.co.uk/window-sampling"^^xsd:anyURI ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Geological Survey of Western Australia" ;
-    schema:url "https://www.dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
-.
+:1 schema:name "1" .
 
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
-    owl:versionIRI <http://draft.com/borehole-drilling-method-western-australia/1.0> ;
+    owl:versionIRI :1 ;
     skos:definition "A list of drilling methods routinely used by the mineral and energy resource industries. The drilling methods are grouped into three main categories based on the dominant motion of the drillstem (i.e. the string of pipe that transmits power from the surface down to the drillbit) and drillbit (the part of the bottom-hole assembly that cuts, grinds or breaks the bottom-hole formation to make the hole). Specifically, the presence/absence of rotation in either or both is used as the main distinguishing factor, hence the main grouping into rotary, non-rotary and hybrid. Most drilling used by the mineral and energy resource industries falls into the rotary drilling category. Note that alternative classification schemes can use parameters such as the hole-making method in combination with the hole-clearing and stabilizing method and/or the type of sample produced (e.g. core versus chips). These methods can cross over between the main categories used here; for example, percussion drilling can be used in conjunction with rotary, non-rotary and hybrid methods and the term is not always qualified in company reports. In addition, many drilling rigs are multipurpose and hence can use a combination of drilling methods, including in the same borehole; for example, reverse circulation drilling can be followed by diamond drilling — however, these are both rotary drilling methods. Definitions are compiled from a variety of sources, including the Australian Drilling Industry Association's Drilling Manual (2018, Sixth edition), existing published vocabularies, drilling company webpages, Wikipedia, and a variety reports/publications."@en ;
     skos:hasTopConcept
         :hybrid-drilling ,
@@ -579,21 +575,11 @@ cs:
     prov:qualifiedAttribution
         [
             dcat:hadRole dataroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:name "Erin Gray" ;
-                    schema:email ""^^xsd:anyURI ;
-                ] ;
+            prov:agent <https://orcid.org/0009-0002-5543-2719> ;
         ] ,
         [
             dcat:hadRole dataroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:name "Angela Riganti" ;
-                    schema:email ""^^xsd:anyURI ;
-                ] ;
+            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2023-10-25"^^xsd:date ;

@@ -1,0 +1,526 @@
+PREFIX schema: <https://schema.org/>
+
+<http://linked.data.gov.au/def/earth-science-data-category>
+    schema:description "A classification that facilitates identification of the Fields of Research, or topics, to which a dataset, activity, or entity pertain."@en ;
+    schema:name "Earth Science Data Category"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/airborne-spectral>
+    schema:description "Remotely sensed spectral imaging obtained from an airborne platform."@en ;
+    schema:name "Airborne Spectral"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/atmospheric-sciences>
+    schema:description "The study of the Earth's atmosphere and its various inner-working physical processes."@en ;
+    schema:name "Atmospheric Sciences"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/basement-geology>
+    schema:description "The study of the bedrock of the earth under sedimentary layers. Basement geology may be self-referential in that it is also the study of defining what consititutes basement at regional and local scales, and whether geologically or economically defined."@en ;
+    schema:name "Basement Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/basin-analysis>
+    schema:description "a geologic method by which the history of a sedimentary basin is revealed, by analyzing the sediment fill itself. Aspects of the sediment, namely its composition, primary structures, and internal architecture, can be synthesized into a history of the basin fill. Source:Wikipedia"@en ;
+    schema:name "Basin Analysis"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/basin-centred-gas-geology>
+    schema:description "The geological investigation of the resources embraced by regionally-pervasive, deep, basin-centered, gas accumulations (BCGAs), comprising basin-centered gas systems (BCGSs or regional low-permeability gas systems/RLPGS), that are gas saturated, abnormally pressured (high or low), commonly lack a downdip water contact, and have low-permeability, sandstone reservoirs. (Definition and scopeNote after: Law, 2002; Song et al., 2013; Sunjay, 2014; AAPG Wiki, accessed 08.07.2020)."@en ;
+    schema:name "Basin-Centred Gas Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/biogeochemistry>
+    schema:description "A highly interdisciplinary field involving the integration of biology, geology and chemistry, and encompassing the study of the chemical, physical, geological and biological processes and reactions that govern the composition of the natural environment (including the biosphere, hydrosphere, atmosphere, pedosphere and the lithosphere). (Gorham, 1997; Dunn, 2007; Wikipedia, 23.04.2020)."@en ;
+    schema:name "Biogeochemistry"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/biogeology>
+    schema:description "Biogeology is the interdisciplinary study of biology and geology, embracing interactions between the Earths’ biosphere and geosphere (viz., lithosphere, hydrosphere and atmosphere). (HongFu Yin et al., 2008; Wikipedia, 22.04.2020)."@en ;
+    schema:name "Biogeology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/biological-sciences>
+    schema:description "The natural science that studies life and living organisms, including their physical structure, chemical processes, molecular interactions, physiological mechanisms, development and evolution."@en ;
+    schema:name "Biological Sciences"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/built-environment-and-design>
+    schema:description "Encompasses: Architecture; Building, Design Practice and Management; Engineering Design; Other Built Environment and Design; and Urban and Regional Planning. (Australian and New Zealand Standard Research Classification: Fields of Research; accessed 17.06.2020)."@en ;
+    schema:name "Built Environment and Design"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/carbon-geostorage-geology>
+    schema:description "Involves the identification of deep, subsurface geological sites that are suitable to act as reservoirs for the long-term storage of injected CO2, to reduce greenhouse-gas emissions to the atmosphere. (Modified from: Saddler et al., 2004; Ajayi et al., 2019; AAPG Wiki, accessed online 15.06.2020)."@en ;
+    schema:name "Carbon Geostorage Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/coal-geology>
+    schema:description "Coal geology includes study of: the sedimentation of coals and coal-bearing sequences; their stratigraphy, age and geographic distribution; their physical properties, including coal rank and quality, and the associated classification of coals; their hydrogeological characteristics; contained gases, and the contribution of coal deposits (amongst other rock types) to accumulations of oil and natural gas. (Collated from: Thomas, 2013)."@en ;
+    schema:name "Coal Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/coal-seam-gas-geology>
+    schema:description "The study of hydrocarbon bearing coal measures and coal-seam-gas resources. (Definition and scopeNote derived from Geoscience Australia; Department of Agriculture, Water and the Environment; Wikipedia: websites accessed 18.06.2020)."@en ;
+    schema:name "Coal Seam Gas Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/conventional-reservoir-geology>
+    schema:description "The study of conventional (carbonate and clastic) petroleum systems that contain hydrocarbon accumulations. Conventional petroleum systems are accesible by standard oilfield techniques and typically do not require advanced drilling, completions, and reservoir stimulation methods. (Definition and scopeNote collated and adapted from: Selley & Sonnenburg, 2015; Schlumberger Oilfield Glossary & Wikipedia, both accessed 18.06.2020)."@en ;
+    schema:name "Conventional Reservoir Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/core-spectral>
+    schema:description "Spectral imaging (typically hyperspectral) of rock samples such as core."@en ;
+    schema:name "Core Spectral"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/demography>
+    schema:description "The statistical study of populations, especially human beings."@en ;
+    schema:name "Demography"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/drilling-engineering>
+    schema:description "Engineering involving the design and procedures to safely and economically drill petroleum wells compliant with legislation in the jurisdiction, facilitate evaluation of the formations penetrated (drilling engineering), to safely complete a well to provide maximum production at minimum cost (completions engineering), and to ultimately implement well abandonment (well-abandonment engineering). (After: SEG Wiki & engineering.unsw.edu.au, both accessed 15.06.2020)."@en ;
+    schema:name "Drilling Engineering"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/earth-sciences>
+    schema:description "Earth science or geoscience includes all fields of natural science related to the planet Earth."@en ;
+    schema:name "Earth Sciences"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/ecology>
+    schema:description "A branch of biology concerning interactions among organisms and their biophysical environment, which includes both biotic and abiotic components."@en ;
+    schema:name "Ecology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/electrical-and-electromagnetic-methods-in-geophysics>
+    schema:description "Geophysical methods based on electrical and electromagnetic phenomena that respond to the electrical properties of the subsurface. Source: Cambridge.org"@en ;
+    schema:name "Electrical and Electromagnetic Methods in Geophysics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/electrical-geophysics>
+    schema:description "There are a variety of different electrical methods that used to image different electrical properties of the subsurface. The Resistivity technique is used to determine the resistivity of subsurface materials, the Induced Polarization (IP) technique is used to measure the decay of voltage in the ground, and the Self Potential (SP) technique looks for natural voltage sources underground. Source: Dept. Energy and Mining, Gov. of S.A."@en ;
+    schema:name "Electrical Geophysics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/electromagnetic-geophysics>
+    schema:description "An electromagnetic survey is based on the response of the ground to the propagation of electromagnetic fields composed of an alternating electric intensity and magnetizing force. source: https://www.sciencedirect.com/topics/earth-and-planetary-sciences/electromagnetic-survey "@en ;
+    schema:name "Electromagnetic Geophysics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/engineering>
+    schema:description "The use of scientific principles to design and build machines, structures, and other items, including bridges, tunnels, roads, vehicles, and buildings."@en ;
+    schema:name "Engineering"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/environmental-engineering>
+    schema:description "A professional engineering discipline that takes from broad scientific topics like chemistry, biology, ecology, geology, hydraulics, hydrology, microbiology, and mathematics to create solutions that will protect and also improve the health of living organisms and improve the quality of the environment. Source:Wikipedia"@en ;
+    schema:name "Environmental Engineering"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/environmental-sciences>
+    schema:description "An interdisciplinary academic field that integrates physical, biological and information sciences to the study of the environment, and the solution of environmental problems."@en ;
+    schema:name "Environmental Sciences"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/extraterrestrial-geology>
+    schema:description "A planetary science discipline concerned with the geology of the celestial bodies such as the planets and their moons, asteroids, comets, and meteorites. Source: Wikipedia"@en ;
+    schema:name "Extraterrestrial Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/fluid-extract-geochemistry>
+    schema:description "Analysis of the chemical and physical properties of fluids extracted from rocks in the subsurface."@en ;
+    schema:name "Fluid Extract Geochemistry"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/gemmology>
+    schema:description "The science and study of gemstones, including their source, description, geology, origin, identification, grading and appraisal. (Neuendorf et al., 2011)."@en ;
+    schema:name "Gemmology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geochemistry>
+    schema:description "The study of the chemistry of the Earth and within solid bodies of the solar system, including the distribution, circulation and abundance of elements (and their ions and isotopes), molecules, minerals, rocks and fluids. Source Schulmberger Oilfield Glossary"@en ;
+    schema:name "Geochemistry"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geochemistry-not-elsewhere-classified>
+    schema:description "Geochemical data and information not otherwise described by other sub-categories of geochemistry."@en ;
+    schema:name "Geochemistry Not Elsewhere Classified"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geochronology>
+    schema:description "The study of the relative or absolute age of rocks, minerals and fossils. Absolute age is the measurement of age in years, but 'absolute' ages typically have some amount of error and are inexact. Relative age, in contrast, is the approximate age of rocks, fossils or minerals made by determining the age of the material relative to other surrounding material. Source: Schlumberger Oilfield Glossary"@en ;
+    schema:name "Geochronology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geodynamics>
+    schema:description "A subfield of geophysics dealing with dynamics of the Earth. It applies physics, chemistry and mathematics to the understanding of how mantle convection leads to plate tectonics and geologic phenomena such as seafloor spreading, mountain building, volcanoes, earthquakes, faulting and so on. It also attempts to probe the internal activity by measuring magnetic fields, gravity, and seismic waves, as well as the mineralogy of rocks and their isotopic composition. Source: Wikipedia"@en ;
+    schema:name "Geodynamics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geology>
+    schema:description "An earth science concerned with the solid Earth, the rocks of which it is composed, and the processes by which they change over time. Geology can also include the study of the solid features of any terrestrial planet or natural satellite such as Mars or the Moon. Modern geology significantly overlaps all other earth sciences, including hydrology and the atmospheric sciences, and so is treated as one major aspect of integrated earth system science and planetary science. Source: Wikipedia"@en ;
+    schema:name "Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geology-not-elsewhere-classified>
+    schema:description "Geological data and information not otherwise described by other sub-categories of geochemistry."@en ;
+    schema:name "Geology Not Elsewhere Classified"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geomatic-engineering>
+    schema:description "A professional engineering discipline that focuses on spatial information (i.e. information that has a location). Source:Wikipedia"@en ;
+    schema:name "Geomatic Engineering"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geomechanics-and-resources-geotechnical-engineering>
+    schema:description "The application of scientific methods and engineering principles to the acquisition, interpretation, and use of knowledge of materials of the Earth's crust and earth materials for the solution of engineering problems and the design of engineering works. Source:Wikipedia"@en ;
+    schema:name "Geomechanics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geomorphology-and-regolith-and-landscape-evolution>
+    schema:description "The scientific study of the origin and evolution of topographic and bathymetric features created by physical, chemical or biological processes operating at or near the Earth's surface. Source: Wikipedia"@en ;
+    schema:name "Geomorphology And Regolith And Landscape Evolution"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geophysical-fluid-dynamics>
+    schema:description "The fluid dynamics of naturally occurring flows, such as lava flows, oceans, and planetary atmospheres, on Earth and other planets. Souce: Wikipedia"@en ;
+    schema:name "Geophysical Fluid Dynamics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geophysics>
+    schema:description "The study of the physics of the Earth, especially its electrical, gravitational and magnetic fields and propagation of elastic (seismic) waves within it. Source: Schlumberger Oilfield Glossary"@en ;
+    schema:name "Geophysics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geophysics-not-elsewhere-classified>
+    schema:description "Geophysical data and information not otherwise described by other sub-categories of geochemistry."@en ;
+    schema:name "Geophysics Not Elsewhere Classified"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geostorage-engineering>
+    schema:description "Engineering based on petroleum-reservoir geology, drilling-and-completions engineering, and chemical engineering, to create solutions for the capture and storage of greenhouse gases, principally carbon dioxide, in geological formations."@en ;
+    schema:name "Geostorage Engineering"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geothermal-resource-geology>
+    schema:description "The study of energy generation from geothermal resources including the geological systems and the methods, materials and operations used in the production of energy."@en ;
+    schema:name "Geothermal Resource Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/geothermics-and-radiometrics>
+    schema:description "The study of heatflow and radioactive activity within the Earth."@en ;
+    schema:name "Radiometrics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/glaciology>
+    schema:description "The scientific study of glaciers, or more generally ice and natural phenomena that involve ice. Source: Wikipedia"@en ;
+    schema:name "Glaciology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/gravity>
+    schema:description "A versatile geophysical technique used to detect and identify subsurface bodies and anomalies within the Earth. It is based on the density changes of rock bodies and their effect on the acceleration of gravity. Source: SEG wiki"@en ;
+    schema:name "Gravity"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/gravity-gradiometry>
+    schema:description "The study and measurement of variations in the acceleration due to gravity. The gravity gradient is the spatial rate of change of gravitational acceleration. Source: Wikipedia"@en ;
+    schema:name "Gravity Gradiometry"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/historical-geology>
+    schema:description "The branch of geology concerned with the reconstruction and comprehension of the geological history of the Earth. (Neuendorf et al., 2011)."@en ;
+    schema:name "Historical Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/history-of-geology>
+    schema:description "The historical development of geologic knowledge, including the history of observations of geologic features, geological exploration, drilling, mapping, etc. (Modified from: Neuendorf et al., 2011)."@en ;
+    schema:name "History of Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/hydrogeochemistry>
+    schema:description "The science that uses the tools and principles of chemistry to explain the mechanisms behind major geological systems such as the Earth's crust and its oceans."@en ;
+    schema:name "Hydrogeochemistry"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/hydrogeology>
+    schema:description "The area of geology that deals with the distribution and movement of groundwater in the soil and rocks of the Earth's crust (commonly in aquifers). Source: SEG wiki"@en ;
+    schema:name "Hydrogeology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/ichnology>
+    schema:description "The branch of paleontology concerned with the study of fossilized tracks, trails, burrows, borings, or other trace fossils as evidence of the occurrence or behavior of the organisms that produced them. (dictionary.com)."@en ;
+    schema:name "Ichnology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/igneous-and-metamorphic-petrology>
+    schema:description "The branch of petrology that describes the composition and texture of igneous and metamorphic rocks. Igneous and metamorphic petrology are commonly categorized together because they both contain heavy use of chemistry, chemical methods, and phase diagrams. Source: Wikipedia"@en ;
+    schema:name "Igneous and Metamorphic Petrology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/information-and-computing-sciences>
+    schema:description "Information and Computing sciences includes all narrower fields in information and computer science."@en ;
+    schema:name "Information and Computing Sciences"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/inorganic-geochemistry>
+    schema:description "The study of the chemistry of inorganic rocks, minerals, and other earth materials that are not currently or once living."@en ;
+    schema:name "Inorganic Geochemistry"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/invertebrate-paleontology>
+    schema:description "Invertebrate paleontology deals with invertebrate fossils such as molluscs, arthropods, annelid worms and echinoderms. Source: Wikipedia"@en ;
+    schema:name "Invertebrate Paleontology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/isotope-geochemistry>
+    schema:description "The determination of the relative and absolute concentrations of the elements and their isotopes in the Earth and on Earth's surface. Source: Kendall, Carol; Caldwell, Eric A. (1998). 'Chapter 2: Fundamentals of Isotope Geochemistry'. In Kendall, C.; McDonnell, J. J. (eds.). Isotope Tracers in Catchment Hydrology. Amsterdam: Elsevier Science. pp. 51-86."@en ;
+    schema:name "Isotope Geochemistry"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/land-use-and-environmental-planning>
+    schema:description "Land-use and environmental planning involves the regulation and commitment of land-use, as to how the landscape is used (whether for food production, forestry, nature conservation, water storage, urban development, mining, etc.), to ensure the most efficient, effective and beneficial management and utilization of resources, to provide optimal environmental and social outcomes."@en ;
+    schema:name "Land Use and Environmental Planning"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/local-geology>
+    schema:description "A comprehensive study of the geological and geographical features of an area at a local scale."@en ;
+    schema:name "Local Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/lodgement-form>
+    schema:description "Earth science data categories for selection on lodgement form."@en ;
+    schema:name "Lodgement form selection"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/magnetics>
+    schema:description "Magnetic surveys are a geophysical method to image anomalies in the magnetic field of the earth caused by source bodies within the sub-surface. Source: SEG wiki"@en ;
+    schema:name "Magnetics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/magnetotellurics>
+    schema:description "a passive geophysical method which uses natural time variations of the Earth's magnetic and electric fields to measure the electrical resistivity of the sub-surface. source: Geoscience Australia."@en ;
+    schema:name "Magnetotellurics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/marine-geoscience>
+    schema:description "The study of the history and structure of the ocean floor. It involves geophysical, geochemical, sedimentological and paleontological investigations of the ocean floor and coastal zone. Source: Wikipedia"@en ;
+    schema:name "Marine Geoscience"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/micropaleontology>
+    schema:description "Micropaleontology is the systematic study of microfossils (usually small fossils, best studied by means of a microscope), their morphology, classification, and environmental and biostratigraphic significance. (After: Saraswati & Srinivasan, 2016)."@en ;
+    schema:name "Micropaleontology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/mineral-resource-geology>
+    schema:description "The quantification of the physical properties, chemical properties, volumes, systems of accumulation (e.g. ore body charictarization), and limitations to development of mineral occurences."@en ;
+    schema:name "Mineral Resource Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/mineralogy-and-crystallography>
+    schema:description "The scientific study of the chemistry, crystal structure, and physical (including optical) properties of minerals and mineralized artifacts. Source: Wikipedia"@en ;
+    schema:name "Mineralogy and Crystallography"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/natural-hazards>
+    schema:description "The study of natural phenomena that might have a negative effect on humans or the environment. Specifically geophysical hazards encompassing geological and meteorological phenomena such as earthquakes, volcanic eruptions, wildfires, cyclonic storms, floods, droughts, avalanches and landslides. Source: Wikipedia"@en ;
+    schema:name "Natural Hazards"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/organic-geochemistry>
+    schema:description "The study of the role of processes and compounds that are derived from living or once-living organisms. Source: Killops, Stephen D.; Killops, Vanessa J. (2013). Introduction to Organic Geochemistry. John Wiley & Sons."@en ;
+    schema:name "Organic Geochemistry"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/organic-petrology>
+    schema:description "Organic petrology involves the study of organic matter (OM) in rocks including its origin and thermal maturity due to burial within the earth's crust. Source: CSIRO"@en ;
+    schema:name "Organic Petrology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/paleobotany>
+    schema:description "Paleobotany encompasses the study of fossil plants. (Allaby, 2008)."@en ;
+    schema:name "Paleobotany"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/paleoclimatology>
+    schema:description "The study of changes in climate taken on the scale of the entire history of Earth. It uses a variety of proxy methods from the Earth and life sciences to obtain data previously preserved within rocks, sediments, ice sheets, tree rings, corals, shells, and microfossils to determine the past states of the Earth's various climate regions and its atmospheric system. Source: Wikipedia"@en ;
+    schema:name "Paleoclimatology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/paleontology>
+    schema:description "The study of fossilized, or preserved, remnants of plant and animal life. Changes in the Earth through time can be documented by observing changes in the fossils in successive strata and the environments in which they formed or were preserved. Fossils can also be compared with their extant relatives to assess evolutionary changes. Correlations of strata can be aided by studying their fossil content, a discipline called biostratigraphy. Source: Schlumberger Oilfield Glossary"@en ;
+    schema:name "Paleontology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/palynology>
+    schema:description "Originally, the study of pollen and spores, extant and fossil (paleopalynology), including stratigraphic and paleoecological applications. Now includes the study of a wide range of other robust-walled, microscopic remains of various plants, animals, fungal spores and protists. (Traverse, 2007)."@en ;
+    schema:name "Palynology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/passive-seismic>
+    schema:description "The detection of natural low frequency earth movements, commonly with the purpose of discerning geological structures and locating underground oil, gas, or other resources. Source: Wikipedia"@en ;
+    schema:name "Passive Seismic"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/petroleum-and-coal-geology>
+    schema:description "The branch of geology that studies the processes of fossil fuel formation (coal, oil and gas)."@en ;
+    schema:name "Petroleum and Coal Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/petroleum-geology>
+    schema:description "Study of the mode of origin and conditions of accumulation of hydrocarbons in the Earth's crust; their exploration, involving application of the techniques of geophysics, geochemistry, paleontology, stratigraphy, and tectonics; and their evaluation. (Allaby, 2008). An assessment of petroleum systems and their composite parts: source, migration pathways, reservoir, seal, and method of entrapment"@en ;
+    schema:name "Petroleum Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/petrology>
+    schema:description "The branch of geology that studies rocks and the conditions under which they form. Sometimes synonymous with lithology that studies the macroscopic hand-sample or outcrop-scale description of rocks. Source: Wikipedia"@en ;
+    schema:name "Petrology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/petrophysics>
+    schema:description "Petrophysics is the study of physical and chemical rock properties and their interactions with fluids. A major application of petrophysics is in studying reservoirs for the hydrocarbon industry. Source: Wikipedia"@en ;
+    schema:name "Petrophysics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/physical-geography>
+    schema:description "The branch of geography dealing with natural features. Source: dictionary.com"@en ;
+    schema:name "Physical Geography"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/physical-geography-and-environmental-geoscience-not-elsewhere-classified>
+    schema:description "Physical geographical and environmental science data and information not otherwise described by other sub-categories of geochemistry."@en ;
+    schema:name "Physical Geography And Environmental Geoscience Not Elsewhere Classified"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/quarry-resource-geology>
+    schema:description "The quantification of the physical properties, chemical properties, volumes, and limitations to development of quarry product accumulations. Quarry resources include, but may not be limited to, hardrock, sand and gravel."@en ;
+    schema:name "Quarry and Extractive Resource Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/quaternary-environments>
+    schema:description "The branch of geology that study developments from 2.6 million years ago onwards. In particular Quaternary geology study the process and deposits that developed during the quaternary, a period characterized by glacial-interglacial cycles. Source: Wikipedia"@en ;
+    schema:name "Quaternary Environments"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/regional-geology>
+    schema:description "The geological study of large-scale regions, providing a link between global and local geology, and a framework for site-specific studies. (Bally & Roberts, 2012)."@en ;
+    schema:name "Regional Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/remote-sensing>
+    schema:description "The art, science, and technology of obtaining reliable information from noncontact imaging and other sensor systems about the Earth and its environment, and other physical objects and of processes through recording, measuring, analyzing and representation. Source:International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, Volume XXXIX-B6, 2012 XXII ISPRS Congress, 25 August – 01 September 2012, Melbourne, Australia."@en ;
+    schema:name "Remote Sensing"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/reservoir-engineering>
+    schema:description "The application and study of scientific principles to the fluid flow through porous medium during the development and production of oil and gas reservoirs so as to obtain a high economic recovery.  Source:Wikipedia"@en ;
+    schema:name "Petroleum and Reservoir Engineering"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/resource-geology>
+    schema:description "The study of fuels, metals and other materials of economic interest; it is concerned with the distribution, value and availability of resources, and the cost and benefits of their recovery. (Encyclopedia.com, 06.05.2020)."@en ;
+    schema:name "Resource Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/resources-engineering>
+    schema:description "Engineering that applies various branches of science in order to create new technology that aims to protect, maintain, extract, and establish sustainable natural resources. Source:Wikipedia"@en ;
+    schema:name "Resources Engineering"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/satellite-spectral>
+    schema:description "Remotely sensed spectral imaging obtained from a platform in orbit outside the atmosphere of Earth."@en ;
+    schema:name "Satellite Spectral"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/sedimentary-petrology>
+    schema:description "The study of the composition, characteristics, and origin of sediments and sedimentary rocks. Source: AGI"@en ;
+    schema:name "Sedimentary Petrology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/sedimentology>
+    schema:description "The scientific study of sedimentary rocks and of the processes by which they were formed; the description, classification, origin, and interpretation of sediments. Source: AGI"@en ;
+    schema:name "Sedimentology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/seismic-surveys>
+    schema:description "The science of the acquisition, processing, and analysis of seismic data sets measured and recorded with reference to a particular area of the Earth's surface, to evaluate the subsurface."@en ;
+    schema:name "Seismic Surveys"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/seismology-and-seismic-exploration>
+    schema:description "The scientific study of earthquakes and the propagation of elastic waves through the Earth or through other planet-like bodies. The field also includes studies of earthquake environmental effects such as tsunamis as well as diverse seismic sources such as volcanic, tectonic, oceanic, atmospheric, and artificial processes such as explosions. Seismic exploration is a method of exploration geophysics that uses the principles of seismology to estimate the properties of the Earth's subsurface from artificially generated seismic waves. Source: Wikipedia"@en ;
+    schema:name "Seismology and Seismic Exploration"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/shale-oil-and-gas-geology>
+    schema:description "The geological investigation of natural-gas-and-oil resources trapped in organic-rich rocks dominated by shale (including mudstone and siltstone), which acts as both the source and reservoir of the hydrocarbons, as the low permeability of such rocks inhibits their migration from the rock (Definition and scopeNote after: Speight, 2012; Song et al., 2013; Sunjay et al., 2014; and cited references)."@en ;
+    schema:name "Shale Oil and Gas Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/spectral-imaging>
+    schema:description "Spectral imaging is imaging that uses multiple bands across the electromagnetic spectrum."@en ;
+    schema:name "Spectral Imaging"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/stratigraphy>
+    schema:description "The study of the history, composition, relative ages and distribution of strata, and the interpretation of strata to elucidate Earth history. The comparison, or correlation, of separated strata can include study of their lithology, fossil content, and relative or absolute age, or lithostratigraphy, biostratigraphy, and chronostratigraphy. Source: Schlumberger Oilfield Glossary"@en ;
+    schema:name "Stratigraphy"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/structural-geology>
+    schema:description "Pertaining to structure, the geometry and spatial arrangement of rocks. The structure or deformation can include many mechanisms, such as folding, faulting and fracturing. Structure can usually be interpreted in terms of the deformation of the crust of the Earth as continents and tectonic plates move and collide. Source: Schlumberger Oilfield Glossary"@en ;
+    schema:name "Structural Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/surface-geology>
+    schema:description " The study of rock formations, soils, unconsolidated sediments, geological structures and other features, as observed and recorded or mapped at or near the Earth's surface. (Modified from Neuendorf et al., 2011; www.mindat.org, 06.05.2020)."@en ;
+    schema:name "Surface Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/surface-processes>
+    schema:description "The study of the processes that form and change the Earth's surface. Source: University of Melbourne"@en ;
+    schema:name "Surface Processes"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/surfacewater-hydrology>
+    schema:description "The sub-field of hydrology concerned with above-earth water, in contrast to groundwater hydrology that deals with water below the surface of the Earth. Its applications include rainfall and runoff, the routes that surface water takes (for example through rivers or reservoirs), and the occurrence of floods and droughts. Source: Wikipedia"@en ;
+    schema:name "Surfacewater Hydrology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/surveying>
+    schema:description "The science of determining the terrestrial or three-dimensional positions of points and the distances and angles between them. Source:Wikipedia"@en ;
+    schema:name "Surveying"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/tectonics>
+    schema:description "The branch of geology dealing with the broad architecture of the outer part of the Earth, i.e., the regional assembling of structural or deformational features, a study of their mutual relations, origin and historical evolution. It is closely related to structural geology, with which the distinctions are blurred, but tectonics generally deals with larger features. Source: Neuendorf et al., 2011"@en ;
+    schema:name "Tectonics"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/tight-oil-and-gas-geology>
+    schema:description "The geological investigation of natural gas and/or oil resources trapped, because of very-low-permeability constraints, in sandstone or limestone formations that are located adjacent to organic-rich source rocks (Definition and scopeNote after: Speight, 2012; Song et al., 2013; Zhao et al., 2019; and cited references)."@en ;
+    schema:name "Tight Oil and Gas Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/unconventional-reservoir-geology>
+    schema:description "The geological study of unconventional petroleum systems, which comprise formations with tight gas, tight oil, oil sands, oil shale, bitumen, gas shales, coal seam gas/coalbed methane, and gas hydrates. (Definition and scopeNote after: Ganat, 2019; Schlumberger Oilfield Glossary, accessed 18.06.2020)."@en ;
+    schema:name "Unconventional Reservoir Geology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/urban-and-regional-planning>
+    schema:description "Encompasses: Community Planning, History and Theory of the Built Environment (excl. Architecture); Housing Markets, Development, Management; Land Use and Environmental Planning, Regional Analysis and Development, Transport Planning, Urban Analysis and Development; Urban and Regional Planning not elsewhere classified; and Urban Design. (Australian and New Zealand Standard Research Classification: Fields of Research; accessed 17.06.2020)."@en ;
+    schema:name "Urban and Regional Planning"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/vertebrate-paleontology>
+    schema:description "Vertebrate paleontology concentrates on fossils from the earliest fish to the immediate ancestors of modern mammals. Source: Wikipedia"@en ;
+    schema:name "Vertebrate Paleontology"@en ;
+.
+
+<http://linked.data.gov.au/def/earth-science-data-category/volcanology>
+    schema:description "The study of volcanoes, lava, magma, and related geological, geophysical and geochemical phenomena. Source: Wikipedia"@en ;
+    schema:name "Volcanology"@en ;
+.

@@ -8,13 +8,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX reg: <http://purl.org/linked-data/registry#>
-
-<http://orcid.org/0000-0002-5129-2467>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 5129 2467" ;
-.
+PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 
 :archived
     a skos:Concept ;
@@ -226,11 +220,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:topConceptOf cs: ;
 .
 
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
+
+
 
 :collected
     a skos:Concept ;
@@ -242,12 +233,6 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:narrower :sampled-under-agreement ;
     skos:prefLabel "collected"@en ;
     skos:topConceptOf cs: ;
-.
-
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Gswa" ;
-    schema:url ""^^xsd:anyURI ;
 .
 
 :deaccessioned
@@ -283,6 +268,8 @@ PREFIX reg: <http://purl.org/linked-data/registry#>
     skos:topConceptOf cs: ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
@@ -310,7 +297,7 @@ cs:
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent <http://orcid.org/0000-0002-5129-2467> ;
+            prov:agent <https://orcid.org/0000-0002-5129-2467> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-12-09"^^xsd:date ;

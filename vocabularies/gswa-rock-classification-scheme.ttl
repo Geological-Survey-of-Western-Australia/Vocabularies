@@ -5,7 +5,7 @@ PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
@@ -8158,12 +8158,6 @@ Grey, K and Awramik, SM 2020, Handbook for the study and description of microbia
     skos:topConceptOf cs: ;
 .
 
-<https://linked.data.gov.au/org/gswa>
-    a schema:Organization ;
-    schema:name "Geological Survey of Western Australia" ;
-    schema:url "https://dmp.wa.gov.au/Geological-Survey/Geological-Survey-262.aspx"^^xsd:anyURI ;
-.
-
 :arkose
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -9751,6 +9745,8 @@ Chilingar, GV, Bissell, HJ and Wolf, KH 1967, Chapter 5 Diagenesis of Carbonate 
     schema:citation "https://glossary.americangeosciences.org/term/felsic"^^xsd:anyURI ;
 .
 
+:1 schema:name "1" .
+
 cs:
     a skos:ConceptScheme ;
     reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
@@ -9831,30 +9827,15 @@ MAIN REFERENCES used for compilation:
     prov:qualifiedAttribution
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Terry Farrell" ;
-                ] ;
+            prov:agent <https://www.linkedin.com/in/terry-farrell-3b501126/> ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "Angela Riganti" ;
-                ] ;
+            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ,
         [
             dcat:hadRole isoroles:custodian ;
-            prov:agent
-                [
-                    a schema:Person ;
-                    schema:email ""^^xsd:anyURI ;
-                    schema:name "David Martin" ;
-                ] ;
+            prov:agent <https://www.linkedin.com/in/davidmcbmartin/> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2024-06-28"^^xsd:date ;
