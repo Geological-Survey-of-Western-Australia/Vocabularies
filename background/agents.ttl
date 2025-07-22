@@ -68,3 +68,9 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:email ""^^xsd:anyURI ;
     schema:name "Terry Farrell" ;
 .
+
+<https://kurrawong.ai>
+    a schema:Organization ;
+    schema:name "KurrawongAI" ;
+    schema:url "https://kurrawong.ai"^^xsd:anyURI ;
+.

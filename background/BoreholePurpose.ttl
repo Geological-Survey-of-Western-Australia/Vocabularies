@@ -1,0 +1,101 @@
+PREFIX schema: <https://schema.org/>
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose>
+    schema:description "Purpose or intention for which the borehole was drilled. eg, exploration, development or production, geotechnical. Equivalent to PPDM Business Intention."@en ;
+    schema:name "Borehole Geology - Purpose"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/appraisal>
+    schema:description "Borehole drilled into a formation shown to be potentially productive, and is used to obtain more information a resource."@en ;
+    schema:name "appraisal"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/coalQuality>
+    schema:description "Borehole drilled to obtain samples for laboratory testing and coal analysis. "@en ;
+    schema:name "coal quality"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/development>
+    schema:description "Borehole drilled into an area or zone already proven to be productive, in order to assist in the recovery of a resource (eg, oil, gas, water). Includes service wells for hydrocarbon recovery, and CSG methane release wells."@en ;
+    schema:name "development"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/environmental>
+    schema:description "Borehole drilled to obtain samples of or from strata for laboratory analysis of parameters which may impact on the environment, including water quality."@en ;
+    schema:name "environmental"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/exploration>
+    schema:description "A borehole drilled primarily for the purpose of exploration for natural resources. ie, into an unproven area to determine and evaluate the resource potential and production capabilities of a previously undeveloped area or zone."@en ;
+    schema:name "exploration"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/gasAnalysis>
+    schema:description "Borehole drilled for gas analysis. Typical applications include exploration, compliance and greenhouse gas emissions. "@en ;
+    schema:name "gas analysis"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/geochemistry>
+    schema:description "A borehole drilled primarily for the purpose of collecting samples for geochemical analysis."@en ;
+    schema:name "geochemistry"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/geothermal>
+    schema:description "Borehole drilled to investigate the geotechnical properties of the strata and provide samples for mechanical testing. "@en ;
+    schema:name "geotechnical"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/hydrological>
+    schema:description "Borehole drilled to investigate water level, or piezometer installation. "@en ;
+    schema:name "hydrological"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/lox>
+    schema:description "Borehole drilled to obtain samples to determine the amount of oxidation of any coal seam by either visual and tactile or coal analysis methods. "@en ;
+    schema:name "lox"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/monitoring>
+    schema:description "A groundwater borehole used for the purpose of monitoring. (eg, groundwater levels)"@en ;
+    schema:name "monitoring"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/research>
+    schema:description "A generic term to cover boreholes drilled primarily for the purpose of scientific research."@en ;
+    schema:name "research"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/scientificInvestigationConstents>
+    schema:description "Borehole drilled under a scientific investigation consent granted under the OPGGS Act 2006 (amended 2012) or of the repealed Petroleum (Submerged Lands) Act 1967."@en ;
+    schema:name "Scientific Investigation Consents"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/sequestration>
+    schema:description "A borehole drilled for the purpose of underground storage of a commodity (eg, CO2 sequestration, aquifer storage and recovery)"@en ;
+    schema:name "sequestration"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/service>
+    schema:description "Borehole drilled to provide a conduit or access to and from mine workings for equipment or materials. "@en ;
+    schema:name "service"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/stratigraphicInvestigation>
+    schema:description "A borehole drilled primarily for the purpose of stratigraphic investigation."@en ;
+    schema:name "stratigraphic investigation"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/structure>
+    schema:description "Borehole drilled to investigate the attitude of strata and the impact of any tectonic features. "@en ;
+    schema:name "structure"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/unknown>
+    schema:description "The purpose for drilling the borehole is not known."@en ;
+    schema:name "unknown"@en ;
+.
+
+<https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/watersupply>
+    schema:description "A groundwater borehole drilled for the primary purpose of water supply. The bores may supply water for irrigation, stock, domestic use, or industrial use."@en ;
+    schema:name "water supply"@en ;
+.
