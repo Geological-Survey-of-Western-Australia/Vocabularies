@@ -2,20 +2,28 @@ from pathlib import Path
 
 import pytest
 import pyshacl
+from httpx import request
 from rdflib import Graph
 
 
 @pytest.fixture
-def vocpub_graph() -> Graph:
+def get_vocpub_graph() -> Graph:
     graph = Graph()
     graph.parse(Path("validation/vocpub.ttl"))
     return graph
 
 
+@pytest.fixture
+def get_agents_graph() -> Graph:
+    graph = Graph()
+    graph.parse(Path("background/agents.ttl"))
+    return graph
+
+
 def _get_vocab_files():
     directories = Path(".").glob("./vocabularies")
-    background = Path(".").glob("./vocabularies/background")
-    system = Path(".").glob("./vocabularies/system")
+    background = Path(".").glob("./background")
+    system = Path(".").glob("./system")
     files = []
     backgroundFiles = []
     systemFiles = []
@@ -35,10 +43,10 @@ def _get_vocab_files():
 
 
 @pytest.mark.parametrize("file", _get_vocab_files())
-def test_vocabs(file: Path, vocpub_graph: Graph):
+def test_vocabs(file: Path, get_vocpub_graph: Graph, get_agents_graph: Graph):
     conforms, _, results_text = pyshacl.validate(
-        data_graph=Graph().parse(file),
-        shacl_graph=vocpub_graph,
+        data_graph=Graph().parse(file) + get_agents_graph,
+        shacl_graph=get_vocpub_graph,
         allow_warnings=True,
     )
 
