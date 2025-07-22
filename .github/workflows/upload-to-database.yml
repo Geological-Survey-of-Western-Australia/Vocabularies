@@ -47,5 +47,9 @@ jobs:
         run: |
           kurra fuseki upload vocabularies ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
 
+      - name: Upload labels
+        run: |
+          kurra fuseki upload background ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
+
       - name: Purge Prez cache
         run: curl -fsSL ${{ secrets.prez_url }}/purge-tbox-cache
