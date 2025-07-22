@@ -2,7 +2,6 @@ from pathlib import Path
 
 import pytest
 import pyshacl
-from httpx import request
 from rdflib import Graph
 
 
