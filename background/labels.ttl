@@ -1,5 +1,9 @@
 PREFIX schema: <https://schema.org/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <https://www.w3.org/ns/prov#>
+PREFIX dcat: <https://www.w3.org/ns/dcat#>
 
 
 schema:Organization
@@ -17,7 +21,13 @@ schema:alternateName
     schema:description "An alias for the item." ;
 .
 
+owl:versionIRI
+    schema:name "version";
+.
 
+prov:qualifiedAttribution schema:name "Qualified Attributor" .
+dcat:hadRole schema:name "Role" .
+prov:agent schema:name "Agent" .
 
 <http://purl.org/dc/terms/creator> <https://schema.org/description> "An entity responsible for making the resource."@en .
 <http://purl.org/dc/terms/creator> <https://schema.org/name> "Creator"@en .
@@ -31,8 +41,11 @@ schema:alternateName
 <http://purl.org/dc/terms/hasPart> <https://schema.org/name> "Has Part"@en .
 <http://purl.org/dc/terms/publisher> <https://schema.org/description> "An entity responsible for making the resource available."@en .
 <http://purl.org/dc/terms/publisher> <https://schema.org/name> "Publisher"@en .
+
 <http://purl.org/linked-data/registry#status> <https://schema.org/description> "The status of this register entry"@en .
 <http://purl.org/linked-data/registry#status> <https://schema.org/name> "status"@en .
+<http://purl.org/linked-data/registry#status> rdfs:label "status"@en .
+
 <http://purl.org/dc/terms/conformsTo> <https://schema.org/description> "An established standard to which the described resource conforms."@en .
 <http://purl.org/dc/terms/conformsTo> <https://schema.org/name> "Conforms To"@en .
 <http://purl.org/dc/terms/identifier> <https://schema.org/description> "An unambiguous reference to the resource within a given context."@en .
@@ -115,8 +128,11 @@ schema:alternateName
 <http://www.w3.org/2006/time#hasEnd> <https://schema.org/name> "has end"@en .
 <https://schema.org/license> <https://schema.org/description> "A license document that applies to this content, typically indicated by URL" .
 <https://schema.org/license> <https://schema.org/name> "license" .
+
 <https://schema.org/copyrightNotice> <https://schema.org/description> "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work" .
 <https://schema.org/copyrightNotice> <https://schema.org/name> "copyright notice" .
+<https://schema.org/copyrightNotice> rdfs:label "copyright notice" .
+
 <https://schema.org/citation> <https://schema.org/description> "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc" .
 <https://schema.org/citation> <https://schema.org/name> "citation" .
 <https://schema.org/dateModified> <https://schema.org/description> "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed" .
@@ -194,6 +210,7 @@ schema:alternateName
 <https://linked.data.gov.au/def/queensland-crs/gda2020> schema:name "GDA 2020" .
 <https://linked.data.gov.au/def/queensland-crs/wgs1984> schema:name "WGS 1984" .
 <https://linked.data.gov.au/def/reg-statuses/status> schema:name "status" .
+<https://linked.data.gov.au/def/reg-statuses/status> rdfs:label "status" .
 <https://prez.dev/Manifest> schema:name "Manifest" .
 <https://prez.dev/ManifestResourceRoles/CatalogueData> schema:name "Catalogue Data" .
 <https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels> schema:name "Incomplete Catalogue And Resource Labels" .
@@ -202,3 +219,145 @@ schema:alternateName
 <https://w3id.org/profile/vocpub/4.6> schema:name "VocPub 4.6" .
 <https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> schema:name "QUDT Units Vocabulary" .
 <http://linked.data.gov.au/def/site-status/rehabilitation> schema:name "Rehabilitation" .
+
+schema:Organization
+    rdfs:label "Organization" ;
+.
+
+schema:Person
+    rdfs:label "Person" ;
+.
+
+schema:alternateName
+    rdfs:label "alternate name" ;
+.
+
+owl:versionIRI
+    rdfs:label "version";
+.
+
+prov:qualifiedAttribution rdfs:label "Qualified Attributor" .
+dcat:hadRole rdfs:label "Role" .
+prov:agent rdfs:label "Agent" .
+
+<http://purl.org/dc/terms/creator> rdfs:label "Creator"@en .
+<http://purl.org/dc/terms/source> rdfs:label "Source"@en .
+<http://purl.org/dc/terms/created> rdfs:label "Date Created"@en .
+<http://purl.org/dc/terms/modified> rdfs:label "Date Modified"@en .
+<http://purl.org/dc/terms/hasPart> rdfs:label "Has Part"@en .
+<http://purl.org/dc/terms/publisher> rdfs:label "Publisher"@en .
+
+<http://purl.org/dc/terms/conformsTo> rdfs:label "Conforms To"@en .
+<http://purl.org/dc/terms/identifier> rdfs:label "Identifier"@en .
+
+<http://www.w3.org/ns/prov#qualifiedAttribution> rdfs:label "qualified attribution" .
+<http://www.w3.org/2004/02/skos/core#narrowMatch> rdfs:label "has narrower match"@en .
+<http://www.w3.org/2004/02/skos/core#narrower> rdfs:label "has narrower"@en .
+<http://www.w3.org/2004/02/skos/core#note> rdfs:label "note"@en .
+<http://www.w3.org/ns/shacl#order> rdfs:label "order"@en .
+<http://www.w3.org/ns/prov#agent> rdfs:label "agent" .
+<http://www.w3.org/2006/time#hasBeginning> rdfs:label "has beginning"@en .
+<http://www.w3.org/2004/02/skos/core#Collection> rdfs:label "Collection"@en .
+<http://www.w3.org/ns/dx/prof/hasResource> rdfs:label "has resource"@en .
+<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdfs:label "has top concept"@en .
+<http://www.w3.org/2004/02/skos/core#broader> rdfs:label "has broader"@en .
+<http://www.w3.org/2002/07/owl#versionIRI> rdfs:label "versionIRI" .
+<http://www.w3.org/2002/07/owl#versionInfo> rdfs:label "versionInfo" .
+<http://www.w3.org/ns/dx/prof/hasArtifact> rdfs:label "has artifact" .
+<http://www.w3.org/2004/02/skos/core#altLabel> rdfs:label "alternative label"@en .
+<http://www.w3.org/2000/01/rdf-schema#comment> rdfs:label "comment" .
+<http://www.w3.org/2004/02/skos/core#notation> rdfs:label "notation"@en .
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdfs:label "was derived from" .
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdfs:label "preferred label"@en .
+<http://www.w3.org/2004/02/skos/core#exactMatch> rdfs:label "has exact match"@en .
+<http://www.w3.org/2000/01/rdf-schema#Datatype> rdfs:label "Datatype" .
+<http://www.w3.org/2004/02/skos/core#historyNote> rdfs:label "history note"@en .
+<http://www.w3.org/2004/02/skos/core#definition> rdfs:label "definition"@en .
+<http://www.w3.org/2004/02/skos/core#broadMatch> rdfs:label "has broader match"@en .
+<http://www.w3.org/2004/02/skos/core#member> rdfs:label "has member"@en .
+<http://www.w3.org/2004/02/skos/core#topConceptOf> rdfs:label "is top concept in scheme"@en .
+<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdfs:label "Concept Scheme"@en .
+<http://www.w3.org/ns/dcat#Catalog> rdfs:label "Catalog"@en .
+<http://www.w3.org/2004/02/skos/core#relatedMatch> rdfs:label "has related match"@en .
+<http://www.w3.org/2004/02/skos/core#inScheme> rdfs:label "is in scheme"@en .
+<http://www.w3.org/ns/dx/prof/hasRole> rdfs:label "has role" .
+<http://www.w3.org/2004/02/skos/core#Concept> rdfs:label "Concept"@en .
+<http://www.w3.org/2004/02/skos/core#Concept> rdfs:label "Concept" .
+<http://www.w3.org/2004/02/skos/core#closeMatch> rdfs:label "has close match"@en .
+<http://www.w3.org/ns/dcat#hadRole> rdfs:label "hadRole"@en .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> rdfs:label "is defined by" .
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdfs:label "scope note"@en .
+<http://www.w3.org/2006/time#hasEnd> rdfs:label "has end"@en .
+<https://schema.org/license> rdfs:label "license" .
+
+<https://schema.org/citation> rdfs:label "citation" .
+<https://schema.org/dateModified> rdfs:label "date modified" .
+rdfs:label rdfs:label "name" .
+<https://schema.org/contributor> rdfs:label "contributor" .
+<https://schema.org/description> rdfs:label "description" .
+<https://schema.org/url> rdfs:label "url" .
+<https://schema.org/dateCreated> rdfs:label "date created" .
+<https://schema.org/marginOfError> rdfs:label "margin of error" .
+<https://schema.org/creator> rdfs:label "creator" .
+<https://schema.org/version> rdfs:label "version" .
+<https://schema.org/keywords> rdfs:label "keywords" .
+<https://schema.org/publisher> rdfs:label "publisher" .
+<https://schema.org/codeRepository> rdfs:label "code repository" .
+<https://schema.org/email> rdfs:label "email" .
+<https://schema.org/copyrightHolder> rdfs:label "copyright holder" .
+<https://schema.org/color> rdfs:label "color" .
+
+
+<http://linked.data.gov.au/def/borehole-start-point/offshore> rdfs:label "Offshore" .
+<https://linked.data.gov.au/def/borehole-start-point> rdfs:label "Offshore" .
+<https://linked.data.gov.au/def/borehole-start-point/natural-ground-surface> rdfs:label "Natural Ground Surface" .
+
+
+<https://creativecommons.org/licenses/by/4.0/> rdfs:label "Creative Commons BY 4.0" .
+
+
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian> rdfs:label "custodian" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticConglomerate> rdfs:label "Clastic Conglomerate" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticMudstone> rdfs:label "Clastic Mudstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSandstone> rdfs:label "Clastic Sandstone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dolostone> rdfs:label "Dolostone" .
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rockGypsumOrAnhydrite> rdfs:label "Rock Gypsum Or Anhydrite" .
+<http://linked.data.gov.au/def/geou> rdfs:label "Geological Units" .
+<http://linked.data.gov.au/def/geou/M3-PER-TON_M> rdfs:label "M3 per ton" .
+<http://linked.data.gov.au/def/iso-4217-currencies> rdfs:label "ISO 4217 Currencies" .
+<http://linked.data.gov.au/def/queensland-crs/agd1966> rdfs:label "AGD 1966" .
+<http://linked.data.gov.au/def/queensland-crs/agd1984> rdfs:label "AGD 1984" .
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdfs:label "preferred namespace prefix" .
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdfs:label "preferred namespace URI" .
+<http://qudt.org/vocab/unit/BBL_US> rdfs:label "Barrels (US)" .
+<http://qudt.org/vocab/unit/BBL_US-PER-DAY> rdfs:label "Barrels (US) per day" .
+<http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> rdfs:label "QUDT Units Vocabulary" .
+<http://www.w3.org/2002/07/owl#Datatype> rdfs:label "Datatype" .
+<http://www.w3.org/2004/02/skos/core#versionInfo> rdfs:label "version info" .
+<http://www.w3.org/2006/time#> rdfs:label "Time Ontology in OWL" .
+<https://linked.data.gov.au/def/borehole-design/deviated> rdfs:label "deviated" .
+<https://linked.data.gov.au/def/borehole-purpose-wa/storage-liquids-other-than-water> rdfs:label "storage liquids other than water" .
+<https://linked.data.gov.au/def/borehole-purpose-wa/water-supply-mining> rdfs:label "water supply mining" .
+<https://linked.data.gov.au/def/borehole-sub-purpose> rdfs:label "Borehole Sub Purpose" .
+<https://linked.data.gov.au/def/demirs-offices/kalgoorlie-office> rdfs:label "Kalgoorlie Office" .
+<https://linked.data.gov.au/def/earthsci-for/applied-geophysics-> rdfs:label "Applied Geophysics-" .
+<https://linked.data.gov.au/def/earthsci-for/data-management-and-data-science> rdfs:label "Data Management and Data Science" .
+<https://linked.data.gov.au/def/geofeatures/Basin> rdfs:label "Basin" .
+<https://linked.data.gov.au/def/geofeatures/Suite> rdfs:label "Suite" .
+<https://linked.data.gov.au/def/geofeatures/Supersuite> rdfs:label "Supersuite" .
+<https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-mapping> rdfs:label "Geology Mapping" .
+<https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral> rdfs:label "Resources Mineral" .
+<https://linked.data.gov.au/def/queensland-crs/gda1994> rdfs:label "GDA 1994" .
+<https://linked.data.gov.au/def/queensland-crs/gda2020> rdfs:label "GDA 2020" .
+<https://linked.data.gov.au/def/queensland-crs/wgs1984> rdfs:label "WGS 1984" .
+<https://linked.data.gov.au/def/reg-statuses/status> rdfs:label "status" .
+<https://linked.data.gov.au/def/reg-statuses/status> rdfs:label "status" .
+<https://prez.dev/Manifest> rdfs:label "Manifest" .
+<https://prez.dev/ManifestResourceRoles/CatalogueData> rdfs:label "Catalogue Data" .
+<https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels> rdfs:label "Incomplete Catalogue And Resource Labels" .
+<https://prez.dev/ManifestResourceRoles/ResourceData> rdfs:label "Resource Data" .
+<https://purl.org/NET/rdflicense/cc-by4.0> rdfs:label "CC BY 4.0" .
+<https://w3id.org/profile/vocpub/4.6> rdfs:label "VocPub 4.6" .
+<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> rdfs:label "QUDT Units Vocabulary" .
+<http://linked.data.gov.au/def/site-status/rehabilitation> rdfs:label "Rehabilitation" .
+
