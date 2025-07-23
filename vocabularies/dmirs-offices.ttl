@@ -353,12 +353,12 @@ cs:
     skos:prefLabel "DEMIRS offices"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole dataroles:custodian ;
+            prov:hadRole dataroles:custodian ;
             prov:agent
                 <https://orcid.org/0009-0002-5543-2719> ;
         ] ,
         [
-            dcat:hadRole dataroles:custodian ;
+            prov:hadRole dataroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;

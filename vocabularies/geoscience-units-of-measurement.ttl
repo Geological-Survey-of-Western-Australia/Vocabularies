@@ -4213,11 +4213,11 @@ cs:
     skos:prefLabel "Geoscience units of measurement"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0009-0002-5543-2719> ;
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-7645-5031>;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;

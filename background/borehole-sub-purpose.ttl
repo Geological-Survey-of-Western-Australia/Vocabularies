@@ -1,316 +1,316 @@
 PREFIX schema: <https://schema.org/>
 
 <http://linked.data.gov.au/def/borehole-sub-purpose>
-    schema:description "The intended function of a borehole."@en ;
-    schema:name "Borehole Sub-Purpose"@en ;
+    schema:description "The intended function of a borehole." ;
+    schema:name "Borehole Sub-Purpose" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/acid-leachate-testing>
-    schema:description "A well or bore drilled to recover strata samples for their use in acid leachate testing."@en ;
-    schema:name "acid leachate testing"@en ;
+    schema:description "A well or bore drilled to recover strata samples for their use in acid leachate testing." ;
+    schema:name "acid leachate testing" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/ballast>
-    schema:description "A well or bore through which ballast is transported to and from mine workings."@en ;
-    schema:name "ballast"@en ;
+    schema:description "A well or bore through which ballast is transported to and from mine workings." ;
+    schema:name "ballast" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/blasthole>
-    schema:description "A well or bore drilled to facilitate the installation and subsequent detonation of explosives, pulverising material and throwing it away from the wall or face, reducing the effort required to advance the face or recover and remove materials."@en ;
-    schema:name "Blasthole"@en ;
+    schema:description "A well or bore drilled to facilitate the installation and subsequent detonation of explosives, pulverising material and throwing it away from the wall or face, reducing the effort required to advance the face or recover and remove materials." ;
+    schema:name "Blasthole" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/cement>
-    schema:description "A well or bore through which cement is transported to and from mine workings."@en ;
-    schema:name "cement"@en ;
+    schema:description "A well or bore through which cement is transported to and from mine workings." ;
+    schema:name "cement" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/chemical-flood>
-    schema:description "The introduction of chemicals to either increase the receptiveness of a petroleum system to other improved recovery techniques, or to improve recovery in its own right."@en ;
-    schema:name "Chemical Flood"@en ;
+    schema:description "The introduction of chemicals to either increase the receptiveness of a petroleum system to other improved recovery techniques, or to improve recovery in its own right." ;
+    schema:name "Chemical Flood" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/coal-quality>
-    schema:description "Borehole drilled to obtain samples for laboratory testing and coal analysis."@en ;
-    schema:name "Coal Quality"@en ;
+    schema:description "Borehole drilled to obtain samples for laboratory testing and coal analysis." ;
+    schema:name "Coal Quality" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/compliance-gas-testing>
-    schema:description "Gas content testing in drainage areas to ensure remaining gas content is below the mining threshold."@en ;
-    schema:name "compliance gas testing"@en ;
+    schema:description "Gas content testing in drainage areas to ensure remaining gas content is below the mining threshold." ;
+    schema:name "compliance gas testing" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/controlled-pressure-well>
-    schema:description "A well drilled to provide a mechanism for the control of pressure in a system."@en ;
-    schema:name "controlled pressure well"@en ;
+    schema:description "A well drilled to provide a mechanism for the control of pressure in a system." ;
+    schema:name "controlled pressure well" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/disposal>
-    schema:description "A well in which fluids are injected rather than produced, where the primary objective is to dispose of fluid into an isolated formation."@en ;
-    schema:name "Disposal"@en ;
+    schema:description "A well in which fluids are injected rather than produced, where the primary objective is to dispose of fluid into an isolated formation." ;
+    schema:name "Disposal" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/electricity>
-    schema:description "A well or bore through which electricity is provided to mine workings."@en ;
-    schema:name "electricity"@en ;
+    schema:description "A well or bore through which electricity is provided to mine workings." ;
+    schema:name "electricity" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/end-of-borehole-well>
-    schema:description "A well drilled to be intersected by a ranging well."@en ;
-    schema:name "end of borehole well"@en ;
+    schema:description "A well drilled to be intersected by a ranging well." ;
+    schema:name "end of borehole well" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/environmental>
-    schema:description "Borehole drilled to obtain samples of strata for laboratory analysis of parameters which may impact on the environment."@en ;
-    schema:name "Environmental"@en ;
+    schema:description "Borehole drilled to obtain samples of strata for laboratory analysis of parameters which may impact on the environment." ;
+    schema:name "Environmental" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/extensometer>
-    schema:description "A well or bore drilled to facilitate strain measurements and tensile tests through the use of an extensometer."@en ;
-    schema:name "extensometer"@en ;
+    schema:description "A well or bore drilled to facilitate strain measurements and tensile tests through the use of an extensometer." ;
+    schema:name "extensometer" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/fault-delineation>
-    schema:description "Borehole drilled to define a fault structure."@en ;
-    schema:name "fault delineation"@en ;
+    schema:description "Borehole drilled to define a fault structure." ;
+    schema:name "fault delineation" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/fire-flood>
-    schema:description "The ignition of a petroleum system to inject heat, improving recovery through the reduction of viscosity, displacement by combustion products and more beneficial pressure gradients."@en ;
-    schema:name "Fire Flood"@en ;
+    schema:description "The ignition of a petroleum system to inject heat, improving recovery through the reduction of viscosity, displacement by combustion products and more beneficial pressure gradients." ;
+    schema:name "Fire Flood" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/gas-drainage-undifferentiated>
-    schema:description "A well or bore drilled to remove gas from a subsurface system without any intent for commercialisation."@en ;
-    schema:name "gas drainage undifferentiated"@en ;
+    schema:description "A well or bore drilled to remove gas from a subsurface system without any intent for commercialisation." ;
+    schema:name "gas drainage undifferentiated" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/gas-flood>
-    schema:description "The introduction of a gas to a petroleum system to improve recovery through displacement and more beneficial pressure gradients."@en ;
-    schema:name "Gas Flood"@en ;
+    schema:description "The introduction of a gas to a petroleum system to improve recovery through displacement and more beneficial pressure gradients." ;
+    schema:name "Gas Flood" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/gas-management>
-    schema:description "Borehole drilled for gas analysis and management. Typical applications include exploration, management of gas in coal mines, compliance and greenhouse gas emissions."@en ;
-    schema:name "Gas Management"@en ;
+    schema:description "Borehole drilled for gas analysis and management. Typical applications include exploration, management of gas in coal mines, compliance and greenhouse gas emissions." ;
+    schema:name "Gas Management" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/geotech>
-    schema:description "A borehole drilled to investigate the geotechnical properties of the strata and provide samples for mechanical testing."@en ;
-    schema:name "Geotech"@en ;
+    schema:description "A borehole drilled to investigate the geotechnical properties of the strata and provide samples for mechanical testing." ;
+    schema:name "Geotech" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/geotechnical-properties>
-    schema:description "A borehole drilled to obtain strata core for geotechnical rock property testing."@en ;
-    schema:name "geotechnical properties"@en ;
+    schema:description "A borehole drilled to obtain strata core for geotechnical rock property testing." ;
+    schema:name "geotechnical properties" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/goaf-drainage>
-    schema:description "A well or bore drilled to remove fluids and or dangerous gases from the goaf."@en ;
-    schema:name "goaf drainage"@en ;
+    schema:description "A well or bore drilled to remove fluids and or dangerous gases from the goaf." ;
+    schema:name "goaf drainage" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/heat-flow>
-    schema:description "purposely drilled to directly measure downhole temperature gradient as well as collecting core samples (to measure thermal conductivity of formations intersected), then to be able to calculate / determine heat flow in the drilled section of the borehole."@en ;
-    schema:name "Geothermal heat flow"@en ;
+    schema:description "purposely drilled to directly measure downhole temperature gradient as well as collecting core samples (to measure thermal conductivity of formations intersected), then to be able to calculate / determine heat flow in the drilled section of the borehole." ;
+    schema:name "Geothermal heat flow" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/intrusion-delineation>
-    schema:description "Borehole drilled to define an intrusion."@en ;
-    schema:name "intrusion delineation"@en ;
+    schema:description "Borehole drilled to define an intrusion." ;
+    schema:name "intrusion delineation" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/investigation>
-    schema:description "A well drilled with scant or nil prior knowledge of the geology of an area to identify the presence of any lithologic, structural, hydrological, geochemical, or other geologic properties of interest."@en ;
-    schema:name "Investigation"@en ;
+    schema:description "A well drilled with scant or nil prior knowledge of the geology of an area to identify the presence of any lithologic, structural, hydrological, geochemical, or other geologic properties of interest." ;
+    schema:name "Investigation" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/large-diameter>
-    schema:description "Large diameter tests for coal physical properties and washability"@en ;
-    schema:name "large diameter"@en ;
+    schema:description "Large diameter tests for coal physical properties and washability" ;
+    schema:name "large diameter" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/limit-of-oxidation>
-    schema:description "Borehole drilled to obtain samples to determine the amount of oxidation of any coal seam by either visual and tactile or coal analysis methods."@en ;
-    schema:name "Limit of Oxidation"@en ;
+    schema:description "Borehole drilled to obtain samples to determine the amount of oxidation of any coal seam by either visual and tactile or coal analysis methods." ;
+    schema:name "Limit of Oxidation" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/mineral-ore-body-assessment>
-    schema:description "A well drilled to delineate a mineral ore deposit and/or define physical properties such as grade and quality"@en ;
-    schema:name "Mineral Ore Body Assessment"@en ;
+    schema:description "A well drilled to delineate a mineral ore deposit and/or define physical properties such as grade and quality" ;
+    schema:name "Mineral Ore Body Assessment" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/multi-channel-vibrating-wire-piezometer>
-    schema:description "A well or bore drilled to provide a location in which Multi-Channel Vibrating Wire Piezometer can be used to register changes in fluid pressure."@en ;
-    schema:name "multi-channel vibrating wire piezometer"@en ;
+    schema:description "A well or bore drilled to provide a location in which Multi-Channel Vibrating Wire Piezometer can be used to register changes in fluid pressure." ;
+    schema:name "multi-channel vibrating wire piezometer" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/nested-standpipe-piezometer>
-    schema:description "A well or bore drilled to provide a location in which Nested Standpipe Piezometer can be used to register changes in fluid pressure."@en ;
-    schema:name "nested standpipe piezometer"@en ;
+    schema:description "A well or bore drilled to provide a location in which Nested Standpipe Piezometer can be used to register changes in fluid pressure." ;
+    schema:name "nested standpipe piezometer" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/nitrogen>
-    schema:description "A well or bore through which nitrogen is transported to and from mine workings."@en ;
-    schema:name "nitrogen"@en ;
+    schema:description "A well or bore through which nitrogen is transported to and from mine workings." ;
+    schema:name "nitrogen" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/observation>
-    schema:description "Borehole drilled to investigate water level or for piezometer installation."@en ;
-    schema:name "Observation"@en ;
+    schema:description "Borehole drilled to investigate water level or for piezometer installation." ;
+    schema:name "Observation" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/penetrometer>
-    schema:description "A well or bore drilled to facilitate strength measurements through the use of a penetrometer."@en ;
-    schema:name "penetrometer"@en ;
+    schema:description "A well or bore drilled to facilitate strength measurements through the use of a penetrometer." ;
+    schema:name "penetrometer" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/petroleum-injection>
-    schema:description "A well in which hydrocarbons are injected rather than produced, the primary objective typically to store gas in a high quality reservoir for later production to maintain consistent rates of gas supply."@en ;
-    schema:name "Petroleum Injection"@en ;
+    schema:description "A well in which hydrocarbons are injected rather than produced, the primary objective typically to store gas in a high quality reservoir for later production to maintain consistent rates of gas supply." ;
+    schema:name "Petroleum Injection" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/petroleum-prod-test>
-    schema:description "A well drilled primarily to test the ability of a target reservoir to  produce hydrocarbons, and to measure production parameters such as flow rates, well interference, pressure decline etc."@en ;
-    schema:name "Petroleum Production Testing"@en ;
+    schema:description "A well drilled primarily to test the ability of a target reservoir to  produce hydrocarbons, and to measure production parameters such as flow rates, well interference, pressure decline etc." ;
+    schema:name "Petroleum Production Testing" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/petroleum-production>
-    schema:description "A well drilled to drain hydrocarbons from an oil or gas field, including during the degasification of a coal seam."@en ;
-    schema:name "Petroleum Production"@en ;
+    schema:description "A well drilled to drain hydrocarbons from an oil or gas field, including during the degasification of a coal seam." ;
+    schema:name "Petroleum Production" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/petroleum-reservoir-characterisation>
-    schema:description "A well drilled to determine how to develop a hydrocarbon field most efficiently or quantify reservoir characteristics such as pay zone thickness, porosity, permeability, saturation, fluid column heights, and the presence of cap rock. Most commonly associated with the Appraisal stage of the resource lifecycle."@en ;
-    schema:name "Petroleum Resource Characterisation"@en ;
+    schema:description "A well drilled to determine how to develop a hydrocarbon field most efficiently or quantify reservoir characteristics such as pay zone thickness, porosity, permeability, saturation, fluid column heights, and the presence of cap rock. Most commonly associated with the Appraisal stage of the resource lifecycle." ;
+    schema:name "Petroleum Resource Characterisation" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/pggd-functions>
-    schema:description "The functions of boreholes specific to petroleum, greenhouse gas, and geothermal wells and bores i.e. those that require a statutory notification in Queensland regulation."@en ;
-    schema:name "Petroleum Borehole Functions"@en ;
+    schema:description "The functions of boreholes specific to petroleum, greenhouse gas, and geothermal wells and bores i.e. those that require a statutory notification in Queensland regulation." ;
+    schema:name "Petroleum Borehole Functions" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/plug>
-    schema:description "Plug hole"@en ;
-    schema:name "plug"@en ;
+    schema:description "Plug hole" ;
+    schema:name "plug" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/primary-hydraulic-fracturing>
-    schema:description "A well or bore drilled to facilitate the introduction of a liquid solution to a system, under significant pressure, to introduce fractures into strata."@en ;
-    schema:name "primary hydraulic fracturing"@en ;
+    schema:description "A well or bore drilled to facilitate the introduction of a liquid solution to a system, under significant pressure, to introduce fractures into strata." ;
+    schema:name "primary hydraulic fracturing" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/ranging-well>
-    schema:description "A well drilled to intersect with another well."@en ;
-    schema:name "ranging well"@en ;
+    schema:description "A well drilled to intersect with another well." ;
+    schema:name "ranging well" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/refuge>
-    schema:description "A well or bore which provides access to, for ventilation or rescue, a refuge."@en ;
-    schema:name "refuge"@en ;
+    schema:description "A well or bore which provides access to, for ventilation or rescue, a refuge." ;
+    schema:name "refuge" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/resource-assessment>
-    schema:description "A well determining the geological properties of a resource specific to the type of commodity. This may include quantification of volume, grade, porosity, permeability, quality, or ease-of-extraction."@en ;
-    schema:name "Resource Assessment"@en ;
+    schema:description "A well determining the geological properties of a resource specific to the type of commodity. This may include quantification of volume, grade, porosity, permeability, quality, or ease-of-extraction." ;
+    schema:name "Resource Assessment" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/service>
-    schema:description "Borehole drilled to provide a conduit or access to and from mine workings for equipment or materials."@en ;
-    schema:name "Service"@en ;
+    schema:description "Borehole drilled to provide a conduit or access to and from mine workings for equipment or materials." ;
+    schema:name "Service" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/slim-core-testing>
-    schema:description "Slim core testing for basic coal quality"@en ;
-    schema:name "slim core testing"@en ;
+    schema:description "Slim core testing for basic coal quality" ;
+    schema:name "slim core testing" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/spontaneous-combustion-testing>
-    schema:description "Borehole Drilled to obtains samples for spontaneous combustion testing"@en ;
-    schema:name "spontaneous combustion testing"@en ;
+    schema:description "Borehole Drilled to obtains samples for spontaneous combustion testing" ;
+    schema:name "spontaneous combustion testing" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/standpipe-piezometer>
-    schema:description "A well or bore drilled to provide a location in which Standpipe Piezometer can be used to register changes in fluid pressure."@en ;
-    schema:name "standpipe piezometer"@en ;
+    schema:description "A well or bore drilled to provide a location in which Standpipe Piezometer can be used to register changes in fluid pressure." ;
+    schema:name "standpipe piezometer" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/steam-flood>
-    schema:description "The injection of steam into a petroleum system to improve recovery through the reduction of viscosity, displacement and more beneficial pressure gradients."@en ;
-    schema:name "Steam Flood"@en ;
+    schema:description "The injection of steam into a petroleum system to improve recovery through the reduction of viscosity, displacement and more beneficial pressure gradients." ;
+    schema:name "Steam Flood" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/stimulation>
-    schema:description "A well drilled to enhance the production of a fluid from an offset production well. Typically to maintain reservoir pressure, to overcome to low permeability or high viscosity fluids in petroleum systems, or to introduce additional fluid in geothermal systems."@en ;
-    schema:name "Stimulation"@en ;
+    schema:description "A well drilled to enhance the production of a fluid from an offset production well. Typically to maintain reservoir pressure, to overcome to low permeability or high viscosity fluids in petroleum systems, or to introduce additional fluid in geothermal systems." ;
+    schema:name "Stimulation" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/stone-dust>
-    schema:description "A well or bore through which stone dust is transported to and from mine workings."@en ;
-    schema:name "stone dust"@en ;
+    schema:description "A well or bore through which stone dust is transported to and from mine workings." ;
+    schema:name "stone dust" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/stratigraphic>
-    schema:description "A well determining the lithological intervals present at a location. Typically to determine on the presence, location and extent of a potential resource. Most commonly associated with the Exploration stage of the resource lifecycle."@en ;
-    schema:name "Stratigraphic"@en ;
+    schema:description "A well determining the lithological intervals present at a location. Typically to determine on the presence, location and extent of a potential resource. Most commonly associated with the Exploration stage of the resource lifecycle." ;
+    schema:name "Stratigraphic" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/stress-test-cell-over-stress-overcore>
-    schema:description "A well or bore drilled to facilitate the installation and subsequent retrieval of (Through overcoring) a stress cell."@en ;
-    schema:name "stress test cell / stress overcore"@en ;
+    schema:description "A well or bore drilled to facilitate the installation and subsequent retrieval of (Through overcoring) a stress cell." ;
+    schema:name "stress test cell / stress overcore" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/structure>
-    schema:description "Borehole drilled to investigate the attitude of strata and the impact of any tectonic features."@en ;
-    schema:name "Structure"@en ;
+    schema:description "Borehole drilled to investigate the attitude of strata and the impact of any tectonic features." ;
+    schema:name "Structure" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/stygofauna-monitoring>
-    schema:description "A well or bore drilled to facilitate the monitoring of the population, biodiversity and overall 'health' parameters of stygofauna."@en ;
-    schema:name "stygofauna monitoring"@en ;
+    schema:description "A well or bore drilled to facilitate the monitoring of the population, biodiversity and overall 'health' parameters of stygofauna." ;
+    schema:name "stygofauna monitoring" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/surface-to-in-seam-well>
-    schema:description "A well drilled to laterally intersect and drain hydrocarbons from a subsurface system."@en ;
-    schema:name "surface to in-seam well"@en ;
+    schema:description "A well drilled to laterally intersect and drain hydrocarbons from a subsurface system." ;
+    schema:name "surface to in-seam well" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/tiltmeter>
-    schema:description "A well or bore drilled to facilitate the installation of a tiltmeter."@en ;
-    schema:name "tiltmeter"@en ;
+    schema:description "A well or bore drilled to facilitate the installation of a tiltmeter." ;
+    schema:name "tiltmeter" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/underground-in-seam-gas-riser>
-    schema:description "A well drilled to improve the transport of gas away from a coal seam."@en ;
-    schema:name "underground in-seam gas-riser"@en ;
+    schema:description "A well drilled to improve the transport of gas away from a coal seam." ;
+    schema:name "underground in-seam gas-riser" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/vertical-production-well>
-    schema:description "A vertical well drilled to drain hydrocarbons from a subsurface system."@en ;
-    schema:name "vertical production well"@en ;
+    schema:description "A vertical well drilled to drain hydrocarbons from a subsurface system." ;
+    schema:name "vertical production well" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/vibrating-wire-piezometer>
-    schema:description "A well or bore drilled to provide a location in which Vibrating Wire Piezometer can be used to register changes in fluid pressure."@en ;
-    schema:name "vibrating wire piezometer"@en ;
+    schema:description "A well or bore drilled to provide a location in which Vibrating Wire Piezometer can be used to register changes in fluid pressure." ;
+    schema:name "vibrating wire piezometer" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/virgin-gas-testing>
-    schema:description "Gas content testing in areas not subject to gas drainage."@en ;
-    schema:name "virgin gas testing"@en ;
+    schema:description "Gas content testing in areas not subject to gas drainage." ;
+    schema:name "virgin gas testing" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/water-flood>
-    schema:description "The introduction of liquid water to a petroleum system to improve recovery through displacement and more beneficial pressure gradients."@en ;
-    schema:name "Water Flood"@en ;
+    schema:description "The introduction of liquid water to a petroleum system to improve recovery through displacement and more beneficial pressure gradients." ;
+    schema:name "Water Flood" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/water-injection>
-    schema:description "A well in which water is injected rather than produced, where the primary objective is to store water in a reservoir or aquifer for later production."@en ;
-    schema:name "Water Injection"@en ;
+    schema:description "A well in which water is injected rather than produced, where the primary objective is to store water in a reservoir or aquifer for later production." ;
+    schema:name "Water Injection" ;
 .
 
 <http://linked.data.gov.au/def/borehole-sub-purpose/water-supply>
-    schema:description "A well drilled to drain water from an aquifer."@en ;
-    schema:name "Water Supply"@en ;
+    schema:description "A well drilled to drain water from an aquifer." ;
+    schema:name "Water Supply" ;
 .

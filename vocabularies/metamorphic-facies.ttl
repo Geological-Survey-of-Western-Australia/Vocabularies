@@ -270,11 +270,11 @@ cs:
         theme:geology ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole dataroles:custodian ;
+            prov:hadRole dataroles:custodian ;
             prov:agent <https://www.linkedin.com/in/david-kelsey-425746137/> ;
         ] ,
         [
-            dcat:hadRole dataroles:custodian ;
+            prov:hadRole dataroles:custodian ;
             prov:agent <https://orcid.org/0009-0003-0007-8342> ;
         ] ;
 .

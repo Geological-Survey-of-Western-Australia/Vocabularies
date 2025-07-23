@@ -1,99 +1,99 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://linked.data.gov.au/def/data-roles>
-    rdfs:label "IDN Role Codes"@en ;
+    rdfs:label "IDN Role Codes" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/author>
-    rdfs:label "author"@en ;
+    rdfs:label "author" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/coAuthor>
-    rdfs:label "co author"@en ;
+    rdfs:label "co author" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/collaborator>
-    rdfs:label "collaborator"@en ;
+    rdfs:label "collaborator" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/contributor>
-    rdfs:label "contributor"@en ;
+    rdfs:label "contributor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/custodian>
-    rdfs:label "custodian"@en ;
+    rdfs:label "custodian" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/distributor>
-    rdfs:label "distributor"@en ;
+    rdfs:label "distributor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/editor>
-    rdfs:label "editor"@en ;
+    rdfs:label "editor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/funder>
-    rdfs:label "funder"@en ;
+    rdfs:label "funder" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/isoRoles>
-    rdfs:label "ISO CI Role Code codes"@en ;
+    rdfs:label "ISO CI Role Code codes" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/mediator>
-    rdfs:label "mediator"@en ;
+    rdfs:label "mediator" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/originator>
-    rdfs:label "originator"@en ;
+    rdfs:label "originator" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/owner>
-    rdfs:label "owner"@en ;
+    rdfs:label "owner" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/pointOfContact>
-    rdfs:label "point of contact"@en ;
+    rdfs:label "point of contact" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/principalInvestigator>
-    rdfs:label "principal investigator"@en ;
+    rdfs:label "principal investigator" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/processor>
-    rdfs:label "processor"@en ;
+    rdfs:label "processor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/publisher>
-    rdfs:label "publisher"@en ;
+    rdfs:label "publisher" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/resourceProvider>
-    rdfs:label "resource provider"@en ;
+    rdfs:label "resource provider" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/rightsHolder>
-    rdfs:label "rights holder"@en ;
+    rdfs:label "rights holder" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/sponsor>
-    rdfs:label "sponsor"@en ;
+    rdfs:label "sponsor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/stakeholder>
-    rdfs:label "stakeholder"@en ;
+    rdfs:label "stakeholder" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/subjectAgent>
-    rdfs:label "subject agent"@en ;
+    rdfs:label "subject agent" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/subjectAgentRepresentative>
-    rdfs:label "subject agent representative"@en ;
+    rdfs:label "subject agent representative" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/user>
-    rdfs:label "user"@en ;
+    rdfs:label "user" ;
 .
 
 <https://linked.data.gov.au/org/agldwg>
