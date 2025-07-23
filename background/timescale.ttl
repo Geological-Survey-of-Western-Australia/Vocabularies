@@ -1,15 +1,16 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
-<http://resource.geosciml.org/classifier/ics/ischart/> schema:name "IS Chart" .
-<http://resource.geosciml.org/classifier/ics/ischart/2024-12> schema:name "2024-12" .
-<http://resource.geosciml.org/ontology/timescale/gts#> schema:name "Geological Time Scale" .
-<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSA> schema:name "ratified GSSA" .
-<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> schema:name "ratified GSSP" .
-<http://resource.geosciml.org/ontology/timescale/rank/Age> schema:name "Age" .
-<http://resource.geosciml.org/ontology/timescale/rank/Eon> schema:name "Eon" .
-<http://resource.geosciml.org/ontology/timescale/rank/Epoch> schema:name "Epoch" .
-<http://resource.geosciml.org/ontology/timescale/rank/Era> schema:name "Era" .
-<http://resource.geosciml.org/ontology/timescale/rank/Period> schema:name "Period" .
-<http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> schema:name "Sub-Period" .
-<http://resource.geosciml.org/ontology/timescale/rank/Super-Eon> schema:name "Super-Eon" .
-<http://resource.geosciml.org/vocabulary/timescale/> schema:name "Timescale" .
+<http://resource.geosciml.org/classifier/ics/ischart/> rdfs:label "IS Chart" .
+<http://resource.geosciml.org/classifier/ics/ischart/2024-12> rdfs:label "2024-12" .
+<http://resource.geosciml.org/ontology/timescale/gts#> rdfs:label "Geological Time Scale" .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSA> rdfs:label "ratified GSSA" .
+<http://resource.geosciml.org/ontology/timescale/gts#ratifiedGSSP> rdfs:label "ratified GSSP" .
+<http://resource.geosciml.org/ontology/timescale/rank/Age> rdfs:label "Age" .
+<http://resource.geosciml.org/ontology/timescale/rank/Eon> rdfs:label "Eon" .
+<http://resource.geosciml.org/ontology/timescale/rank/Epoch> rdfs:label "Epoch" .
+<http://resource.geosciml.org/ontology/timescale/rank/Era> rdfs:label "Era" .
+<http://resource.geosciml.org/ontology/timescale/rank/Period> rdfs:label "Period" .
+<http://resource.geosciml.org/ontology/timescale/rank/Sub-Period> rdfs:label "Sub-Period" .
+<http://resource.geosciml.org/ontology/timescale/rank/Super-Eon> rdfs:label "Super-Eon" .
+<http://resource.geosciml.org/vocabulary/timescale/> rdfs:label "Timescale" .

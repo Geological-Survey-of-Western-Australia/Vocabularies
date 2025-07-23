@@ -1,386 +1,387 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType>
     schema:description "The form, shape, purpose, or environment of a collected specimen or observation. Where possible the sample type description is independent of the material that comprises the specimen (eg, rock, oil, sand), or the sampling method (eg, drilling, dredging), but in practice it is not always possible or convenient to completely separate these concepts from the sample type (eg, water column specimen)." ;
-    schema:name "General Geology - Sample Type" ;
+    rdfs:label "General Geology - Sample Type" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/analyticalBlank>
     schema:description "An analytical procedure run without a \"substitute material\" and results obtained are considered to be the \"analytical blank\". Example 1: An acid digestion procedure is run without a sample, to show level of impurities introduced by the acids and the digestion vessels used." ;
-    schema:name "analytical blank" ;
+    rdfs:label "analytical blank" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/anthropogenicMaterial>
     schema:description "Anthropogenic material originating from human activity" ;
-    schema:name "anthropogenic material" ;
+    rdfs:label "anthropogenic material" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/boreholeSpecimen>
     schema:description "Any specimen of material taken from a borehole. Only used where no other information about the borehole specimen type is available." ;
-    schema:name "borehole specimen" ;
+    rdfs:label "borehole specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/burnSpot>
     schema:description "A part of a grain which is the subject of a detailed analysis via a microprobe beam of electrons or energised ions." ;
-    schema:name "burn spot" ;
+    rdfs:label "burn spot" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/catchmentOutletSpecimen>
     schema:description "Terrestrial sediment specimen sampled from close to the lower boundary of a hydrologic catchment; may have an aeolian component mixed in with fluvial sediments." ;
-    schema:name "catchment outlet specimen" ;
+    rdfs:label "catchment outlet specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/cavings>
     schema:description "Drill chips/cuttings material that is foreign to the depth interval sampled and most likely derived from higher in the stratigraphic column or possibly recirculated within the mud system from previous drilling activity." ;
-    schema:name "cavings" ;
+    rdfs:label "cavings" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/coastalFloatSpecimen>
     schema:description "A float specimen collected along the coastline, usually washed up on beaches. (eg, coastal bitumen)." ;
-    schema:name "coastal float specimen" ;
+    rdfs:label "coastal float specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/coastalSample>
     schema:description "A sample, usually of unconsolidated materials, collected in a coastal environment by any method. May include sediment, rocks, water, and/or organic matter. Coastal is here defined as any location above Lowest Astronomical Tide" ;
-    schema:name "coastal sample" ;
+    rdfs:label "coastal sample" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/concentrate>
     schema:description "A form of substance which has had the majority of its base component (in the case of a liquid: the solvent) removed. Typically this will be the removal of water from a solution or suspension" ;
-    schema:name "concentrate" ;
+    rdfs:label "concentrate" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/core>
     schema:description "A specimen (often, but not always cylindrical) of rock, regolith, or vegetation." ;
-    schema:name "core" ;
+    rdfs:label "core" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/corePlug>
     schema:description "A small plug (cylinder) of core, typically taken from a larger rock or core sample (ie, a sub-sample)" ;
-    schema:name "core plug" ;
+    rdfs:label "core plug" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/coreSlice>
     schema:description "A section of core that represents a specified depth interval, typically cut from a larger core specimen." ;
-    schema:name "core slice" ;
+    rdfs:label "core slice" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/crush>
     schema:description "A coarse crushed sample." ;
-    schema:name "crush" ;
+    rdfs:label "crush" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/downholeReservoirFluidSample>
     schema:description "A fluid sample retrieved from a downhole formation test (WFT)" ;
-    schema:name "downhole reservoir fluid sample" ;
+    rdfs:label "downhole reservoir fluid sample" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/drillChipsCuttings>
     schema:description "Rock or sediment chips or fragments derived from any drilling method." ;
-    schema:name "drill chips or cuttings" ;
+    rdfs:label "drill chips or cuttings" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/drillingFluidSpecimen>
     schema:description "Fluid used for drill bit lubrication and return of ground rock material from the drill bit, e.g. drilling mud." ;
-    schema:name "drilling fluid specimen" ;
+    rdfs:label "drilling fluid specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/fieldSiteObservation>
     schema:description "An observation made of a field site (eg, an outcrop), without collection of a physical specimen." ;
-    schema:name "field site observation" ;
+    rdfs:label "field site observation" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/fieldSiteSpecimen>
     schema:description "Any specimen of material taken from a field site (eg, rock, sediment, water, hydrocarbon). This generic value is only used where no other information about the specimen type is available." ;
-    schema:name "field site specimen" ;
+    rdfs:label "field site specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/filteredWaterColumnSpecimen>
     schema:description "A water column specimen filtered for suspended solids." ;
-    schema:name "filtered water column specimen" ;
+    rdfs:label "filtered water column specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/floatSpecimen>
     schema:description "A specimen taken of an isolated fragment or rock or other consolidated earth material, displaced from its original outcrop or location." ;
-    schema:name "float specimen" ;
+    rdfs:label "float specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/fluidInclusion>
     schema:description "A fluid-filled inclusion in a rock or mineral (may also contain vapour and solids at room temperature)." ;
-    schema:name "fluid inclusion" ;
+    rdfs:label "fluid inclusion" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/fossil>
     schema:description "A specimen of remains or traces of a plant or animal preserved in the Earth's crust." ;
-    schema:name "fossil" ;
+    rdfs:label "fossil" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/fraction>
     schema:description "A specimen that has been modified to be a specific fraction separated from the original sample eg. a panned or separated sample." ;
-    schema:name "fraction" ;
+    rdfs:label "fraction" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/fuildMeltInclusionSection>
     schema:description "A thick section used to examine tiny inclusions of liquid, vapour, solid, or mixtures of these phases, trapped as impurities within mineral grains." ;
-    schema:name "fluid or melt inclusion section" ;
+    rdfs:label "fluid or melt inclusion section" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/gasSpecimen>
     schema:description "A generic specimen of gas of any type. Includes gas specimen types collected by any method." ;
-    schema:name "gas specimen" ;
+    rdfs:label "gas specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/grainsizeFraction>
     schema:description "A specimen that has been generated by separating various size fractions from the original sample. For example, a sieved sediment sample." ;
-    schema:name "grainsize fraction" ;
+    rdfs:label "grainsize fraction" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/gravel>
     schema:description "A specimen of unconsolidated gravel size regolith material." ;
-    schema:name "gravel" ;
+    rdfs:label "gravel" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/halfCore>
     schema:description "A cylindrical drill core which has been cut in half parallel to its length." ;
-    schema:name "half core" ;
+    rdfs:label "half core" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/incubationWaterSpecimen>
     schema:description "A water sample collected from a chamber or core incubation for the purpose of use of profiling the water column." ;
-    schema:name "incubation water specimen" ;
+    rdfs:label "incubation water specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/isoTube>
     schema:description "A 110ml aluminium cylinder used to collect and store gas from a sampling manifold on a borehole druing mudgas logging. A product of ISOTECH Laboratories." ;
-    schema:name "IsoTube" ;
+    rdfs:label "IsoTube" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/meltInclusion>
     schema:description "A glassy inclusion in a rock or mineral (may also contain liquid, vapour and crystals at room temperature)." ;
-    schema:name "melt inclusion" ;
+    rdfs:label "melt inclusion" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/microfossilSlide>
     schema:description "A slide prepared for microscope analysis of microfossils." ;
-    schema:name "microfossil slide" ;
+    rdfs:label "microfossil slide" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/mineralGrain>
     schema:description "An individual mineralogical particle, usually isolated from a thin section, or mounted with other grains in a polished mount." ;
-    schema:name "mineral grain" ;
+    rdfs:label "mineral grain" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/mineralPrecipitate>
     schema:description "A collection of one or more minerals precipitated from solution (eg, salt crust or gypsum crystals precipitated on a salt lake)." ;
-    schema:name "mineral precipitate" ;
+    rdfs:label "mineral precipitate" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/mineralSeparate>
     schema:description "A collection of mineral grains separated using density and magnetic contrast from other mineral grains." ;
-    schema:name "mineral separate" ;
+    rdfs:label "mineral separate" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/mineralSpecimen>
     schema:description "A high quality or type mineral specimen, collected for scientific or display purposes in a museum or similar setting" ;
-    schema:name "mineral specimen" ;
+    rdfs:label "mineral specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/observationLog>
     schema:description "A description of a sampling feature in a continuous linear format (e.g. stratigraphic or lithology logs for boreholes and measured sections), where the observation description is not related to a specific collected specimen " ;
-    schema:name "observation log" ;
+    rdfs:label "observation log" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/observationOnly>
     schema:description "An observation made of a feature, without collection of a physical specimen." ;
-    schema:name "observation only" ;
+    rdfs:label "observation only" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/orientedCore>
     schema:description "A drill core specimen taken with its orientation preserved to enable structural or other oriented analysis." ;
-    schema:name "oriented core" ;
+    rdfs:label "oriented core" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/orientedOutcropSpecimen>
     schema:description "An outcrop specimen taken with its orientation preserved to enable structural or geophysical analysis." ;
-    schema:name "oriented outcrop specimen" ;
+    rdfs:label "oriented outcrop specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/outcropSpecimen>
     schema:description "A specimen of material removed from outcropping or near-outcropping bedrock. Includes subterranean rock outcrops (ie, from a mine)." ;
-    schema:name "outcrop specimen" ;
+    rdfs:label "outcrop specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/pellet>
     schema:description "A specimen that has been ground into a powder and pressed into a pellet." ;
-    schema:name "pellet" ;
+    rdfs:label "pellet" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/photography>
     schema:description "A digital or film photographic still image" ;
-    schema:name "photograph" ;
+    rdfs:label "photograph" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/polishedMount>
     schema:description "Materials mounted in a medium, typically an epoxy glue or resin, and polished." ;
-    schema:name "polished mount" ;
+    rdfs:label "polished mount" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/polishedSlab>
     schema:description "A polished slab of rock material." ;
-    schema:name "polished slab" ;
+    rdfs:label "polished slab" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/polishedThinSection>
     schema:description "A polished thin section of a material for microscope analysis." ;
-    schema:name "polished thin section" ;
+    rdfs:label "polished thin section" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/powder>
     schema:description "A specimen that has been ground into a powder." ;
-    schema:name "powder" ;
+    rdfs:label "powder" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/powderTungstenMill>
     schema:description "A specimen that has been ground into a powder in a tungsten alloy mill." ;
-    schema:name "powder (tungsten mill)" ;
+    rdfs:label "powder (tungsten mill)" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/quarterCore>
     schema:description "A cylindrical drill core which has been cut in quarters parallel to its length." ;
-    schema:name "quarter core" ;
+    rdfs:label "quarter core" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/replicateFieldSpecimen>
     schema:description "Repeat specimen taken in the field over given space and/or time scales to test field heterogeneity of a sampling medium.  Should be related to a previous original specimen." ;
-    schema:name "replicate field specimen" ;
+    rdfs:label "replicate field specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/replicateLaboratorySpecimen>
     schema:description "Identical split(s) of an original sample submitted blindly to the laboratory to test reproducibility (bias) of results.  Should be related to a previous original specimen." ;
-    schema:name "replicate laboratory specimen" ;
+    rdfs:label "replicate laboratory specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/replicateSpecimen>
     schema:description "A repeat analytical specimen designed to replicate the original specimen type and method of sample preparation and/or collection. Should be related to a previous original specimen." ;
-    schema:name "replicate specimen" ;
+    rdfs:label "replicate specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/residue>
     schema:description "An unspecified residue from a sample preparation or analytical technique." ;
-    schema:name "residue" ;
+    rdfs:label "residue" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/rockChips>
     schema:description "Rock fragments derived from crushing or chipping material other than by drilling (eg, chips from an outcrop or mine channel sampling)." ;
-    schema:name "rock chips" ;
+    rdfs:label "rock chips" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/rockPieces>
     schema:description "Unspecified rock samples or fragments of rock of unknown origin." ;
-    schema:name "rock pieces" ;
+    rdfs:label "rock pieces" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/seabeadSample>
     schema:description "A sample, usually of unconsolidated materials, collected on the seabed by any method. May include sediment, rocks, water, and/or organic matter. Seabed is here defined as any location below Lowest Astronomical Tide" ;
-    schema:name "seabed sample" ;
+    rdfs:label "seabed sample" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/seabedSubsample>
     schema:description "Specimens of surficial seafloor sediments obtained by sub-sampling the contents of a grab or box core. Depending on the intended analyses, these may be volumetric, gravimetric or qualitative." ;
-    schema:name "seabed subsample" ;
+    rdfs:label "seabed subsample" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/separatorFluid>
     schema:description "Liquid that has been separated from a gas phase at a surface separator." ;
-    schema:name "separator fluid" ;
+    rdfs:label "separator fluid" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/separatorGas>
     schema:description "Natural gas that has been separated from a liquid phase at a surface separator." ;
-    schema:name "separator gas" ;
+    rdfs:label "separator gas" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/sievedSample>
     schema:description "A grainsize fraction specimen generated by sieving" ;
-    schema:name "sieved sample" ;
+    rdfs:label "sieved sample" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/soilSpecimen>
     schema:description "A specimen of soil or similar regolith materials, collected by any method." ;
-    schema:name "soil specimen" ;
+    rdfs:label "soil specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/specimenBlank>
     schema:description "A specimen blank is used to determine if any impurities are introduced during sample preparation procedures. A \"sample blank material\" substitutes regular \"sample material\" in the procedure. Example 1: Quartz substitutes a rock sample to determine levels of impurities introduced by grinding equipment. Example 2: Cellulose substitutes vegetable material to determine levels of impurities introduced during sample preparation. Example 3: Pure deionized water is substituted for sample water to determine if impurities are introduced during sample filtering and bottling procedures." ;
-    schema:name "specimen blank" ;
+    rdfs:label "specimen blank" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/standardReferenceMaterial>
     schema:description "Also known as SRM,  these samples may range from International Standards and Certified Reference Materials (CRMs) to locally prepared standard samples for use as project reference standards. They are comprised of homogenous material prepared under strict guidelines, divided into numerous aliquots and sent to reputable laboratories to derive an assigned value. The values for Standard Reference Materials are generally well known published figures. SRMs with certified values are used to calibrate instruments or analytical techniques, to quantify analytical accuracy, and to verify new or improved analytical techniques. The material of the reference standard (eg, rock, mineral, water, etc) should be denoted in \"material type\"." ;
-    schema:name "standard reference material" ;
+    rdfs:label "standard reference material" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/strainedSample>
     schema:description "A specimen, often a rock slab, that has been stained for mineral idenification." ;
-    schema:name "stained sample" ;
+    rdfs:label "stained sample" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/streamSedimentSpecimen>
     schema:description "A sample of sediment taken from the bed of a river or stream." ;
-    schema:name "stream sediment specimen" ;
+    rdfs:label "stream sediment specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/thinSection>
     schema:description "A translucent thin section of a material for microscope analysis." ;
-    schema:name "thin section" ;
+    rdfs:label "thin section" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/thinSectionOffcut>
     schema:description "A small slab of rock remaining from the preparation of a thin section." ;
-    schema:name "thin section offcut" ;
+    rdfs:label "thin section offcut" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/unconsolidated>
     schema:description "A specimen of unconsolidated materials (eg, regolith, sediment, gravel, soil) collected by any method at or near the ground surface, including soil and organic matter." ;
-    schema:name "unconsolidated surficial specimen" ;
+    rdfs:label "unconsolidated surficial specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/unknown>
     schema:description "The sample type is unknown" ;
-    schema:name "unknown" ;
+    rdfs:label "unknown" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/vegetationSpecimen>
     schema:description "A specimen of vegetation collected by any method." ;
-    schema:name "vegetation specimen" ;
+    rdfs:label "vegetation specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/video>
     schema:description "A digital or film capture of a sequence of still images representing scenes in motion" ;
-    schema:name "video" ;
+    rdfs:label "video" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/vitriniteReflectanceSpecimen>
     schema:description "A polished slab, mount, or slide for analysing vitrinite reflectance." ;
-    schema:name "vitrinite reflectance specimen" ;
+    rdfs:label "vitrinite reflectance specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/waterColumnObservation>
     schema:description "An observation or measurement of the water column recorded by a sonde/probe, typically taken at measured intervals used to profile the water column. No actual specimen is collected but the observation records the water conditions at a particular time and place." ;
-    schema:name "water column observation" ;
+    rdfs:label "water column observation" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/waterColumnSpecimen>
     schema:description "A water specimen taken at measured intervals in the water column. " ;
-    schema:name "water column specimen" ;
+    rdfs:label "water column specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/waterSpecimen>
     schema:description "A generic specimen of water of any type. Includes water specimen types collected by any method." ;
-    schema:name "water specimen" ;
+    rdfs:label "water specimen" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/wirelineLog>
     schema:description "A continuous log of measurements made by an instrument in a borehole." ;
-    schema:name "wireline log" ;
+    rdfs:label "wireline log" ;
 .

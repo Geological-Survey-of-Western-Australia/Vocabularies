@@ -1,181 +1,182 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue>
     schema:description "Purposes for which a borehole was drilled." ;
-    schema:name "Borehole Purpose" ;
+    rdfs:label "Borehole Purpose" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/aquaculture>
     schema:description "To supply water to aquaculture purposes." ;
-    schema:name "aquaculture" ;
+    rdfs:label "aquaculture" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/contingencyWaterSupply>
     schema:description "Stand-by water supply in case of water deficiency." ;
-    schema:name "contingency water supply" ;
+    rdfs:label "contingency water supply" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/dewatering>
     schema:description "Dewatering is the removal of water from solid material or soil by wet classification, centrifugation, filtration, or similar solid-liquid separation processes. Removing or draining water from a riverbed, construction site, caisson, or mine shaft, by pumping or evaporation." ;
-    schema:name "dewatering" ;
+    rdfs:label "dewatering" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/disposal>
     schema:description "A well, often a depleted oil or gas well, into which waste fluids can be injected for safe disposal." ;
-    schema:name "disposal" ;
+    rdfs:label "disposal" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/drinkingWaterSupply>
     schema:description "Well construction for drinking water." ;
-    schema:name "drinking water supply" ;
+    rdfs:label "drinking water supply" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/emergencyWaterSupply>
     schema:description "Well construction for emergency water supply." ;
-    schema:name "emergency water supply" ;
+    rdfs:label "emergency water supply" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/environmentalMonitoring>
     schema:description "Groundwater chemistry and groundwater level is monitored." ;
-    schema:name "environmental monitoring" ;
+    rdfs:label "environmental monitoring" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationEnergyResources>
     schema:description "Examination of the subsurface with regard to the availability of fossil energy resources and planning the extraction thereof." ;
-    schema:name "exploration and exploitation of energy resources" ;
+    rdfs:label "exploration and exploitation of energy resources" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationNonmetallicMineralDeposits>
     schema:description "Prospecting with regard to the availability and planning for excavation of nonmetallic mineral deposits, mainly for construction purposes, building stones, cement and ceramic or glass industry." ;
-    schema:name "exploration and exploitation of nonmetallic mineral deposits" ;
+    rdfs:label "exploration and exploitation of nonmetallic mineral deposits" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationExploitationRawMaterial>
     schema:description "The discovery and identification of mineral resources, including the assessment of their importance and the evaluation of their economic potential." ;
-    schema:name "exploration and exploitation of raw material" ;
+    rdfs:label "exploration and exploitation of raw material" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/explorationNaturalUndergroundStorage>
     schema:description "Examination of the subsurface's ability to store various materials." ;
-    schema:name "exploration of natural underground storage space" ;
+    rdfs:label "exploration of natural underground storage space" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/flowingShot>
     schema:description "A flowing shot hole is a drilled hole for seismic purposes that has entered an underground water source that has sufficient pressure to cause the hole to 'overflow'." ;
-    schema:name "flowing shot" ;
+    rdfs:label "flowing shot" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geochemicalSurvey>
     schema:description "Examination of chemical properties of the rock formation and /or the porosity fluids." ;
-    schema:name "geochemical survey, analyses" ;
+    rdfs:label "geochemical survey, analyses" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geologicalSurvey>
     schema:description "General examination of an area's geological entities." ;
-    schema:name "geological survey" ;
+    rdfs:label "geological survey" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geophysicalSurvey>
     schema:description "Examination of the subsurface's geophysical properties." ;
-    schema:name "geophysical survey" ;
+    rdfs:label "geophysical survey" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geotechnicalSurvey>
     schema:description "Geotechnical investigations performed to obtain information on the physical and mechanical properties of soil and rock around a site to design earthworks and foundations for proposed structures and for repair of distress to earthworks and structures caused by subsurface conditions." ;
-    schema:name "geotechnical survey, construction site characterization" ;
+    rdfs:label "geotechnical survey, construction site characterization" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/geothermalEnergy>
     schema:description "Exploration pertaining to the utilization of geothermal energy resources and design of geothermal heat pumps." ;
-    schema:name "geothermal energy, geothermal heat exchangers" ;
+    rdfs:label "geothermal energy, geothermal heat exchangers" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/groundwaterLevelMonitoring>
     schema:description "Construction of a gauge for recording groundwater level changes." ;
-    schema:name "groundwater level monitoring" ;
+    rdfs:label "groundwater level monitoring" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/heatStorage>
     schema:description "Well to enable the underground to be used for heat storage." ;
-    schema:name "heat storage" ;
+    rdfs:label "heat storage" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonAppraisal>
     schema:description "Assessment of characteristics of a proven hydrocarbon accumulation." ;
-    schema:name "hydrocarbon appraisal" ;
+    rdfs:label "hydrocarbon appraisal" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonExploration>
     schema:description "Exploration in an unproved area to test for a new field, a new pay, a deeper reservoir, or a shallower reservoir." ;
-    schema:name "hydrocarbon exploration" ;
+    rdfs:label "hydrocarbon exploration" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrocarbonProduction>
     schema:description "Production of petroleum oil and/or gas." ;
-    schema:name "hydrocarbon production" ;
+    rdfs:label "hydrocarbon production" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/hydrogeologicalSurvey>
     schema:description "Examination of groundwater flow, the chemical properties of ground water, and transport of particles, solutes, and energy, as well as the management of the sustainable use of ground water resources." ;
-    schema:name "hydrogeological survey, water management" ;
+    rdfs:label "hydrogeological survey, water management" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/industrialWaterSupply>
     schema:description "Well construction for industrial water supply." ;
-    schema:name "industrial water supply" ;
+    rdfs:label "industrial water supply" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/irrigation>
     schema:description "Well construction for irrigation purposes." ;
-    schema:name "irrigation" ;
+    rdfs:label "irrigation" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/mineralExplorationExtraction>
     schema:description "Well drilled for the purpose of locating and/or extracting mineral resources from the subsurface, usually through the injection and/or extraction of mineral bearing fluids." ;
-    schema:name "mineral exploration and extraction" ;
+    rdfs:label "mineral exploration and extraction" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/mitigation>
     schema:description "Lowering of the groundwater level to prevent the groundwater table to reach polluted sites." ;
-    schema:name "mitigation" ;
+    rdfs:label "mitigation" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/pedologicalSurvey>
     schema:description "Investigation to characterize types of soils." ;
-    schema:name "pedological survey" ;
+    rdfs:label "pedological survey" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/pollutionMonitoring>
     schema:description "Monitoring of known pollution sites." ;
-    schema:name "pollution monitoring" ;
+    rdfs:label "pollution monitoring" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/recharge>
     schema:description "(a) Aquifer Recharge Wells: Used to recharge depleted aquifers by injecting water from a variety of sources such as lakes, streams, domestic wastewater treatment plants, other aquifers, etc. (b) Saline Water Intrusion Barrier Wells: Used to inject water into fresh water aquifers to prevent intrusion of salt water into fresh water aquifers. (c) Subsidence Control Wells: Used to inject fluids into a non-oil or gas-producing zone to reduce or eliminate subsidence associated with overdraft of fresh water." ;
-    schema:name "recharge" ;
+    rdfs:label "recharge" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/remediation>
     schema:description "Remediation in general. The removal of pollution or contaminants from groundwater, soil and other rock" ;
-    schema:name "remediation" ;
+    rdfs:label "remediation" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/shotHole>
     schema:description "In connection with seismic surveys explosives are loaded into shot holes." ;
-    schema:name "shot hole" ;
+    rdfs:label "shot hole" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/thermalCleaning>
     schema:description "A kind of remediation. In situ cleaning of soil using heat, steam." ;
-    schema:name "sparging, thermal cleaning" ;
+    rdfs:label "sparging, thermal cleaning" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/waterQualityMonitoring>
     schema:description "Monitoring to assess the nature and distribution of pollutants and contaminants in groundwater; the nature and distribution of naturally occurring chemical constituents; subsurface hydrologic conditions, and hydraulic properties of strata as they relate to pollutant and contaminant movement." ;
-    schema:name "water quality monitoring" ;
+    rdfs:label "water quality monitoring" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/waterSupply>
     schema:description "Water supply in general." ;
-    schema:name "water supply" ;
+    rdfs:label "water supply" ;
 .
