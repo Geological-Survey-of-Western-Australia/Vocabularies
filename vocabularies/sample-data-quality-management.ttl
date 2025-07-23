@@ -335,15 +335,15 @@ Definitions compiled from:
     skos:prefLabel "Sample data quality management"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-2104-6601> ;
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-2280-1859> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;

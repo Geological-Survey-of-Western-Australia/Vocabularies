@@ -1,363 +1,541 @@
-PREFIX schema: <https://schema.org/>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX prov: <https://www.w3.org/ns/prov#>
-PREFIX dcat: <https://www.w3.org/ns/dcat#>
+PREFIX prof: <http://www.w3.org/ns/dx/prof/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX vann: <http://purl.org/vocab/vann/>
 
+<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian>
+    schema:name "custodian" ;
+.
+
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticConglomerate>
+    schema:name "Clastic Conglomerate" ;
+.
+
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticMudstone>
+    schema:name "Clastic Mudstone" ;
+.
+
+<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSandstone>
+    schema:name "Clastic Sandstone" ;
+.
+
+<http://inspire.ec.europa.eu/codelist/LithologyValue/dolostone>
+    schema:name "Dolostone" ;
+.
+
+<http://inspire.ec.europa.eu/codelist/LithologyValue/rockGypsumOrAnhydrite>
+    schema:name "Rock Gypsum Or Anhydrite" ;
+.
+
+<http://linked.data.gov.au/def/borehole-start-point/offshore>
+    schema:name "Offshore" ;
+.
+
+<http://linked.data.gov.au/def/geou>
+    schema:name "Geological Units" ;
+.
+
+<http://linked.data.gov.au/def/geou/M3-PER-TON_M>
+    schema:name "M3 per ton" ;
+.
+
+<http://linked.data.gov.au/def/iso-4217-currencies>
+    schema:name "ISO 4217 Currencies" ;
+.
+
+<http://linked.data.gov.au/def/queensland-crs/agd1966>
+    schema:name "AGD 1966" ;
+.
+
+<http://linked.data.gov.au/def/queensland-crs/agd1984>
+    schema:name "AGD 1984" ;
+.
+
+<http://linked.data.gov.au/def/site-status/rehabilitation>
+    schema:name "Rehabilitation" ;
+.
+
+dcterms:conformsTo
+    schema:description "An established standard to which the described resource conforms." ;
+    schema:name "Conforms To" ;
+.
+
+dcterms:created
+    schema:description "Date of creation of the resource." ;
+    schema:name "Date Created" ;
+.
+
+dcterms:creator
+    schema:description "An entity responsible for making the resource." ;
+    schema:name "Creator" ;
+.
+
+dcterms:hasPart
+    schema:description "A related resource that is included either physically or logically in the described resource." ;
+    schema:name "Has Part" ;
+.
+
+dcterms:identifier
+    schema:description "An unambiguous reference to the resource within a given context." ;
+    schema:name "Identifier" ;
+.
+
+dcterms:modified
+    schema:description "Date on which the resource was changed." ;
+    schema:name "Date Modified" ;
+.
+
+dcterms:publisher
+    schema:description "An entity responsible for making the resource available." ;
+    schema:name "Publisher" ;
+.
+
+dcterms:source
+    schema:description "A related resource from which the described resource is derived." ;
+    schema:name "Source" ;
+.
+
+<http://purl.org/linked-data/registry#status>
+    schema:description "The status of this register entry" ;
+    schema:name "status" ;
+.
+
+vann:preferredNamespacePrefix
+    schema:name "preferred namespace prefix" ;
+.
+
+vann:preferredNamespaceUri
+    schema:name "preferred namespace URI" ;
+.
+
+<http://qudt.org/vocab/unit/BBL_US>
+    schema:name "Barrels (US)" ;
+.
+
+<http://qudt.org/vocab/unit/BBL_US-PER-DAY>
+    schema:name "Barrels (US) per day" ;
+.
+
+<http://www.qudt.org/doc/DOC_VOCAB-UNITS.html>
+    schema:name "QUDT Units Vocabulary" ;
+.
+
+rdfs:Datatype
+    schema:description "The class of RDF datatypes." ;
+    schema:name "Datatype" ;
+.
+
+rdfs:comment
+    schema:description "A description of the subject resource." ;
+    schema:name "comment" ;
+.
+
+rdfs:isDefinedBy
+    schema:description "The defininition of the subject resource." ;
+    schema:name "is defined by" ;
+.
+
+owl:Datatype
+    schema:name "Datatype" ;
+.
+
+owl:versionIRI
+    schema:description "The property that identifies the version IRI of an ontology." ;
+    schema:name "version IRI" ;
+.
+
+owl:versionInfo
+    schema:description "The annotation property that provides version information for an ontology or another OWL construct." ;
+    schema:name "versionInfo" ;
+.
+
+skos:Collection
+    schema:description "A meaningful collection of concepts" ;
+    schema:name "Collection" ;
+.
+
+skos:Concept
+    schema:description
+        "An idea or notion; a unit of thought" ;
+    schema:name "Concept" ;
+.
+
+skos:ConceptScheme
+    schema:description "A set of concepts, optionally including statements about semantic relationships between those concepts" ;
+    schema:name "Concept Scheme" ;
+.
+
+skos:altLabel
+    schema:description "An alternative lexical label for a resource" ;
+    schema:name "alternative label" ;
+.
+
+skos:broadMatch
+    schema:description "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes" ;
+    schema:name "has broader match" ;
+.
+
+skos:broader
+    schema:description "Relates a concept to a concept that is more general in meaning" ;
+    schema:name "has broader" ;
+.
+
+skos:closeMatch
+    schema:description "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of 'compound errors' when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property" ;
+    schema:name "has close match" ;
+.
+
+skos:definition
+    schema:description "A statement or formal explanation of the meaning of a concept" ;
+    schema:name "definition" ;
+.
+
+skos:exactMatch
+    schema:description "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch" ;
+    schema:name "has exact match" ;
+.
+
+skos:hasTopConcept
+    schema:description "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies" ;
+    schema:name "has top concept" ;
+.
+
+skos:historyNote
+    schema:description "A note about the past state/use/meaning of a concept" ;
+    schema:name "history note" ;
+.
+
+skos:inScheme
+    schema:description "Relates a resource (for example a concept) to a concept scheme in which it is included" ;
+    schema:name "is in scheme" ;
+.
+
+skos:member
+    schema:description "Relates a collection to one of its members" ;
+    schema:name "has member" ;
+.
+
+skos:narrowMatch
+    schema:description "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes" ;
+    schema:name "has narrower match" ;
+.
+
+skos:narrower
+    schema:description "Relates a concept to a concept that is more specific in meaning" ;
+    schema:name "has narrower" ;
+.
+
+skos:notation
+    schema:description "A notation, also known as classification code, is a string of characters such as 'T58.5' or '303.4833' used to uniquely identify a concept within the scope of a given concept scheme" ;
+    schema:name "notation" ;
+.
+
+skos:note
+    schema:description "A general note, for any purpose" ;
+    schema:name "note" ;
+.
+
+skos:prefLabel
+    schema:description "The preferred lexical label for a resource, in a given language" ;
+    schema:name "preferred label" ;
+.
+
+skos:relatedMatch
+    schema:description "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes" ;
+    schema:name "has related match" ;
+.
+
+skos:scopeNote
+    schema:description "A note that helps to clarify the meaning and/or the use of a concept" ;
+    schema:name "scope note" ;
+.
+
+skos:topConceptOf
+    schema:description "Relates a concept to the concept scheme that it is a top level concept of" ;
+    schema:name "is top concept in scheme" ;
+.
+
+skos:versionInfo
+    schema:name "version info" ;
+.
+
+time:
+    schema:name "Time Ontology in OWL" ;
+.
+
+time:hasBeginning
+    schema:description "Beginning of a temporal entity." ;
+    schema:name "has beginning" ;
+.
+
+time:hasEnd
+    schema:description "End of a temporal entity." ;
+    schema:name "has end" ;
+.
+
+dcat:Catalog
+    schema:description "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)." ;
+    schema:name "Catalog" ;
+.
+
+prof:hasArtifact
+    schema:description "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor" ;
+    schema:name "has artifact" ;
+.
+
+prof:hasResource
+    schema:description "A resource which describes the nature of an artifact and the role it plays in relation to the Profile" ;
+    schema:name "has resource" ;
+.
+
+prof:hasRole
+    schema:description "The function of an artifact described by a Resource Descriptor, such as specification, guidance etc." ;
+    schema:name "has role" ;
+.
+
+prov:agent
+    schema:name "agent" ;
+.
+
+prov:qualifiedAttribution
+    schema:description "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]." ;
+    schema:name "qualified attribution" ;
+.
+
+prov:wasDerivedFrom
+    schema:description "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable." ;
+    schema:name "was derived from" ;
+.
+
+sh:order
+    schema:description "Specifies the relative order of this compared to its siblings. For example use 0 for the first, 1 for the second." ;
+    schema:name "order" ;
+.
+
+<https://creativecommons.org/licenses/by/4.0/>
+    schema:name "Creative Commons BY 4.0" ;
+.
+
+<https://linked.data.gov.au/def/borehole-design/deviated>
+    schema:name "deviated" ;
+.
+
+<https://linked.data.gov.au/def/borehole-purpose-wa/storage-liquids-other-than-water>
+    schema:name "storage liquids other than water" ;
+.
+
+<https://linked.data.gov.au/def/borehole-purpose-wa/water-supply-mining>
+    schema:name "water supply mining" ;
+.
+
+<https://linked.data.gov.au/def/borehole-start-point>
+    schema:name "Offshore" ;
+.
+
+<https://linked.data.gov.au/def/borehole-start-point/natural-ground-surface>
+    schema:name "Natural Ground Surface" ;
+.
+
+<https://linked.data.gov.au/def/borehole-sub-purpose>
+    schema:name "Borehole Sub Purpose" ;
+.
+
+<https://linked.data.gov.au/def/demirs-offices/kalgoorlie-office>
+    schema:name "Kalgoorlie Office" ;
+.
+
+<https://linked.data.gov.au/def/earthsci-for/applied-geophysics->
+    schema:name "Applied Geophysics-" ;
+.
+
+<https://linked.data.gov.au/def/earthsci-for/data-management-and-data-science>
+    schema:name "Data Management and Data Science" ;
+.
+
+<https://linked.data.gov.au/def/geofeatures/Basin>
+    schema:name "Basin" ;
+.
+
+<https://linked.data.gov.au/def/geofeatures/Suite>
+    schema:name "Suite" ;
+.
+
+<https://linked.data.gov.au/def/geofeatures/Supersuite>
+    schema:name "Supersuite" ;
+.
+
+<https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-mapping>
+    schema:name "Geology Mapping" ;
+.
+
+<https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral>
+    schema:name "Resources Mineral" ;
+.
+
+<https://linked.data.gov.au/def/queensland-crs/gda1994>
+    schema:name "GDA 1994" ;
+.
+
+<https://linked.data.gov.au/def/queensland-crs/gda2020>
+    schema:name "GDA 2020" ;
+.
+
+<https://linked.data.gov.au/def/queensland-crs/wgs1984>
+    schema:name "WGS 1984" ;
+.
+
+<https://linked.data.gov.au/def/reg-statuses/status>
+    schema:name "status" ;
+.
+
+<https://prez.dev/Manifest>
+    schema:name "Manifest" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/CatalogueData>
+    schema:name "Catalogue Data" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels>
+    schema:name "Incomplete Catalogue And Resource Labels" ;
+.
+
+<https://prez.dev/ManifestResourceRoles/ResourceData>
+    schema:name "Resource Data" ;
+.
+
+<https://purl.org/NET/rdflicense/cc-by4.0>
+    schema:name "CC BY 4.0" ;
+.
 
 schema:Organization
-    schema:name "Organization" ;
     schema:description "An organization such as a school, NGO, corporation, club, etc." ;
+    schema:name "Organization" ;
 .
 
 schema:Person
-    schema:name "Person" ;
     schema:description "A person (alive, dead, undead, or fictional)." ;
+    schema:name "Person" ;
 .
 
 schema:alternateName
-    schema:name "alternate name" ;
     schema:description "An alias for the item." ;
+    schema:name "alternate name" ;
 .
 
-owl:versionIRI
-    schema:name "version";
+schema:citation
+    schema:description "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc" ;
+    schema:name "citation" ;
 .
 
-prov:qualifiedAttribution schema:name "Qualified Attributor" .
-dcat:hadRole schema:name "Role" .
-prov:agent schema:name "Agent" .
-
-<http://purl.org/dc/terms/creator> <https://schema.org/description> "An entity responsible for making the resource."@en .
-<http://purl.org/dc/terms/creator> <https://schema.org/name> "Creator"@en .
-<http://purl.org/dc/terms/source> <https://schema.org/description> "A related resource from which the described resource is derived."@en .
-<http://purl.org/dc/terms/source> <https://schema.org/name> "Source"@en .
-<http://purl.org/dc/terms/created> <https://schema.org/description> "Date of creation of the resource."@en .
-<http://purl.org/dc/terms/created> <https://schema.org/name> "Date Created"@en .
-<http://purl.org/dc/terms/modified> <https://schema.org/description> "Date on which the resource was changed."@en .
-<http://purl.org/dc/terms/modified> <https://schema.org/name> "Date Modified"@en .
-<http://purl.org/dc/terms/hasPart> <https://schema.org/description> "A related resource that is included either physically or logically in the described resource."@en .
-<http://purl.org/dc/terms/hasPart> <https://schema.org/name> "Has Part"@en .
-<http://purl.org/dc/terms/publisher> <https://schema.org/description> "An entity responsible for making the resource available."@en .
-<http://purl.org/dc/terms/publisher> <https://schema.org/name> "Publisher"@en .
-
-<http://purl.org/linked-data/registry#status> <https://schema.org/description> "The status of this register entry"@en .
-<http://purl.org/linked-data/registry#status> <https://schema.org/name> "status"@en .
-<http://purl.org/linked-data/registry#status> rdfs:label "status"@en .
-
-<http://purl.org/dc/terms/conformsTo> <https://schema.org/description> "An established standard to which the described resource conforms."@en .
-<http://purl.org/dc/terms/conformsTo> <https://schema.org/name> "Conforms To"@en .
-<http://purl.org/dc/terms/identifier> <https://schema.org/description> "An unambiguous reference to the resource within a given context."@en .
-<http://purl.org/dc/terms/identifier> <https://schema.org/name> "Identifier"@en .
-
-<http://www.w3.org/ns/prov#qualifiedAttribution> <https://schema.org/description> "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]."@en .
-<http://www.w3.org/ns/prov#qualifiedAttribution> <https://schema.org/name> "qualified attribution" .
-<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://schema.org/description> "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes"@en .
-<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://schema.org/name> "has narrower match"@en .
-<http://www.w3.org/2004/02/skos/core#narrower> <https://schema.org/description> "Relates a concept to a concept that is more specific in meaning"@en .
-<http://www.w3.org/2004/02/skos/core#narrower> <https://schema.org/name> "has narrower"@en .
-<http://www.w3.org/2004/02/skos/core#note> <https://schema.org/description> "A general note, for any purpose"@en .
-<http://www.w3.org/2004/02/skos/core#note> <https://schema.org/name> "note"@en .
-<http://www.w3.org/ns/shacl#order> <https://schema.org/description> "Specifies the relative order of this compared to its siblings. For example use 0 for the first, 1 for the second."@en .
-<http://www.w3.org/ns/shacl#order> <https://schema.org/name> "order"@en .
-<http://www.w3.org/ns/prov#agent> <https://schema.org/name> "agent" .
-<http://www.w3.org/2006/time#hasBeginning> <https://schema.org/description> "Beginning of a temporal entity."@en .
-<http://www.w3.org/2006/time#hasBeginning> <https://schema.org/name> "has beginning"@en .
-<http://www.w3.org/2004/02/skos/core#Collection> <https://schema.org/description> "A meaningful collection of concepts"@en .
-<http://www.w3.org/2004/02/skos/core#Collection> <https://schema.org/name> "Collection"@en .
-<http://www.w3.org/ns/dx/prof/hasResource> <https://schema.org/description> "A resource which describes the nature of an artifact and the role it plays in relation to the Profile"@en .
-<http://www.w3.org/ns/dx/prof/hasResource> <https://schema.org/name> "has resource"@en .
-<http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://schema.org/description> "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies"@en .
-<http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://schema.org/name> "has top concept"@en .
-<http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/description> "Relates a concept to a concept that is more general in meaning"@en .
-<http://www.w3.org/2004/02/skos/core#broader> <https://schema.org/name> "has broader"@en .
-<http://www.w3.org/2002/07/owl#versionIRI> <https://schema.org/description> "The property that identifies the version IRI of an ontology." .
-<http://www.w3.org/2002/07/owl#versionIRI> <https://schema.org/name> "versionIRI" .
-<http://www.w3.org/2002/07/owl#versionInfo> <https://schema.org/description> "The annotation property that provides version information for an ontology or another OWL construct." .
-<http://www.w3.org/2002/07/owl#versionInfo> <https://schema.org/name> "versionInfo" .
-<http://www.w3.org/ns/dx/prof/hasArtifact> <https://schema.org/description> "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor"@en .
-<http://www.w3.org/ns/dx/prof/hasArtifact> <https://schema.org/name> "has artifact" .
-<http://www.w3.org/2004/02/skos/core#altLabel> <https://schema.org/description> "An alternative lexical label for a resource"@en .
-<http://www.w3.org/2004/02/skos/core#altLabel> <https://schema.org/name> "alternative label"@en .
-<http://www.w3.org/2000/01/rdf-schema#comment> <https://schema.org/description> "A description of the subject resource." .
-<http://www.w3.org/2000/01/rdf-schema#comment> <https://schema.org/name> "comment" .
-<http://www.w3.org/2004/02/skos/core#notation> <https://schema.org/description> "A notation, also known as classification code, is a string of characters such as \"T58.5\" or \"303.4833\" used to uniquely identify a concept within the scope of a given concept scheme"@en .
-<http://www.w3.org/2004/02/skos/core#notation> <https://schema.org/name> "notation"@en .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <https://schema.org/description> "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable."@en .
-<http://www.w3.org/ns/prov#wasDerivedFrom> <https://schema.org/name> "was derived from" .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <https://schema.org/description> "The preferred lexical label for a resource, in a given language"@en .
-<http://www.w3.org/2004/02/skos/core#prefLabel> <https://schema.org/name> "preferred label"@en .
-<http://www.w3.org/2004/02/skos/core#exactMatch> <https://schema.org/description> "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch"@en .
-<http://www.w3.org/2004/02/skos/core#exactMatch> <https://schema.org/name> "has exact match"@en .
-<http://www.w3.org/2000/01/rdf-schema#Datatype> <https://schema.org/description> "The class of RDF datatypes." .
-<http://www.w3.org/2000/01/rdf-schema#Datatype> <https://schema.org/name> "Datatype" .
-<http://www.w3.org/2004/02/skos/core#historyNote> <https://schema.org/description> "A note about the past state/use/meaning of a concept"@en .
-<http://www.w3.org/2004/02/skos/core#historyNote> <https://schema.org/name> "history note"@en .
-<http://www.w3.org/2004/02/skos/core#definition> <https://schema.org/description> "A statement or formal explanation of the meaning of a concept"@en .
-<http://www.w3.org/2004/02/skos/core#definition> <https://schema.org/name> "definition"@en .
-<http://www.w3.org/2004/02/skos/core#broadMatch> <https://schema.org/description> "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes"@en .
-<http://www.w3.org/2004/02/skos/core#broadMatch> <https://schema.org/name> "has broader match"@en .
-<http://www.w3.org/2004/02/skos/core#member> <https://schema.org/description> "Relates a collection to one of its members"@en .
-<http://www.w3.org/2004/02/skos/core#member> <https://schema.org/name> "has member"@en .
-<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://schema.org/description> "Relates a concept to the concept scheme that it is a top level concept of"@en .
-<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://schema.org/name> "is top concept in scheme"@en .
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> <https://schema.org/description> "A set of concepts, optionally including statements about semantic relationships between those concepts"@en .
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> <https://schema.org/name> "Concept Scheme"@en .
-<http://www.w3.org/ns/dcat#Catalog> <https://schema.org/description> "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)."@en .
-<http://www.w3.org/ns/dcat#Catalog> <https://schema.org/name> "Catalog"@en .
-<http://www.w3.org/2004/02/skos/core#relatedMatch> <https://schema.org/description> "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes"@en .
-<http://www.w3.org/2004/02/skos/core#relatedMatch> <https://schema.org/name> "has related match"@en .
-<http://www.w3.org/2004/02/skos/core#inScheme> <https://schema.org/description> "Relates a resource (for example a concept) to a concept scheme in which it is included"@en .
-<http://www.w3.org/2004/02/skos/core#inScheme> <https://schema.org/name> "is in scheme"@en .
-<http://www.w3.org/ns/dx/prof/hasRole> <https://schema.org/description> "The function of an artifact described by a Resource Descriptor, such as specification, guidance etc."@en .
-<http://www.w3.org/ns/dx/prof/hasRole> <https://schema.org/name> "has role" .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://schema.org/name> "Concept"@en .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://schema.org/description> "An idea or notion; a unit of thought" .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://schema.org/description> "An idea or notion; a unit of thought"@en .
-<http://www.w3.org/2004/02/skos/core#Concept> <https://schema.org/name> "Concept" .
-<http://www.w3.org/2004/02/skos/core#closeMatch> <https://schema.org/description> "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of \"compound errors\" when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property"@en .
-<http://www.w3.org/2004/02/skos/core#closeMatch> <https://schema.org/name> "has close match"@en .
-<http://www.w3.org/ns/dcat#hadRole> <https://schema.org/description> "The function of an entity or agent with respect to another entity or resource."@en .
-<http://www.w3.org/ns/dcat#hadRole> <https://schema.org/name> "hadRole"@en .
-<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/description> "The defininition of the subject resource." .
-<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://schema.org/name> "is defined by" .
-<http://www.w3.org/2004/02/skos/core#scopeNote> <https://schema.org/description> "A note that helps to clarify the meaning and/or the use of a concept"@en .
-<http://www.w3.org/2004/02/skos/core#scopeNote> <https://schema.org/name> "scope note"@en .
-<http://www.w3.org/2006/time#hasEnd> <https://schema.org/description> "End of a temporal entity."@en .
-<http://www.w3.org/2006/time#hasEnd> <https://schema.org/name> "has end"@en .
-<https://schema.org/license> <https://schema.org/description> "A license document that applies to this content, typically indicated by URL" .
-<https://schema.org/license> <https://schema.org/name> "license" .
-
-<https://schema.org/copyrightNotice> <https://schema.org/description> "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work" .
-<https://schema.org/copyrightNotice> <https://schema.org/name> "copyright notice" .
-<https://schema.org/copyrightNotice> rdfs:label "copyright notice" .
-
-<https://schema.org/citation> <https://schema.org/description> "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc" .
-<https://schema.org/citation> <https://schema.org/name> "citation" .
-<https://schema.org/dateModified> <https://schema.org/description> "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed" .
-<https://schema.org/dateModified> <https://schema.org/name> "date modified" .
-<https://schema.org/name> <https://schema.org/description> "The name of the item" .
-<https://schema.org/name> <https://schema.org/name> "name" .
-<https://schema.org/contributor> <https://schema.org/description> "A secondary contributor to the CreativeWork or Event" .
-<https://schema.org/contributor> <https://schema.org/name> "contributor" .
-<https://schema.org/description> <https://schema.org/description> "A description of the item" .
-<https://schema.org/description> <https://schema.org/name> "description" .
-<https://schema.org/url> <https://schema.org/description> "URL of the item" .
-<https://schema.org/url> <https://schema.org/name> "url" .
-<https://schema.org/dateCreated> <https://schema.org/description> "The date on which the CreativeWork was created or the item was added to a DataFeed" .
-<https://schema.org/dateCreated> <https://schema.org/name> "date created" .
-<https://schema.org/marginOfError> <https://schema.org/description> "A [[marginOfError]] for an [[Observation]]" .
-<https://schema.org/marginOfError> <https://schema.org/name> "margin of error" .
-<https://schema.org/creator> <https://schema.org/description> "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork" .
-<https://schema.org/creator> <https://schema.org/name> "creator" .
-<https://schema.org/version> <https://schema.org/description> "The version of the CreativeWork embodied by a specified resource" .
-<https://schema.org/version> <https://schema.org/name> "version" .
-<https://schema.org/keywords> <https://schema.org/description> "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property" .
-<https://schema.org/keywords> <https://schema.org/name> "keywords" .
-<https://schema.org/publisher> <https://schema.org/description> "The publisher of the creative work" .
-<https://schema.org/publisher> <https://schema.org/name> "publisher" .
-<https://schema.org/codeRepository> <https://schema.org/description> "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex)" .
-<https://schema.org/codeRepository> <https://schema.org/name> "code repository" .
-<https://schema.org/email> <https://schema.org/description> "Email address" .
-<https://schema.org/email> <https://schema.org/name> "email" .
-<https://schema.org/copyrightHolder> <https://schema.org/description> "The party holding the legal copyright to the CreativeWork" .
-<https://schema.org/copyrightHolder> <https://schema.org/name> "copyright holder" .
-<https://schema.org/color> <https://schema.org/description> "The color of the product" .
-<https://schema.org/color> <https://schema.org/name> "color" .
-
-
-<http://linked.data.gov.au/def/borehole-start-point/offshore> schema:name "Offshore" .
-<https://linked.data.gov.au/def/borehole-start-point> schema:name "Offshore" .
-<https://linked.data.gov.au/def/borehole-start-point/natural-ground-surface> schema:name "Natural Ground Surface" .
-
-
-<https://creativecommons.org/licenses/by/4.0/> schema:name "Creative Commons BY 4.0" .
-
-
-<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian> schema:name "custodian" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticConglomerate> schema:name "Clastic Conglomerate" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticMudstone> schema:name "Clastic Mudstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSandstone> schema:name "Clastic Sandstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/dolostone> schema:name "Dolostone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/rockGypsumOrAnhydrite> schema:name "Rock Gypsum Or Anhydrite" .
-<http://linked.data.gov.au/def/geou> schema:name "Geological Units" .
-<http://linked.data.gov.au/def/geou/M3-PER-TON_M> schema:name "M3 per ton" .
-<http://linked.data.gov.au/def/iso-4217-currencies> schema:name "ISO 4217 Currencies" .
-<http://linked.data.gov.au/def/queensland-crs/agd1966> schema:name "AGD 1966" .
-<http://linked.data.gov.au/def/queensland-crs/agd1984> schema:name "AGD 1984" .
-<http://purl.org/vocab/vann/preferredNamespacePrefix> schema:name "preferred namespace prefix" .
-<http://purl.org/vocab/vann/preferredNamespaceUri> schema:name "preferred namespace URI" .
-<http://qudt.org/vocab/unit/BBL_US> schema:name "Barrels (US)" .
-<http://qudt.org/vocab/unit/BBL_US-PER-DAY> schema:name "Barrels (US) per day" .
-<http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> schema:name "QUDT Units Vocabulary" .
-<http://www.w3.org/2002/07/owl#Datatype> schema:name "Datatype" .
-<http://www.w3.org/2004/02/skos/core#versionInfo> schema:name "version info" .
-<http://www.w3.org/2006/time#> schema:name "Time Ontology in OWL" .
-<https://linked.data.gov.au/def/borehole-design/deviated> schema:name "deviated" .
-<https://linked.data.gov.au/def/borehole-purpose-wa/storage-liquids-other-than-water> schema:name "storage liquids other than water" .
-<https://linked.data.gov.au/def/borehole-purpose-wa/water-supply-mining> schema:name "water supply mining" .
-<https://linked.data.gov.au/def/borehole-sub-purpose> schema:name "Borehole Sub Purpose" .
-<https://linked.data.gov.au/def/demirs-offices/kalgoorlie-office> schema:name "Kalgoorlie Office" .
-<https://linked.data.gov.au/def/earthsci-for/applied-geophysics-> schema:name "Applied Geophysics-" .
-<https://linked.data.gov.au/def/earthsci-for/data-management-and-data-science> schema:name "Data Management and Data Science" .
-<https://linked.data.gov.au/def/geofeatures/Basin> schema:name "Basin" .
-<https://linked.data.gov.au/def/geofeatures/Suite> schema:name "Suite" .
-<https://linked.data.gov.au/def/geofeatures/Supersuite> schema:name "Supersuite" .
-<https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-mapping> schema:name "Geology Mapping" .
-<https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral> schema:name "Resources Mineral" .
-<https://linked.data.gov.au/def/queensland-crs/gda1994> schema:name "GDA 1994" .
-<https://linked.data.gov.au/def/queensland-crs/gda2020> schema:name "GDA 2020" .
-<https://linked.data.gov.au/def/queensland-crs/wgs1984> schema:name "WGS 1984" .
-<https://linked.data.gov.au/def/reg-statuses/status> schema:name "status" .
-<https://linked.data.gov.au/def/reg-statuses/status> rdfs:label "status" .
-<https://prez.dev/Manifest> schema:name "Manifest" .
-<https://prez.dev/ManifestResourceRoles/CatalogueData> schema:name "Catalogue Data" .
-<https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels> schema:name "Incomplete Catalogue And Resource Labels" .
-<https://prez.dev/ManifestResourceRoles/ResourceData> schema:name "Resource Data" .
-<https://purl.org/NET/rdflicense/cc-by4.0> schema:name "CC BY 4.0" .
-<https://w3id.org/profile/vocpub/4.6> schema:name "VocPub 4.6" .
-<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> schema:name "QUDT Units Vocabulary" .
-<http://linked.data.gov.au/def/site-status/rehabilitation> schema:name "Rehabilitation" .
-
-schema:Organization
-    rdfs:label "Organization" ;
+schema:codeRepository
+    schema:description "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex)" ;
+    schema:name "code repository" ;
 .
 
-schema:Person
-    rdfs:label "Person" ;
+schema:color
+    schema:description "The color of the product" ;
+    schema:name "color" ;
 .
 
-schema:alternateName
-    rdfs:label "alternate name" ;
+schema:contributor
+    schema:description "A secondary contributor to the CreativeWork or Event" ;
+    schema:name "contributor" ;
 .
 
-owl:versionIRI
-    rdfs:label "version";
+schema:copyrightHolder
+    schema:description "The party holding the legal copyright to the CreativeWork" ;
+    schema:name "copyright holder" ;
 .
 
-prov:qualifiedAttribution rdfs:label "Qualified Attributor" .
-dcat:hadRole rdfs:label "Role" .
-prov:agent rdfs:label "Agent" .
+schema:copyrightNotice
+    schema:description "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work" ;
+    schema:name "copyright notice" ;
+.
 
-<http://purl.org/dc/terms/creator> rdfs:label "Creator"@en .
-<http://purl.org/dc/terms/source> rdfs:label "Source"@en .
-<http://purl.org/dc/terms/created> rdfs:label "Date Created"@en .
-<http://purl.org/dc/terms/modified> rdfs:label "Date Modified"@en .
-<http://purl.org/dc/terms/hasPart> rdfs:label "Has Part"@en .
-<http://purl.org/dc/terms/publisher> rdfs:label "Publisher"@en .
+schema:creator
+    schema:description "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork" ;
+    schema:name "creator" ;
+.
 
-<http://purl.org/dc/terms/conformsTo> rdfs:label "Conforms To"@en .
-<http://purl.org/dc/terms/identifier> rdfs:label "Identifier"@en .
+schema:dateCreated
+    schema:description "The date on which the CreativeWork was created or the item was added to a DataFeed" ;
+    schema:name "date created" ;
+.
 
-<http://www.w3.org/ns/prov#qualifiedAttribution> rdfs:label "qualified attribution" .
-<http://www.w3.org/2004/02/skos/core#narrowMatch> rdfs:label "has narrower match"@en .
-<http://www.w3.org/2004/02/skos/core#narrower> rdfs:label "has narrower"@en .
-<http://www.w3.org/2004/02/skos/core#note> rdfs:label "note"@en .
-<http://www.w3.org/ns/shacl#order> rdfs:label "order"@en .
-<http://www.w3.org/ns/prov#agent> rdfs:label "agent" .
-<http://www.w3.org/2006/time#hasBeginning> rdfs:label "has beginning"@en .
-<http://www.w3.org/2004/02/skos/core#Collection> rdfs:label "Collection"@en .
-<http://www.w3.org/ns/dx/prof/hasResource> rdfs:label "has resource"@en .
-<http://www.w3.org/2004/02/skos/core#hasTopConcept> rdfs:label "has top concept"@en .
-<http://www.w3.org/2004/02/skos/core#broader> rdfs:label "has broader"@en .
-<http://www.w3.org/2002/07/owl#versionIRI> rdfs:label "versionIRI" .
-<http://www.w3.org/2002/07/owl#versionInfo> rdfs:label "versionInfo" .
-<http://www.w3.org/ns/dx/prof/hasArtifact> rdfs:label "has artifact" .
-<http://www.w3.org/2004/02/skos/core#altLabel> rdfs:label "alternative label"@en .
-<http://www.w3.org/2000/01/rdf-schema#comment> rdfs:label "comment" .
-<http://www.w3.org/2004/02/skos/core#notation> rdfs:label "notation"@en .
-<http://www.w3.org/ns/prov#wasDerivedFrom> rdfs:label "was derived from" .
-<http://www.w3.org/2004/02/skos/core#prefLabel> rdfs:label "preferred label"@en .
-<http://www.w3.org/2004/02/skos/core#exactMatch> rdfs:label "has exact match"@en .
-<http://www.w3.org/2000/01/rdf-schema#Datatype> rdfs:label "Datatype" .
-<http://www.w3.org/2004/02/skos/core#historyNote> rdfs:label "history note"@en .
-<http://www.w3.org/2004/02/skos/core#definition> rdfs:label "definition"@en .
-<http://www.w3.org/2004/02/skos/core#broadMatch> rdfs:label "has broader match"@en .
-<http://www.w3.org/2004/02/skos/core#member> rdfs:label "has member"@en .
-<http://www.w3.org/2004/02/skos/core#topConceptOf> rdfs:label "is top concept in scheme"@en .
-<http://www.w3.org/2004/02/skos/core#ConceptScheme> rdfs:label "Concept Scheme"@en .
-<http://www.w3.org/ns/dcat#Catalog> rdfs:label "Catalog"@en .
-<http://www.w3.org/2004/02/skos/core#relatedMatch> rdfs:label "has related match"@en .
-<http://www.w3.org/2004/02/skos/core#inScheme> rdfs:label "is in scheme"@en .
-<http://www.w3.org/ns/dx/prof/hasRole> rdfs:label "has role" .
-<http://www.w3.org/2004/02/skos/core#Concept> rdfs:label "Concept"@en .
-<http://www.w3.org/2004/02/skos/core#Concept> rdfs:label "Concept" .
-<http://www.w3.org/2004/02/skos/core#closeMatch> rdfs:label "has close match"@en .
-<http://www.w3.org/ns/dcat#hadRole> rdfs:label "hadRole"@en .
-<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> rdfs:label "is defined by" .
-<http://www.w3.org/2004/02/skos/core#scopeNote> rdfs:label "scope note"@en .
-<http://www.w3.org/2006/time#hasEnd> rdfs:label "has end"@en .
-<https://schema.org/license> rdfs:label "license" .
+schema:dateModified
+    schema:description "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed" ;
+    schema:name "date modified" ;
+.
 
-<https://schema.org/citation> rdfs:label "citation" .
-<https://schema.org/dateModified> rdfs:label "date modified" .
-rdfs:label rdfs:label "name" .
-<https://schema.org/contributor> rdfs:label "contributor" .
-<https://schema.org/description> rdfs:label "description" .
-<https://schema.org/url> rdfs:label "url" .
-<https://schema.org/dateCreated> rdfs:label "date created" .
-<https://schema.org/marginOfError> rdfs:label "margin of error" .
-<https://schema.org/creator> rdfs:label "creator" .
-<https://schema.org/version> rdfs:label "version" .
-<https://schema.org/keywords> rdfs:label "keywords" .
-<https://schema.org/publisher> rdfs:label "publisher" .
-<https://schema.org/codeRepository> rdfs:label "code repository" .
-<https://schema.org/email> rdfs:label "email" .
-<https://schema.org/copyrightHolder> rdfs:label "copyright holder" .
-<https://schema.org/color> rdfs:label "color" .
+schema:description
+    schema:description "A description of the item" ;
+    schema:name "description" ;
+.
 
+schema:email
+    schema:description "Email address" ;
+    schema:name "email" ;
+.
 
-<http://linked.data.gov.au/def/borehole-start-point/offshore> rdfs:label "Offshore" .
-<https://linked.data.gov.au/def/borehole-start-point> rdfs:label "Offshore" .
-<https://linked.data.gov.au/def/borehole-start-point/natural-ground-surface> rdfs:label "Natural Ground Surface" .
+schema:keywords
+    schema:description "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property" ;
+    schema:name "keywords" ;
+.
 
+schema:license
+    schema:description "A license document that applies to this content, typically indicated by URL" ;
+    schema:name "license" ;
+.
 
-<https://creativecommons.org/licenses/by/4.0/> rdfs:label "Creative Commons BY 4.0" .
+schema:marginOfError
+    schema:description "A [[marginOfError]] for an [[Observation]]" ;
+    schema:name "margin of error" ;
+.
 
+schema:name
+    schema:description "The name of the item" ;
+    schema:name "name" ;
+.
 
-<http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian> rdfs:label "custodian" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticConglomerate> rdfs:label "Clastic Conglomerate" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticMudstone> rdfs:label "Clastic Mudstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSandstone> rdfs:label "Clastic Sandstone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/dolostone> rdfs:label "Dolostone" .
-<http://inspire.ec.europa.eu/codelist/LithologyValue/rockGypsumOrAnhydrite> rdfs:label "Rock Gypsum Or Anhydrite" .
-<http://linked.data.gov.au/def/geou> rdfs:label "Geological Units" .
-<http://linked.data.gov.au/def/geou/M3-PER-TON_M> rdfs:label "M3 per ton" .
-<http://linked.data.gov.au/def/iso-4217-currencies> rdfs:label "ISO 4217 Currencies" .
-<http://linked.data.gov.au/def/queensland-crs/agd1966> rdfs:label "AGD 1966" .
-<http://linked.data.gov.au/def/queensland-crs/agd1984> rdfs:label "AGD 1984" .
-<http://purl.org/vocab/vann/preferredNamespacePrefix> rdfs:label "preferred namespace prefix" .
-<http://purl.org/vocab/vann/preferredNamespaceUri> rdfs:label "preferred namespace URI" .
-<http://qudt.org/vocab/unit/BBL_US> rdfs:label "Barrels (US)" .
-<http://qudt.org/vocab/unit/BBL_US-PER-DAY> rdfs:label "Barrels (US) per day" .
-<http://www.qudt.org/doc/DOC_VOCAB-UNITS.html> rdfs:label "QUDT Units Vocabulary" .
-<http://www.w3.org/2002/07/owl#Datatype> rdfs:label "Datatype" .
-<http://www.w3.org/2004/02/skos/core#versionInfo> rdfs:label "version info" .
-<http://www.w3.org/2006/time#> rdfs:label "Time Ontology in OWL" .
-<https://linked.data.gov.au/def/borehole-design/deviated> rdfs:label "deviated" .
-<https://linked.data.gov.au/def/borehole-purpose-wa/storage-liquids-other-than-water> rdfs:label "storage liquids other than water" .
-<https://linked.data.gov.au/def/borehole-purpose-wa/water-supply-mining> rdfs:label "water supply mining" .
-<https://linked.data.gov.au/def/borehole-sub-purpose> rdfs:label "Borehole Sub Purpose" .
-<https://linked.data.gov.au/def/demirs-offices/kalgoorlie-office> rdfs:label "Kalgoorlie Office" .
-<https://linked.data.gov.au/def/earthsci-for/applied-geophysics-> rdfs:label "Applied Geophysics-" .
-<https://linked.data.gov.au/def/earthsci-for/data-management-and-data-science> rdfs:label "Data Management and Data Science" .
-<https://linked.data.gov.au/def/geofeatures/Basin> rdfs:label "Basin" .
-<https://linked.data.gov.au/def/geofeatures/Suite> rdfs:label "Suite" .
-<https://linked.data.gov.au/def/geofeatures/Supersuite> rdfs:label "Supersuite" .
-<https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-mapping> rdfs:label "Geology Mapping" .
-<https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral> rdfs:label "Resources Mineral" .
-<https://linked.data.gov.au/def/queensland-crs/gda1994> rdfs:label "GDA 1994" .
-<https://linked.data.gov.au/def/queensland-crs/gda2020> rdfs:label "GDA 2020" .
-<https://linked.data.gov.au/def/queensland-crs/wgs1984> rdfs:label "WGS 1984" .
-<https://linked.data.gov.au/def/reg-statuses/status> rdfs:label "status" .
-<https://linked.data.gov.au/def/reg-statuses/status> rdfs:label "status" .
-<https://prez.dev/Manifest> rdfs:label "Manifest" .
-<https://prez.dev/ManifestResourceRoles/CatalogueData> rdfs:label "Catalogue Data" .
-<https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels> rdfs:label "Incomplete Catalogue And Resource Labels" .
-<https://prez.dev/ManifestResourceRoles/ResourceData> rdfs:label "Resource Data" .
-<https://purl.org/NET/rdflicense/cc-by4.0> rdfs:label "CC BY 4.0" .
-<https://w3id.org/profile/vocpub/4.6> rdfs:label "VocPub 4.6" .
-<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html> rdfs:label "QUDT Units Vocabulary" .
-<http://linked.data.gov.au/def/site-status/rehabilitation> rdfs:label "Rehabilitation" .
+schema:publisher
+    schema:description "The publisher of the creative work" ;
+    schema:name "publisher" ;
+.
 
+schema:url
+    schema:description "URL of the item" ;
+    schema:name "url" ;
+.
+
+schema:version
+    schema:description "The version of the CreativeWork embodied by a specified resource" ;
+    schema:name "version" ;
+.
+
+<https://w3id.org/profile/vocpub/4.6>
+    schema:name "VocPub 4.6" ;
+.
+
+<https://www.qudt.org/doc/DOC_VOCAB-UNITS.html>
+    schema:name "QUDT Units Vocabulary" ;
+.
+
+<https://www.w3.org/ns/prov#agent>
+    schema:name "Agent" ;
+.
+
+<http://www.w3.org/ns/prov#hadRole>
+    schema:name "role" ;
+.
+
+<https://www.w3.org/ns/prov#qualifiedAttribution>
+    schema:name "Qualified Attribution" ;
+.

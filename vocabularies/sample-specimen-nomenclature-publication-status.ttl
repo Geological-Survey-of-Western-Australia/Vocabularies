@@ -589,11 +589,11 @@ GSWA distinguishes samples from specimens on the basis of the latter including b
     skos:prefLabel "Sample/specimen nomenclature and publication status"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-5129-2467> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;

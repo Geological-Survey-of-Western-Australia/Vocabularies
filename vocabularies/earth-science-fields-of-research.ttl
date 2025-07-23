@@ -3889,11 +3889,11 @@ cs:
     skos:prefLabel "Earth science fields of research"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent
                 <https://orcid.org/0009-0002-5543-2719> ;
         ] ;

@@ -116,11 +116,11 @@ cs:
     skos:prefLabel "Alteration intensity"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0001-5888-5102> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;

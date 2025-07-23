@@ -331,11 +331,11 @@ The concepts outline the type of tectonic elements that are recognized and/or in
     schema:keywords theme:geology-framework ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole dataroles:custodian ;
+            prov:hadRole dataroles:custodian ;
             prov:agent <https://orcid.org/0009-0002-5543-2719>
         ] ,
         [
-            dcat:hadRole dataroles:custodian ;
+            prov:hadRole dataroles:custodian ;
             prov:agent  <https://orcid.org/0000-0002-7645-5031>
         ] ;
 .

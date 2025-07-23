@@ -699,11 +699,11 @@ cs:
     skos:prefLabel "Sample/specimen condition"@en ;
     prov:qualifiedAttribution
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-5129-2467> ;
         ] ,
         [
-            dcat:hadRole isoroles:custodian ;
+            prov:hadRole isoroles:custodian ;
             prov:agent <https://orcid.org/0000-0002-7645-5031> ;
         ] ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
