@@ -11,531 +11,531 @@ PREFIX time: <http://www.w3.org/2006/time#>
 PREFIX vann: <http://purl.org/vocab/vann/>
 
 <http://def.isotc211.org/iso19115/-1/2018/CitationAndResponsiblePartyInformation/code/CI_RoleCode/custodian>
-    schema:name "custodian" ;
+    rdfs:label "custodian" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/LithologyValue/clasticConglomerate>
-    schema:name "Clastic Conglomerate" ;
+    rdfs:label "Clastic Conglomerate" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/LithologyValue/clasticMudstone>
-    schema:name "Clastic Mudstone" ;
+    rdfs:label "Clastic Mudstone" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/LithologyValue/clasticSandstone>
-    schema:name "Clastic Sandstone" ;
+    rdfs:label "Clastic Sandstone" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/LithologyValue/dolostone>
-    schema:name "Dolostone" ;
+    rdfs:label "Dolostone" ;
 .
 
 <http://inspire.ec.europa.eu/codelist/LithologyValue/rockGypsumOrAnhydrite>
-    schema:name "Rock Gypsum Or Anhydrite" ;
+    rdfs:label "Rock Gypsum Or Anhydrite" ;
 .
 
 <http://linked.data.gov.au/def/borehole-start-point/offshore>
-    schema:name "Offshore" ;
+    rdfs:label "Offshore" ;
 .
 
 <http://linked.data.gov.au/def/geou>
-    schema:name "Geological Units" ;
+    rdfs:label "Geological Units" ;
 .
 
 <http://linked.data.gov.au/def/geou/M3-PER-TON_M>
-    schema:name "M3 per ton" ;
+    rdfs:label "M3 per ton" ;
 .
 
 <http://linked.data.gov.au/def/iso-4217-currencies>
-    schema:name "ISO 4217 Currencies" ;
+    rdfs:label "ISO 4217 Currencies" ;
 .
 
 <http://linked.data.gov.au/def/queensland-crs/agd1966>
-    schema:name "AGD 1966" ;
+    rdfs:label "AGD 1966" ;
 .
 
 <http://linked.data.gov.au/def/queensland-crs/agd1984>
-    schema:name "AGD 1984" ;
+    rdfs:label "AGD 1984" ;
 .
 
 <http://linked.data.gov.au/def/site-status/rehabilitation>
-    schema:name "Rehabilitation" ;
+    rdfs:label "Rehabilitation" ;
 .
 
 dcterms:conformsTo
     schema:description "An established standard to which the described resource conforms." ;
-    schema:name "Conforms To" ;
+    rdfs:label "Conforms To" ;
 .
 
 dcterms:created
     schema:description "Date of creation of the resource." ;
-    schema:name "Date Created" ;
+    rdfs:label "Date Created" ;
 .
 
 dcterms:creator
     schema:description "An entity responsible for making the resource." ;
-    schema:name "Creator" ;
+    rdfs:label "Creator" ;
 .
 
 dcterms:hasPart
     schema:description "A related resource that is included either physically or logically in the described resource." ;
-    schema:name "Has Part" ;
+    rdfs:label "Has Part" ;
 .
 
 dcterms:identifier
     schema:description "An unambiguous reference to the resource within a given context." ;
-    schema:name "Identifier" ;
+    rdfs:label "Identifier" ;
 .
 
 dcterms:modified
     schema:description "Date on which the resource was changed." ;
-    schema:name "Date Modified" ;
+    rdfs:label "Date Modified" ;
 .
 
 dcterms:publisher
     schema:description "An entity responsible for making the resource available." ;
-    schema:name "Publisher" ;
+    rdfs:label "Publisher" ;
 .
 
 dcterms:source
     schema:description "A related resource from which the described resource is derived." ;
-    schema:name "Source" ;
+    rdfs:label "Source" ;
 .
 
 <http://purl.org/linked-data/registry#status>
     schema:description "The status of this register entry" ;
-    schema:name "status" ;
+    rdfs:label "status" ;
 .
 
 vann:preferredNamespacePrefix
-    schema:name "preferred namespace prefix" ;
+    rdfs:label "preferred namespace prefix" ;
 .
 
 vann:preferredNamespaceUri
-    schema:name "preferred namespace URI" ;
+    rdfs:label "preferred namespace URI" ;
 .
 
 <http://qudt.org/vocab/unit/BBL_US>
-    schema:name "Barrels (US)" ;
+    rdfs:label "Barrels (US)" ;
 .
 
 <http://qudt.org/vocab/unit/BBL_US-PER-DAY>
-    schema:name "Barrels (US) per day" ;
+    rdfs:label "Barrels (US) per day" ;
 .
 
 <http://www.qudt.org/doc/DOC_VOCAB-UNITS.html>
-    schema:name "QUDT Units Vocabulary" ;
+    rdfs:label "QUDT Units Vocabulary" ;
 .
 
 rdfs:Datatype
     schema:description "The class of RDF datatypes." ;
-    schema:name "Datatype" ;
+    rdfs:label "Datatype" ;
 .
 
 rdfs:comment
     schema:description "A description of the subject resource." ;
-    schema:name "comment" ;
+    rdfs:label "comment" ;
 .
 
 rdfs:isDefinedBy
     schema:description "The defininition of the subject resource." ;
-    schema:name "is defined by" ;
+    rdfs:label "is defined by" ;
 .
 
 owl:Datatype
-    schema:name "Datatype" ;
+    rdfs:label "Datatype" ;
 .
 
 owl:versionIRI
     schema:description "The property that identifies the version IRI of an ontology." ;
-    schema:name "version IRI" ;
+    rdfs:label "version IRI" ;
 .
 
 owl:versionInfo
     schema:description "The annotation property that provides version information for an ontology or another OWL construct." ;
-    schema:name "versionInfo" ;
+    rdfs:label "versionInfo" ;
 .
 
 skos:Collection
     schema:description "A meaningful collection of concepts" ;
-    schema:name "Collection" ;
+    rdfs:label "Collection" ;
 .
 
 skos:Concept
     schema:description
         "An idea or notion; a unit of thought" ;
-    schema:name "Concept" ;
+    rdfs:label "Concept" ;
 .
 
 skos:ConceptScheme
     schema:description "A set of concepts, optionally including statements about semantic relationships between those concepts" ;
-    schema:name "Concept Scheme" ;
+    rdfs:label "Concept Scheme" ;
 .
 
 skos:altLabel
     schema:description "An alternative lexical label for a resource" ;
-    schema:name "alternative label" ;
+    rdfs:label "alternative label" ;
 .
 
 skos:broadMatch
     schema:description "skos:broadMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes" ;
-    schema:name "has broader match" ;
+    rdfs:label "has broader match" ;
 .
 
 skos:broader
     schema:description "Relates a concept to a concept that is more general in meaning" ;
-    schema:name "has broader" ;
+    rdfs:label "has broader" ;
 .
 
 skos:closeMatch
     schema:description "skos:closeMatch is used to link two concepts that are sufficiently similar that they can be used interchangeably in some information retrieval applications. In order to avoid the possibility of 'compound errors' when combining mappings across more than two concept schemes, skos:closeMatch is not declared to be a transitive property" ;
-    schema:name "has close match" ;
+    rdfs:label "has close match" ;
 .
 
 skos:definition
     schema:description "A statement or formal explanation of the meaning of a concept" ;
-    schema:name "definition" ;
+    rdfs:label "definition" ;
 .
 
 skos:exactMatch
     schema:description "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch" ;
-    schema:name "has exact match" ;
+    rdfs:label "has exact match" ;
 .
 
 skos:hasTopConcept
     schema:description "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies" ;
-    schema:name "has top concept" ;
+    rdfs:label "has top concept" ;
 .
 
 skos:historyNote
     schema:description "A note about the past state/use/meaning of a concept" ;
-    schema:name "history note" ;
+    rdfs:label "history note" ;
 .
 
 skos:inScheme
     schema:description "Relates a resource (for example a concept) to a concept scheme in which it is included" ;
-    schema:name "is in scheme" ;
+    rdfs:label "is in scheme" ;
 .
 
 skos:member
     schema:description "Relates a collection to one of its members" ;
-    schema:name "has member" ;
+    rdfs:label "has member" ;
 .
 
 skos:narrowMatch
     schema:description "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes" ;
-    schema:name "has narrower match" ;
+    rdfs:label "has narrower match" ;
 .
 
 skos:narrower
     schema:description "Relates a concept to a concept that is more specific in meaning" ;
-    schema:name "has narrower" ;
+    rdfs:label "has narrower" ;
 .
 
 skos:notation
     schema:description "A notation, also known as classification code, is a string of characters such as 'T58.5' or '303.4833' used to uniquely identify a concept within the scope of a given concept scheme" ;
-    schema:name "notation" ;
+    rdfs:label "notation" ;
 .
 
 skos:note
     schema:description "A general note, for any purpose" ;
-    schema:name "note" ;
+    rdfs:label "note" ;
 .
 
 skos:prefLabel
     schema:description "The preferred lexical label for a resource, in a given language" ;
-    schema:name "preferred label" ;
+    rdfs:label "preferred label" ;
 .
 
 skos:relatedMatch
     schema:description "skos:relatedMatch is used to state an associative mapping link between two conceptual resources in different concept schemes" ;
-    schema:name "has related match" ;
+    rdfs:label "has related match" ;
 .
 
 skos:scopeNote
     schema:description "A note that helps to clarify the meaning and/or the use of a concept" ;
-    schema:name "scope note" ;
+    rdfs:label "scope note" ;
 .
 
 skos:topConceptOf
     schema:description "Relates a concept to the concept scheme that it is a top level concept of" ;
-    schema:name "is top concept in scheme" ;
+    rdfs:label "is top concept in scheme" ;
 .
 
 skos:versionInfo
-    schema:name "version info" ;
+    rdfs:label "version info" ;
 .
 
 time:
-    schema:name "Time Ontology in OWL" ;
+    rdfs:label "Time Ontology in OWL" ;
 .
 
 time:hasBeginning
     schema:description "Beginning of a temporal entity." ;
-    schema:name "has beginning" ;
+    rdfs:label "has beginning" ;
 .
 
 time:hasEnd
     schema:description "End of a temporal entity." ;
-    schema:name "has end" ;
+    rdfs:label "has end" ;
 .
 
 dcat:Catalog
     schema:description "A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog)." ;
-    schema:name "Catalog" ;
+    rdfs:label "Catalog" ;
 .
 
 prof:hasArtifact
     schema:description "The URL of a downloadable file with particulars such as its format and role indicated by the Resource Descriptor" ;
-    schema:name "has artifact" ;
+    rdfs:label "has artifact" ;
 .
 
 prof:hasResource
     schema:description "A resource which describes the nature of an artifact and the role it plays in relation to the Profile" ;
-    schema:name "has resource" ;
+    rdfs:label "has resource" ;
 .
 
 prof:hasRole
     schema:description "The function of an artifact described by a Resource Descriptor, such as specification, guidance etc." ;
-    schema:name "has role" ;
+    rdfs:label "has role" ;
 .
 
 prov:agent
-    schema:name "agent" ;
+    rdfs:label "agent" ;
 .
 
 prov:qualifiedAttribution
     schema:description "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]." ;
-    schema:name "qualified attribution" ;
+    rdfs:label "qualified attribution" ;
 .
 
 prov:wasDerivedFrom
     schema:description "The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable." ;
-    schema:name "was derived from" ;
+    rdfs:label "was derived from" ;
 .
 
 sh:order
     schema:description "Specifies the relative order of this compared to its siblings. For example use 0 for the first, 1 for the second." ;
-    schema:name "order" ;
+    rdfs:label "order" ;
 .
 
 <https://creativecommons.org/licenses/by/4.0/>
-    schema:name "Creative Commons BY 4.0" ;
+    rdfs:label "Creative Commons BY 4.0" ;
 .
 
 <https://linked.data.gov.au/def/borehole-design/deviated>
-    schema:name "deviated" ;
+    rdfs:label "deviated" ;
 .
 
 <https://linked.data.gov.au/def/borehole-purpose-wa/storage-liquids-other-than-water>
-    schema:name "storage liquids other than water" ;
+    rdfs:label "storage liquids other than water" ;
 .
 
 <https://linked.data.gov.au/def/borehole-purpose-wa/water-supply-mining>
-    schema:name "water supply mining" ;
+    rdfs:label "water supply mining" ;
 .
 
 <https://linked.data.gov.au/def/borehole-start-point>
-    schema:name "Offshore" ;
+    rdfs:label "Offshore" ;
 .
 
 <https://linked.data.gov.au/def/borehole-start-point/natural-ground-surface>
-    schema:name "Natural Ground Surface" ;
+    rdfs:label "Natural Ground Surface" ;
 .
 
 <https://linked.data.gov.au/def/borehole-sub-purpose>
-    schema:name "Borehole Sub Purpose" ;
+    rdfs:label "Borehole Sub Purpose" ;
 .
 
 <https://linked.data.gov.au/def/demirs-offices/kalgoorlie-office>
-    schema:name "Kalgoorlie Office" ;
+    rdfs:label "Kalgoorlie Office" ;
 .
 
 <https://linked.data.gov.au/def/earthsci-for/applied-geophysics->
-    schema:name "Applied Geophysics-" ;
+    rdfs:label "Applied Geophysics-" ;
 .
 
 <https://linked.data.gov.au/def/earthsci-for/data-management-and-data-science>
-    schema:name "Data Management and Data Science" ;
+    rdfs:label "Data Management and Data Science" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Basin>
-    schema:name "Basin" ;
+    rdfs:label "Basin" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Suite>
-    schema:name "Suite" ;
+    rdfs:label "Suite" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Supersuite>
-    schema:name "Supersuite" ;
+    rdfs:label "Supersuite" ;
 .
 
 <https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-mapping>
-    schema:name "Geology Mapping" ;
+    rdfs:label "Geology Mapping" ;
 .
 
 <https://linked.data.gov.au/def/gswa-vocabulary-themes/resources-mineral>
-    schema:name "Resources Mineral" ;
+    rdfs:label "Resources Mineral" ;
 .
 
 <https://linked.data.gov.au/def/queensland-crs/gda1994>
-    schema:name "GDA 1994" ;
+    rdfs:label "GDA 1994" ;
 .
 
 <https://linked.data.gov.au/def/queensland-crs/gda2020>
-    schema:name "GDA 2020" ;
+    rdfs:label "GDA 2020" ;
 .
 
 <https://linked.data.gov.au/def/queensland-crs/wgs1984>
-    schema:name "WGS 1984" ;
+    rdfs:label "WGS 1984" ;
 .
 
 <https://linked.data.gov.au/def/reg-statuses/status>
-    schema:name "status" ;
+    rdfs:label "status" ;
 .
 
 <https://prez.dev/Manifest>
-    schema:name "Manifest" ;
+    rdfs:label "Manifest" ;
 .
 
 <https://prez.dev/ManifestResourceRoles/CatalogueData>
-    schema:name "Catalogue Data" ;
+    rdfs:label "Catalogue Data" ;
 .
 
 <https://prez.dev/ManifestResourceRoles/IncompleteCatalogueAndResourceLabels>
-    schema:name "Incomplete Catalogue And Resource Labels" ;
+    rdfs:label "Incomplete Catalogue And Resource Labels" ;
 .
 
 <https://prez.dev/ManifestResourceRoles/ResourceData>
-    schema:name "Resource Data" ;
+    rdfs:label "Resource Data" ;
 .
 
 <https://purl.org/NET/rdflicense/cc-by4.0>
-    schema:name "CC BY 4.0" ;
+    rdfs:label "CC BY 4.0" ;
 .
 
 schema:Organization
     schema:description "An organization such as a school, NGO, corporation, club, etc." ;
-    schema:name "Organization" ;
+    rdfs:label "Organization" ;
 .
 
 schema:Person
     schema:description "A person (alive, dead, undead, or fictional)." ;
-    schema:name "Person" ;
+    rdfs:label "Person" ;
 .
 
 schema:alternateName
     schema:description "An alias for the item." ;
-    schema:name "alternate name" ;
+    rdfs:label "alternate name" ;
 .
 
 schema:citation
     schema:description "A citation or reference to another creative work, such as another publication, web page, scholarly article, etc" ;
-    schema:name "citation" ;
+    rdfs:label "citation" ;
 .
 
 schema:codeRepository
     schema:description "Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex)" ;
-    schema:name "code repository" ;
+    rdfs:label "code repository" ;
 .
 
 schema:color
     schema:description "The color of the product" ;
-    schema:name "color" ;
+    rdfs:label "color" ;
 .
 
 schema:contributor
     schema:description "A secondary contributor to the CreativeWork or Event" ;
-    schema:name "contributor" ;
+    rdfs:label "contributor" ;
 .
 
 schema:copyrightHolder
     schema:description "The party holding the legal copyright to the CreativeWork" ;
-    schema:name "copyright holder" ;
+    rdfs:label "copyright holder" ;
 .
 
 schema:copyrightNotice
     schema:description "Text of a notice appropriate for describing the copyright aspects of this Creative Work, ideally indicating the owner of the copyright for the Work" ;
-    schema:name "copyright notice" ;
+    rdfs:label "copyright notice" ;
 .
 
 schema:creator
     schema:description "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork" ;
-    schema:name "creator" ;
+    rdfs:label "creator" ;
 .
 
 schema:dateCreated
     schema:description "The date on which the CreativeWork was created or the item was added to a DataFeed" ;
-    schema:name "date created" ;
+    rdfs:label "date created" ;
 .
 
 schema:dateModified
     schema:description "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed" ;
-    schema:name "date modified" ;
+    rdfs:label "date modified" ;
 .
 
 schema:description
     schema:description "A description of the item" ;
-    schema:name "description" ;
+    rdfs:label "description" ;
 .
 
 schema:email
     schema:description "Email address" ;
-    schema:name "email" ;
+    rdfs:label "email" ;
 .
 
 schema:keywords
     schema:description "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property" ;
-    schema:name "keywords" ;
+    rdfs:label "keywords" ;
 .
 
 schema:license
     schema:description "A license document that applies to this content, typically indicated by URL" ;
-    schema:name "license" ;
+    rdfs:label "license" ;
 .
 
 schema:marginOfError
     schema:description "A [[marginOfError]] for an [[Observation]]" ;
-    schema:name "margin of error" ;
+    rdfs:label "margin of error" ;
 .
 
 schema:name
     schema:description "The name of the item" ;
-    schema:name "name" ;
+    rdfs:label "name" ;
 .
 
 schema:publisher
     schema:description "The publisher of the creative work" ;
-    schema:name "publisher" ;
+    rdfs:label "publisher" ;
 .
 
 schema:url
     schema:description "URL of the item" ;
-    schema:name "url" ;
+    rdfs:label "url" ;
 .
 
 schema:version
     schema:description "The version of the CreativeWork embodied by a specified resource" ;
-    schema:name "version" ;
+    rdfs:label "version" ;
 .
 
 <https://w3id.org/profile/vocpub/4.6>
-    schema:name "VocPub 4.6" ;
+    rdfs:label "VocPub 4.6" ;
 .
 
 <https://www.qudt.org/doc/DOC_VOCAB-UNITS.html>
-    schema:name "QUDT Units Vocabulary" ;
+    rdfs:label "QUDT Units Vocabulary" ;
 .
 
 <https://www.w3.org/ns/prov#agent>
-    schema:name "Agent" ;
+    rdfs:label "Agent" ;
 .
 
 <http://www.w3.org/ns/prov#hadRole>
-    schema:name "role" ;
+    rdfs:label "role" ;
 .
 
 <https://www.w3.org/ns/prov#qualifiedAttribution>
-    schema:name "Qualified Attribution" ;
+    rdfs:label "Qualified Attribution" ;
 .

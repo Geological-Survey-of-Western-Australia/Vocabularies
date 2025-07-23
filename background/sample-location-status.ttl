@@ -1,36 +1,37 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <http://linked.data.gov.au/def/sample-location-status>
     schema:description "The status of a sample with respect to its location." ;
-    schema:name "Sample Location Status" ;
+    rdfs:label "Sample Location Status" ;
 .
 
 <http://linked.data.gov.au/def/sample-location-status/collected>
     schema:description "Sample has been collected from a sampling location and is in temporary storage prior to transfer to permanent or semi-permanent storage" ;
-    schema:name "Collected" ;
+    rdfs:label "Collected" ;
 .
 
 <http://linked.data.gov.au/def/sample-location-status/in-storage>
     schema:description "Held at a storage location in an archived state." ;
-    schema:name "In Storage" ;
+    rdfs:label "In Storage" ;
 .
 
 <http://linked.data.gov.au/def/sample-location-status/in-transit>
     schema:description "In transit between locations." ;
-    schema:name "In transit" ;
+    rdfs:label "In transit" ;
 .
 
 <http://linked.data.gov.au/def/sample-location-status/lost>
     schema:description "Location of sample is not known" ;
-    schema:name "Lost" ;
+    rdfs:label "Lost" ;
 .
 
 <http://linked.data.gov.au/def/sample-location-status/on-display>
     schema:description "Held in a storage facility, museum, or other location for display and/or analysis." ;
-    schema:name "On Display" ;
+    rdfs:label "On Display" ;
 .
 
 <http://linked.data.gov.au/def/sample-location-status/processing>
     schema:description "The sample is at a laboratory, university, or other facility external to its registered storage facility undergoing processing or analysis." ;
-    schema:name "Processing" ;
+    rdfs:label "Processing" ;
 .

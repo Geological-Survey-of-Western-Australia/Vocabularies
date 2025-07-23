@@ -1,101 +1,102 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose>
     schema:description "Purpose or intention for which the borehole was drilled. eg, exploration, development or production, geotechnical. Equivalent to PPDM Business Intention." ;
-    schema:name "Borehole Geology - Purpose" ;
+    rdfs:label "Borehole Geology - Purpose" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/appraisal>
     schema:description "Borehole drilled into a formation shown to be potentially productive, and is used to obtain more information a resource." ;
-    schema:name "appraisal" ;
+    rdfs:label "appraisal" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/coalQuality>
     schema:description "Borehole drilled to obtain samples for laboratory testing and coal analysis. " ;
-    schema:name "coal quality" ;
+    rdfs:label "coal quality" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/development>
     schema:description "Borehole drilled into an area or zone already proven to be productive, in order to assist in the recovery of a resource (eg, oil, gas, water). Includes service wells for hydrocarbon recovery, and CSG methane release wells." ;
-    schema:name "development" ;
+    rdfs:label "development" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/environmental>
     schema:description "Borehole drilled to obtain samples of or from strata for laboratory analysis of parameters which may impact on the environment, including water quality." ;
-    schema:name "environmental" ;
+    rdfs:label "environmental" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/exploration>
     schema:description "A borehole drilled primarily for the purpose of exploration for natural resources. ie, into an unproven area to determine and evaluate the resource potential and production capabilities of a previously undeveloped area or zone." ;
-    schema:name "exploration" ;
+    rdfs:label "exploration" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/gasAnalysis>
     schema:description "Borehole drilled for gas analysis. Typical applications include exploration, compliance and greenhouse gas emissions. " ;
-    schema:name "gas analysis" ;
+    rdfs:label "gas analysis" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/geochemistry>
     schema:description "A borehole drilled primarily for the purpose of collecting samples for geochemical analysis." ;
-    schema:name "geochemistry" ;
+    rdfs:label "geochemistry" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/geothermal>
     schema:description "Borehole drilled to investigate the geotechnical properties of the strata and provide samples for mechanical testing. " ;
-    schema:name "geotechnical" ;
+    rdfs:label "geotechnical" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/hydrological>
     schema:description "Borehole drilled to investigate water level, or piezometer installation. " ;
-    schema:name "hydrological" ;
+    rdfs:label "hydrological" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/lox>
     schema:description "Borehole drilled to obtain samples to determine the amount of oxidation of any coal seam by either visual and tactile or coal analysis methods. " ;
-    schema:name "lox" ;
+    rdfs:label "lox" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/monitoring>
     schema:description "A groundwater borehole used for the purpose of monitoring. (eg, groundwater levels)" ;
-    schema:name "monitoring" ;
+    rdfs:label "monitoring" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/research>
     schema:description "A generic term to cover boreholes drilled primarily for the purpose of scientific research." ;
-    schema:name "research" ;
+    rdfs:label "research" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/scientificInvestigationConstents>
     schema:description "Borehole drilled under a scientific investigation consent granted under the OPGGS Act 2006 (amended 2012) or of the repealed Petroleum (Submerged Lands) Act 1967." ;
-    schema:name "Scientific Investigation Consents" ;
+    rdfs:label "Scientific Investigation Consents" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/sequestration>
     schema:description "A borehole drilled for the purpose of underground storage of a commodity (eg, CO2 sequestration, aquifer storage and recovery)" ;
-    schema:name "sequestration" ;
+    rdfs:label "sequestration" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/service>
     schema:description "Borehole drilled to provide a conduit or access to and from mine workings for equipment or materials. " ;
-    schema:name "service" ;
+    rdfs:label "service" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/stratigraphicInvestigation>
     schema:description "A borehole drilled primarily for the purpose of stratigraphic investigation." ;
-    schema:name "stratigraphic investigation" ;
+    rdfs:label "stratigraphic investigation" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/structure>
     schema:description "Borehole drilled to investigate the attitude of strata and the impact of any tectonic features. " ;
-    schema:name "structure" ;
+    rdfs:label "structure" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/unknown>
     schema:description "The purpose for drilling the borehole is not known." ;
-    schema:name "unknown" ;
+    rdfs:label "unknown" ;
 .
 
 <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/watersupply>
     schema:description "A groundwater borehole drilled for the primary purpose of water supply. The bores may supply water for irrigation, stock, domestic use, or industrial use." ;
-    schema:name "water supply" ;
+    rdfs:label "water supply" ;
 .

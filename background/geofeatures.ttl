@@ -1,656 +1,657 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <http://sweetontology.net/realmGeol/GeologicFeature>
     schema:description "A geologic feature is a conceptual feature a that is hypothesized to exist coherently in the Earth that results from geological processes." ;
-    schema:name "geologic feature" ;
+    rdfs:label "geologic feature" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures>
     schema:description "This vocabulary lists types of geological features relevant to the duties of the Geological Survey of Queensland. It is automatically derived from GSQ's Geologic Features Ontology (https://linked.data.gov.au/def/geofeatures)" ;
-    schema:name "Geologic Feature Types" ;
+    rdfs:label "Geologic Feature Types" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/AbundanceZone>
     schema:description "The body of strata in which the abundance of a particular taxon or specified group of taxa is significantly greater than is usual in the adjacent parts of the section (ICS, Online, December 2019)." ;
-    schema:name "abundance zone" ;
+    rdfs:label "abundance zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/AlluvialFluvialUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing alluvium in channels and on floodplains; includes deltaic deposits. More comprehensively, regolith elements associated with this primary (alluvial/fluvial) regolith-landform mapping unit encompass alluvial plains, stream beds, stream channels, drainage depressions/swales, deltas, floodplains, gravel bars, channel benches, floodplains with numerous claypans, stream banks, levees, meander plains, backplains, anastomosed plains, playas/pans, stream bars, sand bars, terraces, superficial channels, fan/flood-out, swamp, oxbows, and ovoid depressions in eolian sandplains (GSWA, 2013)." ;
-    schema:name "alluvial/fluvial regolith-landform unit" ;
+    rdfs:label "alluvial/fluvial regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/AncientContinent>
     schema:description "A continent that has been recognised as being a distinct entity in the past and not as a supercontinent, and, is not recognised as a present-day continent, although it may form part of one or more present-day continents (Definition created here)." ;
-    schema:name "ancient continent" ;
+    rdfs:label "ancient continent" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Anticline>
     schema:description "A fold, generally convex upward, whose core contains the stratigraphically older rocks (Neuendorf et al., 2011)." ;
-    schema:name "anticline" ;
+    rdfs:label "anticline" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Anticlinorium>
     schema:description "A composite anticlinal structure of regional extent composed of lesser folds. (Neuendorf et al., 2011)." ;
-    schema:name "anticlinorium" ;
+    rdfs:label "anticlinorium" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Antiform>
     schema:description "Any convex-upward, concave downward fold. The term is usually used when the folded layers do not possess a stratigraphic order, when the stratigraphic order of the folded layers is not known, or when the fold core also contains the stratigraphically younger rock (Neuendorf et al., 2011)." ;
-    schema:name "antiform" ;
+    rdfs:label "antiform" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/AntiformalStack>
     schema:description "A duplex in which the trailing branch lines coincide and the leading branch lines either nearly coincide or lie vertically above each other. This results in a stack of horses and leads to a local culmination in thrust sheet (Neuendorf et al. (2011), citing Boyer & Elliott (1982))." ;
-    schema:name "antiformal stack" ;
+    rdfs:label "antiformal stack" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Arch>
     schema:description "A broad, open anticlinal fold on a regional scale; it is usually a basement doming (Neuendorf et al., 2011)." ;
-    schema:name "arch" ;
+    rdfs:label "arch" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/AssemblageZone>
     schema:description "The body of strata characterized by an assemblage of three or more fossil taxa that, taken together, distinguishes it in biostratigraphic character from adjacent strata (ICS, Online, December 2019)." ;
-    schema:name "assemblage zone" ;
+    rdfs:label "assemblage zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/AssociationZone>
     schema:description "The body of strata between two designated biostratigraphical horizons, which represent the boundaries of the unit and separate it from any preceding or succeeding biozone. These bounding horizons may be delimited individually by: the level of the first stratigraphical appearance (lowermost or oldest occurrence) of a specified taxon (species, genus) in any one stratigraphical section; or another specified biostratigraphical feature considered to approximate a time horizon. The zone is further delimited by specified taxa (preferably, at least three), which have first appearances within the zone (de Jersey & McKellar, 2013; Bomfleur et al., 2014)." ;
-    schema:name "association zone" ;
+    rdfs:label "association zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Bed>
     schema:description "Bed (Beds) is the smallest formal unit in the hierarchy of sedimentary lithostratigraphic units, e.g. a single stratum lithologically distinguishable from other layers above and below (Salvador, 2013; ICS Online, January 2020). Customarily, only distinctive beds (commonly known as marker beds), which are particularly useful for stratigraphic purposes, like correlation or reference, are given proper names and considered formal lithostratigraphic units (Staines, 1985)." ;
-    schema:name "bed" ;
+    rdfs:label "bed" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Beds>
     schema:description "beds (uncapitalised): an informal unit applied to a sequence of poorly known strata until further work is carried out, as advised in the Field Geologist’s Guide to Lithostratigraphic Nomenclature in Australia (Staines, 1985), and endorsed by the Stratigraphic Nomenclature Committee, Geological Society of Australia." ;
-    schema:name "beds" ;
+    rdfs:label "beds" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/BiostratigraphicUnit>
     schema:description "Biostratigraphic units/Biostratigraphic Zones (biozones) are bodies of strata that are defined or characterized on the basis of their contained fossils.  The different types have no hierarchical significance, and are not based on mutually exclusive criteria (ICS, Online, December 2019)." ;
-    schema:name "biostratigraphic unit" ;
+    rdfs:label "biostratigraphic unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Block>
     schema:description "A block of the crust that has been displaced by movement on a fault (Neuendorf et al., 2011)." ;
-    schema:name "block" ;
+    rdfs:label "block" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ChronostratigraphicUnit>
     schema:description "As the term implies, Chronostratigraphic Units are Time-Rock Units. They are bodies of rocks, layered or unlayered, that were formed during a specified interval of geologic time. [The units of geologic time during which chronostratigraphic units were formed are called geochronologic (geological-time) units.] (ICS, Online, December, 2019). NB: The North American Stratigraphic Code (2005) and Owen (2009) advise that geochronologic units should only be associated with \"lithodemic\" (i.e., non-stratigraphic) units." ;
-    schema:name "chronostratigraphic unit" ;
+    rdfs:label "chronostratigraphic unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/CoastalTideDominatedUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing intertidal and supratidal flats and channels, estuaries, and mangrove flats (GSWA, 2013; see scopeNote herewith/below)." ;
-    schema:name "coastal (tide-dominated) regolith-landform unit" ;
+    rdfs:label "coastal (tide-dominated) regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/CoastalWaveDominatedUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing beaches, beach ridges, barrier bars and lagoons, back-beach dunes, coastal cliffs, and other erosional features, e.g., blow-outs (GSWA, 2013; see scopeNote herewith/below)." ;
-    schema:name "coastal (wave-dominated) regolith-landform unit" ;
+    rdfs:label "coastal (wave-dominated) regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ColluvialUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing proximal mass-wasting deposits grading into sheetwash with a significant to perceptible slope. More comprehensively, regolith elements associated with this primary (colluvial) regolith-landform mapping unit include colluvial fans, cliff-top slopes, pediments, footslopes, rejuvenated pediments, pediplains, scarp-foot slopes, and talus elements (GSWA, 2013) " ;
-    schema:name "colluvial regolith-landform unit" ;
+    rdfs:label "colluvial regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ComplexRockUnit>
     schema:description "A rock unit that embraces a mixture composed of diverse types of any genetic (sedimentary, igneous, metamorphic) class of rocks or a mixture of two or more genetic classes, and characterised by irregularly-mixed lithology or by highly-complicated structural relations (Rephrased from: Salvador, 2013; Murphy & Salvador, Online)." ;
-    schema:name "complex rock unit" ;
+    rdfs:label "complex rock unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ConcurrentRangeZone>
     schema:description "The body of strata including the overlapping parts of the range zones of two specified taxa (ICS, Online, December 2019)." ;
-    schema:name "concurrent range zone" ;
+    rdfs:label "concurrent range zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Continent>
     schema:description "One of Earth’s major landmasses (or former major landmasses), including continental shelves (Neuendorf et al., 2011; Blewett, 2012). The Australian Continent, as an example, is divided into fundamental geological elements embracing geological provinces." ;
-    schema:name "continent" ;
+    rdfs:label "continent" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Craton>
     schema:description "A craton is part of Earth's continental crust that has attained stability and has been little deformed for a prolonged period. Cratons include shield areas, where Precambrian rocks are exposed, and platform areas, where Precambrian rocks are overlain by a thin layer of Phanerozoic strata (Neuendorf et al., 2011)." ;
-    schema:name "craton" ;
+    rdfs:label "craton" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/CrustalElement>
     schema:description "Crustal Elements are geophysical domains that represent upper-crustal segments showing some overall commonality of geophysical properties, primarily magnetic and gravity data sets. Crustal elements are not geologically defined features, such as basement provinces. The latter are defined on the basis of geological criteria and are three-dimensional bodies that have a definite thickness and represent time-rock units whose maximum and minimum ages are generally, but not always, well established. Some crustal elements could represent a set of overlying or overlapping basement provinces (Shaw et al., 1996)." ;
-    schema:name "crustal element" ;
+    rdfs:label "crustal element" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/DenudationalFeature>
     schema:description "Structures shaped by weathering and erosion; include inlier, outlier, window, klippe, unconformity and peneplain (Kumpulainen, 2017)." ;
-    schema:name "denudational feature" ;
+    rdfs:label "denudational feature" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Depression>
     schema:description "A structurally low area formed in the crust, with various mechanisms of formation (Modified from Neuendorf et al., 2011)." ;
-    schema:name "depression" ;
+    rdfs:label "depression" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Dome>
     schema:description "An uplift or anticlinal structure, either circular or elliptical in outline, in which the rocks dip gently away in all directions. A dome may be small or many kilometers in diameter. Domes include diapirs, volcanic domes, and cratonic uplifts (Neuendorf et al., 2011)." ;
-    schema:name "dome" ;
+    rdfs:label "dome" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/DominantlyIgneousComplexRockUnit>
     schema:description "A complex rock unit wherein the dominant rock type or types are igneous. See definition for Complex Rock Unit for further detail." ;
-    schema:name "dominantly igneous complex rock unit" ;
+    rdfs:label "dominantly igneous complex rock unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/DominantlyStratifiedComplexRockUnit>
     schema:description "A complex rock unit wherein the dominant rock type or types are stratified. See definition for Complex Rock Unit for further detail." ;
-    schema:name "dominantly stratified complex rock unit" ;
+    rdfs:label "dominantly stratified complex rock unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Duplex>
     schema:description "A structural complex consisting of a roof thrust at the top and a floor thrust at the base, within which a suite of more steeply dipping imbricate thrust faults thicken and shorten the intervening panel of rock (Neuendorf et al. (2011), citing Dahlstrom (1970), Boyer (1976))." ;
-    schema:name "duplex" ;
+    rdfs:label "duplex" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/DuricrustRelict>
     schema:description "A secondary landform unit/element comprising duricrust developed from transported material that has little direct relationship with the underlying bedrock (Geological Survey of Western Australia, 2013; Anand & Paine, 2002; and cited references)." ;
-    schema:name "duricrust (relict/transported) landform element" ;
+    rdfs:label "duricrust (relict/transported) landform element" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/DuricrustResidual>
     schema:description "A secondary landform unit/element comprising duricrust formed from underlying bedrock by essentially residual processes (Geological Survey of Western Australia, 2013; Anand & Paine, 2002; and cited references)." ;
-    schema:name "duricrust (residual/in situ) landform element" ;
+    rdfs:label "duricrust (residual/in situ) landform element" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/DuricrustResidualRelict>
     schema:description "Duricrust (residual or relict): A secondary landform unit/element comprising in-situ or transported regolith material indurated by a cement, or the cement only, occurring at or near the surface, or as a layer in the upper part of the regolith. The cement may be, e.g., siliceous (silcrete), ferruginous (ferricrete/lateritic duricrust), aluminous (alcrete), gypseous (gypcrete), manganiferous (manganocrete), calcareous (calcrete), dolomitic (dolocrete), salty (salcrete) or a combination of these (After and modified from: Eggleton, 2001; GSWA, 2013)." ;
-    schema:name "duricrust (residual or relict) landform element" ;
+    rdfs:label "duricrust (residual or relict) landform element" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Embayment>
     schema:description "A downwarped area containing stratified rocks, either sedimentary or volcanic or both, that extends into a terrain of other rocks (Neuendorf et al., 2011)." ;
-    schema:name "embayment" ;
+    rdfs:label "embayment" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/EolianUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing dunes, interdune areas, and sandplains resulting from wind action. More comprehensively, regolith elements associated with this primary (eolian) regolith- landform mapping unit encompass parabolic dunefields, blow-outs, dunefields, dunes, deflation basins, interdune flats, mobile dunes, longitudinal dunefields, net-like dunefields, sand-and-playa terrains, eolian veneers over colluvium and/or alluvium, lunette or fringing dunes, interdune pavements, swampy swales, and stabilized dunes (GSWA, 2013)." ;
-    schema:name "eolian regolith-landform unit" ;
+    rdfs:label "eolian regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Escarpment>
     schema:description "(a) A long, more or less continuous cliff or relatively steep slope facing in one general direction, breaking the continuity of the land by separating two levels of gently sloping surfaces, and produced by erosion or faulting. The term is often used synonymously with scarp, although escarpment is more often applied to a cliff formed by differential erosion;  (b) A steep, abrupt face of rock, often presented by the highest strata in a line of cliffs, and generally marking the outcrop of a resistant layer occurring in a series of gently dipping softer strata, specifically the steep face of a cuesta; (c) A term used loosely in Great Britain as a synonym of cuesta (Neuendorf et al., 2011)." ;
-    schema:name "escarpment" ;
+    rdfs:label "escarpment" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ExposedUnit>
     schema:description "A primary regolith-landform unit/setting with regolith elements comprising exposed or and weathered rock. Elements also include subcrop and bouldery lag and embrace badlands, escarpments, hills, rises, erosional plains, etc. (GSWA, 2013; and cited references)." ;
-    schema:name "exposed regolith-landform unit" ;
+    rdfs:label "exposed regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ExtendedCrustProvince>
     schema:description "A province of thinned crust due to extension (e.g., the Basin and Range Province of the Western United States and northwestern Mexico (e.g., Wikipedia, March 2022))." ;
-    schema:name "extended crust province" ;
+    rdfs:label "extended crust province" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Fault>
     schema:description "A discrete surface or zone of discrete surfaces separating two rock masses across which one mass has slid past the other (Neuendorf et al., 2011)." ;
-    schema:name "fault" ;
+    rdfs:label "fault" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/FaultScarp>
     schema:description "(a) A steep slope or cliff formed directly by movement along a fault and representing the exposed surface of the fault before modification by erosion and weathering. It is an initial landform; (b) A term used loosely in England for any scarp that is due to the presence of a fault, even though the relief may be erosional (Neuendorf et al., 2011)." ;
-    schema:name "fault scarp" ;
+    rdfs:label "fault scarp" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/FaultSet>
     schema:description "A group of faults that are parallel or nearly so, and that are related to a particular deformational episode (Neuendorf et al., 2011)." ;
-    schema:name "fault set" ;
+    rdfs:label "fault set" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/FaultSystem>
     schema:description "(a) An array of interconnected and kinematically related faults; (b) Two or more geometrically related fault sets, e.g., a conjugate fault system (Neuendorf et al., 2011)." ;
-    schema:name "fault system" ;
+    rdfs:label "fault system" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/FaultZone>
     schema:description "A fault that is expressed as a zone of numerous small fractures, breccia, and/or fault gouge. A fault zone may be as wide as hundreds of metres (Neuendorf et al., 2011)." ;
-    schema:name "fault zone" ;
+    rdfs:label "fault zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Flow>
     schema:description "A discrete extrusive volcanic body distinguishable by texture, composition, or other objective criteria (ICS, Online, December 2019)." ;
-    schema:name "flow" ;
+    rdfs:label "flow" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Fold>
     schema:description "A curve or bend of a planar structure, such as rock strata, bedding planes, foliation or cleavage. A fold is usually the product of deformation, involving the compression of strata, but may include primary structures, as its definition is descriptive, not genetic (Neuendorf et al., 2011)." ;
-    schema:name "fold" ;
+    rdfs:label "fold" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/FoldBelt>
     schema:description "A region in Earth’s lithosphere characterised by compressional tectonics, involving folding (usually parellel) and thrusting (both causing crustal shortening). Fold belts generally develop in the foreland bordering an ogogenic zone that was initiated by convergence between two tectonic plates or major crustal blocks (Modified from: Neuendorf et al., 2011; Allaby, 2013 (Oxford Dictionary of Geology and Earth Sciences))." ;
-    schema:name "fold belt" ;
+    rdfs:label "fold belt" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Formation>
     schema:description "The primary formal unit of lithostratigraphic classification. Formations are the only formal lithostratigraphic units into which the stratigraphic column everywhere should be divided completely on the basis of lithology (ICS, Online, December 2019)." ;
-    schema:name "formation" ;
+    rdfs:label "formation" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/GeoResourceAccumulation>
     schema:description "Georesource accumulations are naturally occurring masses, volumes or concentrations of geological materials that have existing or potential economic value. These resources may include, but are not limited to, minerals (including coal), hydrocarbons, quarry resources and groundwater." ;
-    schema:name "georesource accumulation" ;
+    rdfs:label "georesource accumulation" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/GeologicalHeritageSite>
     schema:description "Geological Heritage Sites (formerly known as Geological Monuments) display geological features that are so outstanding or so rare that they form part of our natural heritage, requiring recognition, description and protection, for education, research and their geotourism potential. They show evidence of the geological processes that have occurred on Earth, and of the plants and animals that have lived on it. These sites include landforms, rock outcrops, river banks, sea cliffs and shore platforms, and are, in part, represented in road cuttings, mines, quarries and other excavations (Geological Society of Australia)." ;
-    schema:name "geological heritage site" ;
+    rdfs:label "geological heritage site" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/GeologicallySignificantSite>
     schema:description "Single, unified geographical areas where sites and landscapes of international geological significance are managed with a holistic concept of protection, education and sustainable development." ;
-    schema:name "geologically significant site" ;
+    rdfs:label "geologically significant site" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Geopark>
     schema:description "A Geopark is a nationally protected area containing a number of geological heritage sites of particular importance, rarity or aesthetic appeal. These Earth heritage sites are part of an integrated concept of protection, education and sustainable development (UNESCO; December 2019)." ;
-    schema:name "geopark" ;
+    rdfs:label "geopark" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/GeophysicalDomain>
     schema:description "Geophysical Domains are Geologic Features delimited by their geophysical properties, primarily magnetic and gravity properties or, in the case of Seismic Provinces, their crustal reflectivity. They represent discrete \"volumes\" of middle to lower crust (Terminology based on usage of: Shaw et al., 1996; Korsch et al., 2012)." ;
-    schema:name "geophysical domain" ;
+    rdfs:label "geophysical domain" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/GeophysicalFeature>
     schema:description "A feature associated with, and interpreted from, the physical properties and processes of the Earth, e.g., seismology (Neuendorf et al., 2011)." ;
-    schema:name "geophysical feature" ;
+    rdfs:label "geophysical feature" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Geotrail>
     schema:description "Geotrails aim to provide a tourism experience linking an area’s geology and landscape (i.e., its geological heritage features, including mining heritage) to its biodiversity and cultural history (Geological Society of Australia)." ;
-    schema:name "geotrail" ;
+    rdfs:label "geotrail" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Graben>
     schema:description "An elongate trough or basin, bounded on both sides by high-angle normal faults that dip toward one another. It is a structural form that may or may not be geomorphologically expressed as a rift valley (Neuendorf et al., 2011)." ;
-    schema:name "graben" ;
+    rdfs:label "graben" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Group>
     schema:description "A succession of two or more contiguous or associated formations with significant and diagnostic lithologic properties in common (ICS, Online, December 2019)." ;
-    schema:name "group" ;
+    rdfs:label "group" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/HalfGraben>
     schema:description "An elongate, asymmetric trough or basin bounded on one side by a normal fault (Neuendorf et al., 2011)." ;
-    schema:name "half graben" ;
+    rdfs:label "half graben" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Horst>
     schema:description "An elongate block that is bounded on both sides by normal faults that dip away from one another. It is a structural form and may or may not be expressed geomorphologically (Neuendorf et al., 2011)." ;
-    schema:name "horst" ;
+    rdfs:label "horst" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/IgneousAssociation>
     schema:description "A term employed by Jell (2013: Geology of Queensland), essentially without definition, for an association of igneous rocks where their differentiation remained uncertain and the geodynamic environment of their magmatism remained not well understood. In such instances, the term replaced the previous use of igneous provinces for such ‘igneous associations’, although the latter were subdivided into the previously recognized igneous subprovinces, and not into redefined igneous sub-associations (if this is at all an issue)." ;
-    schema:name "igneous association" ;
+    rdfs:label "igneous association" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/IgneousIntrusiveRockUnit>
     schema:description "A unit formed by the emplacement of magma which solidifies before reaching Earth's surface (After: Gillespie & Leslie, 2021)." ;
-    schema:name "igneous intrusive rock unit" ;
+    rdfs:label "igneous intrusive rock unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/IgneousProvince>
     schema:description "A broad area in which similar igneous rocks are considered to have been formed during the same period of (igneous) activity (Neuendorf et al., 2011)." ;
-    schema:name "igneous province" ;
+    rdfs:label "igneous province" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/IgneousSubprovince>
     schema:description "To be provided later, as there is an issue here with Igneous Associations and daughter subprovinces." ;
-    schema:name "igneous subprovince" ;
+    rdfs:label "igneous subprovince" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Inlier>
     schema:description "An area or group of rocks surrounded by younger rocks, e.g., an eroded anticlinal crest (Neuendorf et al., 2011)." ;
-    schema:name "inlier" ;
+    rdfs:label "inlier" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/IntervalZone>
     schema:description "The body of fossiliferous strata between two specified biohorizons (ICS, Online, December 2019)." ;
-    schema:name "interval zone" ;
+    rdfs:label "interval zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/IntrusiveRockUnit>
     schema:description "Includes: (1) Igneous intrusive rock-unit types (e.g., ranked under supersuite, suite, subsuite, etc. and, at lower rank levels, plutons, lopoliths, laccoliths, dykes, sills, etc.); and (2) Non-igneous intrusive rock-unit types (viz., salt domes, sediment-filled fractures, etc.) (Modified from: Gillespie et al., 2008; Gillespie & Leslie, 2021)." ;
-    schema:name "intrusive rock unit" ;
+    rdfs:label "intrusive rock unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Klippe>
     schema:description "An isolated rock unit that is an erosional remnant or outlier of a nappe. Plural: klippen (Neuendorf et al., 2011)." ;
-    schema:name "klippe" ;
+    rdfs:label "klippe" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/LacustrineUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing inland lakes, dune-and-playa terrains, and some coastal lakes; includes saline and freshwater playas and claypans, and minor eolian deposits directly associated with a lake system (e.g., fringing gypsiferous dunes) [GSWA, 2013]." ;
-    schema:name "lacustrine regolith-landform unit" ;
+    rdfs:label "lacustrine regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/LandformFeature>
     schema:description "Overall, any physical feature on the Earth’s surface (here excluding consideration of anthropogenic-landform features and natural-landform features on other planets) that is part of the terrain represents a landform, including: alluvial fans, braided channels, abyssal plains, atolls, beaches, cliffs, hills, mid-ocean ridges, volcanic arcs, wave-cut platforms, canyons, gullies, valleys, hoodoos, badlands, salt pans, etc., as well as all other surface bodies of water, such as rivers, lakes, marshes, glaciers and ice sheets." ;
-    schema:name "landform feature" ;
+    rdfs:label "landform feature" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/LargeIgneousProvince>
     schema:description "A region characterized by massive crustal emplacements of predominantly mafic (Mg- and Fe-rich) extrusive and intrusive rocks which originated through processes other than \"normal\" seafloor spreading (Coffin & Eldholm, 1994); includes continental flood basalt provinces (e.g., Deccan Traps), oceanic plateaus (e.g., Ontong & Java Oceanic Plateaus), and North Atlantic volcanic passive margins (Neuendorf et al., 2011)." ;
-    schema:name "large igneous province" ;
+    rdfs:label "large igneous province" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/LineageZone>
     schema:description "The body of strata containing specimens representing a specific segment of an evolutionary lineage (ICS, Online, December 2019)." ;
-    schema:name "lineage zone" ;
+    rdfs:label "lineage zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/LithostratigraphicUnit>
     schema:description "Lithostratigraphic units are bodies of rocks, bedded or unbedded, that are defined and characterized on the basis of their lithologic properties and their stratigraphic relations, but conforming to the Law of Superposition (Steno, 1669) [NASC, 2005, Kulpmainen, 2017; cf. Salvador, 2013; cf. Murphy & Salvador, Online]." ;
-    schema:name "lithostratigraphic unit" ;
+    rdfs:label "lithostratigraphic unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/MagnetostratigraphicPolaritySubzone>
     schema:description "Polarity Zones may be subdivided into Polarity Suzones. The corresponding interval of geological time during which the rocks in the Polarity Subzone were deposited is referred to as its associated Polarity Subchron (Salvador, 2013; ICS, Online, December, 2019)." ;
-    schema:name "magnetostratigraphic polarity subzone" ;
+    rdfs:label "magnetostratigraphic polarity subzone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/MagnetostratigraphicPolaritySuperzone>
     schema:description "Polarity Zones may be grouped into Polarity Superzones (Hyperzones in Russian literature). The corresponding interval of geological time during which the rocks in the Polarity Superzone were deposited is referred to as its associated Polarity Superchron. As an example of the latter, the mid-Carboniferous – Middle Permian Kiaman Superchron is the longest known period of predominantly reversed polarity, which was terminated by the Illawarra Geomagnetic Polarity Reversal near the base of the Capitanian (Salvador, 2013; ICS, Online, December, 2019; Gradstein et al., 2012)." ;
-    schema:name "magnetostratigraphic polarity superzone" ;
+    rdfs:label "magnetostratigraphic polarity superzone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/MagnetostratigraphicPolarityZone>
     schema:description "The basic formal unit in magnetostratigraphic polarity classification is the Magnetostratigraphic Polarity Zone (or Polarity Zone). The corresponding interval of geological time during which the rocks in the Polarity Zone were deposited is referred to as its associated Polarity Chron (Salvador, 2013; ICS, Online, December, 2019)." ;
-    schema:name "magnetostratigraphic polarity zone" ;
+    rdfs:label "magnetostratigraphic polarity zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/MagnetostratigraphicUnit>
     schema:description "A Magnetostratigraphic Unit (Magnetozone) is a body of rocks unified by similar magnetic characteristics which allow it to be differentiated from adjacent rock bodies.  The term is collectively applied to the different kinds of stratigraphic units that are identified by their measurable magnetic properties (Salvador, 2013; ICS, Online, December, 2019)." ;
-    schema:name "magnetostratigraphic unit" ;
+    rdfs:label "magnetostratigraphic unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/MarineUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing offshore marine deposits such as coralgal reefs, shell banks, and sea-grass banks (GSWA, 2013; see scopeNote herewith/below)." ;
-    schema:name "marine regolith-landform unit" ;
+    rdfs:label "marine regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Member>
     schema:description "The formal lithostratigraphic unit next in rank below a formation (ICS, Online, December 2019)." ;
-    schema:name "member" ;
+    rdfs:label "member" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/MineralProvince>
     schema:description "An area characterized by a particular assemblage of mineral deposits, or by one or more characteristic types of mineralization; the province may have had more than one episode of mineralization (Neuendorf et al., 2011)." ;
-    schema:name "mineral province" ;
+    rdfs:label "mineral province" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Monocline>
     schema:description "A one-limbed flexure on either side of which the strata are horizontal or dip uniformly at low angles (Allaby, 2013)." ;
-    schema:name "monocline" ;
+    rdfs:label "monocline" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/MyloniteZone>
     schema:description "Usually found in narrow, planar zones of localised ductile deformation, although kilometre-scale zones exist. Mylonites form in shear zones by mechanical grinding, crushing and recrystallization of rock to produce a metamorphic rock that has foliation and is much finer grained than its precursor (Modified from: Neuendorf et al., 2011; Allaby, 2013)." ;
-    schema:name "mylonite zone" ;
+    rdfs:label "mylonite zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Nappe>
     schema:description "A sheetlike, allochthonous rock unit, which has moved on a predominantly horizontal surface as a result of thrust faulting, recumbent folding, or both. Fold limbs and axes are approximately horizontal (After: Neuendorf et al., 2011; Allaby, 2013)." ;
-    schema:name "nappe" ;
+    rdfs:label "nappe" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/NappeComplex>
     schema:description "A nappe complex consists of two or more distinct nappes that are stacked upon, and related to, one another in some significant respect, e.g., shared general environment of origin, similar metamorphism and/or deformation (Kumpulainen, 2017)." ;
-    schema:name "nappe complex" ;
+    rdfs:label "nappe complex" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Non-IgneousIntrusiveRockUnit>
     schema:description "A non-igneous intrusive rock unit such as a salt dome or a sediment-filled fracture (After: Gillespie & Leslie, 2008)." ;
-    schema:name "non-igneous intrusive rock unit" ;
+    rdfs:label "non-igneous intrusive rock unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Orogen>
     schema:description "An orogen (orogenic system, orogenic zone, orogenic belt) is a region in Earth’s lithosphere where a mountain belt is created by tectonic processes involving deformation, regional metamorphism, and associated magmatism, usually caused by convergence (± accretion and/or collision) between two tectonic plates or major crustal blocks; Alt obsolete term: geosyncline (Modified from: Neuendorf et al., 2011; Derek Hoy, pers. comm.)." ;
-    schema:name "orogen" ;
+    rdfs:label "orogen" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/OrogenicCollage>
     schema:description "A patchwork-map pattern of accreted terranes, embracing a geotectonic assemblage of crustal blocks separated by major faults (Neuendorf et al., 2011). In eastern Australia, such a collage is represented by the Tasmanides, which is part of the larger-scale Terra Australis Orogen that developed along the southern Panthalassan (Paleo-Pacific) margin of Gondwana, and which comprises multiple metamorphic belts, fold-thrust belts, igneous provinces, and sedimentary basins that have been attributed to five Cambrian to Triassic subduction-related orogens: the Delamerian, Thomson, Lachlan, Mossman, and New England Orogens (Rosenbaum, 2018)." ;
-    schema:name "orogenic collage" ;
+    rdfs:label "orogenic collage" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Outlier>
     schema:description "An area or group of rocks surrounded by older rocks (Neuendorf et al., 2011)." ;
-    schema:name "outlier" ;
+    rdfs:label "outlier" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/OverturnedFold>
     schema:description "A zone where folds in their axial planes are inclined so that the fold limbs dip in the same direction, although not necessarily by the same amount; for each fold, one limb is thus ‘overturned' (Allaby, 2008)." ;
-    schema:name "overturned fold" ;
+    rdfs:label "overturned fold" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/PedostratigraphicUnit>
     schema:description "A buried, traceable, three-dimensional body of rock (or sediment) that consists of one or more differentiated pedologic horizons developed in, and overlain by, one or more formally defined lithostratigraphic or allostratigraphic units (NACSN, 2005; Neuendorf et al., 2011)." ;
-    schema:name "pedostratigraphic unit" ;
+    rdfs:label "pedostratigraphic unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Peneplain>
     schema:description "A low, nearly featureless, gently undulating land surface of considerable area, which has been produced by the processes of prolonged subaerial erosion almost to base level; it is the end product of a cycle of erosion (Davis, 1889; Neuendorf et al., 2011; Allaby, 2013)." ;
-    schema:name "peneplain" ;
+    rdfs:label "peneplain" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/PresentContinent>
     schema:description "A large, existing landmass, comprising continental crust and embracing exposed land above sea level (Zealandia being an exception), and, below sea level, based on major differences in the inclination of the bathymetric surface, the attendant continental shelf, continental slope, and, if present, the continental rise (Modified and compiled from: Burke & Drake, 1974, Sheriff, 2002; Mortimer et al., 2017; Wikipedia, March 2020)." ;
-    schema:name "present continent" ;
+    rdfs:label "present continent" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Province>
     schema:description "A geologic province is a spatial entity with common geologic attributes, comprising a large area or region, which, considered as a whole, is characterised by similar geologic features or by a geologic history differing significantly from that of adjacent areas. (Modified from: Neuendorf et al. 2011; Geoscience Australia, USGS & Wikipedia, all accessed 13.05.2020)." ;
-    schema:name "Province" ;
+    rdfs:label "Province" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/RangeZone>
     schema:description "The body of strata representing the known stratigraphic and geographic range of occurrence of a particular taxon or combination of two taxa of any rank. There are two principal types: taxon-range zones and concurrent-range zones. (ICS, Online, December 2019)" ;
-    schema:name "range zone" ;
+    rdfs:label "range zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/RegolithFeature>
     schema:description "Anything, of diverse origin, embraced by the layer of mineral and organic material that nearly everywhere forms the surface of the land and rests on more coherent bedrock, having been formed by weathering, erosion, transport and/or deposition of the older material (Eggleton, 2001; Hocking et al., 2007; Anand & Butt, 2010). Its formation, embracing a multidisciplinary science, is driven by a number of factors including climate, geology, topography, biological activity, and time (Gray & Murphy, 1999; Little & Field, 2003)." ;
-    schema:name "regolith feature" ;
+    rdfs:label "regolith feature" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/RegolithLandformUnit>
     schema:description "One of a set of regolith-landform mapping units that that can be used to collectively classify and characterize the regolith (GSWA, 2013). Individual units (coded in the GSWA scheme and employed to embrace areas delineated on a map with similar landform and regolith characteristics), are composed of three parts: a primary landform part/code that specifies the environment (landform position) and/or process responsible for the formation or deposition of the regolith (e.g., alluvial/fluvial, lacustrine or eolian); a secondary part/code for landform qualifers (for landform element or pattern); and a tertiary part/code identifying the parent rock or cement (also see and compare previous version of Hocking et al., 2007)." ;
-    schema:name "regolith-landform unit" ;
+    rdfs:label "regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/RelictUnit>
     schema:description "Relict unit: A primary landform unit/setting embracing material that includes deposits of uncertain origin, either transported or residual, or a combination of both. Transported material may represent remnants of previous landforms. " ;
-    schema:name "relict regolith-landform unit" ;
+    rdfs:label "relict regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ResidualRelictUnit>
     schema:description "Residual or relict unit: A primary landform unit/setting comprising remnant material (undivided residual and relict materials) overlying an ancient land surface. Residual material is derived by in situ weathering of the underlying rock, the regolith; therefore, it shows no evidence of having undergone significant transport. Relict material includes deposits of uncertain origin, either transported or residual, or a combination of both. Transported material may represent remnants of previous landforms (GSWA, 2013; and cited references)." ;
-    schema:name "residual or relict regolith-landform unit" ;
+    rdfs:label "residual or relict regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ResidualUnit>
     schema:description "Residual unit: A primary landform unit/setting comprising material derived by in situ weathering of the underlying rock, the regolith, and therefore, showing no evidence of having undergone significant transport (GSWA, 2013; and cited references). " ;
-    schema:name "residual regolith-landform unit" ;
+    rdfs:label "residual regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Ridge>
     schema:description "A ridge or a mountain ridge is a geographical feature consisting of a chain of mountains or hills that form a continuous elevated crest for some distance. The sides of the ridge slope away from a narrow top on either side. The lines along the crest formed by the highest points, with the terrain dropping down on either sides, are called the ridgelines. Ridges are usually termed hills or mountains as well, depending on size (Adapted from: Wikipedia, accessed 13.05.2020)." ;
-    schema:name "ridge" ;
+    rdfs:label "ridge" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/SandplainUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing sandplains of residual or sheetwash origin or variously of mixed origin: residual, sheetwash and eolian. More comprehensively, regolith elements associated with this primary (sandplain) regolith-landform mapping unit encompass blow-outs, dunes, gravel deflation pavements, longitudinal dunefields, net-like dunefields, sand-and-playa terrains, and undulating sandplains (GSWA, 2013)." ;
-    schema:name "sandplain regolith-landform unit" ;
+    rdfs:label "sandplain regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/SedimentaryBasin>
     schema:description "A low area in the Earth’s crust, of tectonic origin, in which sediments accumulate. Sedimentary basins range in size from small continental basins to large oceanic basins. The essential element of the concept is tectonic creation of relief, to provide both a source of sediment and a relatively low place for the deposition of that sediment (After: Miall, 2000)." ;
-    schema:name "sedimentary basin" ;
+    rdfs:label "sedimentary basin" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/SeismicProvince>
     schema:description "Representative of a discrete \"volume\" of middle to lower crust which cannot be traced to the surface, and whose crustal reflectivity is different to that of laterally or vertically adjoining provinces (in differing lithology, geological history, and/or structural architecture). A Seismic Province is a Geophysical Domain. In North Queensland, the Numil and Abingdon Seismic Provinces are two lower crustal sectors that have been interpreted to represent microcontinents that accreted to the eastern fringe of the North Australian Craton prior to the late Paleoproterozoic (Korsch et al., 2010, Korsch, 2012)." ;
-    schema:name "seismic province" ;
+    rdfs:label "seismic province" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/SequenceStratigraphicUnit>
     schema:description "A Sequence Stratigraphic Unit is an extensive, depositional unit that may be bounded by subaerial unconformities and their correlative conformities, by transgressive surfaces or by surfaces of maximum marine flooding. It documents changes in relative sea level, which may have been the result of eustasy, regional or local tectonic movements, compaction, isostasy or the combination of two or more of these factors (Kumpulainen, 2017; Catuneanu et al., 2011)." ;
-    schema:name "sequence stratigraphic unit" ;
+    rdfs:label "sequence stratigraphic unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/ShearZone>
     schema:description "A region, narrow compared to its length, within which rocks have undergone intense deformation: viz. brecciation. There are two end-members: brittle shear zones (faults), marked by a surface of rupture, which are a common feature of higher crustal levels; and ductile shear zones in which deformation is continuous and characterized by high ductile strain due to the rocks having formed under high temperatures and pressures at deeper crustal levels. Both brittle and ductile shear zones may occur as subparallel or conjugate sets (After: Allaby, 2013)." ;
-    schema:name "shear zone" ;
+    rdfs:label "shear zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/SheetwashUnit>
     schema:description "A primary regolith-landform unit/setting generally embracing distal slope deposits (including sheetflood) where the gradient is minimal, and the drainage is not clearly defined. More specifically, regolith elements/patterns associated with this primary regolith-landform mapping unit include transitional zones between pediment and transported regolith, sheetflood fans, playas/pans, scarp-foot slopes, and sheetwash plains with a tiger-bush pattern (GSWA, 2013)." ;
-    schema:name "sheetwash regolith-landform unit" ;
+    rdfs:label "sheetwash regolith-landform unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Shield>
     schema:description "A large area of exposed basement rock in a craton, commonly with a very gently convex surface, surrounded by sediment covered platforms. The rocks of virtually all shield areas are Precambrian (Neuendorf et al., 2011)." ;
-    schema:name "shield" ;
+    rdfs:label "shield" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/StratigraphicEvent>
     schema:description "Stratigraphic Events reflect physical, chemical and biological events that left identifiable, widespread, if not worldwide, traces or markers in the sedimentary or extrusive igneous record (Kumpulainen, 2017)." ;
-    schema:name "stratigraphic event" ;
+    rdfs:label "stratigraphic event" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/StratigraphicFeature>
     schema:description "Stratigraphic Features embrace Stratigraphic Units, which are units of rock and/or sediment that conform to the Law of Superposition (e.g., lithostratigraphic units, biostratigraphic units, chronostratigraphic units), and Stratigraphic Events which reflect physical, chemical and biological events that left identifiable, widespread, if not worldwide, traces or markers in the sedimentary or extrusive igneous record (Kumpulainen, 2017; cf. Salvador, 2013; cf. Murphy & Salvador, Online; see references elsewhere herein)." ;
-    schema:name "stratigraphic feature" ;
+    rdfs:label "stratigraphic feature" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/StratigraphicUnit>
     schema:description "A stratigraphic unit is a distinct and definable body of layered rock that conforms with the Law of Superposition (Steno, 1669) and is variously described and differentiated, in each case from the same unit type, by: its lithologic properties (lithostratigraphic unit); its fossil content (biostratigraphic unit); its magnetic properties (magnetostratigraphic unit); the time interval during which it was formed (chronostratigraphic unit); by its bounding subaerial unconformities and their correlative conformities (sequence stratigraphic unit); or by one or more pedologic horizons buried in one or more lithic units (pedostratigraphic unit) [modified variously from: NASC, 2005; Kumpulainen, 2017; cf.: Salvador, 2013; cf: Murphy & Salvador, Online]." ;
-    schema:name "stratigraphic unit" ;
+    rdfs:label "stratigraphic unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/StructuralFeature>
     schema:description "A feature produced by deformation or displacement of rocks, such as a fold or fault (Neuendorf et al., 2011)." ;
-    schema:name "structural feature" ;
+    rdfs:label "structural feature" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Subbasin>
     schema:description "A sedimentary basin may be subdivided into two or more subbasins that have separate depocentres and are separated from one another by some tectonic/structural element, such as a fault or basement high (Definition created here: Paul Blake, pers.comm; John McKellar)" ;
-    schema:name "subbasin" ;
+    rdfs:label "subbasin" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Subgroup>
     schema:description "A Subgroup is a part of a Group. (Definition created here: Paul Blake, pers.comm.; John McKellar)" ;
-    schema:name "subgroup" ;
+    rdfs:label "subgroup" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Subprovince>
     schema:description "One of two or more divisions of a province, based on differences in geological character." ;
-    schema:name "Subprovince" ;
+    rdfs:label "Subprovince" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Superbasin>
     schema:description "A superbasin is a hierarchial term applied to  a group of largely interconnected or associated sedimentary basins of the same or similar age. Its component basins may be separated or partially separated by tectonic elements that define 'boundaries'  between them, or they may have been subjected to somewhat different geological influences. In the Australian Mesozoic, the Great Australian Superbasin, composed of the Nambour, Clarence-Moreton, Surat, Eromanga, Carpentaria and other basins, is a prime example, variously covering a geographically-extensive area in parts of Queensland, the Northern Territory, New South Wales and South Australia (Definition created here)." ;
-    schema:name "superbasin" ;
+    rdfs:label "superbasin" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Supercontinent>
     schema:description "A large continent formed by the amalgamation of most or all of Earth’s continental landmasses (Blewett, 2012)." ;
-    schema:name "supercontinent" ;
+    rdfs:label "supercontinent" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Supercraton>
     schema:description "A large, ancestral (largely Archean) landmass consisting of two or more cratons (Blewett, 2012)." ;
-    schema:name "supercraton" ;
+    rdfs:label "supercraton" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Superprovince>
     schema:description "A grouping of two or more like geologic provinces." ;
-    schema:name "Superprovince" ;
+    rdfs:label "Superprovince" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Syncline>
     schema:description "A fold of which the core contains the stratigraphically younger rocks; it is generally concave upward (Neuendorf et al., 2011)." ;
-    schema:name "syncline" ;
+    rdfs:label "syncline" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Synclinorium>
     schema:description "A composite synclinal structure of regional extent composed of lesser folds (Neuendorf et al., 2011)." ;
-    schema:name "synclinorium" ;
+    rdfs:label "synclinorium" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Synform>
     schema:description "Any fold whose limbs close at the bottom. The term is usually used when the folded layers do not possess a stratigraphic order, when the stratigraphic order of the folded layers is not known, or when the fold core also contains the stratigraphically older rock (Neuendorf et al., 2011)." ;
-    schema:name "synform" ;
+    rdfs:label "synform" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/TaxonRangeZone>
     schema:description "The body of strata representing the known range of stratigraphic and geographic occurrence of specimens of a particular taxon (ICS, Online, December 2019)." ;
-    schema:name "taxon range zone" ;
+    rdfs:label "taxon range zone" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/TectonicFeature>
     schema:description "Tectonic Features (Tectonic Units, Tectonic Entities) include the lithosphere, including the continental and oceanic crust, tectonic plates (that the lithosphere is subdivided into), mid-ocean ridges, orogens, subduction zones, volcanic arcs, continents, cratons/shields, extended crust provinces, tectonised and or metamorphosed provinces, metallogenic (mineral) provinces, igneous provinces (including large igneous provinces), and sedimentary basins; collectively, they include continents, past and present, and, when previously formed, supercontinents (Modified and extended from: Kumpulainen, 2017; Wikipedia, March 2022)." ;
-    schema:name "tectonic feature" ;
+    rdfs:label "tectonic feature" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/TectonicPlate>
     schema:description "The lithosphere is divided into a number of discrete tectonic plates each of which has motion relative to other plates. Tectonic plates vary significantly in size and thickness, with boundaries marked by seismic and volcanic activity. They move slowly relative to one another due to convection currents in the Upper Mantle, and may slide on a boundary with another along transform faults. A tectonic plate comprising oceanic lithosphere (entirely or partly thereof), can sink/subduct in a subduction zone below another, usually a lighter, continental plate. Along mid-ocean ridges and major rifts, tectonic plates separate and new crust is formed by the upwelling of basaltic magma (Adapted from: Sheriff, 2002; USGS, 1999)." ;
-    schema:name "tectonic plate" ;
+    rdfs:label "tectonic plate" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/TectonisedMetamorphosedProvince>
     schema:description "A Tectonised and/or Metamorphosed Province is generally an old sedimentary basin that has been strongly tectonised and/or metamorphosed, so that its original basin extent and form are no longer preserved. Such provinces may have associated magmatism and metallogenesis (Definition created here)." ;
-    schema:name "tectonised metamorphosed province" ;
+    rdfs:label "tectonised metamorphosed province" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/TectonometamorphicRockUnit>
     schema:description "Tectonometamorphic rock units are defined bodies of rock that cannot reliably be classified as accumulated (stratiform, lithostratigraphic) rock units or as intrusive rock units, as a result of superimposed deformation and/or metamorphism (Gillespie & Leslie, 2021)." ;
-    schema:name "tectonometamorphic rock unit" ;
+    rdfs:label "tectonometamorphic rock unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/TectonostratigraphicRockUnit>
     schema:description "Tectonostratigraphic rock units encompass generally flat-lying, scale-independent, tectonic rock units that are bounded by zones of high strain (ductile shear zone, deformation zone or belt, fault, fault zone, etc.). They include tectonically-displaced allochthonous sheets that are represented by nappes (thrust sheets) and nappe complexes (After: Kumpulainen, 2017)." ;
-    schema:name "tectonostratigraphic rock unit" ;
+    rdfs:label "tectonostratigraphic rock unit" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Terrane>
     schema:description "A fault-bounded body of rock of regional extent, characterised by a geologic history different from that of contiguous terranes or bounding continents. A terrane is generally considered to be a discrete allochthonous fragment of oceanic or continental material added to a craton (or continental plate) at an active margin by accretion (After: Neuendorf et al., 2011)." ;
-    schema:name "terrane" ;
+    rdfs:label "terrane" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Trough>
     schema:description "A trough (in the continental realm) is an elongate region of the lithosphere that has undergone subsidence because of faulting along one or both of its elongate margins, permitting the accumulation of sediments and the subsequent formation of sedimentary rocks. Troughs are generally grabens or half-grabens, sometimes associated with initial magmatism, that have formed under extensional or transtensional tectonic conditions and may be part of, or associated with, the formation, and subsequent evolution, of larger sedimentary-basin/rifting systems or basin-and-range (western-North-America) type settings (Definition created here)." ;
-    schema:name "trough" ;
+    rdfs:label "trough" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Unconformity>
     schema:description "The surface of contact between rock strata that represents a lack of continuity in deposition, encompassing a period of nondeposition or weathering/erosion prior to the deposition of younger rocks, sometimes, in the case of sedimentary rocks, marked by the absence of conformity between the dip and strike of underlying and overlying strata (Modified from: Neuendorf et al., 2011; Allaby, 2013)." ;
-    schema:name "unconformity" ;
+    rdfs:label "unconformity" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/WaterBody>
     schema:description "A feature produced by the accumulation of water at surface. These features may be liquid water in the form of lakes, rivers, and streams, or as ice in the form of ice sheets and glaciers. Considered part of the set of geologic features due to their role in geological processes and due to their intersection and coverage of other geologic features and important topographical relationships." ;
-    schema:name "water body" ;
+    rdfs:label "water body" ;
 .
 
 <https://linked.data.gov.au/def/geofeatures/Window>
     schema:description "An eroded area of a thrust sheet or nappe that displays the rocks beneath the thrust sheet (Neuendorf et al., 2011)." ;
-    schema:name "window" ;
+    rdfs:label "window" ;
 .

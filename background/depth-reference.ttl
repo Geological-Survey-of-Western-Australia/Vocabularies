@@ -1,76 +1,77 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <https://linked.data.gov.au/def/depth-reference>
     schema:description "The point or level from which all depths are measured and referenced to for an entity or activity. Typically relative to a common global or regional reference datum such as the Australian Height Datum (AHD)." ;
-    schema:name "Depth Reference" ;
+    rdfs:label "Depth Reference" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/absolute>
     schema:description "A fixed plane or point that describes an absolute reference for depth observations." ;
-    schema:name "Absolute" ;
+    rdfs:label "Absolute" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/australian-height-datum>
     schema:description "The Australian Height Datum is a vertical datum in Australia.In 1971 the mean sea level for 1966-1968 was assigned the value of 0.000m on the Australian Height Datum at thirty tide gauges around the coast of the Australian continent." ;
-    schema:name "Australian Height Datum" ;
+    rdfs:label "Australian Height Datum" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/borehole>
     schema:description "A point to which measurements are referenced to in a borehole." ;
-    schema:name "Borehole" ;
+    rdfs:label "Borehole" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/drill-collar>
     schema:description "A component of a drillstring that provides weight on bit for drilling. Drill collars are thick-walled tubular pieces machined from solid bars of steel or alloy. Source: Schlumberger Oilfield Glossary" ;
-    schema:name "Drill Collar" ;
+    rdfs:label "Drill Collar" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/ground-level>
     schema:description "Ground level elevation without additional equipment" ;
-    schema:name "Ground Level" ;
+    rdfs:label "Ground Level" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/kelly-bushing>
     schema:description "An adapter that serves to connect the rotary table to the kelly (A long square or hexagonal steel bar with a hole drilled through the middle for a fluid path).Source: Schlumberger Oilfield Glossary" ;
-    schema:name "Kelly Bushing" ;
+    rdfs:label "Kelly Bushing" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/mean-sea-level>
     schema:description "The elevation (on the ground) or altitude (in the air) of an object, relative to the average sea level." ;
-    schema:name "Mean Sea Level" ;
+    rdfs:label "Mean Sea Level" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/metres-sub-sea>
     schema:description "The distance below mean sea level, the inverse of measurements to Mean Sea Level." ;
-    schema:name "Metres Sub-Sea" ;
+    rdfs:label "Metres Sub-Sea" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/rotary-table>
     schema:description "The revolving or spinning section of the drillfloor that provides power to turn the drillstring in a clockwise direction (as viewed from above).Source: Schlumberger Oilfield Glossary" ;
-    schema:name "Rotary Table" ;
+    rdfs:label "Rotary Table" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/seismic>
     schema:description "A reference relating to time based measurements and datasets, such as seismic surveys. Reported in a unit of measure of time." ;
-    schema:name "Seismic" ;
+    rdfs:label "Seismic" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/seismic-reference-datum>
     schema:description "The SRD is a plane that sits above the highest elevation in the data. In a land project with a seismic reference datum set, the SRD will have a time of 0 ms. All time data, e.g. seismic and velocities, will start at this datum." ;
-    schema:name "Seismic Reference Datum" ;
+    rdfs:label "Seismic Reference Datum" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/site>
     schema:description "A generic reference point for sites, samples, observations, or surveys." ;
-    schema:name "Site" ;
+    rdfs:label "Site" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/water-bottom>
     schema:description "The depth of the interface between water and solid substrate, such as the sea bed or the bottom of a terrestrial body of water." ;
-    schema:name "Water Bottom" ;
+    rdfs:label "Water Bottom" ;
 .
 
 <https://linked.data.gov.au/def/depth-reference/well-head>
     schema:description "A wellhead is the component at the surface of an oil or gas well that provides the structural and pressure-containing interface for the drilling and production equipment. Iolation valves and choke equipment control the flow of well fluids during production. Elevation is typically equivalent to the valve or outlet point from which samples are extracted." ;
-    schema:name "Well Head" ;
+    rdfs:label "Well Head" ;
 .
