@@ -1,31 +1,31 @@
 PREFIX schema: <https://schema.org/>
 
 <http://linked.data.gov.au/def/borehole-design>
-    schema:description "A description of the intended configuration and trajectory of a borehole."@en ;
-    schema:name "Borehole Design"@en ;
+    schema:description "A description of the intended configuration and trajectory of a borehole." ;
+    schema:name "Borehole Design" ;
 .
 
 <http://linked.data.gov.au/def/borehole-design/deviated>
-    schema:description "A borehole drilled with geosteering equipment with the intent of controlling inclination and/or azimuth on a specified trajectory to intersect a target or targets."@en ;
-    schema:name "Deviated"@en ;
+    schema:description "A borehole drilled with geosteering equipment with the intent of controlling inclination and/or azimuth on a specified trajectory to intersect a target or targets." ;
+    schema:name "Deviated" ;
 .
 
 <http://linked.data.gov.au/def/borehole-design/inclineddown>
-    schema:description "A borehole drilled without geosteering equipment at a non-vertical angle at or below horizontal."@en ;
-    schema:name "Inclined Down"@en ;
+    schema:description "A borehole drilled without geosteering equipment at a non-vertical angle at or below horizontal." ;
+    schema:name "Inclined Down" ;
 .
 
 <http://linked.data.gov.au/def/borehole-design/inclinedup>
-    schema:description "A borehole drilled without geosteering equipment at a non-vertical angle above horizontal."@en ;
-    schema:name "Inclined Up"@en ;
+    schema:description "A borehole drilled without geosteering equipment at a non-vertical angle above horizontal." ;
+    schema:name "Inclined Up" ;
 .
 
 <http://linked.data.gov.au/def/borehole-design/lateral>
-    schema:description "A borehole drilled with geosteering equipment with the intent of controlling the trajectory to drill laterally within a targeted stratigraphic interval or intervals."@en ;
-    schema:name "Lateral"@en ;
+    schema:description "A borehole drilled with geosteering equipment with the intent of controlling the trajectory to drill laterally within a targeted stratigraphic interval or intervals." ;
+    schema:name "Lateral" ;
 .
 
 <http://linked.data.gov.au/def/borehole-design/vertical>
-    schema:description "A borehole drilled in a vertical downward direction with the intent of maintaining a vertical trajectory."@en ;
-    schema:name "Vertical"@en ;
+    schema:description "A borehole drilled in a vertical downward direction with the intent of maintaining a vertical trajectory." ;
+    schema:name "Vertical" ;
 .
