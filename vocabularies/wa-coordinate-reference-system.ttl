@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 
 :geographic
@@ -738,8 +738,7 @@ cs:
         :wgs84 ;
     skos:historyNote "Historical and current coordinate references systems used in maps and publications by the Geological Survey of Western Australia since its inception."@en ;
     skos:prefLabel "Western Australian coordinate reference systems"@en ;
-    schema:keywords
-        theme:geology-mapping ;
+    schema:keywords themes:mapping ;
     prov:qualifiedAttribution
         [
             prov:hadRole dataroles:custodian ;

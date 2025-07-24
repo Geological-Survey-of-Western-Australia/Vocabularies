@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 <http://linked.data.gov.au/def/borehole-start-point/from-pre-existing-hole>
     a skos:Concept ;
@@ -119,7 +119,7 @@ cs:
         :onshore ;
     skos:historyNote "Terms and definitions are predominantly sourced from the Geological Survey of Queensland's (GSQ) Borehole start point vocabulary (http:/linked.data.gov.au/def/borehole-start-point), with some modifications and additional concepts."@en ;
     skos:prefLabel "Borehole start point setting"@en ;
-    schema:keywords theme:resources ;
+    schema:keywords themes:resources ;
     prov:qualifiedAttribution
         [
             prov:hadRole dataroles:custodian ;

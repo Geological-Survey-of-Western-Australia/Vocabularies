@@ -9,6 +9,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :analytical-blank
@@ -352,7 +353,7 @@ Definitions compiled from:
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2025-06-18"^^xsd:date ;
     schema:dateModified "2025-06-18"^^xsd:date ;
-    schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/sample-acquisition-management> ;
+    schema:keywords themes:sample-acquisition-management ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1.0" ;
 .

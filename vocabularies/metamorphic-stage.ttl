@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 <https://linked.data.gov.au/def/metamorphic-stage/?peak>
     a skos:Concept ;
@@ -140,7 +140,7 @@ Fettes, D and Desmons, J (eds.) 2007, Metamorphic Rocks: a classification and gl
     skos:historyNote "Based on the authoritative lists [GEOLOGY].[WAROX_REF].[MetaStage] and [WAGIMS].[ReferenceData].[MetamorphicStage] used in the Geological Survey of Western Australia's field observations (WAROX) and WAGIMS system, the repository for Western Australian geochronology, isotope geology, mineral chemistry and metamorphic history analytical data and information."@en ;
     skos:prefLabel "Metamorphic stage"@en ;
     schema:keywords
-        theme:geology ;
+        themes:geology ;
     prov:qualifiedAttribution
         [
             prov:hadRole dataroles:custodian ;

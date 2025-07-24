@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :kalgoorlie-mining-registrar
     a skos:Collection ;
@@ -939,8 +939,8 @@ cs:
     skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978."@en ;
     skos:prefLabel "Western Australian mineral fields and districts"@en ;
     schema:keywords
-        theme:resources-mineral ,
-        theme:administration ;
+        themes:mineral ,
+        themes:administration ;
     prov:qualifiedAttribution
         [
             prov:hadRole dataroles:custodian ;

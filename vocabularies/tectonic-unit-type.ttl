@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :WA-unit
     a skos:Concept ;
@@ -328,7 +328,7 @@ cs:
     skos:historyNote """Concepts are derived from GSWA's Explanatory Notes System (ENS) table [GEOLOGY].[ENS_REF].[RANK].
 The concepts outline the type of tectonic elements that are recognized and/or interpreted in Western Australia and that are used to define the geological and tectonic framework of the State."""@en ;
     skos:prefLabel "Tectonic unit type"@en ;
-    schema:keywords theme:geology-framework ;
+    schema:keywords themes:geology-framework ;
     prov:qualifiedAttribution
         [
             prov:hadRole dataroles:custodian ;

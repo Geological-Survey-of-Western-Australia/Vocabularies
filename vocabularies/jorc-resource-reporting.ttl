@@ -9,8 +9,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :Competent-Person
     a skos:Concept ;
@@ -233,6 +233,6 @@ The JORC Code vocabulary covers [MINEDEX].[ResourceEstimate.ResourceCategory], i
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1.1: updated IRI to use lowercase characters" ;
     schema:keywords
-        theme:resources-mineral ,
-        theme:legislation ;
+        themes:resources-mineral ,
+        themes:legislation ;
 .
