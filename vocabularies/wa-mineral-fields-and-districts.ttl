@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/wa-mineral-fields-and-districts/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/wa-mineral-fields-and-districts>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -133,7 +132,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :coolgardie-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Coolgardie M F"@en ;
@@ -149,7 +148,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :eastcoolgardie-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -168,7 +167,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :eastmurchison-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "East Murchison M F"@en ;
@@ -185,7 +184,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mtmargaret-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -204,7 +203,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :murchison-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Murchison M F"@en ;
@@ -222,7 +221,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :northcoolgardie-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -242,7 +241,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :northeastcoolgardie-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -262,7 +261,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :pilbara-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Pilbara M F"@en ;
@@ -278,7 +277,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :ashburton-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Ashburton M F 08"@en ;
@@ -292,7 +291,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :blackrange-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -310,7 +309,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :broadarrow-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Broad Arrow M F 24"@en ;
@@ -326,7 +325,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bulong-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -344,7 +343,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :collieriver-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Collie River M F 12"@en ;
@@ -358,7 +357,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :coolgardie-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -374,7 +373,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :cue-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -390,7 +389,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :daydawn-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -408,7 +407,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :dundas-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Dundas M F 63"@en ;
@@ -422,7 +421,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :eastcoolgardie-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -440,7 +439,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :gascoyne-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Gascoyne M F 09"@en ;
@@ -454,7 +453,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :greenbushes-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Greenbushes M F 01"@en ;
@@ -468,7 +467,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :kanowna-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -486,7 +485,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :kimberley-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Kimberley M F 80"@en ;
@@ -500,7 +499,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :kunnanalling-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -518,7 +517,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :kurnalpi-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -536,7 +535,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :lawlers-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -552,7 +551,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :marblebar-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -568,7 +567,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :meekatharra-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -586,7 +585,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :menzies-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -604,7 +603,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mtmagnet-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -623,7 +622,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mtmalcolm-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -642,7 +641,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mtmargaret-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -661,7 +660,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mtmorgan-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -680,7 +679,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :niagara-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -698,7 +697,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :northampton-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Northampton M F 66"@en ;
@@ -712,7 +711,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :nullagine-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -730,7 +729,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :peakhill-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Peak Hill M F 52"@en ;
@@ -746,7 +745,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :phillipsriver-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Phillips River M F 74"@en ;
@@ -760,7 +759,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :southwest-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -779,7 +778,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :ularring-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -795,7 +794,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :warburton-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Warburton M F 69"@en ;
@@ -808,7 +807,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :westkimberley-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "West Kimberley M F 04"@en ;
@@ -822,7 +821,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :westpilbara-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "West Pilbara M F 47"@en ;
@@ -836,7 +835,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :wiluna-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -854,7 +853,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :yalgoo-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Yalgoo M F 59"@en ;
@@ -868,7 +867,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :yerilla-mineral-district
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel
@@ -886,7 +885,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :yilgarn-mineral-field
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia"^^xsd:anyURI ;
     skos:altLabel "Yilgarn M F 77"@en ;
@@ -902,11 +901,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-09-12"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "wa-mineral-fields-and-districts"^^xsd:token ;
-    dcterms:modified "2023-09-12"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023-09-12"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateModified "2023-09-12"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status astatus:stable ;

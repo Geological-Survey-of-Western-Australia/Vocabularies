@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/physiographic-unit-types/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/physiographic-unit-types>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -15,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :physiographic-division
     a skos:Concept ;
-    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    schema:citation "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The highest hierarchical level for physiographic units in Australia, based on the classification by Pain et al. (2011). The onshore Australian continent is divided into three physiographic divisions, broadly coincident with a geological subdivision into the western shields, the central basins and the eastern fold belts; divisions are subdivided into several smaller physiographic provinces. Each physiographic division is identified by a name, a text description, and a single digit code (1, 2, and 3 from east to west), converted to a three- or five-digit number for database purposes (i.e. 100 or 10000) to allow better characterization when including physiographic provinces and regions."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
@@ -26,7 +25,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :physiographic-province
     a skos:Concept ;
-    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    schema:citation "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The intermediate hierarchical level for physiographic units in Australia, based on the classification by Pain et al. (2011). Physiographic provinces distinguish major physiographic changes across the country and are compiled by grouping regions with similar landforms and geological characteristics at a scale of 1: 2.5M. The onshore Australian continent is divided into 23 physiographic provinces, in turn subdivided into several smaller physiographic regions. Each physiographic province is identified by a name, a text description, and a three-digit aggregate code that includes the parent physiographic division code as the first digit (e.g. 301, 302, etc.); this is converted to a five-digit code for database purposes (i.e. 30100, 30200, etc.) to allow better characterization when including physiographic regions. Descriptors include geology, structure and broad regolith types."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
@@ -37,7 +36,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :physiographic-region
     a skos:Concept ;
-    dcterms:source "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+    schema:citation "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The lowest hierarchical level for physiographic units in Australia, based on the classification by Pain et al. (2011). Physiographic regions are the basic geomorphological subdivisions of Australia, and are internally consistent in terms of their landform morphology, relief, underlying geology and geomorphic origin. The onshore Australian continent is divided into 220 physiographic regions. Each region is identified by a name, a text description, and a five-digit aggregate code incorporating the notation of the parent physiographic division and province (e.g. 30100, where 3 represents the division, 301 the province, and 30100 the region). The primary descriptors for physiographic regions are geographic name and a simple text description including major geologic and geomorphic features."@en ;
     skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
@@ -50,11 +49,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-09-06"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "physiographic-unit-types"^^xsd:token ;
-    dcterms:modified "2023-09-06"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023-09-06"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateModified "2023-09-06"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status astatus:stable ;

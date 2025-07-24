@@ -17,8 +17,7 @@ PREFIX schema: <https://schema.org/>
             schema:name "Catalogue Definition" ;
         ] ,
         [
-            # dcterms:conformsTo <https://linked.data.gov.au/def/vocpub> ;
-            dcterms:conformsTo "vocpub.ttl" ;
+            dcterms:conformsTo <https://linked.data.gov.au/def/vocpub> ;
             prof:hasArtifact "vocabularies/*.ttl" ;
             prof:hasRole <https://prez.dev/ManifestResourceRoles/ResourceData> ;
             schema:description "DETSI vocabs" ;

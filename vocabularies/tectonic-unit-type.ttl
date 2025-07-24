@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/tectonic-unit-type/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/tectonic-unit-type>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -36,7 +35,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :basin
     a skos:Concept ;
-    dcterms:source "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ;
+    schema:citation "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "sedimentary basin"@en ;
     skos:closeMatch
@@ -53,7 +52,7 @@ b) Miall, AD 2000,Principles of Sedimentary Basin Analysis, 3rd ed.: Berlin, Hei
 
 :craton
     a skos:Concept ;
-    dcterms:source "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ;
+    schema:citation "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Craton> ;
     skos:definition "A part of the Earth's continental lithosphere with a thick lithospheric root that has remained tectonically stable for a long period of time. Whether or not an amalgamation of components constitutes a craton depends on the point in geological time at which the overall tectonic configuration is considered. In the Western Australian context, cratons usually comprise component terranes, but can also represent amalgamation(s) of older cratons bounded by orogenic sutures. In the Geological Survey of Western Australia (GSWA) Explanatory Notes System, the latter are ranked as a higher level tectonic unit type to preserve the identity of the original cratons. The nature of tectonic processes that modify cratons, including rifting, accretion and removal of the lithospheric root, result in boundaries between cratons, orogens and basins that can be either sharp or gradational, such that the spatial limit of cratons both at surface and at depth may not always be precisely defined. In the global literature, cratons can be referred to as shields, and basins covering cratons as platforms; these terms are not used by GSWA."@en ;
@@ -69,7 +68,7 @@ b) Neuendorf, KE, Mehl Jr, JP and Jackson, JA 2011, Glossary of Geology, 5th edi
 
 :craton-terrane
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ,
         "https://www.tandfonline.com/action/showCitFormats?doi=10.1080%2F11035897.2016.1178666"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -99,7 +98,7 @@ b) Geological Survey of Western Australia, 1990, Geology and Mineral Resources o
 
 :greenstone-belt_granitic-complex
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/greenstonebelt"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/greenstonebelt"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Lithotectonic units typical of Archean terrains, commonly referred to in the literature — but the use of these terms as formally named tectonic units is to be avoided. Greenstone belts are elongate or belt-like volcano–sedimentary complexes within cratons that are characterized by dark-green, altered or metamorphosed mafic and ultramafic igneous rock, such as basalt, gabbro and komatiite, that owe their colour to the presence of chlorite, actinolite or epidote. An individual belt may contain the deformed and metamorphosed rocks of one or more volcano-sedimentary sequences. Granitic complexes are tectonically domed expanses of granitic rocks containing granitic intrusions of widely different ages and mantled by greenstone belts (Van Kranendonk et al., 2004)."@en ;
     skos:historyNote """A component of the tectonic module of GSWA's Explanatory Notes System (ENS).
@@ -115,7 +114,7 @@ d) Van Kranendonk, MJ, Smithies, RH, Hickman, AH, Bagas, L, Williams, IR, and Fa
 
 :inlier_outlier
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://glossary.americangeosciences.org/term/inlier"^^xsd:anyURI ,
         "https://glossary.americangeosciences.org/term/outlier"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -132,7 +131,7 @@ a) https://glossary.americangeosciences.org/term/inlier b) https://glossary.amer
 
 :orogen
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://dmpbookshop.eruditetechnologies.com.au/product/geology-and-mineral-resources-of-western-australia.do"^^xsd:anyURI ,
         "https://linked.data.gov.au/def/geofeatures/Orogen"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -149,7 +148,7 @@ c) Geological Survey of Queensland Geofeatures vocabulary""" ;
 
 :orogenic-foreland
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/forelandtect"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/forelandtect"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "fold belt"@en ;
     skos:definition "The exterior area of an orogenic belt where deformation occurs without significant metamorphism. Generally the foreland is closer to the continental interior than other portions of the orogenic belt are."@en ;
@@ -207,7 +206,7 @@ Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and th
 
 :sub-basin
     a skos:Concept ;
-    dcterms:source "https://linked.data.gov.au/def/geofeatures/Subbasin"^^xsd:anyURI ;
+    schema:citation "https://linked.data.gov.au/def/geofeatures/Subbasin"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "subbasin"@en ;
     skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Subbasin> ;
@@ -244,7 +243,7 @@ Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and th
 
 :superbasin
     a skos:Concept ;
-    dcterms:source "https://linked.data.gov.au/def/geofeatures"^^xsd:anyURI ;
+    schema:citation "https://linked.data.gov.au/def/geofeatures"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/geofeatures/Superbasin> ;
     skos:definition "A superbasin is a hierarchical term applied to a group of largely interconnected or associated sedimentary basins of the same or similar age. Its component basins may be separated or partially separated by tectonic elements that define 'boundaries' between them, or they may have been subjected to somewhat different geological influences."@en ;
@@ -294,11 +293,10 @@ Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and th
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-11-01"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "tectonic-unit-type"^^xsd:token ;
-    dcterms:modified "2023-11-01"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023-11-01"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateModified "2023-11-01"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status astatus:stable ;

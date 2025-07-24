@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/metamorphic-stage/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/metamorphic-stage>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -43,7 +42,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :peak
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "244p."^^xsd:anyURI ,
         "Adapted from:"^^xsd:anyURI ,
         "D and Desmons"^^xsd:anyURI ,
@@ -59,7 +58,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :prograde
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "244p."^^xsd:anyURI ,
         "Adapted from:"^^xsd:anyURI ,
         "D and Desmons"^^xsd:anyURI ,
@@ -75,7 +74,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :retrograde
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "244p."^^xsd:anyURI ,
         "Adapted from:"^^xsd:anyURI ,
         "D and Desmons"^^xsd:anyURI ,
@@ -91,7 +90,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :retrogressive
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "244p."^^xsd:anyURI ,
         "Adapted from:"^^xsd:anyURI ,
         "D and Desmons"^^xsd:anyURI ,
@@ -118,11 +117,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-11-01"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "metamorphic-stage"^^xsd:token ;
-    dcterms:modified "2023-11-01"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023-11-01"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateModified "2023-11-01"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status astatus:stable ;
