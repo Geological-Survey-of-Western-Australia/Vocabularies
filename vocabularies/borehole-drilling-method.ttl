@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/borehole-drilling-method-western-austra
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cgibdm: <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/>
 PREFIX cs: <https://linked.data.gov.au/def/borehole-drilling-method-western-australia>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
