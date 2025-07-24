@@ -3866,7 +3866,7 @@ Allaby, M 2008, A dictionary of Earth sciences, 4th edition: Oxford University P
         "https://glossary.americangeosciences.org/term/geology"^^xsd:anyURI ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;

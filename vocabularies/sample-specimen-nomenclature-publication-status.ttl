@@ -565,7 +565,7 @@ PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
         "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;

@@ -558,7 +558,7 @@ cgibdm:window_sampler
         "https://www.earthenvironmental.co.uk/window-sampling"^^xsd:anyURI ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;

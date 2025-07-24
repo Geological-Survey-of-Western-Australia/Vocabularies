@@ -290,7 +290,7 @@ Korsch, RJ and Doublier, MP, 2016, Major crustal boundaries of Australia, and th
     skos:topConceptOf cs: ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;

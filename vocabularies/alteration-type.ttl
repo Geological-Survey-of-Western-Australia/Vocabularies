@@ -746,7 +746,7 @@ PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
     schema:citation "https://glossary.americangeosciences.org/term/skarn"^^xsd:anyURI ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;

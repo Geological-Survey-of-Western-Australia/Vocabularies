@@ -99,7 +99,7 @@ https://www.legislation.gov.au/Details/C2008C00399""" ;
     skos:topConceptOf cs: ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;

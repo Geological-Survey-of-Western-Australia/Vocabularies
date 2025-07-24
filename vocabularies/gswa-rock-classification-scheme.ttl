@@ -9746,7 +9746,7 @@ Chilingar, GV, Bissell, HJ and Wolf, KH 1967, Chapter 5 Diagenesis of Carbonate 
     schema:citation "https://glossary.americangeosciences.org/term/felsic"^^xsd:anyURI ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;

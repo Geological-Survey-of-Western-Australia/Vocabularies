@@ -675,7 +675,7 @@ PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
     skos:topConceptOf cs: ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
