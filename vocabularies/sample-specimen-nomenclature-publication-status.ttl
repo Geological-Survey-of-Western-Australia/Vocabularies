@@ -1,14 +1,16 @@
 PREFIX : <https://linked.data.gov.au/def/sample-nomenclature-publication-status/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/sample-nomenclature-publication-status>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 
 :allotype-ICZN
     a skos:Concept ;
@@ -564,11 +566,11 @@ PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
         "https://www.iapt-taxon.org/nomen/pages/main/glossary.html"^^xsd:anyURI ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
-    reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
+    reg:status astatus:stable ;
     owl:versionIRI :1 ;
     skos:definition "Listing of standard nomenclature types (typus) and publication statuses that may characterize fossil, mineral or meteorite samples/specimens held in the Geological Survey of Western Australia's collections. These terms should only be applied to physical items, and are not applicable to derived results or data. This vocabulary includes terms for type specimens as recognized under several international nomenclature codes (see History Note for details). Taxonomic schemes applied to different classes of objects each have their own set of accepted types, and can define the same term differently, so care should be taken to use the correct nomenclature when referring to type specimens; to minimize confusion, individual terms have been labelled with a suffix indicating the relevant code. Note that multiple statuses can apply to a single specimen (e.g. by definition a type specimen will always be described-and-published)."@en ;
     skos:hasTopConcept
@@ -600,9 +602,9 @@ GSWA distinguishes samples from specimens on the basis of the latter including b
     schema:dateCreated "2024-12-09"^^xsd:date ;
     schema:dateModified "2024-12-09"^^xsd:date ;
     schema:keywords
-        <https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-framework> ,
-        <https://linked.data.gov.au/def/gswa-vocabulary-themes/geology-paleontology> ,
-        <https://linked.data.gov.au/def/gswa-vocabulary-themes/sample-acquisition-management> ;
+        themes:geology-framework ,
+        themes:paleontology ,
+        themes:sample-acquisition-management ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
 .

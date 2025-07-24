@@ -1,5 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/geological-feature-type/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/geological-feature-type>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :formal-unit
     a skos:Concept ;
@@ -170,7 +170,7 @@ Wyborn, LAI, Heinrich, CA and Jaques, AL 1994, Australian Proterozoic mineral sy
     skos:topConceptOf cs: ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
@@ -181,9 +181,9 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
-    reg:status agldwgstatus:stable ;
+    reg:status astatus:stable ;
     schema:keywords
-        theme:geology-framework ;
+        themes:geology-framework ;
     skos:definition "This vocabulary lists the fundamental types of geological features that are used to define the geological framework/4D evolution of Western Australia and are relevant to the duties of the Geological Survey of Western Australia. A geological feature is a physical or conceptual feature that is hypothesized to exist coherently in the Earth and that results from geological processes (definition largely derived from SWEET ontology http://sweetontology.net/realmGeol#geologicfeature)."@en ;
     skos:hasTopConcept
         :geological-event ,

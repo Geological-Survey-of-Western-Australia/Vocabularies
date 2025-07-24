@@ -1,12 +1,15 @@
 PREFIX : <https://linked.data.gov.au/def/sample-data-quality-management/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/sample-data-quality-management>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :analytical-blank
@@ -304,10 +307,11 @@ ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-A
     schema:citation "https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/standardReferenceMaterial"^^xsd:anyURI ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
+    reg:status astatus:stable ;
     owl:versionIRI :1 ;
     skos:definition "The types of physical samples that are used to undertake quality assurance (QA) and quality control (QC) checks at all stages of the sampling, preparation and analytical processes, and/or to retain representative material for future reference. Note that QA and QC are often used collectively as a single term, but are in fact distinct procedures: QA 'refers to defect prevention', i.e. ‘the protocols and procedures that ensure that sampling and assaying is completed to the required quality’, whereas QC 'refers to defect detection', i.e. ‘the use of control samples and statistical analysis to ensure that assay results are reliable’ (Graindorge, 2010, p. 112; https://www.usgs.gov/data-management/manage-quality). This vocabulary thus also encapsulates terminology covering sample representability. "@en ;
     skos:hasTopConcept
@@ -349,7 +353,7 @@ Definitions compiled from:
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2025-06-18"^^xsd:date ;
     schema:dateModified "2025-06-18"^^xsd:date ;
-    schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/sample-acquisition-management> ;
+    schema:keywords themes:sample-acquisition-management ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1.0" ;
 .

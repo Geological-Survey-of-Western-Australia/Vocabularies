@@ -1,5 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/vertical-depth-reference-systems/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/vertical-depth-reference-systems>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :australian-height-datum-TAS83
     a skos:Concept ;
@@ -406,7 +406,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     skos:topConceptOf cs: ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
@@ -417,7 +417,7 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
-    reg:status agldwgstatus:stable ;
+    reg:status astatus:stable ;
     skos:definition "The point or level from which heights and depths are measured and referenced to for an entity or activity. Typically these are expressed relative to a common global or regional reference datum such as the Australian Height Datum (AHD) or can be related to local reference systems. Specific emphasis is placed on elevation references used by resource exploration and drilling programs, whereby depths are measured relative to local reference datums or specific parts of a borehole/drilling platform. Concepts in this vocabulary include both reference datums (e.g. mean sea level) and how depths are expressed relative to them (e.g. mean sea level height)."@en ;
     skos:hasTopConcept
         :australian-height-datum-TAS83 ,
@@ -434,7 +434,7 @@ cs:
     skos:historyNote "Derived from [WAPIMS].[dbo].[WellPermanentDatumType], [WAPIMS].[dbo].[BoreholeVerticalReferenceType], and [WAPIMS].[dbo].[WellDepthReferenceType] with additions from the unpublished Geoscience Australia's Depth Reference Type vocabulary. Also refers to Geological Survey of Queensland's Depth Reference vocabulary (https://linked.data.gov.au/def/depth-reference), with considerably expanded definitions."@en ;
     skos:prefLabel "Vertical/depth reference systems"@en ;
     schema:keywords
-        theme:geology-mapping ;
+        themes:geology-mapping ;
     prov:qualifiedAttribution
         [
             prov:hadRole dataroles:custodian ;

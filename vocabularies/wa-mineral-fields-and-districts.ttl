@@ -1,5 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/wa-mineral-fields-and-districts/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/wa-mineral-fields-and-districts>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :kalgoorlie-mining-registrar
     a skos:Collection ;
@@ -898,7 +898,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     skos:topConceptOf cs: ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
@@ -909,7 +909,7 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
-    reg:status agldwgstatus:stable ;
+    reg:status astatus:stable ;
     skos:definition "The State of Western Australia is divided into various Mineral Fields that represent administrative land subdivisions under which mining is administered in the State according to Section 16 of the Mining Act 1978. Some mineral fields are further subdivided into Districts. Mineral field and district boundaries can be changed by proclamation under the Mining Act 1978 — the listing provided is current as of June 2023. Each mineral field or district is characterized by a two-digit prefix code used for map representations and tenement indexing. Most districts and some mineral fields are also characterized by an upper case letter code: these are historical identifiers currently not applied, but are relevant for legacy mining tenement information. Field and district proclamations date back as far as the late 1890s; individual entities may have undergone several alterations of boundaries and even been changed from district to field (NB the gazetted date provided usually refers to the first entity). In gold-endowed areas, mineral fields were originally classified as 'Goldfields', but this categorisation stopped with the ratification of the Mining Act 1978. In terms of management, tenements under each mineral field are administered under a designated Mining Registrar (here expressed as collections). Information for this vocabulary was sourced from the Tengraph (Web) Help (https://www.dmp.wa.gov.au/tgwhelp/mineral-fields-and-district-codes-637.aspx), the Department of Mines, Industry Regulation and Safety (https://dmp.wa.gov.au/History-and-locations-of-the-12531.aspx) and a dedicated Wikipedia (https://en.wikipedia.org/wiki/Mineral_fields_of_Western_Australia) webpages, as well as the consolidated printed version of the 1904 Act and individual Western Australian Government Gazettes."@en ;
     skos:hasTopConcept
         :ashburton-mineral-field ,
@@ -939,8 +939,8 @@ cs:
     skos:historyNote "Mineral Fields and Districts are administrative land subdivisions under which mining and tenements are administered in the State of Western Australia, based on Section 16 of the Mining Act 1978."@en ;
     skos:prefLabel "Western Australian mineral fields and districts"@en ;
     schema:keywords
-        theme:resources-mineral ,
-        theme:administration ;
+        themes:mineral ,
+        themes:administration ;
     prov:qualifiedAttribution
         [
             prov:hadRole dataroles:custodian ;

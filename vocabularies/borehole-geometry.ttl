@@ -1,5 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/borehole-geometry/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/borehole-geometry>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
@@ -10,8 +10,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :bh-azimuth
     a skos:Concept ;
@@ -366,7 +366,7 @@ https://help.dugeo.com/m/faq/l/167077-height-datums-and-abbreviations""" ;
     skos:prefLabel "true vertical depth subsea"@en ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
@@ -377,7 +377,7 @@ cs:
     dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
-    reg:status agldwgstatus:stable ;
+    reg:status astatus:stable ;
     skos:definition "This vocabulary covers the common terminology and concepts used in the mineral and energy industries to fully depict the 3D extent of a borehole (i.e. its position in space and the depth reached) or the position of any point along the borehole. The list focuses on the primary and some derived/calculated parameters that are part of reporting for drilling activities, and does include specific processes/procedures related to the acquisition of some of these parameters (e.g. downhole directional survey). The vocabulary does not include colloquial terms used by industry or the various ways of projecting a borehole trace onto different planes (e.g. plan view, longitudinal projection, cross-section). The coordinate and vertical reference systems used to report borehole parameters are described in separate vocabularies (Western Australian coordinate reference systems and Vertical/depth reference systems, respectively). A companion vocabulary (Borehole configuration) covers the qualitative terms used to describe the intended configuration and trajectory of a borehole."@en ;
     skos:hasTopConcept
         :bh-azimuth ,
@@ -395,7 +395,7 @@ cs:
         :true-vertical-depth ;
     skos:historyNote "Concepts used by the resources industry. Some covered in [WAPIMS].[dbo.DeviationSurveyPoint]."@en ;
     skos:prefLabel "Borehole geometry"@en ;
-    schema:keywords theme:resources ;
+    schema:keywords themes:resources ;
     prov:qualifiedAttribution
         [
             prov:hadRole dataroles:custodian ;

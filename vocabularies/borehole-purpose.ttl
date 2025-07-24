@@ -1,14 +1,16 @@
 PREFIX : <https://linked.data.gov.au/def/borehole-purpose-wa/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/borehole-purpose-wa>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 
 :storage-liquids-other-than-water
     skos:narrowMatch <http://linked.data.gov.au/def/borehole-purpose/carbon-capture-and-storage> ;
@@ -920,11 +922,11 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:prefLabel "mining (development and production)"@en ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
-    reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
+    reg:status astatus:stable ;
     owl:versionIRI :1 ;
     skos:definition "The primary purpose for which a borehole was drilled or any secondary purpose that the borehole may acquire during its lifecycle. The vocabulary focuses on drilling purposes within the resources industry, with a focus on terminology as applied in the Geological Survey of Western Australia (GSWA) databases. Some terms covered by jurisdictional legislation are highlighted in the provenance field. Variations in terminology within definitions (i.e. usage of borehole, well and wellbore) stem from usage in different sectors of the resources industry, but for the purpose of this vocabulary are considered to be equivalent. In the context of this vocabulary, the term fluid energy refers to sources such as gas, petroleum and geothermal, as covered by the Petroleum Legislation Amendment Act 2024, and is exclusive of mineral sources of energy (e.g. coal, uranium). "@en ;
     skos:hasTopConcept
@@ -967,7 +969,7 @@ This vocabulary was discussed at a national level via the Government Geoscience 
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2025-02-03"^^xsd:date ;
     schema:dateModified "2025-02-03"^^xsd:date ;
-    schema:keywords <https://linked.data.gov.au/def/gswa-vocabulary-themes/resources> ;
+    schema:keywords themes:resources ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
 .

@@ -1,4 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/location-method/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/location-method>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
@@ -8,8 +9,8 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 
 :100k-geological-map-mga
     a skos:Concept ;
@@ -557,11 +558,11 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
     skos:prefLabel "unpublished report (MGA/WGS/GDA)"@en ;
 .
 
-:1 schema:name "1" .
+:1 rdfs:label "1" .
 
 cs:
     a skos:ConceptScheme ;
-    reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
+    reg:status astatus:accepted ;
     owl:versionIRI :1 ;
     skos:definition "Methods used to spatially locate geological features and exploration, mining and related infrastructure sites. These can be either features directly observed in the field (e.g. site/outcrop descriptions, structural readings, etc.) or obtained from legacy and current documents/datasets (e.g. airphotos, maps, previously published reports, exploration reports, etc.). Each location method has a spatial accuracy that indicates an estimate of the approximate error in the location. Captured geographical locations for geological or mining features are expressed as a set of coordinates (latitude and longitude degrees), with or without an elevation above or below sea level."@en ;
     skos:hasTopConcept
@@ -598,7 +599,7 @@ cs:
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2022-11-23"^^xsd:date ;
     schema:dateModified "2022-11-23"^^xsd:date ;
-    schema:keywords theme:geology-mapping ;
+    schema:keywords themes:mapping ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "1" ;
 .

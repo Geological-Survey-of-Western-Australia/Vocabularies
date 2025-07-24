@@ -1,548 +1,222 @@
-PREFIX : <https://linked.data.gov.au/def/gsq-geochem/alteration/>
-PREFIX agldwgstatus: <https://linked.data.gov.au/def/reg-statuses/>
-PREFIX cs: <https://linked.data.gov.au/def/gsq-geochem/alteration>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX sdo: <https://schema.org/>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <https://schema.org/>
 
-:adularia-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for adularia alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "ADULARIA ALTERATION" ;
-    skos:prefLabel "adularia alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration>
+    rdfs:label "Alteration" ;
+    schema:description "Alteration" ;
 .
 
-:albitic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for albitic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "ALBITIC ALTERATION" ;
-    skos:prefLabel "albitic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/adularia-alteration>
+    rdfs:label "adularia alteration" ;
+    schema:description "Definition for adularia alteration" ;
 .
 
-:alunite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for alunite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "ALUNITE ALTERATION" ;
-    skos:prefLabel "alunite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/albitic-alteration>
+    rdfs:label "albitic alteration" ;
+    schema:description "Definition for albitic alteration" ;
 .
 
-:anhydrite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for anhydrite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "ANHYDRITE ALTERATION" ;
-    skos:prefLabel "anhydrite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/alunite-alteration>
+    rdfs:label "alunite alteration" ;
+    schema:description "Definition for alunite alteration" ;
 .
 
-:argillic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for argillic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "ARGILLIC ALTERATION" ;
-    skos:prefLabel "argillic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/anhydrite-alteration>
+    rdfs:label "anhydrite alteration" ;
+    schema:description "Definition for anhydrite alteration" ;
 .
 
-:calc-silicate-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for calc silicate alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "CALC SILICATE ALTERATION" ;
-    skos:prefLabel "calc silicate alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/argillic-alteration>
+    rdfs:label "argillic alteration" ;
+    schema:description "Definition for argillic alteration" ;
 .
 
-:carbonate-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for carbonate alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "CARBONATE ALTERATION" ;
-    skos:prefLabel "carbonate alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/calc-silicate-alteration>
+    rdfs:label "calc silicate alteration" ;
+    schema:description "Definition for calc silicate alteration" ;
 .
 
-:chlorite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for chlorite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "CHLORITE ALTERATION" ;
-    skos:prefLabel "chlorite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/carbonate-alteration>
+    rdfs:label "carbonate alteration" ;
+    schema:description "Definition for carbonate alteration" ;
 .
 
-:epidote-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for epidote alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "EPIDOTE ALTERATION" ;
-    skos:prefLabel "epidote alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/chlorite-alteration>
+    rdfs:label "chlorite alteration" ;
+    schema:description "Definition for chlorite alteration" ;
 .
 
-:goethite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for goethite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "GOETHITE ALTERATION" ;
-    skos:prefLabel "goethite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/epidote-alteration>
+    rdfs:label "epidote alteration" ;
+    schema:description "Definition for epidote alteration" ;
 .
 
-:greisenisation
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for greisenisation" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "GREISENISATION" ;
-    skos:prefLabel "greisenisation" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/goethite-alteration>
+    rdfs:label "goethite alteration" ;
+    schema:description "Definition for goethite alteration" ;
 .
 
-:hematite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for hematite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "HEMATITE ALTERATION" ;
-    skos:prefLabel "hematite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/greisenisation>
+    rdfs:label "greisenisation" ;
+    schema:description "Definition for greisenisation" ;
 .
 
-:hornblende-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for hornblende alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "HORNBLENDE ALTERATION" ;
-    skos:prefLabel "hornblende alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/hematite-alteration>
+    rdfs:label "hematite alteration" ;
+    schema:description "Definition for hematite alteration" ;
 .
 
-:hornfels
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for hornfels" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "HORNFELS" ;
-    skos:prefLabel "hornfels" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/hornblende-alteration>
+    rdfs:label "hornblende alteration" ;
+    schema:description "Definition for hornblende alteration" ;
 .
 
-:hydrothermal-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for hydrothermal alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "HYDROTHERMAL ALTERATION" ;
-    skos:prefLabel "hydrothermal alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/hornfels>
+    rdfs:label "hornfels" ;
+    schema:description "Definition for hornfels" ;
 .
 
-:jarositic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for jarositic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "JAROSITIC ALTERATION" ;
-    skos:prefLabel "jarositic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/hydrothermal-alteration>
+    rdfs:label "hydrothermal alteration" ;
+    schema:description "Definition for hydrothermal alteration" ;
 .
 
-:jasperoid-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for jasperoid alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "JASPEROID ALTERATION" ;
-    skos:prefLabel "jasperoid alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/jarositic-alteration>
+    rdfs:label "jarositic alteration" ;
+    schema:description "Definition for jarositic alteration" ;
 .
 
-:kaolinitic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for kaolinitic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "KAOLINITIC ALTERATION" ;
-    skos:prefLabel "kaolinitic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/jasperoid-alteration>
+    rdfs:label "jasperoid alteration" ;
+    schema:description "Definition for jasperoid alteration" ;
 .
 
-:leaching
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for leaching" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "LEACHING" ;
-    skos:prefLabel "leaching" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/kaolinitic-alteration>
+    rdfs:label "kaolinitic alteration" ;
+    schema:description "Definition for kaolinitic alteration" ;
 .
 
-:limonite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for limonite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "LIMONITE ALTERATION" ;
-    skos:prefLabel "limonite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/leaching>
+    rdfs:label "leaching" ;
+    schema:description "Definition for leaching" ;
 .
 
-:magnetite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for magnetite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "MAGNETITE ALTERATION" ;
-    skos:prefLabel "magnetite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/limonite-alteration>
+    rdfs:label "limonite alteration" ;
+    schema:description "Definition for limonite alteration" ;
 .
 
-:montmorillonite-smectite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for montmorillonite (smectite) alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "MONTMORILLONITE (SMECTITE) ALTERATION" ;
-    skos:prefLabel "montmorillonite (smectite) alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/magnetite-alteration>
+    rdfs:label "magnetite alteration" ;
+    schema:description "Definition for magnetite alteration" ;
 .
 
-:muscovite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for muscovite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "MUSCOVITE ALTERATION" ;
-    skos:prefLabel "muscovite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/montmorillonite-smectite-alteration>
+    rdfs:label "montmorillonite (smectite) alteration" ;
+    schema:description "Definition for montmorillonite (smectite) alteration" ;
 .
 
-:oxidation
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for oxidation" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "OXIDATION" ;
-    skos:prefLabel "oxidation" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/muscovite-alteration>
+    rdfs:label "muscovite alteration" ;
+    schema:description "Definition for muscovite alteration" ;
 .
 
-:palagonitised
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for palagonitised" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "PALAGONITISED" ;
-    skos:prefLabel "palagonitised" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/oxidation>
+    rdfs:label "oxidation" ;
+    schema:description "Definition for oxidation" ;
 .
 
-:phyllic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for phyllic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "PHYLLIC ALTERATION" ;
-    skos:prefLabel "phyllic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/palagonitised>
+    rdfs:label "palagonitised" ;
+    schema:description "Definition for palagonitised" ;
 .
 
-:potassic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for potassic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "POTASSIC ALTERATION" ;
-    skos:prefLabel "potassic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/phyllic-alteration>
+    rdfs:label "phyllic alteration" ;
+    schema:description "Definition for phyllic alteration" ;
 .
 
-:propyllitic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for propyllitic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "PROPYLLITIC ALTERATION" ;
-    skos:prefLabel "propyllitic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/potassic-alteration>
+    rdfs:label "potassic alteration" ;
+    schema:description "Definition for potassic alteration" ;
 .
 
-:pyritic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for pyritic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "PYRITIC ALTERATION" ;
-    skos:prefLabel "pyritic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/propyllitic-alteration>
+    rdfs:label "propyllitic alteration" ;
+    schema:description "Definition for propyllitic alteration" ;
 .
 
-:pyrophyllite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for pyrophyllite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "PYROPHYLLITE ALTERATION" ;
-    skos:prefLabel "pyrophyllite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/pyritic-alteration>
+    rdfs:label "pyritic alteration" ;
+    schema:description "Definition for pyritic alteration" ;
 .
 
-:saussurite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for saussurite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "SAUSSURITE ALTERATION" ;
-    skos:prefLabel "saussurite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/pyrophyllite-alteration>
+    rdfs:label "pyrophyllite alteration" ;
+    schema:description "Definition for pyrophyllite alteration" ;
 .
 
-:scapolitic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for scapolitic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "SCAPOLITIC ALTERATION" ;
-    skos:prefLabel "scapolitic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/saussurite-alteration>
+    rdfs:label "saussurite alteration" ;
+    schema:description "Definition for saussurite alteration" ;
 .
 
-:sericitic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for sericitic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "SERICITIC ALTERATION" ;
-    skos:prefLabel "sericitic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/scapolitic-alteration>
+    rdfs:label "scapolitic alteration" ;
+    schema:description "Definition for scapolitic alteration" ;
 .
 
-:serpentinised
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for serpentinised" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "SERPENTINISED" ;
-    skos:prefLabel "serpentinised" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/sericitic-alteration>
+    rdfs:label "sericitic alteration" ;
+    schema:description "Definition for sericitic alteration" ;
 .
 
-:silica-alteration-silicified
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for silica alteration/silicified" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "SILICA ALTERATION/SILICIFIED" ;
-    skos:prefLabel "silica alteration/silicified" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/serpentinised>
+    rdfs:label "serpentinised" ;
+    schema:description "Definition for serpentinised" ;
 .
 
-:skarn
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for skarn" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "SKARN" ;
-    skos:prefLabel "skarn" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/silica-alteration-silicified>
+    rdfs:label "silica alteration/silicified" ;
+    schema:description "Definition for silica alteration/silicified" ;
 .
 
-:sodic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for sodic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "SODIC ALTERATION" ;
-    skos:prefLabel "sodic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/skarn>
+    rdfs:label "skarn" ;
+    schema:description "Definition for skarn" ;
 .
 
-:sulphide-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for sulphide alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "SULPHIDE ALTERATION" ;
-    skos:prefLabel "sulphide alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/sodic-alteration>
+    rdfs:label "sodic alteration" ;
+    schema:description "Definition for sodic alteration" ;
 .
 
-:talc-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for talc alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "TALC ALTERATION" ;
-    skos:prefLabel "talc alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/sulphide-alteration>
+    rdfs:label "sulphide alteration" ;
+    schema:description "Definition for sulphide alteration" ;
 .
 
-:tourmaline-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for tourmaline alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "TOURMALINE ALTERATION" ;
-    skos:prefLabel "tourmaline alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/talc-alteration>
+    rdfs:label "talc alteration" ;
+    schema:description "Definition for talc alteration" ;
 .
 
-:tremolite-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for tremolite alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "TREMOLITE ALTERATION" ;
-    skos:prefLabel "tremolite alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/tourmaline-alteration>
+    rdfs:label "tourmaline alteration" ;
+    schema:description "Definition for tourmaline alteration" ;
 .
 
-:undefined-alteration-assemblage
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for undefined alteration assemblage" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "UNDEFINED ALTERATION ASSEMBLAGE" ;
-    skos:prefLabel "undefined alteration assemblage" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/tremolite-alteration>
+    rdfs:label "tremolite alteration" ;
+    schema:description "Definition for tremolite alteration" ;
 .
 
-:zeolitic-alteration
-    a skos:Concept ;
-    rdfs:isDefinedBy cs: ;
-    skos:definition "Definition for zeolitic alteration" ;
-    skos:historyNote "Taken from Geochem Excel exchange template v2" ;
-    skos:inScheme cs: ;
-    skos:notation "ZEOLITIC ALTERATION" ;
-    skos:prefLabel "zeolitic alteration" ;
-    skos:topConceptOf cs: ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/undefined-alteration-assemblage>
+    rdfs:label "undefined alteration assemblage" ;
+    schema:description "Definition for undefined alteration assemblage" ;
 .
 
-<https://linked.data.gov.au/org/gsq>
-    a sdo:Organization ;
-    sdo:name "Geological Survey of Queensland" ;
-    sdo:url "https://www.business.qld.gov.au/industries/mining-energy-water/resources/geoscience-information/gsq"^^xsd:anyURI ;
-.
-
-cs:
-    a skos:ConceptScheme ;
-    sdo:keywords <http://linked.data.gov.au/def/earth-science-data-category/geochemistry> ;
-    reg:status agldwgstatus:experimental ;
-    skos:definition "Alteration" ;
-    skos:hasTopConcept
-        :adularia-alteration ,
-        :albitic-alteration ,
-        :alunite-alteration ,
-        :anhydrite-alteration ,
-        :argillic-alteration ,
-        :calc-silicate-alteration ,
-        :carbonate-alteration ,
-        :chlorite-alteration ,
-        :epidote-alteration ,
-        :goethite-alteration ,
-        :greisenisation ,
-        :hematite-alteration ,
-        :hornblende-alteration ,
-        :hornfels ,
-        :hydrothermal-alteration ,
-        :jarositic-alteration ,
-        :jasperoid-alteration ,
-        :kaolinitic-alteration ,
-        :leaching ,
-        :limonite-alteration ,
-        :magnetite-alteration ,
-        :montmorillonite-smectite-alteration ,
-        :muscovite-alteration ,
-        :oxidation ,
-        :palagonitised ,
-        :phyllic-alteration ,
-        :potassic-alteration ,
-        :propyllitic-alteration ,
-        :pyritic-alteration ,
-        :pyrophyllite-alteration ,
-        :saussurite-alteration ,
-        :scapolitic-alteration ,
-        :sericitic-alteration ,
-        :serpentinised ,
-        :silica-alteration-silicified ,
-        :skarn ,
-        :sodic-alteration ,
-        :sulphide-alteration ,
-        :talc-alteration ,
-        :tourmaline-alteration ,
-        :tremolite-alteration ,
-        :undefined-alteration-assemblage ,
-        :zeolitic-alteration ;
-    skos:historyNote "Created from the Geochemistry data exchange Excel Template v2, list ALTERATION November 2023" ;
-    skos:notation "ALTERATION" ;
-    skos:prefLabel "Alteration" ;
-    sdo:copyrightNotice "(c) Geological Survey of Queensland, 2023" ;
-    sdo:creator <https://linked.data.gov.au/org/gsq> ;
-    dcterms:created "2023-11-11"^^xsd:date ;
-    dcterms:modified "2023-11-11"^^xsd:date ;
-    sdo:license <https://purl.org/NET/rdflicense/cc-by4.0> ;
-    sdo:publisher <https://linked.data.gov.au/org/gsq> ;
+<https://linked.data.gov.au/def/gsq-geochem/alteration/zeolitic-alteration>
+    rdfs:label "zeolitic alteration" ;
+    schema:description "Definition for zeolitic alteration" ;
 .
