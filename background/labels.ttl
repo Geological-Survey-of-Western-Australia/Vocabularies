@@ -153,7 +153,7 @@ owl:versionIRI
 
 owl:versionInfo
     schema:description "The annotation property that provides version information for an ontology or another OWL construct." ;
-    rdfs:label "versionInfo" ;
+    rdfs:label "version info" ;
 .
 
 skos:Collection

@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/borehole-geometry/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/borehole-geometry>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -15,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-azimuth
     a skos:Concept ;
-    dcterms:source "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
+    schema:citation "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "drift"@en ,
@@ -45,7 +44,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-dip
     a skos:Concept ;
-    dcterms:source "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
+    schema:citation "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Measured on a vertical plane, dip is the angle of a borehole defined by a tangent line at the point of measurement and the horizontal plane. In the minerals industry, vertical is commonly denoted as –90° and changes to 0° (horizontal). The sum of inclination and dip is 90°."@en ;
     skos:historyNote "Resources industry concept" ;
@@ -56,7 +55,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-downholesurvey
     a skos:Concept ;
-    dcterms:source "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
+    schema:citation "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "alignment survey"@en ,
@@ -92,7 +91,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-grid-azimuth
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/gridazimuth"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/gridazimuth"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The azimuth measured clockwise from the central meridian of a plane-rectangular coordinate system such as a local reference grid."@en ;
     skos:historyNote "Resources industry concept" ;
@@ -102,7 +101,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-inclination
     a skos:Concept ;
-    dcterms:source "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
+    schema:citation "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "deviation"@en ,
@@ -116,7 +115,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-kickoff-point
     a skos:Concept ;
-    dcterms:source "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
+    schema:citation "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "KOP"@en ,
@@ -131,7 +130,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-magnetic-azimuth
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/magneticazimuth"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/magneticazimuth"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The azimuth measured clockwise from magnetic north through to 360°. This parameter changes with time and thus needs to be qualified by a date."@en ;
     skos:historyNote "Resources industry concept" ;
@@ -141,7 +140,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-magnetic-declination
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://en.wikipedia.org/wiki/Magnetic_declination"^^xsd:anyURI ,
         "https://glossary.americangeosciences.org/term/magneticdeclination"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -155,7 +154,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-start-point
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/location"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/location"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "collar"@en ,
@@ -171,7 +170,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-totaldepth
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/totaldepth"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/totaldepth"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "EOH depth"@en ,
@@ -190,7 +189,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-true-azimuth
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/trueazimuth"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/trueazimuth"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The azimuth measured clockwise from true north (also called geodetic north or geographic north) through 360°."@en ;
     skos:historyNote "Resources industry concept" ;
@@ -200,7 +199,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :bh-vertical-section
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.pvisoftware.com/drilling-glossary/vertical-section.html"^^xsd:anyURI ,
         "https://www.drillingformulas.com/negative-vertical-section-mean/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -213,7 +212,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :dogleg-rate
     a skos:Concept ;
-    dcterms:source "https://glossary.slb.com/en/terms/d/dogleg"^^xsd:anyURI ;
+    schema:citation "https://glossary.slb.com/en/terms/d/dogleg"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "dogleg severity"@en ;
     skos:definition "A particularly crooked place in a borehole where the trajectory of the borehole in 3D space changes rapidly, either intentionally or unintentionally. In surveying borehole trajectories, a standard calculation of dogleg severity is made, usually expressed in 2D degrees per 30 metres of wellbore length."@en ;
@@ -244,7 +243,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :measured-depth
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "elevation%29%20using%20information%20commonly%20found%20on%20log%20headers."^^xsd:anyURI ,
         "https://wiki.aapg.org/Depth_and_thickness_conversion#:~:text=Measured%20depth%20%28MD%20measured%20depth%29%2C%20or%20drilled%20to"^^xsd:anyURI ,
         "https://www.rigworker.com/engineering-4/depth-references.html"^^xsd:anyURI ;
@@ -275,7 +274,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :reduced-level-depth
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.thirdistudio.com.au/HowToWorkOutReducedLevels.html"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Reduced_level"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -291,7 +290,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :true-vertical-depth
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "elevation%29%20using%20information%20commonly%20found%20on%20log%20headers."^^xsd:anyURI ,
         "https://wiki.aapg.org/Depth_and_thickness_conversion#:~:text=Measured%20depth%20%28MD%20measured%20depth%29%2C%20or%20drilled%20to"^^xsd:anyURI ,
         "https://www.rigworker.com/engineering-4/depth-references.html"^^xsd:anyURI ;
@@ -352,7 +351,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :tvd-subsea
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://help.dugeo.com/m/faq/l/167077-height-datums-and-abbreviations"^^xsd:anyURI ,
         "https://www.rigworker.com/engineering-4/depth-references.html"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -370,11 +369,10 @@ https://help.dugeo.com/m/faq/l/167077-height-datums-and-abbreviations""" ;
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-11-02"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "borehole-geometry"^^xsd:token ;
-    dcterms:modified "2023-11-02"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023-11-02"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateModified "2023-11-02"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status astatus:stable ;

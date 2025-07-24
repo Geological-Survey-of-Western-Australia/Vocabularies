@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/vertical-depth-reference-systems/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/vertical-depth-reference-systems>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -15,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :australian-height-datum-TAS83
     a skos:Concept ;
-    dcterms:source "https://www.icsm.gov.au/australian-height-datum"^^xsd:anyURI ;
+    schema:citation "https://www.icsm.gov.au/australian-height-datum"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "AHD"@en ,
@@ -29,7 +28,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :australian-vertical-working-surface
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://www.icsm.gov.au/australian-vertical-working-surface"^^xsd:anyURI ,
         "https://www.icsm.gov.au/publications/australian-vertical-working-surface-technical-implementation-plan-v16"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -43,7 +42,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :australian-height-datum
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://linked.data.gov.au/def/depth-reference/australian-height-datum"^^xsd:anyURI ,
         "https://www.ga.gov.au/scientific-topics/positioning-navigation/geodesy/datums-projections/australian-height-datum-ahd"^^xsd:anyURI ,
         "https://www.icsm.gov.au/australian-height-datum"^^xsd:anyURI ;
@@ -61,7 +60,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :islw
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://epsg.io/1085-datum"^^xsd:anyURI ,
         "https://glossary.ametsoc.org/wiki/Indian_spring_low_water"^^xsd:anyURI ,
         "https://www.hydro.gov.au/prodserv/data/tides/tidal-glossary.htm"^^xsd:anyURI ;
@@ -82,7 +81,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :islw-depth
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://epsg.io/5863"^^xsd:anyURI ,
         "https://www.hydro.gov.au/prodserv/data/tides/tidal-glossary.htm"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -98,7 +97,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :lat
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://epsg.io/1080-datum"^^xsd:anyURI ,
         "https://www.icsm.gov.au/education/tidal-interface-compendium-related-terms"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -116,7 +115,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :lat-depth
     a skos:Concept ;
-    dcterms:source "https://epsg.io/5861"^^xsd:anyURI ;
+    schema:citation "https://epsg.io/5861"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A depth measured relative to the Lowest Astronomical Tide (LAT) datum. Area of use: World."@en ;
     skos:historyNote "Defined in the official EPSG database maintained by OGP Geomatics Committee (http://www.epsg.org/, https://epsg.io/)" ;
@@ -129,7 +128,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :msl-depth
     a skos:Concept ;
-    dcterms:source "https://epsg.io/5715"^^xsd:anyURI ;
+    schema:citation "https://epsg.io/5715"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "below sea level"@en ,
@@ -145,7 +144,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :msl-height
     a skos:Concept ;
-    dcterms:source "https://epsg.io/5714"^^xsd:anyURI ;
+    schema:citation "https://epsg.io/5714"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "ASL"@en ,
@@ -167,7 +166,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :above-ground-level
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://dronelaunchacademy.com/the-difference-between-msl-and-agl/"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Height_above_ground_level"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -182,7 +181,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :depth-reference-systems-drilling
     a skos:Concept ;
-    dcterms:source "https://en.wikipedia.org/wiki/Depth_in_a_well"^^xsd:anyURI ;
+    schema:citation "https://en.wikipedia.org/wiki/Depth_in_a_well"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "In the resources industry,the depth of any point in a borehole/drillhole/well is the measurement of the distance between a reference point or elevation and that point. It is the most common method of reference for locations in a borehole. In the minerals industry, it usually refers to the distance from the drill collar. Inthe oil industry, 'depth' also refers to the location itself. By extension, depth can refer to locations below, or distances from, a reference point or elevation, even when there is no well. In that sense, depth is a concept related toelevation, albeit in the opposite direction. Depth in a borehole is not necessarily measured vertically or along a straight line. Because boreholes are not always drilled vertically, there may be two 'depths' for every given point in a borehole: themeasured depth(MD)measured along the path of theborehole, and thetrue vertical depth(TVD), the absolute vertical distance between thereference datumand the point in theborehole. In perfectly vertical holes, the TVD equals the MD; otherwise, the TVD is less than the MD measured from the same datum. Common references used are reduced level (RL), drill collar, ground level (GL),drilling rigfloor (DF),rotary table(RT),kelly bushing(KB or RKB) andmean sea level(MSL)."@en ;
     skos:historyNote "An umbrella term for resources industry concepts related to the reference points from which depth is measured in boreholes/wells." ;
@@ -211,7 +210,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :drill-collar
     a skos:Concept ;
-    dcterms:source "https://linked.data.gov.au/def/depth-reference/drill-collar"^^xsd:anyURI ;
+    schema:citation "https://linked.data.gov.au/def/depth-reference/drill-collar"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <https://linked.data.gov.au/def/depth-reference/drill-collar> ;
     skos:definition "In the mineral resources industry, 'drill collar' is referred to as the location (in an x, y, z coordinate system) as well as the start point of a borehole from which depths are measured. Drill collars are tubular pieces of material, usually metal or plastic, to aid in keeping the hole entry from collapsing."@en ;
@@ -222,7 +221,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :drill-floor
     a skos:Concept ;
-    dcterms:source "https://glossary.slb.com/en/terms/r/rig_floor"^^xsd:anyURI ;
+    schema:citation "https://glossary.slb.com/en/terms/r/rig_floor"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "BDF – Below rig derrick floor"@en ,
@@ -239,7 +238,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :ground-level
     a skos:Concept ;
-    dcterms:source "https://www.hopgoodganim.com.au/page/knowledge-centre/blog/ground-level-calculating-building-height"^^xsd:anyURI ;
+    schema:citation "https://www.hopgoodganim.com.au/page/knowledge-centre/blog/ground-level-calculating-building-height"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel
         "GL"@en ,
@@ -253,7 +252,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :kelly-bushing
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://linked.data.gov.au/def/depth-reference/kelly-bushing"^^xsd:anyURI ,
         "https://glossary.slb.com/en/terms/k/kelly_bushing"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -270,7 +269,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mean-sea-level
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.iho-ohi.net/S32/engView.php"^^xsd:anyURI ,
         "https://epsg.io/5100-datum"^^xsd:anyURI ,
         "https://gcmd.earthdata.nasa.gov/kms/concept/f3ea8884-87a8-4a12-96d5-98e21a9fa2c7"^^xsd:anyURI ,
@@ -291,7 +290,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :metres-sub-sea
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://linked.data.gov.au/def/depth-reference/metres-sub-sea"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Depth_in_a_well"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -305,7 +304,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :mudline
     a skos:Concept ;
-    dcterms:source "https://iadclexicon.org/mudline/"^^xsd:anyURI ;
+    schema:citation "https://iadclexicon.org/mudline/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "ML"@en ;
     skos:definition "Mudline as referenced in subsea operations refers to the seafloor or water bottom."@en ;
@@ -317,7 +316,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :precollar
     a skos:Concept ;
-    dcterms:source "https://develop.com.au/mining-glossary/"^^xsd:anyURI ;
+    schema:citation "https://develop.com.au/mining-glossary/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The point at depth where the pre-collar hole ends and the diamond tail (i.e. diamond drilling) starts, and from which the length/depth of the diamond core is referenced."@en ;
     skos:historyNote "Mineral industry concept" ;
@@ -327,7 +326,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :reduced-level
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "http://www.thirdistudio.com.au/HowToWorkOutReducedLevels.html"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Reduced_level"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -342,7 +341,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :rotary-table
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://linked.data.gov.au/def/depth-reference/rotary-table"^^xsd:anyURI ,
         "https://glossary.slb.com/en/terms/r/rotary_table"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -358,7 +357,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :seismic-reference-datum
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://linked.data.gov.au/def/depth-reference/seismic-reference-datum"^^xsd:anyURI ,
         "https://help.dugeo.com/m/faq/l/1022116-seismic-reference-datums"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -372,7 +371,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/depth-reference/well-head>
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://linked.data.gov.au/def/depth-reference/well-head"^^xsd:anyURI ,
         "http://www.oilfieldwiki.com/wiki/Wellhead"^^xsd:anyURI ,
         "https://en.wikipedia.org/wiki/Wellhead"^^xsd:anyURI ;
@@ -394,7 +393,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/def/depth-reference/water-bottom>
     a skos:Concept ;
-    dcterms:source "https://linked.data.gov.au/def/depth-reference/water-bottom"^^xsd:anyURI ;
+    schema:citation "https://linked.data.gov.au/def/depth-reference/water-bottom"^^xsd:anyURI ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/depth-reference> ;
     skos:altLabel
         "WB"@en ,
@@ -410,11 +409,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-09-06"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "vertical-depth-reference-systems"^^xsd:token ;
-    dcterms:modified "2023-09-06"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023-09-06"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateModified "2023-09-06"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status astatus:stable ;

@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/borehole-configuration/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/borehole-configuration>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -15,7 +14,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :directional
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ,
         "https://glossary.americangeosciences.org/term/directionaldrilling"^^xsd:anyURI ,
         "https://glossary.slb.com/en/terms/d/directional_well"^^xsd:anyURI ,
@@ -34,7 +33,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :extended-reach
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://glossary.slb.com/en/terms/e/extended-reach_drilling"^^xsd:anyURI ,
         "https://petrowiki.spe.org/Extended_reach_wells"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -46,7 +45,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :horizontal
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://glossary.slb.com/en/terms/h/horizontal_drilling"^^xsd:anyURI ,
         "https://petrowiki.spe.org/Horizontal_wells"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -96,7 +95,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :lateral
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/lateraldrill"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/lateraldrill"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <http://linked.data.gov.au/def/borehole-design/lateral> ;
     skos:definition "A borehole drilled with geosteering equipment with the intent of controlling the trajectory to drill laterally within a targeted stratigraphic interval or intervals. Usually, but not always, drilled close to horizontal and for relatively short distances."@en ;
@@ -107,7 +106,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :vertical
     a skos:Concept ;
-    dcterms:source "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
+    schema:citation "https://coringmagazine.com/article/directional-diamond-drilling-definitions-terms-simple-calculations/"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:closeMatch <http://linked.data.gov.au/def/borehole-design/vertical> ;
     skos:definition "A borehole drilled in a vertical downwards direction with the intent of maintaining a vertical trajectory. Deviations up to 2° from the vertical line are usually accepted as 'vertical’."@en ;
@@ -131,11 +130,10 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-09-01"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "borehole-configuration"^^xsd:token ;
-    dcterms:modified "2023-09-01"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023-09-01"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateModified "2023-09-01"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status astatus:stable ;

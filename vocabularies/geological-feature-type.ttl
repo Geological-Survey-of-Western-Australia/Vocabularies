@@ -2,7 +2,6 @@ PREFIX : <https://linked.data.gov.au/def/geological-feature-type/>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/geological-feature-type>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
@@ -37,7 +36,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :georesources
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/resources"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/resources"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Concentrations of naturally occurring solid, gas, and liquid geological materials within the earth’s crust (both on and below the surface) that occur in sufficient masses or volumes to have existing or potential economic and societal value. These resources include, but are not limited to, rock, metal and non-metal mineral resources, oil, natural gas, and geothermal energy resources; and environmental resources (water and soil)."@en ;
     skos:historyNote "Definition compiled from American Geosciences Institute Glossary of Geology (5th edition)." ;
@@ -48,7 +47,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :landform-feature
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/landform"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/landform"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "Any physical, recognizable form and feature of the Earth's surface having a characteristic shape and produced by natural causes. It includes major forms such as plain, plateau and mountain, and minor forms such as hill, valley, slope, esker and dune. Taken together, the landforms make up the surface configuration of the Earth."@en ;
     skos:historyNote "Definition compiled from American Geosciences Institute Glossary of Geology (5th edition)." ;
@@ -59,7 +58,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :lithotectonic-unit
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/lithotectonicunit"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/lithotectonicunit"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "An assemblage of rocks that is unified on the basis  of structural or deformational features, mutual relations, origin or historical evolution. It may be igneous, sedimentary, metamorphic or mixed."@en ;
     skos:historyNote "American Geosciences Institute Glossary of Geology (5th edition)." ;
@@ -69,7 +68,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :lithstrat-unit
     a skos:Concept ;
-    dcterms:source "https://glossary.americangeosciences.org/term/lithostratigraphicunit"^^xsd:anyURI ;
+    schema:citation "https://glossary.americangeosciences.org/term/lithostratigraphicunit"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "A named body of rock (sedimentary, igneous, metamorphic or mixed), that is defined and characterized on the basis of its observable and distinctive lithological properties or combination of lithological properties and stratigraphic/field relations. It represents the basic unit of geological mapping and includes formally defined stratigraphic and lithodemic units (cf Australian Stratigraphic Units Database, www.ga.gov.au/data-pubs/datastandards/stratigraphic-units) as well as lithotectonic units defined solely on the basis of lithologic properties and inclusion within a tectonic unit."@en ;
     skos:historyNote "One of the foundation elements in GSWA's Explanatory Notes System, used to define the geological framework of an area. Definition adapted from American Geosciences Institute Glossary of Geology (5th edition)." ;
@@ -83,7 +82,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 :metallogenic-province
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://en.wikipedia.org/wiki/Metallogeny"^^xsd:anyURI ,
         "https://glossary.americangeosciences.org/term/metallogenicprovince"^^xsd:anyURI ,
         "https://pubs.geoscienceworld.org/segweb/economicgeology/article/60/8/1620/17535/Typical-features-of-metallogenic-provinces"^^xsd:anyURI ,
@@ -109,7 +108,7 @@ Wyborn, LAI, Heinrich, CA and Jaques, AL 1994, Australian Proterozoic mineral sy
 
 :petroleum-supersystem
     a skos:Concept ;
-    dcterms:source "https://www.publish.csiro.au/AJ/fulltext/AJ21018"^^xsd:anyURI ;
+    schema:citation "https://www.publish.csiro.au/AJ/fulltext/AJ21018"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
     skos:definition "The petroleum supersystem concept, introduced by Bradshaw (1993), is a methodology to understand hydrocarbon occurrences throughout Australia at a continental-scale. The petroleum supersystem links sedimentary packages of similar age, structural history, depositional environment and hydrocarbon potential, both within and between basins. Thus, the petroleum supersystems approach can potentially be a powerful exploration tool for predicting the petroleum systems elements in frontier basins with limited datasets (Bradshaw et al 1994)."@en ;
     skos:historyNote "Bradshaw MT, 1993. Australian petroleum systems. The PESA Journal 21, 43–53." ;
@@ -140,7 +139,7 @@ Wyborn, LAI, Heinrich, CA and Jaques, AL 1994, Australian Proterozoic mineral sy
 
 :structural-feature
     a skos:Concept ;
-    dcterms:source
+    schema:citation
         "https://glossary.americangeosciences.org/term/structuralfeature"^^xsd:anyURI ,
         "https://www.britannica.com/science/geology/Structural-geology"^^xsd:anyURI ;
     rdfs:isDefinedBy cs: ;
@@ -174,11 +173,10 @@ Wyborn, LAI, Heinrich, CA and Jaques, AL 1994, Australian Proterozoic mineral sy
 
 cs:
     a skos:ConceptScheme ;
-    dcterms:created "2023-09-06"^^xsd:date ;
-    dcterms:creator <https://linked.data.gov.au/org/gswa> ;
-    dcterms:identifier "geological-feature-type"^^xsd:token ;
-    dcterms:modified "2023-09-06"^^xsd:date ;
-    dcterms:publisher <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2023-09-06"^^xsd:date ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateModified "2023-09-06"^^xsd:date ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     owl:versionIRI :1 ;
     owl:versionInfo "1" ;
     reg:status astatus:stable ;
