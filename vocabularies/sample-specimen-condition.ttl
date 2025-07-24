@@ -1,4 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/sample-condition/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/sample-condition>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
@@ -678,7 +679,7 @@ PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 
 cs:
     a skos:ConceptScheme ;
-    reg:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
+    reg:status astatus:stable ;
     owl:versionIRI :1 ;
     skos:definition "List of terms describing the condition, completeness and risk/hazard profile of individual samples/specimens, including any specific requirements needed for the preservation of the object."@en ;
     skos:hasTopConcept

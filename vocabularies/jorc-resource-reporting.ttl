@@ -1,4 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/JORC-Code/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cs: <https://linked.data.gov.au/def/JORC-Code>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
@@ -199,7 +200,7 @@ PREFIX theme: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 cs:
     a skos:ConceptScheme ;
     owl:versionIRI :1.1 ;
-    reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
+    reg:status astatus:accepted ;
     skos:definition "The Australasian Code for Reporting of Exploration Results, Mineral Resources and Ore Reserves ('the JORC Code') is a professional code of practice that sets mandatory, minimum standards for Public Reporting of minerals Exploration Results, Mineral Resources and Ore Reserves, according to the levels of confidence in geological knowledge and technical and economic considerations. The JORC Code is prepared by the Joint Ore Reserves Committee of the Australasian Institute of Mining and Metallurgy, the Australian Institute of Geoscientists and the Minerals Council of Australia as in force from time to time (JORC; https://jorc.org/) and was last updated in 2012 (https://jorc.org/docs/JORC_code_2012.pdf). The JORC Committee was established in 1971, and is sponsored by the Australian mining industry and its professional organisations. The JORC Committee is a member of CRIRSCO, the Committee for Mineral Reserves International Reporting Standards (CRIRSCO; https://www.crirsco.com/)."@en ;
     skos:hasTopConcept
         :Competent-Person ,

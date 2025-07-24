@@ -1,4 +1,5 @@
 PREFIX : <https://linked.data.gov.au/def/borehole-drilling-method-western-australia/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX cgibdm: <http://resource.geosciml.org/classifier/cgi/boreholedrillingmethod/>
 PREFIX cs: <https://linked.data.gov.au/def/borehole-drilling-method-western-australia>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -561,7 +562,7 @@ cgibdm:window_sampler
 
 cs:
     a skos:ConceptScheme ;
-    reg:status <https://linked.data.gov.au/def/reg-statuses/accepted> ;
+    reg:status astatus:accepted ;
     owl:versionIRI :1 ;
     skos:definition "A list of drilling methods routinely used by the mineral and energy resource industries. The drilling methods are grouped into three main categories based on the dominant motion of the drillstem (i.e. the string of pipe that transmits power from the surface down to the drillbit) and drillbit (the part of the bottom-hole assembly that cuts, grinds or breaks the bottom-hole formation to make the hole). Specifically, the presence/absence of rotation in either or both is used as the main distinguishing factor, hence the main grouping into rotary, non-rotary and hybrid. Most drilling used by the mineral and energy resource industries falls into the rotary drilling category. Note that alternative classification schemes can use parameters such as the hole-making method in combination with the hole-clearing and stabilizing method and/or the type of sample produced (e.g. core versus chips). These methods can cross over between the main categories used here; for example, percussion drilling can be used in conjunction with rotary, non-rotary and hybrid methods and the term is not always qualified in company reports. In addition, many drilling rigs are multipurpose and hence can use a combination of drilling methods, including in the same borehole; for example, reverse circulation drilling can be followed by diamond drilling — however, these are both rotary drilling methods. Definitions are compiled from a variety of sources, including the Australian Drilling Industry Association's Drilling Manual (2018, Sixth edition), existing published vocabularies, drilling company webpages, Wikipedia, and a variety reports/publications."@en ;
     skos:hasTopConcept
