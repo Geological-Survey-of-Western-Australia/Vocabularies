@@ -1,6 +1,6 @@
 # GSWA Vocabularies
 
-Vocab Converter link: <https://tools.dev.kurrawong.ai/vocexcel>
+Vocab Converter link: <https://tools.kurrawong.ai/tools/vocexcel>
 ...
 
 ## Introduction
