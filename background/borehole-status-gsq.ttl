@@ -1,0 +1,307 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+<http://linked.data.gov.au/def/borehole-status>
+    rdfs:label "Borehole Status"@en ;
+    schema:description "The current state of a borehole within its lifecycle from proposed through operational through to abandoned. Borehole status also applies to wells or boreholes comprised of multiple wellbores."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/abandoned>
+    rdfs:label "Abandoned"@en ;
+    schema:description "All operations and activities are terminated. The operator has left the site with no intention of returning to the borehole/well. The borehole/well is not necessarily plugged, and its site may not have been properly rehabilitated/remediated (e.g., may include boreholes drilled prior to mandatory rehabilitation legislation coming into effect)."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/abandoned-bogged>
+    rdfs:label "Abandoned-Bogged"@en ;
+    schema:description "Nil provided by NT"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/abandoned-caving-broken-ground>
+    rdfs:label "Abandoned-Caving/Broken Ground"@en ;
+    schema:description "Nil provided by NT."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/abandoned-mechanical-reason>
+    rdfs:label "Abandoned—Mechanical Reason"@en ;
+    schema:description "The label is self-explanatory."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/abandoned-no-recovery>
+    rdfs:label "Abandoned—No Recovery"@en ;
+    schema:description "Nil provided by NT."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/abandoned-too-deep>
+    rdfs:label "Abandoned—Too Deep"@en ;
+    schema:description "Nil provided by NT."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/abandoned-too-hard>
+    rdfs:label "Abandoned—Too Hard"@en ;
+    schema:description "Nil provided by NT."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/abandoned-water-table>
+    rdfs:label "Abandoned—Water Table"@en ;
+    schema:description "Nil provided by NT."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/application>
+    rdfs:label "Application"@en ;
+    schema:description "A borehole/well for which an application for activity (including a well-operations-management plan) has been submitted to, and is pending assessment and outcome by, the relevant authority."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/approved>
+    rdfs:label "Approved"@en ;
+    schema:description "Drilling/spudding of a borehole/well has not yet commenced, but has been approved by the relevant authorities, whether within a resource company, a government regulatory agency (e.g., as part of government-supported exploration drilling initiatives or for research purposes), indigenous representative groups, a research organisation, or as part of geotechnical investigations and/or infrastructure programs."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/backfilled>
+    rdfs:label "Backfilled"@en ;
+    schema:description "Borehole has been backfilled from the surface (Larkin & Green, 2014)."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/capped>
+    rdfs:label "Capped"@en ;
+    schema:description "A borehole where a cap (usually a PVC cap secured with a screw) or a plug have been put temporarily in place during interim rehabilitation or to allow for the possibility of re-entering the hole (e.g., during a pause in operations and/or maintenance), e.g., to prevent fauna from falling into the hole. A permanent rehabilitation should follow at the completion of the operations."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/cased-and-abandoned>
+    rdfs:label "Cased and Abandoned"@en ;
+    schema:description "An abandoned borehole/well that has been cased. Boreholes with poor integrity, such as corroded casing, have the potential to provide a pathway for gases and/or liquids to migrate into or between aquifers or to the surface. [e.g., IESC, 2014]"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/cased-and-suspended>
+    rdfs:label "Cased and Suspended"@en ;
+    schema:description "A well in which casing has been installed, but is suspended and inactive pending installation of completion, monitoring or other equipment."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/casing-removed>
+    rdfs:label "Casing Removed"@en ;
+    schema:description "All casing has been removed from the borehole. Part of the post-operational phase of abandonment"@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/cemented>
+    rdfs:label "Cemented"@en ;
+    schema:description "Borehole has been cemented. Part of the process of post-operational phase of abandonment."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/completed-blade-refusal>
+    rdfs:label "Completed—Blade Refusal"@en ;
+    schema:description " Drilling was completed/terminated because of blade/drilling-bit refusal (e.g., when wear and tear on the drill bits exceeds the productive rate of borehole advancement, when the refusal depth is assessed as being the founding depth for pile foundation, etc., varying with bit types and rock properties (Look et al., 2014)."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/completed-failed-to-reach-bedrock>
+    rdfs:label "Completed—Failed to Reach Bedrock"@en ;
+    schema:description "Label is self-explanatory."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/decommissioned>
+    rdfs:label "Decommissioned"@en ;
+    schema:description "The status applied to a borehole/well (per the relevant jurisdictional requirements pertaining to applicable legislation, regulations, guidelines, etc.) following completion and jurisdictional verification/acceptance of final decommissioning activities) when the borehole/well: (1) has been permanently shut down and permanently plugged/sealed (as its purpose and use have been permanently discontinued); and (2) has undergone full rehabilitation/remediation of its site (above and below ground, or on the seabed and in its ‘subsoil’) and any associated surface or seabed disturbance, in a safe, environmentally-responsible, and timely manner; this includes the process of finally decommissioning/removing any waste products and all surface infrastructure and other property (unless otherwise approved: e.g., a wellhead approved to remain in situ or where an approved alternative decommissioning approach delivers equal or better outcomes compared to complete removal) [IESC, 2014; PAGIQ, 2019; NOPSEMA, 2021; NOPTA, 2022]."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/drilling-completed>
+    rdfs:label "Drilling Completed"@en ;
+    schema:description "Drilling is completed. Production infrastructure may be installed (petroleum wells). Note that the CoalLog 'completed' status (Larkin & Green, 2021) is similar to 'permanently abandoned and rehabilitated' in this vocabulary."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/drilling-in-progress>
+    rdfs:label "Drilling In Progress"@en ;
+    schema:description "The status of a borehole when it is being constructed, from its spud date to its rig release date [after QLD for ‘construction’ (= altLabel ‘Drilling’); similar to ‘drilling’ (GSWA Borehole Status, April 2023), but until the borehole has reached its intended target/depth zone. Also, (1) cf. Geoscience Australia (2021) for ‘in progress’: ‘The status of a borehole commencing from the rig being moved onsite to the time that drilling operations are completed’, likened by GA to PPDM's (2014) ‘drilling’ term, now equivalent to PPDM’s (2020) ‘constructing’ facet value; and (2) cf. NZ for ‘active’: A well is considered active from the commencement of drilling through to the well being completed and capable of fulfilling its intended purpose]. "@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/drilling-suspended>
+    rdfs:label "Drilling Temporarily Suspended"@en ;
+    schema:description "Drilling operations have been temporarily suspended (e.g., for weather, maintenance, or other reasons)."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/equipment-in-borehole>
+    rdfs:label "Equipment in Borehole"@en ;
+    schema:description "Equipment has been left in the borehole — the nature of the equipment and the depth should be recorded."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/failed-to-reach-target>
+    rdfs:label "Failed to Reach Geo Target"@en ;
+    schema:description "Label is self-explanatory."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/hazard-in-borehole>
+    rdfs:label "Hazard in Borehole"@en ;
+    schema:description "An object has been left in the borehole which may need to be avoided, mitigated or removed prior to mining."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/injecting>
+    rdfs:label "Injecting"@en ;
+    schema:description "The status of a borehole during which liquids or gas are being pumped into a reservoir. The purpose of this activity may be to enhance production of petroleum, provide for storage of petroleum, provide for storage of gas such as hydrogen, provide for storage/disposal of treated waste liquids or gas, such as carbon dioxide, recharge aquifers, tap geothermal energy, or assist environmental remediation for the clean-up of contaminated groundwater. Boreholes/wells are specifically designed/drilled for this purpose, although a production well can be converted into an injection well and vice versa."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/injecting-gas>
+    rdfs:label "Injecting Gas"@en ;
+    schema:description "A reservoir maintenance or secondary recovery method that uses injected gas to supplement the pressure in an oil reservoir or field."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/injecting-water>
+    rdfs:label "Injecting Water"@en ;
+    schema:description "Waterflooding or water injection is where water is injected into the oil reservoir, to maintain pressure (also known as voidage replacement) or to drive oil towards the wells, and thereby increase production. Water-injection wells are common offshore, where filtered and treated seawater is injected into a lower water-bearing section of the reservoir. "@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/monitoring>
+    rdfs:label "Monitoring/Observation"@en ;
+    schema:description "A borehole/well that is actively monitoring reservoir, aquifer or other geological parameters (e.g., water level, water quality, fluid pressure), providing the basis for observations and investigations."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/not-approved>
+    rdfs:label "Not Approved"@en ;
+    schema:description "A application was submitted to drill a borehole, but was not approved, encompassing outright dismissal or requiring amendment."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/not-drilled>
+    rdfs:label "Not Drilled"@en ;
+    schema:description "A borehole that was proposed in concept or approved on application, but was never drilled. This does not include the circumstance where the status is unknown."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/not-operational>
+    rdfs:label "Not Operational"@en ;
+    schema:description "A well that is not operating nor permanently abandoned. Such a well is either shut-in or suspended; it is not in the post-operational/abandonment phase of its lifecycle. A well that is no longer operating but is not fully decommissioned has one of 3 (three) statuses: Shut-in, Plugged, Suspended [OPGGS (RMA) Regs. 5.03A, 2023 ; OGUK (OEUK) WLCIG Issue 4]."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/not-producing-gas>
+    rdfs:label "Not Producing CSG"@en ;
+    schema:description "Coal seam gas wells not producing gas."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/operational>
+    rdfs:label "Operational"@en ;
+    schema:description "Borehole is being drilled or is producing, injecting or monitoring (investigating, observational)."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/operational-not-producing>
+    rdfs:label "Operational Not Producing"@en ;
+    schema:description "A borehole that is an active part of a project or operation that typically contributes to production, but is not currently doing so, such as a well that is undergoing routine maintenance."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/permanently-abandoned>
+    rdfs:label "Permanently Abandoned and Rehabilitated"@en ;
+    schema:description "An abandoned borehole/well that has been permanently plugged/sealed and thus permanently closed. The extent of seal may vary from just plugged near the surface (e.g., many coal boreholes) to plugged to prevent the migration of oil, gas, water or other substance from one stratum to another (PPDM definition, cited by Geoscience Australia, 2021). The surface infrastructure has been removed unless it has been approved to be left in situ (e.g., a well head) and the borehole/well site has been fully remediated/rehabilitated. This status is assigned by the regulatory authority when the permanent sealing and rehabilitation/remediation criteria have been met. A ‘permanently abandoned and rehabilitated’ borehole/well may be designated subsequently by the regulator as being ‘decommissioned’, thus changing its status to this term."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/permanently-sealed-csg>
+    rdfs:label "Permanently Sealed CSG Well"@en ;
+    schema:description "Coal seam gas well that has been permanently sealed."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/plugged>
+    rdfs:label "Plugged"@en ;
+    schema:description "The borehole has been permanently filled or sealed. The extent of seal may vary from just plugged near the surface (e.g., many coal boreholes) to plugged in order to prevent the migration of oil, gas, water or other substance from one stratum to another."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/plugged-and-backfilled>
+    rdfs:label "Plugged and Backfilled"@en ;
+    schema:description "A borehole that has been securely plugged below ground, with the remaining void backfilled to the surface with low permeability material, and with a mound of low permeability material (approximately 250 mm high by 800 mm wide and up to 2 m for large diameter drillholes) covered with topsoil, to facilitate water shedding away from the drillhole and prevent subsidence."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/post-operational>
+    rdfs:label "Post-Operational"@en ;
+    schema:description "The borehole/well is in the post-operational phase/stage of its lifecycle where it is incapable of performing any role."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/prematurely-terminated-mineral>
+    rdfs:label "Prematurely Terminated Mineral"@en ;
+    schema:description "All borehole operations and activities are prematurely terminated due to unforeseen circumstances, e.g., surface-ground failure or borehole collapse (with or without equipment being stuck in the borehole), bad weather, etc. The borehole should undergo necessary rehabilitation [After GSWA Borehole Status Vocabulary (April, 2023) for ‘abandoned – mineral’ borehole; and NT for ‘Terminated — Bad Weather]."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing>
+    rdfs:label "Producing"@en ;
+    schema:description "The status of a borehole during which liquids (including groundwater), gas (both conventional and unconventional), or geothermal energy are being extracted from the borehole."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing-and-injecting>
+    rdfs:label "Producing and Injecting"@en ;
+    schema:description "The status of a borehole that alternately produces and injects liquid or gas into a borehole."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing-csg>
+    rdfs:label "Producing CSG"@en ;
+    schema:description "Coal seam gas well producing gas."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing-gas>
+    rdfs:label "Producing Conventional Gas"@en ;
+    schema:description "Petroleum well producing gas."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing-geothermal-energy>
+    rdfs:label "Producing Geothermal Energy"@en ;
+    schema:description "Borehole/well from which geothermal energy is being extracted."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing-oil>
+    rdfs:label "Producing Oil"@en ;
+    schema:description "Petroleum well producing oil."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing-shale-gas>
+    rdfs:label "Producing Shale Gas"@en ;
+    schema:description "Borehole/well producing shale gas."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing-tight-gas>
+    rdfs:label "Producing Tight Gas"@en ;
+    schema:description "Borehole/well producing tight gas."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/producing-water>
+    rdfs:label "Producing Water"@en ;
+    schema:description "A borehole/well that is producing water, including a borehole/well that has been converted for use as a water bore and is functional (producing water)."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/proposed>
+    rdfs:label "Proposed"@en ;
+    schema:description "A (pre-application) concept/intention or application exists to drill a borehole/well, but drilling has not yet been approved/assessed by the relevant authority."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/reaming>
+    rdfs:label "Reaming"@en ;
+    schema:description "The process of enlarging a borehole, for example, when: a drilling bit has worn down from its original size; or lithological plastic flow into the wellbore requires the reinstatement of the original hole size."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/shut-in>
+    rdfs:label "Shut In"@en ;
+    schema:description "A borehole/well with one or more valves temporarily/briefly closed in the direction of flow, closing or partially closing a producing well/borehole, e.g., for a few days for reservoir management."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/suspended>
+    rdfs:label "Operations Suspended"@en ;
+    schema:description "Borehole/well operations have been halted, with the surface equipment remaining in place and with one or more qualified barriers installed/injected, specifically either on a ‘temporary or permanent’ basis, to prevent the leakage of fluids. The borehole/well is not shut-in (one or more valves being temporarily closed in the direction of flow), the distinction between ‘suspended’ and ‘shut-in’ being critical to NOPSEMA. Included (in this vocabulary) under ‘operations suspended’ is the concept of a ‘workover’: The process of performing major maintenance or remedial treatments on an oil or gas well."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/technically-abandoned>
+    rdfs:label "Technically Abandoned"@en ;
+    schema:description "A borehole/well in which all penetrated zones with flow potential have been permanently isolated from surface and from lower pressured zones. Wellhead/conductor has been removed unless approved to leave in situ. Well has not yet been accepted by the regulatory authority (e.g., NOPSEMA, state regulators for CSG wells, etc.) as abandoned. The borehole/well at this stage in its life cycle is effectively ‘permanently suspended’."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/unknown>
+    rdfs:label "Unknown"@en ;
+    schema:description "The drilling status of the borehole is unknown."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/unrehabilitated>
+    rdfs:label "Unrehabilated"@en ;
+    schema:description "A borehole that has not been rehabilitated. Typically includes boreholes drilled prior to mandatory rehabilitation legislation coming into effect."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/wellhead-in-situ>
+    rdfs:label "Permanently Abandoned Wellhead In Situ"@en ;
+    schema:description "Borehole/well has been abandoned and the wellhead has not been retrieved and is left in situ, approved by the jurisdictional authority (e.g., NOPSEMA, under the attendant Environmental Plan/EP)."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/wellhead-retrieved>
+    rdfs:label "Permanently Abandoned Wellhead Retrieved"@en ;
+    schema:description "Borehole/well has been abandoned and the wellhead has been retrieved. It has been accepted by the jurisdictional authority (e.g., NOPSEMA) as being abandoned."@en ;
+.
+
+<http://linked.data.gov.au/def/borehole-status/workover>
+    rdfs:label "Workover"@en ;
+    schema:description "Activities relating to petroleum production wells, etc., for example: logging activities, recompletion, testing, repairs and maintenance. Includes the process of performing major maintenance or remedial treatments on an oil or gas well."@en ;
+.
