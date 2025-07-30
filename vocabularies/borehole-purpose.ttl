@@ -5,7 +5,7 @@ PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX prov: <http://www.w3.org/ns/prov#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
@@ -100,7 +100,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:isDefinedBy cs: ;
     skos:broadMatch <http://inspire.ec.europa.eu/codelist/BoreholePurposeValue/dewatering> ;
     skos:broader :hydrogeology-mining ;
-    skos:definition "A borehole drilled and cased to enable the removal of groundwater from a mine. Mine dewatering is critical when a mine extends below the water table and groundwater does, due to gravity, infiltrate the mine workings."@en ;
+    skos:definition "A borehole drilled and cased to enable the removal of groundwater from a mine. Mine dewatering is critical when a mine extends below the water table and groundwater does, due to gravity, infiltrate the mine workings."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "dewatering (mining)"@en ;
     schema:citation "https://en.wikipedia.org/wiki/Mine_dewatering"^^xsd:anyURI ;
@@ -397,7 +397,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:broader :service-fluid-energy ;
-    skos:definition "In the petroleum and geothermal industries, a relief well is drilled to intersect and remedy a geothermal well where control has been or may be lost (e.g. blowout)."@en ;
+    skos:definition "In the petroleum and geothermal industries, a relief well is drilled to intersect and remedy a geothermal well where control has been or may be lost (e.g. blowout)."@en ;
     skos:historyNote "Compiled in collaboration with the Australian Geothermal Association." ;
     skos:inScheme cs: ;
     skos:prefLabel "relief (fluid energy)"@en ;
@@ -567,6 +567,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:definition "The specific purpose for the drilling is unknown (or was not recorded)."@en ;
     skos:exactMatch <https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose/unknown> ;
     skos:inScheme cs: ;
+    skos:historyNote "Added by GSWA to cater for all boreholes with purpose unknown" ;
     skos:prefLabel "unknown"@en ;
     skos:topConceptOf cs: ;
 .
@@ -940,12 +941,12 @@ cs:
         :storage ,
         :unknown ;
     skos:historyNote """Definitions in this vocabulary were compiled from authoritative sources and/or adapted from related vocabularies:
-1) The Drilling Manual, Sixth Edition, 2020,  Australian Drilling Industry Association (ADIA)
+1) The Drilling Manual, Sixth Edition, 2020,  Australian Drilling Industry Association (ADIA)
 2) Australian Drilling Manual 1995, Australian Drilling Industry Training Committee Limited
-3) European Commission (Europa) INSPIRE registry - Borehole Purpose (http://inspire.ec.europa.eu/codelist/BoreholePurposeValue)
-4) Geological Survey of Queensland (GSQ) - Borehole Purpose (http://linked.data.gov.au/def/borehole-purpose) and Borehole Sub-Purpose (http://linked.data.gov.au/def/borehole-sub-purpose)
-5) Geoscience Australia (GA) - Borehole Geology - Purpose (https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose)
-6) PPDM Association - (https://ppdm.org/ppdm/PPDM/resources/Technical_Publications/PPDM/Technical_Publications.aspx)
+3) European Commission (Europa) INSPIRE registry - Borehole Purpose (http://inspire.ec.europa.eu/codelist/BoreholePurposeValue)
+4) Geological Survey of Queensland (GSQ) - Borehole Purpose (http://linked.data.gov.au/def/borehole-purpose) and Borehole Sub-Purpose (http://linked.data.gov.au/def/borehole-sub-purpose)
+5) Geoscience Australia (GA) - Borehole Geology - Purpose (https://pid.geoscience.gov.au/def/voc/ga/BoreholePurpose)
+6) PPDM Association - (https://ppdm.org/ppdm/PPDM/resources/Technical_Publications/PPDM/Technical_Publications.aspx)
 7) Mining Proposal Guidance v 4.0, January 2023, Department of Energy, Mines, Industry Regulation and Safety (DEMIRS)
 8) Western Australian water in mining guideline, 2013, Department of Water.
 9) Minimum Construction Requirements for Water Bores in Australia, 2020, National Uniform Drillers Licensing Committee

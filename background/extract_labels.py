@@ -1,6 +1,6 @@
 from rdflib import Graph
 
-g = Graph().parse("alteration.ttl")
+g = Graph().parse("borehole-status-gsq.ttl")
 q = """
     PREFIX schema: <https://schema.org/>
     PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -25,4 +25,4 @@ q = """
     """
 
 r = g.query(q)
-r.serialize(format="longturtle", destination="alteration.2.ttl")
+r.serialize(format="longturtle", destination="borehole-status-gsq.2.ttl")
