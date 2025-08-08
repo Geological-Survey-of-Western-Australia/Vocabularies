@@ -1,0 +1,360 @@
+PREFIX : <https://linked.data.gov.au/def/sample-data-quality-management/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/sample-data-quality-management>
+PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/gswa/vocabularies> {
+  :analytical-blank
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "laboratory blank"@en ,
+          "method blank"@en ,
+          "total analytical blank"@en ;
+      skos:closeMatch <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/specimenBlank> ;
+      skos:definition "Analytical blanks are blanks that are processed side-by-side with samples in order to reveal background levels and possible contamination for the entire laboratory process. If analytical blanks are sufficiently below the concentrations measured in samples, the technique is a good fit for the study. If they reveal a significant contribution to one or more component(s) being analysed, then troubleshooting may be necessary."@en ;
+      skos:historyNote "Definition from Geboy and Engle (2011)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "analytical blank"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://pubs.usgs.gov/of/2011/1187/pdf/ofr2011-1187.pdf"^^xsd:anyURI ;
+  .
+  
+  :barren-wash
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "Coarse 'barren' or 'blank' aggregate material (often quartz) used to scour any remaining sample residue out of crushing/pulverisation equipment prior to the next sample being pulverised. This practice is frequently used in exploration and mining projects immediately after highly mineralised samples to minimise contamination of the next sample in the analytical sequence. This wash material may be discarded or analysed to examine whether the equipment is otherwise being adequately cleaned between samples."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "barren wash"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :blank
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "laboratory blank"@en ,
+          "quartz blank"@en ;
+      skos:definition "In whole rock or regolith geochemical analysis, blank (informal) typically refers to material that has been analysed many times and is known to contain concentrations below (or very close to) the lower analytical detection limit of elements of interest, e.g. high-purity quartz (SiO₂)."@en ;
+      skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/qaqc/blank> ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "blank"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :blind-reference-material
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :reference-material ;
+      skos:definition "A reference material submitted by the laboratory customer in a form that is indistinguishable from their samples of unknown compositions, so that the analyst is unaware that it is a reference material and thus allowing the customer to independently assess the accuracy of the analytical results."@en ;
+      skos:historyNote "Definition from Geboy and Engle (2011)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "blind reference material"@en ;
+      schema:citation "https://pubs.usgs.gov/of/2011/1187/pdf/ofr2011-1187.pdf"^^xsd:anyURI ;
+  .
+  
+  :calibration-reference-material
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "calibration standard"@en ;
+      skos:broader :reference-material ;
+      skos:definition "A reference material analysed by the laboratory, along with samples of unknown compositions, to allow the laboratory to calibrate their analytical equipment or software. Calibration reference materials can also be used to monitor the accuracy of results and to allow calibration, normalisation and/or correction of unknown results within individual and across multiple analytical sessions. Calibration reference materials should be verified by an official source."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "calibration reference material"@en ;
+  .
+  
+  :certified-reference-material
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "CRM"@en ,
+          "SRM"@en ,
+          "control samples"@en ,
+          "standard reference materials"@en ,
+          "standards"@en ;
+      skos:broadMatch <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/standardReferenceMaterial> ;
+      skos:broader :reference-material ;
+      skos:definition "A certified reference material (CRM) is a sample material that has been prepared, typically in commercial volumes, and characterised by analysis across multiple laboratories (sometimes called 'round-robin certification'). The values for CRMs are generally well-known published figures. Elements and isotope ratios that have been characterised in this process are attributed with a certified value and uncertainty, specific to a certain analytical technique. CRMs are used to monitor accuracy and bias at the project laboratory relative to the certified values. They are also used to monitor drift over time within an individual laboratory and to identify significant failures in QC at the analytical batch level caused by abrupt changes in concentration related to re-calibration of instruments or procedural changes at the laboratory. CRMs can also be used to verify new or improved analytical techniques."@en ;
+      skos:historyNote "Definition modified from Smee et al. (2024) and Geoscience Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "certified reference material"@en ;
+      schema:citation
+          "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ,
+          "https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/standardReferenceMaterial"^^xsd:anyURI ;
+  .
+  
+  :check-assay-sample
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample that is analysed at a secondary laboratory as a check on the accuracy and precision of the analytical results of the primary laboratory. The methods used in the primary and check laboratories must be known to properly compare the results from the check samples. Check sampling is a common practice in exploration and mining programs to confirm sample grades over the entire range of concentrations in the resource, especially when the range of concentrations requires laboratories to change methods, instrument calibrations, sample weights, etc. to bring a target commodity within measurement range."@en ;
+      skos:historyNote "Definition modified from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "check assay sample"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :crush-duplicate
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "coarse-crush duplicate"@en ;
+      skos:broader :duplicate ;
+      skos:definition "A second sample collected from the crushed field sample after the material has been reduced to a gravel (also called 'coarse crush') and analysed in the same analytical batch as the primary sample."@en ;
+      skos:historyNote "Definition modified from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "crush duplicate"@en ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :field-blank
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "Field blanks are samples of natural material with similar characteristics (e.g. hardness, abrasiveness, rock type, sample media) to those being collected in the field that contain acceptably low concentrations of the elements of interest. They are inserted into the sample stream to test for potential cross-contamination, or carry-over, between samples."@en ;
+      skos:historyNote "Definition modified from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "field blank"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :field-duplicate
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :duplicate ;
+      skos:definition "A second sample of equal size (mass) to the original, collected as close as possible to the location of the original sample under comparable conditions and using an identical sampling procedure. Field duplicates are typically collected at the same time as the original and analysed within the same analytical batch to ensure that the only difference in the results is related to the sampling variance."@en ;
+      skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/qaqc/field-duplicate> ;
+      skos:historyNote "Definition from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "field duplicate"@en ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :field-repeat-sample
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:closeMatch <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/replicateFieldSpecimen> ;
+      skos:definition "A second sample of equal size (mass) and comparable material to the original, collected at a sample site at a later date and under possibly different conditions but using identical sampling and analytical procedures. Often designed to test environmental factors, such as seasonal effects on surficial samples, or to validate historical results for the purpose of due diligence."@en ;
+      skos:historyNote "Definition from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "field repeat sample"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :laboratory-duplicate
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :duplicate ;
+      skos:definition "A second weighing of a sample taken from the same container as the original under laboratory conditions and analysed in the same analytical batch."@en ;
+      skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/qaqc/laboratory-duplicate> ;
+      skos:historyNote "Definition from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "laboratory duplicate"@en ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :laboratory-reference-material
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "laboratory standards"@en ;
+      skos:broader :reference-material ;
+      skos:definition "Reference material analysed by the laboratory, along with samples of unknown compositions, to allow the laboratory and/or their customers to assess the accuracy of the analytical results."@en ;
+      skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/qaqc/laboratory-standard> ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "laboratory reference material"@en ;
+  .
+  
+  :particle-sizing-check
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "grind check"@en ,
+          "grind size check"@en ;
+      skos:definition "A test to determine the nominal particle size of sample material, typically completed at the final sample preparation stage on the sample material submitted for analysis (i.e. powder in most instances), expressed as a percentage of sample material that passes through a piece of mesh with openings of a certain size."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "particle sizing check"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :pulp-duplicate
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :duplicate ;
+      skos:definition "A second sample collected from the pulverised field sample after the material has been reduced to a powder and analysed in the same analytical batch as the primary sample. Many laboratories identify these as repeats, which is a common source of confusion."@en ;
+      skos:historyNote "Definition from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "pulp duplicate"@en ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :re-assayed-sample
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample that has been re-assayed having previously been assayed. This may be because previous results were suspected to be spurious or did not return a valid result. Re-assaying is also a standard component of internal quality control procedures in many laboratories."@en ;
+      skos:exactMatch <https://linked.data.gov.au/def/gsq-geochem/qaqc/re-assayed-sample> ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "re-assayed sample"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :replicate
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "laboratory repeat"@en ,
+          "repeat analyses"@en ;
+      skos:broadMatch <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/replicateSpecimen> ;
+      skos:definition "Replicates are aliquots of the same sample analysed repeatedly on the instrument and expected to reproduce results consistently. The standard deviation among replicate samples reflects the precision (or lack thereof) for that particular analysis and that particular sample. For example, if two aliquots of the same digestate are analysed 10 samples apart from each other during analysis with widely different results, a large uncertainty will be associated with that sample that may affect what conclusions can be drawn from the data generated during that analysis."@en ;
+      skos:exactMatch <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/replicateLaboratorySpecimen> ;
+      skos:historyNote "Definition from Geboy and Engle (2011)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "replicate"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://pubs.usgs.gov/of/2011/1187/pdf/ofr2011-1187.pdf"^^xsd:anyURI ;
+  .
+  
+  :sample-split
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "sub-sample"@en ;
+      skos:definition "A sample preparation process where a sample is split into two or more aliquots. Sample splitting occurs after the sample is crushed or pulverised, typically to reduce sample material to a manageable volume. Ideally, a sample is split using a method that collects a compositionally representative aliquot of material for further processing."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "sample split"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :spike
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "isotopic spike"@en ,
+          "isotopic tracer"@en ,
+          "tracer"@en ;
+      skos:definition "Material with known quantity values added to an analytical sample to test the accuracy and validity of the analytical method. The material can be a reference material or a certified reference material. The known quantity value is often a fraction or concentration. Multiple spikes can be added to a sample (e.g. ‘double spike’ or ‘triple spike’) with precisely known proportions to quantify mass fractionation of mass spectrometers (also known as an internal standard)."@en ;
+      skos:historyNote """Definition based on:
+  Hibbert, DB, Korte, E-H and Örnemark, U, 2021, Metrological and quality concepts in analytical chemistry (IUPAC Recommendations 2021): Pure and Applied Chemistry, v. 93, no. 9, p. 997–1048, doi:10.1515/pac-2019-0819.
+  
+  ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-Assets/LPD/Product-Information/Why-How-Matrix-Spike-ST-MATSPIKE-EN.pdf.""" ;
+      skos:inScheme cs: ;
+      skos:prefLabel "spike"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://www.degruyterbrill.com/document/doi/10.1515/pac-2019-0819/html"^^xsd:anyURI ;
+  .
+  
+  :umpire-assay-sample
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample that is analysed at a third, or ‘umpire’, laboratory to resolve discrepancies between primary and secondary laboratories. Commonly used to resolve disputes between the shipper and the receiver of mineral concentrates, and/or to confirm precision and accuracy of laboratory results in situations where small and repeated variations in assay values are likely to have a large effect on interpretation, such as in the case of precious metal resource estimation."@en ;
+      skos:historyNote "Definition modified from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "umpire assay sample"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :duplicate
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "second cut"@en ;
+      skos:definition "A sample collected or generated under comparable conditions to the primary sample and used as an indicator of relative precision when analysed concurrently, or kept as a reference for future usage. It is useful to distinguish the stage at which the duplicate was collected, i.e. whether in the field (field duplicate) or at any stage of sample-mass reduction (e.g. during crushing and pulverisation for rock or sieving for soil and stream-sediment samples, i.e. coarse-crush duplicate, pulp duplicate, etc.)."@en ;
+      skos:historyNote "Definition from Smee et al. (2024)." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :crush-duplicate ,
+          :field-duplicate ,
+          :laboratory-duplicate ,
+          :pulp-duplicate ;
+      skos:prefLabel "duplicate"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://doi.org/10.1144/geochem2023-046"^^xsd:anyURI ;
+  .
+  
+  :reference-material
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "control samples"@en ,
+          "standard reference materials"@en ,
+          "standards"@en ;
+      skos:definition "A reference material is a well-characterised sample used to monitor accuracy and bias of (analytical) measurements at the project laboratory relative to their documented values (see also certified reference materials). These samples may range from International Standards and Certified Reference Materials (CRMs) to locally prepared standard samples for use as project reference standards."@en ;
+      skos:exactMatch
+          <https://linked.data.gov.au/def/gsq-geochem/qaqc/standard> ,
+          <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/standardReferenceMaterial> ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :blind-reference-material ,
+          :calibration-reference-material ,
+          :certified-reference-material ,
+          :laboratory-reference-material ;
+      skos:prefLabel "reference material"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/standardReferenceMaterial"^^xsd:anyURI ;
+  .
+  
+  :1 rdfs:label "1" .
+  
+  cs:
+      a skos:ConceptScheme ;
+      reg:status astatus:stable ;
+      owl:versionIRI :1 ;
+      skos:definition "The types of physical samples that are used to undertake quality assurance (QA) and quality control (QC) checks at all stages of the sampling, preparation and analytical processes, and/or to retain representative material for future reference. Note that QA and QC are often used collectively as a single term, but are in fact distinct procedures: QA 'refers to defect prevention', i.e. ‘the protocols and procedures that ensure that sampling and assaying is completed to the required quality’, whereas QC 'refers to defect detection', i.e. ‘the use of control samples and statistical analysis to ensure that assay results are reliable’ (Graindorge, 2010, p. 112; https://www.usgs.gov/data-management/manage-quality). This vocabulary thus also encapsulates terminology covering sample representability. "@en ;
+      skos:hasTopConcept
+          :analytical-blank ,
+          :barren-wash ,
+          :blank ,
+          :check-assay-sample ,
+          :duplicate ,
+          :field-blank ,
+          :field-repeat-sample ,
+          :particle-sizing-check ,
+          :re-assayed-sample ,
+          :reference-material ,
+          :replicate ,
+          :sample-split ,
+          :spike ,
+          :umpire-assay-sample ;
+      skos:historyNote """QA and QC details must be outlined as part of the JORC Table 1 requirements when reporting Exploration Results, Mineral Resource and Ore Reserve Estimates in Australia, particularly to the Australian Stock Exchange; other exchanges and other CRIRSCO reporting codes have similar rulings.
+  
+  Definitions compiled from:
+  1) Geboy, NJ and Engle, MA 2011, Quality assurance and quality control of geochemical data—A primer for the  research scientist: US Geological Survey Open-File Report 2011–1187, 28 p.
+  2) Smee, BW, Bloom, L, Arne, D and Heberlein, D 2024, Practical applications of quality assurance and quality control in mineral exploration, resource estimation and mining programmes: a review of recommended international practices: Geochemistry: Exploration, Environment, Analysis, v. 24, p. 1–21, doi:10.1144/geochem2023-046.
+  3) Hibbert, DB, Korte, E-H and Örnemark, U, 2021, Metrological and quality concepts in analytical chemistry (IUPAC Recommendations 2021): Pure and Applied Chemistry, v. 93, no. 9, p. 997–1048, doi:10.1515/pac-2019-0819.
+  4) ThermoFisher, How and why to matrix spike, https://assets.thermofisher.com/TFS-Assets/LPD/Product-Information/Why-How-Matrix-Spike-ST-MATSPIKE-EN.pdf."""@en ;
+      skos:prefLabel "Sample data quality management"@en ;
+      prov:qualifiedAttribution
+          [
+              prov:hadRole isoroles:custodian ;
+              prov:agent <https://orcid.org/0000-0002-7645-5031> ;
+          ] ,
+          [
+              prov:hadRole isoroles:custodian ;
+              prov:agent <https://orcid.org/0000-0002-2104-6601> ;
+          ] ,
+          [
+              prov:hadRole isoroles:custodian ;
+              prov:agent <https://orcid.org/0000-0002-2280-1859> ;
+          ] ;
+      schema:creator <https://linked.data.gov.au/org/gswa> ;
+      schema:dateCreated "2025-06-18"^^xsd:date ;
+      schema:dateModified "2025-06-18"^^xsd:date ;
+      schema:keywords themes:sample-acquisition-management ;
+      schema:publisher <https://linked.data.gov.au/org/gswa> ;
+      schema:version "1.0" ;
+  .
+}

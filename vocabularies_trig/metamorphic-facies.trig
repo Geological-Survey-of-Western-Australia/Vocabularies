@@ -1,0 +1,279 @@
+PREFIX : <https://linked.data.gov.au/def/metamorphic-facies/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/metamorphic-facies>
+PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/gswa/vocabularies> {
+  :albite-epidote-hornfels
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A metamorphic facies representing low to moderate temperatures and low or very low pressures, with temperature lower than the hornblende hornfels facies and pressure lower than the greenschist facies. Metabasic rocks are represented by the assemblage albite–epidote–actinolite–chlorite–quartz, analogous to that of the greenschist facies. Metapelitic rocks exhibit the association of muscovite–biotite–chlorite–quartz, analogous to the greenschist facies. The distinction between the greenschist and albite–epidote facies is textural — undeformed hornfels versus foliated schists — rather than mineralogical. It should be noted, though, that although traditionally defined as undeformed, hornfels facies rocks exhibiting deformation features have been documented in the geological record. The facies corresponds to temperatures of about 300–450 °C at pressures less than about 2 kbar. It is typical of metamorphism in the outer parts of contact aureoles, under ultrahigh (geo)thermal gradient and heat flow conditions. Numerous studies do not give facies status to albite-epidote hornfels."@en ;
+      skos:historyNote "Definition adapted from https://en.wikipedia.org/wiki/Metamorphic_facies#Albite-epidote-hornfels_facies and Glossary of geology (https://glossary.americangeosciences.org/glossary-search?search_api_views_fulltext=hornfels)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "albite-epidote hornfels"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :amphibolite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "Metamorphic facies representing moderate pressure and temperature conditions. It lies between the epidote–amphibolite (or greenschist) and granulite facies. Amphibolite facies mineral assemblages in metabasic rocks are represented by hornblende–plagioclase, the plagioclase being oligoclase–andesine or more calcic varieties (Eskola, 1939), with epidote and almandine garnet common. Metapelitic rocks are characterized by diagnostic mineral assemblages containing micas associated with garnet, staurolite, kyanite or sillimanite at higher pressures, and andalusite or cordierite at lower pressures within the facies. Amphibolite facies is typical of regional metamorphism at pressures of about 4.5 – 15kbar and of regional or contact metamorphism at pressures less than about 4.5kbar. Temperatures span the range 450–700 °C, and in situ partial melting of rocks occurs in the upper part of this range (above about 650°C). The facies encompasses moderate to high (geo)thermal gradients and heat flow typical of many tectonic environments, and it is thus is a common metamorphic facies for metamorphosed rocks."@en ;
+      skos:historyNote "Definition adapted from IUGS (2007) and Glossary of Geology (5th edition, American Geosciences Institute). See concept scheme for full refences." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :high-P-amphibolite ,
+          :lower-amphibolite ,
+          :middle-amphibolite ,
+          :upper-amphibolite ;
+      skos:prefLabel "amphibolite"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :blueschist
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A metamorphic facies diagnostic of high-pressure (>2 GPa), low-temperature (<500 °C) metamorphism of mafic rocks. Mafic rocks at blueschist facies are represented by combinations of the diagnostic sodic amphibole (e.g. glaucophane, crossite) and lawsonite, sodic pyroxene, aragonite, epidote, and garnet. The mineral pair jadeite–quartz is also diagnostic. Blueschist facies metasiliciclastic rocks may contain diagnostic mineral assemblages involving carpholite, chloritoid, talc, kyanite and phengitic white mica. The facies represents lower temperatures and higher pressures than the greenschist and prehnite–pumpelleyite facies, lower pressures than eclogite facies, and temperatures less than the amphibolite facies (less than about 500°C). At depths indicative of blueschist facies, lower temperatures are not realised in Earth. Blueschist facies metamorphism is associated with tectonic environments in which rocks experience near isothermal compression followed by near isothermal decompression, such as at subduction zones (i.e. unusually low (geo)thermal gradients and heat flow). The term blueschist can also be used as a rock type, so when used as a facies name, the facies context should be made clear (i.e. blueschist-facies rock)."@en ;
+      skos:historyNote "Adapted from IUGS (2007), Elias and Alderton (2020, 2021; Encyclopedia of Geology, first and second editions, Academic Press), and Glossary of Geology (5th edition, American Geosciences Institute)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "blueschist"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :eclogite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "Metamorphic facies corresponding to high grade and middle to high P/T values, and bounded (in rocks of suitable composition) by the omphacite–garnet-in reactions. Metabasic rocks are represented by omphacitic pyroxene and almandine–pyrope garnet, and lawsonite in the coolest rocks. Also common, but not essential, is the association pyrope–olivine–diopside–enstatite. At ultra-high pressures (minimum 28kbar at 600°C), coesite, diamond or majoritic garnet occur in metabasic rocks. Metapelitic rocks are not typically reported as having recorded eclogite-facies conditions and therefore diagnostic mineral assemblages are not reported for them. The facies represents the highest pressures possible for metamorphism in Earth's crust and upper mantle. It occurs to higher pressure than the blueschist, amphibolite and granulite facies (approximately >15kbar), and over a broad range of temperatures (approximately >500°C). The facies encompasses low to moderate (geo)thermal gradients and heat flow, and subduction environments are typical for the lower temperature part of the eclogite facies."@en ;
+      skos:historyNote "Definition adapted from IUGS (2007); Glossary of Geology (5th edition, American Geosciences Institute); Elias and Alderton (2021; Encyclopedia of Geology, 2nd edition, Academic Press); and Vernon and Clarke (2008; Principles of metamorphic petrology / Cambridge University Press. ISBN: 9780521871785. xi, 446p)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "eclogite"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  <https://linked.data.gov.au/def/metamorphic-facies/epidote–amphibolite>
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "Metamorphic facies formed at low to moderate temperatures and pressures, considered to be transitional between the greenschist facies and the amphibolite facies. It is characterized by temperatures of about 400–450°C and spans low to moderate (geo)thermal gradients and heat flow. In metabasic rocks, the facies is represented by hornblende–albite–epidote, where plagioclase has an anorthite content <17 (albite–oligoclase). Given the presence of epidote–plagioclase (An<17), it is considered by some workers as a high grade subfacies of the greenschist facies."@en ;
+      skos:historyNote "Definition adapted from IUGS (2007) and Glossary of Geology (5th edition, American Geosciences Institute). See concept scheme for full refences." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "epidote–amphibolite"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :granulite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "Metamorphic facies representing the highest grades of metamorphism; it forms at high temperature and at medium and high pressure/temperature values and lies between the eclogite and pyroxene-hornfels facies. It is characterized by clinopyroxene (diopside) – orthopyroxene (hypersthene) – plagioclase assemblages with minor and usually Ti-rich amphibole in rocks of basaltic composition. Almandine-rich garnet is characteristic of metabasic and metapelitic rocks. Metapelitic mineral assemblages show the association of sillimanite or kyanite with perthitic feldspar and garnet at higher pressures, and cordierite and orthopyroxene at lower pressures; muscovite is absent and biotite abundance is low. At the highest temperatures, diagnostic minerals are sapphirine and osumilite in Mg-rich metasiliciclastic rocks. The presence of leucosomes due to in situ partial melting is common. The facies occurs at higher temperature than the amphibolite facies. The facies is typical of regional or high-temperature contact metamorphism at pressures of about 2–17kbar in excess of about 700–750°C. The facies encompasses moderate to high (geo)thermal gradients and heat flow typical of many tectonic environments, and it is thus a common metamorphic facies for metamorphosed rocks."@en ;
+      skos:historyNote "Definitions adapted from IUGS (2007); Glossary of Geology (5th edition, American Geosciences Institute); Harley (1998; On the occurrence and characterization of ultrahigh-temperature crustal metamorphism, in What drives metamorphism and metamorphic relations? edited by PJ Treloar and PJ O'Brien: The Geological Society of London, Special Publication138,p.81–107); and Vernon and Clarke (2008; Principles of metamorphic petrology / Cambridge University Press. ISBN: 9780521871785. xi, 446p)." ;
+      skos:inScheme cs: ;
+      skos:narrower :high-P-granulite ;
+      skos:prefLabel "granulite"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :greenschist
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "Metamorphic facies representing low grades of metamorphism. At greenschist facies, metabasic rocks are represented by actinolite–albite–epidote–chlorite (Eskola, 1939). Chlorite, white mica, biotite and chloritoid are typical minerals in metasiliciclastic rocks. Greenschist facies develops at low to medium temperatures and pressures, and lies between the epidote–amphibolite and subgreenschist facies. It corresponds to temperatures in the range 300–450°C and spans a large range from low to high apparent thermal gradients typical of many tectonic environments, meaning it is a common metamorphic facies for metamorphosed rocks."@en ;
+      skos:historyNote "Definition adapted from IUGS (2007) and Glossary of Geology (5th edition, American Geosciences Institute). See concept scheme for full refences." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :lower-greenschist ,
+          :upper-greenschist ;
+      skos:prefLabel "greenschist"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :high-P-amphibolite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The upper range of pressure conditions for the amphibolite facies, typically characterized by the presence of kyanite and garnet in metapelitic rocks, and garnet and increasingly sodic clinopyroxene in metabasic rocks."@en ;
+      skos:inScheme cs: ;
+      skos:prefLabel "high-P amphibolite"@en ;
+  .
+  
+  :high-P-granulite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "HPG"@en ,
+          "high-pressure granulite (HPG)"@en ;
+      skos:definition "High-pressure subset of the granulite facies, reserved for rocks within the kyanite stability field, but below pressures corresponding to the stability of jadeite–quartz of the eclogite facies. It is typical of high-grade regional metamorphism of deep crust under moderate (geo)thermal gradient and heat flow conditions. The highest temperature high-pressure granulite facies rocks probably require rocks to be pre-conditioned (refractory) in order for such thermal conditions to be attained."@en ;
+      skos:historyNote "Definition adapted from Brown (2006; Duality of thermal regimes is the distinctive characteristic of plate tectonics since the Neoarchean: Geology,v.34,no.11,p.961–964, doi:10.1130/G22853A.1)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "high-P granulite"@en ;
+  .
+  
+  :hornblende-hornfels
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A metamorphic facies representing moderate to high temperatures and low or very low pressures, with temperature lower than the pyroxene hornfels facies and pressure lower than the amphibolite facies. Metabasic rocks are represented by the assemblage hornblende–plagioclase±diopside±anthophyllite/cummingtonite±quartz, analogous to that of the amphibolite facies. Metapelitic rocks exhibit the association of muscovite–biotite–andalusite–cordierite–quartz–plagioclase, analogous to the lower pressure part of the amphibolite facies. The distinction between the greenschist and hornblende facies is textural — undeformed hornfels versus foliated schists — rather than mineralogical. It should be noted, though, that although traditionally defined as undeformed, hornfels facies rocks exhibiting deformation features have been documented in the geological record. The facies corresponds to temperatures of about 450–700 °C at pressures less than about 2 kbar. It is typical of metamorphism in the middle to outer parts of contact aureoles, under ultrahigh (geo)thermal gradient and heat flow conditions."@en ;
+      skos:historyNote "Definition adapted from https://en.wikipedia.org/wiki/Metamorphic_facies#Albite-epidote-hornfels_facies and Glossary of geology (https://glossary.americangeosciences.org/glossary-search?search_api_views_fulltext=hornfels)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "hornblende hornfels"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :lower-amphibolite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The lower range of temperature conditions for the amphibolite facies, typically characterised by staurolite, garnet and chloritoid in metapelitic rocks."@en ;
+      skos:historyNote "Definition adapted from IUGS (2007); see concept scheme for full reference." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "lower amphibolite"@en ;
+  .
+  
+  :lower-greenschist
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The lower range of temperature conditions that greenschist facies can form in, transitional with and overlapping with the prehnite–pumpellyite facies."@en ;
+      skos:historyNote "Winter, J, 2010, An Introduction to Igneous and Metamorphic Petrology, Prentice Hall, 697p." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "lower greenschist"@en ;
+  .
+  
+  :middle-amphibolite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The mid range of temperature conditions for the amphibolite facies, typically characterized by the presence of staurolite, andalusite and kyanite in metapelitic rocks."@en ;
+      skos:inScheme cs: ;
+      skos:prefLabel "middle amphibolite"@en ;
+  .
+  
+  <https://linked.data.gov.au/def/metamorphic-facies/prehnite–pumpellyite>
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A metamorphic facies representing very low grades of metamorphism. It is defined by the diagnostic mineral assemblage of albite–quartz–prehnite–pumpellyite–chlorite–sphene (Coombs et al., 1959), and the absence of zeolites, lawsonite or jadeite. The mineral assemblage is best developed in metagraywackes. The facies is considered to represent pressure–temperature conditions of about 300°C, between those of the zeolite facies and the greenschist facies."@en ;
+      skos:historyNote "Adapted from IUGS (2007) and Glossary of Geology (5th edition, American Geosciences Institute)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "prehnite–pumpellyite"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :pyroxene-hornfels
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A metamorphic facies representing very high temperatures and low or very low pressures, with temperature lower than the sanidinite facies and pressure lower than the granulite facies. Metabasic rocks are represented by the assemblage clinopyroxene (diopside) – orthopyroxene (hypersthene) – plagioclase, with hornblende typically absent. Metapelitic rocks exhibit the association of sillimanite (or andalusite) and cordierite with potassium feldspar; muscovite is absent. Marbles contain wollastonite and calcite–forsterite–periclase (Turner, 1968). The facies corresponds to temperatures in excess of about 700 °C at pressures less than about 2 kbar. It is typical of high-grade thermal metamorphism, for example in the inner parts of contact aureoles, under ultrahigh (geo)thermal gradient and heat flow conditions. Although traditionally defined as undeformed, hornfels facies rocks exhibiting deformation features are present in the geological record."@en ;
+      skos:historyNote "Definition adapted from IUGS (2007); Glossary of Geology (5th edition, American Geosciences Institute); and Vernon and Clarke (2008; Principles of metamorphic petrology / Cambridge University Press. ISBN: 9780521871785. xi, 446p)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "pyroxene hornfels"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :sanidinite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "Metamorphic facies representing extreme high temperatures and low or very low pressures. It lies below the granulite facies. It is characterized by the occurrence of especially high-temperature varieties and polymorphs of minerals, for example tridymite, mullite, monticellite, larnite, sanidine, K-rich labradorite and pigeonite. The facies encompasses occurrences of metamorphism at very high temperature and very low pressure conditions, e.g. xenoliths in basic lavas, fragments in tuffs, or narrow contact zones bordering shallow mafic intrusive pipes. Many rocks show evidence of partial to complete fusion (e.g. buchite). The facies occurs at lower pressure than the granulite facies, and represents the highest temperature part (>800°C) of crustal metamorphism under ultrahigh (geo)thermal gradient and heat flow conditions."@en ;
+      skos:historyNote "Definition adapted from IUGS (2007) and Glossary of Geology (5th edition, American Geosciences Institute). See concept scheme for full refences." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "sanidinite"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :sub-greenschist
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "subgreenschist"@en ;
+      skos:definition "A broad term encompassing rocks of very low metamorphic grade that likely correspond to either the low-greenschist facies or prehnite–pumpellyite facies of metamorphism. Commonly used for field-based descriptions."@en ;
+      skos:inScheme cs: ;
+      skos:prefLabel "sub-greenschist"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :ultra-high-temperature
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "ultrahigh temperature"@en ;
+      skos:definition "Highest temperature subset of the granulite facies, reserved for temperatures >900°C, and typically at pressures approximately ≥5kbar and bound at higher pressure by the kyanite–sillimanite reaction. Diagnostic mineral assemblages include orthopyroxene–sillimanite, sapphirine or osumilite in metasedimentary rock types. It is typical of high-grade regional metamorphism of deep crust and requires rocks to be pre-conditioned (refractory) in order for such thermal conditions to be attained."@en ;
+      skos:historyNote "Definition adapted from Harley (1998; On the occurrence and characterization of ultrahigh-temperature crustal metamorphism, in What drives metamorphism and metamorphic relations? edited by PJ Treloar and PJ O'Brien: The Geological Society of London, Special Publication138,p.81–107); Kelsey (2008; On ultrahigh-temperature crustal metamorphism: Gondwana Research,v.13,no.1,p.1–29, doi:10.1016/j.gr.2007.06.001); Brown and Korhonen (2009; Some remarks on melting and extreme metamorphism of crustal rocks, in Physics and Chemistry of the Earth’s interior: Crust, Mantle and Core edited by AK Gupta and S Dasgupta:  Springer, New Delhi, pp. 67-87); and Brown (2006; Duality of thermal regimes is the distinctive characteristic of plate tectonics since the Neoarchean: Geology,v.34,no.11,p.961–964, doi:10.1130/G22853A.1)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "ultra-high temperature"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :undifferentiated
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The specific metamorphic facies of a rock is not specified, typically due to the rock mineralogy being non-diagnostic of metamorphic pressure–temperature conditions (e.g. quartzite or metachert)."@en ;
+      skos:inScheme cs: ;
+      skos:prefLabel "undifferentiated"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :upper-amphibolite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The upper range of temperature conditions for the amphibolite facies, typically characterized by the presence of kyanite or sillimanite and leucosomes (evidence of partial melting) in metapelitic rocks."@en ;
+      skos:inScheme cs: ;
+      skos:prefLabel "upper amphibolite"@en ;
+  .
+  
+  :upper-greenschist
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The upper range of temperature conditions for the greenschist facies, characterized by stable oligoclase and actinolite-to-hornblende transition. It overlaps with and includes the lowest temperature range of lower amphibolite facies."@en ;
+      skos:historyNote "Winter, J, 2010, An Introduction to Igneous and Metamorphic Petrology, Prentice Hall, 697p." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "upper greenschist"@en ;
+  .
+  
+  :zeolite
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The facies that includes zeolite group minerals such as analcime, heulandite, stilbite, laumontite, and wairakite (Coombs, 1960). It is the lowest grade of metamorphism, at around 200–250°C, transitional between diagenesis (or unmetamorphosed rock) and the prehnite–pumpellyite facies or the greenschist facies. Various zeolite assemblages can be correlated with depth of burial (Miyashiro and Shido, 1970). Diagnostic minerals are best developed in metagraywackes and metabasalts."@en ;
+      skos:historyNote "Adapted from the Glossary of Geology (t5th editiond, American Geosciences Institute)." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "zeolite"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :1 rdfs:label "1" .
+  
+  cs:
+      a skos:ConceptScheme ;
+      schema:dateCreated "2023-11-01"^^xsd:date ;
+      schema:creator <https://linked.data.gov.au/org/gswa> ;
+      schema:dateModified "2023-11-01"^^xsd:date ;
+      schema:publisher <https://linked.data.gov.au/org/gswa> ;
+      owl:versionIRI :1 ;
+      owl:versionInfo "1" ;
+      reg:status astatus:stable ;
+      skos:definition "A metamorphic facies is defined by a repeatedly occurring and thus predictable set of stable mineral assemblages in metamorphic rocks. Such metamorphic mineral assemblages crystallize and are stable over a range of externally imposed physical conditions, most crucially lithostatic pressure and temperature, and thus the facies define areas in two-dimensional plots of pressure–temperature space. There is a demonstrable/proven relationship between mineral composition and bulk rock chemical composition and a consistent relationship through geological time. Rocks which contain certain metamorphic mineral assemblages can therefore be linked to particular tectonic settings, times and places in the geological history of an area. The boundaries between facies are typically gradational as the disappearance or appearance of minerals occurs over pressure, temperature, space and time. The vocabulary is based on Fettes and Desmons (2007, Metamorphic Rocks: a classification and glossary of terms — Recommendations of the International Union of Geological Sciences Subcommission on the Systematics of Metamorphic Rocks edited by D Fettes and J Desmons, 244p.), with further subdivisions for some facies. Definitions also borrow from Neuendorf et al. (2005, Glossary of Geology: 5th edition, revised edited by KKE Neuendorf, JP Mehl Jr and JA Jackson: American Geological Institute, Alexandria, Virginia, USA, 779p.). More detailed metamorphic mineral assemblages for specific rock types can be found at https://en.wikipedia.org/wiki/Metamorphic_facies)."@en ;
+      skos:hasTopConcept
+          :albite-epidote-hornfels ,
+          :amphibolite ,
+          :blueschist ,
+          :eclogite ,
+          <https://linked.data.gov.au/def/metamorphic-facies/epidote–amphibolite> ,
+          :granulite ,
+          :greenschist ,
+          :hornblende-hornfels ,
+          <https://linked.data.gov.au/def/metamorphic-facies/prehnite–pumpellyite> ,
+          :pyroxene-hornfels ,
+          :sanidinite ,
+          :sub-greenschist ,
+          :ultra-high-temperature ,
+          :undifferentiated ,
+          :zeolite ;
+      skos:historyNote "Based on the authoritative list [GEOLOGY].[Warox_REF].[Metafacies] and [WAGIMS[ReferenceData].[MetamorphicFacies] used in the Geological Survey of Western Australia's field observation database (WAROX) and WAGIMS system, the repository for Western Australian Geochronology, Isotope geology, Mineral chemistry and Metamorphic history analytical data and information."@en ;
+      skos:prefLabel "Metamorphic facies"@en ;
+      schema:keywords
+          themes:geology ;
+      prov:qualifiedAttribution
+          [
+              prov:hadRole dataroles:custodian ;
+              prov:agent <https://www.linkedin.com/in/david-kelsey-425746137/> ;
+          ] ,
+          [
+              prov:hadRole dataroles:custodian ;
+              prov:agent <https://orcid.org/0009-0003-0007-8342> ;
+          ] ;
+  .
+}

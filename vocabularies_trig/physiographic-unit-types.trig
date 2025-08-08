@@ -1,0 +1,79 @@
+PREFIX : <https://linked.data.gov.au/def/physiographic-unit-types/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/physiographic-unit-types>
+PREFIX dataroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/gswa/vocabularies> {
+  :physiographic-division
+      a skos:Concept ;
+      schema:citation "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The highest hierarchical level for physiographic units in Australia, based on the classification by Pain et al. (2011). The onshore Australian continent is divided into three physiographic divisions, broadly coincident with a geological subdivision into the western shields, the central basins and the eastern fold belts; divisions are subdivided into several smaller physiographic provinces. Each physiographic division is identified by a name, a text description, and a single digit code (1, 2, and 3 from east to west), converted to a three- or five-digit number for database purposes (i.e. 100 or 10000) to allow better characterization when including physiographic provinces and regions."@en ;
+      skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "Physiographic division"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :physiographic-province
+      a skos:Concept ;
+      schema:citation "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The intermediate hierarchical level for physiographic units in Australia, based on the classification by Pain et al. (2011). Physiographic provinces distinguish major physiographic changes across the country and are compiled by grouping regions with similar landforms and geological characteristics at a scale of 1: 2.5M. The onshore Australian continent is divided into 23 physiographic provinces, in turn subdivided into several smaller physiographic regions. Each physiographic province is identified by a name, a text description, and a three-digit aggregate code that includes the parent physiographic division code as the first digit (e.g. 301, 302, etc.); this is converted to a five-digit code for database purposes (i.e. 30100, 30200, etc.) to allow better characterization when including physiographic regions. Descriptors include geology, structure and broad regolith types."@en ;
+      skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "Physiographic province"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :physiographic-region
+      a skos:Concept ;
+      schema:citation "https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf"^^xsd:anyURI ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "The lowest hierarchical level for physiographic units in Australia, based on the classification by Pain et al. (2011). Physiographic regions are the basic geomorphological subdivisions of Australia, and are internally consistent in terms of their landform morphology, relief, underlying geology and geomorphic origin. The onshore Australian continent is divided into 220 physiographic regions. Each region is identified by a name, a text description, and a five-digit aggregate code incorporating the notation of the parent physiographic division and province (e.g. 30100, where 3 represents the division, 301 the province, and 30100 the region). The primary descriptors for physiographic regions are geographic name and a simple text description including major geologic and geomorphic features."@en ;
+      skos:historyNote "Defined by Pain et al. (2011). See concept scheme for full reference." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "Physiographic region"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :1 rdfs:label "1" .
+  
+  cs:
+      a skos:ConceptScheme ;
+      schema:dateCreated "2023-09-06"^^xsd:date ;
+      schema:creator <https://linked.data.gov.au/org/gswa> ;
+      schema:dateModified "2023-09-06"^^xsd:date ;
+      schema:publisher <https://linked.data.gov.au/org/gswa> ;
+      owl:versionIRI :1 ;
+      owl:versionInfo "1" ;
+      reg:status astatus:stable ;
+      skos:definition """Characterization of the type of physiographic units used by the Geological Survey of Western Australia for mapping regolith and landforms in the State. A physiographic units is defined as 'A named geomorphological entity with internal coherence in its landform characteristics and landform evolutionary history. At the lowest levels, physiographic units reflect the underlying geology and have similar groupings of regolith materials that are related to the landform types, their evolution, and the underlying bedrock.' Physiographic unit types are based on the classification of Pain et al. (2011)* whereby three hierarchical types of units are identified for mapping at different scales. The list of identified units is compiled in a companion vocabulary — Australian physiographic units.
+  *Pain, C, Gregory, L, Wilson, P and McKenzie, N (2011), The physiographic regions of Australia – Explanatory notes 2011; Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain (publication available at https://www.clw.csiro.au/aclep/documents/PhysiographicRegions_2011.pdf; dataset available at https://www.asris.csiro.au/themes/PhysioRegions.html)."""@en ;
+      skos:hasTopConcept
+          :physiographic-division ,
+          :physiographic-province ,
+          :physiographic-region ;
+      skos:historyNote "The scheme for Australian physiographic units is derived from: Pain, C, Gregory, L, Wilson, P and McKenzie, N (2011), The physiographic regions of Australia – Explanatory notes 2011; Australian Collaborative Land Evaluation Program and National Committee on Soil and Terrain (dataset available at https://www.asris.csiro.au/themes/PhysioRegions.html). The Geological Survey of Western Australia's regolith classification system is available at https://dmpbookshop.eruditetechnologies.com.au/product/revised-classification-system-for-regolith-in-western-australia-and-the-recommended-approach-to-regolith-mapping.do (2024 update including physiographic units is in progress)."@en ;
+      skos:prefLabel "Physiographic unit types"@en ;
+      schema:keywords
+          themes:geology-framework ;
+      prov:qualifiedAttribution
+          [
+              prov:hadRole dataroles:custodian ;
+              prov:agent <https://orcid.org/0009-0002-5543-2719>
+          ] ,
+          [
+              prov:hadRole dataroles:custodian ;
+              prov:agent  <https://orcid.org/0000-0002-7645-5031>
+          ] ;
+  .
+}
