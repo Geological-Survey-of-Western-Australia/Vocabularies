@@ -1,0 +1,718 @@
+PREFIX : <https://linked.data.gov.au/def/sample-condition/>
+PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
+PREFIX cs: <https://linked.data.gov.au/def/sample-condition>
+PREFIX isoroles: <https://linked.data.gov.au/def/data-roles/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX reg: <http://purl.org/linked-data/registry#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://linked.data.gov.au/dataset/gswa/vocabularies> {
+  :arsenic-bearing
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :poisonous ;
+      skos:definition "A sample or specimen containing inorganic arsenic, either as an element or a compound (e.g. in sulfide minerals), and forming naturally or as part of storage (e.g. concentration of toxic vapours in enclosed spaces). Inorganic arsenic is a highly toxic and carcinogenic component, known to be harmful to human health if inhaled, ingested or absorbed."@en ;
+      skos:historyNote "Definition adapted from World Health Organisation factsheet." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "arsenic-bearing"@en ;
+      schema:citation "https://www.who.int/news-room/fact-sheets/detail/arsenic"^^xsd:anyURI ;
+  .
+  
+  :asbestos-bearing
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :fibrous ;
+      skos:definition "A sample or specimen containing acicular or fibrous asbestos (serpentine or amphibole) minerals, either naturally or as part of storage materials, which can cause internal damage if breathed or ingested."@en ;
+      skos:historyNote "Definition adapted from World Health Organisation factsheet." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "asbestos-bearing"@en ;
+      schema:citation "https://www.who.int/news-room/fact-sheets/detail/asbestos"^^xsd:anyURI ;
+  .
+  
+  :biohazard
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "contaminated"@en ,
+          "mouldy"@en ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen containing biologically hazardous materials, whether naturally, as part of storage materials, or due to a fault."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "biohazard"@en ;
+  .
+  
+  :broken
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "fractured"@en ;
+      skos:broader :poor ;
+      skos:definition "A sample or specimen where the object has been broken during collection, storage or analysis. This differs from multi-part or segmented specimens or samples in that the damage and disaggregation of the object is human-caused and accidental."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "broken"@en ;
+  .
+  
+  :chemically-vulnerable
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :vulnerable ;
+      skos:definition "A sample or specimen that is vulnerable to damage when exposed to specific chemical compounds. This vulnerability may include one specific chemical class/type, or a wide range of compounds."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "chemically vulnerable"@en ;
+  .
+  
+  :chipped
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :poor ;
+      skos:definition "A sample or specimen damaged by having a small piece broken off at the edge or on the surface."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "chipped"@en ;
+  .
+  
+  :coated
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :enhanced ;
+      skos:definition "A sample or specimen partially covered with a thin layer of a chemical or compound selected for the purposes of improved visualisation (e.g. resin), analysis (e.g. carbon, oil or quartz coating) or protection (e.g. glass)"@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "coated"@en ;
+  .
+  
+  :consolidated
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "impregnated"@en ;
+      skos:broader :repaired ;
+      skos:definition "A sample or specimen which has undergone past repair by impregnating weakened, crumbling or porous surfaces or sections with a consolidant (e.g. paraloid, resin), where the area of repair may become a future vulnerability or hazard or may impede future study or repair processes."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "consolidated"@en ;
+  .
+  
+  :degraded
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :poor ;
+      skos:definition "A sample or specimen where the loss of object integrity occurs after collection and is due to intrinsic specimen/sample vulnerabilities or improper collection or storage processes."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "degraded"@en ;
+  .
+  
+  :dusty
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "crumbly"@en ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen that is naturally crumbly or granular and forms fine-grained, abrasive or poisonous particles when disturbed, whether naturally or as part of storage materials."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "dusty"@en ;
+  .
+  
+  :embedded
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "enclosed"@en ,
+          "sealed"@en ;
+      skos:broader :preserved ;
+      skos:definition "A sample or specimen fixed firmly and deeply within a supporting/enclosing material. The term can be used to describe specimens embedded in mounting media such as wax, epoxies, acrylics and polyesters, or in thermosetting resins or thermoplastics."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "embedded"@en ;
+      schema:citation "https://onpointabrasives.com/blogs/news/hot-vs-cold-mounting-in-metallography-a-quick-and-comprehensive-guide"^^xsd:anyURI ;
+  .
+  
+  :fair
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "average"@en ;
+      skos:definition "A sample or specimen considered of average preservation, quality and/or usefulness, i.e. has early signs of wear or deterioration, though the element is generally structurally sound and performing its intended purpose."@en ;
+      skos:historyNote "Definition adapted from https://content.civicplus.com/api/assets/cf81c5fd-305b-4157-a27f-9a206148fa7c." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "fair"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://content.civicplus.com/api/assets/cf81c5fd-305b-4157-a27f-9a206148fa7c"^^xsd:anyURI ;
+  .
+  
+  :flaking
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "peeling"@en ;
+      skos:broader :poor ;
+      skos:definition "A sample or specimen with smaller parts peeling off from its surface. The term may also refer to the breakage of storage materials (e.g. plastic bags)."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "flaking"@en ;
+  .
+  
+  :flammable
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "inflammable"@en ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen containing inflammable, flammable or flame-sustaining materials, whether naturally, or as part of treatment or storage materials."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "flammable"@en ;
+  .
+  
+  :fragile
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "delicate"@en ;
+      skos:broader :vulnerable ;
+      skos:definition "A sample or specimen that is physically vulnerable or prone to breakage, whether due to material, form, shape, or condition."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "fragile"@en ;
+  .
+  
+  :framed
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :mounted ;
+      skos:definition "A sample or specimen mounted on and surrounded by a rigid structure that supports it."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "framed"@en ;
+  .
+  
+  :glued
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :repaired ;
+      skos:definition "A sample or specimen which has undergone past repair by gluing on broken elements or sections, where the area of repair may become a future vulnerability or hazard"@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "glued"@en ;
+  .
+  
+  :good
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "good"@en ,
+          "high-quality"@en ;
+      skos:definition "A sample or specimen considered of good preservation, quality and/or usefulness, i.e. is intact, structurally sound and performing its intended purpose, with few or no cosmetic imperfections, and needing no repair other than minor/routine maintenance."@en ;
+      skos:historyNote "Definition adapted from https://content.civicplus.com/api/assets/cf81c5fd-305b-4157-a27f-9a206148fa7c." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "good"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://content.civicplus.com/api/assets/cf81c5fd-305b-4157-a27f-9a206148fa7c"^^xsd:anyURI ;
+  .
+  
+  :heavy
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen which requires special tools or multiple persons to move due to its mass, or a sample or specimen of greater density than commonly anticipated based on its dimensions, potentially complicating its safe movement."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "heavy"@en ;
+  .
+  
+  :hydrocarbon-bearing
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen (usually core or cuttings) containing natural hydrocarbon (e.g. oil) that can leak while in storage or during handling."@en ;
+      skos:inScheme cs: ;
+      skos:prefLabel "hydrocarbon bearing"@en ;
+  .
+  
+  :hygroscopic-or-hydrophilic
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :vulnerable ;
+      skos:definition "A sample or specimen that is vulnerable to humidity fluctuations, or which has a propensity to absorb or attract water or other fluids from the surrounding environment, resulting in specimen damage."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "hygroscopic or hydrophilic"@en ;
+  .
+  
+  :incomplete
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "partial"@en ;
+      skos:broader :poor ;
+      skos:definition "A sample or specimen representing part of an original whole, due to the loss of part of the object."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "incomplete"@en ;
+  .
+  
+  :mercury-bearing
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :poisonous ;
+      skos:definition "A sample or specimen containing mercury, either as an element or a compound (e.g. in sulfide minerals), and forming naturally or as part of storage (e.g. concentration of toxic vapours in enclosed spaces). Mercury is harmful to human health if inhaled, ingested or absorbed."@en ;
+      skos:historyNote "Definition adapted from World Health Organisation factsheet." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "mercury-bearing"@en ;
+      schema:citation
+          "https://www.tandfonline.com/doi/full/10.1080/10344233.2020.1870301"^^xsd:anyURI ,
+          "https://www.who.int/news-room/fact-sheets/detail/mercury"^^xsd:anyURI ;
+  .
+  
+  :oxygen-sensitive
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "oxidation prone"@en ;
+      skos:broader :vulnerable ;
+      skos:definition "A sample or specimen likely to react (tarnish) and lose its lustre if exposed to air."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "oxygen sensitive"@en ;
+  .
+  
+  :photosensitive
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :vulnerable ;
+      skos:definition "A sample or specimen that is vulnerable to degradation when exposed to long-term light or UV exposure."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "photosensitive"@en ;
+  .
+  
+  :polished
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :enhanced ;
+      skos:definition "A sample or specimen whose surface is made smooth and shiny to improve its aesthetics, enhance details of its external/internal texture or in preparation for analytical work."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "polished"@en ;
+  .
+  
+  :radioactive
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen with radiation dose quantities greater than 50 μSv/h, requiring assessment for storage suitability and precautionary measures. Samples with readings greater than 100 μSv/h will not be stored in a GSWA collection."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "radioactive"@en ;
+      schema:citation
+          "https://en.wikipedia.org/wiki/Sievert"^^xsd:anyURI ,
+          "https://www.tandfonline.com/doi/full/10.1080/00288306.2018.1495238"^^xsd:anyURI ;
+  .
+  
+  :refrigerated
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :preserved ;
+      skos:definition "A sample or specimen needing to be preserved at low temperatures, i.e. below room temperature or in freezing conditions (e.g. organic specimens or ice cores)."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "refrigerated"@en ;
+  .
+  
+  :salty
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen containing high levels of salt minerals, including halite or gypsum. Halite can have a corrosive effect on storage materials."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "salty"@en ;
+  .
+  
+  :segmented
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "cut"@en ,
+          "dissected"@en ;
+      skos:definition "A sample or specimen which has been divided into multiple associated parts as part of collection, storage or analysis. This differs from multi-part samples or specimens in that the segmentation of the object is unnatural; and from broken samples or specimens in that segmentation is intentional and for a stated purpose. Segmentation of material does not necessarily correspond to a degradation of specimen usefulness, and therefore a transition from fair to poor general condition may apply."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "segmented"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :separated
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "split"@en ;
+      skos:broader :multi-part ;
+      skos:definition "A sample or specimen representing part of an original whole, where some parts or components have been split from the item and reside with other individuals or organizations."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "separated"@en ;
+  .
+  
+  :shaped
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :enhanced ;
+      skos:definition "A sample or specimen whose original shape (or form) has been modified/altered via one or multiple processes, usually to improve its appearance or increase its value. These includes procedures such as faceting, tumbling, or carving."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "shaped"@en ;
+  .
+  
+  :sharp
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen with pointed, sharp or abrasive surfaces, which may become a hazard when contacted without protective equipment."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "sharp"@en ;
+  .
+  
+  :shielded
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample or specimen that is kept behind a protective surface/enclosure due to its hazardous nature. Typically used for radioactive specimens protected by a lead shield to minimize exposure to radiation, or isolated to contain degassing."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "shielded"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :submerged
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "immersed"@en ;
+      skos:broader :preserved ;
+      skos:definition "A sample or specimen stored entirely within a liquid (e.g. fresh water or brine) in order to maintain its form, chemistry or physical properties"@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "submerged"@en ;
+  .
+  
+  :tarnished
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "oxidised"@en ,
+          "oxidized"@en ;
+      skos:broader :corroded ;
+      skos:definition "A sample or specimen that has lost some of its lustre, usually as a result of exposure to air and moisture. Tarnish is a thin layer of corrosion that forms over some metals and minerals as their outermost layer undergoes a chemical reaction when exposed to non-metallic compounds (e.g. oxygen or sulfur dioxide). Tarnish is commonly a metal oxide, and can be referred to as patina when applied to copper-based metals and toning when referring to coins."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "tarnished"@en ;
+      schema:citation "https://en.wikipedia.org/wiki/Tarnish"^^xsd:anyURI ;
+  .
+  
+  :thermally-vulnerable
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :vulnerable ;
+      skos:definition "A sample or specimen that is vulnerable to temperature fluctuations, or which has a propensity to dry out or freeze in extreme temperature environments, resulting in specimen damage."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "thermally vulnerable"@en ;
+  .
+  
+  :to-be-retrayed
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :to-be-repackaged ;
+      skos:definition "A core whose trays have been flagged for one-off, periodic or scheduled replacement. One-off replacement is generally required when samples/specimens are transported within trays unsuitable for long-term storage or are difficult to maintain. Periodic or scheduled replacement of trays may be required when the sample/specimen has a property that accelerates the decay of storage materials (such as salty core)."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "to be retrayed"@en ;
+  .
+  
+  :uncleaned
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "unwashed"@en ;
+      skos:definition "A sample or specimen that has not undergone any cleaning or purification process."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "uncleaned"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :under-vacuum
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :preserved ;
+      skos:definition "A sample or specimen that needs to be preserved in a space devoid of matter, commonly to avoid sample contamination."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "under vacuum"@en ;
+  .
+  
+  :unwieldy
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "awkward"@en ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen of unusual proportions which may require special tools, multiple persons or careful planning to move safely."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "unwieldy"@en ;
+  .
+  
+  :washed-and-dried
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "cleaned"@en ;
+      skos:broader :cleaned ;
+      skos:definition "A sample or specimen that has been cleaned or purified by rinsing (usually with water), and subsequently dried. The process is typically applied to drillcores and ditch cuttings to remove mud, dirt and dust, but can also refer to the removal of impurities and contaminants from a sample/specimen using a solvent (often water, distilled water or a detergent) in preparation for analysis or further usage."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "washed and dried"@en ;
+  .
+  
+  :worn
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "abraded"@en ;
+      skos:broader :poor ;
+      skos:definition "A sample or specimen where the loss in object integrity is due to physical abrasion either intrinsically, during the collection process, or during storage or analysis procedures."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:prefLabel "worn"@en ;
+  .
+  
+  
+  
+  
+  :cleaned
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :enhanced ;
+      skos:definition "A sample or specimen that has been treated to remove dirt, mud and other extraneous particles/substances in preparation for analysis or further usage."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower :washed-and-dried ;
+      skos:prefLabel "cleaned"@en ;
+  .
+  
+  :corroded
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :poor ;
+      skos:definition "A sample or specimen weakened or damaged by chemical reaction. Corrosion occurs whenever a gas or liquid chemically attacks an exposed surface, often a metal, and is accelerated by warm temperatures and/or specific chemical compounds such as acids and salts."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower :tarnished ;
+      skos:prefLabel "corroded"@en ;
+  .
+  
+  :fibrous
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen consisting of or containing fibres, i.e. threads or filaments that can easily break off during handling and potentially be inhaled, absorbed or ingested."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower :asbestos-bearing ;
+      skos:prefLabel "fibrous"@en ;
+  .
+  
+  :mounted
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :enhanced ;
+      skos:definition "A sample or specimen fixed permanently or semi-permanently to a surface, pedestal or wall, or in a frame, or encapsulated within a suitable medium."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower :framed ;
+      skos:prefLabel "mounted"@en ;
+  .
+  
+  :multi-part
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "disaggregated"@en ,
+          "disarticulated"@en ;
+      skos:definition "A sample or specimen that consists of several associated but distinct parts, which should be stored and/or assessed together as a single whole. This differs from broken or segmented samples or specimens in that the multi-part nature is a standard presentation of the object in question, such as disarticulated bones of a single skeleton."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower :separated ;
+      skos:prefLabel "multi-part"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :to-be-repackaged
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample or specimen whose packaging or storage materials have been flagged for one-off, periodic or scheduled replacement. One-off replacement is generally required when samples/specimens are transported within materials unsuitable for long-term storage. Periodic or scheduled replacement of storage materials may be required when the sample/specimen has a property that accelerates the decay of storage materials (such as salty core), or for storage materials that are known to degrade over time."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower :to-be-retrayed ;
+      skos:prefLabel "to be repackaged"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :poisonous
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:broader :hazardous ;
+      skos:definition "A sample or specimen that contains minerals harmful to human health when breathed, touched or ingested."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :arsenic-bearing ,
+          :mercury-bearing ;
+      skos:prefLabel "poisonous"@en ;
+  .
+  
+  :repaired
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel
+          "fixed"@en ,
+          "reassembled"@en ,
+          "reconstituted"@en ;
+      skos:definition "A sample or specimen which has undergone some form of past restoration, where the point of repair may become a future vulnerability or hazard, or detract from the value (monetary or other) of the sample/specimen."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :consolidated ,
+          :glued ;
+      skos:prefLabel "repaired"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :preserved
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample or specimen, often core, that has been wrapped, sealed, immersed or otherwise conserved separate from other materials, either in preparation for specific analyses or to preserve a specific component or condition."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia and Schlumberger glossary." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :embedded ,
+          :refrigerated ,
+          :submerged ,
+          :under-vacuum ;
+      skos:prefLabel "preserved"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://glossary.slb.com/terms/p/preserved_core"^^xsd:anyURI ;
+  .
+  
+  :enhanced
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample or specimen altered in any way to improve its quality or value, or to emphasize its aesthetic appeal."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :cleaned ,
+          :coated ,
+          :mounted ,
+          :polished ,
+          :shaped ;
+      skos:prefLabel "enhanced"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :vulnerable
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample or specimen that is vulnerable to specific forms of non-physical degradation, such as humidity or temperature fluctuations, light conditions, and contacting chemicals or treatments."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :chemically-vulnerable ,
+          :fragile ,
+          :hygroscopic-or-hydrophilic ,
+          :oxygen-sensitive ,
+          :photosensitive ,
+          :thermally-vulnerable ;
+      skos:prefLabel "vulnerable"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :poor
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:altLabel "low-quality"@en ;
+      skos:definition "A sample or specimen considered of poor preservation, quality and/or usefulness, i.e. it is no longer performing its intended purpose, shows signs of imminent failure or breakdown and/or requires major repair/replacement."@en ;
+      skos:historyNote "Definition adapted from https://content.civicplus.com/api/assets/cf81c5fd-305b-4157-a27f-9a206148fa7c." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :broken ,
+          :chipped ,
+          :corroded ,
+          :degraded ,
+          :flaking ,
+          :incomplete ,
+          :worn ;
+      skos:prefLabel "poor"@en ;
+      skos:topConceptOf cs: ;
+      schema:citation "https://content.civicplus.com/api/assets/cf81c5fd-305b-4157-a27f-9a206148fa7c"^^xsd:anyURI ;
+  .
+  
+  :hazardous
+      a skos:Concept ;
+      rdfs:isDefinedBy cs: ;
+      skos:definition "A sample or specimen that presents some form of hazard to humans or the storage environment."@en ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia." ;
+      skos:inScheme cs: ;
+      skos:narrower
+          :biohazard ,
+          :dusty ,
+          :fibrous ,
+          :flammable ,
+          :heavy ,
+          :hydrocarbon-bearing ,
+          :poisonous ,
+          :radioactive ,
+          :salty ,
+          :sharp ,
+          :unwieldy ;
+      skos:prefLabel "hazardous"@en ;
+      skos:topConceptOf cs: ;
+  .
+  
+  :1 rdfs:label "1" .
+  
+  cs:
+      a skos:ConceptScheme ;
+      reg:status astatus:stable ;
+      owl:versionIRI :1 ;
+      skos:definition "List of terms describing the condition, completeness and risk/hazard profile of individual samples/specimens, including any specific requirements needed for the preservation of the object."@en ;
+      skos:hasTopConcept
+          :enhanced ,
+          :fair ,
+          :good ,
+          :hazardous ,
+          :multi-part ,
+          :poor ,
+          :preserved ,
+          :repaired ,
+          :segmented ,
+          :shielded ,
+          :to-be-repackaged ,
+          :uncleaned ,
+          :vulnerable ;
+      skos:historyNote "Compiled by the Geological Survey of Western Australia to assist in the management of its physical sample/specimen collections. GSWA distinguishes samples from specimens on the basis of the latter including both primary and derived materials and having been accessioned into a suitable management system."@en ;
+      skos:prefLabel "Sample/specimen condition"@en ;
+      prov:qualifiedAttribution
+          [
+              prov:hadRole isoroles:custodian ;
+              prov:agent <https://orcid.org/0000-0002-5129-2467> ;
+          ] ,
+          [
+              prov:hadRole isoroles:custodian ;
+              prov:agent <https://orcid.org/0000-0002-7645-5031> ;
+          ] ;
+      schema:creator <https://linked.data.gov.au/org/gswa> ;
+      schema:dateCreated "2024-12-09"^^xsd:date ;
+      schema:dateModified "2024-12-09"^^xsd:date ;
+      schema:keywords themes:sample-acquisition-management ;
+      schema:publisher <https://linked.data.gov.au/org/gswa> ;
+      schema:version "1" ;
+  .
+}
