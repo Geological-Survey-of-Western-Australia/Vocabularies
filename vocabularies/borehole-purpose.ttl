@@ -506,6 +506,7 @@ RISC 2022, Hydrogen Storage Potential of Depleted Oil and Gas Fields in Western 
     skos:definition "A borehole drilled to determine the lithological intervals present at a location and their structural and/or stratigraphic relationships. Typically drilled to determine the presence, location and extension of a potential resource, and most commonly associated with early stages of the exploration process. It can be associated with trialling of new drilling or analytical technologies."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "stratigraphic/structural/research (mineral exploration)"@en ;
+    skos:historyNote "This term was defined by GSWA" ;
 .
 
 :structural-drilling-geology
@@ -559,6 +560,7 @@ https://environment.des.qld.gov.au/__data/assets/pdf_file/0029/90767/biological-
     skos:definition "A cased borehole drilled for uncemented geomaterial filling in an underground mine. Uncemented backfill drilling is a method used to backfill underground mine stopes and/or drives to facilitate removal of remnant ore material while retaining geotechnical stability. Uncemented backfills include hydraulic fills, sand fills, aggregate fills and rock fills."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "uncemented backfill"@en ;
+    skos:historyNote "This term was defined by GSWA" ;
 .
 
 :unknown
