@@ -260,6 +260,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 <https://linked.data.gov.au/def/geological-sample-type/faceted>
+    a skos:Concept ;
     skos:broader <https://linked.data.gov.au/def/geological-sample-type/gemstone> ;
 .
 
