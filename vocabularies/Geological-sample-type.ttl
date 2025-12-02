@@ -891,6 +891,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 .
 
 <https://linked.data.gov.au/def/geological-sample-type/thin-section-billet>
+    a skos:Concept ;
     skos:broader <https://linked.data.gov.au/def/geological-sample-type/offcut> ;
 .
 
