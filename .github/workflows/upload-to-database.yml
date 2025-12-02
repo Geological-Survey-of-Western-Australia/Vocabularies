@@ -21,7 +21,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.11"
-  KURRA_VERSION: "0.4.1"
+  KURRA_VERSION: "1.5.9"
 
 jobs:
   publish:
@@ -37,19 +37,19 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - run: pip install https://github.com/Kurrawong/kurrawong-python/archive/refs/tags/${{ env.KURRA_VERSION }}.zip
+      - run: pip install kurra==${{ env.KURRA_VERSION }}
 
       - name: Clear vocabularies
         run: |
-          kurra fuseki clear all ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
+          kurra db clear all ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
 
       - name: Upload vocabularies
         run: |
-          kurra fuseki upload vocabularies ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
+          kurra db upload vocabularies ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
 
       - name: Upload labels
         run: |
-          kurra fuseki upload background ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
+          kurra db upload background ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
 
       - name: Purge Prez cache
         run: curl -fsSL ${{ secrets.prez_url }}/purge-tbox-cache
