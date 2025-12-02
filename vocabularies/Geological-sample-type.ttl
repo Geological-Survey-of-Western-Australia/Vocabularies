@@ -259,16 +259,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
 .
 
-<https://linked.data.gov.au/def/geological-sample-type/faceted>
-    a skos:Concept ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/geological-sample-type> ;
-    skos:broader <https://linked.data.gov.au/def/geological-sample-type/gemstone> ;
-    skos:definition "TODO: Add definition"@en ;
-    skos:inScheme <https://linked.data.gov.au/def/geological-sample-type> ;
-    skos:prefLabel "faceted"@en ;
-    schema:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-.
-
 <https://linked.data.gov.au/def/geological-sample-type/faceted-gemstone>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/geological-sample-type> ;
@@ -895,17 +885,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
 .
 
-<https://linked.data.gov.au/def/geological-sample-type/thin-section-billet>
-    a skos:Concept ;
-    rdfs:isDefinedBy <https://linked.data.gov.au/def/geological-sample-type> ;
-    skos:broader <https://linked.data.gov.au/def/geological-sample-type/offcut> ;
-    skos:definition "TODO: Add definition"@en ;
-    skos:historyNote "Definition compiled by the Geological Survey of Western Australia" ;
-    skos:inScheme <https://linked.data.gov.au/def/geological-sample-type> ;
-    skos:prefLabel "thin section billet"@en ;
-    schema:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
-.
-
 <https://linked.data.gov.au/def/geological-sample-type/thin-section-chip>
     a skos:Concept ;
     rdfs:isDefinedBy <https://linked.data.gov.au/def/geological-sample-type> ;
@@ -1286,9 +1265,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Definition compiled by the Geological Survey of Western Australia" ;
     skos:inScheme <https://linked.data.gov.au/def/geological-sample-type> ;
     skos:narrowMatch <https://pid.geoscience.gov.au/def/voc/ga/GeologySampleType/thinSectionOffcut> ;
-    skos:narrower
-        <https://linked.data.gov.au/def/geological-sample-type/petrology-offcut> ,
-        <https://linked.data.gov.au/def/geological-sample-type/thin-section-billet> ;
+    skos:narrower <https://linked.data.gov.au/def/geological-sample-type/petrology-offcut> ;
     skos:notation "OFFC"^^<https://linked.data.gov.au/def/geological-sample-type> ;
     skos:prefLabel "offcut"@en ;
     skos:topConceptOf <https://linked.data.gov.au/def/geological-sample-type> ;
@@ -1432,7 +1409,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:narrower
         <https://linked.data.gov.au/def/geological-sample-type/assembled-stone> ,
         <https://linked.data.gov.au/def/geological-sample-type/cabochon> ,
-        <https://linked.data.gov.au/def/geological-sample-type/faceted> ,
         <https://linked.data.gov.au/def/geological-sample-type/imitation-gemstone> ,
         <https://linked.data.gov.au/def/geological-sample-type/rough> ,
         <https://linked.data.gov.au/def/geological-sample-type/synthetic-gemstone> ;
