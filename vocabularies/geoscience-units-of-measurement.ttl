@@ -4547,11 +4547,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             prov:agent <https://orcid.org/0009-0002-5543-2719> ;
             prov:hadRole <https://linked.data.gov.au/def/data-roles/custodian> ;
         ] ;
-    schema:creator <https://linked.data.g​ov.au/org/gswa> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2023-11-01"^^xsd:date ;
     schema:dateModified "2025-12-02"^^xsd:date ;
     schema:keywords <https://linked.data.gov.au/def/GSWA-vocabulary-themes/data-acquisition> ;
-    schema:publisher <https://linked.data.g​ov.au/org/gswa> ;
+    schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
     schema:version "1.3" ;
 .
