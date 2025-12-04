@@ -45,11 +45,11 @@ jobs:
 
       - name: Upload vocabularies
         run: |
-          kurra db upload vocabularies ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
+          kurra db upload vocabularies ${{ secrets.database_url }} --graph file -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
 
       - name: Upload labels
         run: |
-          kurra db upload background ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
+          kurra db upload background ${{ secrets.database_url }} --graph file -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
 
       - name: Purge Prez cache
         run: curl -fsSL ${{ secrets.prez_url }}/purge-tbox-cache
