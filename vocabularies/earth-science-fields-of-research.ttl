@@ -11,16 +11,6 @@ PREFIX themes: <https://linked.data.gov.au/def/gswa-vocabulary-themes/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
 
-:applied-geophysics-
-    skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370601> ;
-    skos:notation "370601"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
-.
-
-:data-management-and-data-science
-    skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/4605> ;
-    skos:notation "4605"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
-.
-
 :active-seismic
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
@@ -53,6 +43,8 @@ PREFIX astatus: <https://linked.data.gov.au/def/reg-statuses/>
     skos:inScheme cs: ;
     skos:prefLabel "applied geophysics"@en ;
     schema:citation "https://erdw.ethz.ch/en/studies/master/applied-geophysics.html"^^xsd:anyURI ;
+    skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370601> ;
+    skos:notation "370601"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
 .
 
 :applied-mineralogy
@@ -462,7 +454,7 @@ Mukherjee, S 2011, Descriptive mineralogy, in Applied Mineralogy: Springer, Dord
     rdfs:isDefinedBy cs: ;
     skos:broader :resource-geoscience ;
     skos:definition "Studies related to and associated with the technological advancement of drilling operations, aimed at mitigating the drilling operational deficiencies and instabilities that could hinder operational performance activities and the economic part of drilling development with great effort to minimize their environmental footprint. It includes geoscience-related results obtained during the testing of improved or emerging technologies."@en ;
-    skos:historyNote """Definition adapted from: 
+    skos:historyNote """Definition adapted from:
 Teodoriu, C and Opeyemi, B 2021, An outlook of drilling technologies and innovations: present status and future trends: Energies, 14, 4499, doi.10.3390/en14154499.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "drilling"@en ;
@@ -650,7 +642,7 @@ Geiger, CA and Kawamoto, T 2017, Experimental Mineralogy and Petrology, Encyclop
     skos:broader :geochemistry ;
     skos:definition "Geochemistry that is specifically focused on identification of mineralization, its dispersion haloes, alteration patterns and distribution. It specifically focuses on the enrichment or depletion of certain elements (including pathfinders) having a genetic affinity to the target mineralization. Exploration geochemistry is typical of exploration stages aiming at locating mineral deposits but also applies to the near-mine exploration conducted to further locate and delineate resources."@en ;
     skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/370301> ;
-    skos:historyNote """Definition adapted from: 
+    skos:historyNote """Definition adapted from:
 Moon, C 2021, Exploration Geochemistry, in Encyclopedia of Geology (Second Edition), edited by D Alderton and SA Elias: Academic Press, p. 209–218, doi.org/10.1016/B978-0-08-102908-4.00017-5.""" ;
     skos:inScheme cs: ;
     skos:notation "370301"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
@@ -765,7 +757,7 @@ Cowen, R 1979, Morphology, functional: in Paleontology, Encyclopedia of Earth Sc
     rdfs:isDefinedBy cs: ;
     skos:broader :mineralogy ;
     skos:definition "The empirical investigation of the principles that control mineral formation in the geological environment, including mineral paragenesis and the physical and chemical parameters of formation and alteration (mineral ontogenesis); the quantitative geothermometric, geobarometric, and chemical studies of mineral-forming systems; and experimental modelling of crystal growth in the laboratory."@en ;
-    skos:historyNote """Definition from: 
+    skos:historyNote """Definition from:
 Wenk H-R and Bulakh A, 2004, Mineral genesis: in Minerals: Their Constitution and Origin, Cambridge University Press, p. 276–287.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "genetic mineralogy"@en ;
@@ -2131,7 +2123,7 @@ Banner, YL 2004, Radiogenic isotopes: systematics and applications to earth surf
     skos:broader :geology ;
     skos:definition "The geological study of large-scale regions, providing a link between global and local geology, and a framework for site-specific studies."@en ;
     skos:exactMatch <http://linked.data.gov.au/def/earth-science-data-category/regional-geology> ;
-    skos:historyNote """Definition adapted from: 
+    skos:historyNote """Definition adapted from:
 Roberts, DG and Bally, AW (Eds), 2012, Regional Geology and Tectonics: Phanerozoic Rift Systems and Sedimentary Basins: Elsevier, 528p., doi.10.1016/B978-0-444-56356-9.00019-5.""" ;
     skos:inScheme cs: ;
     skos:prefLabel "regional geology"@en ;
@@ -2656,6 +2648,8 @@ Behrensmeyer, AK and Kidwell, SM 1985, Taphonomy's contributions to paleobiology
     skos:inScheme cs: ;
     skos:narrower :data-mining-and-knowledge-discovery ;
     skos:prefLabel "data science and data management"@en ;
+    skos:exactMatch <https://linked.data.gov.au/def/anzsrc-for/2020/4605> ;
+    skos:notation "4605"^^<https://linked.data.gov.au/def/anzsrc-for/2020> ;
     schema:citation
         "https://en.wikipedia.org/wiki/Data_science"^^xsd:anyURI ,
         "https://www.tableau.com/learn/articles/what-is-data-management"^^xsd:anyURI ;
@@ -3151,7 +3145,7 @@ Kendall, C and Caldwell, EA 1998, Chapter 2: Fundamentals of Isotope Geochemistr
     skos:exactMatch
         <https://linked.data.gov.au/def/anzsrc-for/2020/370304> ,
         <http://linked.data.gov.au/def/earth-science-data-category/organic-geochemistry> ;
-    skos:historyNote """From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from: 
+    skos:historyNote """From the Fields of Research vocabulary from the Australian and New Zealand Standard Research Classification (ANZSRC, 2020). Definition adapted from:
 Killops, SD and Killops, VJ 2013, Introduction to Organic Geochemistry: John Wiley & Sons, 408p.""" ;
     skos:inScheme cs: ;
     skos:narrower
