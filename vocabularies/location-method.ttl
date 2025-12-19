@@ -698,12 +698,12 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     skos:historyNote "Used by GSWA to capture locations of legacy geological observations or exploration/mining/infrastructure sites." ;
     skos:inScheme cs: ;
     skos:narrower
-        :100k-topographical-map-mga ,
-        :1M-topographical-map-mga ,
-        :250k-topographical-map-mga ,
-        :25k-topographical-map-mga ,
-        :500k-topographical-map-mga ,
-        :50k-topographical-map-mga ,
+        :100k-topographic-map-mga ,
+        :1M-topographic-map-mga ,
+        :250k-topographic-map-mga ,
+        :25k-topographic-map-mga ,
+        :500k-topographic-map-mga ,
+        :50k-topographic-map-mga ,
         :non-standard-topographic-map-mga ;
     skos:prefLabel "topographic map (MGA)"@en ;
     skos:topConceptOf cs: ;
