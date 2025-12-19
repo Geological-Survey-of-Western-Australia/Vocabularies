@@ -535,12 +535,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
 .
 
-<https://orcid.org/0009-0002-5543-2719>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0009 0002 5543 2719" ;
-.
-
 :gps
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
