@@ -15,7 +15,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ischart:RGBHex
     a owl:Datatype ;
-    rdfs:label "CMYK colour notation" ;
+    rdfs:label "RGB colour notation" ;
     rdfs:comment """An 8-bit per channel, hexidecimal representation of RGB colours.
 
 This datatype uses a microformat of "#{R}{G}{B}" with hexidecimal value for {R}, {G} & {B} between 00 and FF."""@en ;
