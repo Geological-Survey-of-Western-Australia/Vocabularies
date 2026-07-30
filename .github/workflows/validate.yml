@@ -11,6 +11,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.11"
+  PREZMANIFEST_VERSION: "1.2.7"
 
 jobs:
   validate:
@@ -25,8 +26,8 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - name: Install Python dependencies
-        run: pip install -r requirements.txt
+      - run: pip install prezmanifest==${{ env.PREZMANIFEST_VERSION }}
 
-      - name: Run validation with pytest
-        run: python -m pytest
+      - name: Validate vocabularies & manifest
+        run: |
+          pm validate manifest.ttl
