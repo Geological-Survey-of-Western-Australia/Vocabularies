@@ -21,7 +21,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.11"
-  KURRA_VERSION: "1.5.9"
+  PREZMANIFEST_VERSION: "1.2.7"
 
 jobs:
   publish:
@@ -37,19 +37,11 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
-      - run: pip install kurra==${{ env.KURRA_VERSION }}
+      - run: pip install prezmanifest==${{ env.PREZMANIFEST_VERSION }}
 
-      - name: Clear vocabularies
+      - name: Sync vocabularies
         run: |
-          kurra db clear all ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
-
-      - name: Upload vocabularies
-        run: |
-          kurra db upload vocabularies ${{ secrets.database_url }} --graph file -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
-
-      - name: Upload labels
-        run: |
-          kurra db upload background ${{ secrets.database_url }} --graph file -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} -t ${{ inputs.request_timeout }}
+          pm sync manifest.ttl ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }}
 
       - name: Purge Prez cache
         run: curl -fsSL ${{ secrets.prez_url }}/purge-tbox-cache
