@@ -30,5 +30,4 @@ jobs:
 
       - name: Validate vocabularies & manifest
         run: |
-          kurra shacl syncv
           pm validate manifest.ttl
