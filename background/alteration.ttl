@@ -1,222 +1,221 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration>
-    rdfs:label "Alteration" ;
     schema:description "Alteration" ;
+    schema:name "Alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/adularia-alteration>
-    rdfs:label "adularia alteration" ;
     schema:description "Definition for adularia alteration" ;
+    schema:name "adularia alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/albitic-alteration>
-    rdfs:label "albitic alteration" ;
     schema:description "Definition for albitic alteration" ;
+    schema:name "albitic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/alunite-alteration>
-    rdfs:label "alunite alteration" ;
     schema:description "Definition for alunite alteration" ;
+    schema:name "alunite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/anhydrite-alteration>
-    rdfs:label "anhydrite alteration" ;
     schema:description "Definition for anhydrite alteration" ;
+    schema:name "anhydrite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/argillic-alteration>
-    rdfs:label "argillic alteration" ;
     schema:description "Definition for argillic alteration" ;
+    schema:name "argillic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/calc-silicate-alteration>
-    rdfs:label "calc silicate alteration" ;
     schema:description "Definition for calc silicate alteration" ;
+    schema:name "calc silicate alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/carbonate-alteration>
-    rdfs:label "carbonate alteration" ;
     schema:description "Definition for carbonate alteration" ;
+    schema:name "carbonate alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/chlorite-alteration>
-    rdfs:label "chlorite alteration" ;
     schema:description "Definition for chlorite alteration" ;
+    schema:name "chlorite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/epidote-alteration>
-    rdfs:label "epidote alteration" ;
     schema:description "Definition for epidote alteration" ;
+    schema:name "epidote alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/goethite-alteration>
-    rdfs:label "goethite alteration" ;
     schema:description "Definition for goethite alteration" ;
+    schema:name "goethite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/greisenisation>
-    rdfs:label "greisenisation" ;
     schema:description "Definition for greisenisation" ;
+    schema:name "greisenisation" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/hematite-alteration>
-    rdfs:label "hematite alteration" ;
     schema:description "Definition for hematite alteration" ;
+    schema:name "hematite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/hornblende-alteration>
-    rdfs:label "hornblende alteration" ;
     schema:description "Definition for hornblende alteration" ;
+    schema:name "hornblende alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/hornfels>
-    rdfs:label "hornfels" ;
     schema:description "Definition for hornfels" ;
+    schema:name "hornfels" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/hydrothermal-alteration>
-    rdfs:label "hydrothermal alteration" ;
     schema:description "Definition for hydrothermal alteration" ;
+    schema:name "hydrothermal alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/jarositic-alteration>
-    rdfs:label "jarositic alteration" ;
     schema:description "Definition for jarositic alteration" ;
+    schema:name "jarositic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/jasperoid-alteration>
-    rdfs:label "jasperoid alteration" ;
     schema:description "Definition for jasperoid alteration" ;
+    schema:name "jasperoid alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/kaolinitic-alteration>
-    rdfs:label "kaolinitic alteration" ;
     schema:description "Definition for kaolinitic alteration" ;
+    schema:name "kaolinitic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/leaching>
-    rdfs:label "leaching" ;
     schema:description "Definition for leaching" ;
+    schema:name "leaching" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/limonite-alteration>
-    rdfs:label "limonite alteration" ;
     schema:description "Definition for limonite alteration" ;
+    schema:name "limonite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/magnetite-alteration>
-    rdfs:label "magnetite alteration" ;
     schema:description "Definition for magnetite alteration" ;
+    schema:name "magnetite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/montmorillonite-smectite-alteration>
-    rdfs:label "montmorillonite (smectite) alteration" ;
     schema:description "Definition for montmorillonite (smectite) alteration" ;
+    schema:name "montmorillonite (smectite) alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/muscovite-alteration>
-    rdfs:label "muscovite alteration" ;
     schema:description "Definition for muscovite alteration" ;
+    schema:name "muscovite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/oxidation>
-    rdfs:label "oxidation" ;
     schema:description "Definition for oxidation" ;
+    schema:name "oxidation" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/palagonitised>
-    rdfs:label "palagonitised" ;
     schema:description "Definition for palagonitised" ;
+    schema:name "palagonitised" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/phyllic-alteration>
-    rdfs:label "phyllic alteration" ;
     schema:description "Definition for phyllic alteration" ;
+    schema:name "phyllic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/potassic-alteration>
-    rdfs:label "potassic alteration" ;
     schema:description "Definition for potassic alteration" ;
+    schema:name "potassic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/propyllitic-alteration>
-    rdfs:label "propyllitic alteration" ;
     schema:description "Definition for propyllitic alteration" ;
+    schema:name "propyllitic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/pyritic-alteration>
-    rdfs:label "pyritic alteration" ;
     schema:description "Definition for pyritic alteration" ;
+    schema:name "pyritic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/pyrophyllite-alteration>
-    rdfs:label "pyrophyllite alteration" ;
     schema:description "Definition for pyrophyllite alteration" ;
+    schema:name "pyrophyllite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/saussurite-alteration>
-    rdfs:label "saussurite alteration" ;
     schema:description "Definition for saussurite alteration" ;
+    schema:name "saussurite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/scapolitic-alteration>
-    rdfs:label "scapolitic alteration" ;
     schema:description "Definition for scapolitic alteration" ;
+    schema:name "scapolitic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/sericitic-alteration>
-    rdfs:label "sericitic alteration" ;
     schema:description "Definition for sericitic alteration" ;
+    schema:name "sericitic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/serpentinised>
-    rdfs:label "serpentinised" ;
     schema:description "Definition for serpentinised" ;
+    schema:name "serpentinised" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/silica-alteration-silicified>
-    rdfs:label "silica alteration/silicified" ;
     schema:description "Definition for silica alteration/silicified" ;
+    schema:name "silica alteration/silicified" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/skarn>
-    rdfs:label "skarn" ;
     schema:description "Definition for skarn" ;
+    schema:name "skarn" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/sodic-alteration>
-    rdfs:label "sodic alteration" ;
     schema:description "Definition for sodic alteration" ;
+    schema:name "sodic alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/sulphide-alteration>
-    rdfs:label "sulphide alteration" ;
     schema:description "Definition for sulphide alteration" ;
+    schema:name "sulphide alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/talc-alteration>
-    rdfs:label "talc alteration" ;
     schema:description "Definition for talc alteration" ;
+    schema:name "talc alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/tourmaline-alteration>
-    rdfs:label "tourmaline alteration" ;
     schema:description "Definition for tourmaline alteration" ;
+    schema:name "tourmaline alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/tremolite-alteration>
-    rdfs:label "tremolite alteration" ;
     schema:description "Definition for tremolite alteration" ;
+    schema:name "tremolite alteration" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/undefined-alteration-assemblage>
-    rdfs:label "undefined alteration assemblage" ;
     schema:description "Definition for undefined alteration assemblage" ;
+    schema:name "undefined alteration assemblage" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/alteration/zeolitic-alteration>
-    rdfs:label "zeolitic alteration" ;
     schema:description "Definition for zeolitic alteration" ;
+    schema:name "zeolitic alteration" ;
 .

@@ -1,66 +1,65 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype>
     schema:description "All Concepts in this vocabulary" ;
-    rdfs:label "Alteration Type - All Concepts" ;
+    schema:name "Alteration Type - All Concepts" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/advanced_argillic_alteration>
     schema:description "missing" ;
-    rdfs:label "advanced argillic alteration" ;
+    schema:name "advanced argillic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/albitic_alteration>
     schema:description "missing" ;
-    rdfs:label "albitic alteration" ;
+    schema:name "albitic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/alteration_not_specified>
     schema:description "Rock is altered, but type not specified. Any alteration type allowed." ;
-    rdfs:label "alteration type not specified" ;
+    schema:name "alteration type not specified" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/alunitic_alteration>
     schema:description "missing" ;
-    rdfs:label "alunitic alteration" ;
+    schema:name "alunitic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/argillic_alteration>
     schema:description "missing" ;
-    rdfs:label "argillic alteration" ;
+    schema:name "argillic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/calcsilicate_alteration>
     schema:description "missing" ;
-    rdfs:label "calcsilicate alteration" ;
+    schema:name "calcsilicate alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/carbonate_alteration>
     schema:description "missing" ;
-    rdfs:label "carbonate alteration" ;
+    schema:name "carbonate alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/chloritic_alteration>
     schema:description "missing" ;
-    rdfs:label "chloritic alteration" ;
+    schema:name "chloritic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/deuteric_alteration>
     schema:description "missing" ;
-    rdfs:label "deuteric alteration" ;
+    schema:name "deuteric alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/epidote_alteration>
     schema:description "missing" ;
-    rdfs:label "epidote alteration" ;
+    schema:name "epidote alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/greisen>
     schema:description "missing" ;
-    rdfs:label
-        "Greisen"@de ,
+    schema:name
         "greisen" ,
+        "Greisen"@de ,
         "greisen"@es ,
         "greisen"@fi ,
         "greisen"@fr ,
@@ -80,52 +79,52 @@ PREFIX schema: <https://schema.org/>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/hematitic_alteration>
     schema:description "missing" ;
-    rdfs:label "hematitic alteration" ;
+    schema:name "hematitic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/kaolinitic_alteration>
     schema:description "missing" ;
-    rdfs:label "kaolinitic alteration" ;
+    schema:name "kaolinitic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/not_altered>
     schema:description "Rock or sediment not altered." ;
-    rdfs:label "not altered" ;
+    schema:name "not altered" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/potassic_alteration>
     schema:description "missing" ;
-    rdfs:label "potassic alteration" ;
+    schema:name "potassic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/propylitic_alteration>
     schema:description "missing" ;
-    rdfs:label "propylitic alteration" ;
+    schema:name "propylitic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/pyritic_alteration>
     schema:description "missing" ;
-    rdfs:label "pyritic alteration" ;
+    schema:name "pyritic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/red_rock_alteration>
     schema:description "missing" ;
-    rdfs:label "red rock alteration" ;
+    schema:name "red rock alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/saussuritised>
     schema:description "missing" ;
-    rdfs:label "saussuritised" ;
+    schema:name "saussuritised" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/sericitic_alteration>
     schema:description "missing" ;
-    rdfs:label "sericitic alteration" ;
+    schema:name "sericitic alteration" ;
 .
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/serpentinisation>
     schema:description "missing" ;
-    rdfs:label
+    schema:name
         "serpentinisation" ,
         "serpentinisation"@fr ,
         "serpentinisasi"@id ,
@@ -141,9 +140,9 @@ PREFIX schema: <https://schema.org/>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/silicification>
     schema:description "missing" ;
-    rdfs:label
-        "Verkieselung"@de ,
+    schema:name
         "silicification" ,
+        "Verkieselung"@de ,
         "silicificación"@es ,
         "silisifikaatio"@fi ,
         "silicification"@fr ,
@@ -163,7 +162,7 @@ PREFIX schema: <https://schema.org/>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/uralitisation>
     schema:description "missing" ;
-    rdfs:label
+    schema:name
         "uralitisation" ,
         "ouralitisation"@fr ,
         "uralitisasi"@id ,
@@ -179,10 +178,10 @@ PREFIX schema: <https://schema.org/>
 
 <http://resource.geosciml.org/classifier/cgi/alterationtype/zeolitic_alteration>
     schema:description "missing" ;
-    rdfs:label "zeolitic alteration" ;
+    schema:name "zeolitic alteration" ;
 .
 
 <http://resource.geosciml.org/classifierscheme/cgi/2016.01/alterationtype>
     schema:description "This scheme describes the concept space for Alteration Type concepts, as defined by the IUGS Commission for Geoscience Information (CGI) Geoscience Terminology Working Group. By extension, it includes all concepts in this conceptScheme, as well as concepts in any previous versions of the scheme. Designed for populating the alteration type property in GeoSciML alterationDescription elements. Definitions of alteration types have not been included." ;
-    rdfs:label "Alteration Type" ;
+    schema:name "Alteration Type" ;
 .

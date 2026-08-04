@@ -6,7 +6,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 <https://linked.data.gov.au/dataset/detsi-vocabs>
     a dcat:Catalog ;
-    dcterms:hasPart
+    skos:historyNote "2025-07 NJC: Manifest created for vocabularies" ;
+    schema:codeRepository "https://github.com/Geological-Survey-of-Western-Australia/Vocabularies" ;
+    schema:contributor <https://kurrawong.ai> ;
+    schema:creator <https://linked.data.gov.au/org/gswa> ;
+    schema:dateCreated "2017"^^xsd:gYear ;
+    schema:dateModified "2025-08-04"^^xsd:date ;
+    schema:description "GSWA's vocabularies vocabularies listed here are GSWA’s indexes for internal and external use. They cover a wide range of geological, scientific and administrative themes" ;
+    schema:hasPart
         <http://resource.geosciml.org/classifier/ics/ischart> ,
         <https://linked.data.gov.au/def/CRIRSCO-mineral-resource-reporting> ,
         <https://linked.data.gov.au/def/JORC-Code> ,
@@ -41,13 +48,6 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://linked.data.gov.au/def/vertical-depth-reference-systems> ,
         <https://linked.data.gov.au/def/wa-coordinate-reference-systems> ,
         <https://linked.data.gov.au/def/wa-mineral-fields-and-districts> ;
-    skos:historyNote """2025-07 NJC: Manifest created for vocabularies""" ;
-    schema:codeRepository "https://github.com/Geological-Survey-of-Western-Australia/Vocabularies" ;
-    schema:contributor <https://kurrawong.ai> ;
-    schema:creator <https://linked.data.gov.au/org/gswa> ;
-    schema:dateCreated "2017"^^xsd:gYear ;
-    schema:dateModified "2025-07-21"^^xsd:date ;
-    schema:description "GSWA's vocabularies vocabularies listed here are GSWA’s indexes for internal and external use. They cover a wide range of geological, scientific and administrative themes" ;
     schema:name "GSWA Vocabularies" ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
     schema:version "3" ;

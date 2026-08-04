@@ -7,7 +7,7 @@ q = """
     
     CONSTRUCT {
         ?iri
-            rdfs:label ?name ;
+            schema:name ?name ;
             schema:description ?desc ;
         .
     }

@@ -21,7 +21,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.12"
-  PREZMANIFEST_VERSION: "1.2.8"
+  PREZMANIFEST_VERSION: "1.2.12"
 
 jobs:
   publish:
@@ -41,7 +41,7 @@ jobs:
 
       - name: Sync vocabularies
         run: |
-          pm sync manifest.ttl ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }}
+          pm sync manifest.ttl ${{ secrets.database_url }} -u ${{ secrets.database_username }} -p ${{ secrets.database_password }} True False True False
 
       - name: Purge Prez cache
         run: curl -fsSL ${{ secrets.prez_url }}/purge-tbox-cache

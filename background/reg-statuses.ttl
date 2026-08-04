@@ -1,85 +1,84 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX reg: <https://linked.data.gov.au/def/reg-statuses/>
 PREFIX schema: <https://schema.org/>
 
 <http://purl.org/linked-data/registry#Status>
     schema:description "Open set of status code for entries in a register" ;
-    rdfs:label "Status" ;
+    schema:name "Status" ;
 .
 
 <https://linked.data.gov.au/def/reg-statuses>
     schema:description """This vocabulary is a re-published and only marginally changed version of the Registry Ontology's (http://epimorphics.com/public/vocabulary/Registry.html) *Status* vocabulary (online in RDF: http://purl.org/linked-data/registry). The only real change to content has been the addition of the term `unstable`. This re-publication has been performed to allow the IRIs of each vocab term (skos:Concept) to resolve to both human-readable and machine-readable forms of content (HTML and RDF), using HTTP content negotiation.
 
 Note that just like the original form of this vocabulary, while it is a SKOS vocabulary implemented as a single skos:ConceptScheme, it is also an OWL Ontology and that each *Status* is both a skos:Concept and a reg:Status individual.""" ;
-    rdfs:label "Registry Status Vocabulary" ;
+    schema:name "Registry Status Vocabulary" ;
 .
 
 reg:accepted
     schema:description "An entry that has been accepted for use and is visible in the default register listing. Includes entries that have seen been retired or superseded." ;
-    rdfs:label "accepted" ;
+    schema:name "accepted" ;
 .
 
 reg:addition
     schema:description "The item's status is stable and was supplied to the registry after initial creation" ;
-    rdfs:label "addition" ;
+    schema:name "addition" ;
 .
 
 reg:deprecated
     schema:description "An entry that has been Retired or Superseded or has become Unstable and is no longer to be used." ;
-    rdfs:label "deprecated" ;
+    schema:name "deprecated" ;
 .
 
 reg:experimental
     schema:description "An entry that has been accepted into the register temporarily and may be subject to change or withdrawal." ;
-    rdfs:label "experimental" ;
+    schema:name "experimental" ;
 .
 
 reg:invalid
     schema:description "An entry which has been invalidated due to serious flaws, distinct from retrirement." ;
-    rdfs:label "invalid" ;
+    schema:name "invalid" ;
 .
 
 reg:notAccepted
     schema:description "An entry that should not be visible in the default register listing." ;
-    rdfs:label "notAccepted" ;
+    schema:name "notAccepted" ;
 .
 
 reg:original
     schema:description "The item's status is stable and was supplied to the registry after initial creation." ;
-    rdfs:label "original" ;
+    schema:name "original" ;
 .
 
 reg:reserved
     schema:description "A reserved entry allocated for some as yet undetermined future use." ;
-    rdfs:label "reserved" ;
+    schema:name "reserved" ;
 .
 
 reg:retired
     schema:description "An entry that has been withdrawn from use." ;
-    rdfs:label "retired" ;
+    schema:name "retired" ;
 .
 
 reg:stable
     schema:description "An entry that is seen as having a reasonable measure of stability, may be used to mark the full adoption of a previously 'experimental' entry." ;
-    rdfs:label "stable" ;
+    schema:name "stable" ;
 .
 
 reg:submitted
     schema:description "A proposed entry which is not yet approved for use for use." ;
-    rdfs:label "submitted" ;
+    schema:name "submitted" ;
 .
 
 reg:superseded
     schema:description "An entry that has been replaced by a new alternative which should be used instead." ;
-    rdfs:label "superseded" ;
+    schema:name "superseded" ;
 .
 
 reg:unstable
     schema:description "An entry that is not seen as having a reasonable measure of stability. This status is expected to be allocated to entries that were once Stable but have become Unstable, due to a management or technical mishap, rather than being allocated to resources before they become Stable. Those resources should be allocated Experimental." ;
-    rdfs:label "unstable" ;
+    schema:name "unstable" ;
 .
 
 reg:valid
     schema:description "An entry that has been accepted into the register and is deemed fit for use." ;
-    rdfs:label "valid" ;
+    schema:name "valid" ;
 .

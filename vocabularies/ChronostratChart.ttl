@@ -4683,7 +4683,7 @@ cs:
     dcterms:conformsTo <https://w3id.org/profile/vocpub/5.1> ;
     dcterms:created "2024-11-26"^^xsd:date ;
     dcterms:creator <https://linked.data.gov.au/org/ics> ;
-    dcterms:modified "2026-07-31"^^xsd:date ;
+    dcterms:modified "2026-08-04"^^xsd:date ;
     dcterms:publisher <https://linked.data.gov.au/org/ics> ;
     owl:versionIRI gtsd:2026-06 ;
     owl:versionInfo "2026-06" ;
@@ -4697,7 +4697,7 @@ Most numerical ages are taken from ‘A Geologic Time Scale 2020’ by Gradstein
         gtsd:Precambrian ;
     skos:historyNote "This vocabulary uses IRIs originally created for the Geologic Timescale (2020) data (see http://resource.geosciml.org/vocabulary/timescale/)" ;
     skos:prefLabel "International Chronostratigraphic Chart"@en ;
-    skos:versionInfo """2026-06: Strati2026 version of the Chart with updates indicated in element changeNotes
+    skos:changeNote """2026-06: Strati2026 version of the Chart with updates indicated in element changeNotes
 
 2024-12: Updated Chart to include:
 
@@ -4707,32 +4707,6 @@ Most numerical ages are taken from ‘A Geologic Time Scale 2020’ by Gradstein
 2023-09: updated form of the Geologic Timescale (2020) (see http://resource.geosciml.org/vocabulary/timescale/) to match the 2023-09 Chart, as released at https://stratigraphy.org/chart in late 2023.""" ;
     schema:citation "https://stratigraphy.org/chart"^^xsd:anyURI ;
     schema:copyrightHolder <https://linked.data.gov.au/org/ics> ;
-    schema:copyrightNotice
-        "(c) Beynəlxalq Stratiqrafiya Komissiyası (International Commission on Stratigraphy), İyun 2026"@az ,
-        "© Comissió Internacional d’Estratigrafia, 2026"@ca ,
-        "© Mezinárodní stratigrafická komise, září 2026"@cs ,
-        "© International Commission on Stratigraphy, 2026"@de ,
-        "© International Commission on Stratigraphy, 2026"@en ,
-        "© International Commission on Stratigraphy, 2026"@es ,
-        "© International Commission on Stratigraphy, 2026"@es-a ,
-        "© International Commission on Stratigraphy, 2026"@eu ,
-        "© International Commission on Stratigraphy, 2026"@fi ,
-        "© International Commission on Stratigraphy, 2026"@fr ,
-        "© Nemzetközi Rétegtani Bizottság, 2026"@hu ,
-        "© International Commission on Stratigraphy, 2026"@id ,
-        "© International Commission on Stratigraphy, 2026"@it ,
-        "© 国際層序委員会，2026年12月"@ja ,
-        "© 국제층서위원회, 2026년 12월"@ko ,
-        "© International Commission on Stratigraphy, 2026"@lt ,
-        "© International Commission on Stratigraphy, 2026"@nl ,
-        "© International Commission on Stratigraphy, 2026"@nl-be ,
-        "© International Commission on Stratigraphy, 2026"@no ,
-        "© Międzynarodowa Komisja Stratygrafii, 2026"@pl ,
-        "© International Commission on Stratigraphy, 2026"@pt ,
-        "© International Commission on Stratigraphy, 2026"@pt-br ,
-        "© Международная комиссия по стратиграфии, февраль 20126 г"@ru ,
-        "© Medzinárodná stratigrafická komisia, 2026"@sk ,
-        "© International Commission on Stratigraphy, 2026"@tr ,
-        "© 国际地层委员会，2026年09月（英文版）"@zh ;
+    schema:copyrightNotice "© International Commission on Stratigraphy, 2026"@en ;
     schema:license <https://creativecommons.org/licenses/by/4.0/> ;
 .
