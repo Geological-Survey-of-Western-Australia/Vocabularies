@@ -1,105 +1,105 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 <https://linked.data.gov.au/def/data-roles>
-    rdfs:label "IDN Role Codes" ;
+    schema:name "IDN Role Codes" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/author>
-    rdfs:label "author" ;
+    schema:name "author" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/coAuthor>
-    rdfs:label "co author" ;
+    schema:name "co author" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/collaborator>
-    rdfs:label "collaborator" ;
+    schema:name "collaborator" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/contributor>
-    rdfs:label "contributor" ;
+    schema:name "contributor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/custodian>
-    rdfs:label "custodian" ;
+    schema:name "custodian" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/distributor>
-    rdfs:label "distributor" ;
+    schema:name "distributor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/editor>
-    rdfs:label "editor" ;
+    schema:name "editor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/funder>
-    rdfs:label "funder" ;
+    schema:name "funder" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/isoRoles>
-    rdfs:label "ISO CI Role Code codes" ;
+    schema:name "ISO CI Role Code codes" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/mediator>
-    rdfs:label "mediator" ;
+    schema:name "mediator" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/originator>
-    rdfs:label "originator" ;
+    schema:name "originator" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/owner>
-    rdfs:label "owner" ;
+    schema:name "owner" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/pointOfContact>
-    rdfs:label "point of contact" ;
+    schema:name "point of contact" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/principalInvestigator>
-    rdfs:label "principal investigator" ;
+    schema:name "principal investigator" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/processor>
-    rdfs:label "processor" ;
+    schema:name "processor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/publisher>
-    rdfs:label "publisher" ;
+    schema:name "publisher" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/resourceProvider>
-    rdfs:label "resource provider" ;
+    schema:name "resource provider" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/rightsHolder>
-    rdfs:label "rights holder" ;
+    schema:name "rights holder" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/sponsor>
-    rdfs:label "sponsor" ;
+    schema:name "sponsor" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/stakeholder>
-    rdfs:label "stakeholder" ;
+    schema:name "stakeholder" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/subjectAgent>
-    rdfs:label "subject agent" ;
+    schema:name "subject agent" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/subjectAgentRepresentative>
-    rdfs:label "subject agent representative" ;
+    schema:name "subject agent representative" ;
 .
 
 <https://linked.data.gov.au/def/data-roles/user>
-    rdfs:label "user" ;
+    schema:name "user" ;
 .
 
 <https://linked.data.gov.au/org/agldwg>
-    rdfs:label "Australian Government Linked Data Working Group" ;
+    schema:name "Australian Government Linked Data Working Group" ;
 .
 
 <https://linked.data.gov.au/org/idn>
-    rdfs:label "Indigenous Data Network" ;
+    schema:name "Indigenous Data Network" ;
 .

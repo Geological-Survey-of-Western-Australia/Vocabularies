@@ -2,51 +2,51 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc>
-    rdfs:label "Qaqc" ;
+    schema:name "Qaqc" ;
     schema:description "Qaqc" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/average-assay-as-qc-sample>
-    rdfs:label "average assay as qc sample" ;
+    schema:name "average assay as qc sample" ;
     schema:description "Definition for average assay as qc sample" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/blank>
-    rdfs:label "blank" ;
+    schema:name "blank" ;
     schema:description "Definition for blank" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/field-duplicate>
-    rdfs:label "field duplicate" ;
+    schema:name "field duplicate" ;
     schema:description "Definition for field duplicate" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/laboratory-duplicate>
-    rdfs:label "laboratory duplicate" ;
+    schema:name "laboratory duplicate" ;
     schema:description "Definition for laboratory duplicate" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/laboratory-standard>
-    rdfs:label "laboratory standard" ;
+    schema:name "laboratory standard" ;
     schema:description "Definition for laboratory standard" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/qa-qc-of-known-value>
-    rdfs:label "qa/qc of known value" ;
+    schema:name "qa/qc of known value" ;
     schema:description "Definition for qa/qc of known value" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/re-assayed-sample>
-    rdfs:label "re-assayed sample" ;
+    schema:name "re-assayed sample" ;
     schema:description "Definition for re-assayed sample" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/re-split>
-    rdfs:label "re-split" ;
+    schema:name "re-split" ;
     schema:description "Definition for re-split" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/standard>
-    rdfs:label "standard" ;
+    schema:name "standard" ;
     schema:description "Definition for standard" ;
 .
