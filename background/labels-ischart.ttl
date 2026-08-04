@@ -1,5 +1,4 @@
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX reg: <http://purl.org/linked-data/registry#>
 PREFIX schema: <https://schema.org/>
 PREFIX sh: <http://www.w3.org/ns/shacl#>
 
@@ -19,6 +18,10 @@ PREFIX sh: <http://www.w3.org/ns/shacl#>
     schema:name "CCGM Short Code" ;
 .
 
+<http://resource.geosciml.org/ontology/timescale/gts#rank>
+    schema:name "rank" ;
+.
+
 <http://resource.geosciml.org/vocabulary/timescale/gts2020>
     schema:name "Geologic Timescale, 2020" ;
 .
@@ -29,8 +32,4 @@ rdfs:isDefinedBy
 
 sh:order
     schema:name "order" ;
-.
-
-<http://resource.geosciml.org/ontology/timescale/gts#rank>
-    schema:name "rank" ;
 .

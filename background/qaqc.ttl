@@ -1,52 +1,51 @@
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc>
-    schema:name "Qaqc" ;
     schema:description "Qaqc" ;
+    schema:name "Qaqc" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/average-assay-as-qc-sample>
-    schema:name "average assay as qc sample" ;
     schema:description "Definition for average assay as qc sample" ;
+    schema:name "average assay as qc sample" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/blank>
-    schema:name "blank" ;
     schema:description "Definition for blank" ;
+    schema:name "blank" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/field-duplicate>
-    schema:name "field duplicate" ;
     schema:description "Definition for field duplicate" ;
+    schema:name "field duplicate" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/laboratory-duplicate>
-    schema:name "laboratory duplicate" ;
     schema:description "Definition for laboratory duplicate" ;
+    schema:name "laboratory duplicate" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/laboratory-standard>
-    schema:name "laboratory standard" ;
     schema:description "Definition for laboratory standard" ;
+    schema:name "laboratory standard" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/qa-qc-of-known-value>
-    schema:name "qa/qc of known value" ;
     schema:description "Definition for qa/qc of known value" ;
+    schema:name "qa/qc of known value" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/re-assayed-sample>
-    schema:name "re-assayed sample" ;
     schema:description "Definition for re-assayed sample" ;
+    schema:name "re-assayed sample" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/re-split>
-    schema:name "re-split" ;
     schema:description "Definition for re-split" ;
+    schema:name "re-split" ;
 .
 
 <https://linked.data.gov.au/def/gsq-geochem/qaqc/standard>
-    schema:name "standard" ;
     schema:description "Definition for standard" ;
+    schema:name "standard" ;
 .

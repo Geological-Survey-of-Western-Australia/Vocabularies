@@ -162,8 +162,7 @@ skos:Collection
 .
 
 skos:Concept
-    schema:description
-        "An idea or notion; a unit of thought" ;
+    schema:description "An idea or notion; a unit of thought" ;
     schema:name "Concept" ;
 .
 
@@ -185,6 +184,11 @@ skos:broadMatch
 skos:broader
     schema:description "Relates a concept to a concept that is more general in meaning" ;
     schema:name "has broader" ;
+.
+
+skos:changeNote
+    schema:description "A note about a modification to a concept." ;
+    schema:name "change note" ;
 .
 
 skos:closeMatch
@@ -304,6 +308,10 @@ prov:agent
     schema:name "agent" ;
 .
 
+prov:hadRole
+    schema:name "role" ;
+.
+
 prov:qualifiedAttribution
     schema:description "If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ]." ;
     schema:name "qualified attribution" ;
@@ -393,6 +401,11 @@ sh:order
 
 <https://linked.data.gov.au/def/reg-statuses/status>
     schema:name "status" ;
+.
+
+<https://linked.data.gov.au/def/vocpub/validator>
+    schema:description "SHACL validator for the VocPub Profile" ;
+    schema:name "VocPub Validator" ;
 .
 
 <https://prez.dev/Manifest>
@@ -510,6 +523,11 @@ schema:publisher
     schema:name "publisher" ;
 .
 
+schema:status
+    schema:description "The status of the study (enumerated)." ;
+    schema:name "status" ;
+.
+
 schema:url
     schema:description "URL of the item" ;
     schema:name "url" ;
@@ -532,25 +550,6 @@ schema:version
     schema:name "Agent" ;
 .
 
-<http://www.w3.org/ns/prov#hadRole>
-    schema:name "role" ;
-.
-
 <https://www.w3.org/ns/prov#qualifiedAttribution>
     schema:name "Qualified Attribution" ;
-.
-
-skos:changeNote
-    schema:description "A note about a modification to a concept." ;
-    schema:name "change note" ;
-.
-
-<https://linked.data.gov.au/def/vocpub/validator>
-    schema:description "SHACL validator for the VocPub Profile" ;
-    schema:name "VocPub Validator" ;
-.
-
-schema:status
-    schema:description "The status of the study (enumerated)." ;
-    schema:name "status" ;
 .
