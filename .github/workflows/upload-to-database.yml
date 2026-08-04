@@ -21,7 +21,7 @@ on:
 
 env:
   PYTHON_VERSION: "3.12"
-  PREZMANIFEST_VERSION: "1.2.8"
+  PREZMANIFEST_VERSION: "1.2.9"
 
 jobs:
   publish:
