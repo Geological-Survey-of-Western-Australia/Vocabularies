@@ -11,13 +11,14 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     schema:contributor <https://kurrawong.ai> ;
     schema:creator <https://linked.data.gov.au/org/gswa> ;
     schema:dateCreated "2017"^^xsd:gYear ;
-    schema:dateModified "2025-08-04"^^xsd:date ;
+    schema:dateModified "2026-10-30"^^xsd:date ;
     schema:description "GSWA's vocabularies vocabularies listed here are GSWA’s indexes for internal and external use. They cover a wide range of geological, scientific and administrative themes" ;
     schema:hasPart
-        <http://resource.geosciml.org/classifier/ics/ischart> ,
+        <https://data.stratigraphy.org/def/chart> ,
         <https://linked.data.gov.au/def/CRIRSCO-mineral-resource-reporting> ,
         <https://linked.data.gov.au/def/JORC-Code> ,
         <https://linked.data.gov.au/def/alteration-form> ,
+        <https://linked.data.gov.au/def/geological-sample-type> ,
         <https://linked.data.gov.au/def/alteration-intensity> ,
         <https://linked.data.gov.au/def/alteration-type> ,
         <https://linked.data.gov.au/def/australian-physiographic-units> ,
@@ -29,6 +30,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://linked.data.gov.au/def/borehole-status-wa> ,
         <https://linked.data.gov.au/def/dmirs-offices> ,
         <https://linked.data.gov.au/def/earthsci-for> ,
+        <https://linked.data.gov.au/def/geoscience-commodities-wa> ,
         <https://linked.data.gov.au/def/geological-feature-type> ,
         <https://linked.data.gov.au/def/gswa-collection-facilities> ,
         <https://linked.data.gov.au/def/gswa-rock-classification-scheme> ,
@@ -50,5 +52,5 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://linked.data.gov.au/def/wa-mineral-fields-and-districts> ;
     schema:name "GSWA Vocabularies" ;
     schema:publisher <https://linked.data.gov.au/org/gswa> ;
-    schema:version "3" ;
+    schema:version "4" ;
 .
