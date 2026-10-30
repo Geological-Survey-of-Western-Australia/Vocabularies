@@ -993,11 +993,6 @@ https://www.specialtymetals.com.au/about/our-company/""" ;
     skos:prefLabel "copper–lead–zinc"@en ;
 .
 
-<https://orcid.org/0000-0002-7645-5031>
-    a schema:Person ;
-    schema:email ""^^xsd:anyURI ;
-    schema:name "0000 0002 7645 5031" ;
-.
 
 :actinolite
     a skos:Concept ;
@@ -10313,10 +10308,6 @@ Authoritative sources routinely used for definitions include the Glossary of Geo
 """ ;
     skos:prefLabel "Geoscience commodities"@en ;
     prov:qualifiedAttribution 
-        [
-            prov:agent <https://orcid.org/0000-0002-7645-5031> ;
-            prov:hadRole DATAROLES:custodian ;
-        ] ,
         [
             prov:agent
                 [
