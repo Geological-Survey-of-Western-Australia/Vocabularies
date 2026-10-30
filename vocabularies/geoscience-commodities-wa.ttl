@@ -2679,6 +2679,11 @@ saltpeter> ;
     skos:definition "An igneous rock composed chiefly of one or more felsic, light-coloured minerals in its mode, i.e. with an abundance of feldspar, feldspathoid and/or quartz."@en ;
     skos:historyNote "Adapted from Glossary of geology, 5th edition revised; Neuendorf et al., 2011" ;
     skos:inScheme cs: ;
+    skos:narrower
+        :granite ,
+        :pegmatite ,
+        :perlite ,
+        :pumice ;
     skos:narrowMatch
         <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/granite> ,
         <http://linked.data.gov.au/def/geo-commodities/granite> ,
@@ -4119,7 +4124,7 @@ saltpeter> ;
 :pegmatite
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :felsicigneousrock ;
+    skos:broader :felsic-igneous-rock ;
     skos:definition "An exceptionally coarse-grained igneous rock, with interlocking crystals, usually found as irregular dykes, lenses or veins, especially at the margins of batholiths. Most grains are 1 cm or more in diameter. Pegmatite composition is generally that of granite, although pegmatites having gross compositions similar to other rock types are known; the composition may be simple or complex and may include rare minerals rich in such elements as lithium, boron, fluorine, niobium, tantalum, uranium and rare earths."@en ;
     skos:inScheme cs: ;
     skos:prefLabel "pegmatite"@en ;
@@ -4131,7 +4136,7 @@ saltpeter> ;
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "pearlstone"@en ;
-    skos:broader :felsicigneousrock ;
+    skos:broader :felsic-igneous-rock ;
     skos:definition "A siliceous volcanic glass with the composition of rhyolite and a perlitic texture, i.e. having numerous concentric spherical cracks that give rise to an onion-skin structure. Most perlite has a higher water content than obsidian. When perlite is heated to the softening point, it expands, or pops to form a light fluffy material similar to pumice. It is used as lightweight aggregate in concrete, as insulation for liquid fuels, and in potting soils."@en ;
     skos:exactMatch
         <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/perlite> ,
@@ -4580,7 +4585,7 @@ saltpeter> ;
 :pumice
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
-    skos:broader :felsicigneousrock ;
+    skos:broader :felsic-igneous-rock ;
     skos:definition "A volcanic rock that consists of highly vesicular, rough-textured volcanic glass, which may or may not contain crystals. It is typically light coloured. Pumice is a very lightweight, porous and abrasive material and it has been used for centuries in the construction and beauty industry as well as in early medicine. It is currently used as an abrasive, especially in polishes, pencil erasers and the production of stone-washed jeans."@en ;
     skos:exactMatch
         <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/pumice> ,
@@ -8110,19 +8115,11 @@ saltpeter> ;
     schema:status <https://linked.data.gov.au/def/reg-statuses/stable> ;
 .
 
-:felsicigneousrock
-    skos:narrower
-        :granite ,
-        :pegmatite ,
-        :perlite ,
-        :pumice ;
-.
-
 :granite
     a skos:Concept ;
     rdfs:isDefinedBy cs: ;
     skos:altLabel "granite"@en ;
-    skos:broader :felsicigneousrock ;
+    skos:broader :felsic-igneous-rock ;
     skos:definition "The term 'granite' as an industrial commodity is much broader than the petrological name (i.e. \"a plutonic rock consisting essentially of quartz, alkali feldspar and sodic plagioclase in variable amounts usually with biotite and/or hornblende\", Le Maitre et al., 2005). Commercial granites include all feldspathic crystalline rocks of mainly interlocking texture and with individual mineral grains that are visible to the naked eye. This category includes such rock types as anorthosite, gneiss, granite, granodiorite, monzonite, syenite, and all other intermediate igneous and coarse-grained metamorphic rock types. Primary colours of commercial granites are white, grey, pink, and red; green and brown are secondary colours. Although black granites are also included in this category and range in colour from dark grey to black, they are not true granites mineralogically but rather mafic rocks, such as diabases, diorites, gabbros, and similar rocks, and in this scheme are categorized separately."@en ;
     skos:exactMatch
         <http://inspire.ec.europa.eu/codelist/CommodityCodeValue/granite> ,
